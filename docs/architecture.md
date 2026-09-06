@@ -16,7 +16,7 @@ safe Git tree/raw snapshotter ---- source lock
               |
  deterministic catalog and indexes
               |
- Agent HQ browsing     Control Plane exact resolution
+ Adea browsing     Control Plane exact resolution
 ```
 
 The source lock contains one resolved commit per configured official repository.

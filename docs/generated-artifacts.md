@@ -38,4 +38,4 @@ plugin metadata, or exceeds a content limit, it is skipped and the JSON change
 report records its source-qualified `pluginId`, reason code, security reason,
 affected paths, and `incompleteContent: true`. The rest of the four-source
 catalog may still publish. A skipped plugin is not present in the catalog and
-must not be materialized by Agent HQ or Control Plane.
+must not be materialized by Adea or Control Plane.
