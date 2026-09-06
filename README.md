@@ -1,4 +1,4 @@
-# Agent HQ Plugin Marketplace
+# Adea Plugin Marketplace
 
 This repository is a deterministic, static marketplace compiler for the official
 OpenAI, Cursor, Claude Code, and Anthropic knowledge-work plugin marketplaces.
@@ -46,7 +46,7 @@ plugins can still form a live catalog.
 - `packages/cli` — the `plugins` command surface.
 
 The full boundary and data flow are in [`docs/architecture.md`](docs/architecture.md).
-The Agent HQ and Control Plane URL/field contract is in
+The Adea and Control Plane URL/field contract is in
 [`docs/consumer-contract.md`](docs/consumer-contract.md).
 
 ## Commands
@@ -96,7 +96,7 @@ upstream retrieval.
 
 ## Licensing
 
-The marketplace compiler follows the existing Agent HQ organization Apache-2.0
+The marketplace compiler follows the existing Adea organization Apache-2.0
 policy. Upstream plugin code and metadata retain their upstream license and
 copyright; this repository does not relicense upstream content. The current
 snapshot records `Unknown` when a plugin does not declare a license.

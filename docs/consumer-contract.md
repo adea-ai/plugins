@@ -1,4 +1,4 @@
-# Agent HQ and Control Plane consumer contract
+# Adea and Control Plane consumer contract
 
 The repository is currently public. The stable browser-readable catalog URL is:
 
@@ -41,11 +41,11 @@ the following identifiers and fields as opaque, exact values:
 | `securityClassification` | Content resolution, sensitivity level, reasons, and permission-sensitive capability types.                |
 | `provenance`             | Source ID, repository, marketplace manifest, upstream name digest, plugin path, and exact commit.         |
 
-Agent HQ is a read-only catalog consumer. It may use the summary, categories,
+Adea is a read-only catalog consumer. It may use the summary, categories,
 search text, product grouping, icons, source badges, compatibility, and update
 state for browsing. An install or enable action submits `pluginId`, exact
 `releaseId`, `canonicalContentDigest`, and the requested harness to Control
-Plane. Agent HQ never downloads or executes upstream plugin content.
+Plane. Adea never downloads or executes upstream plugin content.
 
 Control Plane fetches the immutable release server-side, verifies the catalog
 and content digests, checks revocation/supersession and policy, resolves
@@ -56,4 +56,4 @@ does not grant execution authority.
 If this repository becomes private, browser clients must not fetch GitHub
 directly. Control Plane must use a scoped GitHub App/token server-side and
 expose a sanitized catalog API or a public signed read-only artifact endpoint;
-the Agent HQ contract remains the same.
+the Adea contract remains the same.
