@@ -1,5 +1,5 @@
 import { spawnSync } from 'node:child_process'
-import { cp, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
+import { cp, mkdtemp, readFile, readdir, rm, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -43,12 +43,6 @@ function sh(args, cwd, extraEnv) {
   return result
 }
 
-async function publishedVersion(name) {
-  const result = sh(['npm', 'view', `${name}`, 'version'], repoRoot)
-  if (result.status !== 0) return null
-  return result.stdout.trim() || null
-}
-
 function shOrThrow(args, cwd) {
   const result = sh(args, cwd)
   if (result.status !== 0) {
@@ -57,18 +51,44 @@ function shOrThrow(args, cwd) {
   }
 }
 
+async function publishedVersion(name) {
+  const result = sh(['npm', 'view', `${name}`, 'version'], repoRoot)
+  if (result.status !== 0) return null
+  return result.stdout.trim() || null
+}
+
+// Workspace manifests are the source of truth for workspace: ranges; bun
+// links workspace members lazily, so node_modules lookups are unreliable.
+const workspaceVersions = new Map()
+{
+  let entries = []
+  try {
+    entries = await readdir(join(repoRoot, 'packages'), { withFileTypes: true })
+  } catch {
+    entries = []
+  }
+  for (const entry of entries) {
+    if (!entry.isDirectory()) continue
+    try {
+      const manifest = JSON.parse(
+        await readFile(join(repoRoot, 'packages', entry.name, 'package.json'), 'utf8')
+      )
+      workspaceVersions.set(manifest.name, manifest.version)
+    } catch {
+      // Not a workspace package manifest; skip.
+    }
+  }
+}
+
 async function rewriteSection(section, workspaceName) {
   const rewritten = {}
   for (const [dep, range] of Object.entries(section ?? {})) {
     if (typeof range === 'string' && range.startsWith('workspace:')) {
-      try {
-        const depManifest = JSON.parse(
-          await readFile(join(repoRoot, 'node_modules', dep, 'package.json'), 'utf8')
-        )
-        rewritten[dep] = `^${depManifest.version}`
-      } catch {
+      const depVersion = workspaceVersions.get(dep)
+      if (!depVersion) {
         throw new Error(`[publish] cannot resolve ${range} for ${dep} in ${workspaceName}`)
       }
+      rewritten[dep] = `^${depVersion}`
     } else {
       rewritten[dep] = range
     }
