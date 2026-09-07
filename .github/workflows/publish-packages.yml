@@ -1,9 +1,10 @@
-name: Publish catalog-schema
+name: Publish marketplace toolkit
 
-# Publishes @adea-ai/catalog-schema — the deterministic plugin-catalog schema —
-# to the public npm registry on every main push that touches it (plus manual
-# dispatch). Already-published versions are skipped, so the workflow is safe
-# to re-run.
+# Publishes the marketplace toolkit packages (@adea-ai/catalog-schema with
+# the JSON Schema artifacts, @adea-ai/source-adapters, @adea-ai/harness-adapters,
+# @adea-ai/catalog-core) to the public npm registry on every main push that
+# touches them (plus manual dispatch). Already-published versions are
+# skipped, so the workflow is safe to re-run.
 #
 # Prerequisites (one-time, dashboard):
 #   Set NPM_TOKEN to an automation token with publish rights on @adea-ai/*.
@@ -13,6 +14,9 @@ on:
     branches: [main]
     paths:
       - 'packages/catalog-schema/**'
+      - 'packages/source-adapters/**'
+      - 'packages/harness-adapters/**'
+      - 'packages/catalog-core/**'
       - 'schemas/**'
       - 'scripts/publish-packages.mjs'
       - '.github/workflows/publish-packages.yml'

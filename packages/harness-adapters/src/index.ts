@@ -6,7 +6,7 @@ import {
   type MaterializationPlan,
   type Plugin,
   type PluginRelease,
-} from '../../catalog-schema/src/index.js'
+} from '@adea-ai/catalog-schema'
 
 export class MaterializationError extends Error {
   constructor(

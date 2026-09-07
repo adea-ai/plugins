@@ -1,16 +1,15 @@
 {
-  "name": "@adea-ai/catalog-schema",
+  "name": "@adea-ai/harness-adapters",
   "version": "1.1.3",
-  "description": "Deterministic catalog schema for AI agent plugin marketplaces: plugins, capabilities, releases, provenance, licensing, security classification, and per-harness compatibility.",
+  "description": "Harness materialization for AI agent plugin marketplaces: translate catalog plugins into per-harness installation plans for Codex, Claude Code, Cursor, Pi, Hermes, and OpenCode.",
   "keywords": [
     "agents",
-    "catalog",
+    "claude-code",
+    "codex",
+    "cursor",
+    "harness",
     "marketplace",
-    "mcp",
-    "plugins",
-    "schema",
-    "skills",
-    "zod"
+    "plugins"
   ],
   "homepage": "https://github.com/adea-ai/plugins#readme",
   "bugs": "https://github.com/adea-ai/plugins/issues",
@@ -18,11 +17,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adea-ai/plugins.git",
-    "directory": "packages/catalog-schema"
+    "directory": "packages/harness-adapters"
   },
   "files": [
     "dist",
-    "schemas",
     "README.md"
   ],
   "type": "module",
@@ -33,8 +31,7 @@
       "types": "./dist/index.d.ts",
       "bun": "./src/index.ts",
       "import": "./dist/index.js"
-    },
-    "./schema/*": "./schemas/*"
+    }
   },
   "publishConfig": {
     "access": "public",
@@ -45,7 +42,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "zod": "^4.5.4"
+    "@adea-ai/catalog-schema": "workspace:^"
   },
   "engines": {
     "bun": ">=1.4.0 <2",

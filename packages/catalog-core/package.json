@@ -1,16 +1,15 @@
 {
-  "name": "@adea-ai/catalog-schema",
+  "name": "@adea-ai/catalog-core",
   "version": "1.1.3",
-  "description": "Deterministic catalog schema for AI agent plugin marketplaces: plugins, capabilities, releases, provenance, licensing, security classification, and per-harness compatibility.",
+  "description": "Deterministic compiler for AI agent plugin marketplaces: parse, verify, merge, and compile plugin catalogs into provenance-checked static artifacts.",
   "keywords": [
     "agents",
     "catalog",
+    "compiler",
+    "deterministic",
     "marketplace",
-    "mcp",
     "plugins",
-    "schema",
-    "skills",
-    "zod"
+    "provenance"
   ],
   "homepage": "https://github.com/adea-ai/plugins#readme",
   "bugs": "https://github.com/adea-ai/plugins/issues",
@@ -18,11 +17,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adea-ai/plugins.git",
-    "directory": "packages/catalog-schema"
+    "directory": "packages/catalog-core"
   },
   "files": [
     "dist",
-    "schemas",
     "README.md"
   ],
   "type": "module",
@@ -34,7 +32,11 @@
       "bun": "./src/index.ts",
       "import": "./dist/index.js"
     },
-    "./schema/*": "./schemas/*"
+    "./publication": {
+      "types": "./dist/publication.d.ts",
+      "bun": "./src/publication.ts",
+      "import": "./dist/publication.js"
+    }
   },
   "publishConfig": {
     "access": "public",
@@ -45,7 +47,8 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "zod": "^4.5.4"
+    "@adea-ai/catalog-schema": "workspace:^",
+    "@adea-ai/source-adapters": "workspace:^"
   },
   "engines": {
     "bun": ">=1.4.0 <2",
