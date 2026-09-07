@@ -1,15 +1,15 @@
-import { z } from 'zod';
+import { z } from 'zod'
 
-export const DIGEST_RE = /^sha256:[a-f0-9]{64}$/;
-export const SHA_RE = /^[a-f0-9]{40}$/;
+export const DIGEST_RE = /^sha256:[a-f0-9]{64}$/
+export const SHA_RE = /^[a-f0-9]{40}$/
 
-export const DigestSchema = z.string().regex(DIGEST_RE);
-export const ShaSchema = z.string().regex(SHA_RE);
-export const TimestampSchema = z.string().datetime({ offset: true });
+export const DigestSchema = z.string().regex(DIGEST_RE)
+export const ShaSchema = z.string().regex(SHA_RE)
+export const TimestampSchema = z.string().datetime({ offset: true })
 
-export const MarketplaceDialectSchema = z.enum(['openai', 'cursor', 'claude']);
-export const TrustClassificationSchema = z.enum(['official']);
-export const SyncStatusSchema = z.enum(['synchronized', 'unchanged', 'failed']);
+export const MarketplaceDialectSchema = z.enum(['openai', 'cursor', 'claude'])
+export const TrustClassificationSchema = z.enum(['official'])
+export const SyncStatusSchema = z.enum(['synchronized', 'unchanged', 'failed'])
 
 export const CapabilityTypeSchema = z.enum([
   'skill',
@@ -24,7 +24,7 @@ export const CapabilityTypeSchema = z.enum([
   'ui-component',
   'executable',
   'unknown',
-]);
+])
 
 export const HarnessSchema = z.enum([
   'codex',
@@ -34,8 +34,8 @@ export const HarnessSchema = z.enum([
   'hermes',
   'opencode',
   'generic-skill-mcp',
-]);
-export type Harness = z.output<typeof HarnessSchema>;
+])
+export type Harness = z.output<typeof HarnessSchema>
 
 export const CompatibilityStatusSchema = z.enum([
   'native',
@@ -45,7 +45,7 @@ export const CompatibilityStatusSchema = z.enum([
   'unsupported',
   'blocked-by-policy',
   'unknown',
-]);
+])
 
 const JsonValueSchema: z.ZodType<unknown> = z.lazy(() =>
   z.union([
@@ -55,10 +55,10 @@ const JsonValueSchema: z.ZodType<unknown> = z.lazy(() =>
     z.null(),
     z.array(JsonValueSchema),
     z.record(z.string(), JsonValueSchema),
-  ]),
-);
+  ])
+)
 
-export const JsonObjectSchema = z.record(z.string(), JsonValueSchema);
+export const JsonObjectSchema = z.record(z.string(), JsonValueSchema)
 
 export const CatalogSourceSchema = z
   .object({
@@ -74,7 +74,7 @@ export const CatalogSourceSchema = z
     sourceManifestDigest: DigestSchema,
     synchronizationStatus: SyncStatusSchema,
   })
-  .strict();
+  .strict()
 
 export const CapabilitySchema = z
   .object({
@@ -84,7 +84,7 @@ export const CapabilitySchema = z
     metadata: JsonObjectSchema,
     securityImpact: z.enum(['none', 'review', 'sensitive']),
   })
-  .strict();
+  .strict()
 
 export const HarnessCompatibilitySchema = z
   .object({
@@ -92,7 +92,7 @@ export const HarnessCompatibilitySchema = z
     reasons: z.array(z.string().min(1).max(500)).max(64),
     responsibleCapabilities: z.array(CapabilityTypeSchema).max(32),
   })
-  .strict();
+  .strict()
 
 export const LicenseMetadataSchema = z
   .object({
@@ -101,7 +101,7 @@ export const LicenseMetadataSchema = z
     url: z.string().url().optional(),
     source: z.enum(['plugin-manifest', 'package-manifest', 'marketplace-entry', 'unknown']),
   })
-  .strict();
+  .strict()
 
 export const SecurityClassificationSchema = z
   .object({
@@ -110,7 +110,7 @@ export const SecurityClassificationSchema = z
     permissionSensitiveChanges: z.array(z.string().min(1).max(200)).max(64),
     contentResolution: z.enum(['complete', 'metadata-only']),
   })
-  .strict();
+  .strict()
 
 export const PluginProvenanceSchema = z
   .object({
@@ -122,7 +122,7 @@ export const PluginProvenanceSchema = z
     sourceManifestDigest: DigestSchema,
     upstreamEntryDigest: DigestSchema,
   })
-  .strict();
+  .strict()
 
 export const PluginReleaseSchema = z
   .object({
@@ -142,7 +142,7 @@ export const PluginReleaseSchema = z
     fileIndex: z.array(z.string().min(1).max(512)).max(4096),
     publicationTimestamp: TimestampSchema,
   })
-  .strict();
+  .strict()
 
 export const PluginSchema = z
   .object({
@@ -165,7 +165,7 @@ export const PluginSchema = z
     provenance: PluginProvenanceSchema,
     securityClassification: SecurityClassificationSchema,
   })
-  .strict();
+  .strict()
 
 export const CatalogSchema = z
   .object({
@@ -175,7 +175,7 @@ export const CatalogSchema = z
     sources: z.array(CatalogSourceSchema).min(1).max(64),
     plugins: z.array(PluginSchema).max(4096),
   })
-  .strict();
+  .strict()
 
 export const SourceLockEntrySchema = z
   .object({
@@ -197,11 +197,11 @@ export const SourceLockEntrySchema = z
             pluginSubdirectory: z.string().max(512),
             resolvedCommitSha: ShaSchema,
           })
-          .strict(),
+          .strict()
       )
       .max(4096),
   })
-  .strict();
+  .strict()
 
 export const SourcesLockSchema = z
   .object({
@@ -209,7 +209,7 @@ export const SourcesLockSchema = z
     lockId: z.string().regex(/^lock:[a-f0-9]{64}$/),
     sources: z.array(SourceLockEntrySchema).min(1).max(64),
   })
-  .strict();
+  .strict()
 
 export const MaterializationPlanSchema = z
   .object({
@@ -240,7 +240,7 @@ export const MaterializationPlanSchema = z
             action: z.enum(['copy', 'translate', 'ignore', 'unsupported']),
             reason: z.string().min(1).max(500),
           })
-          .strict(),
+          .strict()
       )
       .max(4096),
     configuration: JsonObjectSchema,
@@ -248,25 +248,25 @@ export const MaterializationPlanSchema = z
     requiredCredentials: z.array(z.string().min(1)).max(128),
     policyConstraints: z.array(z.string().min(1)).max(128),
   })
-  .strict();
+  .strict()
 
-export type CatalogSource = z.output<typeof CatalogSourceSchema>;
-export type Capability = z.output<typeof CapabilitySchema>;
-export type HarnessCompatibility = z.output<typeof HarnessCompatibilitySchema>;
-export type LicenseMetadata = z.output<typeof LicenseMetadataSchema>;
-export type SecurityClassification = z.output<typeof SecurityClassificationSchema>;
-export type PluginProvenance = z.output<typeof PluginProvenanceSchema>;
-export type PluginRelease = z.output<typeof PluginReleaseSchema>;
-export type Plugin = z.output<typeof PluginSchema>;
-export type Catalog = z.output<typeof CatalogSchema>;
-export type SourceLockEntry = z.output<typeof SourceLockEntrySchema>;
-export type SourcesLock = z.output<typeof SourcesLockSchema>;
-export type MaterializationPlan = z.output<typeof MaterializationPlanSchema>;
+export type CatalogSource = z.output<typeof CatalogSourceSchema>
+export type Capability = z.output<typeof CapabilitySchema>
+export type HarnessCompatibility = z.output<typeof HarnessCompatibilitySchema>
+export type LicenseMetadata = z.output<typeof LicenseMetadataSchema>
+export type SecurityClassification = z.output<typeof SecurityClassificationSchema>
+export type PluginProvenance = z.output<typeof PluginProvenanceSchema>
+export type PluginRelease = z.output<typeof PluginReleaseSchema>
+export type Plugin = z.output<typeof PluginSchema>
+export type Catalog = z.output<typeof CatalogSchema>
+export type SourceLockEntry = z.output<typeof SourceLockEntrySchema>
+export type SourcesLock = z.output<typeof SourcesLockSchema>
+export type MaterializationPlan = z.output<typeof MaterializationPlanSchema>
 
 export function parseCatalog(input: unknown): Catalog {
-  return CatalogSchema.parse(input);
+  return CatalogSchema.parse(input)
 }
 
 export function parseSourcesLock(input: unknown): SourcesLock {
-  return SourcesLockSchema.parse(input);
+  return SourcesLockSchema.parse(input)
 }
