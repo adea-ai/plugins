@@ -1,3 +1,4 @@
+import { spawn } from 'node:child_process'
 import { createHash } from 'node:crypto'
 import { promises as fs } from 'node:fs'
 import { basename, dirname, join, relative, resolve } from 'node:path'
@@ -18,7 +19,7 @@ import {
   HarnessSchema,
   SourcesLockSchema,
   PluginSchema,
-} from '../../catalog-schema/src/index.js'
+} from '@adea-ai/catalog-schema'
 import {
   canonicalRepositoryUrl,
   parseJsonDocument,
@@ -28,7 +29,7 @@ import {
   type ParsedMarketplace,
   type PluginSourceSpec,
   type SourceConfig,
-} from '../../source-adapters/src/index.js'
+} from '@adea-ai/source-adapters'
 
 export interface CatalogPolicy {
   readonly allowedRepositoryProtocols: readonly string[]
@@ -1327,14 +1328,26 @@ async function readFixtureManifest(
 }
 
 async function resolveGitRef(repositoryUrl: string, ref: string): Promise<string> {
-  const result = Bun.spawn(['git', 'ls-remote', canonicalRepositoryUrl(repositoryUrl), ref], {
-    stdout: 'pipe',
-    stderr: 'pipe',
+  const result = spawn('git', ['ls-remote', canonicalRepositoryUrl(repositoryUrl), ref], {
+    stdio: ['ignore', 'pipe', 'pipe'],
   })
   const [stdout, stderr, exitCode] = await Promise.all([
-    new Response(result.stdout).text(),
-    new Response(result.stderr).text(),
-    result.exited,
+    new Promise<string>((resolve, reject) => {
+      const chunks: Buffer[] = []
+      result.stdout?.on('data', (chunk: Buffer) => chunks.push(chunk))
+      result.stdout?.on('error', reject)
+      result.stdout?.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')))
+    }),
+    new Promise<string>((resolve) => {
+      const chunks: Buffer[] = []
+      result.stderr?.on('data', (chunk: Buffer) => chunks.push(chunk))
+      result.stderr?.on('error', () => resolve(''))
+      result.stderr?.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')))
+    }),
+    new Promise<number | null>((resolve, reject) => {
+      result.on('error', reject)
+      result.on('close', (code) => resolve(code ?? 1))
+    }),
   ])
   if (exitCode !== 0)
     throw new Error(`GIT_REF_LOOKUP_FAILED: ${repositoryUrl}:${ref}:${stderr.trim()}`)

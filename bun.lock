@@ -15,8 +15,42 @@
         "typescript": "^5.9.3",
       },
     },
+    "packages/catalog-core": {
+      "name": "@adea-ai/catalog-core",
+      "version": "1.1.3",
+      "dependencies": {
+        "@adea-ai/catalog-schema": "workspace:^",
+        "@adea-ai/source-adapters": "workspace:^",
+      },
+    },
+    "packages/catalog-schema": {
+      "name": "@adea-ai/catalog-schema",
+      "version": "1.1.3",
+      "dependencies": {
+        "zod": "^4.5.4",
+      },
+    },
+    "packages/harness-adapters": {
+      "name": "@adea-ai/harness-adapters",
+      "version": "1.1.3",
+      "dependencies": {
+        "@adea-ai/catalog-schema": "workspace:^",
+      },
+    },
+    "packages/source-adapters": {
+      "name": "@adea-ai/source-adapters",
+      "version": "1.1.3",
+    },
   },
   "packages": {
+    "@adea-ai/catalog-core": ["@adea-ai/catalog-core@workspace:packages/catalog-core"],
+
+    "@adea-ai/catalog-schema": ["@adea-ai/catalog-schema@workspace:packages/catalog-schema"],
+
+    "@adea-ai/harness-adapters": ["@adea-ai/harness-adapters@workspace:packages/harness-adapters"],
+
+    "@adea-ai/source-adapters": ["@adea-ai/source-adapters@workspace:packages/source-adapters"],
+
     "@oxfmt/binding-android-arm-eabi": ["@oxfmt/binding-android-arm-eabi@0.66.0", "", { "os": "android", "cpu": "arm" }, "sha512-2Me9eoptv6ERdEuI2P8AOlYdHHraXebJaM6SC0kc2Dfb+mLrep2db+fedBPKaYn673h/vBgvP4tkOdAbaudX6w=="],
 
     "@oxfmt/binding-android-arm64": ["@oxfmt/binding-android-arm64@0.66.0", "", { "os": "android", "cpu": "arm64" }, "sha512-u7O+bSSF0HGsDKkQQxBqvLGVepu93RA+JKu+ONqvfh4sCnCEbj31wZj4iG5gk3XfRwrmYj0/8catkO2LcblQKQ=="],

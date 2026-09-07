@@ -11,7 +11,15 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "types": ["bun", "node"],
-    "noEmit": true
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@adea-ai/catalog-schema": ["./packages/catalog-schema/src/index.ts"],
+      "@adea-ai/source-adapters": ["./packages/source-adapters/src/index.ts"],
+      "@adea-ai/harness-adapters": ["./packages/harness-adapters/src/index.ts"],
+      "@adea-ai/catalog-core": ["./packages/catalog-core/src/index.ts"],
+      "@adea-ai/catalog-core/publication": ["./packages/catalog-core/src/publication.ts"]
+    }
   },
   "include": ["packages/**/*.ts", "scripts/**/*.ts"],
   "exclude": ["node_modules", "dist"]

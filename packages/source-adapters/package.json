@@ -1,0 +1,47 @@
+{
+  "name": "@adea-ai/source-adapters",
+  "version": "1.1.3",
+  "description": "Deterministic source adapters for AI agent plugin marketplaces: manifest parsing, canonical repository URLs, and sha256-pinned content verification.",
+  "keywords": [
+    "adapters",
+    "agents",
+    "marketplace",
+    "plugins",
+    "provenance",
+    "verification"
+  ],
+  "homepage": "https://github.com/adea-ai/plugins#readme",
+  "bugs": "https://github.com/adea-ai/plugins/issues",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adea-ai/plugins.git",
+    "directory": "packages/source-adapters"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "bun": "./src/index.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "engines": {
+    "bun": ">=1.4.0 <2",
+    "node": ">=24 <25"
+  }
+}
