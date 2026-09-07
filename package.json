@@ -23,6 +23,7 @@
     "sync:fixtures": "bun run packages/cli/src/index.ts sync --offline --fixture-root fixtures",
     "sync:live": "bun run packages/cli/src/index.ts sync",
     "verify:integrity": "bun run packages/cli/src/index.ts verify-integrity",
+    "publish:packages": "bun scripts/publish-packages.mjs",
     "prepare": "husky 2>/dev/null || true"
   },
   "dependencies": {
