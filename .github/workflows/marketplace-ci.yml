@@ -51,10 +51,19 @@ jobs:
           trap restore_live EXIT
           # Offline fixture regen must byte-match the committed fixture snapshots.
           # Live snapshots in generated/ belong to the publish flow, not this check.
-          bun run catalog sync --offline --fixture-root fixtures --json > /dev/null
+          bun run catalog sync --offline --fixture-root fixtures --legacy-catalog --json > /dev/null
           diff -r generated fixtures/expected
           restore_live
           trap - EXIT
+      - name: Canonical package determinism
+        run: |
+          set -euo pipefail
+          temporary="$(mktemp -d)"
+          trap 'rm -rf "$temporary"' EXIT
+          bun run catalog sync --offline --fixture-root fixtures --output "$temporary/first" --json > /dev/null
+          bun run catalog sync --offline --fixture-root fixtures --output "$temporary/second" --json > /dev/null
+          bun run catalog validate --output "$temporary/first" --require-portable --json
+          diff -r "$temporary/first" "$temporary/second"
       - name: Dependency and secret scan boundary
         run: |
           if git grep -nE '(BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY|gh[pousr]_[A-Za-z0-9_]{20,}|sk-[A-Za-z0-9]{20,})' -- . ':!bun.lock'; then

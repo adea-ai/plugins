@@ -29,8 +29,8 @@ const SCHEMA_DIR = 'schemas'
 const PUBLISH_PACKAGES = [
   { dir: 'packages/catalog-schema', schemas: true },
   { dir: 'packages/source-adapters', schemas: false },
-  { dir: 'packages/harness-adapters', schemas: false },
   { dir: 'packages/catalog-core', schemas: false },
+  { dir: 'packages/harness-adapters', schemas: false },
 ]
 
 function sh(args, cwd, extraEnv) {
@@ -103,11 +103,12 @@ for (const { dir, schemas } of PUBLISH_PACKAGES) {
   if (manifest.private) {
     throw new Error(`[publish] refusing to publish ${name}: remove "private": true first`)
   }
+  // Build even an already-published dependency: dependents need its local declarations.
+  shOrThrow(['bunx', 'tsc', '-p', join(source, 'tsconfig.json')], repoRoot)
   if ((await publishedVersion(name)) === version) {
     console.log(`[publish] ${name}@${version} already published; skipping.`)
     continue
   }
-  shOrThrow(['bunx', 'tsc', '-p', join(source, 'tsconfig.json')], repoRoot)
   // Stage an isolated copy with workspace: ranges resolved to their locked
   // versions so the published tarball has no workspace: protocol leftovers.
   const stage = await mkdtemp(join(tmpdir(), 'plugins-publish-'))

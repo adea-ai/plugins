@@ -1,0 +1,695 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "planVersion": {
+      "type": "number",
+      "const": 2
+    },
+    "pluginId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "releaseId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "instanceId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "profile": {
+      "type": "object",
+      "properties": {
+        "profileVersion": {
+          "type": "number",
+          "const": 1
+        },
+        "harness": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "runtimeVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "adapterVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "agentPlugins": {
+          "type": "object",
+          "properties": {
+            "versions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "skills": {
+              "type": "boolean"
+            },
+            "mcpTransports": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["stdio", "streamable-http", "sse"]
+              }
+            }
+          },
+          "required": ["versions", "skills", "mcpTransports"],
+          "additionalProperties": false
+        },
+        "components": {
+          "type": "object",
+          "properties": {
+            "skillDirectories": {
+              "type": "boolean"
+            },
+            "mcpTransports": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["stdio", "streamable-http", "sse"]
+              }
+            }
+          },
+          "required": ["skillDirectories", "mcpTransports"],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "profileVersion",
+        "harness",
+        "runtimeVersion",
+        "adapterVersion",
+        "agentPlugins",
+        "components"
+      ],
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "repositoryUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "commitSha": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "pluginSubdirectory": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1024
+        },
+        "contentDigest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        }
+      },
+      "required": ["repositoryUrl", "commitSha", "pluginSubdirectory", "contentDigest"],
+      "additionalProperties": false
+    },
+    "package": {
+      "type": "object",
+      "properties": {
+        "contractVersion": {
+          "type": "number",
+          "const": 1
+        },
+        "normalizerVersion": {
+          "type": "string",
+          "const": "adea-agent-plugins/1"
+        },
+        "format": {
+          "type": "string",
+          "const": "agent-plugins"
+        },
+        "specVersion": {
+          "type": "string",
+          "const": "1.0.0"
+        },
+        "originFormat": {
+          "type": "string",
+          "enum": ["agent-plugins", "legacy"]
+        },
+        "sourceDigest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["portable", "partial", "unavailable"]
+        },
+        "manifest": {
+          "type": "object",
+          "properties": {
+            "$schema": {
+              "type": "string",
+              "const": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^(?!.*(?:--|\\.\\.))[a-z0-9](?:[a-z0-9.-]*[a-z0-9])?$"
+            },
+            "version": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "author": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "homepage": {
+              "type": "string"
+            },
+            "repository": {
+              "type": "string"
+            },
+            "license": {
+              "type": "string"
+            },
+            "keywords": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "extensions": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string"
+              },
+              "additionalProperties": {
+                "type": "object",
+                "propertyNames": {
+                  "type": "string"
+                },
+                "additionalProperties": {}
+              }
+            }
+          },
+          "required": ["$schema", "name"],
+          "additionalProperties": false
+        },
+        "packageDigest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "files": {
+          "maxItems": 8192,
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "action": {
+                    "type": "string",
+                    "const": "copy"
+                  },
+                  "sourcePath": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1024,
+                    "pattern": "^(?!.*(?:^|\\/)\\.{1,2}(?:\\/|$))[^\\\\:\\u0000-\\u001f\\u007f/]+(?:\\/[^\\\\:\\u0000-\\u001f\\u007f/]+)*$"
+                  },
+                  "targetPath": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1024,
+                    "pattern": "^(?!.*(?:^|\\/)\\.{1,2}(?:\\/|$))[^\\\\:\\u0000-\\u001f\\u007f/]+(?:\\/[^\\\\:\\u0000-\\u001f\\u007f/]+)*$"
+                  },
+                  "digest": {
+                    "type": "string",
+                    "pattern": "^sha256:[a-f0-9]{64}$"
+                  },
+                  "preserveMode": {
+                    "type": "boolean",
+                    "const": true
+                  }
+                },
+                "required": ["action", "sourcePath", "targetPath", "digest", "preserveMode"],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "action": {
+                    "type": "string",
+                    "const": "write"
+                  },
+                  "targetPath": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1024,
+                    "pattern": "^(?!.*(?:^|\\/)\\.{1,2}(?:\\/|$))[^\\\\:\\u0000-\\u001f\\u007f/]+(?:\\/[^\\\\:\\u0000-\\u001f\\u007f/]+)*$"
+                  },
+                  "digest": {
+                    "type": "string",
+                    "pattern": "^sha256:[a-f0-9]{64}$"
+                  },
+                  "content": {
+                    "type": "string"
+                  },
+                  "mode": {
+                    "type": "string",
+                    "const": "0644"
+                  }
+                },
+                "required": ["action", "targetPath", "digest", "content", "mode"],
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "skills": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "path": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024,
+                "pattern": "^(?!.*(?:^|\\/)\\.{1,2}(?:\\/|$))[^\\\\:\\u0000-\\u001f\\u007f/]+(?:\\/[^\\\\:\\u0000-\\u001f\\u007f/]+)*$"
+              },
+              "description": {
+                "type": "string"
+              },
+              "compatibility": {
+                "type": "string"
+              },
+              "allowedTools": {
+                "type": "string"
+              }
+            },
+            "required": ["name", "path", "description"],
+            "additionalProperties": false
+          }
+        },
+        "mcpServers": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "const": "stdio"
+                  },
+                  "command": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "args": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "env": {
+                    "type": "object",
+                    "propertyNames": {
+                      "type": "string"
+                    },
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  },
+                  "cwd": {
+                    "type": "string"
+                  }
+                },
+                "required": ["type", "command"],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "const": "streamable-http"
+                  },
+                  "url": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "headers": {
+                    "type": "object",
+                    "propertyNames": {
+                      "type": "string"
+                    },
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": ["type", "url"],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "const": "sse"
+                  },
+                  "url": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "headers": {
+                    "type": "object",
+                    "propertyNames": {
+                      "type": "string"
+                    },
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": ["type", "url"],
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "nonPortable": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "type": "string"
+              },
+              "paths": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 1024,
+                  "pattern": "^(?!.*(?:^|\\/)\\.{1,2}(?:\\/|$))[^\\\\:\\u0000-\\u001f\\u007f/]+(?:\\/[^\\\\:\\u0000-\\u001f\\u007f/]+)*$"
+                }
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": ["kind", "paths", "reason"],
+            "additionalProperties": false
+          }
+        },
+        "diagnostics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string",
+                "minLength": 1
+              },
+              "scope": {
+                "type": "string",
+                "enum": ["plugin", "skills", "skill", "mcp", "server", "extension", "translation"]
+              },
+              "path": {
+                "type": "string"
+              },
+              "severity": {
+                "type": "string",
+                "enum": ["warning", "error"]
+              },
+              "message": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": ["code", "scope", "path", "severity", "message"],
+            "additionalProperties": false
+          }
+        },
+        "requirements": {
+          "type": "object",
+          "properties": {
+            "skills": {
+              "type": "boolean"
+            },
+            "mcpTransports": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["stdio", "streamable-http", "sse"]
+              }
+            },
+            "executables": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "environmentReview": {
+              "type": "boolean"
+            }
+          },
+          "required": ["skills", "mcpTransports", "executables", "environmentReview"],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "contractVersion",
+        "normalizerVersion",
+        "format",
+        "specVersion",
+        "originFormat",
+        "sourceDigest",
+        "status",
+        "files",
+        "skills",
+        "mcpServers",
+        "nonPortable",
+        "diagnostics",
+        "requirements"
+      ],
+      "additionalProperties": false
+    },
+    "packageKey": {
+      "type": "string"
+    },
+    "dataKey": {
+      "type": "string"
+    },
+    "preserveDataAcrossUpdates": {
+      "type": "boolean",
+      "const": true
+    },
+    "strategy": {
+      "type": "string",
+      "enum": ["native-agent-plugin", "component-adapter", "unavailable"]
+    },
+    "compatibility": {
+      "type": "string",
+      "enum": ["full", "partial", "unsupported"]
+    },
+    "allowedToActivate": {
+      "type": "boolean",
+      "const": false
+    },
+    "approvalRequired": {
+      "type": "boolean",
+      "const": true
+    },
+    "selection": {
+      "type": "object",
+      "properties": {
+        "skillDirectories": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1024,
+            "pattern": "^(?!.*(?:^|\\/)\\.{1,2}(?:\\/|$))[^\\\\:\\u0000-\\u001f\\u007f/]+(?:\\/[^\\\\:\\u0000-\\u001f\\u007f/]+)*$"
+          }
+        },
+        "mcpServers": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "const": "stdio"
+                  },
+                  "command": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "args": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "env": {
+                    "type": "object",
+                    "propertyNames": {
+                      "type": "string"
+                    },
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  },
+                  "cwd": {
+                    "type": "string"
+                  }
+                },
+                "required": ["type", "command"],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "const": "streamable-http"
+                  },
+                  "url": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "headers": {
+                    "type": "object",
+                    "propertyNames": {
+                      "type": "string"
+                    },
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": ["type", "url"],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "const": "sse"
+                  },
+                  "url": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "headers": {
+                    "type": "object",
+                    "propertyNames": {
+                      "type": "string"
+                    },
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": ["type", "url"],
+                "additionalProperties": false
+              }
+            ]
+          }
+        }
+      },
+      "required": ["skillDirectories", "mcpServers"],
+      "additionalProperties": false
+    },
+    "disabled": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "component": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": ["component", "reason"],
+        "additionalProperties": false
+      }
+    },
+    "requiredConnectors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requiredCredentials": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "preconditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "planVersion",
+    "pluginId",
+    "releaseId",
+    "instanceId",
+    "profile",
+    "source",
+    "package",
+    "packageKey",
+    "dataKey",
+    "preserveDataAcrossUpdates",
+    "strategy",
+    "compatibility",
+    "allowedToActivate",
+    "approvalRequired",
+    "selection",
+    "disabled",
+    "requiredConnectors",
+    "requiredCredentials",
+    "preconditions"
+  ],
+  "additionalProperties": false,
+  "$id": "https://adea.dev/schemas/plugins/installation-plan.v2.json"
+}

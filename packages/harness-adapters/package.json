@@ -32,6 +32,11 @@
       "types": "./dist/index.d.ts",
       "bun": "./src/index.ts",
       "import": "./dist/index.js"
+    },
+    "./agent-plugins": {
+      "types": "./dist/agent-plugins.d.ts",
+      "bun": "./src/agent-plugins.ts",
+      "import": "./dist/agent-plugins.js"
     }
   },
   "publishConfig": {
@@ -43,6 +48,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
+    "@adea-ai/catalog-core": "workspace:^",
     "@adea-ai/catalog-schema": "workspace:^"
   },
   "engines": {

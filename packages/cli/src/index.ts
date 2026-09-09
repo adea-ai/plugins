@@ -2,6 +2,13 @@ import { promises as fs } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { createMaterializationPlan } from '../../harness-adapters/src/index.js'
+import { createCatalogInstallationPlan } from '../../harness-adapters/src/agent-plugins.js'
+import { parsePluginJson } from '../../catalog-core/src/agent-plugins.js'
+import {
+  synchronizePortable,
+  verifyPortableCatalog,
+} from '../../catalog-core/src/portable-catalog.js'
+import { HarnessProfileSchema } from '../../catalog-schema/src/agent-plugins.js'
 import {
   digest,
   synchronize,
@@ -22,12 +29,16 @@ import {
 import type { SourceConfig } from '../../source-adapters/src/index.js'
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..')
-const generatedDirectory = join(repositoryRoot, 'generated')
-const configDirectory = join(repositoryRoot, 'config')
 
-export async function main(argv = process.argv.slice(2)): Promise<number> {
-  const { command, positionals, flags } = parseArgs(argv)
+export async function main(
+  argv = process.argv.slice(2),
+  options: { repositoryRoot?: string } = {}
+): Promise<number> {
+  let asJson = argv.some((value) => value === '--json' || value === '--json=true')
   try {
+    const { command, positionals, flags } = parseArgs(argv)
+    asJson = flags.json
+    flags.root = options.repositoryRoot ? resolve(options.repositoryRoot) : repositoryRoot
     switch (command) {
       case 'sync':
         return await syncCommand(flags)
@@ -36,9 +47,9 @@ export async function main(argv = process.argv.slice(2)): Promise<number> {
       case 'validate':
         return await validateCommand(flags)
       case 'verify-integrity':
-        return await verifyIntegrityCommand()
+        return await verifyIntegrityCommand(flags)
       case 'inspect':
-        return await inspectCommand(positionals[0])
+        return await inspectCommand(positionals[0], flags)
       case 'diff':
         return await diffCommand(positionals[0], positionals[1], flags)
       case 'materialize-plan':
@@ -52,35 +63,39 @@ export async function main(argv = process.argv.slice(2)): Promise<number> {
     }
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error)
-    if (flags.json) console.log(JSON.stringify({ ok: false, error: message }))
+    if (asJson) console.log(JSON.stringify({ ok: false, error: message }))
     else console.error(message)
     return 1
   }
 }
 
 async function syncCommand(flags: Flags): Promise<number> {
-  const config = await loadConfiguration()
-  const existingLock = await readOptionalLock(flags.lockPath)
-  const existingCatalog = existingLock ? await readOptionalCatalog() : undefined
+  const config = await loadConfiguration(flags.root)
+  const directory = outputDirectory(flags)
+  const existingLock = await readOptionalLock(flags.lockPath, directory)
+  const existingCatalog = existingLock ? await readOptionalCatalog(directory) : undefined
   const fromLock = flags.fromLock ? await readRequiredLock(flags.fromLock) : undefined
-  const result = await synchronize({
+  const compiler = flags.legacyCatalog ? synchronize : synchronizePortable
+  const result = await compiler({
     sources: config.sources,
     categoryMap: config.categoryMap,
     productAliases: config.productAliases,
     policy: config.policy,
     mode: flags.offline ? 'offline' : 'live',
     fixtureRoot: flags.fixtureRoot
-      ? resolve(repositoryRoot, flags.fixtureRoot)
-      : resolve(repositoryRoot, 'fixtures'),
+      ? resolve(flags.root, flags.fixtureRoot)
+      : resolve(flags.root, 'fixtures'),
     ...(flags.source ? { sourceId: flags.source } : {}),
     metadataOnly: flags.metadataOnly || flags.dryRun,
     dryRun: flags.dryRun,
     ...(existingLock ? { existingLock } : {}),
     ...(existingCatalog ? { existingCatalog } : {}),
+    ...(flags.legacyCatalog ? { forceRebuild: true } : {}),
     ...(fromLock ? { fromLock } : {}),
   })
-  if (result.changed && result.artifacts && (flags.write || !flags.dryRun)) {
-    await writeArtifacts(generatedDirectory, result.artifacts)
+  // Metadata-only and dry-run are always non-writing, including with --write.
+  if (result.changed && result.artifacts && !flags.dryRun && !flags.metadataOnly) {
+    await writeArtifacts(directory, result.artifacts)
   }
   const output = {
     ok: true,
@@ -101,10 +116,11 @@ async function syncCommand(flags: Flags): Promise<number> {
 }
 
 async function validateCommand(flags: Flags): Promise<number> {
-  const artifacts = await readArtifacts()
+  const artifacts = await readArtifacts(outputDirectory(flags))
   const catalog = parseCatalog(JSON.parse(artifacts['catalog.v1.json']))
   parseSourcesLock(JSON.parse(artifacts['sources.lock.json']))
   verifyArtifacts(artifacts)
+  verifyPortableCatalog(catalog, flags.requirePortable)
   if (flags.schemaOnly) {
     print({ ok: true, schema: 'catalog.v1, sources-lock.v1, generated-integrity' }, flags.json)
     return 0
@@ -128,18 +144,22 @@ async function validateCommand(flags: Flags): Promise<number> {
   return 0
 }
 
-async function verifyIntegrityCommand(): Promise<number> {
-  const artifacts = await readArtifacts()
+async function verifyIntegrityCommand(flags: Flags): Promise<number> {
+  const artifacts = await readArtifacts(outputDirectory(flags))
   verifyArtifacts(artifacts)
+  verifyPortableCatalog(
+    parseCatalog(JSON.parse(artifacts['catalog.v1.json'])),
+    flags.requirePortable
+  )
   console.log(
     JSON.stringify({ ok: true, catalogDigest: digest(artifacts['catalog.v1.json']) }, null, 2)
   )
   return 0
 }
 
-async function inspectCommand(pluginId: string | undefined): Promise<number> {
+async function inspectCommand(pluginId: string | undefined, flags: Flags): Promise<number> {
   if (!pluginId) throw new Error('PLUGIN_ID_REQUIRED')
-  const catalog = await readCatalog()
+  const catalog = await readCatalog(outputDirectory(flags))
   const plugin = catalog.plugins.find((candidate) => candidate.pluginId === pluginId)
   if (!plugin) throw new Error(`PLUGIN_NOT_FOUND: ${pluginId}`)
   console.log(JSON.stringify(plugin, null, 2))
@@ -169,26 +189,48 @@ async function diffCommand(
 
 async function materializeCommand(flags: Flags): Promise<number> {
   const pluginId = flags.plugin
-  const harness = flags.harness
-  if (!pluginId || !harness) throw new Error('MATERIALIZE_REQUIRES_PLUGIN_AND_HARNESS')
-  const parsedHarness = HarnessSchema.parse(harness)
-  const catalog = await readCatalog()
-  const plan = createMaterializationPlan({
+  if (!pluginId) throw new Error('MATERIALIZE_REQUIRES_PLUGIN')
+  const catalog = await readCatalog(outputDirectory(flags))
+  if (flags.legacyPlan) {
+    if (!flags.harness) throw new Error('LEGACY_PLAN_REQUIRES_HARNESS')
+    const plan = createMaterializationPlan({
+      catalog,
+      pluginId,
+      harness: HarnessSchema.parse(flags.harness),
+      ...(flags.version ? { releaseId: flags.version } : {}),
+    })
+    print(plan, flags.json)
+    return 0
+  }
+  if (!flags.capabilities || !flags.instance) {
+    throw new Error(
+      'PLAN_V2_REQUIRES_CAPABILITIES_AND_INSTANCE: provide the actual Control Plane adapter profile and a stable installation scope'
+    )
+  }
+  const profile = HarnessProfileSchema.parse(
+    parsePluginJson(await fs.readFile(resolve(flags.capabilities), 'utf8'))
+  )
+  if (flags.harness && flags.harness !== profile.harness)
+    throw new Error('HARNESS_PROFILE_MISMATCH')
+  const plan = createCatalogInstallationPlan({
     catalog,
     pluginId,
-    harness: parsedHarness,
     ...(flags.version ? { releaseId: flags.version } : {}),
+    instanceId: flags.instance,
+    profile,
+    allowPartial: flags.allowPartial,
   })
   print(plan, flags.json)
   return 0
 }
 
-async function loadConfiguration(): Promise<{
+async function loadConfiguration(root: string): Promise<{
   sources: SourceConfig[]
   categoryMap: CategoryMap
   productAliases: ProductAliases
   policy: CatalogPolicy
 }> {
+  const configDirectory = join(root, 'config')
   const [sources, categoryMap, productAliases, policy] = await Promise.all([
     readJson<{ sources: SourceConfig[] }>(join(configDirectory, 'sources.json')),
     readJson<CategoryMap>(join(configDirectory, 'category-map.json')),
@@ -198,34 +240,36 @@ async function loadConfiguration(): Promise<{
   return { sources: sources.sources, categoryMap, productAliases, policy }
 }
 
-async function readCatalog(): Promise<Catalog> {
-  const artifacts = await readArtifacts()
-  return parseCatalog(JSON.parse(artifacts['catalog.v1.json']))
+async function readCatalog(directory: string): Promise<Catalog> {
+  const artifacts = await readArtifacts(directory)
+  verifyArtifacts(artifacts)
+  const catalog = parseCatalog(JSON.parse(artifacts['catalog.v1.json']))
+  verifyPortableCatalog(catalog)
+  return catalog
 }
 
-async function readOptionalCatalog(): Promise<Catalog | undefined> {
+async function readOptionalCatalog(directory: string): Promise<Catalog | undefined> {
   try {
-    return await readCatalog()
+    return await readCatalog(directory)
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === 'ENOENT') return undefined
-    return undefined
+    throw error
   }
 }
 
-async function readOptionalLock(path: string | undefined): Promise<SourcesLock | undefined> {
+async function readOptionalLock(
+  path: string | undefined,
+  directory: string
+): Promise<SourcesLock | undefined> {
   try {
     return parseSourcesLock(
       JSON.parse(
-        await fs.readFile(
-          path ? resolve(path) : join(generatedDirectory, 'sources.lock.json'),
-          'utf8'
-        )
+        await fs.readFile(path ? resolve(path) : join(directory, 'sources.lock.json'), 'utf8')
       )
     )
   } catch (error) {
-    if ((error as NodeJS.ErrnoException).code === 'ENOENT') return undefined
-    if (path) throw error
-    return undefined
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT' && !path) return undefined
+    throw error
   }
 }
 
@@ -233,7 +277,7 @@ async function readRequiredLock(path: string): Promise<SourcesLock> {
   return parseSourcesLock(JSON.parse(await fs.readFile(resolve(path), 'utf8')))
 }
 
-async function readArtifacts(): Promise<GeneratedArtifacts> {
+async function readArtifacts(directory: string): Promise<GeneratedArtifacts> {
   const names = [
     'catalog.v1.json',
     'catalog-summary.v1.json',
@@ -243,9 +287,7 @@ async function readArtifacts(): Promise<GeneratedArtifacts> {
     'integrity.json',
   ] as const
   const values = await Promise.all(
-    names.map(
-      async (name) => [name, await fs.readFile(join(generatedDirectory, name), 'utf8')] as const
-    )
+    names.map(async (name) => [name, await fs.readFile(join(directory, name), 'utf8')] as const)
   )
   return Object.fromEntries(values) as unknown as GeneratedArtifacts
 }
@@ -258,7 +300,19 @@ function print(value: unknown, asJson: boolean): void {
   console.log(asJson ? JSON.stringify(value) : JSON.stringify(value, null, 2))
 }
 
+function outputDirectory(flags: Flags): string {
+  return flags.output ? resolve(flags.output) : join(flags.root, 'generated')
+}
+
 interface Flags {
+  root: string
+  legacyCatalog: boolean
+  legacyPlan: boolean
+  allowPartial: boolean
+  requirePortable: boolean
+  capabilities: string | undefined
+  instance: string | undefined
+  output: string | undefined
   json: boolean
   offline: boolean
   dryRun: boolean
@@ -280,6 +334,14 @@ function parseArgs(argv: readonly string[]): {
   flags: Flags
 } {
   const flags: Flags = {
+    root: repositoryRoot,
+    legacyCatalog: false,
+    legacyPlan: false,
+    allowPartial: false,
+    requirePortable: false,
+    capabilities: undefined,
+    instance: undefined,
+    output: undefined,
     json: false,
     offline: false,
     dryRun: false,
@@ -307,31 +369,64 @@ function parseArgs(argv: readonly string[]): {
       positionals.push(value)
       continue
     }
-    const [key, inlineValue] = value.split('=', 2)
+    const equals = value.indexOf('=')
+    const key = equals < 0 ? value : value.slice(0, equals)
+    const inlineValue = equals < 0 ? undefined : value.slice(equals + 1)
     const next = inlineValue ?? argv[index + 1]
     const takeValue = () => {
-      if (inlineValue !== undefined) return inlineValue
-      index += 1
+      if (
+        next === undefined ||
+        next.length === 0 ||
+        (inlineValue === undefined && next.startsWith('--'))
+      )
+        throw new Error(`FLAG_VALUE_REQUIRED: ${key}`)
+      if (inlineValue === undefined) index += 1
       return next
     }
+    const takeBoolean = (): boolean => {
+      if (inlineValue === undefined || inlineValue === 'true') return true
+      if (inlineValue === 'false') return false
+      throw new Error(`BOOLEAN_FLAG_INVALID: ${key}`)
+    }
     switch (key) {
+      case '--legacy-catalog':
+        flags.legacyCatalog = takeBoolean()
+        break
+      case '--legacy-plan':
+        flags.legacyPlan = takeBoolean()
+        break
+      case '--allow-partial':
+        flags.allowPartial = takeBoolean()
+        break
+      case '--require-portable':
+        flags.requirePortable = takeBoolean()
+        break
+      case '--capabilities':
+        flags.capabilities = takeValue()
+        break
+      case '--instance':
+        flags.instance = takeValue()
+        break
+      case '--output':
+        flags.output = takeValue()
+        break
       case '--json':
-        flags.json = true
+        flags.json = takeBoolean()
         break
       case '--offline':
-        flags.offline = true
+        flags.offline = takeBoolean()
         break
       case '--dry-run':
-        flags.dryRun = true
+        flags.dryRun = takeBoolean()
         break
       case '--metadata-only':
-        flags.metadataOnly = true
+        flags.metadataOnly = takeBoolean()
         break
       case '--write':
-        flags.write = true
+        flags.write = takeBoolean()
         break
       case '--schema-only':
-        flags.schemaOnly = true
+        flags.schemaOnly = takeBoolean()
         break
       case '--source': {
         const option = takeValue()
@@ -383,14 +478,20 @@ function helpText(): string {
 
 Commands:
   sync [--offline --fixture-root fixtures] [--dry-run] [--source ID] [--from-lock PATH]
-  validate [--schema-only]
+       [--output DIR] [--legacy-catalog]
+  validate [--schema-only] [--require-portable] [--output DIR]
   inspect <plugin-id>
   diff <old-lock> <new-lock>
-  materialize-plan --plugin ID --harness codex [--version RELEASE_ID]
+  materialize-plan --plugin ID --capabilities PROFILE.json --instance SCOPE
+                   [--harness ID] [--version RELEASE_ID] [--allow-partial] [--output DIR]
+  materialize-plan --legacy-plan --plugin ID --harness ID [--version RELEASE_ID]
   build-catalog [--offline] [--write]
   verify-integrity
 
-All commands support --json. Synchronization never executes upstream content.`
+All commands support --json. Synchronization never executes upstream content.
+Agent Plugins normalization and plan v2 are the defaults. Plans are not execution grants.
+Dry-run and metadata-only never publish artifacts, even with --write.
+Use --legacy-catalog only for v1 fixture compatibility or explicit rollback.`
 }
 
 if (import.meta.main) process.exitCode = await main()
