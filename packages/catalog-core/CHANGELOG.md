@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/adea-ai/plugins/compare/catalog-core-v1.2.0...catalog-core-v1.3.0) (2026-09-09)
+
+
+### Features
+
+* add portable agent plugin planning ([#42](https://github.com/adea-ai/plugins/issues/42)) ([996300e](https://github.com/adea-ai/plugins/commit/996300e57a0b0123400a1c82cb3374e15d383caa))
+
 ## [1.2.0](https://github.com/adea-ai/plugins/compare/catalog-core-v1.1.4...catalog-core-v1.2.0) (2026-09-08)
 
 
