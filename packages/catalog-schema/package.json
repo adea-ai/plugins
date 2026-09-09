@@ -35,7 +35,12 @@
       "bun": "./src/index.ts",
       "import": "./dist/index.js"
     },
-    "./schema/*": "./schemas/*"
+    "./schema/*": "./schemas/*",
+    "./agent-plugins": {
+      "types": "./dist/agent-plugins.d.ts",
+      "bun": "./src/agent-plugins.ts",
+      "import": "./dist/agent-plugins.js"
+    }
   },
   "publishConfig": {
     "access": "public",

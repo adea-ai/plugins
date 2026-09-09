@@ -37,6 +37,16 @@
       "types": "./dist/publication.d.ts",
       "bun": "./src/publication.ts",
       "import": "./dist/publication.js"
+    },
+    "./agent-plugins": {
+      "types": "./dist/agent-plugins.d.ts",
+      "bun": "./src/agent-plugins.ts",
+      "import": "./dist/agent-plugins.js"
+    },
+    "./portable-catalog": {
+      "types": "./dist/portable-catalog.d.ts",
+      "bun": "./src/portable-catalog.ts",
+      "import": "./dist/portable-catalog.js"
     }
   },
   "publishConfig": {
@@ -49,7 +59,8 @@
   },
   "dependencies": {
     "@adea-ai/catalog-schema": "workspace:^",
-    "@adea-ai/source-adapters": "workspace:^"
+    "@adea-ai/source-adapters": "workspace:^",
+    "yaml": "2.9.0"
   },
   "engines": {
     "bun": ">=1.4.0 <2",

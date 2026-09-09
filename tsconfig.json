@@ -18,7 +18,13 @@
       "@adea-ai/source-adapters": ["./packages/source-adapters/src/index.ts"],
       "@adea-ai/harness-adapters": ["./packages/harness-adapters/src/index.ts"],
       "@adea-ai/catalog-core": ["./packages/catalog-core/src/index.ts"],
-      "@adea-ai/catalog-core/publication": ["./packages/catalog-core/src/publication.ts"]
+      "@adea-ai/catalog-core/publication": ["./packages/catalog-core/src/publication.ts"],
+      "@adea-ai/catalog-schema/agent-plugins": ["./packages/catalog-schema/src/agent-plugins.ts"],
+      "@adea-ai/catalog-core/agent-plugins": ["./packages/catalog-core/src/agent-plugins.ts"],
+      "@adea-ai/catalog-core/portable-catalog": ["./packages/catalog-core/src/portable-catalog.ts"],
+      "@adea-ai/harness-adapters/agent-plugins": [
+        "./packages/harness-adapters/src/agent-plugins.ts"
+      ]
     }
   },
   "include": ["packages/**/*.ts", "scripts/**/*.ts"],

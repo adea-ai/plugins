@@ -22,12 +22,13 @@
     "materialize-plan": "bun run catalog materialize-plan",
     "build-catalog": "bun run catalog build-catalog",
     "verify:published": "bun run scripts/verify-published-artifacts.ts",
-    "schema:check": "bun run packages/cli/src/index.ts validate --schema-only",
+    "schema:check": "bun run schema:plugins && bun run packages/cli/src/index.ts validate --schema-only",
     "sync:fixtures": "bun run packages/cli/src/index.ts sync --offline --fixture-root fixtures",
     "sync:live": "bun run packages/cli/src/index.ts sync",
     "verify:integrity": "bun run packages/cli/src/index.ts verify-integrity",
     "publish:packages": "bun scripts/publish-packages.mjs",
-    "prepare": "husky 2>/dev/null || true"
+    "prepare": "husky 2>/dev/null || true",
+    "schema:plugins": "bun run scripts/agent-plugin-schemas.ts --check"
   },
   "dependencies": {
     "zod": "4.5.4"

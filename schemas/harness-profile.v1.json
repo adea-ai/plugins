@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "profileVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "harness": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "runtimeVersion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "adapterVersion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "agentPlugins": {
+      "type": "object",
+      "properties": {
+        "versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "skills": {
+          "type": "boolean"
+        },
+        "mcpTransports": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["stdio", "streamable-http", "sse"]
+          }
+        }
+      },
+      "required": ["versions", "skills", "mcpTransports"],
+      "additionalProperties": false
+    },
+    "components": {
+      "type": "object",
+      "properties": {
+        "skillDirectories": {
+          "type": "boolean"
+        },
+        "mcpTransports": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["stdio", "streamable-http", "sse"]
+          }
+        }
+      },
+      "required": ["skillDirectories", "mcpTransports"],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "profileVersion",
+    "harness",
+    "runtimeVersion",
+    "adapterVersion",
+    "agentPlugins",
+    "components"
+  ],
+  "additionalProperties": false,
+  "$id": "https://adea.dev/schemas/plugins/harness-profile.v1.json"
+}

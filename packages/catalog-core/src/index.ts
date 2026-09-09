@@ -57,6 +57,13 @@ export interface Snapshot {
   readonly symlinks: readonly string[]
 }
 
+/** Trusted compiler extension; never loaded from upstream plugin content. */
+export type ReleaseTransform = (
+  release: PluginRelease,
+  snapshot: Snapshot,
+  pluginName: string
+) => PluginRelease
+
 export interface SnapshotLoader {
   load(repositoryUrl: string, commitSha: string, pluginSubdirectory: string): Promise<Snapshot>
 }
@@ -93,6 +100,9 @@ export interface SyncInput {
   readonly fromLock?: SourcesLock
   readonly snapshotLoader?: SnapshotLoader
   readonly resolveExternalRefs?: boolean
+  /** Rebuild even when source pins are unchanged (used for explicit format migrations). */
+  readonly forceRebuild?: boolean
+  readonly transformRelease?: ReleaseTransform
 }
 
 export interface SyncResult {
@@ -232,6 +242,7 @@ export async function synchronize(input: SyncInput): Promise<SyncResult> {
   }))
   const unchanged =
     input.fromLock === undefined &&
+    input.forceRebuild !== true &&
     input.existingLock !== undefined &&
     resolved.length === input.existingLock.sources.length &&
     resolved.every((source) => {
@@ -275,6 +286,7 @@ export async function synchronize(input: SyncInput): Promise<SyncResult> {
         ? new FixtureSnapshotLoader(input.fixtureRoot ?? 'fixtures', configs)
         : new NetworkSnapshotLoader(input.policy)),
     resolveExternalRefs: mode === 'live',
+    ...(input.transformRelease ? { transformRelease: input.transformRelease } : {}),
   })
   const catalog = buildResult.catalog
   const lock = createSourcesLock(resolved)
@@ -309,6 +321,7 @@ export async function buildCatalog(input: {
   readonly metadataOnly?: boolean
   readonly snapshotLoader: SnapshotLoader
   readonly resolveExternalRefs?: boolean
+  readonly transformRelease?: ReleaseTransform
 }): Promise<Catalog> {
   return (await buildCatalogInternal(input)).catalog
 }
@@ -321,6 +334,7 @@ interface BuildCatalogInput {
   readonly metadataOnly?: boolean
   readonly snapshotLoader: SnapshotLoader
   readonly resolveExternalRefs?: boolean
+  readonly transformRelease?: ReleaseTransform
 }
 
 interface BuildCatalogResult {
@@ -367,6 +381,7 @@ async function buildCatalogInternal(input: BuildCatalogInput): Promise<BuildCata
           metadataOnly: input.metadataOnly ?? false,
           snapshotLoader: input.snapshotLoader,
           resolveExternalRefs: input.resolveExternalRefs ?? true,
+          ...(input.transformRelease ? { transformRelease: input.transformRelease } : {}),
         })
         try {
           return { plugin: PluginSchema.parse(plugin) }
@@ -507,6 +522,7 @@ async function normalizePlugin(input: {
   readonly metadataOnly: boolean
   readonly snapshotLoader: SnapshotLoader
   readonly resolveExternalRefs: boolean
+  readonly transformRelease?: ReleaseTransform
 }): Promise<Plugin> {
   const { source, entry, policy } = input
   const resolved = await resolvePluginSource(
@@ -533,7 +549,7 @@ async function normalizePlugin(input: {
         entryDigest: entry.entryDigest,
       })
     : bytesDigest(snapshot.files)
-  const pluginManifest = findPluginManifest(snapshot)
+  const pluginManifest = findPluginManifest(snapshot, input.transformRelease !== undefined)
   const manifestDigest = pluginManifest ? digest(pluginManifest.metadata) : entry.entryDigest
   const capabilities = classifyCapabilities(snapshot.files, pluginManifest?.metadata)
   const releaseId = stableReleaseId(
@@ -542,7 +558,7 @@ async function normalizePlugin(input: {
     resolved.commitSha,
     contentDigest
   )
-  const release = createRelease({
+  const originalRelease = createRelease({
     source,
     entry,
     resolved,
@@ -554,6 +570,10 @@ async function normalizePlugin(input: {
     releaseId,
     metadataOnly: input.metadataOnly,
   })
+  const release =
+    input.transformRelease && !input.metadataOnly
+      ? input.transformRelease(originalRelease, snapshot, entry.name)
+      : originalRelease
   const compatibility = createCompatibility(source.config.marketplaceDialect, capabilities, policy)
   const security = createSecurity(capabilities, policy, input.metadataOnly)
   const normalizedCategories = entry.categories.map((category) =>
@@ -732,14 +752,14 @@ interface PluginManifest {
   readonly icons: string[]
 }
 
-function findPluginManifest(snapshot: Snapshot): PluginManifest | undefined {
+function findPluginManifest(snapshot: Snapshot, preferRoot = false): PluginManifest | undefined {
   const candidates = [...snapshot.files.keys()]
     .filter((path) => {
       const lower = path.toLocaleLowerCase()
       return lower === 'plugin.json' || lower.endsWith('/plugin.json') || lower === 'package.json'
     })
     .sort((left, right) => manifestRank(left) - manifestRank(right) || left.localeCompare(right))
-  const path = candidates[0]
+  const path = preferRoot && snapshot.files.has('plugin.json') ? 'plugin.json' : candidates[0]
   if (!path) return undefined
   try {
     const bytes = snapshot.files.get(path)
