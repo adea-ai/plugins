@@ -105,6 +105,61 @@ const policy: CatalogPolicy = {
   ],
 }
 
+function stubFetch(handler: (url: string) => Response | Promise<Response>) {
+  const original = globalThis.fetch
+  const calls: string[] = []
+  globalThis.fetch = (async (input: unknown) => {
+    const url = String(input)
+    calls.push(url)
+    return handler(url)
+  }) as typeof fetch
+  return {
+    calls,
+    restore: () => {
+      globalThis.fetch = original
+    },
+  }
+}
+
+const jsonResponse = (body: unknown, status = 200, headers: Record<string, string> = {}) =>
+  new Response(JSON.stringify(body), {
+    status,
+    headers: { 'content-type': 'application/json', ...headers },
+  })
+
+const treePayload = (paths: string[]) => ({
+  tree: paths.map((path) => ({
+    path,
+    type: 'blob',
+    sha: 'b'.repeat(40),
+    size: 64,
+    mode: '100644',
+  })),
+})
+
+function testEntry(name: string, subdir: string) {
+  return {
+    name,
+    description: `${name} plugin`,
+    categories: ['productivity'] as readonly string[],
+    keywords: [] as readonly string[],
+    authors: ['Acme'],
+    icons: [] as readonly string[],
+    source: { kind: 'local', path: subdir } as const,
+    policy: {},
+    raw: {},
+    entryDigest: `sha256:${'e'.repeat(64)}`,
+  }
+}
+
+function walkFixtureFiles(dir: string, base = ''): string[] {
+  return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    const full = join(dir, entry.name)
+    const rel = base === '' ? entry.name : `${base}/${entry.name}`
+    return entry.isDirectory() ? walkFixtureFiles(full, rel) : [rel]
+  })
+}
+
 describe('source adapters', () => {
   test('accepts all supported marketplace dialects and local source forms', async () => {
     for (const source of sources) {
@@ -266,6 +321,29 @@ describe('deterministic catalog synchronization', () => {
       snapshotLoader,
     })
     expect(rebuilt.artifacts).toEqual(first.artifacts)
+
+    const staleLock = {
+      ...first.lock!,
+      sources: first.lock!.sources.map((entry) => ({
+        ...entry,
+        pluginPins: entry.pluginPins.map((pin) => ({
+          ...pin,
+          repositoryUrl: 'https://github.com/box-for-ai/remote-plugin',
+        })),
+      })),
+    }
+    await expect(
+      synchronize({
+        sources: [source],
+        categoryMap,
+        productAliases,
+        policy,
+        mode: 'offline',
+        fixtureRoot,
+        fromLock: staleLock,
+        snapshotLoader,
+      })
+    ).rejects.toThrow('SOURCE_LOCK_PLUGIN_PIN_MISMATCH: pin-test:remote')
   })
 
   test('skips apollo-skills symlinks deterministically without dropping safe plugins', async () => {
@@ -330,7 +408,7 @@ describe('deterministic catalog synchronization', () => {
         securityReason:
           'The plugin snapshot contains symlinks; symlinks are never followed, so the catalog excludes the plugin.',
         incompleteContent: true,
-        paths: ['.github/skills/skill-creator', 'CLAUDE.md'].sort(),
+        paths: ['.github/skills/skill-creator', 'CLAUDE.md'].toSorted(),
       },
     ])
     verifyArtifacts(result.artifacts!)
@@ -373,6 +451,7 @@ describe('identity, classification, and harness contracts', () => {
     expect(stablePluginId('openai-official', 'gmail')).not.toBe(
       stablePluginId('cursor-official', 'gmail')
     )
+    expect(stablePluginId('--OpenAI--', '---Gmail---')).toBe('plugin:openai:gmail')
     expect(
       stableReleaseId('https://github.com/acme/a', 'plugins/x', 'a'.repeat(40), digest('same'))
     ).toBe(
@@ -455,53 +534,6 @@ describe('upstream fetch quarantine', () => {
   const repo = 'https://github.com/acme/demo'
   const treeUrl = `https://api.github.com/repos/acme/demo/git/trees/${sha}?recursive=1`
   const manifestBytes = '{"name":"demo","description":"demo plugin","version":"1.0.0"}'
-
-  function stubFetch(handler: (url: string) => Response | Promise<Response>) {
-    const original = globalThis.fetch
-    const calls: string[] = []
-    globalThis.fetch = (async (input: unknown) => {
-      const url = String(input)
-      calls.push(url)
-      return handler(url)
-    }) as typeof fetch
-    return {
-      calls,
-      restore: () => {
-        globalThis.fetch = original
-      },
-    }
-  }
-
-  const jsonResponse = (body: unknown, status = 200, headers: Record<string, string> = {}) =>
-    new Response(JSON.stringify(body), {
-      status,
-      headers: { 'content-type': 'application/json', ...headers },
-    })
-
-  const treePayload = (paths: string[]) => ({
-    tree: paths.map((path) => ({
-      path,
-      type: 'blob',
-      sha: 'b'.repeat(40),
-      size: 64,
-      mode: '100644',
-    })),
-  })
-
-  function testEntry(name: string, subdir: string) {
-    return {
-      name,
-      description: `${name} plugin`,
-      categories: ['productivity'] as readonly string[],
-      keywords: [] as readonly string[],
-      authors: ['Acme'],
-      icons: [] as readonly string[],
-      source: { kind: 'local', path: subdir } as const,
-      policy: {},
-      raw: {},
-      entryDigest: `sha256:${'e'.repeat(64)}`,
-    }
-  }
 
   function testSource(entries: ReturnType<typeof testEntry>[]): ResolvedSource {
     return {
@@ -664,13 +696,7 @@ describe('upstream fetch quarantine', () => {
 
   test('keeps reachable plugins when only some fail', async () => {
     const fixtureRoot = join(process.cwd(), 'fixtures', 'openai', 'plugins', 'calendar')
-    const walk = (dir: string, base: string): string[] =>
-      readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
-        const full = join(dir, entry.name)
-        const rel = base === '' ? entry.name : `${base}/${entry.name}`
-        return entry.isDirectory() ? walk(full, rel) : [rel]
-      })
-    const calendarFiles = walk(fixtureRoot, '')
+    const calendarFiles = walkFixtureFiles(fixtureRoot)
     const { catalog, calls } = await buildWith(
       [testEntry('calendar', 'plugins/calendar'), testEntry('gone', 'plugins/gone')],
       (url) => {

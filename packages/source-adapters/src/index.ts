@@ -311,7 +311,7 @@ function isString(input: unknown): input is string {
 }
 
 function uniqueStrings(input: readonly string[]): string[] {
-  return [...new Set(input.map((value) => value.trim()).filter(Boolean))].sort((a, b) =>
+  return [...new Set(input.map((value) => value.trim()).filter(Boolean))].toSorted((a, b) =>
     a.localeCompare(b)
   )
 }
@@ -354,7 +354,7 @@ function canonicalJson(value: unknown): string {
   if (Array.isArray(value)) return `[${value.map(canonicalJson).join(',')}]`
   const object = value as Record<string, unknown>
   return `{${Object.keys(object)
-    .sort()
+    .toSorted()
     .map((key) => `${JSON.stringify(key)}:${canonicalJson(object[key])}`)
     .join(',')}}`
 }

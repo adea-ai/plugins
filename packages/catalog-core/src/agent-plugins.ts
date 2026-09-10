@@ -206,17 +206,25 @@ export function validateServer(input: unknown): McpServer {
   return server
 }
 
+function trimPortableEdges(value: string): string {
+  let start = 0
+  let end = value.length
+  while (start < end && (value[start] === '.' || value[start] === '-')) start += 1
+  while (end > start && (value[end - 1] === '.' || value[end - 1] === '-')) end -= 1
+  return value.slice(start, end)
+}
 function portableName(name: string): string {
   const cleaned =
-    name
-      .toLowerCase()
-      .replace(/[^a-z0-9.-]+/g, '-')
-      .replace(/-+/g, '-')
-      .replace(/\.+/g, '.')
-      .replace(/^[.-]+|[.-]+$/g, '') || 'plugin'
+    trimPortableEdges(
+      name
+        .toLowerCase()
+        .replace(/[^a-z0-9.-]+/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/\.+/g, '.')
+    ) || 'plugin'
   return cleaned.length <= 64
     ? cleaned
-    : `${cleaned.slice(0, 54).replace(/[.-]+$/, '')}-${sha256(name).slice(-8)}`
+    : `${trimPortableEdges(cleaned.slice(0, 54))}-${sha256(name).slice(-8)}`
 }
 function diagnostic(
   code: string,
@@ -645,20 +653,23 @@ export function compileAgentPackage(input: CompilePackageInput): AgentPackage {
     const content = stableJson(data) + '\n'
     operations.push({ action: 'write', targetPath, content, digest: sha256(content), mode: '0644' })
   }
-  operations.sort((a, b) => compare(a.targetPath, b.targetPath))
+  const sortedOperations = operations.toSorted((a, b) => compare(a.targetPath, b.targetPath))
   const values = [...servers.values()]
   const local = values.filter((server) => server.type === 'stdio')
-  diagnostics.sort((a, b) => compare(`${a.path}:${a.code}`, `${b.path}:${b.code}`))
+  const sortedDiagnostics = diagnostics.toSorted((a, b) =>
+    compare(`${a.path}:${a.code}`, `${b.path}:${b.code}`)
+  )
   try {
     return verifyAgentPackage({
       ...base,
+      diagnostics: sortedDiagnostics,
       manifest,
       status:
-        diagnostics.some((item) => item.severity === 'error') || nonPortable.length
+        sortedDiagnostics.some((item) => item.severity === 'error') || nonPortable.length
           ? 'partial'
           : 'portable',
-      packageDigest: packageDigest(operations),
-      files: operations,
+      packageDigest: packageDigest(sortedOperations),
+      files: sortedOperations,
       mcpServers,
       requirements: {
         skills: skills.length > 0,

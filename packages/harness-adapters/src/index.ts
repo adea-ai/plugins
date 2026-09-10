@@ -49,7 +49,7 @@ export function createMaterializationPlan(input: {
     targetLayout: targetLayout(input.harness),
     files: release.fileIndex
       .map((sourcePath) => filePlan(release, sourcePath, input.harness, compatibility.status))
-      .sort(
+      .toSorted(
         (left, right) =>
           left.targetPath.localeCompare(right.targetPath) ||
           left.sourcePath.localeCompare(right.sourcePath)

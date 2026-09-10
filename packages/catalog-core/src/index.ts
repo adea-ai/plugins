@@ -183,7 +183,7 @@ export function canonicalJson(value: unknown): string {
   if (Array.isArray(value)) return `[${value.map(canonicalJson).join(',')}]`
   const object = value as Record<string, unknown>
   return `{${Object.keys(object)
-    .sort()
+    .toSorted()
     .map((key) => `${JSON.stringify(key)}:${canonicalJson(object[key])}`)
     .join(',')}}`
 }
@@ -194,7 +194,7 @@ export function digest(value: unknown): string {
 
 export function bytesDigest(files: ReadonlyMap<string, Uint8Array>): string {
   const hash = createHash('sha256')
-  for (const [path, bytes] of [...files.entries()].sort(([left], [right]) =>
+  for (const [path, bytes] of [...files.entries()].toSorted(([left], [right]) =>
     left.localeCompare(right)
   )) {
     hash.update(`${path.length}:${path}:${bytes.byteLength}:`)
@@ -364,9 +364,9 @@ async function buildCatalogInternal(input: BuildCatalogInput): Promise<BuildCata
       sourceManifestDigest: manifestDigest,
       synchronizationStatus: 'synchronized' as const,
     }))
-    .sort((left, right) => left.sourceId.localeCompare(right.sourceId))
-  const plugins: Plugin[] = []
-  const skippedPlugins: SkippedPlugin[] = []
+    .toSorted((left, right) => left.sourceId.localeCompare(right.sourceId))
+  let plugins: Plugin[] = []
+  let skippedPlugins: SkippedPlugin[] = []
   for (const source of input.resolvedSources) {
     if (source.parsed.entries.length > policy.maxMarketplacePlugins)
       throw new Error('MARKETPLACE_TOO_MANY_PLUGINS')
@@ -410,8 +410,8 @@ async function buildCatalogInternal(input: BuildCatalogInput): Promise<BuildCata
     for (const plugin of sourcePlugins) plugins.push(plugin)
     for (const skipped of sourceSkipped) skippedPlugins.push(skipped)
   }
-  plugins.sort((left, right) => left.pluginId.localeCompare(right.pluginId))
-  skippedPlugins.sort(
+  plugins = plugins.toSorted((left, right) => left.pluginId.localeCompare(right.pluginId))
+  skippedPlugins = skippedPlugins.toSorted(
     (left, right) =>
       left.pluginId.localeCompare(right.pluginId) ||
       left.reasonCode.localeCompare(right.reasonCode) ||
@@ -422,7 +422,7 @@ async function buildCatalogInternal(input: BuildCatalogInput): Promise<BuildCata
     generatedAt:
       sourceRecords
         .map((s) => s.retrievalTimestamp)
-        .sort()
+        .toSorted()
         .at(-1) ?? new Date(0).toISOString(),
     sources: sourceRecords,
     plugins,
@@ -490,7 +490,7 @@ function createSkippedPlugin(
     reasonCode: parsed.reasonCode,
     securityReason: pluginSkipReasons[parsed.reasonCode],
     incompleteContent: true,
-    paths: [...new Set(parsed.paths)].sort(),
+    paths: [...new Set(parsed.paths)].toSorted(),
   }
 }
 
@@ -539,7 +539,7 @@ async function normalizePlugin(input: {
         resolved.subdirectory
       )
   if (snapshot.symlinks.length > 0)
-    throw new PluginSafetyError('SYMLINK_ESCAPE', [...snapshot.symlinks].sort())
+    throw new PluginSafetyError('SYMLINK_ESCAPE', [...snapshot.symlinks].toSorted())
   validateSnapshot(snapshot, policy, entry.name)
   const contentDigest = input.metadataOnly
     ? digest({
@@ -583,7 +583,7 @@ async function normalizePlugin(input: {
     ...new Set(
       normalizedCategories.length > 0 ? normalizedCategories : [input.categoryMap.fallback]
     ),
-  ].sort()
+  ].toSorted()
   const displayName = entry.displayName ?? pluginManifest?.displayName ?? entry.name
   const authors =
     entry.authors.length > 0
@@ -593,7 +593,7 @@ async function normalizePlugin(input: {
         : ['Unknown']
   const keywords = [...new Set([...entry.keywords, ...entry.name.split(/[-_\s]+/g), ...categories])]
     .filter(Boolean)
-    .sort()
+    .toSorted()
   const provenance: PluginProvenance = {
     sourceId: source.config.sourceId,
     repositoryUrl: canonicalRepositoryUrl(source.config.repositoryUrl),
@@ -612,7 +612,7 @@ async function normalizePlugin(input: {
     keywords,
     authors,
     ...(entry.homepage ? { homepage: entry.homepage } : {}),
-    icons: entry.icons.length > 0 ? [...entry.icons].sort() : (pluginManifest?.icons ?? []),
+    icons: entry.icons.length > 0 ? [...entry.icons].toSorted() : (pluginManifest?.icons ?? []),
     sourceId: source.config.sourceId,
     upstreamPluginName: entry.name,
     currentReleaseId: releaseId,
@@ -645,11 +645,11 @@ function createRelease(input: {
     if (typeof value === 'string') requiredCredentials.add(value)
   const requiredConnectors = [
     ...new Set(arrayValue(input.entry.raw.connectors).filter(isString)),
-  ].sort()
+  ].toSorted()
   const permissionSensitiveChanges = input.capabilities
     .filter((capability) => capability.securityImpact === 'sensitive')
     .map((capability) => capability.type)
-    .sort()
+    .toSorted()
   const metadata: Record<string, unknown> = {
     marketplaceEntry: input.entry.raw,
     ...(input.pluginManifest ? { pluginManifest: input.pluginManifest.metadata } : {}),
@@ -666,13 +666,13 @@ function createRelease(input: {
     manifestDigest: input.manifestDigest,
     contentResolution: input.metadataOnly ? 'metadata-only' : 'complete',
     releaseMetadata: metadata,
-    capabilities: [...input.capabilities].sort(
+    capabilities: [...input.capabilities].toSorted(
       (left, right) => left.type.localeCompare(right.type) || left.name.localeCompare(right.name)
     ),
     requiredConnectors,
-    requiredCredentials: [...requiredCredentials].sort(),
+    requiredCredentials: [...requiredCredentials].toSorted(),
     permissionSensitiveChanges: [...new Set(permissionSensitiveChanges)],
-    fileIndex: [...input.snapshot.files.keys()].sort(),
+    fileIndex: [...input.snapshot.files.keys()].toSorted(),
     publicationTimestamp: input.source.retrievedAt,
   }
 }
@@ -758,7 +758,9 @@ function findPluginManifest(snapshot: Snapshot, preferRoot = false): PluginManif
       const lower = path.toLocaleLowerCase()
       return lower === 'plugin.json' || lower.endsWith('/plugin.json') || lower === 'package.json'
     })
-    .sort((left, right) => manifestRank(left) - manifestRank(right) || left.localeCompare(right))
+    .toSorted(
+      (left, right) => manifestRank(left) - manifestRank(right) || left.localeCompare(right)
+    )
   const path = preferRoot && snapshot.files.has('plugin.json') ? 'plugin.json' : candidates[0]
   if (!path) return undefined
   try {
@@ -776,7 +778,7 @@ function findPluginManifest(snapshot: Snapshot, preferRoot = false): PluginManif
       ...(stringValue(metadata.version) ? { version: stringValue(metadata.version) } : {}),
       icons: [metadata.icon, ...(Array.isArray(metadata.icons) ? metadata.icons : [])]
         .filter(isString)
-        .sort(),
+        .toSorted(),
     }
   } catch {
     throw new PluginSafetyError('PLUGIN_MANIFEST_INVALID', [path])
@@ -838,7 +840,7 @@ export function classifyCapabilities(
   return [...groups.entries()].map(([type, paths]) => ({
     type: type as Capability['type'],
     name: type,
-    paths: [...new Set(paths)].sort(),
+    paths: [...new Set(paths)].toSorted(),
     metadata: {},
     securityImpact: [
       'mcp-server',
@@ -866,14 +868,14 @@ export function createCompatibility(
   capabilities: readonly Capability[],
   policy: CatalogPolicy = DEFAULT_POLICY
 ): Record<Harness, HarnessCompatibility> {
-  const types = [...new Set(capabilities.map((capability) => capability.type))].sort()
+  const types = [...new Set(capabilities.map((capability) => capability.type))].toSorted()
   const sensitive = types.filter((type) => policy.sensitiveCapabilityTypes.includes(type))
   const make = (
     status: HarnessCompatibility['status'],
     reasons: string[]
   ): HarnessCompatibility => ({
     status,
-    reasons: [...new Set(reasons)].sort(),
+    reasons: [...new Set(reasons)].toSorted(),
     responsibleCapabilities: types,
   })
   const result = {} as Record<Harness, HarnessCompatibility>
@@ -929,7 +931,7 @@ function createSecurity(
         .filter((capability) => policy.sensitiveCapabilityTypes.includes(capability.type))
         .map((capability) => capability.type)
     ),
-  ].sort()
+  ].toSorted()
   const reasons =
     sensitive.length > 0
       ? sensitive.map((type) => `Contains ${type} capability metadata.`)
@@ -971,7 +973,7 @@ function createSourcesLock(sources: readonly ResolvedSource[]): SourcesLock {
       synchronizationStatus: 'synchronized' as const,
       pluginPins: source.pluginPins.map((pin) => ({ ...pin })),
     }))
-    .sort((left, right) => left.sourceId.localeCompare(right.sourceId))
+    .toSorted((left, right) => left.sourceId.localeCompare(right.sourceId))
   const body = { schemaVersion: 1 as const, sources: entries }
   return SourcesLockSchema.parse({
     ...body,
@@ -986,14 +988,16 @@ export function createArtifacts(catalog: Catalog, lock: SourcesLock): GeneratedA
     generatedAt: catalog.generatedAt,
     sourceCount: catalog.sources.length,
     pluginCount: catalog.plugins.length,
-    categories: [...new Set(catalog.plugins.flatMap((plugin) => plugin.categories))].sort(),
-    productGroups: [...new Set(catalog.plugins.map((plugin) => plugin.productGroupingKey))].sort(),
+    categories: [...new Set(catalog.plugins.flatMap((plugin) => plugin.categories))].toSorted(),
+    productGroups: [
+      ...new Set(catalog.plugins.map((plugin) => plugin.productGroupingKey)),
+    ].toSorted(),
     search: catalog.plugins
       .map((plugin) => ({
         pluginId: plugin.pluginId,
         text: `${plugin.displayName} ${plugin.description} ${plugin.keywords.join(' ')}`.trim(),
       }))
-      .sort((left, right) => left.pluginId.localeCompare(right.pluginId)),
+      .toSorted((left, right) => left.pluginId.localeCompare(right.pluginId)),
   }
   const compatibility = {
     schemaVersion: 1,
@@ -1004,7 +1008,7 @@ export function createArtifacts(catalog: Catalog, lock: SourcesLock): GeneratedA
     })),
   }
   const categories = [...new Set(catalog.plugins.flatMap((plugin) => plugin.categories))]
-    .sort()
+    .toSorted()
     .map((category) => ({
       category,
       pluginIds: catalog.plugins
@@ -1023,7 +1027,7 @@ export function createArtifacts(catalog: Catalog, lock: SourcesLock): GeneratedA
     catalogId: catalog.catalogId,
     files: Object.fromEntries(
       Object.entries(files)
-        .sort()
+        .toSorted()
         .map(([name, content]) => [name, digest(content)])
     ),
   }
@@ -1194,10 +1198,10 @@ function createChangeReport(
     .map((plugin) => plugin.pluginId)
   return {
     schemaVersion: 1,
-    changedSources: changedSources.sort(),
-    addedPlugins: addedPlugins.sort(),
-    removedPlugins: removedPlugins.sort(),
-    changedPlugins: changedPlugins.sort(),
+    changedSources: changedSources.toSorted(),
+    addedPlugins: addedPlugins.toSorted(),
+    removedPlugins: removedPlugins.toSorted(),
+    changedPlugins: changedPlugins.toSorted(),
     skippedPlugins,
     permissionSensitiveChanges: catalog.plugins
       .flatMap((plugin) =>
@@ -1205,7 +1209,7 @@ function createChangeReport(
           (type) => `${plugin.pluginId}:${type}`
         )
       )
-      .sort(),
+      .toSorted(),
     contentResolution:
       skippedPlugins.length > 0
         ? 'complete-with-skips'
@@ -1315,7 +1319,7 @@ async function resolvePluginPins(input: {
       return { pluginName: entry.name, repositoryUrl, pluginSubdirectory, resolvedCommitSha }
     }
   )
-  return pins.sort((left, right) => left.pluginName.localeCompare(right.pluginName))
+  return pins.toSorted((left, right) => left.pluginName.localeCompare(right.pluginName))
 }
 
 async function mapWithConcurrency<T, U>(
@@ -1352,21 +1356,21 @@ async function resolveGitRef(repositoryUrl: string, ref: string): Promise<string
     stdio: ['ignore', 'pipe', 'pipe'],
   })
   const [stdout, stderr, exitCode] = await Promise.all([
-    new Promise<string>((resolve, reject) => {
+    new Promise<string>((resolveOutput, reject) => {
       const chunks: Buffer[] = []
       result.stdout?.on('data', (chunk: Buffer) => chunks.push(chunk))
       result.stdout?.on('error', reject)
-      result.stdout?.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')))
+      result.stdout?.on('end', () => resolveOutput(Buffer.concat(chunks).toString('utf8')))
     }),
-    new Promise<string>((resolve) => {
+    new Promise<string>((resolveError) => {
       const chunks: Buffer[] = []
       result.stderr?.on('data', (chunk: Buffer) => chunks.push(chunk))
-      result.stderr?.on('error', () => resolve(''))
-      result.stderr?.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')))
+      result.stderr?.on('error', () => resolveError(''))
+      result.stderr?.on('end', () => resolveError(Buffer.concat(chunks).toString('utf8')))
     }),
-    new Promise<number | null>((resolve, reject) => {
+    new Promise<number | null>((resolveExit, reject) => {
       result.on('error', reject)
-      result.on('close', (code) => resolve(code ?? 1))
+      result.on('close', (code) => resolveExit(code ?? 1))
     }),
   ])
   if (exitCode !== 0)
@@ -1410,7 +1414,7 @@ const UPSTREAM_WEATHER_SKIP_CODES: ReadonlySet<PluginSkipReasonCode> = new Set([
 ])
 
 function sleep(ms: number): Promise<void> {
-  return new Promise((resolve) => setTimeout(resolve, ms))
+  return new Promise((resolveSleep) => setTimeout(resolveSleep, ms))
 }
 
 function upstreamRetryDelayMs(attempt: number, response?: Response): number {
@@ -1616,7 +1620,7 @@ function sortArtifactKeys(value: unknown): unknown {
   if (value !== null && typeof value === 'object')
     return Object.fromEntries(
       Object.keys(value as Record<string, unknown>)
-        .sort()
+        .toSorted()
         .map((key) => [key, sortArtifactKeys((value as Record<string, unknown>)[key])])
     )
   return value
@@ -1626,14 +1630,22 @@ function json(value: unknown): string {
   return `${JSON.stringify(sortArtifactKeys(value), null, 2)}\n`
 }
 
+function trimSlugEdges(value: string): string {
+  let start = 0
+  let end = value.length
+  while (start < end && value[start] === '-') start += 1
+  while (end > start && value[end - 1] === '-') end -= 1
+  return value.slice(start, end)
+}
+
 function slug(value: string): string {
   const result =
-    value
-      .trim()
-      .toLocaleLowerCase()
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-+|-+$/g, '')
-      .slice(0, 128) || 'unknown'
+    trimSlugEdges(
+      value
+        .trim()
+        .toLocaleLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+    ).slice(0, 128) || 'unknown'
   return result.length < 2 ? `${result}-plugin` : result
 }
 
