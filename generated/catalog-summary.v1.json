@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:078b26e196e655a1d2b59c2df56b79ade8d4f4d1d03a25710ad2b8abdee256fe",
+  "catalogId": "catalog:c3fddf0b14c9c93c376589dfb834f6436d73697920f8ec69ca01e9e21268ec90",
   "categories": [
     "automation",
     "business-operations",
@@ -22,8 +22,8 @@
     "security",
     "testing"
   ],
-  "generatedAt": "2026-09-10T17:08:29.013Z",
-  "pluginCount": 493,
+  "generatedAt": "2026-09-10T20:31:08.071Z",
+  "pluginCount": 486,
   "productGroups": [
     "42crunch-api-security-testing",
     "activecampaign",
@@ -37,7 +37,6 @@
     "ahrefs",
     "ai-firstify",
     "ai-plugins",
-    "aikido",
     "airtable",
     "airwallex-agentos",
     "airwallex-dev",
@@ -144,7 +143,6 @@
     "data-agent-kit-starter-pack",
     "data-analytics",
     "databases-on-aws",
-    "databricks",
     "datadog",
     "dataproc",
     "dataverse",
@@ -223,11 +221,8 @@
     "learn-with-coursera",
     "learning-output-style",
     "legal",
-    "legalzoom",
     "life-science-research",
     "linear",
-    "liquid-lsp",
-    "liquid-skills",
     "logfire",
     "logrocket",
     "looker",
@@ -245,7 +240,6 @@
     "mcp-server-dev",
     "mcp-tunnels",
     "mem",
-    "mercadopago",
     "mercury",
     "mergify",
     "microsoft-docs",
@@ -260,7 +254,6 @@
     "mongodb",
     "mongodb-atlas",
     "navan",
-    "neon",
     "netlify-skills",
     "netsuite-ai-companion",
     "netsuite-finance-analyst",
@@ -358,7 +351,6 @@
     "sharepoint",
     "shippo",
     "shopify",
-    "shopify-ai-toolkit",
     "signoz",
     "similarweb",
     "skill-creator",
@@ -375,7 +367,6 @@
     "spotify-ads-api",
     "stackhawk-api",
     "stackhawk-hawkscan",
-    "streaming-skills-plugin",
     "stripe",
     "sumup",
     "supabase",
@@ -452,10 +443,6 @@
     {
       "pluginId": "plugin:claude-official:ai-plugins",
       "text": "Endor Labs AI Plugins (Legacy) Set up endorctl and use Endor Labs to scan, prioritize, and fix security risks across your software supply chain ai other plugins"
-    },
-    {
-      "pluginId": "plugin:claude-official:aikido",
-      "text": "aikido Aikido Security scanning for Claude Code — SAST, secrets, and IaC vulnerability detection powered by the Aikido MCP server. aikido other"
     },
     {
       "pluginId": "plugin:claude-official:airtable",
@@ -734,10 +721,6 @@
       "text": "databases-on-aws Expert database guidance for the AWS database portfolio. Design schemas, execute queries, handle migrations, and choose the right database for your workload. aws data databases on"
     },
     {
-      "pluginId": "plugin:claude-official:databricks",
-      "text": "databricks Databricks skills for the CLI, Apps, Lakebase, Model Serving, Lakeflow Jobs, Spark Declarative Pipelines, Declarative Automation Bundles (DABs), and classic-to-serverless migration. data databricks"
-    },
-    {
       "pluginId": "plugin:claude-official:datadog",
       "text": "datadog Use Datadog directly in Claude Code through a preconfigured Datadog MCP server. Query logs, metrics, traces, dashboards, and more through natural conversation. This plugin is in preview. datadog monitoring"
     },
@@ -942,20 +925,8 @@
       "text": "learning-output-style Interactive learning mode that requests meaningful code contributions at decision points (mimics the unshipped Learning output style) learning output style"
     },
     {
-      "pluginId": "plugin:claude-official:legalzoom",
-      "text": "legalzoom Attorney guidance and legal tools for business and personal needs. AI-powered document review identifies critical risks and important clauses, advises when to engage an attorney, and routes to LegalZoom's network when professional expertise is needed. legalzoom productivity"
-    },
-    {
       "pluginId": "plugin:claude-official:linear",
       "text": "linear Linear issue tracking integration. Create issues, manage projects, update statuses, search across workspaces, and streamline your software development workflow with Linear's modern issue tracker. linear productivity"
-    },
-    {
-      "pluginId": "plugin:claude-official:liquid-lsp",
-      "text": "liquid-lsp LSP integration for Shopify Liquid templates via the Shopify CLI theme language server. developer-tools liquid lsp"
-    },
-    {
-      "pluginId": "plugin:claude-official:liquid-skills",
-      "text": "liquid-skills Liquid language fundamentals, CSS/JS/HTML coding standards, and WCAG accessibility patterns for Shopify themes developer-tools liquid skills"
     },
     {
       "pluginId": "plugin:claude-official:logfire",
@@ -1006,10 +977,6 @@
       "text": "mcp-tunnels Connect Claude to a private MCP server through an Anthropic MCP tunnel. The /create-docker-mcp-tunnel command drives the Docker Compose quickstart end to end: certificates, proxy config, cloudflared, and a verifiable sample server. developer-tools mcp tunnels"
     },
     {
-      "pluginId": "plugin:claude-official:mercadopago",
-      "text": "Mercado Pago Mercado Pago full-product integration toolkit. One agent routes to four orchestration skills (mp-integrate wizard, mp-webhooks, mp-test-setup, mp-review) that pull every endpoint, payload, and snippet live from the official Mercado Pago MCP server. The MCP must always be connected — there is no offline mode. developer-tools mercadopago"
-    },
-    {
       "pluginId": "plugin:claude-official:mergify",
       "text": "mergify Skills for the Mergify CLI: manage merge queues, stacked pull requests, Test Insights (flaky tests, quarantine), merge protections, and Mergify configuration directly from the terminal. developer-tools mergify"
     },
@@ -1048,10 +1015,6 @@
     {
       "pluginId": "plugin:claude-official:mongodb-atlas",
       "text": "mongodb-atlas Connect to MongoDB Atlas clusters only through the Atlas Managed MCP Server. Sign in with your Atlas account to explore data, manage collections, optimize queries, generate reliable code with MongoDB best practices, and manage Atlas resources such as clusters, projects, database users, and network access. If you are running a different MongoDB deployment or want to run a local MongoDB MCP Server, install the MongoDB (Self-Managed MCP) plugin instead. atlas data mongodb"
-    },
-    {
-      "pluginId": "plugin:claude-official:neon",
-      "text": "neon Manage your Neon projects and databases with the neon-postgres agent skill and the Neon MCP Server. data neon"
     },
     {
       "pluginId": "plugin:claude-official:netlify-skills",
@@ -1318,10 +1281,6 @@
       "text": "shippo Shippo connects you to USPS, UPS, FedEx, DHL, and 40+ carriers, so you can handle a shipment end to end right inside Claude. Compare live rates and pick the cheapest or best option, buy and print labels (domestic and international, with customs declarations), validate and standardize addresses, and track packages across carriers. Just ask in plain language: rate-shop a parcel, buy the right label, check a delivery status, or confirm an address before you ship. Whether you run a store or just need to send a package, Shippo turns a pile of carrier accounts into one simple conversation. productivity shippo"
     },
     {
-      "pluginId": "plugin:claude-official:shopify-ai-toolkit",
-      "text": "shopify-plugin Shopify's AI Toolkit provides 18 development skills for building on the Shopify platform, covering documentation search, API schema access, GraphQL and Liquid code validation, Hydrogen storefronts, Polaris UI extensions, store management via CLI, and onboarding guidance for both developers and merchants. ai developer-tools shopify toolkit"
-    },
-    {
       "pluginId": "plugin:claude-official:skill-creator",
       "text": "skill-creator Create new skills, improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, update or optimize an existing skill, run evals to test a skill, or benchmark skill performance with variance analysis. creator developer-tools skill"
     },
@@ -1360,10 +1319,6 @@
     {
       "pluginId": "plugin:claude-official:stackhawk-hawkscan",
       "text": "hawkscan Configure, run, and interpret HawkScan DAST results inside Claude Code. Generates stackhawk.yml configs, runs scans via CLI or Docker, and transforms security findings into prioritized fix tasks for your coding agent. hawkscan security stackhawk"
-    },
-    {
-      "pluginId": "plugin:claude-official:streaming-skills-plugin",
-      "text": "streaming-skills-plugin Skills for streaming application developers, covering Kafka and Flink client libraries and Schema Registry developer-tools plugin skills streaming"
     },
     {
       "pluginId": "plugin:claude-official:stripe",
@@ -1580,6 +1535,10 @@
     {
       "pluginId": "plugin:cursor-official:fathom",
       "text": "Fathom Search meetings and pull transcripts and summaries. fathom other"
+    },
+    {
+      "pluginId": "plugin:cursor-official:finance",
+      "text": "Finance Securely connect your accounts so Grok can help with questions about your spending, subscriptions, balances, and investments. finance other"
     },
     {
       "pluginId": "plugin:cursor-official:fireflies",
@@ -1936,6 +1895,10 @@
     {
       "pluginId": "plugin:knowledge-work-official:honeycomb",
       "text": "Honeycomb Skills, agents, and workflows for Honeycomb observability — query patterns, production investigations, SLOs, OpenTelemetry instrumentation, and Beeline migration. Designed to complement the Honeycomb MCP server. honeycomb monitoring"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:hubspot-sales",
+      "text": "HubSpot Sales Run your HubSpot sales workflow directly from Claude. Adds skills that cover the full sales day: import contacts and deals into HubSpot, get a prioritised morning brief, prep for any call with full CRM context, draft personalised follow-ups grounded in deal history, log calls and update records by describing what happened, and review your pipeline to surface stalling deals. Everything writes back to HubSpot. hubspot productivity sales"
     },
     {
       "pluginId": "plugin:knowledge-work-official:human-resources",
