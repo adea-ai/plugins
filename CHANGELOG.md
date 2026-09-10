@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.3.1...plugins-marketplace-v1.3.2) (2026-09-10)
+
+
+### Maintenance
+
+* roll up dependencies and Code Foundry v1.28.6 ([#48](https://github.com/adea-ai/plugins/issues/48)) ([370b779](https://github.com/adea-ai/plugins/commit/370b779e0b74d505f831d652f75f106a5c733a46))
+
 ## [1.3.1](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.3.0...plugins-marketplace-v1.3.1) (2026-09-10)
 
 
