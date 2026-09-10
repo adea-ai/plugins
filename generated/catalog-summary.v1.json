@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:ecfeddfd91109b6fb9ab90d1375b759fa0d9589c1c3a5267a3066259baf4489c",
+  "catalogId": "catalog:078b26e196e655a1d2b59c2df56b79ade8d4f4d1d03a25710ad2b8abdee256fe",
   "categories": [
     "automation",
     "business-operations",
@@ -22,8 +22,8 @@
     "security",
     "testing"
   ],
-  "generatedAt": "2026-09-05T20:27:46.289Z",
-  "pluginCount": 471,
+  "generatedAt": "2026-09-10T17:08:29.013Z",
+  "pluginCount": 493,
   "productGroups": [
     "42crunch-api-security-testing",
     "activecampaign",
@@ -37,6 +37,7 @@
     "ahrefs",
     "ai-firstify",
     "ai-plugins",
+    "aikido",
     "airtable",
     "airwallex-agentos",
     "airwallex-dev",
@@ -57,6 +58,7 @@
     "atlassian-rovo",
     "atlassian-twg-cli",
     "atomic-agents",
+    "attio",
     "auth0",
     "aws-agents",
     "aws-agents-for-devsecops",
@@ -142,6 +144,7 @@
     "data-agent-kit-starter-pack",
     "data-analytics",
     "databases-on-aws",
+    "databricks",
     "datadog",
     "dataproc",
     "dataverse",
@@ -175,6 +178,8 @@
     "frontend-design",
     "fullstory",
     "game-studio",
+    "gamma",
+    "gc-ai",
     "github",
     "gitkraken",
     "gitlab",
@@ -190,13 +195,14 @@
     "grafana-mcp",
     "granola",
     "grasp",
-    "greptile",
+    "grok-voice",
     "guru",
     "higgsfield",
     "honeycomb",
     "hookify",
     "hostinger",
     "hubspot",
+    "hubspot-sales",
     "huggingface-skills",
     "human-resources",
     "hunter",
@@ -217,8 +223,11 @@
     "learn-with-coursera",
     "learning-output-style",
     "legal",
+    "legalzoom",
     "life-science-research",
     "linear",
+    "liquid-lsp",
+    "liquid-skills",
     "logfire",
     "logrocket",
     "looker",
@@ -236,6 +245,7 @@
     "mcp-server-dev",
     "mcp-tunnels",
     "mem",
+    "mercadopago",
     "mercury",
     "mergify",
     "microsoft-docs",
@@ -250,6 +260,7 @@
     "mongodb",
     "mongodb-atlas",
     "navan",
+    "neon",
     "netlify-skills",
     "netsuite-ai-companion",
     "netsuite-finance-analyst",
@@ -284,11 +295,13 @@
     "pigment",
     "pinecone",
     "pixeltable",
+    "planetscale",
     "playground",
     "playwright",
     "plugin-dev",
     "plugin-eval",
     "posthog",
+    "postiz",
     "postman",
     "pr-review-canvas",
     "pr-review-toolkit",
@@ -306,6 +319,7 @@
     "pyright-lsp",
     "qdrant-skills",
     "qodo",
+    "qodo-standards",
     "qt-development-skills",
     "quarkus-agent",
     "railway",
@@ -344,6 +358,7 @@
     "sharepoint",
     "shippo",
     "shopify",
+    "shopify-ai-toolkit",
     "signoz",
     "similarweb",
     "skill-creator",
@@ -360,6 +375,7 @@
     "spotify-ads-api",
     "stackhawk-api",
     "stackhawk-hawkscan",
+    "streaming-skills-plugin",
     "stripe",
     "sumup",
     "supabase",
@@ -438,6 +454,10 @@
       "text": "Endor Labs AI Plugins (Legacy) Set up endorctl and use Endor Labs to scan, prioritize, and fix security risks across your software supply chain ai other plugins"
     },
     {
+      "pluginId": "plugin:claude-official:aikido",
+      "text": "aikido Aikido Security scanning for Claude Code — SAST, secrets, and IaC vulnerability detection powered by the Aikido MCP server. aikido other"
+    },
+    {
       "pluginId": "plugin:claude-official:airtable",
       "text": "airtable Airtable is the database and operations layer for your agents — whether running product, marketing, sales, ops, HR, or a custom business app. It combines structured data with multiplayer visual surfaces (grid, kanban, calendar, gallery, timeline) humans and agents share — plus sync integrations to Jira, Salesforce, Zendesk, Google Drive, Databricks, and the rest of your stack, all backed by enterprise governance. This plugin makes Claude fluent in Airtable: creating bases and schema, working with records, and sharing UI for collaboration. Bundles the official Airtable MCP server. airtable productivity"
     },
@@ -495,11 +515,11 @@
     },
     {
       "pluginId": "plugin:claude-official:atlassian",
-      "text": "Atlassian MCP Connect to Atlassian products including Jira and Confluence. Search and create issues, access documentation, manage sprints, and integrate your development workflow with Atlassian's collaboration tools. atlassian productivity"
+      "text": "atlassian Connect to Atlassian products including Jira and Confluence. Search and create issues, access documentation, manage sprints, and integrate your development workflow with Atlassian's collaboration tools. atlassian productivity"
     },
     {
       "pluginId": "plugin:claude-official:atlassian-twg-cli",
-      "text": "Atlassian Teamwork Graph CLI Teamwork Graph CLI is Atlassian's agent-first interface to your entire work context: Jira issues, Confluence pages, Bitbucket PRs, along with your connected third-party data sources. Purpose-built for coding agents like Claude Code (terminal or desktop), and powered by Atlassian's context graph. Try: \"draft a Jira issue from this PR and link it to the epic.\" Using Claude Code in the browser? Install the Atlassian Rovo MCP plugin instead. Run /twg-setup after install to connect Atlassian Teamwork Graph CLI to Claude Code. atlassian cli productivity twg"
+      "text": "atlassian-twg-cli Teamwork Graph CLI is Atlassian's agent-first interface to your entire work context: Jira issues, Confluence pages, Bitbucket PRs, along with your connected third-party data sources. Purpose-built for coding agents like Claude Code (terminal or desktop), and powered by Atlassian's context graph. Try: \"draft a Jira issue from this PR and link it to the epic.\" Using Claude Code in the browser? Install the Atlassian Rovo MCP plugin instead. Run /twg-setup after install to connect Atlassian Teamwork Graph CLI to Claude Code. atlassian cli productivity twg"
     },
     {
       "pluginId": "plugin:claude-official:atomic-agents",
@@ -547,7 +567,7 @@
     },
     {
       "pluginId": "plugin:claude-official:azure-sql-developer",
-      "text": "azure-sql-developer Agent skills for Azure SQL Developer, the Azure SQL Database engine running locally in a container. Teaches your agent to run the engine, connect, migrate, scaffold, build RAG, wire CI, and go local-to-cloud, using the real Private Preview image instead of the SQL Server image. azure data developer sql"
+      "text": "azure-sql-database-container Agent skills for Azure SQL Developer, the Azure SQL Database engine running locally in a container. Teaches your agent to run the engine, connect, migrate, scaffold, build RAG, wire CI, and go local-to-cloud, using the real Private Preview image instead of the SQL Server image. azure data developer sql"
     },
     {
       "pluginId": "plugin:claude-official:bigdata-com",
@@ -714,6 +734,10 @@
       "text": "databases-on-aws Expert database guidance for the AWS database portfolio. Design schemas, execute queries, handle migrations, and choose the right database for your workload. aws data databases on"
     },
     {
+      "pluginId": "plugin:claude-official:databricks",
+      "text": "databricks Databricks skills for the CLI, Apps, Lakebase, Model Serving, Lakeflow Jobs, Spark Declarative Pipelines, Declarative Automation Bundles (DABs), and classic-to-serverless migration. data databricks"
+    },
+    {
       "pluginId": "plugin:claude-official:datadog",
       "text": "datadog Use Datadog directly in Claude Code through a preconfigured Datadog MCP server. Query logs, metrics, traces, dashboards, and more through natural conversation. This plugin is in preview. datadog monitoring"
     },
@@ -810,6 +834,10 @@
       "text": "fullstory Connect Claude to Fullstory to query behavioral analytics, session replays, and customer experience insights. fullstory monitoring"
     },
     {
+      "pluginId": "plugin:claude-official:gc-ai",
+      "text": "GC AI Work in your GC AI legal knowledge base from Claude: upload documents, run review playbooks, and ask questions grounded in your own files, all as you. ai gc productivity"
+    },
+    {
       "pluginId": "plugin:claude-official:github",
       "text": "github Official GitHub MCP server for repository management. Create issues, manage pull requests, review code, search repositories, and interact with GitHub's full API directly from Claude Code. github productivity"
     },
@@ -842,10 +870,6 @@
       "text": "grafana-mcp MCP server for AI-assisted Grafana dashboard, datasource, alerting, and incident management. grafana mcp monitoring"
     },
     {
-      "pluginId": "plugin:claude-official:greptile",
-      "text": "greptile AI-powered codebase search and understanding. Query your repositories using natural language to find relevant code, understand dependencies, and get contextual answers about your codebase architecture. developer-tools greptile"
-    },
-    {
       "pluginId": "plugin:claude-official:honeycomb",
       "text": "honeycomb Skills, agents, and workflows for Honeycomb observability — query patterns, production investigations, SLOs, OpenTelemetry instrumentation, and Beeline migration. Designed to complement the Honeycomb MCP server. honeycomb monitoring"
     },
@@ -856,6 +880,10 @@
     {
       "pluginId": "plugin:claude-official:hostinger",
       "text": "Hostinger Deploy, manage and monitor Hostinger services — Websites, Domains, Ecommerce, Email Marketing, Subscriptions & Payments, and VPS. Authenticate via browser (OAuth) or API token. deployment hostinger"
+    },
+    {
+      "pluginId": "plugin:claude-official:hubspot-sales",
+      "text": "HubSpot Sales Run your HubSpot sales workflow directly from Claude. Adds skills that cover the full sales day: import contacts and deals into HubSpot, get a prioritised morning brief, prep for any call with full CRM context, draft personalised follow-ups grounded in deal history, log calls and update records by describing what happened, and review your pipeline to surface stalling deals. Everything writes back to HubSpot. hubspot productivity sales"
     },
     {
       "pluginId": "plugin:claude-official:huggingface-skills",
@@ -914,8 +942,20 @@
       "text": "learning-output-style Interactive learning mode that requests meaningful code contributions at decision points (mimics the unshipped Learning output style) learning output style"
     },
     {
+      "pluginId": "plugin:claude-official:legalzoom",
+      "text": "legalzoom Attorney guidance and legal tools for business and personal needs. AI-powered document review identifies critical risks and important clauses, advises when to engage an attorney, and routes to LegalZoom's network when professional expertise is needed. legalzoom productivity"
+    },
+    {
       "pluginId": "plugin:claude-official:linear",
       "text": "linear Linear issue tracking integration. Create issues, manage projects, update statuses, search across workspaces, and streamline your software development workflow with Linear's modern issue tracker. linear productivity"
+    },
+    {
+      "pluginId": "plugin:claude-official:liquid-lsp",
+      "text": "liquid-lsp LSP integration for Shopify Liquid templates via the Shopify CLI theme language server. developer-tools liquid lsp"
+    },
+    {
+      "pluginId": "plugin:claude-official:liquid-skills",
+      "text": "liquid-skills Liquid language fundamentals, CSS/JS/HTML coding standards, and WCAG accessibility patterns for Shopify themes developer-tools liquid skills"
     },
     {
       "pluginId": "plugin:claude-official:logfire",
@@ -966,6 +1006,10 @@
       "text": "mcp-tunnels Connect Claude to a private MCP server through an Anthropic MCP tunnel. The /create-docker-mcp-tunnel command drives the Docker Compose quickstart end to end: certificates, proxy config, cloudflared, and a verifiable sample server. developer-tools mcp tunnels"
     },
     {
+      "pluginId": "plugin:claude-official:mercadopago",
+      "text": "Mercado Pago Mercado Pago full-product integration toolkit. One agent routes to four orchestration skills (mp-integrate wizard, mp-webhooks, mp-test-setup, mp-review) that pull every endpoint, payload, and snippet live from the official Mercado Pago MCP server. The MCP must always be connected — there is no offline mode. developer-tools mercadopago"
+    },
+    {
       "pluginId": "plugin:claude-official:mergify",
       "text": "mergify Skills for the Mergify CLI: manage merge queues, stacked pull requests, Test Insights (flaky tests, quarantine), merge protections, and Mergify configuration directly from the terminal. developer-tools mergify"
     },
@@ -1004,6 +1048,10 @@
     {
       "pluginId": "plugin:claude-official:mongodb-atlas",
       "text": "mongodb-atlas Connect to MongoDB Atlas clusters only through the Atlas Managed MCP Server. Sign in with your Atlas account to explore data, manage collections, optimize queries, generate reliable code with MongoDB best practices, and manage Atlas resources such as clusters, projects, database users, and network access. If you are running a different MongoDB deployment or want to run a local MongoDB MCP Server, install the MongoDB (Self-Managed MCP) plugin instead. atlas data mongodb"
+    },
+    {
+      "pluginId": "plugin:claude-official:neon",
+      "text": "neon Manage your Neon projects and databases with the neon-postgres agent skill and the Neon MCP Server. data neon"
     },
     {
       "pluginId": "plugin:claude-official:netlify-skills",
@@ -1090,6 +1138,10 @@
       "text": "pixeltable Build multimodal AI applications with Pixeltable -- tables, computed columns, embedding search, UDFs, tool-calling agents, and 25+ AI provider integrations. developer-tools pixeltable"
     },
     {
+      "pluginId": "plugin:claude-official:planetscale",
+      "text": "planetscale An authenticated hosted MCP server that accesses your PlanetScale organizations, databases, branches, schema, and Insights data. Query against your data, surface slow queries, and get organizational and account information. data planetscale"
+    },
+    {
       "pluginId": "plugin:claude-official:playground",
       "text": "playground Creates interactive HTML playgrounds — self-contained single-file explorers with visual controls, live preview, and prompt output with copy button. Includes templates for design playgrounds, data explorers, concept maps, and document critique. developer-tools playground"
     },
@@ -1104,6 +1156,10 @@
     {
       "pluginId": "plugin:claude-official:posthog",
       "text": "posthog Access PostHog analytics, feature flags, experiments, error tracking, and insights directly from Claude Code. monitoring posthog"
+    },
+    {
+      "pluginId": "plugin:claude-official:postiz",
+      "text": "postiz Social media automation CLI for scheduling posts, managing integrations, uploading media, and tracking analytics across 28+ platforms including X, LinkedIn, Reddit, YouTube, TikTok, Instagram, and more other postiz"
     },
     {
       "pluginId": "plugin:claude-official:postman",
@@ -1139,7 +1195,11 @@
     },
     {
       "pluginId": "plugin:claude-official:qodo",
-      "text": "Qodo Qodo Skills provides a curated library of reusable AI agent capabilities that extend Claude's functionality for software development workflows. Each skill is designed to integrate seamlessly into your development process, enabling tasks like code quality checks, automated testing, security scanning, and compliance validation. Skills operate across your entire SDLC—from IDE to CI/CD—ensuring consistent standards and catching issues early. developer-tools qodo"
+      "text": "Qodo Qodo setup, code intelligence, and review workflows. developer-tools qodo"
+    },
+    {
+      "pluginId": "plugin:claude-official:qodo-standards",
+      "text": "Qodo Standards Optional Qodo rules discovery and standards administration workflows. developer-tools qodo standards"
     },
     {
       "pluginId": "plugin:claude-official:qt-development-skills",
@@ -1258,6 +1318,10 @@
       "text": "shippo Shippo connects you to USPS, UPS, FedEx, DHL, and 40+ carriers, so you can handle a shipment end to end right inside Claude. Compare live rates and pick the cheapest or best option, buy and print labels (domestic and international, with customs declarations), validate and standardize addresses, and track packages across carriers. Just ask in plain language: rate-shop a parcel, buy the right label, check a delivery status, or confirm an address before you ship. Whether you run a store or just need to send a package, Shippo turns a pile of carrier accounts into one simple conversation. productivity shippo"
     },
     {
+      "pluginId": "plugin:claude-official:shopify-ai-toolkit",
+      "text": "shopify-plugin Shopify's AI Toolkit provides 18 development skills for building on the Shopify platform, covering documentation search, API schema access, GraphQL and Liquid code validation, Hydrogen storefronts, Polaris UI extensions, store management via CLI, and onboarding guidance for both developers and merchants. ai developer-tools shopify toolkit"
+    },
+    {
       "pluginId": "plugin:claude-official:skill-creator",
       "text": "skill-creator Create new skills, improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, update or optimize an existing skill, run evals to test a skill, or benchmark skill performance with variance analysis. creator developer-tools skill"
     },
@@ -1296,6 +1360,10 @@
     {
       "pluginId": "plugin:claude-official:stackhawk-hawkscan",
       "text": "hawkscan Configure, run, and interpret HawkScan DAST results inside Claude Code. Generates stackhawk.yml configs, runs scans via CLI or Docker, and transforms security findings into prioritized fix tasks for your coding agent. hawkscan security stackhawk"
+    },
+    {
+      "pluginId": "plugin:claude-official:streaming-skills-plugin",
+      "text": "streaming-skills-plugin Skills for streaming application developers, covering Kafka and Flink client libraries and Schema Registry developer-tools plugin skills streaming"
     },
     {
       "pluginId": "plugin:claude-official:stripe",
@@ -1446,6 +1514,10 @@
       "text": "Ashby Search candidates, prep interviews, and manage pipeline tasks. ashby other"
     },
     {
+      "pluginId": "plugin:cursor-official:attio",
+      "text": "Attio Search and update CRM records, lists, notes, and tasks. attio other"
+    },
+    {
       "pluginId": "plugin:cursor-official:brevo",
       "text": "Brevo Manage contacts, email and SMS campaigns, and CRM deals. brevo other"
     },
@@ -1514,6 +1586,10 @@
       "text": "Fireflies Search meeting transcripts, summaries, and action items. fireflies other"
     },
     {
+      "pluginId": "plugin:cursor-official:gamma",
+      "text": "Gamma Generate presentations, documents, and webpages. gamma other"
+    },
+    {
       "pluginId": "plugin:cursor-official:github",
       "text": "GitHub Manage repos, issues, pull requests, and Actions. github other"
     },
@@ -1538,12 +1614,20 @@
       "text": "Google Drive Search, read, create, and share files. drive google other"
     },
     {
+      "pluginId": "plugin:cursor-official:grok-voice",
+      "text": "Grok Voice Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions. grok other voice"
+    },
+    {
       "pluginId": "plugin:cursor-official:guru",
       "text": "Guru Search company knowledge and draft verified answers. guru other"
     },
     {
       "pluginId": "plugin:cursor-official:hubspot",
       "text": "HubSpot Search and update contacts, companies, deals, and tickets. hubspot other"
+    },
+    {
+      "pluginId": "plugin:cursor-official:hunter",
+      "text": "Hunter Find and verify emails, discover companies, and save leads. hunter other"
     },
     {
       "pluginId": "plugin:cursor-official:intercom",
@@ -1644,6 +1728,10 @@
     {
       "pluginId": "plugin:cursor-official:teaching",
       "text": "Teaching Skill mapping, practice plans, and learning retrospectives. other teaching"
+    },
+    {
+      "pluginId": "plugin:cursor-official:teams",
+      "text": "Teams Search, read, and send Microsoft Teams chats and channel messages. other teams"
     },
     {
       "pluginId": "plugin:cursor-official:thermos",
@@ -1922,6 +2010,14 @@
       "text": "Pixeltable Build multimodal AI applications with Pixeltable -- tables, computed columns, embedding search, UDFs, tool-calling agents, and 25+ AI provider integrations. developer-tools pixeltable"
     },
     {
+      "pluginId": "plugin:knowledge-work-official:planetscale",
+      "text": "PlanetScale An authenticated hosted MCP server that accesses your PlanetScale organizations, databases, branches, schema, and Insights data. Query against your data, surface slow queries, and get organizational and account information. data planetscale"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:postiz",
+      "text": "Postiz Social media automation CLI for scheduling posts, managing integrations, uploading media, and tracking analytics across 28+ platforms including X, LinkedIn, Reddit, YouTube, TikTok, Instagram, and more other postiz"
+    },
+    {
       "pluginId": "plugin:knowledge-work-official:prisma",
       "text": "Prisma Prisma MCP integration for Postgres database management, schema migrations, SQL queries, and connection string management. Provision Prisma Postgres databases, run migrations, and interact with your data directly. other prisma"
     },
@@ -1944,6 +2040,10 @@
     {
       "pluginId": "plugin:knowledge-work-official:qodo",
       "text": "Qodo Shift-left code review skills that bring Qodo's quality standards and code review capabilities into your local development workflow. Catch issues before commit, enforce organizational standards, and resolve PR feedback directly in your agent. developer-tools qodo"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:qodo-standards",
+      "text": "Qodo Standards Optional Qodo rules discovery and standards administration workflows. developer-tools qodo standards"
     },
     {
       "pluginId": "plugin:knowledge-work-official:qt-development-skills",
@@ -2236,6 +2336,10 @@
     {
       "pluginId": "plugin:openai-official:public-equity-investing",
       "text": "public-equity-investing Public equity investing workflows for listed-company research, earnings analysis, valuation, model updates, long/short pitches, catalysts, thesis tracking, ETF/index and constituent diligence, sell-side research notes, risk sizing, hedging, dashboards, and investment memos. equity finance investing public"
+    },
+    {
+      "pluginId": "plugin:openai-official:qodo",
+      "text": "qodo Qodo setup, code intelligence, and review workflows. developer-tools qodo"
     },
     {
       "pluginId": "plugin:openai-official:remotion",
