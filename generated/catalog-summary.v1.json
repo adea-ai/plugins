@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:c3fddf0b14c9c93c376589dfb834f6436d73697920f8ec69ca01e9e21268ec90",
+  "catalogId": "catalog:305461058a36485c08d2fe8421e7540a3aa8f8004f6b3735ed0c58ee517f4085",
   "categories": [
     "automation",
     "business-operations",
@@ -22,8 +22,8 @@
     "security",
     "testing"
   ],
-  "generatedAt": "2026-09-10T20:31:08.071Z",
-  "pluginCount": 486,
+  "generatedAt": "2026-09-10T21:59:32.902Z",
+  "pluginCount": 490,
   "productGroups": [
     "42crunch-api-security-testing",
     "activecampaign",
@@ -207,6 +207,7 @@
     "hyperframes",
     "idmp-plugin",
     "imessage",
+    "interactive-brokers",
     "intercom",
     "jdtls-lsp",
     "jfrog",
@@ -239,6 +240,7 @@
     "mcp-apps",
     "mcp-server-dev",
     "mcp-tunnels",
+    "meltwater",
     "mem",
     "mercury",
     "mergify",
@@ -400,6 +402,7 @@
     "vercel",
     "vibe-prospecting",
     "vsql-extension-builder",
+    "webull",
     "windsor-ai",
     "wix",
     "workable",
@@ -1589,6 +1592,10 @@
       "text": "Hunter Find and verify emails, discover companies, and save leads. hunter other"
     },
     {
+      "pluginId": "plugin:cursor-official:interactive-brokers",
+      "text": "Interactive Brokers Review positions, balances, P&L, and draft trade instructions. brokers interactive other"
+    },
+    {
       "pluginId": "plugin:cursor-official:intercom",
       "text": "Intercom Search conversations, contacts, and Help Center articles. intercom other"
     },
@@ -1607,6 +1614,10 @@
     {
       "pluginId": "plugin:cursor-official:mailerlite",
       "text": "MailerLite Manage subscribers, groups, campaigns, and automations. mailerlite other"
+    },
+    {
+      "pluginId": "plugin:cursor-official:meltwater",
+      "text": "Meltwater Search media and social mentions and pull analytics. meltwater other"
     },
     {
       "pluginId": "plugin:cursor-official:mem",
@@ -1685,6 +1696,10 @@
       "text": "Smartsheet Query and update sheets, rows, and workspaces. other smartsheet"
     },
     {
+      "pluginId": "plugin:cursor-official:sp-global",
+      "text": "S&P Global Query S&P Capital IQ financials, prices, and transcripts. global other sp"
+    },
+    {
       "pluginId": "plugin:cursor-official:teaching",
       "text": "Teaching Skill mapping, practice plans, and learning retrospectives. other teaching"
     },
@@ -1707,6 +1722,10 @@
     {
       "pluginId": "plugin:cursor-official:upwork",
       "text": "Upwork Search talent, post jobs, and manage contracts. other upwork"
+    },
+    {
+      "pluginId": "plugin:cursor-official:webull",
+      "text": "Webull View accounts, positions, orders, watchlists, and market data. other webull"
     },
     {
       "pluginId": "plugin:cursor-official:workable",
