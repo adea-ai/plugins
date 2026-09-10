@@ -1,6 +1,6 @@
 {
   "name": "@adea-ai/source-adapters",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Deterministic source adapters for AI agent plugin marketplaces: manifest parsing, canonical repository URLs, and sha256-pinned content verification.",
   "keywords": [
     "adapters",

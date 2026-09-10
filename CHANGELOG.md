@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.3](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.3.2...plugins-marketplace-v1.3.3) (2026-09-10)
+
+
+### Bug Fixes
+
+* harden deterministic catalog normalization ([#50](https://github.com/adea-ai/plugins/issues/50)) ([99f369c](https://github.com/adea-ai/plugins/commit/99f369cd994938e5c763dbbc0e1e0c0100c40b83))
+
 ## [1.3.2](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.3.1...plugins-marketplace-v1.3.2) (2026-09-10)
 
 

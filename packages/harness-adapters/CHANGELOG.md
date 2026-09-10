@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/adea-ai/plugins/compare/harness-adapters-v1.3.0...harness-adapters-v1.3.1) (2026-09-10)
+
+
+### Bug Fixes
+
+* harden deterministic catalog normalization ([#50](https://github.com/adea-ai/plugins/issues/50)) ([99f369c](https://github.com/adea-ai/plugins/commit/99f369cd994938e5c763dbbc0e1e0c0100c40b83))
+
 ## [1.3.0](https://github.com/adea-ai/plugins/compare/harness-adapters-v1.2.0...harness-adapters-v1.3.0) (2026-09-09)
 
 
