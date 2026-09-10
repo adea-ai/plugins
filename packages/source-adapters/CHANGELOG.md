@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/adea-ai/plugins/compare/source-adapters-v1.2.0...source-adapters-v1.2.1) (2026-09-10)
+
+
+### Bug Fixes
+
+* harden deterministic catalog normalization ([#50](https://github.com/adea-ai/plugins/issues/50)) ([99f369c](https://github.com/adea-ai/plugins/commit/99f369cd994938e5c763dbbc0e1e0c0100c40b83))
+
 ## [1.2.0](https://github.com/adea-ai/plugins/compare/source-adapters-v1.1.4...source-adapters-v1.2.0) (2026-09-08)
 
 

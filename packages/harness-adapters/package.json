@@ -1,6 +1,6 @@
 {
   "name": "@adea-ai/harness-adapters",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Harness materialization for AI agent plugin marketplaces: translate catalog plugins into per-harness installation plans for Codex, Claude Code, Cursor, Pi, Hermes, and OpenCode.",
   "keywords": [
     "agents",
