@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.3.0...plugins-marketplace-v1.3.1) (2026-09-10)
+
+
+### Maintenance
+
+* **code-foundry:** upgrade runtime to v1.28.4 ([2df5c31](https://github.com/adea-ai/plugins/commit/2df5c3140a20b7c56cd4cb4edd2e574dd51be124))
+
 ## [1.3.0](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.2.0...plugins-marketplace-v1.3.0) (2026-09-09)
 
 
