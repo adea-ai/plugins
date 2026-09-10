@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.4](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.3.3...plugins-marketplace-v1.3.4) (2026-09-10)
+
+
+### Bug Fixes
+
+* **ci:** avoid auth on unchanged catalog sync ([#52](https://github.com/adea-ai/plugins/issues/52)) ([4338a34](https://github.com/adea-ai/plugins/commit/4338a341ac01cca2393d442b555ed64e5052a656))
+
 ## [1.3.3](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.3.2...plugins-marketplace-v1.3.3) (2026-09-10)
 
 
