@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.6](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.3.5...plugins-marketplace-v1.3.6) (2026-09-11)
+
+
+### Maintenance
+
+* **config:** right-size runner lanes and drop default shard overrides ([#56](https://github.com/adea-ai/plugins/issues/56)) ([f641be4](https://github.com/adea-ai/plugins/commit/f641be4a25b9a4162b741f3df1dbd7717f0fb236))
+
 ## [1.3.5](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.3.4...plugins-marketplace-v1.3.5) (2026-09-10)
 
 
