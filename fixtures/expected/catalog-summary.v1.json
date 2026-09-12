@@ -1,11 +1,11 @@
 {
-  "catalogId": "catalog:5a39cf75d47a272402feb870826007130bbec41783544ed1f4add23becbe9999",
+  "catalogId": "catalog:b50b46bedaad86265e56ac6e7eb49e26474d765a207d99c9bbb529a40be5f9b4",
   "categories": [
-    "data",
+    "business-operations",
+    "data-analytics",
     "developer-tools",
-    "other",
+    "education-research",
     "productivity",
-    "sales",
     "security"
   ],
   "generatedAt": "2026-01-01T00:00:00.000Z",
@@ -23,7 +23,7 @@
   "search": [
     {
       "pluginId": "plugin:claude-official:sales",
-      "text": "sales Prepare sales work. sales"
+      "text": "sales Prepare sales work. business-operations sales"
     },
     {
       "pluginId": "plugin:claude-official:security",
@@ -35,15 +35,15 @@
     },
     {
       "pluginId": "plugin:cursor-official:teaching",
-      "text": "teaching Practice and learning workflows. developer-tools teaching"
+      "text": "teaching Practice and learning workflows. developer-tools education-research teaching"
     },
     {
       "pluginId": "plugin:knowledge-work-official:productivity",
-      "text": "Productivity Organize work. other productivity"
+      "text": "Productivity Organize work. productivity"
     },
     {
       "pluginId": "plugin:knowledge-work-official:search",
-      "text": "Search Search connected data. data search"
+      "text": "Search Search connected data. data-analytics search"
     },
     {
       "pluginId": "plugin:openai-official:calendar",

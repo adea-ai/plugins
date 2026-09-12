@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "leading": {
+    "productivity": [
+      "google-calendar",
+      "google-drive",
+      "notion",
+      "todoist",
+      "readwise",
+      "smartsheet"
+    ],
+    "communication": ["slack", "zoom", "intercom", "fireflies", "otter", "gmail"],
+    "developer-tools": [
+      "github",
+      "playwright",
+      "cursor-sdk",
+      "agent-sdk-dev",
+      "fastly-agent-toolkit",
+      "getsentry"
+    ],
+    "data-analytics": [
+      "atlan",
+      "bigquery-data-analytics",
+      "daloopa",
+      "alloydb-omni",
+      "brightdata-plugin",
+      "fiftyone"
+    ],
+    "business-operations": ["attio", "hubspot", "navan", "docusign", "godaddy", "upwork"],
+    "finance": ["mercury", "interactive-brokers", "brex", "webull", "xero"],
+    "creativity": ["canva", "miro", "excalidraw", "gamma", "cloudinary"],
+    "education-research": ["coursera", "teaching", "continual-learning"],
+    "scientific-research": ["bio-research", "fiftyone"],
+    "security": ["nightvision", "zscaler", "42crunch-api-security-testing", "auth0"]
+  }
+}

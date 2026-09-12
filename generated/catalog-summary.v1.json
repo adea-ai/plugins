@@ -1,29 +1,19 @@
 {
-  "catalogId": "catalog:305461058a36485c08d2fe8421e7540a3aa8f8004f6b3735ed0c58ee517f4085",
+  "catalogId": "catalog:84979770ab6b1e16c18e4794fb3e6081ff1af6bebbd99f78fa0bdb3ba589bf07",
   "categories": [
-    "automation",
     "business-operations",
     "communication",
-    "data",
+    "creativity",
     "data-analytics",
-    "deployment",
-    "design",
     "developer-tools",
     "education-research",
     "finance",
-    "learning",
-    "location",
-    "math",
-    "migration",
-    "monitoring",
-    "other",
     "productivity",
     "scientific-research",
-    "security",
-    "testing"
+    "security"
   ],
-  "generatedAt": "2026-09-10T21:59:32.902Z",
-  "pluginCount": 490,
+  "generatedAt": "2026-09-12T02:31:42.140Z",
+  "pluginCount": 507,
   "productGroups": [
     "42crunch-api-security-testing",
     "activecampaign",
@@ -37,6 +27,7 @@
     "ahrefs",
     "ai-firstify",
     "ai-plugins",
+    "aikido",
     "airtable",
     "airwallex-agentos",
     "airwallex-dev",
@@ -143,6 +134,7 @@
     "data-agent-kit-starter-pack",
     "data-analytics",
     "databases-on-aws",
+    "databricks",
     "datadog",
     "dataproc",
     "dataverse",
@@ -156,9 +148,11 @@
     "dropbox",
     "duckdb-skills",
     "duende-skills",
+    "dynatrace",
     "engineering",
     "enterprise-search",
     "exa",
+    "excalidraw",
     "explanatory-output-style",
     "expo",
     "fakechat",
@@ -222,8 +216,11 @@
     "learn-with-coursera",
     "learning-output-style",
     "legal",
+    "legalzoom",
     "life-science-research",
     "linear",
+    "liquid-lsp",
+    "liquid-skills",
     "logfire",
     "logrocket",
     "looker",
@@ -237,11 +234,13 @@
     "mapbox",
     "marketing",
     "math-olympiad",
+    "maven-bio",
     "mcp-apps",
     "mcp-server-dev",
     "mcp-tunnels",
     "meltwater",
     "mem",
+    "mercadopago",
     "mercury",
     "mergify",
     "microsoft-docs",
@@ -256,6 +255,7 @@
     "mongodb",
     "mongodb-atlas",
     "navan",
+    "neon",
     "netlify-skills",
     "netsuite-ai-companion",
     "netsuite-finance-analyst",
@@ -353,6 +353,7 @@
     "sharepoint",
     "shippo",
     "shopify",
+    "shopify-ai-toolkit",
     "signoz",
     "similarweb",
     "skill-creator",
@@ -369,6 +370,7 @@
     "spotify-ads-api",
     "stackhawk-api",
     "stackhawk-hawkscan",
+    "streaming-skills-plugin",
     "stripe",
     "sumup",
     "supabase",
@@ -395,6 +397,7 @@
     "ui5-typescript-conversion",
     "unity",
     "unreal-engine-skills-for-claude-code",
+    "unstructured-foundation",
     "upwork",
     "valtown",
     "vanta",
@@ -429,11 +432,11 @@
     },
     {
       "pluginId": "plugin:claude-official:activecampaign",
-      "text": "ActiveCampaign Marketing automation, CRM, and email marketing powered by ActiveCampaign. Manage contacts, campaigns, automations, deals, and get AI-powered marketing insights — all from Claude. activecampaign productivity"
+      "text": "ActiveCampaign Marketing automation, CRM, and email marketing powered by ActiveCampaign. Manage contacts, campaigns, automations, deals, and get AI-powered marketing insights — all from Claude. activecampaign business-operations productivity"
     },
     {
       "pluginId": "plugin:claude-official:adobe-for-creativity",
-      "text": "adobe-for-creativity Harness Adobe's creative AI-powered tools to edit images, automate design workflows, and bring creative visions to life — from background removal to vectorization and professional retouching. adobe creativity design for"
+      "text": "adobe-for-creativity Harness Adobe's creative AI-powered tools to edit images, automate design workflows, and bring creative visions to life — from background removal to vectorization and professional retouching. adobe creativity for"
     },
     {
       "pluginId": "plugin:claude-official:agent-sdk-dev",
@@ -441,11 +444,15 @@
     },
     {
       "pluginId": "plugin:claude-official:agentforce-adlc",
-      "text": "agentforce-adlc Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, and optimize .agent files adlc agentforce developer-tools"
+      "text": "agentforce-adlc Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, and optimize .agent files adlc agentforce business-operations developer-tools"
     },
     {
       "pluginId": "plugin:claude-official:ai-plugins",
-      "text": "Endor Labs AI Plugins (Legacy) Set up endorctl and use Endor Labs to scan, prioritize, and fix security risks across your software supply chain ai other plugins"
+      "text": "Endor Labs AI Plugins (Legacy) Set up endorctl and use Endor Labs to scan, prioritize, and fix security risks across your software supply chain ai developer-tools plugins"
+    },
+    {
+      "pluginId": "plugin:claude-official:aikido",
+      "text": "aikido Aikido Security scanning for Claude Code — SAST, secrets, and IaC vulnerability detection powered by the Aikido MCP server. aikido security"
     },
     {
       "pluginId": "plugin:claude-official:airtable",
@@ -453,31 +460,31 @@
     },
     {
       "pluginId": "plugin:claude-official:airwallex-agentos",
-      "text": "airwallex-agentos Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities. agentos airwallex productivity"
+      "text": "airwallex-agentos Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities. agentos airwallex finance productivity"
     },
     {
       "pluginId": "plugin:claude-official:airwallex-dev",
-      "text": "airwallex-dev Build Airwallex payment integrations in your own codebase. Generates the checkout, card-element, onboarding, and subscription-billing code for an Airwallex integration and wires it into your project: Hosted Payment Page, Drop-in and Split Card elements, connected-account KYC onboarding, and Billing Hosted Checkout for subscriptions and card-saving. Also plans card-on-file merchant-initiated flows for AI providers such as top-ups and auto-recharge. airwallex dev developer-tools"
+      "text": "airwallex-dev Build Airwallex payment integrations in your own codebase. Generates the checkout, card-element, onboarding, and subscription-billing code for an Airwallex integration and wires it into your project: Hosted Payment Page, Drop-in and Split Card elements, connected-account KYC onboarding, and Billing Hosted Checkout for subscriptions and card-saving. Also plans card-on-file merchant-initiated flows for AI providers such as top-ups and auto-recharge. airwallex dev developer-tools finance"
     },
     {
       "pluginId": "plugin:claude-official:aiven",
-      "text": "aiven Easily deploy managed PostgreSQL (pg), Kafka, OpenSearch, Clickhouse and other databases, streaming and apps. Free tier available, up and running in minutes. aiven data"
+      "text": "aiven Easily deploy managed PostgreSQL (pg), Kafka, OpenSearch, Clickhouse and other databases, streaming and apps. Free tier available, up and running in minutes. aiven data-analytics"
     },
     {
       "pluginId": "plugin:claude-official:alloydb",
-      "text": "alloydb Create, connect, and interact with an AlloyDB for PostgreSQL database and data. alloydb data"
+      "text": "alloydb Create, connect, and interact with an AlloyDB for PostgreSQL database and data. alloydb data-analytics"
     },
     {
       "pluginId": "plugin:claude-official:alloydb-omni",
-      "text": "alloydb-omni Create, connect, and interact with an AlloyDB Omni database and data. alloydb data omni"
+      "text": "alloydb-omni Create, connect, and interact with an AlloyDB Omni database and data. alloydb data-analytics omni"
     },
     {
       "pluginId": "plugin:claude-official:altimate-code",
-      "text": "Altimate Code Delegates dbt and warehouse work to altimate-code, a specialized CLI agent with 100+ purpose-built data tools (SQL analysis, column-level lineage, dbt build/test/run, warehouse profiling, FinOps, connectivity to Snowflake, BigQuery, Redshift, Databricks, Postgres, MySQL, DuckDB). altimate code data"
+      "text": "Altimate Code Delegates dbt and warehouse work to altimate-code, a specialized CLI agent with 100+ purpose-built data tools (SQL analysis, column-level lineage, dbt build/test/run, warehouse profiling, FinOps, connectivity to Snowflake, BigQuery, Redshift, Databricks, Postgres, MySQL, DuckDB). altimate code data-analytics developer-tools"
     },
     {
       "pluginId": "plugin:claude-official:amazon-location-service",
-      "text": "amazon-location-service Guide developers through adding maps, places search, geocoding, routing, and other geospatial features with Amazon Location Service, including authentication setup, SDK integration, and best practices. amazon location service"
+      "text": "amazon-location-service Guide developers through adding maps, places search, geocoding, routing, and other geospatial features with Amazon Location Service, including authentication setup, SDK integration, and best practices. amazon developer-tools location service"
     },
     {
       "pluginId": "plugin:claude-official:amd-skills",
@@ -485,11 +492,11 @@
     },
     {
       "pluginId": "plugin:claude-official:amplitude",
-      "text": "amplitude Use Amplitude as an expert analyst — instrument Amplitude, discover product opportunities, analyze charts, create dashboards, manage experiments, and understand users and accounts. amplitude monitoring"
+      "text": "amplitude Use Amplitude as an expert analyst — instrument Amplitude, discover product opportunities, analyze charts, create dashboards, manage experiments, and understand users and accounts. amplitude developer-tools"
     },
     {
       "pluginId": "plugin:claude-official:apollo",
-      "text": "apollo Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork. apollo productivity"
+      "text": "apollo Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork. apollo business-operations productivity"
     },
     {
       "pluginId": "plugin:claude-official:appwrite",
@@ -501,7 +508,7 @@
     },
     {
       "pluginId": "plugin:claude-official:atlan",
-      "text": "atlan Atlan data catalog plugin for Claude Code. Search, explore, govern, and manage your data assets through natural language. Powered by the Atlan MCP server with semantic search, lineage traversal, glossary management, data quality rules, and more. atlan other"
+      "text": "atlan Atlan data catalog plugin for Claude Code. Search, explore, govern, and manage your data assets through natural language. Powered by the Atlan MCP server with semantic search, lineage traversal, glossary management, data quality rules, and more. atlan data-analytics"
     },
     {
       "pluginId": "plugin:claude-official:atlassian",
@@ -549,23 +556,23 @@
     },
     {
       "pluginId": "plugin:claude-official:aws-transform",
-      "text": "aws-transform Migrate, modernize, and upgrade codebases to AWS. Transforms .NET Framework to .NET 8/10, mainframe COBOL to Java, VMware VMs to EC2, SQL Server to Aurora, and upgrades Java/Python/Node.js versions and AWS SDKs. AWS Transform - continuous modernization analyzes codebases for tech debt, security issues, and upgrade opportunities, then remediates them. aws migration transform"
+      "text": "aws-transform Migrate, modernize, and upgrade codebases to AWS. Transforms .NET Framework to .NET 8/10, mainframe COBOL to Java, VMware VMs to EC2, SQL Server to Aurora, and upgrades Java/Python/Node.js versions and AWS SDKs. AWS Transform - continuous modernization analyzes codebases for tech debt, security issues, and upgrade opportunities, then remediates them. aws developer-tools transform"
     },
     {
       "pluginId": "plugin:claude-official:azure-cosmos-db-assistant",
-      "text": "Azure Cosmos DB Expert assistant for Azure Cosmos DB — data modeling, query optimization, performance tuning, and best practices. assistant azure cosmos data db"
+      "text": "Azure Cosmos DB Expert assistant for Azure Cosmos DB — data modeling, query optimization, performance tuning, and best practices. assistant azure cosmos data-analytics db"
     },
     {
       "pluginId": "plugin:claude-official:azure-sql-developer",
-      "text": "azure-sql-database-container Agent skills for Azure SQL Developer, the Azure SQL Database engine running locally in a container. Teaches your agent to run the engine, connect, migrate, scaffold, build RAG, wire CI, and go local-to-cloud, using the real Private Preview image instead of the SQL Server image. azure data developer sql"
+      "text": "azure-sql-database-container Agent skills for Azure SQL Developer, the Azure SQL Database engine running locally in a container. Teaches your agent to run the engine, connect, migrate, scaffold, build RAG, wire CI, and go local-to-cloud, using the real Private Preview image instead of the SQL Server image. azure data-analytics developer sql"
     },
     {
       "pluginId": "plugin:claude-official:bigdata-com",
-      "text": "bigdata-com Official Bigdata.com plugin providing financial research, analytics, and intelligence tools powered by Bigdata MCP. bigdata com data"
+      "text": "bigdata-com Official Bigdata.com plugin providing financial research, analytics, and intelligence tools powered by Bigdata MCP. bigdata com data-analytics"
     },
     {
       "pluginId": "plugin:claude-official:bigquery-data-analytics",
-      "text": "bigquery-data-analytics Connect, query, and generate data insights for BigQuery datasets and data. analytics bigquery data"
+      "text": "bigquery-data-analytics Connect, query, and generate data insights for BigQuery datasets and data. analytics bigquery data data-analytics"
     },
     {
       "pluginId": "plugin:claude-official:boltz",
@@ -577,11 +584,11 @@
     },
     {
       "pluginId": "plugin:claude-official:brightdata-plugin",
-      "text": "brightdata-plugin Web scraping, Google search, structured data extraction, and MCP server integration powered by Bright Data. Includes 7 skills: scrape any webpage as markdown (with bot detection/CAPTCHA bypass), search Google with structured JSON results, extract data from 40+ websites (Amazon, LinkedIn, Instagram, TikTok, YouTube, and more), orchestrate Bright Data's 60+ MCP tools, built-in best practices for Web Unlocker, SERP API, Web Scraper API, and Browser API, Python SDK best practices for the brightda... brightdata other plugin"
+      "text": "brightdata-plugin Web scraping, Google search, structured data extraction, and MCP server integration powered by Bright Data. Includes 7 skills: scrape any webpage as markdown (with bot detection/CAPTCHA bypass), search Google with structured JSON results, extract data from 40+ websites (Amazon, LinkedIn, Instagram, TikTok, YouTube, and more), orchestrate Bright Data's 60+ MCP tools, built-in best practices for Web Unlocker, SERP API, Web Scraper API, and Browser API, Python SDK best practices for the brightda... brightdata data-analytics plugin"
     },
     {
       "pluginId": "plugin:claude-official:browser-use",
-      "text": "browser-use Give Claude a real browser — your Chrome or a Browser Use Cloud browser. Use it whenever a task involves a website or web app: browsing, scraping and data extraction, filling forms, testing sites, taking screenshots, automating web workflows. automation browser use"
+      "text": "browser-use Give Claude a real browser — your Chrome or a Browser Use Cloud browser. Use it whenever a task involves a website or web app: browsing, scraping and data extraction, filling forms, testing sites, taking screenshots, automating web workflows. browser developer-tools use"
     },
     {
       "pluginId": "plugin:claude-official:carbone-skill",
@@ -589,19 +596,19 @@
     },
     {
       "pluginId": "plugin:claude-official:carta-cap-table",
-      "text": "carta-cap-table Carta Cap Table plugin — skills and hooks for querying cap tables, grants, SAFEs, 409A valuations, waterfall scenarios, and more cap carta productivity table"
+      "text": "carta-cap-table Carta Cap Table plugin — skills and hooks for querying cap tables, grants, SAFEs, 409A valuations, waterfall scenarios, and more cap carta finance productivity table"
     },
     {
       "pluginId": "plugin:claude-official:carta-crm",
-      "text": "carta-crm Manage the Carta CRM conversationally — search, add, update, and enrich investors, companies, contacts, deals, notes, and fundraisings via the Carta CRM MCP Server. carta crm productivity"
+      "text": "carta-crm Manage the Carta CRM conversationally — search, add, update, and enrich investors, companies, contacts, deals, notes, and fundraisings via the Carta CRM MCP Server. business-operations carta crm productivity"
     },
     {
       "pluginId": "plugin:claude-official:carta-investors",
-      "text": "carta-investors Carta Investors plugin — skills for querying investor data, performance benchmarks, regulatory reporting, AGM deck generation, brand extraction, and more via the Carta MCP Server. carta investors productivity"
+      "text": "carta-investors Carta Investors plugin — skills for querying investor data, performance benchmarks, regulatory reporting, AGM deck generation, brand extraction, and more via the Carta MCP Server. carta finance investors productivity"
     },
     {
       "pluginId": "plugin:claude-official:catalyst-by-zoho",
-      "text": "catalyst-by-zoho Official Claude Code plugin for Catalyst by Zoho — full-stack serverless cloud platform. With Skills that covers all services, SDKs, CLI, architecture patterns, pricing, migration guides, and Zoho MCP tool-based resource management. by catalyst developer-tools zoho"
+      "text": "catalyst-by-zoho Official Claude Code plugin for Catalyst by Zoho — full-stack serverless cloud platform. With Skills that covers all services, SDKs, CLI, architecture patterns, pricing, migration guides, and Zoho MCP tool-based resource management. business-operations by catalyst developer-tools zoho"
     },
     {
       "pluginId": "plugin:claude-official:cds-mcp",
@@ -637,27 +644,27 @@
     },
     {
       "pluginId": "plugin:claude-official:clickhouse-best-practices",
-      "text": "clickhouse-best-practices 28 best practice rules for ClickHouse schema design, query optimization, and data ingestion — prioritized by impact best clickhouse data practices"
+      "text": "clickhouse-best-practices 28 best practice rules for ClickHouse schema design, query optimization, and data ingestion — prioritized by impact best clickhouse data-analytics practices"
     },
     {
       "pluginId": "plugin:claude-official:cloud-sql-mysql",
-      "text": "cloud-sql-mysql Connect and interact with a Cloud SQL for MySQL database and data. cloud data mysql sql"
+      "text": "cloud-sql-mysql Connect and interact with a Cloud SQL for MySQL database and data. cloud data-analytics mysql sql"
     },
     {
       "pluginId": "plugin:claude-official:cloud-sql-postgresql",
-      "text": "cloud-sql-postgresql Create, connect, and interact with a Cloud SQL for PostgreSQL database and data. cloud data postgresql sql"
+      "text": "cloud-sql-postgresql Create, connect, and interact with a Cloud SQL for PostgreSQL database and data. cloud data-analytics postgresql sql"
     },
     {
       "pluginId": "plugin:claude-official:cloud-sql-sqlserver",
-      "text": "cloud-sql-sqlserver Connect to Cloud SQL for SQL Server cloud data sql sqlserver"
+      "text": "cloud-sql-sqlserver Connect to Cloud SQL for SQL Server cloud data-analytics sql sqlserver"
     },
     {
       "pluginId": "plugin:claude-official:cloudflare",
-      "text": "cloudflare Skills for the Cloudflare developer platform: Workers, Durable Objects, Agents SDK, MCP servers, Wrangler CLI, and web performance. cloudflare deployment"
+      "text": "cloudflare Skills for the Cloudflare developer platform: Workers, Durable Objects, Agents SDK, MCP servers, Wrangler CLI, and web performance. cloudflare developer-tools"
     },
     {
       "pluginId": "plugin:claude-official:cloudinary",
-      "text": "cloudinary Use Cloudinary directly in Claude. Manage assets, apply transformations, optimize media, and more through natural conversation. cloudinary other"
+      "text": "cloudinary Use Cloudinary directly in Claude. Manage assets, apply transformations, optimize media, and more through natural conversation. cloudinary creativity"
     },
     {
       "pluginId": "plugin:claude-official:code-modernization",
@@ -689,7 +696,7 @@
     },
     {
       "pluginId": "plugin:claude-official:convex",
-      "text": "Convex Official Convex plugin for Claude Code with bundled Convex skills, the convex-expert subagent for code-writing, a runtime-error monitor, and MCP access for backend development, schema design, real-time features, auth, file storage, scheduled jobs, and AI agents. agent auth backend convex cron data database mcp mobile rag reactive realtime scheduler storage typescript websocket"
+      "text": "Convex Official Convex plugin for Claude Code with bundled Convex skills, the convex-expert subagent for code-writing, a runtime-error monitor, and MCP access for backend development, schema design, real-time features, auth, file storage, scheduled jobs, and AI agents. agent auth backend convex cron data-analytics database mcp mobile rag reactive realtime scheduler storage typescript websocket"
     },
     {
       "pluginId": "plugin:claude-official:crowdsec",
@@ -713,7 +720,7 @@
     },
     {
       "pluginId": "plugin:claude-official:dash0",
-      "text": "dash0-agent-plugin OpenTelemetry observability for Claude Code sessions. Captures tool calls, LLM invocations, token usage, and errors as OTel traces. Send telemetry to Dash0 or any OpenTelemetry-compatible backend. dash0 monitoring"
+      "text": "dash0-agent-plugin OpenTelemetry observability for Claude Code sessions. Captures tool calls, LLM invocations, token usage, and errors as OTel traces. Send telemetry to Dash0 or any OpenTelemetry-compatible backend. dash0 developer-tools"
     },
     {
       "pluginId": "plugin:claude-official:data-agent-kit-starter-pack",
@@ -721,23 +728,27 @@
     },
     {
       "pluginId": "plugin:claude-official:databases-on-aws",
-      "text": "databases-on-aws Expert database guidance for the AWS database portfolio. Design schemas, execute queries, handle migrations, and choose the right database for your workload. aws data databases on"
+      "text": "databases-on-aws Expert database guidance for the AWS database portfolio. Design schemas, execute queries, handle migrations, and choose the right database for your workload. aws data-analytics databases on"
+    },
+    {
+      "pluginId": "plugin:claude-official:databricks",
+      "text": "databricks Databricks skills for the CLI, Apps, Lakebase, Model Serving, Lakeflow Jobs, Spark Declarative Pipelines, Declarative Automation Bundles (DABs), and classic-to-serverless migration. data-analytics databricks"
     },
     {
       "pluginId": "plugin:claude-official:datadog",
-      "text": "datadog Use Datadog directly in Claude Code through a preconfigured Datadog MCP server. Query logs, metrics, traces, dashboards, and more through natural conversation. This plugin is in preview. datadog monitoring"
+      "text": "datadog Use Datadog directly in Claude Code through a preconfigured Datadog MCP server. Query logs, metrics, traces, dashboards, and more through natural conversation. This plugin is in preview. datadog developer-tools"
     },
     {
       "pluginId": "plugin:claude-official:dataproc",
-      "text": "dataproc Manage Dataproc clusters and jobs. data dataproc"
+      "text": "dataproc Manage Dataproc clusters and jobs. data-analytics dataproc"
     },
     {
       "pluginId": "plugin:claude-official:dataverse",
-      "text": "dataverse Agent skills for building on, analyzing, and managing Microsoft Dataverse — with Dataverse MCP, PAC CLI, and Python SDK. data dataverse"
+      "text": "dataverse Agent skills for building on, analyzing, and managing Microsoft Dataverse — with Dataverse MCP, PAC CLI, and Python SDK. data-analytics dataverse"
     },
     {
       "pluginId": "plugin:claude-official:deploy-on-aws",
-      "text": "deploy-on-aws Deploy applications to AWS with architecture recommendations, cost estimates, and IaC deployment. aws deploy deployment on"
+      "text": "deploy-on-aws Deploy applications to AWS with architecture recommendations, cost estimates, and IaC deployment. aws deploy developer-tools on"
     },
     {
       "pluginId": "plugin:claude-official:desktop-commander",
@@ -757,11 +768,15 @@
     },
     {
       "pluginId": "plugin:claude-official:duckdb-skills",
-      "text": "duckdb-skills DuckDB-powered skills for Claude Code: read any data file, attach and query DuckDB databases, search DuckDB/DuckLake docs, search past session logs, and install/update DuckDB extensions. data duckdb skills"
+      "text": "duckdb-skills DuckDB-powered skills for Claude Code: read any data file, attach and query DuckDB databases, search DuckDB/DuckLake docs, search past session logs, and install/update DuckDB extensions. data-analytics duckdb skills"
     },
     {
       "pluginId": "plugin:claude-official:duende-skills",
       "text": "duende-skills Duende development skills and agents for Claude Code — covering OAuth/OIDC protocols, IdentityServer, token management, ASP.NET Core authentication/authorization, BFF patterns, and secure identity architecture duende security skills"
+    },
+    {
+      "pluginId": "plugin:claude-official:dynatrace",
+      "text": "Dynatrace Dynatrace observability skills: DQL query patterns, application and infrastructure monitoring, log analysis, problem investigation, and incident response workflows, with the Dynatrace MCP server for live platform access. developer-tools dynatrace"
     },
     {
       "pluginId": "plugin:claude-official:exa",
@@ -769,7 +784,7 @@
     },
     {
       "pluginId": "plugin:claude-official:explanatory-output-style",
-      "text": "explanatory-output-style Adds educational insights about implementation choices and codebase patterns (mimics the deprecated Explanatory output style) explanatory learning output style"
+      "text": "explanatory-output-style Adds educational insights about implementation choices and codebase patterns (mimics the deprecated Explanatory output style) education-research explanatory output style"
     },
     {
       "pluginId": "plugin:claude-official:expo",
@@ -781,7 +796,7 @@
     },
     {
       "pluginId": "plugin:claude-official:fastly-agent-toolkit",
-      "text": "fastly-agent-toolkit Fastly development tools and platform skills agent fastly other toolkit"
+      "text": "fastly-agent-toolkit Fastly development tools and platform skills agent developer-tools fastly toolkit"
     },
     {
       "pluginId": "plugin:claude-official:feature-dev",
@@ -789,15 +804,15 @@
     },
     {
       "pluginId": "plugin:claude-official:fiftyone",
-      "text": "fiftyone Build high-quality datasets and computer vision models. Visualize datasets, analyze models, find duplicates, run inference, evaluate predictions, and develop custom plugins. fiftyone other"
+      "text": "fiftyone Build high-quality datasets and computer vision models. Visualize datasets, analyze models, find duplicates, run inference, evaluate predictions, and develop custom plugins. data-analytics fiftyone"
     },
     {
       "pluginId": "plugin:claude-official:figma",
-      "text": "figma Figma design platform integration. Access design files, extract component information, read design tokens, and translate designs into code. Bridge the gap between design and development workflows. design figma"
+      "text": "figma Figma design platform integration. Access design files, extract component information, read design tokens, and translate designs into code. Bridge the gap between design and development workflows. creativity figma"
     },
     {
       "pluginId": "plugin:claude-official:firebase",
-      "text": "firebase Google Firebase MCP integration. Manage Firestore databases, authentication, cloud functions, hosting, and storage. Build and manage your Firebase backend directly from your development workflow. data firebase"
+      "text": "firebase Google Firebase MCP integration. Manage Firestore databases, authentication, cloud functions, hosting, and storage. Build and manage your Firebase backend directly from your development workflow. data-analytics firebase"
     },
     {
       "pluginId": "plugin:claude-official:firecrawl",
@@ -805,7 +820,7 @@
     },
     {
       "pluginId": "plugin:claude-official:firestore-native",
-      "text": "firestore-native Connect and interact with Firestore databases, collections, and documents. data firestore native"
+      "text": "firestore-native Connect and interact with Firestore databases, collections, and documents. data-analytics firestore native"
     },
     {
       "pluginId": "plugin:claude-official:forge-skills",
@@ -817,7 +832,7 @@
     },
     {
       "pluginId": "plugin:claude-official:fullstory",
-      "text": "fullstory Connect Claude to Fullstory to query behavioral analytics, session replays, and customer experience insights. fullstory monitoring"
+      "text": "fullstory Connect Claude to Fullstory to query behavioral analytics, session replays, and customer experience insights. developer-tools fullstory"
     },
     {
       "pluginId": "plugin:claude-official:gc-ai",
@@ -825,7 +840,7 @@
     },
     {
       "pluginId": "plugin:claude-official:github",
-      "text": "github Official GitHub MCP server for repository management. Create issues, manage pull requests, review code, search repositories, and interact with GitHub's full API directly from Claude Code. github productivity"
+      "text": "github Official GitHub MCP server for repository management. Create issues, manage pull requests, review code, search repositories, and interact with GitHub's full API directly from Claude Code. developer-tools github productivity"
     },
     {
       "pluginId": "plugin:claude-official:gitkraken",
@@ -837,7 +852,7 @@
     },
     {
       "pluginId": "plugin:claude-official:google-cloud-storage",
-      "text": "google-cloud-storage Official Google Cloud Storage (GCS) plugin. Manage buckets and objects, transfer data, and configure MCP, FUSE, IAM, security, lifecycle rules, signed URLs, Terraform, and the CLI. cloud deployment google storage"
+      "text": "google-cloud-storage Official Google Cloud Storage (GCS) plugin. Manage buckets and objects, transfer data, and configure MCP, FUSE, IAM, security, lifecycle rules, signed URLs, Terraform, and the CLI. cloud developer-tools google storage"
     },
     {
       "pluginId": "plugin:claude-official:gopls-lsp",
@@ -845,19 +860,19 @@
     },
     {
       "pluginId": "plugin:claude-official:grafana-assistant",
-      "text": "grafana-assistant Skills and rules for developing and using the Grafana Assistant app and CLI. assistant grafana monitoring"
+      "text": "grafana-assistant Skills and rules for developing and using the Grafana Assistant app and CLI. assistant developer-tools grafana"
     },
     {
       "pluginId": "plugin:claude-official:grafana-cloud-mcp",
-      "text": "Grafana Cloud MCP Hosted MCP server for AI-assisted Grafana Cloud observability — no local installation required. cloud grafana mcp monitoring"
+      "text": "Grafana Cloud MCP Hosted MCP server for AI-assisted Grafana Cloud observability — no local installation required. cloud developer-tools grafana mcp"
     },
     {
       "pluginId": "plugin:claude-official:grafana-mcp",
-      "text": "grafana-mcp MCP server for AI-assisted Grafana dashboard, datasource, alerting, and incident management. grafana mcp monitoring"
+      "text": "grafana-mcp MCP server for AI-assisted Grafana dashboard, datasource, alerting, and incident management. developer-tools grafana mcp"
     },
     {
       "pluginId": "plugin:claude-official:honeycomb",
-      "text": "honeycomb Skills, agents, and workflows for Honeycomb observability — query patterns, production investigations, SLOs, OpenTelemetry instrumentation, and Beeline migration. Designed to complement the Honeycomb MCP server. honeycomb monitoring"
+      "text": "honeycomb Skills, agents, and workflows for Honeycomb observability — query patterns, production investigations, SLOs, OpenTelemetry instrumentation, and Beeline migration. Designed to complement the Honeycomb MCP server. developer-tools honeycomb"
     },
     {
       "pluginId": "plugin:claude-official:hookify",
@@ -865,7 +880,7 @@
     },
     {
       "pluginId": "plugin:claude-official:hostinger",
-      "text": "Hostinger Deploy, manage and monitor Hostinger services — Websites, Domains, Ecommerce, Email Marketing, Subscriptions & Payments, and VPS. Authenticate via browser (OAuth) or API token. deployment hostinger"
+      "text": "Hostinger Deploy, manage and monitor Hostinger services — Websites, Domains, Ecommerce, Email Marketing, Subscriptions & Payments, and VPS. Authenticate via browser (OAuth) or API token. developer-tools hostinger"
     },
     {
       "pluginId": "plugin:claude-official:hubspot-sales",
@@ -877,7 +892,7 @@
     },
     {
       "pluginId": "plugin:claude-official:hunter",
-      "text": "hunter Find and verify professional email addresses, search contacts by domain, and enrich company data -- directly in Claude. hunter productivity"
+      "text": "hunter Find and verify professional email addresses, search contacts by domain, and enrich company data -- directly in Claude. business-operations hunter productivity"
     },
     {
       "pluginId": "plugin:claude-official:idmp-plugin",
@@ -889,7 +904,7 @@
     },
     {
       "pluginId": "plugin:claude-official:intercom",
-      "text": "intercom Intercom integration for Claude Code. Search conversations, analyze customer support patterns, look up contacts and companies, and install the Intercom Messenger. Connect your Intercom workspace to get real-time insights from customer data. intercom productivity"
+      "text": "intercom Intercom integration for Claude Code. Search conversations, analyze customer support patterns, look up contacts and companies, and install the Intercom Messenger. Connect your Intercom workspace to get real-time insights from customer data. communication intercom productivity"
     },
     {
       "pluginId": "plugin:claude-official:jdtls-lsp",
@@ -901,7 +916,7 @@
     },
     {
       "pluginId": "plugin:claude-official:knowledge-catalog",
-      "text": "knowledge-catalog Connect to Knowledge Catalog to discover, manage, monitor, and govern data and AI artifacts across your data platform catalog data knowledge"
+      "text": "knowledge-catalog Connect to Knowledge Catalog to discover, manage, monitor, and govern data and AI artifacts across your data platform catalog data-analytics knowledge"
     },
     {
       "pluginId": "plugin:claude-official:kotlin-lsp",
@@ -909,11 +924,11 @@
     },
     {
       "pluginId": "plugin:claude-official:langfuse",
-      "text": "langfuse Skills for working with Langfuse, the open-source LLM engineering platform for tracing, prompt management, and evaluation. langfuse monitoring"
+      "text": "langfuse Skills for working with Langfuse, the open-source LLM engineering platform for tracing, prompt management, and evaluation. developer-tools langfuse"
     },
     {
       "pluginId": "plugin:claude-official:langfuse-observability",
-      "text": "langfuse-observability Langfuse observability plugin for Claude Code — captures and exports traces, spans, and session telemetry from Claude Code to Langfuse for LLM monitoring, debugging, and evaluation langfuse monitoring observability"
+      "text": "langfuse-observability Langfuse observability plugin for Claude Code — captures and exports traces, spans, and session telemetry from Claude Code to Langfuse for LLM monitoring, debugging, and evaluation developer-tools langfuse observability"
     },
     {
       "pluginId": "plugin:claude-official:laravel-boost",
@@ -921,27 +936,39 @@
     },
     {
       "pluginId": "plugin:claude-official:learn-with-coursera",
-      "text": "learn-with-coursera Turn any learning intent into a personalized Coursera experience. Asks three quick questions (topic, familiarity, preferred format), searches Coursera's catalog, and delivers the right next step — a course, hands-on project, short video, or live roleplay — then maps a path forward. Requires the Coursera connector for catalog tools. coursera learn learning with"
+      "text": "learn-with-coursera Turn any learning intent into a personalized Coursera experience. Asks three quick questions (topic, familiarity, preferred format), searches Coursera's catalog, and delivers the right next step — a course, hands-on project, short video, or live roleplay — then maps a path forward. Requires the Coursera connector for catalog tools. coursera education-research learn with"
     },
     {
       "pluginId": "plugin:claude-official:learning-output-style",
-      "text": "learning-output-style Interactive learning mode that requests meaningful code contributions at decision points (mimics the unshipped Learning output style) learning output style"
+      "text": "learning-output-style Interactive learning mode that requests meaningful code contributions at decision points (mimics the unshipped Learning output style) education-research learning output style"
+    },
+    {
+      "pluginId": "plugin:claude-official:legalzoom",
+      "text": "legalzoom Attorney guidance and legal tools for business and personal needs. AI-powered document review identifies critical risks and important clauses, advises when to engage an attorney, and routes to LegalZoom's network when professional expertise is needed. legalzoom productivity"
     },
     {
       "pluginId": "plugin:claude-official:linear",
       "text": "linear Linear issue tracking integration. Create issues, manage projects, update statuses, search across workspaces, and streamline your software development workflow with Linear's modern issue tracker. linear productivity"
     },
     {
+      "pluginId": "plugin:claude-official:liquid-lsp",
+      "text": "liquid-lsp LSP integration for Shopify Liquid templates via the Shopify CLI theme language server. developer-tools liquid lsp"
+    },
+    {
+      "pluginId": "plugin:claude-official:liquid-skills",
+      "text": "liquid-skills Liquid language fundamentals, CSS/JS/HTML coding standards, and WCAG accessibility patterns for Shopify themes developer-tools liquid skills"
+    },
+    {
       "pluginId": "plugin:claude-official:logfire",
-      "text": "logfire Add Logfire observability to Python applications with auto-instrumentation for FastAPI, httpx, asyncpg, SQLAlchemy, and more logfire monitoring"
+      "text": "logfire Add Logfire observability to Python applications with auto-instrumentation for FastAPI, httpx, asyncpg, SQLAlchemy, and more developer-tools logfire"
     },
     {
       "pluginId": "plugin:claude-official:logrocket",
-      "text": "logrocket Connect Claude Code to LogRocket to query session replays, metrics, issues, and user behavior using natural language. logrocket monitoring"
+      "text": "logrocket Connect Claude Code to LogRocket to query session replays, metrics, issues, and user behavior using natural language. developer-tools logrocket"
     },
     {
       "pluginId": "plugin:claude-official:looker",
-      "text": "looker Connect to Looker and interact with your data using LookML. data looker"
+      "text": "looker Connect to Looker and interact with your data using LookML. data-analytics looker"
     },
     {
       "pluginId": "plugin:claude-official:lovable",
@@ -961,11 +988,11 @@
     },
     {
       "pluginId": "plugin:claude-official:mapbox",
-      "text": "mapbox Mapbox skills and MCP servers for building location-aware applications with AI. Includes geospatial tools, style management, and patterns for web, iOS, Android, and AI agent frameworks. location mapbox"
+      "text": "mapbox Mapbox skills and MCP servers for building location-aware applications with AI. Includes geospatial tools, style management, and patterns for web, iOS, Android, and AI agent frameworks. developer-tools mapbox"
     },
     {
       "pluginId": "plugin:claude-official:math-olympiad",
-      "text": "math-olympiad Solve competition math (IMO, Putnam, USAMO) with adversarial verification that catches what self-verification misses. Fresh-context verifiers attack proofs with specific failure patterns. Calibrated abstention over bluffing. math olympiad"
+      "text": "math-olympiad Solve competition math (IMO, Putnam, USAMO) with adversarial verification that catches what self-verification misses. Fresh-context verifiers attack proofs with specific failure patterns. Calibrated abstention over bluffing. math olympiad scientific-research"
     },
     {
       "pluginId": "plugin:claude-official:mcp-apps",
@@ -978,6 +1005,10 @@
     {
       "pluginId": "plugin:claude-official:mcp-tunnels",
       "text": "mcp-tunnels Connect Claude to a private MCP server through an Anthropic MCP tunnel. The /create-docker-mcp-tunnel command drives the Docker Compose quickstart end to end: certificates, proxy config, cloudflared, and a verifiable sample server. developer-tools mcp tunnels"
+    },
+    {
+      "pluginId": "plugin:claude-official:mercadopago",
+      "text": "Mercado Pago Mercado Pago full-product integration toolkit. One agent routes to four orchestration skills (mp-integrate wizard, mp-webhooks, mp-test-setup, mp-review) that pull every endpoint, payload, and snippet live from the official Mercado Pago MCP server. The MCP must always be connected — there is no offline mode. developer-tools mercadopago"
     },
     {
       "pluginId": "plugin:claude-official:mergify",
@@ -997,11 +1028,11 @@
     },
     {
       "pluginId": "plugin:claude-official:miro",
-      "text": "miro Secure access to Miro boards. Enables AI to read board context, create diagrams, and generate code with enterprise-grade security. design miro"
+      "text": "miro Secure access to Miro boards. Enables AI to read board context, create diagrams, and generate code with enterprise-grade security. creativity miro"
     },
     {
       "pluginId": "plugin:claude-official:mlflow",
-      "text": "MLflow Skills Skills for tracing, evaluating, and improving AI agents with MLflow. Supports the full agent improvement loop: instrument → trace → evaluate → iterate → validate. mlflow monitoring"
+      "text": "MLflow Skills Skills for tracing, evaluating, and improving AI agents with MLflow. Supports the full agent improvement loop: instrument → trace → evaluate → iterate → validate. developer-tools mlflow"
     },
     {
       "pluginId": "plugin:claude-official:modern-web-guidance",
@@ -1013,11 +1044,15 @@
     },
     {
       "pluginId": "plugin:claude-official:mongodb",
-      "text": "mongodb Official Claude plugin for MongoDB (MCP Server + Skills). Connect to databases, explore data, manage collections, optimize queries, generate reliable code, implement best practices, develop advanced features, and more. data mongodb"
+      "text": "mongodb Official Claude plugin for MongoDB (MCP Server + Skills). Connect to databases, explore data, manage collections, optimize queries, generate reliable code, implement best practices, develop advanced features, and more. data-analytics mongodb"
     },
     {
       "pluginId": "plugin:claude-official:mongodb-atlas",
-      "text": "mongodb-atlas Connect to MongoDB Atlas clusters only through the Atlas Managed MCP Server. Sign in with your Atlas account to explore data, manage collections, optimize queries, generate reliable code with MongoDB best practices, and manage Atlas resources such as clusters, projects, database users, and network access. If you are running a different MongoDB deployment or want to run a local MongoDB MCP Server, install the MongoDB (Self-Managed MCP) plugin instead. atlas data mongodb"
+      "text": "mongodb-atlas Connect to MongoDB Atlas clusters only through the Atlas Managed MCP Server. Sign in with your Atlas account to explore data, manage collections, optimize queries, generate reliable code with MongoDB best practices, and manage Atlas resources such as clusters, projects, database users, and network access. If you are running a different MongoDB deployment or want to run a local MongoDB MCP Server, install the MongoDB (Self-Managed MCP) plugin instead. atlas data-analytics mongodb"
+    },
+    {
+      "pluginId": "plugin:claude-official:neon",
+      "text": "neon Manage your Neon projects and databases with the neon-postgres agent skill and the Neon MCP Server. data-analytics neon"
     },
     {
       "pluginId": "plugin:claude-official:netlify-skills",
@@ -1037,19 +1072,19 @@
     },
     {
       "pluginId": "plugin:claude-official:newrelic",
-      "text": "New Relic New Relic observability intelligence for Claude Code. Investigate APM performance, analyze cloud costs, debug Kubernetes, write NRQL queries, and respond to alerts — all from your terminal using New Relic telemetry data. monitoring newrelic"
+      "text": "New Relic New Relic observability intelligence for Claude Code. Investigate APM performance, analyze cloud costs, debug Kubernetes, write NRQL queries, and respond to alerts — all from your terminal using New Relic telemetry data. developer-tools newrelic"
     },
     {
       "pluginId": "plugin:claude-official:nightvision",
-      "text": "nightvision Skills for working with NightVision, a DAST and API Discovery platform that finds exploitable vulnerabilities in web applications and REST APIs nightvision other"
+      "text": "nightvision Skills for working with NightVision, a DAST and API Discovery platform that finds exploitable vulnerabilities in web applications and REST APIs developer-tools nightvision"
     },
     {
       "pluginId": "plugin:claude-official:nimble",
-      "text": "nimble Nimble web data toolkit — search, extract, map, crawl the web and work with structured data agents nimble other"
+      "text": "nimble Nimble web data toolkit — search, extract, map, crawl the web and work with structured data agents business-operations nimble"
     },
     {
       "pluginId": "plugin:claude-official:noibu",
-      "text": "noibu Built for ecommerce, the Noibu plugin bridges the gap between customer experience and revenue by connecting Claude directly to your store's session, error, and conversion data through Noibu — and to the marketing, support, and commerce platforms that put insight into motion. Go beyond analysis: surface what's costing you revenue, take action across your stack, build workflows to automate work end-to-end. monitoring noibu"
+      "text": "noibu Built for ecommerce, the Noibu plugin bridges the gap between customer experience and revenue by connecting Claude directly to your store's session, error, and conversion data through Noibu — and to the marketing, support, and commerce platforms that put insight into motion. Go beyond analysis: surface what's costing you revenue, take action across your stack, build workflows to automate work end-to-end. developer-tools noibu"
     },
     {
       "pluginId": "plugin:claude-official:notion",
@@ -1073,7 +1108,7 @@
     },
     {
       "pluginId": "plugin:claude-official:oracledb",
-      "text": "oracledb Connect, query, and interact with Oracle Databases and their data. data oracledb"
+      "text": "oracledb Connect, query, and interact with Oracle Databases and their data. data-analytics oracledb"
     },
     {
       "pluginId": "plugin:claude-official:outputai",
@@ -1081,7 +1116,7 @@
     },
     {
       "pluginId": "plugin:claude-official:pagerduty",
-      "text": "pagerduty Enhance code quality and security through PagerDuty risk scoring and incident correlation. Score pre-commit diffs against historical incident data and surface deployment risk before you ship. monitoring pagerduty"
+      "text": "pagerduty Enhance code quality and security through PagerDuty risk scoring and incident correlation. Score pre-commit diffs against historical incident data and surface deployment risk before you ship. developer-tools pagerduty"
     },
     {
       "pluginId": "plugin:claude-official:paypal",
@@ -1097,7 +1132,7 @@
     },
     {
       "pluginId": "plugin:claude-official:pinecone",
-      "text": "pinecone Pinecone vector database integration. Streamline your Pinecone development with powerful tools for managing vector indexes, querying data, and rapid prototyping. Use slash commands like /quickstart to generate AGENTS.md files and initialize Python projects and /query to quickly explore indexes. Access the Pinecone MCP server for creating, describing, upserting and querying indexes with Claude. Perfect for developers building semantic search, RAG applications, recommendation systems, and other vector-based applications with Pinecone. data pinecone"
+      "text": "pinecone Pinecone vector database integration. Streamline your Pinecone development with powerful tools for managing vector indexes, querying data, and rapid prototyping. Use slash commands like /quickstart to generate AGENTS.md files and initialize Python projects and /query to quickly explore indexes. Access the Pinecone MCP server for creating, describing, upserting and querying indexes with Claude. Perfect for developers building semantic search, RAG applications, recommendation systems, and other vector-based applications with Pinecone. data-analytics pinecone"
     },
     {
       "pluginId": "plugin:claude-official:pixeltable",
@@ -1105,7 +1140,7 @@
     },
     {
       "pluginId": "plugin:claude-official:planetscale",
-      "text": "planetscale An authenticated hosted MCP server that accesses your PlanetScale organizations, databases, branches, schema, and Insights data. Query against your data, surface slow queries, and get organizational and account information. data planetscale"
+      "text": "planetscale An authenticated hosted MCP server that accesses your PlanetScale organizations, databases, branches, schema, and Insights data. Query against your data, surface slow queries, and get organizational and account information. data-analytics planetscale"
     },
     {
       "pluginId": "plugin:claude-official:playground",
@@ -1113,7 +1148,7 @@
     },
     {
       "pluginId": "plugin:claude-official:playwright",
-      "text": "playwright Browser automation and end-to-end testing MCP server by Microsoft. Enables Claude to interact with web pages, take screenshots, fill forms, click elements, and perform automated browser testing workflows. playwright testing"
+      "text": "playwright Browser automation and end-to-end testing MCP server by Microsoft. Enables Claude to interact with web pages, take screenshots, fill forms, click elements, and perform automated browser testing workflows. developer-tools playwright"
     },
     {
       "pluginId": "plugin:claude-official:plugin-dev",
@@ -1121,11 +1156,11 @@
     },
     {
       "pluginId": "plugin:claude-official:posthog",
-      "text": "posthog Access PostHog analytics, feature flags, experiments, error tracking, and insights directly from Claude Code. monitoring posthog"
+      "text": "posthog Access PostHog analytics, feature flags, experiments, error tracking, and insights directly from Claude Code. developer-tools posthog"
     },
     {
       "pluginId": "plugin:claude-official:postiz",
-      "text": "postiz Social media automation CLI for scheduling posts, managing integrations, uploading media, and tracking analytics across 28+ platforms including X, LinkedIn, Reddit, YouTube, TikTok, Instagram, and more other postiz"
+      "text": "postiz Social media automation CLI for scheduling posts, managing integrations, uploading media, and tracking analytics across 28+ platforms including X, LinkedIn, Reddit, YouTube, TikTok, Instagram, and more business-operations postiz"
     },
     {
       "pluginId": "plugin:claude-official:postman",
@@ -1141,7 +1176,7 @@
     },
     {
       "pluginId": "plugin:claude-official:prisma",
-      "text": "prisma Prisma MCP integration for Postgres database management, schema migrations, SQL queries, and connection string management. Provision Prisma Postgres databases, run migrations, and interact with your data directly. other prisma"
+      "text": "prisma Prisma MCP integration for Postgres database management, schema migrations, SQL queries, and connection string management. Provision Prisma Postgres databases, run migrations, and interact with your data directly. developer-tools prisma"
     },
     {
       "pluginId": "plugin:claude-official:project-artifact",
@@ -1157,7 +1192,7 @@
     },
     {
       "pluginId": "plugin:claude-official:qdrant-skills",
-      "text": "qdrant Agent skills for Qdrant vector search covering scaling, performance optimization, search quality, monitoring, deployment, model migration, version upgrades, and SDK usage across Python, TypeScript, Rust, Go, .NET, and Java. data qdrant skills"
+      "text": "qdrant Agent skills for Qdrant vector search covering scaling, performance optimization, search quality, monitoring, deployment, model migration, version upgrades, and SDK usage across Python, TypeScript, Rust, Go, .NET, and Java. data-analytics qdrant skills"
     },
     {
       "pluginId": "plugin:claude-official:qodo",
@@ -1177,7 +1212,7 @@
     },
     {
       "pluginId": "plugin:claude-official:railway",
-      "text": "railway Deploy and manage apps, databases, and infrastructure on Railway. Covers project setup, deploys, environment configuration, networking, troubleshooting, and monitoring. deployment railway"
+      "text": "railway Deploy and manage apps, databases, and infrastructure on Railway. Covers project setup, deploys, environment configuration, networking, troubleshooting, and monitoring. developer-tools railway"
     },
     {
       "pluginId": "plugin:claude-official:ralph-loop",
@@ -1193,15 +1228,15 @@
     },
     {
       "pluginId": "plugin:claude-official:redis-development",
-      "text": "redis-development Redis development best practices — data structures, query engine, vector search, caching, and performance optimization data development redis"
+      "text": "redis-development Redis development best practices — data structures, query engine, vector search, caching, and performance optimization data-analytics development redis"
     },
     {
       "pluginId": "plugin:claude-official:remember",
-      "text": "remember Continuous memory for Claude Code. Extracts, summarizes, and compresses conversations into tiered daily logs. Claude remembers what you did yesterday. other remember"
+      "text": "remember Continuous memory for Claude Code. Extracts, summarizes, and compresses conversations into tiered daily logs. Claude remembers what you did yesterday. productivity remember"
     },
     {
       "pluginId": "plugin:claude-official:render",
-      "text": "render Deploy, debug, and monitor applications on Render. Includes skills, an agent, slash commands, and a render.yaml validation hook. deployment render"
+      "text": "render Deploy, debug, and monitor applications on Render. Includes skills, an agent, slash commands, and a render.yaml validation hook. developer-tools render"
     },
     {
       "pluginId": "plugin:claude-official:revenuecat",
@@ -1213,7 +1248,7 @@
     },
     {
       "pluginId": "plugin:claude-official:rootly",
-      "text": "rootly Full-lifecycle incident management: deploy safety, incident response, on-call management, and retrospectives. monitoring rootly"
+      "text": "rootly Full-lifecycle incident management: deploy safety, incident response, on-call management, and retrospectives. developer-tools rootly"
     },
     {
       "pluginId": "plugin:claude-official:ruby-lsp",
@@ -1221,7 +1256,7 @@
     },
     {
       "pluginId": "plugin:claude-official:runway-api",
-      "text": "runway-api Video generation at scale. Generate videos, images, and audio with Runway's API — batch ad campaigns, product videos, multishot stories, and creative iteration. Supports seedance2, gen4.5, veo3, Nano, Banana Pro, and more. api design runway"
+      "text": "runway-api Video generation at scale. Generate videos, images, and audio with Runway's API — batch ad campaigns, product videos, multishot stories, and creative iteration. Supports seedance2, gen4.5, veo3, Nano, Banana Pro, and more. api creativity runway"
     },
     {
       "pluginId": "plugin:claude-official:rust-analyzer-lsp",
@@ -1245,7 +1280,7 @@
     },
     {
       "pluginId": "plugin:claude-official:sap-hana-cli",
-      "text": "hana-cli 150+ SAP HANA database tools for AI assistants. Query tables, import/export data, profile data quality, compare schemas, manage backups, monitor performance, and more. Connects to SAP HANA Cloud and on-premise databases. cli data hana sap"
+      "text": "hana-cli 150+ SAP HANA database tools for AI assistants. Query tables, import/export data, profile data quality, compare schemas, manage backups, monitor performance, and more. Connects to SAP HANA Cloud and on-premise databases. cli data-analytics hana sap"
     },
     {
       "pluginId": "plugin:claude-official:save-to-spotify",
@@ -1261,11 +1296,11 @@
     },
     {
       "pluginId": "plugin:claude-official:sentry",
-      "text": "sentry Sentry error monitoring integration. Access error reports, analyze stack traces, search issues by fingerprint, and debug production errors directly from your development environment. monitoring sentry"
+      "text": "sentry Sentry error monitoring integration. Access error reports, analyze stack traces, search issues by fingerprint, and debug production errors directly from your development environment. developer-tools sentry"
     },
     {
       "pluginId": "plugin:claude-official:sentry-cli",
-      "text": "sentry-cli Skills for using the Sentry CLI to interact with Sentry from the command line cli monitoring sentry"
+      "text": "sentry-cli Skills for using the Sentry CLI to interact with Sentry from the command line cli developer-tools sentry"
     },
     {
       "pluginId": "plugin:claude-official:serena",
@@ -1282,6 +1317,10 @@
     {
       "pluginId": "plugin:claude-official:shippo",
       "text": "shippo Shippo connects you to USPS, UPS, FedEx, DHL, and 40+ carriers, so you can handle a shipment end to end right inside Claude. Compare live rates and pick the cheapest or best option, buy and print labels (domestic and international, with customs declarations), validate and standardize addresses, and track packages across carriers. Just ask in plain language: rate-shop a parcel, buy the right label, check a delivery status, or confirm an address before you ship. Whether you run a store or just need to send a package, Shippo turns a pile of carrier accounts into one simple conversation. productivity shippo"
+    },
+    {
+      "pluginId": "plugin:claude-official:shopify-ai-toolkit",
+      "text": "shopify-plugin Shopify's AI Toolkit provides 18 development skills for building on the Shopify platform, covering documentation search, API schema access, GraphQL and Liquid code validation, Hydrogen storefronts, Polaris UI extensions, store management via CLI, and onboarding guidance for both developers and merchants. ai developer-tools shopify toolkit"
     },
     {
       "pluginId": "plugin:claude-official:skill-creator",
@@ -1309,7 +1348,7 @@
     },
     {
       "pluginId": "plugin:claude-official:spanner",
-      "text": "spanner Connect and interact with Spanner data using natural language. data spanner"
+      "text": "spanner Connect and interact with Spanner data using natural language. data-analytics spanner"
     },
     {
       "pluginId": "plugin:claude-official:spotify-ads-api",
@@ -1322,6 +1361,10 @@
     {
       "pluginId": "plugin:claude-official:stackhawk-hawkscan",
       "text": "hawkscan Configure, run, and interpret HawkScan DAST results inside Claude Code. Generates stackhawk.yml configs, runs scans via CLI or Docker, and transforms security findings into prioritized fix tasks for your coding agent. hawkscan security stackhawk"
+    },
+    {
+      "pluginId": "plugin:claude-official:streaming-skills-plugin",
+      "text": "streaming-skills-plugin Skills for streaming application developers, covering Kafka and Flink client libraries and Schema Registry developer-tools plugin skills streaming"
     },
     {
       "pluginId": "plugin:claude-official:stripe",
@@ -1337,7 +1380,7 @@
     },
     {
       "pluginId": "plugin:claude-official:synthflow",
-      "text": "Synthflow Connects Claude Code to the Synthflow AI voice-agent platform through its hosted MCP server, with skills for reviewing calls and auditing agent prompts, plus a docs-search connector. automation synthflow"
+      "text": "Synthflow Connects Claude Code to the Synthflow AI voice-agent platform through its hosted MCP server, with skills for reviewing calls and auditing agent prompts, plus a docs-search connector. developer-tools synthflow"
     },
     {
       "pluginId": "plugin:claude-official:tavily",
@@ -1365,7 +1408,7 @@
     },
     {
       "pluginId": "plugin:claude-official:ui-theme-designer",
-      "text": "ui-theme-designer Plugin for coding agents working with UI theme designer. Bundles two skills: how-to and conceptual answers about UI theme designer on BTP, and questions about the SAP Design System and SAP Fiori design tokens — theme parameters and component-level parameter usage in UI5, UI5 Web Components, and Fundamental Styles. design designer theme ui"
+      "text": "ui-theme-designer Plugin for coding agents working with UI theme designer. Bundles two skills: how-to and conceptual answers about UI theme designer on BTP, and questions about the SAP Design System and SAP Fiori design tokens — theme parameters and component-level parameter usage in UI5, UI5 Web Components, and Fundamental Styles. creativity designer theme ui"
     },
     {
       "pluginId": "plugin:claude-official:ui5",
@@ -1389,7 +1432,7 @@
     },
     {
       "pluginId": "plugin:claude-official:valtown",
-      "text": "Val Town Build and deploy on Val Town. Bundles the Val Town MCP server and platform skills (HTTP vals, cron/intervals, SQLite, email, OAuth, React UI, third-party integrations, templates). deployment valtown"
+      "text": "Val Town Build and deploy on Val Town. Bundles the Val Town MCP server and platform skills (HTTP vals, cron/intervals, SQLite, email, OAuth, React UI, third-party integrations, templates). developer-tools valtown"
     },
     {
       "pluginId": "plugin:claude-official:vanta",
@@ -1401,7 +1444,7 @@
     },
     {
       "pluginId": "plugin:claude-official:vercel",
-      "text": "vercel Vercel deployment platform integration. Manage deployments, check build status, access logs, configure domains, and control your frontend infrastructure directly from Claude Code. deployment vercel"
+      "text": "vercel Vercel deployment platform integration. Manage deployments, check build status, access logs, configure domains, and control your frontend infrastructure directly from Claude Code. developer-tools vercel"
     },
     {
       "pluginId": "plugin:claude-official:vibe-prospecting",
@@ -1409,7 +1452,7 @@
     },
     {
       "pluginId": "plugin:claude-official:vsql-extension-builder",
-      "text": "villagesql Builds a VillageSQL extension for MySQL end-to-end through a 7-phase persona-driven workflow. Commonly used to port PostgreSQL extensions to MySQL. builder data extension vsql"
+      "text": "villagesql Builds a VillageSQL extension for MySQL end-to-end through a 7-phase persona-driven workflow. Commonly used to port PostgreSQL extensions to MySQL. builder data-analytics extension vsql"
     },
     {
       "pluginId": "plugin:claude-official:windsor-ai",
@@ -1433,15 +1476,15 @@
     },
     {
       "pluginId": "plugin:claude-official:zilliz",
-      "text": "zilliz Zilliz Cloud management plugin with 14 skills covering cluster lifecycle, collection schema, vector search, index tuning, bulk import, RBAC, backups, and monitoring. data zilliz"
+      "text": "zilliz Zilliz Cloud management plugin with 14 skills covering cluster lifecycle, collection schema, vector search, index tuning, bulk import, RBAC, backups, and monitoring. data-analytics zilliz"
     },
     {
       "pluginId": "plugin:claude-official:zoom-plugin",
-      "text": "zoom-plugin Claude plugin for planning, building, and debugging Zoom integrations across REST APIs, SDKs, webhooks, bots, and MCP workflows. developer-tools plugin zoom"
+      "text": "zoom-plugin Claude plugin for planning, building, and debugging Zoom integrations across REST APIs, SDKs, webhooks, bots, and MCP workflows. communication developer-tools plugin zoom"
     },
     {
       "pluginId": "plugin:claude-official:zoominfo",
-      "text": "zoominfo Search companies and contacts, enrich leads, find lookalikes, and get AI-ranked contact recommendations. Pre-built skills chain multiple ZoomInfo tools into complete B2B sales workflows. productivity zoominfo"
+      "text": "zoominfo Search companies and contacts, enrich leads, find lookalikes, and get AI-ranked contact recommendations. Pre-built skills chain multiple ZoomInfo tools into complete B2B sales workflows. business-operations productivity zoominfo"
     },
     {
       "pluginId": "plugin:claude-official:zscaler",
@@ -1449,323 +1492,331 @@
     },
     {
       "pluginId": "plugin:claude-official:zyte-web-data",
-      "text": "zyte-web-data Web scraping skills for Claude Code powered by the Zyte API — scrape sites, generate and run Scrapy spiders, define extraction schemas, and ship to Scrapy Cloud. automation data web zyte"
+      "text": "zyte-web-data Web scraping skills for Claude Code powered by the Zyte API — scrape sites, generate and run Scrapy spiders, define extraction schemas, and ship to Scrapy Cloud. data developer-tools web zyte"
     },
     {
       "pluginId": "plugin:cursor-official:advisor",
-      "text": "Advisor Consult a stronger model before major decisions, when stuck, and before declaring done. advisor other"
+      "text": "Advisor Consult a stronger model before major decisions, when stuck, and before declaring done. advisor business-operations"
     },
     {
       "pluginId": "plugin:cursor-official:agent-compatibility",
-      "text": "Agent Compatibility CLI-backed repo compatibility scans plus agents that audit startup, validation, and docs against reality. agent compatibility other"
+      "text": "Agent Compatibility CLI-backed repo compatibility scans plus agents that audit startup, validation, and docs against reality. agent compatibility developer-tools"
     },
     {
       "pluginId": "plugin:cursor-official:ahrefs",
-      "text": "Ahrefs Research keywords, backlinks, rankings, and site health. ahrefs other"
+      "text": "Ahrefs Research keywords, backlinks, rankings, and site health. ahrefs business-operations"
     },
     {
       "pluginId": "plugin:cursor-official:amplemarket",
-      "text": "Amplemarket Search people and companies, enrich leads, run sequences. amplemarket other"
+      "text": "Amplemarket Search people and companies, enrich leads, run sequences. amplemarket business-operations"
     },
     {
       "pluginId": "plugin:cursor-official:ashby",
-      "text": "Ashby Search candidates, prep interviews, and manage pipeline tasks. ashby other"
+      "text": "Ashby Search candidates, prep interviews, and manage pipeline tasks. ashby business-operations"
     },
     {
       "pluginId": "plugin:cursor-official:attio",
-      "text": "Attio Search and update CRM records, lists, notes, and tasks. attio other"
+      "text": "Attio Search and update CRM records, lists, notes, and tasks. attio business-operations"
     },
     {
       "pluginId": "plugin:cursor-official:brevo",
-      "text": "Brevo Manage contacts, email and SMS campaigns, and CRM deals. brevo other"
+      "text": "Brevo Manage contacts, email and SMS campaigns, and CRM deals. brevo business-operations"
     },
     {
       "pluginId": "plugin:cursor-official:brex",
-      "text": "Brex Query expenses, receipts, bills, cards, and travel. brex other"
+      "text": "Brex Query expenses, receipts, bills, cards, and travel. brex finance"
     },
     {
       "pluginId": "plugin:cursor-official:calendly",
-      "text": "Calendly Check availability and book, cancel, or reschedule. calendly other"
+      "text": "Calendly Check availability and book, cancel, or reschedule. calendly productivity"
     },
     {
       "pluginId": "plugin:cursor-official:circleback",
-      "text": "Circleback Search meetings, transcripts, action items, and emails. circleback other"
+      "text": "Circleback Search meetings, transcripts, action items, and emails. circleback productivity"
     },
     {
       "pluginId": "plugin:cursor-official:clay",
-      "text": "Clay Enrich people and companies, run AI research agents. clay other"
+      "text": "Clay Enrich people and companies, run AI research agents. business-operations clay"
     },
     {
       "pluginId": "plugin:cursor-official:cli-for-agent",
-      "text": "CLI for Agents Patterns for designing CLIs that coding agents can run reliably: flags, help with examples, pipelines, errors, idempotency, dry-run. agent cli for other"
+      "text": "CLI for Agents Patterns for designing CLIs that coding agents can run reliably: flags, help with examples, pipelines, errors, idempotency, dry-run. agent cli developer-tools for"
     },
     {
       "pluginId": "plugin:cursor-official:coda",
-      "text": "Coda Search docs, read pages, and update tables. coda other"
+      "text": "Coda Search docs, read pages, and update tables. coda productivity"
     },
     {
       "pluginId": "plugin:cursor-official:continual-learning",
-      "text": "Continual Learning Incremental transcript-driven memory updates for AGENTS.md using high-signal bullet points only. continual learning other"
+      "text": "Continual Learning Incremental transcript-driven memory updates for AGENTS.md using high-signal bullet points only. continual education-research learning"
     },
     {
       "pluginId": "plugin:cursor-official:craft",
-      "text": "Craft Search, create, and update documents and daily notes. craft other"
+      "text": "Craft Search, create, and update documents and daily notes. craft productivity"
     },
     {
       "pluginId": "plugin:cursor-official:create-plugin",
-      "text": "Create Plugin Scaffold and validate new agent plugins. create other plugin"
+      "text": "Create Plugin Scaffold and validate new agent plugins. create developer-tools plugin"
     },
     {
       "pluginId": "plugin:cursor-official:cursor-sdk",
-      "text": "Cursor SDK Build apps, scripts, and automations with the TypeScript SDK. cursor other sdk"
+      "text": "Cursor SDK Build apps, scripts, and automations with the TypeScript SDK. cursor developer-tools sdk"
     },
     {
       "pluginId": "plugin:cursor-official:cursor-team-kit",
-      "text": "Cursor Team Kit Internal team workflows for CI, code review, shipping, local automation, and verification. cursor kit other team"
+      "text": "Cursor Team Kit Internal team workflows for CI, code review, shipping, local automation, and verification. cursor developer-tools kit team"
     },
     {
       "pluginId": "plugin:cursor-official:customer-io",
-      "text": "Customer.io Build campaigns, manage segments, and query people. customer io other"
+      "text": "Customer.io Build campaigns, manage segments, and query people. communication customer io"
+    },
+    {
+      "pluginId": "plugin:cursor-official:daloopa",
+      "text": "Daloopa Pull source-linked fundamentals, KPIs, filings, and prices. daloopa data-analytics"
     },
     {
       "pluginId": "plugin:cursor-official:docs-canvas",
-      "text": "Docs Canvas Render documentation as a navigable canvas. canvas docs other"
+      "text": "Docs Canvas Render documentation as a navigable canvas. canvas docs productivity"
     },
     {
       "pluginId": "plugin:cursor-official:docusign",
-      "text": "Docusign Manage envelopes, templates, workflows, and agreements. docusign other"
+      "text": "Docusign Manage envelopes, templates, workflows, and agreements. business-operations docusign"
+    },
+    {
+      "pluginId": "plugin:cursor-official:excalidraw",
+      "text": "Excalidraw Draw and export hand-drawn diagrams from chat. creativity excalidraw"
     },
     {
       "pluginId": "plugin:cursor-official:fathom",
-      "text": "Fathom Search meetings and pull transcripts and summaries. fathom other"
+      "text": "Fathom Search meetings and pull transcripts and summaries. fathom productivity"
     },
     {
       "pluginId": "plugin:cursor-official:finance",
-      "text": "Finance Securely connect your accounts so Grok can help with questions about your spending, subscriptions, balances, and investments. finance other"
+      "text": "Finance Securely connect your accounts so Grok can help with questions about your spending, subscriptions, balances, and investments. finance"
     },
     {
       "pluginId": "plugin:cursor-official:fireflies",
-      "text": "Fireflies Search meeting transcripts, summaries, and action items. fireflies other"
+      "text": "Fireflies Search meeting transcripts, summaries, and action items. fireflies productivity"
     },
     {
       "pluginId": "plugin:cursor-official:gamma",
-      "text": "Gamma Generate presentations, documents, and webpages. gamma other"
+      "text": "Gamma Generate presentations, documents, and webpages. creativity gamma"
     },
     {
       "pluginId": "plugin:cursor-official:github",
-      "text": "GitHub Manage repos, issues, pull requests, and Actions. github other"
+      "text": "GitHub Manage repos, issues, pull requests, and Actions. developer-tools github"
     },
     {
       "pluginId": "plugin:cursor-official:gmail",
-      "text": "Gmail Search, read, draft, and manage email. gmail other"
+      "text": "Gmail Search, read, draft, and manage email. communication gmail"
     },
     {
       "pluginId": "plugin:cursor-official:godaddy",
-      "text": "GoDaddy Brainstorm domain names and check availability. godaddy other"
+      "text": "GoDaddy Brainstorm domain names and check availability. business-operations godaddy"
     },
     {
       "pluginId": "plugin:cursor-official:gong",
-      "text": "Gong Pull account summaries, deal insights, and call briefs. gong other"
+      "text": "Gong Pull account summaries, deal insights, and call briefs. business-operations gong"
     },
     {
       "pluginId": "plugin:cursor-official:google-calendar",
-      "text": "Google Calendar Search events and schedule meetings. calendar google other"
+      "text": "Google Calendar Search events and schedule meetings. calendar google productivity"
     },
     {
       "pluginId": "plugin:cursor-official:google-drive",
-      "text": "Google Drive Search, read, create, and share files. drive google other"
+      "text": "Google Drive Search, read, create, and share files. drive google productivity"
     },
     {
       "pluginId": "plugin:cursor-official:grok-voice",
-      "text": "Grok Voice Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions. grok other voice"
+      "text": "Grok Voice Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions. communication grok voice"
     },
     {
       "pluginId": "plugin:cursor-official:guru",
-      "text": "Guru Search company knowledge and draft verified answers. guru other"
+      "text": "Guru Search company knowledge and draft verified answers. guru productivity"
     },
     {
       "pluginId": "plugin:cursor-official:hubspot",
-      "text": "HubSpot Search and update contacts, companies, deals, and tickets. hubspot other"
+      "text": "HubSpot Search and update contacts, companies, deals, and tickets. business-operations hubspot"
     },
     {
       "pluginId": "plugin:cursor-official:hunter",
-      "text": "Hunter Find and verify emails, discover companies, and save leads. hunter other"
+      "text": "Hunter Find and verify emails, discover companies, and save leads. business-operations hunter"
     },
     {
       "pluginId": "plugin:cursor-official:interactive-brokers",
-      "text": "Interactive Brokers Review positions, balances, P&L, and draft trade instructions. brokers interactive other"
+      "text": "Interactive Brokers Review positions, balances, P&L, and draft trade instructions. brokers finance interactive"
     },
     {
       "pluginId": "plugin:cursor-official:intercom",
-      "text": "Intercom Search conversations, contacts, and Help Center articles. intercom other"
+      "text": "Intercom Search conversations, contacts, and Help Center articles. communication intercom"
     },
     {
       "pluginId": "plugin:cursor-official:jotform",
-      "text": "Jotform Create and edit forms, then read submissions. jotform other"
+      "text": "Jotform Create and edit forms, then read submissions. jotform productivity"
     },
     {
       "pluginId": "plugin:cursor-official:juicebox",
-      "text": "Juicebox Query recruiting analytics, shortlists, and sourcing agents. juicebox other"
+      "text": "Juicebox Query recruiting analytics, shortlists, and sourcing agents. business-operations juicebox"
     },
     {
       "pluginId": "plugin:cursor-official:klaviyo",
-      "text": "Klaviyo Manage profiles, segments, campaigns, and flows. klaviyo other"
+      "text": "Klaviyo Manage profiles, segments, campaigns, and flows. business-operations klaviyo"
     },
     {
       "pluginId": "plugin:cursor-official:mailerlite",
-      "text": "MailerLite Manage subscribers, groups, campaigns, and automations. mailerlite other"
+      "text": "MailerLite Manage subscribers, groups, campaigns, and automations. business-operations mailerlite"
     },
     {
       "pluginId": "plugin:cursor-official:meltwater",
-      "text": "Meltwater Search media and social mentions and pull analytics. meltwater other"
+      "text": "Meltwater Search media and social mentions and pull analytics. business-operations meltwater"
     },
     {
       "pluginId": "plugin:cursor-official:mem",
-      "text": "Mem Capture, search, and organize notes and collections. mem other"
+      "text": "Mem Capture, search, and organize notes and collections. mem productivity"
     },
     {
       "pluginId": "plugin:cursor-official:mercury",
-      "text": "Mercury Read balances, transactions, statements, and cards. mercury other"
+      "text": "Mercury Read balances, transactions, statements, and cards. finance mercury"
     },
     {
       "pluginId": "plugin:cursor-official:navan",
-      "text": "Navan Query expenses, travel bookings, policies, and cards. navan other"
+      "text": "Navan Query expenses, travel bookings, policies, and cards. business-operations navan"
     },
     {
       "pluginId": "plugin:cursor-official:onedrive",
-      "text": "OneDrive Browse, search, and read Microsoft OneDrive files. onedrive other"
+      "text": "OneDrive Browse, search, and read Microsoft OneDrive files. onedrive productivity"
     },
     {
       "pluginId": "plugin:cursor-official:orchestrate",
-      "text": "Orchestrate Fan large tasks out across parallel cloud agents with planners, workers, verifiers, and structured handoffs. orchestrate other"
+      "text": "Orchestrate Fan large tasks out across parallel cloud agents with planners, workers, verifiers, and structured handoffs. orchestrate productivity"
     },
     {
       "pluginId": "plugin:cursor-official:otter",
-      "text": "Otter.ai Search meeting history and pull full transcripts. other otter"
+      "text": "Otter.ai Search meeting history and pull full transcripts. otter productivity"
     },
     {
       "pluginId": "plugin:cursor-official:outlook",
-      "text": "Outlook Search, read, and send Microsoft Outlook email, and look up contacts. other outlook"
+      "text": "Outlook Search, read, and send Microsoft Outlook email, and look up contacts. communication outlook"
     },
     {
       "pluginId": "plugin:cursor-official:outlook-calendar",
-      "text": "Outlook Calendar List, create, update, and cancel Microsoft Outlook calendar events. calendar other outlook"
+      "text": "Outlook Calendar List, create, update, and cancel Microsoft Outlook calendar events. calendar communication outlook"
     },
     {
       "pluginId": "plugin:cursor-official:outreach",
-      "text": "Outreach Search sequences, prospects, and Kaia meetings. other outreach"
+      "text": "Outreach Search sequences, prospects, and Kaia meetings. business-operations outreach"
     },
     {
       "pluginId": "plugin:cursor-official:playwright",
-      "text": "Playwright Navigate, click, screenshot, and test in a real browser. other playwright"
+      "text": "Playwright Navigate, click, screenshot, and test in a real browser. developer-tools playwright"
     },
     {
       "pluginId": "plugin:cursor-official:pr-review-canvas",
-      "text": "PR Review Canvas Render PR diffs as review canvases grouped by importance. canvas other pr review"
+      "text": "PR Review Canvas Render PR diffs as review canvases grouped by importance. canvas developer-tools pr review"
     },
     {
       "pluginId": "plugin:cursor-official:profound",
-      "text": "Profound Track AI visibility, sentiment, and citations. other profound"
+      "text": "Profound Track AI visibility, sentiment, and citations. business-operations profound"
     },
     {
       "pluginId": "plugin:cursor-official:pstack",
-      "text": "pstack if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence. other pstack"
+      "text": "pstack if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence. business-operations pstack"
     },
     {
       "pluginId": "plugin:cursor-official:ralph-loop",
-      "text": "Ralph Loop Iterative self-referential AI loops using the Ralph Wiggum technique. loop other ralph"
+      "text": "Ralph Loop Iterative self-referential AI loops using the Ralph Wiggum technique. developer-tools loop ralph"
     },
     {
       "pluginId": "plugin:cursor-official:readwise",
-      "text": "Readwise Search highlights and Reader documents, save articles. other readwise"
+      "text": "Readwise Search highlights and Reader documents, save articles. productivity readwise"
     },
     {
       "pluginId": "plugin:cursor-official:salesforce",
-      "text": "Salesforce Query, create, and update records in your org. other salesforce"
+      "text": "Salesforce Query, create, and update records in your org. business-operations salesforce"
     },
     {
       "pluginId": "plugin:cursor-official:semrush",
-      "text": "Semrush Research keywords, backlinks, traffic, and competitors. other semrush"
+      "text": "Semrush Research keywords, backlinks, traffic, and competitors. business-operations semrush"
     },
     {
       "pluginId": "plugin:cursor-official:similarweb",
-      "text": "Similarweb Analyze website traffic, audiences, and competitors. other similarweb"
+      "text": "Similarweb Analyze website traffic, audiences, and competitors. business-operations similarweb"
     },
     {
       "pluginId": "plugin:cursor-official:smartsheet",
-      "text": "Smartsheet Query and update sheets, rows, and workspaces. other smartsheet"
+      "text": "Smartsheet Query and update sheets, rows, and workspaces. productivity smartsheet"
     },
     {
       "pluginId": "plugin:cursor-official:sp-global",
-      "text": "S&P Global Query S&P Capital IQ financials, prices, and transcripts. global other sp"
+      "text": "S&P Global Query S&P Capital IQ financials, prices, and transcripts. finance global sp"
     },
     {
       "pluginId": "plugin:cursor-official:teaching",
-      "text": "Teaching Skill mapping, practice plans, and learning retrospectives. other teaching"
+      "text": "Teaching Skill mapping, practice plans, and learning retrospectives. education-research teaching"
     },
     {
       "pluginId": "plugin:cursor-official:teams",
-      "text": "Teams Search, read, and send Microsoft Teams chats and channel messages. other teams"
+      "text": "Teams Search, read, and send Microsoft Teams chats and channel messages. communication teams"
     },
     {
       "pluginId": "plugin:cursor-official:thermos",
-      "text": "Thermos Thermo-nuclear branch review: deep security/correctness audits, harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional merge-ready PR flows. other thermos"
+      "text": "Thermos Thermo-nuclear branch review: deep security/correctness audits, harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional merge-ready PR flows. developer-tools thermos"
     },
     {
       "pluginId": "plugin:cursor-official:todoist",
-      "text": "Todoist Create, find, and complete tasks and projects. other todoist"
+      "text": "Todoist Create, find, and complete tasks and projects. productivity todoist"
     },
     {
       "pluginId": "plugin:cursor-official:typeform",
-      "text": "Typeform Build forms, analyze responses, and manage contacts. other typeform"
+      "text": "Typeform Build forms, analyze responses, and manage contacts. productivity typeform"
     },
     {
       "pluginId": "plugin:cursor-official:upwork",
-      "text": "Upwork Search talent, post jobs, and manage contracts. other upwork"
+      "text": "Upwork Search talent, post jobs, and manage contracts. business-operations upwork"
     },
     {
       "pluginId": "plugin:cursor-official:webull",
-      "text": "Webull View accounts, positions, orders, watchlists, and market data. other webull"
+      "text": "Webull View accounts, positions, orders, watchlists, and market data. finance webull"
     },
     {
       "pluginId": "plugin:cursor-official:workable",
-      "text": "Workable Search candidates, move pipelines, and manage HR records. other workable"
+      "text": "Workable Search candidates, move pipelines, and manage HR records. business-operations workable"
     },
     {
       "pluginId": "plugin:cursor-official:wrike",
-      "text": "Wrike Search projects, create tasks, and post comments. other wrike"
+      "text": "Wrike Search projects, create tasks, and post comments. productivity wrike"
     },
     {
       "pluginId": "plugin:cursor-official:x-ads",
-      "text": "X Ads Manage ad campaigns, create ads, track conversions, and pull performance stats. ads other x"
+      "text": "X Ads Manage ad campaigns, create ads, track conversions, and pull performance stats. ads business-operations x"
     },
     {
       "pluginId": "plugin:cursor-official:x-plugin",
-      "text": "X Search posts, read timelines, pull trends, and manage bookmarks. other x"
+      "text": "X Search posts, read timelines, pull trends, and manage bookmarks. communication x"
     },
     {
       "pluginId": "plugin:cursor-official:xero",
-      "text": "Xero Read and write invoices, contacts, reports, and payroll. other xero"
+      "text": "Xero Read and write invoices, contacts, reports, and payroll. finance xero"
     },
     {
       "pluginId": "plugin:cursor-official:zoom",
-      "text": "Zoom Search meetings, pull transcripts, and work with Zoom Docs. other zoom"
+      "text": "Zoom Search meetings, pull transcripts, and work with Zoom Docs. communication zoom"
     },
     {
       "pluginId": "plugin:knowledge-work-official:activecampaign",
-      "text": "ActiveCampaign Marketing automation, CRM, and email marketing powered by ActiveCampaign. Manage contacts, campaigns, automations, deals, and get AI-powered marketing insights — all from Claude. activecampaign productivity"
+      "text": "ActiveCampaign Marketing automation, CRM, and email marketing powered by ActiveCampaign. Manage contacts, campaigns, automations, deals, and get AI-powered marketing insights — all from Claude. activecampaign business-operations productivity"
     },
     {
       "pluginId": "plugin:knowledge-work-official:adobe-for-creativity",
-      "text": "Adobe for Creativity Brings together Adobe Creative Cloud tools for images, vectors, design, and video. Edit multiple assets at once, adapt for different platforms, and complete multi-step creative workflows for polished results. adobe creativity design for"
+      "text": "Adobe for Creativity Brings together Adobe Creative Cloud tools for images, vectors, design, and video. Edit multiple assets at once, adapt for different platforms, and complete multi-step creative workflows for polished results. adobe creativity for"
     },
     {
       "pluginId": "plugin:knowledge-work-official:adspirer-ads-agent",
-      "text": "Adspirer Cross-platform ad management for Google Ads, Meta Ads, TikTok Ads, and LinkedIn Ads. 91 tools for keyword research, campaign creation, performance analysis, and budget optimization. ads adspirer agent productivity"
+      "text": "Adspirer Cross-platform ad management for Google Ads, Meta Ads, TikTok Ads, and LinkedIn Ads. 91 tools for keyword research, campaign creation, performance analysis, and budget optimization. ads adspirer agent business-operations productivity"
     },
     {
       "pluginId": "plugin:knowledge-work-official:ai-firstify",
-      "text": "AI-Firstify AI-first project auditor and re-engineer based on the 9 design principles and 7 design patterns from the TechWolf AI-First Bootcamp ai firstify other"
+      "text": "AI-Firstify AI-first project auditor and re-engineer based on the 9 design principles and 7 design patterns from the TechWolf AI-First Bootcamp ai business-operations firstify"
     },
     {
       "pluginId": "plugin:knowledge-work-official:airtable",
@@ -1773,15 +1824,15 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:airwallex-agentos",
-      "text": "Airwallex AgentOS Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities. agentos airwallex productivity"
+      "text": "Airwallex AgentOS Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities. agentos airwallex finance productivity"
     },
     {
       "pluginId": "plugin:knowledge-work-official:apollo",
-      "text": "Apollo.io Prospect, enrich leads, and load outreach sequences with Apollo.io — one-click MCP server integration for Claude Code and Cowork. apollo other"
+      "text": "Apollo.io Prospect, enrich leads, and load outreach sequences with Apollo.io — one-click MCP server integration for Claude Code and Cowork. apollo business-operations"
     },
     {
       "pluginId": "plugin:knowledge-work-official:atlan",
-      "text": "Atlan Atlan data catalog plugin for Claude Code. Search, explore, govern, and manage your data assets through natural language. Powered by the Atlan MCP server with semantic search, lineage traversal, glossary management, data quality rules, and more. atlan other"
+      "text": "Atlan Atlan data catalog plugin for Claude Code. Search, explore, govern, and manage your data assets through natural language. Powered by the Atlan MCP server with semantic search, lineage traversal, glossary management, data quality rules, and more. atlan data-analytics"
     },
     {
       "pluginId": "plugin:knowledge-work-official:auth0",
@@ -1789,15 +1840,15 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:b12-claude-plugin",
-      "text": "B12 B12 plugin with two skills: Website Generator (create a B12 website from a brief description) and B12 Website Editor (edit a live B12 website using Claude's browser access in Claude Cowork). b12 claude design plugin"
+      "text": "B12 B12 plugin with two skills: Website Generator (create a B12 website from a brief description) and B12 Website Editor (edit a live B12 website using Claude's browser access in Claude Cowork). b12 claude creativity plugin"
     },
     {
       "pluginId": "plugin:knowledge-work-official:bigdata-com",
-      "text": "Bigdata.com Official Bigdata.com plugin providing financial research, analytics, and intelligence tools powered by Bigdata MCP. bigdata com other"
+      "text": "Bigdata.com Official Bigdata.com plugin providing financial research, analytics, and intelligence tools powered by Bigdata MCP. bigdata com data-analytics"
     },
     {
       "pluginId": "plugin:knowledge-work-official:bio-research",
-      "text": "Bio Research Connect to preclinical research tools and databases (literature search, genomics analysis, target prioritization) to accelerate early-stage life sciences R&D bio other research"
+      "text": "Bio Research Connect to preclinical research tools and databases (literature search, genomics analysis, target prioritization) to accelerate early-stage life sciences R&D bio research scientific-research"
     },
     {
       "pluginId": "plugin:knowledge-work-official:box",
@@ -1805,15 +1856,15 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:brand-voice",
-      "text": "Brand Voice Discover your brand voice from existing documents and conversations, generate enforceable guidelines, and validate AI-generated content against your established tone and positioning. brand other voice"
+      "text": "Brand Voice Discover your brand voice from existing documents and conversations, generate enforceable guidelines, and validate AI-generated content against your established tone and positioning. brand business-operations voice"
     },
     {
       "pluginId": "plugin:knowledge-work-official:brightdata-plugin",
-      "text": "Bright Data Web scraping, Google search, structured data extraction, and MCP server integration powered by Bright Data. Includes 7 skills: scrape any webpage as markdown (with bot detection/CAPTCHA bypass), search Google with structured JSON results, extract data from 40+ websites (Amazon, LinkedIn, Instagram, TikTok, YouTube, and more), orchestrate Bright Data's 60+ MCP tools, built-in best practices for Web Unlocker, SERP API, Web Scraper API, and Browser API, Python SDK best practices for the brightda... brightdata other plugin"
+      "text": "Bright Data Web scraping, Google search, structured data extraction, and MCP server integration powered by Bright Data. Includes 7 skills: scrape any webpage as markdown (with bot detection/CAPTCHA bypass), search Google with structured JSON results, extract data from 40+ websites (Amazon, LinkedIn, Instagram, TikTok, YouTube, and more), orchestrate Bright Data's 60+ MCP tools, built-in best practices for Web Unlocker, SERP API, Web Scraper API, and Browser API, Python SDK best practices for the brightda... brightdata data-analytics plugin"
     },
     {
       "pluginId": "plugin:knowledge-work-official:browser-use",
-      "text": "Browser Use Give Claude a real browser — your Chrome or a Browser Use Cloud browser. Use it whenever a task involves a website or web app: browsing, scraping and data extraction, filling forms, testing sites, taking screenshots, automating web workflows. automation browser use"
+      "text": "Browser Use Give Claude a real browser — your Chrome or a Browser Use Cloud browser. Use it whenever a task involves a website or web app: browsing, scraping and data extraction, filling forms, testing sites, taking screenshots, automating web workflows. browser developer-tools use"
     },
     {
       "pluginId": "plugin:knowledge-work-official:carbone-skill",
@@ -1821,47 +1872,47 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:carta-cap-table",
-      "text": "carta-cap-table Carta Cap Table plugin — skills and hooks for querying cap tables, grants, SAFEs, 409A valuations, waterfall scenarios, and more cap carta productivity table"
+      "text": "carta-cap-table Carta Cap Table plugin — skills and hooks for querying cap tables, grants, SAFEs, 409A valuations, waterfall scenarios, and more cap carta finance productivity table"
     },
     {
       "pluginId": "plugin:knowledge-work-official:carta-crm",
-      "text": "carta-crm Manage the Carta CRM conversationally — search, add, update, and enrich investors, companies, contacts, deals, notes, and fundraisings via the Carta CRM MCP Server carta crm productivity"
+      "text": "carta-crm Manage the Carta CRM conversationally — search, add, update, and enrich investors, companies, contacts, deals, notes, and fundraisings via the Carta CRM MCP Server business-operations carta crm productivity"
     },
     {
       "pluginId": "plugin:knowledge-work-official:carta-investors",
-      "text": "carta-investors Carta Investors plugin — skills for querying investors data, performance benchmarks, regulatory reporting, AGM deck generation, brand extraction, and more via the Carta MCP server carta investors productivity"
+      "text": "carta-investors Carta Investors plugin — skills for querying investors data, performance benchmarks, regulatory reporting, AGM deck generation, brand extraction, and more via the Carta MCP server carta finance investors productivity"
     },
     {
       "pluginId": "plugin:knowledge-work-official:cloudinary",
-      "text": "Cloudinary Use Cloudinary directly in Claude. Manage assets, apply transformations, optimize media, and more through natural conversation. cloudinary other"
+      "text": "Cloudinary Use Cloudinary directly in Claude. Manage assets, apply transformations, optimize media, and more through natural conversation. cloudinary creativity"
     },
     {
       "pluginId": "plugin:knowledge-work-official:common-room",
-      "text": "Common Room Turn Common Room into your GTM copilot. Research accounts and contacts, prep for calls with attendee profiles and talking points, and draft personalized outreach across email, LinkedIn, and phone. common other room"
+      "text": "Common Room Turn Common Room into your GTM copilot. Research accounts and contacts, prep for calls with attendee profiles and talking points, and draft personalized outreach across email, LinkedIn, and phone. business-operations common room"
     },
     {
       "pluginId": "plugin:knowledge-work-official:cowork-plugin-management",
-      "text": "Plugin Management Create, customize, and manage plugins tailored to your organization's tools and workflows. Configure MCP servers, adjust plugin behavior, and adapt templates to match how your team works. cowork management other plugin"
+      "text": "Plugin Management Create, customize, and manage plugins tailored to your organization's tools and workflows. Configure MCP servers, adjust plugin behavior, and adapt templates to match how your team works. cowork developer-tools management plugin"
     },
     {
       "pluginId": "plugin:knowledge-work-official:customer-support",
-      "text": "Customer Support Triage tickets, draft responses, escalate issues, and build your knowledge base. Research customer context and turn resolved issues into self-service content. customer other support"
+      "text": "Customer Support Triage tickets, draft responses, escalate issues, and build your knowledge base. Research customer context and turn resolved issues into self-service content. communication customer support"
     },
     {
       "pluginId": "plugin:knowledge-work-official:daloopa",
-      "text": "Daloopa Financial analysis skills powered by Daloopa's institutional-grade data daloopa finance"
+      "text": "Daloopa Financial analysis skills powered by Daloopa's institutional-grade data daloopa data-analytics finance"
     },
     {
       "pluginId": "plugin:knowledge-work-official:data",
-      "text": "Data Write SQL, explore datasets, and generate insights faster. Build visualizations and dashboards, and turn raw data into clear stories for stakeholders. data other"
+      "text": "Data Write SQL, explore datasets, and generate insights faster. Build visualizations and dashboards, and turn raw data into clear stories for stakeholders. data data-analytics"
     },
     {
       "pluginId": "plugin:knowledge-work-official:datadog",
-      "text": "Datadog Use Datadog directly in Claude Code through a preconfigured Datadog MCP server. Query logs, metrics, traces, dashboards, and more through natural conversation. This plugin is in preview. datadog monitoring"
+      "text": "Datadog Use Datadog directly in Claude Code through a preconfigured Datadog MCP server. Query logs, metrics, traces, dashboards, and more through natural conversation. This plugin is in preview. datadog developer-tools"
     },
     {
       "pluginId": "plugin:knowledge-work-official:design",
-      "text": "Design Accelerate design workflows — critique, design system management, UX writing, accessibility audits, research synthesis, and dev handoff. From exploration to pixel-perfect specs. design other"
+      "text": "Design Accelerate design workflows — critique, design system management, UX writing, accessibility audits, research synthesis, and dev handoff. From exploration to pixel-perfect specs. creativity design"
     },
     {
       "pluginId": "plugin:knowledge-work-official:desktop-commander",
@@ -1873,11 +1924,11 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:engineering",
-      "text": "Engineering Streamline engineering workflows — standups, code review, architecture decisions, incident response, and technical documentation. Works with your existing tools or standalone. engineering other"
+      "text": "Engineering Streamline engineering workflows — standups, code review, architecture decisions, incident response, and technical documentation. Works with your existing tools or standalone. developer-tools engineering"
     },
     {
       "pluginId": "plugin:knowledge-work-official:enterprise-search",
-      "text": "Enterprise Search Search across all of your company's tools in one place. Find anything across email, chat, documents, and wikis without switching between apps. enterprise other search"
+      "text": "Enterprise Search Search across all of your company's tools in one place. Find anything across email, chat, documents, and wikis without switching between apps. enterprise productivity search"
     },
     {
       "pluginId": "plugin:knowledge-work-official:exa",
@@ -1885,15 +1936,19 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:fastly-agent-toolkit",
-      "text": "Fastly Fastly development tools and platform skills agent fastly other toolkit"
+      "text": "Fastly Fastly development tools and platform skills agent developer-tools fastly toolkit"
     },
     {
       "pluginId": "plugin:knowledge-work-official:figma",
-      "text": "Figma Figma design platform integration. Access design files, extract component information, read design tokens, and translate designs into code. Bridge the gap between design and development workflows. design figma"
+      "text": "Figma Figma design platform integration. Access design files, extract component information, read design tokens, and translate designs into code. Bridge the gap between design and development workflows. creativity figma"
     },
     {
       "pluginId": "plugin:knowledge-work-official:finance",
-      "text": "Finance Streamline finance and accounting workflows, from journal entries and reconciliation to financial statements and variance analysis. Speed up audit prep, month-end close, and keeping your books clean. finance other"
+      "text": "Finance Streamline finance and accounting workflows, from journal entries and reconciliation to financial statements and variance analysis. Speed up audit prep, month-end close, and keeping your books clean. finance"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:gc-ai",
+      "text": "GC AI Work in your GC AI legal knowledge base from Claude: upload documents, run review playbooks, and ask questions grounded in your own files, all as you. ai gc productivity"
     },
     {
       "pluginId": "plugin:knowledge-work-official:gitkraken",
@@ -1901,11 +1956,11 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:grafana-assistant",
-      "text": "Grafana Assistant Skills and rules for developing and using the Grafana Assistant app and CLI. assistant grafana monitoring"
+      "text": "Grafana Assistant Skills and rules for developing and using the Grafana Assistant app and CLI. assistant developer-tools grafana"
     },
     {
       "pluginId": "plugin:knowledge-work-official:grafana-cloud-mcp",
-      "text": "Grafana Cloud MCP Hosted MCP server for AI-assisted Grafana Cloud observability — no local installation required. cloud grafana mcp monitoring"
+      "text": "Grafana Cloud MCP Hosted MCP server for AI-assisted Grafana Cloud observability — no local installation required. cloud developer-tools grafana mcp"
     },
     {
       "pluginId": "plugin:knowledge-work-official:grasp",
@@ -1913,7 +1968,7 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:honeycomb",
-      "text": "Honeycomb Skills, agents, and workflows for Honeycomb observability — query patterns, production investigations, SLOs, OpenTelemetry instrumentation, and Beeline migration. Designed to complement the Honeycomb MCP server. honeycomb monitoring"
+      "text": "Honeycomb Skills, agents, and workflows for Honeycomb observability — query patterns, production investigations, SLOs, OpenTelemetry instrumentation, and Beeline migration. Designed to complement the Honeycomb MCP server. developer-tools honeycomb"
     },
     {
       "pluginId": "plugin:knowledge-work-official:hubspot-sales",
@@ -1921,23 +1976,23 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:human-resources",
-      "text": "Human Resources Streamline people operations — recruiting, onboarding, performance reviews, compensation analysis, and policy guidance. Maintain compliance and keep your team running smoothly. human other resources"
+      "text": "Human Resources Streamline people operations — recruiting, onboarding, performance reviews, compensation analysis, and policy guidance. Maintain compliance and keep your team running smoothly. business-operations human resources"
     },
     {
       "pluginId": "plugin:knowledge-work-official:intercom",
-      "text": "Intercom Intercom integration for Claude Code. Search conversations, analyze customer support patterns, look up contacts and companies, and install the Intercom Messenger. Connect your Intercom workspace to get real-time insights from customer data. intercom productivity"
+      "text": "Intercom Intercom integration for Claude Code. Search conversations, analyze customer support patterns, look up contacts and companies, and install the Intercom Messenger. Connect your Intercom workspace to get real-time insights from customer data. communication intercom productivity"
     },
     {
       "pluginId": "plugin:knowledge-work-official:langfuse",
-      "text": "Langfuse Skills for working with Langfuse, the open-source LLM engineering platform for tracing, prompt management, and evaluation. langfuse monitoring"
+      "text": "Langfuse Skills for working with Langfuse, the open-source LLM engineering platform for tracing, prompt management, and evaluation. developer-tools langfuse"
     },
     {
       "pluginId": "plugin:knowledge-work-official:learn-with-coursera",
-      "text": "Learn with Coursera Turn any learning intent into a personalized Coursera experience. Asks three quick questions (topic, familiarity, preferred format), searches Coursera's catalog, and delivers the right next step — a course, hands-on project, short video, or live roleplay — then maps a path forward. Requires the Coursera connector for catalog tools. coursera learn learning with"
+      "text": "Learn with Coursera Turn any learning intent into a personalized Coursera experience. Asks three quick questions (topic, familiarity, preferred format), searches Coursera's catalog, and delivers the right next step — a course, hands-on project, short video, or live roleplay — then maps a path forward. Requires the Coursera connector for catalog tools. coursera education-research learn with"
     },
     {
       "pluginId": "plugin:knowledge-work-official:legal",
-      "text": "Legal Speed up contract review, NDA triage, and compliance workflows for in-house legal teams. Draft legal briefs, organize precedent research, and manage institutional knowledge. legal other"
+      "text": "Legal Speed up contract review, NDA triage, and compliance workflows for in-house legal teams. Draft legal briefs, organize precedent research, and manage institutional knowledge. business-operations legal"
     },
     {
       "pluginId": "plugin:knowledge-work-official:lseg",
@@ -1949,7 +2004,11 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:marketing",
-      "text": "Marketing Create content, plan campaigns, and analyze performance across marketing channels. Maintain brand voice consistency, track competitors, and report on what's working. marketing other"
+      "text": "Marketing Create content, plan campaigns, and analyze performance across marketing channels. Maintain brand voice consistency, track competitors, and report on what's working. business-operations marketing"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:maven-bio",
+      "text": "Maven Bio Evidence-backed BioPharma research workflows over Maven Bio's drug, trial, company, and deal knowledge graph. Skills for competitive pipelines, indication landscapes, asset profiles, deal and financing activity, and evidence synthesis grounded in FDA, SEC, clinical, and press sources. Requires a Maven Bio account. bio maven productivity"
     },
     {
       "pluginId": "plugin:knowledge-work-official:mintlify",
@@ -1957,7 +2016,7 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:miro",
-      "text": "Miro Secure access to Miro boards. Enables AI to read board context, create diagrams, and generate code with enterprise-grade security. miro other"
+      "text": "Miro Secure access to Miro boards. Enables AI to read board context, create diagrams, and generate code with enterprise-grade security. creativity miro"
     },
     {
       "pluginId": "plugin:knowledge-work-official:modern-web-guidance",
@@ -1972,20 +2031,28 @@
       "text": "monday CRM Run your monday CRM in plain language. Build a pipeline from scratch, start the day with a ranked deal briefing, spin up a forecast dashboard, audit board health, clean up messy data in bulk, and turn meeting notes into deal updates. Every skill writes back into monday as a real update, doc, or dashboard. Built on the official monday MCP connector. crm monday productivity"
     },
     {
+      "pluginId": "plugin:knowledge-work-official:netsuite-ai-companion",
+      "text": "NetSuite AI Companion Guides AI assistants that use the NetSuite AI Connector: tool-selection order, output formatting, NetSuite domain knowledge, multi-subsidiary and currency handling, and SuiteQL safety guardrails. Requires the NetSuite AI Connector Service. ai companion netsuite productivity"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:netsuite-finance-analyst",
+      "text": "NetSuite Finance Analyst Director-level finance analysis on live NetSuite data: financial reporting, period close, variance, aging and reconciliation reviews, cash reporting, and board-ready narratives with next actions. Requires the NetSuite AI Connector Service. analyst finance netsuite productivity"
+    },
+    {
       "pluginId": "plugin:knowledge-work-official:nimble",
-      "text": "Nimble Nimble web data toolkit — search, extract, map, crawl the web and work with structured data agents nimble other"
+      "text": "Nimble Nimble web data toolkit — search, extract, map, crawl the web and work with structured data agents business-operations nimble"
     },
     {
       "pluginId": "plugin:knowledge-work-official:noibu",
-      "text": "Noibu Built for ecommerce, the Noibu plugin bridges the gap between customer experience and revenue by connecting Claude directly to your store's session, error, and conversion data through Noibu — and to the marketing, support, and commerce platforms that put insight into motion. Go beyond analysis: surface what's costing you revenue, take action across your stack, build workflows to automate work end-to-end. monitoring noibu"
+      "text": "Noibu Built for ecommerce, the Noibu plugin bridges the gap between customer experience and revenue by connecting Claude directly to your store's session, error, and conversion data through Noibu — and to the marketing, support, and commerce platforms that put insight into motion. Go beyond analysis: surface what's costing you revenue, take action across your stack, build workflows to automate work end-to-end. developer-tools noibu"
     },
     {
       "pluginId": "plugin:knowledge-work-official:operations",
-      "text": "Operations Optimize business operations — vendor management, process documentation, change management, capacity planning, and compliance tracking. Keep your organization running efficiently. operations other"
+      "text": "Operations Optimize business operations — vendor management, process documentation, change management, capacity planning, and compliance tracking. Keep your organization running efficiently. business-operations operations"
     },
     {
       "pluginId": "plugin:knowledge-work-official:pdf-viewer",
-      "text": "PDF Viewer View, annotate, and sign PDFs in a live interactive viewer. Mark up contracts, fill forms with visual feedback, stamp approvals, and place signatures — then download the annotated copy. other pdf viewer"
+      "text": "PDF Viewer View, annotate, and sign PDFs in a live interactive viewer. Mark up contracts, fill forms with visual feedback, stamp approvals, and place signatures — then download the annotated copy. pdf productivity viewer"
     },
     {
       "pluginId": "plugin:knowledge-work-official:pixeltable",
@@ -1993,31 +2060,31 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:planetscale",
-      "text": "PlanetScale An authenticated hosted MCP server that accesses your PlanetScale organizations, databases, branches, schema, and Insights data. Query against your data, surface slow queries, and get organizational and account information. data planetscale"
+      "text": "PlanetScale An authenticated hosted MCP server that accesses your PlanetScale organizations, databases, branches, schema, and Insights data. Query against your data, surface slow queries, and get organizational and account information. data-analytics planetscale"
     },
     {
       "pluginId": "plugin:knowledge-work-official:postiz",
-      "text": "Postiz Social media automation CLI for scheduling posts, managing integrations, uploading media, and tracking analytics across 28+ platforms including X, LinkedIn, Reddit, YouTube, TikTok, Instagram, and more other postiz"
+      "text": "Postiz Social media automation CLI for scheduling posts, managing integrations, uploading media, and tracking analytics across 28+ platforms including X, LinkedIn, Reddit, YouTube, TikTok, Instagram, and more business-operations postiz"
     },
     {
       "pluginId": "plugin:knowledge-work-official:prisma",
-      "text": "Prisma Prisma MCP integration for Postgres database management, schema migrations, SQL queries, and connection string management. Provision Prisma Postgres databases, run migrations, and interact with your data directly. other prisma"
+      "text": "Prisma Prisma MCP integration for Postgres database management, schema migrations, SQL queries, and connection string management. Provision Prisma Postgres databases, run migrations, and interact with your data directly. developer-tools prisma"
     },
     {
       "pluginId": "plugin:knowledge-work-official:product-management",
-      "text": "Product Management Write feature specs, plan roadmaps, and synthesize user research faster. Keep stakeholders updated and stay ahead of the competitive landscape. management other product"
+      "text": "Product Management Write feature specs, plan roadmaps, and synthesize user research faster. Keep stakeholders updated and stay ahead of the competitive landscape. business-operations management product"
     },
     {
       "pluginId": "plugin:knowledge-work-official:product-tracking-skills",
-      "text": "Product Tracking AI agent skills that make SaaS products data-ready for product analytics — from codebase scan to tracking plan to working instrumentation code. other product skills tracking"
+      "text": "Product Tracking AI agent skills that make SaaS products data-ready for product analytics — from codebase scan to tracking plan to working instrumentation code. business-operations product skills tracking"
     },
     {
       "pluginId": "plugin:knowledge-work-official:productivity",
-      "text": "Productivity Manage tasks, plan your day, and build up memory of important context about your work. Syncs with your calendar, email, and chat to keep everything organized and on track. other productivity"
+      "text": "Productivity Manage tasks, plan your day, and build up memory of important context about your work. Syncs with your calendar, email, and chat to keep everything organized and on track. productivity"
     },
     {
       "pluginId": "plugin:knowledge-work-official:qdrant-skills",
-      "text": "Qdrant Agent skills for Qdrant vector search: scaling, performance optimization, search quality, monitoring, deployment, model migration, version upgrades, and SDK usage data qdrant skills"
+      "text": "Qdrant Agent skills for Qdrant vector search: scaling, performance optimization, search quality, monitoring, deployment, model migration, version upgrades, and SDK usage data-analytics qdrant skills"
     },
     {
       "pluginId": "plugin:knowledge-work-official:qodo",
@@ -2033,7 +2100,7 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:sales",
-      "text": "Sales Prospect, craft outreach, and build deal strategy faster. Prep for calls, manage your pipeline, and write personalized messaging that moves deals forward. other sales"
+      "text": "Sales Prospect, craft outreach, and build deal strategy faster. Prep for calls, manage your pipeline, and write personalized messaging that moves deals forward. business-operations sales"
     },
     {
       "pluginId": "plugin:knowledge-work-official:sanity-plugin",
@@ -2041,7 +2108,7 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:searchfit-seo",
-      "text": "SearchFit SEO Free AI-powered SEO toolkit — audit websites, plan content strategy, optimize pages, generate schema markup, cluster keywords, and track AI visibility. Works with any website or codebase. other searchfit seo"
+      "text": "SearchFit SEO Free AI-powered SEO toolkit — audit websites, plan content strategy, optimize pages, generate schema markup, cluster keywords, and track AI visibility. Works with any website or codebase. business-operations searchfit seo"
     },
     {
       "pluginId": "plugin:knowledge-work-official:security-guidance",
@@ -2053,15 +2120,15 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:signoz",
-      "text": "SigNoz Official SigNoz plugin for MCP setup, docs, queries, dashboards, and alerts monitoring signoz"
+      "text": "SigNoz Official SigNoz plugin for MCP setup, docs, queries, dashboards, and alerts developer-tools signoz"
     },
     {
       "pluginId": "plugin:knowledge-work-official:slack-by-salesforce",
-      "text": "Slack Slack integration for searching messages, sending communications, managing canvases, and more by other salesforce slack"
+      "text": "Slack Slack integration for searching messages, sending communications, managing canvases, and more by communication salesforce slack"
     },
     {
       "pluginId": "plugin:knowledge-work-official:small-business",
-      "text": "Small Business Pre-built small business workflows (including payroll planning, month-end close, weekly briefs, and growth campaigns) using your QuickBooks, PayPal, HubSpot, Docusign, Gsuite, O365, Canva, and other connected tools. You approve every step that touches money or customers. business other small"
+      "text": "Small Business Pre-built small business workflows (including payroll planning, month-end close, weekly briefs, and growth campaigns) using your QuickBooks, PayPal, HubSpot, Docusign, Gsuite, O365, Canva, and other connected tools. You approve every step that touches money or customers. business business-operations small"
     },
     {
       "pluginId": "plugin:knowledge-work-official:sp-global",
@@ -2077,7 +2144,7 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:synthflow",
-      "text": "Synthflow Connects Claude Code to the Synthflow AI voice-agent platform through its hosted MCP server, with skills for reviewing calls and auditing agent prompts, plus a docs-search connector. automation synthflow"
+      "text": "Synthflow Connects Claude Code to the Synthflow AI voice-agent platform through its hosted MCP server, with skills for reviewing calls and auditing agent prompts, plus a docs-search connector. developer-tools synthflow"
     },
     {
       "pluginId": "plugin:knowledge-work-official:tavily",
@@ -2085,7 +2152,7 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:tinyfish",
-      "text": "TinyFish The complete web toolkit for your agent. Search the web and get answers in milliseconds. Fetch any URL and get clean markdown content back. Send a browser agent to navigate sites, fill forms, and extract structured data. Spin up a headless browser for full programmatic control when you need it. automation tinyfish"
+      "text": "TinyFish The complete web toolkit for your agent. Search the web and get answers in milliseconds. Fetch any URL and get clean markdown content back. Send a browser agent to navigate sites, fill forms, and extract structured data. Spin up a headless browser for full programmatic control when you need it. developer-tools tinyfish"
     },
     {
       "pluginId": "plugin:knowledge-work-official:twilio-developer-kit",
@@ -2096,8 +2163,12 @@
       "text": "Unity Unity's official plugin for Claude Code, with curated skills for game development, monetization, and performance optimization. developer-tools unity"
     },
     {
+      "pluginId": "plugin:knowledge-work-official:unstructured-foundation",
+      "text": "Unstructured Foundation Connect sources and search processed documents with Unstructured Foundation. Provides MCP access to source setup, processing status, document search, and document retrieval. foundation productivity unstructured"
+    },
+    {
       "pluginId": "plugin:knowledge-work-official:valtown",
-      "text": "Val Town Build and deploy on Val Town. Bundles the Val Town MCP server and platform skills (HTTP vals, cron/intervals, SQLite, email, OAuth, React UI, third-party integrations, templates). deployment valtown"
+      "text": "Val Town Build and deploy on Val Town. Bundles the Val Town MCP server and platform skills (HTTP vals, cron/intervals, SQLite, email, OAuth, React UI, third-party integrations, templates). developer-tools valtown"
     },
     {
       "pluginId": "plugin:knowledge-work-official:vanta-mcp-plugin",
@@ -2117,15 +2188,15 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:zoom-plugin",
-      "text": "Zoom Plan, build, and debug Zoom integrations across REST APIs, Meeting SDK, Video SDK, webhooks, bots, and MCP workflows. Search meetings, retrieve recordings, access transcripts, and design AI-powered Zoom experiences. other plugin zoom"
+      "text": "Zoom Plan, build, and debug Zoom integrations across REST APIs, Meeting SDK, Video SDK, webhooks, bots, and MCP workflows. Search meetings, retrieve recordings, access transcripts, and design AI-powered Zoom experiences. communication plugin zoom"
     },
     {
       "pluginId": "plugin:knowledge-work-official:zoominfo",
-      "text": "ZoomInfo Search companies and contacts, enrich leads, find lookalikes, and get AI-ranked contact recommendations. Pre-built skills chain multiple ZoomInfo tools into complete B2B sales workflows. other zoominfo"
+      "text": "ZoomInfo Search companies and contacts, enrich leads, find lookalikes, and get AI-ranked contact recommendations. Pre-built skills chain multiple ZoomInfo tools into complete B2B sales workflows. business-operations zoominfo"
     },
     {
       "pluginId": "plugin:openai-official:adobe",
-      "text": "adobe Adobe unlocks more ways to create and get work done from the conversation. Previously available as Photoshop, the Adobe connector now brings creativity and productivity capabilities across Creative Cloud and Acrobat. Describe what you want to make or change, and Adobe can help turn ideas, images, videos, and documents into polished outputs — from editing photos and creating PDFs to designing social assets, resizing videos, searching Creative Cloud assets, and generating data-driven documents.\nKey capabilities:\n\n* Retouch portraits or edit photos in bulk: Drop in photos and describe the look you want — adjust color, lighting, and tone; remove distractions and generate new elements; apply Lightroom presets; remove backgrounds; blur, crop, resize, and expand images.\n* Design from template: Start from an Express template, update text and colors, and then animate for social media or convert to PDF.\n* Refine video for any platform: Upload a horizontal clip and ask to reformat it for YouTube Shorts, Instagram Reels, or any platform. You can also stitch clips into a single sequence.\n* Search and organize creative work: Describe what you're looking for and surface assets from your Creative Cloud library — by subject, style, mood, or content — without browsing folders.\n* Work with PDFs and documents: Create and convert polished PDFs and documents.\n* Create data-driven documents: Describe your output and provide your data — the connector turns raw data or content into formatted, shareable PDFs, including badges, cards, catalogs, and more.\n\nYou can get started as a guest, and sign in with your Adobe account for more capabilities and tools, Creative Cloud storage, and saved work across sessions. adobe design"
+      "text": "adobe Adobe unlocks more ways to create and get work done from the conversation. Previously available as Photoshop, the Adobe connector now brings creativity and productivity capabilities across Creative Cloud and Acrobat. Describe what you want to make or change, and Adobe can help turn ideas, images, videos, and documents into polished outputs — from editing photos and creating PDFs to designing social assets, resizing videos, searching Creative Cloud assets, and generating data-driven documents.\nKey capabilities:\n\n* Retouch portraits or edit photos in bulk: Drop in photos and describe the look you want — adjust color, lighting, and tone; remove distractions and generate new elements; apply Lightroom presets; remove backgrounds; blur, crop, resize, and expand images.\n* Design from template: Start from an Express template, update text and colors, and then animate for social media or convert to PDF.\n* Refine video for any platform: Upload a horizontal clip and ask to reformat it for YouTube Shorts, Instagram Reels, or any platform. You can also stitch clips into a single sequence.\n* Search and organize creative work: Describe what you're looking for and surface assets from your Creative Cloud library — by subject, style, mood, or content — without browsing folders.\n* Work with PDFs and documents: Create and convert polished PDFs and documents.\n* Create data-driven documents: Describe your output and provide your data — the connector turns raw data or content into formatted, shareable PDFs, including badges, cards, catalogs, and more.\n\nYou can get started as a guest, and sign in with your Adobe account for more capabilities and tools, Creative Cloud storage, and saved work across sessions. adobe creativity"
     },
     {
       "pluginId": "plugin:openai-official:airtable",
@@ -2137,7 +2208,7 @@
     },
     {
       "pluginId": "plugin:openai-official:boltz-api-cli",
-      "text": "boltz-api-cli Predict structures, screen molecules and proteins, and design binders. api boltz cli scientific-research"
+      "text": "boltz-api-cli Predict structures, screen molecules and proteins, and design binders. api boltz cli developer-tools scientific-research"
     },
     {
       "pluginId": "plugin:openai-official:build-ios-apps",
@@ -2153,15 +2224,15 @@
     },
     {
       "pluginId": "plugin:openai-official:build-web-data-visualization",
-      "text": "build-web-data-visualization Design, critique, implement, test, and export web data visualizations in Codex, including charts, maps, dashboards, Gantt, UML, scrollytelling, reports, slides, mobile views, shareable state, and advanced WebGL concepts. build data developer-tools visualization web"
+      "text": "build-web-data-visualization Design, critique, implement, test, and export web data visualizations in Codex, including charts, maps, dashboards, Gantt, UML, scrollytelling, reports, slides, mobile views, shareable state, and advanced WebGL concepts. build data data-analytics developer-tools visualization web"
     },
     {
       "pluginId": "plugin:openai-official:canva",
-      "text": "canva Bring your Canva design workflow into Codex and create, refine, and review designs through natural conversation.\nAvailable skills:\nResize for social media: Adapt a design for Facebook, Instagram, and LinkedIn in one step.\nBulk create: Generate multiple designs from spreadsheet data using a brand template.\nEdit designs: Update text, media, and formatting, or reposition and resize elements.\nGet design feedback: Receive structured feedback on visual hierarchy, layout, readability, consistency, and accessibility.\nImplement feedback: Review comment threads and apply clear, actionable changes.\nBrand check: Check colors, fonts, logo usage, and copy against your Brand Kit.\nOnce installed, describe what you want in plain language or invoke Canva directly with @Canva.\nTry prompts like:\n- @Canva, resize this design for social media.\n- @Canva, create designs from this spreadsheet using my brand template.\n- @Canva, update the headline in this design.\n- @Canva, review this design’s visual hierarchy and readability.\n- @Canva, implement the feedback in the comment threads.\n- @Canva, check this design against my Brand Kit.\n\nRequirements: Connect your Canva account to use the plugin. Bulk Create requires an eligible Canva Enterprise plan.\n\nWant to take a more hands-on approach? Instantly open your design in Canva’s powerful editor for the final touches. canva design"
+      "text": "canva Bring your Canva design workflow into Codex and create, refine, and review designs through natural conversation.\nAvailable skills:\nResize for social media: Adapt a design for Facebook, Instagram, and LinkedIn in one step.\nBulk create: Generate multiple designs from spreadsheet data using a brand template.\nEdit designs: Update text, media, and formatting, or reposition and resize elements.\nGet design feedback: Receive structured feedback on visual hierarchy, layout, readability, consistency, and accessibility.\nImplement feedback: Review comment threads and apply clear, actionable changes.\nBrand check: Check colors, fonts, logo usage, and copy against your Brand Kit.\nOnce installed, describe what you want in plain language or invoke Canva directly with @Canva.\nTry prompts like:\n- @Canva, resize this design for social media.\n- @Canva, create designs from this spreadsheet using my brand template.\n- @Canva, update the headline in this design.\n- @Canva, review this design’s visual hierarchy and readability.\n- @Canva, implement the feedback in the comment threads.\n- @Canva, check this design against my Brand Kit.\n\nRequirements: Connect your Canva account to use the plugin. Bulk Create requires an eligible Canva Enterprise plan.\n\nWant to take a more hands-on approach? Instantly open your design in Canva’s powerful editor for the final touches. canva creativity"
     },
     {
       "pluginId": "plugin:openai-official:chatcut",
-      "text": "chatcut Install, open, and connect the signed ChatCut Desktop app from Codex. chatcut design"
+      "text": "chatcut Install, open, and connect the signed ChatCut Desktop app from Codex. chatcut creativity"
     },
     {
       "pluginId": "plugin:openai-official:circleci",
@@ -2189,7 +2260,7 @@
     },
     {
       "pluginId": "plugin:openai-official:creative-production",
-      "text": "creative-production Explore campaign ideas, concept images, mood boards, product placements, ad directions, listing images, social posts, and launch assets. creative design production"
+      "text": "creative-production Explore campaign ideas, concept images, mood boards, product placements, ad directions, listing images, social posts, and launch assets. creative creativity production"
     },
     {
       "pluginId": "plugin:openai-official:crowdstrike-falcon-foundry",
@@ -2217,7 +2288,7 @@
     },
     {
       "pluginId": "plugin:openai-official:figma",
-      "text": "figma Figma workflows for design implementation, Code Connect templates, and design system rule generation. design figma"
+      "text": "figma Figma workflows for design implementation, Code Connect templates, and design system rule generation. creativity figma"
     },
     {
       "pluginId": "plugin:openai-official:game-studio",
@@ -2245,11 +2316,11 @@
     },
     {
       "pluginId": "plugin:openai-official:higgsfield",
-      "text": "higgsfield Generate images and videos from a text prompt or your own photo. Turn a product shot into a video ad, restyle a photo, animate a still, or build a two-minute narrated explainer. Every major image and video model in one place. design higgsfield"
+      "text": "higgsfield Generate images and videos from a text prompt or your own photo. Turn a product shot into a video ad, restyle a photo, animate a still, or build a two-minute narrated explainer. Every major image and video model in one place. creativity higgsfield"
     },
     {
       "pluginId": "plugin:openai-official:hyperframes",
-      "text": "hyperframes Write HTML, render video. Compositions, GSAP animations, captions, voiceovers, audio-reactive visuals, and website-to-video capture for HyperFrames. design hyperframes"
+      "text": "hyperframes Write HTML, render video. Compositions, GSAP animations, captions, voiceovers, audio-reactive visuals, and website-to-video capture for HyperFrames. creativity hyperframes"
     },
     {
       "pluginId": "plugin:openai-official:life-science-research",
@@ -2297,7 +2368,7 @@
     },
     {
       "pluginId": "plugin:openai-official:outlook-calendar",
-      "text": "outlook-calendar Connect Microsoft Outlook Calendar for scheduling, daily briefs, event prep, and safe meeting changes. calendar outlook productivity"
+      "text": "outlook-calendar Connect Microsoft Outlook Calendar for scheduling, daily briefs, event prep, and safe meeting changes. calendar communication outlook productivity"
     },
     {
       "pluginId": "plugin:openai-official:outlook-email",
@@ -2313,7 +2384,7 @@
     },
     {
       "pluginId": "plugin:openai-official:product-design",
-      "text": "product-design The Product Design plugin is built for turning early ideas into prototypes teams can review. It starts design and build work by confirming the brief, then helps teams explore product directions, audit user flows, prototype from a live URL, and make static screenshots interactive. design product"
+      "text": "product-design The Product Design plugin is built for turning early ideas into prototypes teams can review. It starts design and build work by confirming the brief, then helps teams explore product directions, audit user flows, prototype from a live URL, and make static screenshots interactive. creativity design product"
     },
     {
       "pluginId": "plugin:openai-official:public-equity-investing",
@@ -2325,7 +2396,7 @@
     },
     {
       "pluginId": "plugin:openai-official:remotion",
-      "text": "remotion Remotion video creation skills — best practices, animations, audio, captions, 3D, and more for building programmatic videos with React. design remotion"
+      "text": "remotion Remotion video creation skills — best practices, animations, audio, captions, 3D, and more for building programmatic videos with React. creativity remotion"
     },
     {
       "pluginId": "plugin:openai-official:sentry",

@@ -89,6 +89,8 @@ export interface SyncInput {
   readonly sources: readonly SourceConfig[]
   readonly categoryMap: CategoryMap
   readonly productAliases: ProductAliases
+  readonly productCategories?: Record<string, string>
+  readonly leading?: Record<string, readonly string[]>
   readonly policy: CatalogPolicy
   readonly mode?: 'live' | 'offline'
   readonly fixtureRoot?: string
@@ -277,6 +279,8 @@ export async function synchronize(input: SyncInput): Promise<SyncResult> {
   const buildResult = await buildCatalogInternal({
     resolvedSources: resolved,
     categoryMap: input.categoryMap,
+    ...(input.productCategories ? { productCategories: input.productCategories } : {}),
+    ...(input.leading ? { leading: input.leading } : {}),
     productAliases: input.productAliases,
     policy: input.policy,
     metadataOnly: input.metadataOnly ?? false,
@@ -290,7 +294,7 @@ export async function synchronize(input: SyncInput): Promise<SyncResult> {
   })
   const catalog = buildResult.catalog
   const lock = createSourcesLock(resolved)
-  const artifacts = createArtifacts(catalog, lock)
+  const artifacts = createArtifacts(orderLeadingPlugins(catalog, input.leading), lock)
   verifyArtifacts(artifacts)
   const report = createChangeReport(
     catalog,
@@ -317,19 +321,36 @@ export async function buildCatalog(input: {
   readonly resolvedSources: readonly ResolvedSource[]
   readonly categoryMap: CategoryMap
   readonly productAliases: ProductAliases
+  readonly productCategories?: Record<string, string>
+  readonly leading?: Record<string, readonly string[]>
   readonly policy?: CatalogPolicy
   readonly metadataOnly?: boolean
   readonly snapshotLoader: SnapshotLoader
   readonly resolveExternalRefs?: boolean
   readonly transformRelease?: ReleaseTransform
 }): Promise<Catalog> {
-  return (await buildCatalogInternal(input)).catalog
+  return (
+    await buildCatalogInternal({
+      resolvedSources: input.resolvedSources,
+      categoryMap: input.categoryMap,
+      productAliases: input.productAliases,
+      policy: input.policy ?? DEFAULT_POLICY,
+      metadataOnly: input.metadataOnly ?? false,
+      snapshotLoader: input.snapshotLoader,
+      resolveExternalRefs: input.resolveExternalRefs ?? false,
+      ...(input.transformRelease ? { transformRelease: input.transformRelease } : {}),
+      ...(input.productCategories ? { productCategories: input.productCategories } : {}),
+      ...(input.leading ? { leading: input.leading } : {}),
+    })
+  ).catalog
 }
 
 interface BuildCatalogInput {
   readonly resolvedSources: readonly ResolvedSource[]
   readonly categoryMap: CategoryMap
   readonly productAliases: ProductAliases
+  readonly productCategories?: Record<string, string>
+  readonly leading?: Record<string, readonly string[]>
   readonly policy?: CatalogPolicy
   readonly metadataOnly?: boolean
   readonly snapshotLoader: SnapshotLoader
@@ -376,6 +397,7 @@ async function buildCatalogInternal(input: BuildCatalogInput): Promise<BuildCata
           source,
           entry,
           categoryMap: input.categoryMap,
+          ...(input.productCategories ? { productCategories: input.productCategories } : {}),
           productAliases: input.productAliases,
           policy,
           metadataOnly: input.metadataOnly ?? false,
@@ -517,6 +539,7 @@ async function normalizePlugin(input: {
   readonly source: ResolvedSource
   readonly entry: MarketplacePluginEntry
   readonly categoryMap: CategoryMap
+  readonly productCategories?: Record<string, string>
   readonly productAliases: ProductAliases
   readonly policy: CatalogPolicy
   readonly metadataOnly: boolean
@@ -579,9 +602,15 @@ async function normalizePlugin(input: {
   const normalizedCategories = entry.categories.map((category) =>
     normalizeCategory(category, input.categoryMap)
   )
+  const productCategory = input.productCategories?.[entry.name]
   const categories = [
     ...new Set(
-      normalizedCategories.length > 0 ? normalizedCategories : [input.categoryMap.fallback]
+      (productCategory
+        ? [productCategory, ...normalizedCategories.filter((category) => category !== 'other')]
+        : normalizedCategories.length > 0
+          ? normalizedCategories
+          : [input.categoryMap.fallback]
+      ).filter(Boolean)
     ),
   ].toSorted()
   const displayName = entry.displayName ?? pluginManifest?.displayName ?? entry.name
@@ -979,6 +1008,41 @@ function createSourcesLock(sources: readonly ResolvedSource[]): SourcesLock {
     ...body,
     lockId: `lock:${digest(body).slice('sha256:'.length)}`,
   })
+}
+
+/**
+ * Orders plugins so each category's curated leading products come first, in
+ * the configured order. Consumers preview the head of each category, so this
+ * ordering decides what users see before expanding.
+ */
+export function orderLeadingPlugins<
+  T extends {
+    readonly plugins: readonly {
+      categories: readonly string[]
+      upstreamPluginName: string
+    }[]
+  },
+>(catalog: T, leading?: Record<string, readonly string[]>): T {
+  if (!leading) return catalog
+  const leadRank = new Map<string, number>()
+  for (const [category, names] of Object.entries(leading)) {
+    names.forEach((name, index) => {
+      const key = `${category}::${name}`
+      if (!leadRank.has(key)) leadRank.set(key, index)
+    })
+  }
+  const rank = (plugin: T['plugins'][number]): number => {
+    let best = Number.POSITIVE_INFINITY
+    for (const category of plugin.categories) {
+      const value = leadRank.get(`${category}::${plugin.upstreamPluginName}`)
+      if (value !== undefined && value < best) best = value
+    }
+    return best
+  }
+  return {
+    ...catalog,
+    plugins: [...catalog.plugins].sort((left, right) => rank(left) - rank(right)),
+  }
 }
 
 export function createArtifacts(catalog: Catalog, lock: SourcesLock): GeneratedArtifacts {
