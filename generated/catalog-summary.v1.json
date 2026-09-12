@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:ac297235c8eb19001e474bc4156c3da47d9921f09a7689c91c39f34546252215",
+  "catalogId": "catalog:84979770ab6b1e16c18e4794fb3e6081ff1af6bebbd99f78fa0bdb3ba589bf07",
   "categories": [
     "business-operations",
     "communication",
@@ -8,13 +8,12 @@
     "developer-tools",
     "education-research",
     "finance",
-    "other",
     "productivity",
     "scientific-research",
     "security"
   ],
-  "generatedAt": "2026-09-12T01:41:42.405Z",
-  "pluginCount": 506,
+  "generatedAt": "2026-09-12T02:31:42.140Z",
+  "pluginCount": 507,
   "productGroups": [
     "42crunch-api-security-testing",
     "activecampaign",
@@ -235,6 +234,7 @@
     "mapbox",
     "marketing",
     "math-olympiad",
+    "maven-bio",
     "mcp-apps",
     "mcp-server-dev",
     "mcp-tunnels",
@@ -452,7 +452,7 @@
     },
     {
       "pluginId": "plugin:claude-official:aikido",
-      "text": "aikido Aikido Security scanning for Claude Code — SAST, secrets, and IaC vulnerability detection powered by the Aikido MCP server. aikido other"
+      "text": "aikido Aikido Security scanning for Claude Code — SAST, secrets, and IaC vulnerability detection powered by the Aikido MCP server. aikido security"
     },
     {
       "pluginId": "plugin:claude-official:airtable",
@@ -1536,7 +1536,7 @@
     },
     {
       "pluginId": "plugin:cursor-official:clay",
-      "text": "Clay Enrich people and companies, run AI research agents. clay other"
+      "text": "Clay Enrich people and companies, run AI research agents. business-operations clay"
     },
     {
       "pluginId": "plugin:cursor-official:cli-for-agent",
@@ -1636,7 +1636,7 @@
     },
     {
       "pluginId": "plugin:cursor-official:hubspot",
-      "text": "HubSpot Search and update contacts, companies, deals, and tickets. hubspot other"
+      "text": "HubSpot Search and update contacts, companies, deals, and tickets. business-operations hubspot"
     },
     {
       "pluginId": "plugin:cursor-official:hunter",
@@ -1696,11 +1696,11 @@
     },
     {
       "pluginId": "plugin:cursor-official:outlook",
-      "text": "Outlook Search, read, and send Microsoft Outlook email, and look up contacts. other outlook"
+      "text": "Outlook Search, read, and send Microsoft Outlook email, and look up contacts. communication outlook"
     },
     {
       "pluginId": "plugin:cursor-official:outlook-calendar",
-      "text": "Outlook Calendar List, create, update, and cancel Microsoft Outlook calendar events. calendar other outlook"
+      "text": "Outlook Calendar List, create, update, and cancel Microsoft Outlook calendar events. calendar communication outlook"
     },
     {
       "pluginId": "plugin:cursor-official:outreach",
@@ -1760,7 +1760,7 @@
     },
     {
       "pluginId": "plugin:cursor-official:thermos",
-      "text": "Thermos Thermo-nuclear branch review: deep security/correctness audits, harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional merge-ready PR flows. other thermos"
+      "text": "Thermos Thermo-nuclear branch review: deep security/correctness audits, harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional merge-ready PR flows. developer-tools thermos"
     },
     {
       "pluginId": "plugin:cursor-official:todoist",
@@ -2005,6 +2005,10 @@
     {
       "pluginId": "plugin:knowledge-work-official:marketing",
       "text": "Marketing Create content, plan campaigns, and analyze performance across marketing channels. Maintain brand voice consistency, track competitors, and report on what's working. business-operations marketing"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:maven-bio",
+      "text": "Maven Bio Evidence-backed BioPharma research workflows over Maven Bio's drug, trial, company, and deal knowledge graph. Skills for competitive pipelines, indication landscapes, asset profiles, deal and financing activity, and evidence synthesis grounded in FDA, SEC, clinical, and press sources. Requires a Maven Bio account. bio maven productivity"
     },
     {
       "pluginId": "plugin:knowledge-work-official:mintlify",
@@ -2364,7 +2368,7 @@
     },
     {
       "pluginId": "plugin:openai-official:outlook-calendar",
-      "text": "outlook-calendar Connect Microsoft Outlook Calendar for scheduling, daily briefs, event prep, and safe meeting changes. calendar outlook productivity"
+      "text": "outlook-calendar Connect Microsoft Outlook Calendar for scheduling, daily briefs, event prep, and safe meeting changes. calendar communication outlook productivity"
     },
     {
       "pluginId": "plugin:openai-official:outlook-email",

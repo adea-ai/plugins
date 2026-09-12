@@ -1,10 +1,11 @@
 {
-  "catalogId": "catalog:ac297235c8eb19001e474bc4156c3da47d9921f09a7689c91c39f34546252215",
+  "catalogId": "catalog:84979770ab6b1e16c18e4794fb3e6081ff1af6bebbd99f78fa0bdb3ba589bf07",
   "categories": [
     {
       "category": "business-operations",
       "pluginIds": [
         "plugin:cursor-official:attio",
+        "plugin:cursor-official:hubspot",
         "plugin:cursor-official:navan",
         "plugin:cursor-official:docusign",
         "plugin:cursor-official:godaddy",
@@ -23,6 +24,7 @@
         "plugin:cursor-official:amplemarket",
         "plugin:cursor-official:ashby",
         "plugin:cursor-official:brevo",
+        "plugin:cursor-official:clay",
         "plugin:cursor-official:gong",
         "plugin:cursor-official:hunter",
         "plugin:cursor-official:juicebox",
@@ -73,11 +75,14 @@
         "plugin:claude-official:zoom-plugin",
         "plugin:cursor-official:customer-io",
         "plugin:cursor-official:grok-voice",
+        "plugin:cursor-official:outlook",
+        "plugin:cursor-official:outlook-calendar",
         "plugin:cursor-official:teams",
         "plugin:cursor-official:x-plugin",
         "plugin:knowledge-work-official:customer-support",
         "plugin:knowledge-work-official:slack-by-salesforce",
         "plugin:knowledge-work-official:zoom-plugin",
+        "plugin:openai-official:outlook-calendar",
         "plugin:openai-official:outlook-email",
         "plugin:openai-official:teams"
       ]
@@ -325,6 +330,7 @@
         "plugin:cursor-official:cursor-team-kit",
         "plugin:cursor-official:pr-review-canvas",
         "plugin:cursor-official:ralph-loop",
+        "plugin:cursor-official:thermos",
         "plugin:knowledge-work-official:browser-use",
         "plugin:knowledge-work-official:cowork-plugin-management",
         "plugin:knowledge-work-official:datadog",
@@ -419,17 +425,6 @@
         "plugin:knowledge-work-official:sp-global",
         "plugin:openai-official:public-equity-investing",
         "plugin:openai-official:stripe"
-      ]
-    },
-    {
-      "category": "other",
-      "pluginIds": [
-        "plugin:claude-official:aikido",
-        "plugin:cursor-official:clay",
-        "plugin:cursor-official:hubspot",
-        "plugin:cursor-official:outlook",
-        "plugin:cursor-official:outlook-calendar",
-        "plugin:cursor-official:thermos"
       ]
     },
     {
@@ -531,6 +526,7 @@
         "plugin:knowledge-work-official:grasp",
         "plugin:knowledge-work-official:hubspot-sales",
         "plugin:knowledge-work-official:lusha",
+        "plugin:knowledge-work-official:maven-bio",
         "plugin:knowledge-work-official:monday-com",
         "plugin:knowledge-work-official:monday-crm",
         "plugin:knowledge-work-official:netsuite-ai-companion",
@@ -566,6 +562,7 @@
         "plugin:claude-official:42crunch-api-security-testing",
         "plugin:claude-official:auth0",
         "plugin:knowledge-work-official:auth0",
+        "plugin:claude-official:aikido",
         "plugin:claude-official:claude-security",
         "plugin:claude-official:crowdsec",
         "plugin:claude-official:crowdstrike-falcon-foundry",
