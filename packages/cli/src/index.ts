@@ -80,8 +80,8 @@ async function syncCommand(flags: Flags): Promise<number> {
     sources: config.sources,
     categoryMap: config.categoryMap,
     productAliases: config.productAliases,
-    productCategories: config.productCategories,
-    leading: config.leading,
+    ...(config.productCategories ? { productCategories: config.productCategories } : {}),
+    ...(config.leading ? { leading: config.leading } : {}),
     policy: config.policy,
     mode: flags.offline ? 'offline' : 'live',
     fixtureRoot: flags.fixtureRoot
@@ -230,26 +230,41 @@ async function loadConfiguration(root: string): Promise<{
   sources: SourceConfig[]
   categoryMap: CategoryMap
   productAliases: ProductAliases
-  productCategories: Record<string, string>
-  leading: Record<string, string[]>
+  productCategories?: Record<string, string>
+  leading?: Record<string, string[]>
   policy: CatalogPolicy
 }> {
   const configDirectory = join(root, 'config')
-  const [sources, categoryMap, productAliases, policy, productCategories, leading] = await Promise.all([
-    readJson<{ sources: SourceConfig[] }>(join(configDirectory, 'sources.json')),
-    readJson<CategoryMap>(join(configDirectory, 'category-map.json')),
-    readJson<ProductAliases>(join(configDirectory, 'product-aliases.json')),
-    readJson<CatalogPolicy>(join(configDirectory, 'policy.json')),
-    readJson<{ categories: Record<string, string> }>(join(configDirectory, 'product-categories.json')),
-    readJson<{ leading: Record<string, string[]> }>(join(configDirectory, 'leading.json')),
-  ])
+  const [sources, categoryMap, productAliases, policy, productCategories, leading] =
+    await Promise.all([
+      readJson<{ sources: SourceConfig[] }>(join(configDirectory, 'sources.json')),
+      readJson<CategoryMap>(join(configDirectory, 'category-map.json')),
+      readJson<ProductAliases>(join(configDirectory, 'product-aliases.json')),
+      readJson<CatalogPolicy>(join(configDirectory, 'policy.json')),
+      // Curation configs are optional: fixture roots and older checkouts omit them.
+      readOptionalJson<{ categories: Record<string, string> }>(
+        join(configDirectory, 'product-categories.json')
+      ),
+      readOptionalJson<{ leading: Record<string, string[]> }>(
+        join(configDirectory, 'leading.json')
+      ),
+    ])
   return {
     sources: sources.sources,
     categoryMap,
     productAliases,
-    productCategories: productCategories.categories,
-    leading: leading.leading,
+    ...(productCategories?.categories ? { productCategories: productCategories.categories } : {}),
+    ...(leading?.leading ? { leading: leading.leading } : {}),
     policy,
+  }
+}
+
+async function readOptionalJson<T>(path: string): Promise<T | undefined> {
+  try {
+    return await readJson<T>(path)
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT') return undefined
+    throw error
   }
 }
 

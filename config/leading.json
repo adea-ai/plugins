@@ -9,14 +9,7 @@
       "readwise",
       "smartsheet"
     ],
-    "communication": [
-      "slack",
-      "zoom",
-      "intercom",
-      "fireflies",
-      "otter",
-      "gmail"
-    ],
+    "communication": ["slack", "zoom", "intercom", "fireflies", "otter", "gmail"],
     "developer-tools": [
       "github",
       "playwright",
@@ -33,42 +26,11 @@
       "brightdata-plugin",
       "fiftyone"
     ],
-    "business-operations": [
-      "attio",
-      "hubspot",
-      "navan",
-      "docusign",
-      "godaddy",
-      "upwork"
-    ],
-    "finance": [
-      "mercury",
-      "interactive-brokers",
-      "brex",
-      "webull",
-      "xero"
-    ],
-    "creativity": [
-      "canva",
-      "miro",
-      "excalidraw",
-      "gamma",
-      "cloudinary"
-    ],
-    "education-research": [
-      "coursera",
-      "teaching",
-      "continual-learning"
-    ],
-    "scientific-research": [
-      "bio-research",
-      "fiftyone"
-    ],
-    "security": [
-      "nightvision",
-      "zscaler",
-      "42crunch-api-security-testing",
-      "auth0"
-    ]
+    "business-operations": ["attio", "hubspot", "navan", "docusign", "godaddy", "upwork"],
+    "finance": ["mercury", "interactive-brokers", "brex", "webull", "xero"],
+    "creativity": ["canva", "miro", "excalidraw", "gamma", "cloudinary"],
+    "education-research": ["coursera", "teaching", "continual-learning"],
+    "scientific-research": ["bio-research", "fiftyone"],
+    "security": ["nightvision", "zscaler", "42crunch-api-security-testing", "auth0"]
   }
 }

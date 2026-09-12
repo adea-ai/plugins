@@ -279,8 +279,8 @@ export async function synchronize(input: SyncInput): Promise<SyncResult> {
   const buildResult = await buildCatalogInternal({
     resolvedSources: resolved,
     categoryMap: input.categoryMap,
-    productCategories: input.productCategories,
-    leading: input.leading,
+    ...(input.productCategories ? { productCategories: input.productCategories } : {}),
+    ...(input.leading ? { leading: input.leading } : {}),
     productAliases: input.productAliases,
     policy: input.policy,
     metadataOnly: input.metadataOnly ?? false,
@@ -331,9 +331,16 @@ export async function buildCatalog(input: {
 }): Promise<Catalog> {
   return (
     await buildCatalogInternal({
-      ...input,
-      ...(input.leading ? { leading: input.leading } : {}),
+      resolvedSources: input.resolvedSources,
+      categoryMap: input.categoryMap,
+      productAliases: input.productAliases,
+      policy: input.policy ?? DEFAULT_POLICY,
+      metadataOnly: input.metadataOnly ?? false,
+      snapshotLoader: input.snapshotLoader,
+      resolveExternalRefs: input.resolveExternalRefs ?? false,
+      ...(input.transformRelease ? { transformRelease: input.transformRelease } : {}),
       ...(input.productCategories ? { productCategories: input.productCategories } : {}),
+      ...(input.leading ? { leading: input.leading } : {}),
     })
   ).catalog
 }
@@ -1008,10 +1015,14 @@ function createSourcesLock(sources: readonly ResolvedSource[]): SourcesLock {
  * the configured order. Consumers preview the head of each category, so this
  * ordering decides what users see before expanding.
  */
-export function orderLeadingPlugins(
-  catalog: Catalog,
-  leading?: Record<string, readonly string[]>
-): Catalog {
+export function orderLeadingPlugins<
+  T extends {
+    readonly plugins: readonly {
+      categories: readonly string[]
+      upstreamPluginName: string
+    }[]
+  },
+>(catalog: T, leading?: Record<string, readonly string[]>): T {
   if (!leading) return catalog
   const leadRank = new Map<string, number>()
   for (const [category, names] of Object.entries(leading)) {
@@ -1020,7 +1031,7 @@ export function orderLeadingPlugins(
       if (!leadRank.has(key)) leadRank.set(key, index)
     })
   }
-  const rank = (plugin: Catalog['plugins'][number]): number => {
+  const rank = (plugin: T['plugins'][number]): number => {
     let best = Number.POSITIVE_INFINITY
     for (const category of plugin.categories) {
       const value = leadRank.get(`${category}::${plugin.upstreamPluginName}`)
@@ -1028,7 +1039,10 @@ export function orderLeadingPlugins(
     }
     return best
   }
-  return { ...catalog, plugins: [...catalog.plugins].sort((left, right) => rank(left) - rank(right)) }
+  return {
+    ...catalog,
+    plugins: [...catalog.plugins].sort((left, right) => rank(left) - rank(right)),
+  }
 }
 
 export function createArtifacts(catalog: Catalog, lock: SourcesLock): GeneratedArtifacts {
