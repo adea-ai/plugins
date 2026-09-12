@@ -1,7 +1,181 @@
 {
-  "catalogId": "catalog:5a39cf75d47a272402feb870826007130bbec41783544ed1f4add23becbe9999",
+  "catalogId": "catalog:b50b46bedaad86265e56ac6e7eb49e26474d765a207d99c9bbb529a40be5f9b4",
   "generatedAt": "2026-01-01T00:00:00.000Z",
   "plugins": [
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "availableReleases": [
+        {
+          "canonicalContentDigest": "sha256:ffe69c9130cc5928a7e53fe30e7d931a6b3d3d55c689ff1b5eadce5da41fe500",
+          "capabilities": [
+            {
+              "metadata": {},
+              "name": "rule",
+              "paths": [
+                "rules/learning.mdc"
+              ],
+              "securityImpact": "none",
+              "type": "rule"
+            },
+            {
+              "metadata": {},
+              "name": "skill",
+              "paths": [
+                "skills/learn/SKILL.md"
+              ],
+              "securityImpact": "none",
+              "type": "skill"
+            }
+          ],
+          "contentResolution": "complete",
+          "fileIndex": [
+            "plugin.json",
+            "rules/learning.mdc",
+            "skills/learn/SKILL.md"
+          ],
+          "manifestDigest": "sha256:486127ceb300c8fc4a5a7e872f232c5de8a673e4c2458c4801598dffbd29d5c9",
+          "permissionSensitiveChanges": [],
+          "pluginSubdirectory": "teaching",
+          "publicationTimestamp": "2026-01-01T00:00:00.000Z",
+          "releaseId": "release:18ce8f072ca693885ce731feffbd78dd1307c81a8ad43920edf991e2032176db",
+          "releaseMetadata": {
+            "marketplaceEntry": {
+              "category": "Developer Tools",
+              "description": "Practice and learning workflows.",
+              "name": "teaching",
+              "source": "teaching"
+            },
+            "pluginManifest": {
+              "license": "MIT",
+              "name": "teaching",
+              "version": "0.3.0"
+            },
+            "sourceDialect": "cursor"
+          },
+          "requiredConnectors": [],
+          "requiredCredentials": [],
+          "resolvedCommitSha": "2222222222222222222222222222222222222222",
+          "resolvedRepositoryUrl": "https://github.com/cursor/plugins",
+          "upstreamVersion": "0.3.0"
+        }
+      ],
+      "capabilitySummary": {
+        "rule": 1,
+        "skill": 1
+      },
+      "categories": [
+        "developer-tools",
+        "education-research"
+      ],
+      "currentReleaseId": "release:18ce8f072ca693885ce731feffbd78dd1307c81a8ad43920edf991e2032176db",
+      "description": "Practice and learning workflows.",
+      "displayName": "teaching",
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Files can be copied or translated into the harness layout."
+          ],
+          "responsibleCapabilities": [
+            "rule",
+            "skill"
+          ],
+          "status": "portable"
+        },
+        "codex": {
+          "reasons": [
+            "Files can be copied or translated into the harness layout."
+          ],
+          "responsibleCapabilities": [
+            "rule",
+            "skill"
+          ],
+          "status": "portable"
+        },
+        "cursor": {
+          "reasons": [
+            "The cursor marketplace dialect matches the cursor harness."
+          ],
+          "responsibleCapabilities": [
+            "rule",
+            "skill"
+          ],
+          "status": "native"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Files can be copied or translated into the harness layout."
+          ],
+          "responsibleCapabilities": [
+            "rule",
+            "skill"
+          ],
+          "status": "portable"
+        },
+        "hermes": {
+          "reasons": [
+            "Files can be copied or translated into the harness layout."
+          ],
+          "responsibleCapabilities": [
+            "rule",
+            "skill"
+          ],
+          "status": "portable"
+        },
+        "opencode": {
+          "reasons": [
+            "Files can be copied or translated into the harness layout."
+          ],
+          "responsibleCapabilities": [
+            "rule",
+            "skill"
+          ],
+          "status": "portable"
+        },
+        "pi": {
+          "reasons": [
+            "Files can be copied or translated into the harness layout."
+          ],
+          "responsibleCapabilities": [
+            "rule",
+            "skill"
+          ],
+          "status": "portable"
+        }
+      },
+      "icons": [],
+      "keywords": [
+        "developer-tools",
+        "education-research",
+        "teaching"
+      ],
+      "license": {
+        "name": "MIT",
+        "source": "plugin-manifest"
+      },
+      "pluginId": "plugin:cursor-official:teaching",
+      "productGroupingKey": "teaching",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "teaching",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "2222222222222222222222222222222222222222",
+        "sourceId": "cursor-official",
+        "sourceManifestDigest": "sha256:4a966db84af9ff187daeb14eb178e268a3cb8b0727d71b426c9a4c6eeb30b052",
+        "upstreamEntryDigest": "sha256:3ddc9dbedd1abc4ece09d80e4f4140e82b1213cd863ceb2c927ad5fc3a32e1fa"
+      },
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamPluginName": "teaching"
+    },
     {
       "authors": [
         "Anthropic"
@@ -58,7 +232,7 @@
         "command": 1
       },
       "categories": [
-        "sales"
+        "business-operations"
       ],
       "currentReleaseId": "release:dc304fb0c5f79f0fccbba74dcb29b78049d6972eadd084d05935384755b5a1f4",
       "description": "Prepare sales work.",
@@ -130,6 +304,7 @@
       },
       "icons": [],
       "keywords": [
+        "business-operations",
         "sales"
       ],
       "license": {
@@ -511,178 +686,6 @@
     },
     {
       "authors": [
-        "Cursor"
-      ],
-      "availableReleases": [
-        {
-          "canonicalContentDigest": "sha256:ffe69c9130cc5928a7e53fe30e7d931a6b3d3d55c689ff1b5eadce5da41fe500",
-          "capabilities": [
-            {
-              "metadata": {},
-              "name": "rule",
-              "paths": [
-                "rules/learning.mdc"
-              ],
-              "securityImpact": "none",
-              "type": "rule"
-            },
-            {
-              "metadata": {},
-              "name": "skill",
-              "paths": [
-                "skills/learn/SKILL.md"
-              ],
-              "securityImpact": "none",
-              "type": "skill"
-            }
-          ],
-          "contentResolution": "complete",
-          "fileIndex": [
-            "plugin.json",
-            "rules/learning.mdc",
-            "skills/learn/SKILL.md"
-          ],
-          "manifestDigest": "sha256:486127ceb300c8fc4a5a7e872f232c5de8a673e4c2458c4801598dffbd29d5c9",
-          "permissionSensitiveChanges": [],
-          "pluginSubdirectory": "teaching",
-          "publicationTimestamp": "2026-01-01T00:00:00.000Z",
-          "releaseId": "release:18ce8f072ca693885ce731feffbd78dd1307c81a8ad43920edf991e2032176db",
-          "releaseMetadata": {
-            "marketplaceEntry": {
-              "category": "Developer Tools",
-              "description": "Practice and learning workflows.",
-              "name": "teaching",
-              "source": "teaching"
-            },
-            "pluginManifest": {
-              "license": "MIT",
-              "name": "teaching",
-              "version": "0.3.0"
-            },
-            "sourceDialect": "cursor"
-          },
-          "requiredConnectors": [],
-          "requiredCredentials": [],
-          "resolvedCommitSha": "2222222222222222222222222222222222222222",
-          "resolvedRepositoryUrl": "https://github.com/cursor/plugins",
-          "upstreamVersion": "0.3.0"
-        }
-      ],
-      "capabilitySummary": {
-        "rule": 1,
-        "skill": 1
-      },
-      "categories": [
-        "developer-tools"
-      ],
-      "currentReleaseId": "release:18ce8f072ca693885ce731feffbd78dd1307c81a8ad43920edf991e2032176db",
-      "description": "Practice and learning workflows.",
-      "displayName": "teaching",
-      "harnessCompatibility": {
-        "claude-code": {
-          "reasons": [
-            "Files can be copied or translated into the harness layout."
-          ],
-          "responsibleCapabilities": [
-            "rule",
-            "skill"
-          ],
-          "status": "portable"
-        },
-        "codex": {
-          "reasons": [
-            "Files can be copied or translated into the harness layout."
-          ],
-          "responsibleCapabilities": [
-            "rule",
-            "skill"
-          ],
-          "status": "portable"
-        },
-        "cursor": {
-          "reasons": [
-            "The cursor marketplace dialect matches the cursor harness."
-          ],
-          "responsibleCapabilities": [
-            "rule",
-            "skill"
-          ],
-          "status": "native"
-        },
-        "generic-skill-mcp": {
-          "reasons": [
-            "Files can be copied or translated into the harness layout."
-          ],
-          "responsibleCapabilities": [
-            "rule",
-            "skill"
-          ],
-          "status": "portable"
-        },
-        "hermes": {
-          "reasons": [
-            "Files can be copied or translated into the harness layout."
-          ],
-          "responsibleCapabilities": [
-            "rule",
-            "skill"
-          ],
-          "status": "portable"
-        },
-        "opencode": {
-          "reasons": [
-            "Files can be copied or translated into the harness layout."
-          ],
-          "responsibleCapabilities": [
-            "rule",
-            "skill"
-          ],
-          "status": "portable"
-        },
-        "pi": {
-          "reasons": [
-            "Files can be copied or translated into the harness layout."
-          ],
-          "responsibleCapabilities": [
-            "rule",
-            "skill"
-          ],
-          "status": "portable"
-        }
-      },
-      "icons": [],
-      "keywords": [
-        "developer-tools",
-        "teaching"
-      ],
-      "license": {
-        "name": "MIT",
-        "source": "plugin-manifest"
-      },
-      "pluginId": "plugin:cursor-official:teaching",
-      "productGroupingKey": "teaching",
-      "provenance": {
-        "manifestPath": ".cursor-plugin/marketplace.json",
-        "pluginSubdirectory": "teaching",
-        "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "2222222222222222222222222222222222222222",
-        "sourceId": "cursor-official",
-        "sourceManifestDigest": "sha256:4a966db84af9ff187daeb14eb178e268a3cb8b0727d71b426c9a4c6eeb30b052",
-        "upstreamEntryDigest": "sha256:3ddc9dbedd1abc4ece09d80e4f4140e82b1213cd863ceb2c927ad5fc3a32e1fa"
-      },
-      "securityClassification": {
-        "contentResolution": "complete",
-        "level": "low",
-        "permissionSensitiveChanges": [],
-        "reasons": [
-          "No permission-sensitive executable capability was detected."
-        ]
-      },
-      "sourceId": "cursor-official",
-      "upstreamPluginName": "teaching"
-    },
-    {
-      "authors": [
         "Anthropic"
       ],
       "availableReleases": [
@@ -734,7 +737,7 @@
         "skill": 1
       },
       "categories": [
-        "other"
+        "productivity"
       ],
       "currentReleaseId": "release:d09058e1ab3ede6d824d1c4da05df0b09ef0fc27b7d7590652317740a1693607",
       "description": "Organize work.",
@@ -806,7 +809,6 @@
       },
       "icons": [],
       "keywords": [
-        "other",
         "productivity"
       ],
       "license": {
@@ -896,7 +898,7 @@
         "mcp-server": 1
       },
       "categories": [
-        "data"
+        "data-analytics"
       ],
       "currentReleaseId": "release:24dcda1228d0962c9b2bc807c631a90749d910e24b491cbecb09389ec68187ff",
       "description": "Search connected data.",
@@ -971,7 +973,7 @@
       },
       "icons": [],
       "keywords": [
-        "data",
+        "data-analytics",
         "search"
       ],
       "license": {
