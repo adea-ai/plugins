@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.3.8...plugins-marketplace-v1.4.0) (2026-09-12)
+
+
+### Features
+
+* catalog-taxonomy ([#62](https://github.com/adea-ai/plugins/issues/62)) ([b39ce79](https://github.com/adea-ai/plugins/commit/b39ce79cf4676e8129a4942ee4e5433808afab2d))
+
 ## [1.3.8](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.3.7...plugins-marketplace-v1.3.8) (2026-09-12)
 
 
