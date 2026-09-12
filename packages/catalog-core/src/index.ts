@@ -279,6 +279,8 @@ export async function synchronize(input: SyncInput): Promise<SyncResult> {
   const buildResult = await buildCatalogInternal({
     resolvedSources: resolved,
     categoryMap: input.categoryMap,
+    productCategories: input.productCategories,
+    leading: input.leading,
     productAliases: input.productAliases,
     policy: input.policy,
     metadataOnly: input.metadataOnly ?? false,

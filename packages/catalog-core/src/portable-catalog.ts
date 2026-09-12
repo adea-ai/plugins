@@ -1,5 +1,6 @@
 import { CatalogSchema, HarnessSchema, type Catalog, type Plugin } from '@adea-ai/catalog-schema'
 import {
+  orderLeadingPlugins,
   synchronize,
   createArtifacts,
   verifyArtifacts,
@@ -115,9 +116,15 @@ export async function synchronizePortable(options: SyncInput): Promise<SyncResul
       ...(pkg ? { harnessCompatibility: compatibility(verifyAgentPackage(pkg)) } : {}),
     })
   }
-  const { catalogId: _oldId, ...old } = result.catalog
-  const body = { ...old, plugins }
-  const catalog = CatalogSchema.parse({ ...body, catalogId: `catalog:${digest(body).slice(7)}` })
+  const { catalogId: _oldId, ...old } = CatalogSchema.parse(result.catalog)
+  // Ordering is applied before the catalog ID is computed so the emitted
+  // identifier digests the final plugin order: each category's leading
+  // products head the list.
+  const ordered = orderLeadingPlugins({ ...old, plugins }, options.leading)
+  const catalog = CatalogSchema.parse({
+    ...ordered,
+    catalogId: `catalog:${digest(ordered).slice(7)}`,
+  })
   verifyPortableCatalog(catalog)
   const artifacts = createArtifacts(catalog, result.lock)
   verifyArtifacts(artifacts)

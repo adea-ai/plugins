@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "leading": {
     "productivity": [
-      "gmail",
       "google-calendar",
       "google-drive",
       "notion",
       "todoist",
-      "readwise"
+      "readwise",
+      "smartsheet"
     ],
     "communication": [
       "slack",
@@ -15,7 +15,7 @@
       "intercom",
       "fireflies",
       "otter",
-      "customer-io"
+      "gmail"
     ],
     "developer-tools": [
       "github",
