@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.4.1...plugins-marketplace-v1.4.2) (2026-09-17)
+
+
+### Maintenance
+
+* bump Code Foundry runtime ref to v1.29.1 ([#69](https://github.com/adea-ai/plugins/issues/69)) ([dc578cd](https://github.com/adea-ai/plugins/commit/dc578cdbad162d3bd547a52ebbacdee9120f72fd))
+
 ## [1.4.1](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.4.0...plugins-marketplace-v1.4.1) (2026-09-17)
 
 
