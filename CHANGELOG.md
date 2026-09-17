@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.3](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.4.2...plugins-marketplace-v1.4.3) (2026-09-17)
+
+
+### Maintenance
+
+* point config runtime_ref at v1.29.1 ([#71](https://github.com/adea-ai/plugins/issues/71)) ([e4d7eb8](https://github.com/adea-ai/plugins/commit/e4d7eb8dda86981c1fd0b312d5cf6ae155a99d47))
+
 ## [1.4.2](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.4.1...plugins-marketplace-v1.4.2) (2026-09-17)
 
 
