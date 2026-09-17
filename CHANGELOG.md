@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.4](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.4.3...plugins-marketplace-v1.4.4) (2026-09-17)
+
+
+### Maintenance
+
+* adopt Code Foundry runtime v1.30.0 ([#73](https://github.com/adea-ai/plugins/issues/73)) ([6033def](https://github.com/adea-ai/plugins/commit/6033deff70b69f6f023b476bdbb39f9d72f3db37))
+
 ## [1.4.3](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.4.2...plugins-marketplace-v1.4.3) (2026-09-17)
 
 
