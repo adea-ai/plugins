@@ -10,9 +10,9 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "catalog": "bun run packages/cli/src/index.ts",
-    "format": "oxfmt --write .",
+    "fmt": "oxfmt .",
     "format:check": "oxfmt --check .",
-    "lint": "oxlint",
+    "lint": "oxlint --deny-warnings",
     "type-check": "tsc --noEmit",
     "test": "bun test --timeout 30000",
     "test:unit": "bun test packages --timeout 30000",
@@ -36,8 +36,8 @@
   "devDependencies": {
     "@types/bun": "1.4.1",
     "@types/node": "26.4.1",
-    "oxfmt": "^0.67.0",
-    "oxlint": "^1.81.0",
+    "oxfmt": "^0.68.0",
+    "oxlint": "^1.83.0",
     "typescript": "^6.0.3"
   },
   "engines": {
