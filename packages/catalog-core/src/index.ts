@@ -1041,7 +1041,7 @@ export function orderLeadingPlugins<
   }
   return {
     ...catalog,
-    plugins: [...catalog.plugins].sort((left, right) => rank(left) - rank(right)),
+    plugins: catalog.plugins.toSorted((left, right) => rank(left) - rank(right)),
   }
 }
 
