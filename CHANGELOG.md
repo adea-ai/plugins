@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.4.0...plugins-marketplace-v1.4.1) (2026-09-17)
+
+
+### Maintenance
+
+* standardize lint and format toolchain ([#66](https://github.com/adea-ai/plugins/issues/66)) ([65d9d59](https://github.com/adea-ai/plugins/commit/65d9d59937ed7d46a71def9d1f5a71f308e0b298))
+
 ## [1.4.0](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.3.8...plugins-marketplace-v1.4.0) (2026-09-12)
 
 
