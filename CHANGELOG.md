@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.5](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.4.4...plugins-marketplace-v1.4.5) (2026-09-18)
+
+
+### Bug Fixes
+
+* complete fleet toolchain alignment ([#75](https://github.com/adea-ai/plugins/issues/75)) ([5b1908f](https://github.com/adea-ai/plugins/commit/5b1908fbcff6d3b616f13c0f6575893c5437c7ae))
+
 ## [1.4.4](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.4.3...plugins-marketplace-v1.4.4) (2026-09-17)
 
 
