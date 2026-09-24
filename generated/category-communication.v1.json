@@ -1,0 +1,799 @@
+{
+  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "category": "communication",
+  "pluginCount": 23,
+  "productCount": 16,
+  "products": [
+    {
+      "capabilitySummary": {
+        "command": 5,
+        "executable": 17,
+        "mcp-server": 1,
+        "rule": 2,
+        "skill": 8
+      },
+      "categories": [
+        "communication",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Slack workspace integration. Search messages, access channels, read threads, and stay connected with your team's communications while coding. Find relevant discussions and context quickly.",
+      "displayName": "slack",
+      "homepage": "https://github.com/slackapi/slack-mcp-plugin/tree/main",
+      "icon": {
+        "asset": "icon-22860d9a3bdf29402f53345ae9bc8ee0.png",
+        "bytes": 23428,
+        "contentType": "image/png",
+        "digest": "sha256:22860d9a3bdf29402f53345ae9bc8ee0cd057c652eda418ef8433ff0c363fb02",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "productivity",
+        "slack"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 33,
+        "text": "SL"
+      },
+      "pluginId": "plugin:claude-official:slack",
+      "primaryCategory": "communication",
+      "productKey": "slack",
+      "releaseId": "release:48e09694217b103bda4d91a6f9ef83268bde8d269865249c3067d38be109f5cd",
+      "sourceId": "claude-official",
+      "upstreamName": "slack",
+      "variantPluginIds": [
+        "plugin:claude-official:slack",
+        "plugin:openai-official:slack"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "communication"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Search meetings, pull transcripts, and work with Zoom Docs.",
+      "displayName": "Zoom",
+      "icon": {
+        "asset": "icon-9082312993373e52b2bc5e5045acf641.png",
+        "bytes": 16774,
+        "contentType": "image/png",
+        "digest": "sha256:9082312993373e52b2bc5e5045acf6412671e21cf0104178befb3417078b46cc",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "zoom"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 3,
+        "text": "ZO"
+      },
+      "pluginId": "plugin:cursor-official:zoom",
+      "primaryCategory": "communication",
+      "productKey": "zoom",
+      "releaseId": "release:ad36b57b20a985d3c8eedf7198a8533775b3223d314c47e4bc4e988b95f427af",
+      "sourceId": "cursor-official",
+      "upstreamName": "zoom",
+      "variantPluginIds": [
+        "plugin:cursor-official:zoom",
+        "plugin:openai-official:zoom"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "rule": 1,
+        "skill": 4
+      },
+      "categories": [
+        "communication",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Intercom integration for Claude Code. Search conversations, analyze customer support patterns, look up contacts and companies, and install the Intercom Messenger. Connect your Intercom workspace to get real-time insights from customer data.",
+      "displayName": "Intercom",
+      "homepage": "https://github.com/intercom/claude-plugin-external",
+      "icon": {
+        "asset": "icon-45836f3ea3e572ef6430323feb98876b.svg",
+        "bytes": 1134,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:45836f3ea3e572ef6430323feb98876b5f8a893a6ce264d7bf2a83b7fb29fd43",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "intercom",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 102,
+        "text": "IN"
+      },
+      "pluginId": "plugin:claude-official:intercom",
+      "primaryCategory": "communication",
+      "productKey": "intercom",
+      "releaseId": "release:74eb163cf63a11804a1c2975f653ad7780aa10fc340e02c06508289ae1fd1414",
+      "sourceId": "claude-official",
+      "upstreamName": "intercom",
+      "variantPluginIds": [
+        "plugin:claude-official:intercom",
+        "plugin:cursor-official:intercom",
+        "plugin:knowledge-work-official:intercom"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "communication"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search meeting transcripts, summaries, and action items.",
+      "displayName": "Fireflies",
+      "icon": {
+        "asset": "icon-498fd1421656a6afba2d63f0ef4e308b.png",
+        "bytes": 9392,
+        "contentType": "image/png",
+        "digest": "sha256:498fd1421656a6afba2d63f0ef4e308b3c31f6acba08c13dbeb120ea3c404d83",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "fireflies"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 237,
+        "text": "FI"
+      },
+      "pluginId": "plugin:cursor-official:fireflies",
+      "primaryCategory": "communication",
+      "productKey": "fireflies",
+      "releaseId": "release:4406f70005fd112dc4b7b7a5223c065708272fe749e34d26baee7354c165d217",
+      "sourceId": "cursor-official",
+      "upstreamName": "fireflies",
+      "variantPluginIds": [
+        "plugin:cursor-official:fireflies"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "communication"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search meeting history and pull full transcripts.",
+      "displayName": "Otter.ai",
+      "icon": {
+        "asset": "icon-e1e012cdbcbae94ae151879d5f054681.png",
+        "bytes": 5188,
+        "contentType": "image/png",
+        "digest": "sha256:e1e012cdbcbae94ae151879d5f05468127706701ff6dc23e142cc77693cbffa7",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "otter"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 108,
+        "text": "OA"
+      },
+      "pluginId": "plugin:cursor-official:otter",
+      "primaryCategory": "communication",
+      "productKey": "otter",
+      "releaseId": "release:bdfb7a8a35f26ff10ca3c5947277de614933b23dc2e9959578b9c940aac6ac87",
+      "sourceId": "cursor-official",
+      "upstreamName": "otter",
+      "variantPluginIds": [
+        "plugin:cursor-official:otter"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "communication"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search, read, draft, and manage email.",
+      "displayName": "Gmail",
+      "icon": {
+        "asset": "icon-16b247249328458d1f22b1e6c9766dcc.svg",
+        "bytes": 1392,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:16b247249328458d1f22b1e6c9766dcce8d75ac6316f4be8c999ca36d33f9d17",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "gmail"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 342,
+        "text": "GM"
+      },
+      "pluginId": "plugin:cursor-official:gmail",
+      "primaryCategory": "communication",
+      "productKey": "gmail",
+      "releaseId": "release:fb04888c2358b10c404faf8ed6a68d6269ab1030849a9f122a2fa253b31303f2",
+      "sourceId": "cursor-official",
+      "upstreamName": "gmail",
+      "variantPluginIds": [
+        "plugin:cursor-official:gmail",
+        "plugin:openai-official:gmail"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "communication"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Build campaigns, manage segments, and query people.",
+      "displayName": "Customer.io",
+      "icon": {
+        "asset": "icon-29a0c1a4c61553a13ce7015656729968.png",
+        "bytes": 6293,
+        "contentType": "image/png",
+        "digest": "sha256:29a0c1a4c61553a13ce7015656729968002e0bf441dc86973b8a8f1ebbafaa8b",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "customer",
+        "io"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 213,
+        "text": "CI"
+      },
+      "pluginId": "plugin:cursor-official:customer-io",
+      "primaryCategory": "communication",
+      "productKey": "customer-io",
+      "releaseId": "release:9d0bca8d982f7568cad07744aa7a7880aaa08a327615573180cb7ac9b4060d78",
+      "sourceId": "cursor-official",
+      "upstreamName": "customer-io",
+      "variantPluginIds": [
+        "plugin:cursor-official:customer-io"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 5
+      },
+      "categories": [
+        "communication"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Triage tickets, draft responses, escalate issues, and build your knowledge base. Research customer context and turn resolved issues into self-service content.",
+      "displayName": "Customer Support",
+      "icon": null,
+      "keywords": [
+        "communication",
+        "customer",
+        "support"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 18,
+        "text": "CS"
+      },
+      "pluginId": "plugin:knowledge-work-official:customer-support",
+      "primaryCategory": "communication",
+      "productKey": "customer-support",
+      "releaseId": "release:5845cdc0920bddaa855672663d774dd1499e507c94546e01c2a5c8438922309e",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "customer-support",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:customer-support"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 4
+      },
+      "categories": [
+        "communication"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.",
+      "displayName": "Grok Voice",
+      "icon": {
+        "asset": "icon-c6be9965a6c0f1516dae02750c88bc4b.svg",
+        "bytes": 654,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:c6be9965a6c0f1516dae02750c88bc4b989e5e6bfc44fbf6a096e74dd3494148",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "grok",
+        "voice"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 324,
+        "text": "GV"
+      },
+      "pluginId": "plugin:cursor-official:grok-voice",
+      "primaryCategory": "communication",
+      "productKey": "grok-voice",
+      "releaseId": "release:45d497915e75eaaedfab9f828b29f52d2863eb8bad95ce8e10a8c8d78e68e176",
+      "sourceId": "cursor-official",
+      "upstreamName": "grok-voice",
+      "variantPluginIds": [
+        "plugin:cursor-official:grok-voice"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "communication"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search, read, and send Microsoft Outlook email, and look up contacts.",
+      "displayName": "Outlook",
+      "icon": {
+        "asset": "icon-258d51a8e98a58b805850aed142ac87c.svg",
+        "bytes": 4029,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:258d51a8e98a58b805850aed142ac87cfd31120a3fae4c2ad5a5fc3611021401",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "outlook"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 78,
+        "text": "OU"
+      },
+      "pluginId": "plugin:cursor-official:outlook",
+      "primaryCategory": "communication",
+      "productKey": "outlook",
+      "releaseId": "release:fec53da8c93063e11a597c1985338c9191807ab794ca451ea8953e412775f720",
+      "sourceId": "cursor-official",
+      "upstreamName": "outlook",
+      "variantPluginIds": [
+        "plugin:cursor-official:outlook"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "communication",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "List, create, update, and cancel Microsoft Outlook calendar events.",
+      "displayName": "Outlook Calendar",
+      "icon": {
+        "asset": "icon-67c88e5b24ca41f8d9981e3468475c26.svg",
+        "bytes": 877,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:67c88e5b24ca41f8d9981e3468475c2617fbd19a0dc32d6aadae81b140d16cfb",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "calendar",
+        "communication",
+        "outlook"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 336,
+        "text": "OC"
+      },
+      "pluginId": "plugin:cursor-official:outlook-calendar",
+      "primaryCategory": "communication",
+      "productKey": "outlook-calendar",
+      "releaseId": "release:ee643f1f3bb19c22fcedc341365ff6ada7c9c5050ba50dc0678086d036126f03",
+      "sourceId": "cursor-official",
+      "upstreamName": "outlook-calendar",
+      "variantPluginIds": [
+        "plugin:cursor-official:outlook-calendar",
+        "plugin:openai-official:outlook-calendar"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "unknown": 1
+      },
+      "categories": [
+        "communication"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Work with Outlook Email using the configured Microsoft Outlook app connector.",
+      "displayName": "outlook-email",
+      "icon": {
+        "asset": "icon-5335d7747d4a58b3a99ece47d142a127.png",
+        "bytes": 23322,
+        "contentType": "image/png",
+        "digest": "sha256:5335d7747d4a58b3a99ece47d142a127fbc4a5acec2e335fab6d17b42f4ec16d",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "email",
+        "outlook"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 270,
+        "text": "OE"
+      },
+      "pluginId": "plugin:openai-official:outlook-email",
+      "primaryCategory": "communication",
+      "productKey": "outlook-email",
+      "releaseId": "release:2884115ba40bc3dce339e126323a58da00ca7672d19933dd8752c5b3934c39a9",
+      "sourceId": "openai-official",
+      "upstreamName": "outlook-email",
+      "variantPluginIds": [
+        "plugin:openai-official:outlook-email"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "command": 5,
+        "mcp-server": 1,
+        "rule": 1,
+        "skill": 2
+      },
+      "categories": [
+        "communication"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Slack integration for searching messages, sending communications, managing canvases, and more",
+      "displayName": "Slack",
+      "icon": null,
+      "keywords": [
+        "by",
+        "communication",
+        "salesforce",
+        "slack"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 162,
+        "text": "SL"
+      },
+      "pluginId": "plugin:knowledge-work-official:slack-by-salesforce",
+      "primaryCategory": "communication",
+      "productKey": "slack-by-salesforce",
+      "releaseId": "release:9ae1973bf327dc85bea5d11c99ad52322b004d39ebc7781a84e60adeb60a7809",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "slack-by-salesforce",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:slack-by-salesforce"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "communication"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search, read, and send Microsoft Teams chats and channel messages.",
+      "displayName": "Teams",
+      "icon": {
+        "asset": "icon-0db3debcfd64741145c6fab173775e74.svg",
+        "bytes": 2237,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:0db3debcfd64741145c6fab173775e74c349576da82a18512aaede7e2a39c3ec",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "teams"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 15,
+        "text": "TE"
+      },
+      "pluginId": "plugin:cursor-official:teams",
+      "primaryCategory": "communication",
+      "productKey": "teams",
+      "releaseId": "release:5689be9ae862af9c648359f553f75346413f5f12e28734933a36a7fd3b44eeba",
+      "sourceId": "cursor-official",
+      "upstreamName": "teams",
+      "variantPluginIds": [
+        "plugin:cursor-official:teams",
+        "plugin:openai-official:teams"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 2
+      },
+      "categories": [
+        "communication"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Search posts, read timelines, pull trends, manage bookmarks, and access X Chat.",
+      "displayName": "X",
+      "icon": {
+        "asset": "icon-bc5e83df48f9ebaf98a750e4a16efb72.svg",
+        "bytes": 542,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:bc5e83df48f9ebaf98a750e4a16efb7290a8f39bb4fb6aabe07416aa319e711d",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "x"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 177,
+        "text": "X"
+      },
+      "pluginId": "plugin:cursor-official:x-plugin",
+      "primaryCategory": "communication",
+      "productKey": "x-plugin",
+      "releaseId": "release:e737ada0a2c375395c45fea6e00912367ce15a4077a6a99468e08186fd8b9e5e",
+      "sourceId": "cursor-official",
+      "upstreamName": "x",
+      "variantPluginIds": [
+        "plugin:cursor-official:x-plugin"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "browser": 4,
+        "mcp-server": 1,
+        "rule": 1,
+        "scheduled-task": 2,
+        "skill": 61
+      },
+      "categories": [
+        "communication",
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Claude plugin for planning, building, and debugging Zoom integrations across REST APIs, SDKs, webhooks, bots, and MCP workflows.",
+      "displayName": "Zoom",
+      "homepage": "https://developers.zoom.us/",
+      "icon": {
+        "asset": "icon-410740a6cf3fce41e9509054cec3a59b.svg",
+        "bytes": 1928,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:410740a6cf3fce41e9509054cec3a59b724c68381b4dda8fd64c65a67bbe0ea8",
+        "homepage": "https://developers.zoom.us/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://developers.zoom.us/svgs/favicon.svg"
+      },
+      "keywords": [
+        "communication",
+        "developer-tools",
+        "plugin",
+        "zoom"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 150,
+        "text": "ZO"
+      },
+      "pluginId": "plugin:claude-official:zoom-plugin",
+      "primaryCategory": "communication",
+      "productKey": "zoom-plugin",
+      "releaseId": "release:18887113c7b9c132da94ee3ddb86e5849dbb46365e9612dd544dc2dbc3b37a03",
+      "sourceId": "claude-official",
+      "upstreamName": "zoom-plugin",
+      "variantPluginIds": [
+        "plugin:claude-official:zoom-plugin",
+        "plugin:knowledge-work-official:zoom-plugin"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1
+}

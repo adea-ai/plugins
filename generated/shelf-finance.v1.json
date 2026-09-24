@@ -1,0 +1,303 @@
+{
+  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "category": "finance",
+  "products": [
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Read balances, transactions, statements, and cards.",
+      "displayName": "Mercury",
+      "icon": {
+        "asset": "icon-72e5d9eded3682cc2300db58d2bc3972.png",
+        "bytes": 46482,
+        "contentType": "image/png",
+        "digest": "sha256:72e5d9eded3682cc2300db58d2bc3972f9f79c2a438f0cb087326610a6e6b87a",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "finance",
+        "mercury"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 132,
+        "text": "ME"
+      },
+      "pluginId": "plugin:cursor-official:mercury",
+      "primaryCategory": "finance",
+      "productKey": "mercury",
+      "releaseId": "release:524a63da407d232f3d2fe0ce1ad1c6398cb0534c309f06bd75fd0e8fd5c2b0d7",
+      "sourceId": "cursor-official",
+      "upstreamName": "mercury",
+      "variantPluginIds": [
+        "plugin:cursor-official:mercury"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Review positions, balances, P&L, and draft trade instructions.",
+      "displayName": "Interactive Brokers",
+      "icon": {
+        "asset": "icon-e2145b7694f27b37fb40d7671ba6eb5e.png",
+        "bytes": 9057,
+        "contentType": "image/png",
+        "digest": "sha256:e2145b7694f27b37fb40d7671ba6eb5e870c256c1e147444187e7ef22cb5e4de",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "brokers",
+        "finance",
+        "interactive"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 264,
+        "text": "IB"
+      },
+      "pluginId": "plugin:cursor-official:interactive-brokers",
+      "primaryCategory": "finance",
+      "productKey": "interactive-brokers",
+      "releaseId": "release:046e13ff530ad114e69f3f342f504aaf3e786b3f17e9c966155cc072ceb1841d",
+      "sourceId": "cursor-official",
+      "upstreamName": "interactive-brokers",
+      "variantPluginIds": [
+        "plugin:cursor-official:interactive-brokers"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Query expenses, receipts, bills, cards, and travel.",
+      "displayName": "Brex",
+      "icon": {
+        "asset": "icon-3ef094b024795ba7426b1a7e42979e7f.png",
+        "bytes": 3815,
+        "contentType": "image/png",
+        "digest": "sha256:3ef094b024795ba7426b1a7e42979e7f1e5e77b7fdfa0a255c5c48edcfef94ee",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "brex",
+        "finance"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 180,
+        "text": "BR"
+      },
+      "pluginId": "plugin:cursor-official:brex",
+      "primaryCategory": "finance",
+      "productKey": "brex",
+      "releaseId": "release:27fc757fb8be09157c5f162c5d9de702a7e2878698f50b1f625fa9e4577a30ee",
+      "sourceId": "cursor-official",
+      "upstreamName": "brex",
+      "variantPluginIds": [
+        "plugin:cursor-official:brex"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "View accounts, positions, orders, watchlists, and market data.",
+      "displayName": "Webull",
+      "icon": {
+        "asset": "icon-a209946494b30cab9e53ceedba655adb.png",
+        "bytes": 6600,
+        "contentType": "image/png",
+        "digest": "sha256:a209946494b30cab9e53ceedba655adb9fc6e6b941a5d572796c6f2ae6709889",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "finance",
+        "webull"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 201,
+        "text": "WE"
+      },
+      "pluginId": "plugin:cursor-official:webull",
+      "primaryCategory": "finance",
+      "productKey": "webull",
+      "releaseId": "release:c2f5437f9ed5978eed18e5ec83cfcc88684a4d927758546414078b6d6d07e8f5",
+      "sourceId": "cursor-official",
+      "upstreamName": "webull",
+      "variantPluginIds": [
+        "plugin:cursor-official:webull"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Read and write invoices, contacts, reports, and payroll.",
+      "displayName": "Xero",
+      "icon": {
+        "asset": "icon-1afeeff143a66b32e7038ec3bae9e758.png",
+        "bytes": 14904,
+        "contentType": "image/png",
+        "digest": "sha256:1afeeff143a66b32e7038ec3bae9e758b95ebeb26001a0eca9953b8b2f8d6ba9",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "finance",
+        "xero"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 300,
+        "text": "XE"
+      },
+      "pluginId": "plugin:cursor-official:xero",
+      "primaryCategory": "finance",
+      "productKey": "xero",
+      "releaseId": "release:ed973a84b58958ca6230e0a18acd9d01ea8fe8143e3576eb54cae38c035de9ee",
+      "sourceId": "cursor-official",
+      "upstreamName": "xero",
+      "variantPluginIds": [
+        "plugin:cursor-official:xero"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 5
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities.",
+      "displayName": "Airwallex",
+      "homepage": "https://www.airwallex.com/docs",
+      "icon": {
+        "asset": "icon-03276e1e0a355132331e7d1467dc070e.svg",
+        "bytes": 914,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:03276e1e0a355132331e7d1467dc070ebc23d7261eeb4a4499d7497ef4c70f97",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "agentos",
+        "airwallex",
+        "finance",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 27,
+        "text": "AI"
+      },
+      "pluginId": "plugin:claude-official:airwallex-agentos",
+      "primaryCategory": "finance",
+      "productKey": "airwallex-agentos",
+      "releaseId": "release:c20a1421154a3aeb61df8ba31821fac7de4cdb36923ded07f745c1d17d3f1f95",
+      "sourceId": "claude-official",
+      "upstreamName": "airwallex-agentos",
+      "variantPluginIds": [
+        "plugin:claude-official:airwallex-agentos",
+        "plugin:knowledge-work-official:airwallex-agentos"
+      ],
+      "variantsIdentical": true
+    }
+  ],
+  "schemaVersion": 1,
+  "topCount": 6
+}

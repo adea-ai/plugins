@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:84979770ab6b1e16c18e4794fb3e6081ff1af6bebbd99f78fa0bdb3ba589bf07",
+  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
   "categories": [
     "business-operations",
     "communication",
@@ -8,12 +8,12 @@
     "developer-tools",
     "education-research",
     "finance",
+    "other",
     "productivity",
-    "scientific-research",
     "security"
   ],
-  "generatedAt": "2026-09-12T02:31:42.140Z",
-  "pluginCount": 507,
+  "generatedAt": "2026-09-24T23:30:16.656Z",
+  "pluginCount": 543,
   "productGroups": [
     "42crunch-api-security-testing",
     "activecampaign",
@@ -27,7 +27,6 @@
     "ahrefs",
     "ai-firstify",
     "ai-plugins",
-    "aikido",
     "airtable",
     "airwallex-agentos",
     "airwallex-dev",
@@ -36,6 +35,7 @@
     "alloydb-omni",
     "altimate-code",
     "amazon-location-service",
+    "amazon-selling-partner",
     "amd-skills",
     "amplemarket",
     "amplitude",
@@ -64,6 +64,7 @@
     "bigdata-com",
     "bigquery-data-analytics",
     "bio-research",
+    "blackrock-advisor-center-plugin",
     "boltz",
     "boltz-api-cli",
     "box",
@@ -85,12 +86,15 @@
     "catalyst-by-zoho",
     "cds-mcp",
     "chatcut",
+    "chronograph-gp",
+    "chronograph-lp",
     "circle-skills",
     "circleback",
     "circleci",
     "ckeditor",
     "clangd-lsp",
     "claude-code-setup",
+    "claude-for-financial-advisors",
     "claude-md-management",
     "claude-security",
     "clay",
@@ -108,6 +112,7 @@
     "code-simplifier",
     "coderabbit",
     "codex-security",
+    "coinbase",
     "commit-commands",
     "common-room",
     "confidence",
@@ -134,7 +139,6 @@
     "data-agent-kit-starter-pack",
     "data-analytics",
     "databases-on-aws",
-    "databricks",
     "datadog",
     "dataproc",
     "dataverse",
@@ -151,6 +155,7 @@
     "dynatrace",
     "engineering",
     "enterprise-search",
+    "etoro-trading",
     "exa",
     "excalidraw",
     "explanatory-output-style",
@@ -179,9 +184,14 @@
     "godaddy",
     "gong",
     "google-calendar",
+    "google-cloud-bigquery",
     "google-cloud-storage",
+    "google-docs",
     "google-drive",
+    "google-sheets",
+    "google-slides",
     "gopls-lsp",
+    "govtribe",
     "grafana-assistant",
     "grafana-cloud-mcp",
     "grafana-mcp",
@@ -201,8 +211,11 @@
     "hyperframes",
     "idmp-plugin",
     "imessage",
+    "incident-io",
+    "informatica-for-claude-platform",
     "interactive-brokers",
     "intercom",
+    "intuit-quickbooks",
     "jdtls-lsp",
     "jfrog",
     "jotform",
@@ -213,14 +226,13 @@
     "langfuse",
     "langfuse-observability",
     "laravel-boost",
+    "leadfeeder",
     "learn-with-coursera",
     "learning-output-style",
     "legal",
-    "legalzoom",
     "life-science-research",
     "linear",
-    "liquid-lsp",
-    "liquid-skills",
+    "linq-alpha",
     "logfire",
     "logrocket",
     "looker",
@@ -240,7 +252,6 @@
     "mcp-tunnels",
     "meltwater",
     "mem",
-    "mercadopago",
     "mercury",
     "mergify",
     "microsoft-docs",
@@ -255,7 +266,6 @@
     "mongodb",
     "mongodb-atlas",
     "navan",
-    "neon",
     "netlify-skills",
     "netsuite-ai-companion",
     "netsuite-finance-analyst",
@@ -286,6 +296,9 @@
     "pagerduty",
     "paypal",
     "pdf-viewer",
+    "pendo-analytics",
+    "pendo-guides",
+    "pendo-orchestrate",
     "php-lsp",
     "pigment",
     "pinecone",
@@ -328,6 +341,7 @@
     "render",
     "revenuecat",
     "rill",
+    "robinhood",
     "rootly",
     "ruby-lsp",
     "runway-api",
@@ -350,10 +364,12 @@
     "serena",
     "servicenow-sdk",
     "session-report",
+    "setup-agent-analytics",
+    "setup-mcp-agent-analytics",
     "sharepoint",
     "shippo",
     "shopify",
-    "shopify-ai-toolkit",
+    "shopify-store",
     "signoz",
     "similarweb",
     "skill-creator",
@@ -370,7 +386,7 @@
     "spotify-ads-api",
     "stackhawk-api",
     "stackhawk-hawkscan",
-    "streaming-skills-plugin",
+    "statsig",
     "stripe",
     "sumup",
     "supabase",
@@ -407,16 +423,19 @@
     "vsql-extension-builder",
     "webull",
     "windsor-ai",
+    "wingspan",
     "wix",
     "workable",
     "workos",
     "wrike",
     "x-ads",
+    "x-money",
     "x-plugin",
     "xero",
     "youdotcom-agent-skills",
     "zapier",
     "zilliz",
+    "zocks-advisor",
     "zoom",
     "zoom-plugin",
     "zoominfo",
@@ -451,16 +470,12 @@
       "text": "Endor Labs AI Plugins (Legacy) Set up endorctl and use Endor Labs to scan, prioritize, and fix security risks across your software supply chain ai developer-tools plugins"
     },
     {
-      "pluginId": "plugin:claude-official:aikido",
-      "text": "aikido Aikido Security scanning for Claude Code — SAST, secrets, and IaC vulnerability detection powered by the Aikido MCP server. aikido security"
-    },
-    {
       "pluginId": "plugin:claude-official:airtable",
       "text": "airtable Airtable is the database and operations layer for your agents — whether running product, marketing, sales, ops, HR, or a custom business app. It combines structured data with multiplayer visual surfaces (grid, kanban, calendar, gallery, timeline) humans and agents share — plus sync integrations to Jira, Salesforce, Zendesk, Google Drive, Databricks, and the rest of your stack, all backed by enterprise governance. This plugin makes Claude fluent in Airtable: creating bases and schema, working with records, and sharing UI for collaboration. Bundles the official Airtable MCP server. airtable productivity"
     },
     {
       "pluginId": "plugin:claude-official:airwallex-agentos",
-      "text": "airwallex-agentos Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities. agentos airwallex finance productivity"
+      "text": "Airwallex Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities. agentos airwallex finance productivity"
     },
     {
       "pluginId": "plugin:claude-official:airwallex-dev",
@@ -487,8 +502,12 @@
       "text": "amazon-location-service Guide developers through adding maps, places search, geocoding, routing, and other geospatial features with Amazon Location Service, including authentication setup, SDK integration, and best practices. amazon developer-tools location service"
     },
     {
+      "pluginId": "plugin:claude-official:amazon-selling-partner",
+      "text": "Amazon Selling Partner Connect your Amazon Seller Central account to Claude. Ask about sales, inventory, and listing performance and get recommendations grounded in your own data, then review and approve every listing, inventory or FBA action before it runs. Bundles the Amazon Selling Partner MCP server (Seller Central OAuth on first use). Currently in beta. amazon partner productivity selling"
+    },
+    {
       "pluginId": "plugin:claude-official:amd-skills",
-      "text": "amd-skills AMD's verified Agent Skills in one plugin: route image/audio through local AI on Ryzen AI, serve LLMs on AMD Instinct GPUs with vLLM, and analyze GPU kernel and PyTorch trace performance. amd developer-tools skills"
+      "text": "amd-skills AMD's verified Agent Skills in one plugin: route image/audio through local AI on Ryzen AI, serve LLMs on AMD Instinct GPUs with vLLM, optimize inference throughput with Hyperloom, and analyze GPU kernel and PyTorch trace performance. amd developer-tools skills"
     },
     {
       "pluginId": "plugin:claude-official:amplitude",
@@ -575,6 +594,10 @@
       "text": "bigquery-data-analytics Connect, query, and generate data insights for BigQuery datasets and data. analytics bigquery data data-analytics"
     },
     {
+      "pluginId": "plugin:claude-official:blackrock-advisor-center-plugin",
+      "text": "blackrock-advisor-center-plugin BlackRock Advisor Center 360° skills for financial advisors: portfolio review, opportunity and fund-health checks, guided benchmark selection, guided portfolio building, wealth projections, and routing to Advisor Center web workflows. Requires the BlackRock Advisor Center connector and an Advisor Center account. advisor blackrock center plugin productivity"
+    },
+    {
       "pluginId": "plugin:claude-official:boltz",
       "text": "boltz Predict structures, screen molecules and proteins, and design binders with Boltz from Claude Code. boltz developer-tools"
     },
@@ -615,6 +638,14 @@
       "text": "cds-mcp AI-assisted development of SAP Cloud Application Programming Model (CAP) projects. Search CDS models and CAP documentation. cds developer-tools mcp"
     },
     {
+      "pluginId": "plugin:claude-official:chronograph-gp",
+      "text": "Chronograph GP Portfolio monitoring, valuations and analytics for private-capital GP teams using the Chronograph connector: portfolio-company one-pagers, fund quarterly review packs, markup/markdown briefs, TVPI attribution and budget-vs-actuals. Requires a Chronograph account and the Chronograph connector. chronograph gp productivity"
+    },
+    {
+      "pluginId": "plugin:claude-official:chronograph-lp",
+      "text": "Chronograph LP Portfolio monitoring and analytics for private-capital LP teams using the Chronograph connector: cashflow forecasting, commitment pacing, look-through exposure scans and GP-meeting prep. Requires a Chronograph account and the Chronograph connector. chronograph lp productivity"
+    },
+    {
       "pluginId": "plugin:claude-official:circle-skills",
       "text": "circle Ship stablecoin apps faster. Best-practice skills for USDC payments, cross-chain transfers, wallets, and smart contracts — plus Circle's MCP server for real-time SDK and documentation guidance. circle developer-tools skills"
     },
@@ -641,6 +672,10 @@
     {
       "pluginId": "plugin:claude-official:claude-security",
       "text": "claude-security Deep vulnerability scanning of your own code, run entirely inside your Claude Code session at a chosen effort tier, with every finding challenged before it is reported and the verification tally computed in code. Turns surviving findings into targeted patches, each verified by a panel of agents, that you apply when you choose. claude security"
+    },
+    {
+      "pluginId": "plugin:claude-official:clay",
+      "text": "clay Work with Clay from Claude Code: set up and sign in to the clay CLI, query and analyze Clay tables, search Clay's GTM database for people and companies, manage audiences, signals, routines and workflows, and draft and review Sequencer campaigns. Includes hooks that auto-approve the plugin's own clay CLI calls and Clay skills; requires a Clay account. business-operations clay productivity"
     },
     {
       "pluginId": "plugin:claude-official:clickhouse-best-practices",
@@ -729,10 +764,6 @@
     {
       "pluginId": "plugin:claude-official:databases-on-aws",
       "text": "databases-on-aws Expert database guidance for the AWS database portfolio. Design schemas, execute queries, handle migrations, and choose the right database for your workload. aws data-analytics databases on"
-    },
-    {
-      "pluginId": "plugin:claude-official:databricks",
-      "text": "databricks Databricks skills for the CLI, Apps, Lakebase, Model Serving, Lakeflow Jobs, Spark Declarative Pipelines, Declarative Automation Bundles (DABs), and classic-to-serverless migration. data-analytics databricks"
     },
     {
       "pluginId": "plugin:claude-official:datadog",
@@ -859,6 +890,10 @@
       "text": "gopls-lsp Go language server for code intelligence and refactoring developer-tools gopls lsp"
     },
     {
+      "pluginId": "plugin:claude-official:govtribe",
+      "text": "GovTribe Government contracting research and capture workflows in Claude: opportunity and pipeline briefs, bid/no-bid and competitor analysis, price-to-win and proposal prep, powered by the GovTribe connector. govtribe productivity"
+    },
+    {
       "pluginId": "plugin:claude-official:grafana-assistant",
       "text": "grafana-assistant Skills and rules for developing and using the Grafana Assistant app and CLI. assistant developer-tools grafana"
     },
@@ -903,8 +938,20 @@
       "text": "imessage iMessage messaging bridge with built-in access control. Reads chat.db directly, sends via AppleScript. Manage pairing, allowlists, and policy via /imessage:access. imessage productivity"
     },
     {
+      "pluginId": "plugin:claude-official:incident-io",
+      "text": "incident-io Work with incident.io from Claude: respond to and investigate incidents, check on-call schedules and escalations, and author the runbooks, skills and architecture docs that incident.io investigations draw on. Bundles the official incident.io MCP server (OAuth on first use). developer-tools incident io"
+    },
+    {
+      "pluginId": "plugin:claude-official:informatica-for-claude-platform",
+      "text": "informatica-for-claude-platform Governed catalog discovery for Informatica Intelligent Data Management Cloud (CDGC): find tables, columns, files, glossary terms and policies across the enterprise catalog, check ownership, certification, sensitivity and applicable policy, and get safe-usage guidance grounded in catalog metadata before querying any data. Requires an Informatica IDMC tenant and the Informatica Catalog Discovery connector. claude data-analytics for informatica platform"
+    },
+    {
       "pluginId": "plugin:claude-official:intercom",
       "text": "intercom Intercom integration for Claude Code. Search conversations, analyze customer support patterns, look up contacts and companies, and install the Intercom Messenger. Connect your Intercom workspace to get real-time insights from customer data. communication intercom productivity"
+    },
+    {
+      "pluginId": "plugin:claude-official:intuit-quickbooks",
+      "text": "Intuit QuickBooks QuickBooks business insights and actions: financial health briefings across P&L, cash flow, balance sheet and A/R, industry benchmarking, payroll cost analysis, overdue-invoice reminders, estimate/invoice drafting from email, payroll onboarding and base-pay changes (with confirmation), and QuickBooks Capital lending guidance. Requires the Intuit QuickBooks connector. intuit productivity quickbooks"
     },
     {
       "pluginId": "plugin:claude-official:jdtls-lsp",
@@ -935,6 +982,10 @@
       "text": "laravel-boost Laravel development toolkit MCP server. Provides intelligent assistance for Laravel applications including Artisan commands, Eloquent queries, routing, migrations, and framework-specific code generation. boost developer-tools laravel"
     },
     {
+      "pluginId": "plugin:claude-official:leadfeeder",
+      "text": "Leadfeeder Turn website visitor signals into pipeline with Leadfeeder: daily visitor briefs, visitor company research, buyer and contact discovery, personalised outreach drafts, and adding companies to your Leadfeeder lists, via the Leadfeeder connector. Requires a Leadfeeder account. leadfeeder productivity"
+    },
+    {
       "pluginId": "plugin:claude-official:learn-with-coursera",
       "text": "learn-with-coursera Turn any learning intent into a personalized Coursera experience. Asks three quick questions (topic, familiarity, preferred format), searches Coursera's catalog, and delivers the right next step — a course, hands-on project, short video, or live roleplay — then maps a path forward. Requires the Coursera connector for catalog tools. coursera education-research learn with"
     },
@@ -943,20 +994,12 @@
       "text": "learning-output-style Interactive learning mode that requests meaningful code contributions at decision points (mimics the unshipped Learning output style) education-research learning output style"
     },
     {
-      "pluginId": "plugin:claude-official:legalzoom",
-      "text": "legalzoom Attorney guidance and legal tools for business and personal needs. AI-powered document review identifies critical risks and important clauses, advises when to engage an attorney, and routes to LegalZoom's network when professional expertise is needed. legalzoom productivity"
-    },
-    {
       "pluginId": "plugin:claude-official:linear",
       "text": "linear Linear issue tracking integration. Create issues, manage projects, update statuses, search across workspaces, and streamline your software development workflow with Linear's modern issue tracker. linear productivity"
     },
     {
-      "pluginId": "plugin:claude-official:liquid-lsp",
-      "text": "liquid-lsp LSP integration for Shopify Liquid templates via the Shopify CLI theme language server. developer-tools liquid lsp"
-    },
-    {
-      "pluginId": "plugin:claude-official:liquid-skills",
-      "text": "liquid-skills Liquid language fundamentals, CSS/JS/HTML coding standards, and WCAG accessibility patterns for Shopify themes developer-tools liquid skills"
+      "pluginId": "plugin:claude-official:linq-alpha",
+      "text": "LinqAlpha LinqAlpha financial research in Claude: guided setup for the LinqAlpha connector, capability-based source selection for fundamentals, estimates, transcripts, filings and market data, and an optional, opt-in default-source preference you can remove at any time. Requires a LinqAlpha account. alpha linq productivity"
     },
     {
       "pluginId": "plugin:claude-official:logfire",
@@ -992,7 +1035,7 @@
     },
     {
       "pluginId": "plugin:claude-official:math-olympiad",
-      "text": "math-olympiad Solve competition math (IMO, Putnam, USAMO) with adversarial verification that catches what self-verification misses. Fresh-context verifiers attack proofs with specific failure patterns. Calibrated abstention over bluffing. math olympiad scientific-research"
+      "text": "math-olympiad Solve competition math (IMO, Putnam, USAMO) with adversarial verification that catches what self-verification misses. Fresh-context verifiers attack proofs with specific failure patterns. Calibrated abstention over bluffing. education-research math olympiad"
     },
     {
       "pluginId": "plugin:claude-official:mcp-apps",
@@ -1005,10 +1048,6 @@
     {
       "pluginId": "plugin:claude-official:mcp-tunnels",
       "text": "mcp-tunnels Connect Claude to a private MCP server through an Anthropic MCP tunnel. The /create-docker-mcp-tunnel command drives the Docker Compose quickstart end to end: certificates, proxy config, cloudflared, and a verifiable sample server. developer-tools mcp tunnels"
-    },
-    {
-      "pluginId": "plugin:claude-official:mercadopago",
-      "text": "Mercado Pago Mercado Pago full-product integration toolkit. One agent routes to four orchestration skills (mp-integrate wizard, mp-webhooks, mp-test-setup, mp-review) that pull every endpoint, payload, and snippet live from the official Mercado Pago MCP server. The MCP must always be connected — there is no offline mode. developer-tools mercadopago"
     },
     {
       "pluginId": "plugin:claude-official:mergify",
@@ -1051,10 +1090,6 @@
       "text": "mongodb-atlas Connect to MongoDB Atlas clusters only through the Atlas Managed MCP Server. Sign in with your Atlas account to explore data, manage collections, optimize queries, generate reliable code with MongoDB best practices, and manage Atlas resources such as clusters, projects, database users, and network access. If you are running a different MongoDB deployment or want to run a local MongoDB MCP Server, install the MongoDB (Self-Managed MCP) plugin instead. atlas data-analytics mongodb"
     },
     {
-      "pluginId": "plugin:claude-official:neon",
-      "text": "neon Manage your Neon projects and databases with the neon-postgres agent skill and the Neon MCP Server. data-analytics neon"
-    },
-    {
       "pluginId": "plugin:claude-official:netlify-skills",
       "text": "netlify-skills Netlify platform skills for Claude Code — functions, edge functions, blobs, database, image CDN, forms, config, CLI, frameworks, caching, AI gateway, and deployment. developer-tools netlify skills"
     },
@@ -1076,7 +1111,7 @@
     },
     {
       "pluginId": "plugin:claude-official:nightvision",
-      "text": "nightvision Skills for working with NightVision, a DAST and API Discovery platform that finds exploitable vulnerabilities in web applications and REST APIs developer-tools nightvision"
+      "text": "nightvision Skills for working with NightVision, a DAST and API Discovery platform that finds exploitable vulnerabilities in web applications and REST APIs nightvision security"
     },
     {
       "pluginId": "plugin:claude-official:nimble",
@@ -1121,6 +1156,18 @@
     {
       "pluginId": "plugin:claude-official:paypal",
       "text": "paypal PayPal development plugin for Claude — integrate payments, subscriptions, invoices, disputes, and more using PayPal's APIs and MCP server developer-tools paypal"
+    },
+    {
+      "pluginId": "plugin:claude-official:pendo-analytics",
+      "text": "Pendo Analytics Bring Pendo product analytics into Claude Code: account health, feature adoption, session replay lookup and triage, feedback analysis, and data-informed planning grounded in real usage data. Requires the Pendo connector and a Pendo subscription. analytics pendo productivity"
+    },
+    {
+      "pluginId": "plugin:claude-official:pendo-guides",
+      "text": "Pendo Guides Create production-ready Pendo in-app guides (walkthroughs, announcements, alerts, polls, promotions) as HTML/CSS/JS from a short intake conversation, using Pendo's guide components. guides pendo productivity"
+    },
+    {
+      "pluginId": "plugin:claude-official:pendo-orchestrate",
+      "text": "Pendo Orchestrate Create, configure and edit draft Pendo Orchestrate email journeys, including multi-email and conditional split flows, via the Pendo connector. Journeys stay in draft; activation happens in the Orchestrate UI. orchestrate pendo productivity"
     },
     {
       "pluginId": "plugin:claude-official:php-lsp",
@@ -1196,7 +1243,7 @@
     },
     {
       "pluginId": "plugin:claude-official:qodo",
-      "text": "Qodo Qodo setup, code intelligence, and review workflows. developer-tools qodo"
+      "text": "Qodo Bring Qodo's codebase intelligence, coding standards, and code review into your coding agent. developer-tools qodo"
     },
     {
       "pluginId": "plugin:claude-official:qodo-standards",
@@ -1315,12 +1362,16 @@
       "text": "session-report Generate an explorable HTML report of Claude Code session usage — tokens, cache efficiency, subagents, skills, and the most expensive prompts — from local ~/.claude/projects transcripts. productivity report session"
     },
     {
-      "pluginId": "plugin:claude-official:shippo",
-      "text": "shippo Shippo connects you to USPS, UPS, FedEx, DHL, and 40+ carriers, so you can handle a shipment end to end right inside Claude. Compare live rates and pick the cheapest or best option, buy and print labels (domestic and international, with customs declarations), validate and standardize addresses, and track packages across carriers. Just ask in plain language: rate-shop a parcel, buy the right label, check a delivery status, or confirm an address before you ship. Whether you run a store or just need to send a package, Shippo turns a pile of carrier accounts into one simple conversation. productivity shippo"
+      "pluginId": "plugin:claude-official:setup-agent-analytics",
+      "text": "Setup Agent Analytics Detect AI agents in your codebase and instrument them with Pendo Agent Analytics via the best-fit path: Python SDK, TypeScript SDK, client-side trackAgent(), or the Conversations API. agent analytics developer-tools setup"
     },
     {
-      "pluginId": "plugin:claude-official:shopify-ai-toolkit",
-      "text": "shopify-plugin Shopify's AI Toolkit provides 18 development skills for building on the Shopify platform, covering documentation search, API schema access, GraphQL and Liquid code validation, Hydrogen storefronts, Polaris UI extensions, store management via CLI, and onboarding guidance for both developers and merchants. ai developer-tools shopify toolkit"
+      "pluginId": "plugin:claude-official:setup-mcp-agent-analytics",
+      "text": "Setup MCP Agent Analytics Detect an MCP server's language (Python, TypeScript or Go) and instrument it with the matching Pendo SDK so MCP tool calls flow into Pendo Agent Analytics. agent analytics developer-tools mcp setup"
+    },
+    {
+      "pluginId": "plugin:claude-official:shippo",
+      "text": "shippo Shippo connects you to USPS, UPS, FedEx, DHL, and 40+ carriers, so you can handle a shipment end to end right inside Claude. Compare live rates and pick the cheapest or best option, buy and print labels (domestic and international, with customs declarations), validate and standardize addresses, and track packages across carriers. Just ask in plain language: rate-shop a parcel, buy the right label, check a delivery status, or confirm an address before you ship. Whether you run a store or just need to send a package, Shippo turns a pile of carrier accounts into one simple conversation. productivity shippo"
     },
     {
       "pluginId": "plugin:claude-official:skill-creator",
@@ -1361,10 +1412,6 @@
     {
       "pluginId": "plugin:claude-official:stackhawk-hawkscan",
       "text": "hawkscan Configure, run, and interpret HawkScan DAST results inside Claude Code. Generates stackhawk.yml configs, runs scans via CLI or Docker, and transforms security findings into prioritized fix tasks for your coding agent. hawkscan security stackhawk"
-    },
-    {
-      "pluginId": "plugin:claude-official:streaming-skills-plugin",
-      "text": "streaming-skills-plugin Skills for streaming application developers, covering Kafka and Flink client libraries and Schema Registry developer-tools plugin skills streaming"
     },
     {
       "pluginId": "plugin:claude-official:stripe",
@@ -1459,6 +1506,10 @@
       "text": "windsor-ai Connect Claude Code to 325+ business data sources via Windsor.ai. Query marketing, sales, CRM, ecommerce, finance, and analytics data from Google Ads, Meta, HubSpot, Salesforce, Shopify, Stripe, and hundreds more — directly from your terminal. ai productivity windsor"
     },
     {
+      "pluginId": "plugin:claude-official:wingspan",
+      "text": "Wingspan Ask Claude about the contractors you pay through Wingspan, what you owe them, and what is holding up a payment, then onboard contractors and log payments as drafts, with a preview before anything is written. Requires a Wingspan account; bundles the Wingspan MCP server (OAuth on first use). productivity wingspan"
+    },
+    {
       "pluginId": "plugin:claude-official:wix",
       "text": "wix Build, manage, and deploy Wix sites and apps. CLI development skills for dashboard extensions, backend APIs, site widgets, and service plugins with the Wix Design System, plus MCP server for site management. developer-tools wix"
     },
@@ -1477,6 +1528,10 @@
     {
       "pluginId": "plugin:claude-official:zilliz",
       "text": "zilliz Zilliz Cloud management plugin with 14 skills covering cluster lifecycle, collection schema, vector search, index tuning, bulk import, RBAC, backups, and monitoring. data-analytics zilliz"
+    },
+    {
+      "pluginId": "plugin:claude-official:zocks-advisor",
+      "text": "Zocks Advisor Intelligence Seven skills for financial advisors built on Zocks meeting intelligence: client behavioral profiles, attrition-risk ranking, held-away asset radar, client journey dossiers, household review packs, next-best-action analysis and a tax opportunity scan. Requires the Zocks connector and a Zocks account. advisor productivity zocks"
     },
     {
       "pluginId": "plugin:claude-official:zoom-plugin",
@@ -1547,6 +1602,10 @@
       "text": "Coda Search docs, read pages, and update tables. coda productivity"
     },
     {
+      "pluginId": "plugin:cursor-official:coinbase",
+      "text": "Coinbase Check balances, get quotes, and preview or place trades. coinbase other"
+    },
+    {
       "pluginId": "plugin:cursor-official:continual-learning",
       "text": "Continual Learning Incremental transcript-driven memory updates for AGENTS.md using high-signal bullet points only. continual education-research learning"
     },
@@ -1583,6 +1642,10 @@
       "text": "Docusign Manage envelopes, templates, workflows, and agreements. business-operations docusign"
     },
     {
+      "pluginId": "plugin:cursor-official:etoro-trading",
+      "text": "eToro Trading View your eToro portfolio, balances, positions, and watchlists, research instruments and traders, and prepare and place trades. etoro other trading"
+    },
+    {
       "pluginId": "plugin:cursor-official:excalidraw",
       "text": "Excalidraw Draw and export hand-drawn diagrams from chat. creativity excalidraw"
     },
@@ -1592,11 +1655,11 @@
     },
     {
       "pluginId": "plugin:cursor-official:finance",
-      "text": "Finance Securely connect your accounts so Grok can help with questions about your spending, subscriptions, balances, and investments. finance"
+      "text": "Finance Link your bank, card, and investment accounts through Plaid so Grok can answer questions about balances, spending, subscriptions, and investments. You'll share contact details, account and balance info, transactions, credit and loans, and investments. Grok syncs and stores your linked account data so the connector can work, and Grok Bot's privacy mode still controls whether your conversations are stored or used for training. Access is read-only, xAI never sees or stores your bank login, and you can unlink accounts anytime from cursor.com. finance"
     },
     {
       "pluginId": "plugin:cursor-official:fireflies",
-      "text": "Fireflies Search meeting transcripts, summaries, and action items. fireflies productivity"
+      "text": "Fireflies Search meeting transcripts, summaries, and action items. communication fireflies"
     },
     {
       "pluginId": "plugin:cursor-official:gamma",
@@ -1623,8 +1686,24 @@
       "text": "Google Calendar Search events and schedule meetings. calendar google productivity"
     },
     {
+      "pluginId": "plugin:cursor-official:google-cloud-bigquery",
+      "text": "Google Cloud BigQuery Explore datasets and tables and run SQL queries. bigquery cloud google other"
+    },
+    {
+      "pluginId": "plugin:cursor-official:google-docs",
+      "text": "Google Docs Read, create, and edit documents. docs google other"
+    },
+    {
       "pluginId": "plugin:cursor-official:google-drive",
       "text": "Google Drive Search, read, create, and share files. drive google productivity"
+    },
+    {
+      "pluginId": "plugin:cursor-official:google-sheets",
+      "text": "Google Sheets Read, write, and append spreadsheet data. google other sheets"
+    },
+    {
+      "pluginId": "plugin:cursor-official:google-slides",
+      "text": "Google Slides Create, edit, and render presentations. google other slides"
     },
     {
       "pluginId": "plugin:cursor-official:grok-voice",
@@ -1692,7 +1771,7 @@
     },
     {
       "pluginId": "plugin:cursor-official:otter",
-      "text": "Otter.ai Search meeting history and pull full transcripts. otter productivity"
+      "text": "Otter.ai Search meeting history and pull full transcripts. communication otter"
     },
     {
       "pluginId": "plugin:cursor-official:outlook",
@@ -1731,12 +1810,24 @@
       "text": "Readwise Search highlights and Reader documents, save articles. productivity readwise"
     },
     {
+      "pluginId": "plugin:cursor-official:robinhood",
+      "text": "Robinhood View portfolios, positions, orders, watchlists, and market data, and trade in a Robinhood Agentic account. other robinhood"
+    },
+    {
       "pluginId": "plugin:cursor-official:salesforce",
       "text": "Salesforce Query, create, and update records in your org. business-operations salesforce"
     },
     {
       "pluginId": "plugin:cursor-official:semrush",
       "text": "Semrush Research keywords, backlinks, traffic, and competitors. business-operations semrush"
+    },
+    {
+      "pluginId": "plugin:cursor-official:sharepoint",
+      "text": "SharePoint Search and read Microsoft SharePoint sites, document libraries, files, and lists. other sharepoint"
+    },
+    {
+      "pluginId": "plugin:cursor-official:shopify-store",
+      "text": "Shopify Connect your Shopify store so Grok can answer questions about your products, orders, customers, inventory, and sales. You sign in with Shopify and approve the store access Grok requests; Grok keeps that authorization so the connector can work, and Grok Bot's privacy mode still controls whether your conversations are stored or used for training. xAI never sees or stores your Shopify password, and you can disconnect the store anytime from grok.com. other shopify store"
     },
     {
       "pluginId": "plugin:cursor-official:similarweb",
@@ -1749,6 +1840,10 @@
     {
       "pluginId": "plugin:cursor-official:sp-global",
       "text": "S&P Global Query S&P Capital IQ financials, prices, and transcripts. finance global sp"
+    },
+    {
+      "pluginId": "plugin:cursor-official:statsig",
+      "text": "Statsig Inspect and manage feature gates, experiments, dynamic configs, and metrics. other statsig"
     },
     {
       "pluginId": "plugin:cursor-official:teaching",
@@ -1791,8 +1886,12 @@
       "text": "X Ads Manage ad campaigns, create ads, track conversions, and pull performance stats. ads business-operations x"
     },
     {
+      "pluginId": "plugin:cursor-official:x-money",
+      "text": "X Money Use your X Money Card, send money to users on X, manage your finances, view your balance and browse through your transaction history. money other x"
+    },
+    {
       "pluginId": "plugin:cursor-official:x-plugin",
-      "text": "X Search posts, read timelines, pull trends, and manage bookmarks. communication x"
+      "text": "X Search posts, read timelines, pull trends, manage bookmarks, and access X Chat. communication x"
     },
     {
       "pluginId": "plugin:cursor-official:xero",
@@ -1808,7 +1907,7 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:adobe-for-creativity",
-      "text": "Adobe for Creativity Brings together Adobe Creative Cloud tools for images, vectors, design, and video. Edit multiple assets at once, adapt for different platforms, and complete multi-step creative workflows for polished results. adobe creativity for"
+      "text": "Adobe Brings together Adobe Creative Cloud tools for images, vectors, design, and video. Edit multiple assets at once, adapt for different platforms, and complete multi-step creative workflows for polished results. adobe creativity for"
     },
     {
       "pluginId": "plugin:knowledge-work-official:adspirer-ads-agent",
@@ -1824,7 +1923,11 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:airwallex-agentos",
-      "text": "Airwallex AgentOS Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities. agentos airwallex finance productivity"
+      "text": "Airwallex Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities. agentos airwallex finance productivity"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:amazon-selling-partner",
+      "text": "Amazon Selling Partner Connect your Amazon Seller Central account to Claude. Ask about sales, inventory, and listing performance and get recommendations grounded in your own data, then review and approve every listing, inventory or FBA action before it runs. Bundles the Amazon Selling Partner MCP server (Seller Central OAuth on first use). Currently in beta. amazon partner productivity selling"
     },
     {
       "pluginId": "plugin:knowledge-work-official:apollo",
@@ -1848,7 +1951,11 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:bio-research",
-      "text": "Bio Research Connect to preclinical research tools and databases (literature search, genomics analysis, target prioritization) to accelerate early-stage life sciences R&D bio research scientific-research"
+      "text": "Bio Research Connect to preclinical research tools and databases (literature search, genomics analysis, target prioritization) to accelerate early-stage life sciences R&D bio education-research research"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:blackrock-advisor-center-plugin",
+      "text": "BlackRock Advisor Center BlackRock Advisor Center 360° skills for financial advisors: portfolio review, opportunity and fund-health checks, guided benchmark selection, guided portfolio building, wealth projections, and routing to Advisor Center web workflows. Requires the BlackRock Advisor Center connector and an Advisor Center account. advisor blackrock center finance plugin"
     },
     {
       "pluginId": "plugin:knowledge-work-official:box",
@@ -1881,6 +1988,18 @@
     {
       "pluginId": "plugin:knowledge-work-official:carta-investors",
       "text": "carta-investors Carta Investors plugin — skills for querying investors data, performance benchmarks, regulatory reporting, AGM deck generation, brand extraction, and more via the Carta MCP server carta finance investors productivity"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:chronograph-gp",
+      "text": "Chronograph GP Portfolio monitoring, valuations and analytics for private-capital GP teams using the Chronograph connector: portfolio-company one-pagers, fund quarterly review packs, markup/markdown briefs, TVPI attribution and budget-vs-actuals. Requires a Chronograph account and the Chronograph connector. chronograph finance gp"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:chronograph-lp",
+      "text": "Chronograph LP Portfolio monitoring and analytics for private-capital LP teams using the Chronograph connector: cashflow forecasting, commitment pacing, look-through exposure scans and GP-meeting prep. Requires a Chronograph account and the Chronograph connector. chronograph finance lp"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:claude-for-financial-advisors",
+      "text": "Claude for Financial Advisors Ready-to-run workflows for financial advisors in Claude Cowork, drawing live data from the tools their firm already uses through third-party connectors. The plugin holds no client data, and the advisor approves any write back to an external system. Claude gathers, organizes, summarizes, compares and presents information, while the advisor exercises judgment, makes the recommendation and gives the advice. For financial professional use only; not investment, legal, or tax advice. advisors claude finance financial for"
     },
     {
       "pluginId": "plugin:knowledge-work-official:cloudinary",
@@ -1971,6 +2090,10 @@
       "text": "Honeycomb Skills, agents, and workflows for Honeycomb observability — query patterns, production investigations, SLOs, OpenTelemetry instrumentation, and Beeline migration. Designed to complement the Honeycomb MCP server. developer-tools honeycomb"
     },
     {
+      "pluginId": "plugin:knowledge-work-official:hostinger",
+      "text": "Hostinger Deploy, manage and monitor Hostinger services — Websites, Domains, Ecommerce, Email Marketing, Subscriptions & Payments, and VPS. Authenticate via browser (OAuth) or API token. developer-tools hostinger"
+    },
+    {
       "pluginId": "plugin:knowledge-work-official:hubspot-sales",
       "text": "HubSpot Sales Run your HubSpot sales workflow directly from Claude. Adds skills that cover the full sales day: import contacts and deals into HubSpot, get a prioritised morning brief, prep for any call with full CRM context, draft personalised follow-ups grounded in deal history, log calls and update records by describing what happened, and review your pipeline to surface stalling deals. Everything writes back to HubSpot. hubspot productivity sales"
     },
@@ -1979,12 +2102,28 @@
       "text": "Human Resources Streamline people operations — recruiting, onboarding, performance reviews, compensation analysis, and policy guidance. Maintain compliance and keep your team running smoothly. business-operations human resources"
     },
     {
+      "pluginId": "plugin:knowledge-work-official:incident-io",
+      "text": "incident.io Work with incident.io from Claude: respond to and investigate incidents, check on-call schedules and escalations, and author the runbooks, skills and architecture docs that incident.io investigations draw on. Bundles the official incident.io MCP server (OAuth on first use). developer-tools incident io"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:informatica-for-claude-platform",
+      "text": "Informatica Governed catalog discovery for Informatica Intelligent Data Management Cloud (CDGC): find tables, columns, files, glossary terms and policies across the enterprise catalog, check ownership, certification, sensitivity and applicable policy, and get safe-usage guidance grounded in catalog metadata before querying any data. Requires an Informatica IDMC tenant and the Informatica Catalog Discovery connector. claude data-analytics for informatica platform"
+    },
+    {
       "pluginId": "plugin:knowledge-work-official:intercom",
       "text": "Intercom Intercom integration for Claude Code. Search conversations, analyze customer support patterns, look up contacts and companies, and install the Intercom Messenger. Connect your Intercom workspace to get real-time insights from customer data. communication intercom productivity"
     },
     {
+      "pluginId": "plugin:knowledge-work-official:intuit-quickbooks",
+      "text": "Intuit QuickBooks QuickBooks business insights and actions: financial health briefings across P&L, cash flow, balance sheet and A/R, industry benchmarking, payroll cost analysis, overdue-invoice reminders, estimate/invoice drafting from email, payroll onboarding and base-pay changes (with confirmation), and QuickBooks Capital lending guidance. Requires the Intuit QuickBooks connector. finance intuit quickbooks"
+    },
+    {
       "pluginId": "plugin:knowledge-work-official:langfuse",
       "text": "Langfuse Skills for working with Langfuse, the open-source LLM engineering platform for tracing, prompt management, and evaluation. developer-tools langfuse"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:leadfeeder",
+      "text": "Leadfeeder Turn website visitor signals into pipeline with Leadfeeder: daily visitor briefs, visitor company research, buyer and contact discovery, personalised outreach drafts, and adding companies to your Leadfeeder lists, via the Leadfeeder connector. Requires a Leadfeeder account. leadfeeder productivity"
     },
     {
       "pluginId": "plugin:knowledge-work-official:learn-with-coursera",
@@ -2055,6 +2194,18 @@
       "text": "PDF Viewer View, annotate, and sign PDFs in a live interactive viewer. Mark up contracts, fill forms with visual feedback, stamp approvals, and place signatures — then download the annotated copy. pdf productivity viewer"
     },
     {
+      "pluginId": "plugin:knowledge-work-official:pendo-analytics",
+      "text": "Pendo Analytics Bring Pendo product analytics into Claude: account health, feature adoption, session replay lookup and triage, feedback analysis, and data-informed planning grounded in real usage data. Requires the Pendo connector and a Pendo subscription. analytics pendo productivity"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:pendo-guides",
+      "text": "Pendo Guides Create production-ready Pendo in-app guides (walkthroughs, announcements, alerts, polls, promotions) as HTML/CSS/JS from a short intake conversation, using Pendo's guide components. guides pendo productivity"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:pendo-orchestrate",
+      "text": "Pendo Orchestrate Create, configure and edit draft Pendo Orchestrate email journeys, including multi-email and conditional split flows, via the Pendo connector. Journeys stay in draft; activation happens in the Orchestrate UI. orchestrate pendo productivity"
+    },
+    {
       "pluginId": "plugin:knowledge-work-official:pixeltable",
       "text": "Pixeltable Build multimodal AI applications with Pixeltable -- tables, computed columns, embedding search, UDFs, tool-calling agents, and 25+ AI provider integrations. developer-tools pixeltable"
     },
@@ -2088,7 +2239,7 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:qodo",
-      "text": "Qodo Shift-left code review skills that bring Qodo's quality standards and code review capabilities into your local development workflow. Catch issues before commit, enforce organizational standards, and resolve PR feedback directly in your agent. developer-tools qodo"
+      "text": "Qodo Bring Qodo's codebase intelligence, coding standards, and code review into your coding agent. developer-tools qodo"
     },
     {
       "pluginId": "plugin:knowledge-work-official:qodo-standards",
@@ -2099,8 +2250,12 @@
       "text": "Qt Development Skills Agentic engineering skills for Qt software development, including Qt C++/QML code review, QML coding, and Qt C++/QML code documentation. These skills use AI and can make mistakes. Always double-check the output carefully. developer-tools development qt skills"
     },
     {
+      "pluginId": "plugin:knowledge-work-official:render",
+      "text": "Render Deploy, debug, and monitor applications on Render: skills for blueprints, deploys and troubleshooting, a Render assistant agent, deploy/status commands, a render.yaml validation hook, and the Render MCP connector preconfigured over OAuth. developer-tools render"
+    },
+    {
       "pluginId": "plugin:knowledge-work-official:sales",
-      "text": "Sales Prospect, craft outreach, and build deal strategy faster. Prep for calls, manage your pipeline, and write personalized messaging that moves deals forward. business-operations sales"
+      "text": "Sales Prep calls, summarize and follow up, research accounts, review deals and pipeline, and write the forecast, using the CRM, email, calendar and chat tools your team already uses, or uploaded files. Updates records, drafts or sends email, posts to chat and books meetings when you ask. business-operations sales"
     },
     {
       "pluginId": "plugin:knowledge-work-official:sanity-plugin",
@@ -2128,7 +2283,7 @@
     },
     {
       "pluginId": "plugin:knowledge-work-official:small-business",
-      "text": "Small Business Pre-built small business workflows (including payroll planning, month-end close, weekly briefs, and growth campaigns) using your QuickBooks, PayPal, HubSpot, Docusign, Gsuite, O365, Canva, and other connected tools. You approve every step that touches money or customers. business business-operations small"
+      "text": "Small Business Pre-built small business workflows to help you run and grow your business. Supports a majority of the tools you already use. You approve every step that touches money or customers. Install and then ask Claude to help you get onboarded. business business-operations small"
     },
     {
       "pluginId": "plugin:knowledge-work-official:sp-global",
@@ -2179,12 +2334,20 @@
       "text": "vpai Vibe Prospecting connects Claude to live B2B company and contact data so users can search, match, enrich, filter, and export prospects at scale. It turns natural-language requests into structured GTM workflows for lead generation, CRM enrichment, company research, executive discovery, and multi-step prospecting automation inside Claude Cowork and Claude Code. productivity prospecting vibe"
     },
     {
+      "pluginId": "plugin:knowledge-work-official:wingspan",
+      "text": "Wingspan Ask Claude about the contractors you pay through Wingspan, what you owe them, and what is holding up a payment, then onboard contractors and log payments as drafts, with a preview before anything is written. Requires a Wingspan account; bundles the Wingspan MCP server (OAuth on first use). finance wingspan"
+    },
+    {
       "pluginId": "plugin:knowledge-work-official:wix",
       "text": "wix Build, manage, and deploy Wix sites and apps. Includes CLI development skills and Wix MCP server for site management, eCommerce, CMS, dashboard extensions, and more. developer-tools wix"
     },
     {
       "pluginId": "plugin:knowledge-work-official:zapier",
       "text": "Zapier Connect 8,000+ apps to your AI workflow. Discover, enable, and execute Zapier actions directly from your client. productivity zapier"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:zocks-advisor",
+      "text": "Zocks Advisor Intelligence Seven skills for financial advisors built on Zocks meeting intelligence: client behavioral profiles, attrition-risk ranking, held-away asset radar, client journey dossiers, household review packs, next-best-action analysis and a tax opportunity scan. Requires the Zocks connector and a Zocks account. advisor finance zocks"
     },
     {
       "pluginId": "plugin:knowledge-work-official:zoom-plugin",
@@ -2208,7 +2371,7 @@
     },
     {
       "pluginId": "plugin:openai-official:boltz-api-cli",
-      "text": "boltz-api-cli Predict structures, screen molecules and proteins, and design binders. api boltz cli developer-tools scientific-research"
+      "text": "boltz-api-cli Predict structures, screen molecules and proteins, and design binders. api boltz cli developer-tools education-research"
     },
     {
       "pluginId": "plugin:openai-official:build-ios-apps",

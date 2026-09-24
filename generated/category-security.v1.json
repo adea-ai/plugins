@@ -1,0 +1,973 @@
+{
+  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "category": "security",
+  "pluginCount": 24,
+  "productCount": 19,
+  "products": [
+    {
+      "capabilitySummary": {
+        "skill": 5
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Skills for working with NightVision, a DAST and API Discovery platform that finds exploitable vulnerabilities in web applications and REST APIs",
+      "displayName": "nightvision",
+      "homepage": "https://github.com/nvsecurity/nightvision-skills",
+      "icon": {
+        "asset": "icon-cee14d54dd789fda5a542d3e19f38eaf.png",
+        "bytes": 3187,
+        "contentType": "image/png",
+        "digest": "sha256:cee14d54dd789fda5a542d3e19f38eafbf731e9cdc489dfd6ecc4a334de3020f",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/nv-icon.png",
+        "url": null
+      },
+      "keywords": [
+        "nightvision",
+        "security"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 186,
+        "text": "NI"
+      },
+      "pluginId": "plugin:claude-official:nightvision",
+      "primaryCategory": "security",
+      "productKey": "nightvision",
+      "releaseId": "release:28eb421af30fd80f794ba2f7cedc52681f5731c00b78ec6061c28f10ea6049df",
+      "sourceId": "claude-official",
+      "upstreamName": "nightvision",
+      "variantPluginIds": [
+        "plugin:claude-official:nightvision"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "command": 20,
+        "executable": 267,
+        "mcp-server": 4,
+        "rule": 8,
+        "skill": 43
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Manage Zscaler cloud security platform including ZPA (private access), ZIA (internet access), ZDX (digital experience), ZCC (client connector), EASM (attack surface), and Z-Insights (analytics). Create and manage policies, troubleshoot connectivity, audit security configurations, and investigate incidents across the full Zscaler ecosystem.",
+      "displayName": "zscaler",
+      "homepage": "https://github.com/zscaler/zscaler-mcp-server",
+      "icon": {
+        "asset": "icon-fb71a91ef4937bdac04520d7e7b1852b.svg",
+        "bytes": 2489,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:fb71a91ef4937bdac04520d7e7b1852bb28635ae850934d440360ccc8142c1a4",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "security",
+        "zscaler"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 66,
+        "text": "ZS"
+      },
+      "pluginId": "plugin:claude-official:zscaler",
+      "primaryCategory": "security",
+      "productKey": "zscaler",
+      "releaseId": "release:100f390c6836dcf44cb6afe39d5ecd3b853344bf40d40de5a0a6a61c9f361113",
+      "sourceId": "claude-official",
+      "upstreamName": "zscaler",
+      "variantPluginIds": [
+        "plugin:claude-official:zscaler"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 5
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Automate API security directly in Claude Code with 42Crunch - automatically audit OpenAPI specs, detect vulnerabilities aligned with OWASP API Security risks (including BOLA/BFLA), and apply AI-powered fixes. Designed for AI-assisted development workflows, it provides continuous guardrails through an audit->scan->remediate->validate loop, ensuring APIs meet enterprise security standards before deployment.",
+      "displayName": "42crunch-api-security-testing",
+      "homepage": "https://42crunch.com/",
+      "icon": {
+        "asset": "icon-5d4bbaf47f8d198da2ef59d8234d3885.png",
+        "bytes": 1280,
+        "contentType": "image/png",
+        "digest": "sha256:5d4bbaf47f8d198da2ef59d8234d3885aa89ae7f4dadf584217cb6c69b197943",
+        "homepage": "https://42crunch.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://42crunch.com/img/42crunch-symbol-32.png"
+      },
+      "keywords": [
+        "42crunch",
+        "api",
+        "security",
+        "testing"
+      ],
+      "license": "Apache 2.0",
+      "monogram": {
+        "hue": 225,
+        "text": "4A"
+      },
+      "pluginId": "plugin:claude-official:42crunch-api-security-testing",
+      "primaryCategory": "security",
+      "productKey": "42crunch-api-security-testing",
+      "releaseId": "release:1764971ed2634dfa69002e5c1f35b75c1907053f6a12ae41771e214c1cdc6b61",
+      "sourceId": "claude-official",
+      "upstreamName": "42crunch-api-security-testing",
+      "variantPluginIds": [
+        "plugin:claude-official:42crunch-api-security-testing"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 1,
+        "executable": 2,
+        "skill": 1
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Enterprise-grade auth, easy to implement. Add login, SSO, MFA, and access control to any app with framework-aware guidance.",
+      "displayName": "Auth0",
+      "homepage": "https://auth0.com/",
+      "icon": {
+        "asset": "icon-d07ba65f41b524aee6d51d7a9e1ec35d.png",
+        "bytes": 58940,
+        "contentType": "image/png",
+        "digest": "sha256:d07ba65f41b524aee6d51d7a9e1ec35d88b92ef2bca44f81aea9f9f9cfc7a075",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.png",
+        "url": null
+      },
+      "keywords": [
+        "auth0",
+        "security"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 66,
+        "text": "AU"
+      },
+      "pluginId": "plugin:claude-official:auth0",
+      "primaryCategory": "security",
+      "productKey": "auth0",
+      "releaseId": "release:64dc19e36d786e0628d3087f13a1c836ab03cbfc9c9508411185247d415b47c7",
+      "sourceId": "claude-official",
+      "upstreamName": "auth0",
+      "variantPluginIds": [
+        "plugin:claude-official:auth0",
+        "plugin:knowledge-work-official:auth0"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "agent": 8,
+        "executable": 19,
+        "hook": 3,
+        "skill": 1
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Deep vulnerability scanning of your own code, run entirely inside your Claude Code session at a chosen effort tier, with every finding challenged before it is reported and the verification tally computed in code. Turns surviving findings into targeted patches, each verified by a panel of agents, that you apply when you choose.",
+      "displayName": "claude-security",
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-security",
+      "icon": null,
+      "keywords": [
+        "claude",
+        "security"
+      ],
+      "license": "SEE LICENSE IN LICENSE",
+      "monogram": {
+        "hue": 192,
+        "text": "CS"
+      },
+      "pluginId": "plugin:claude-official:claude-security",
+      "primaryCategory": "security",
+      "productKey": "claude-security",
+      "releaseId": "release:706648e3b5eed698cdbc42aaeec7dbbc87c98283d71129277daa388fe636f756",
+      "sourceId": "claude-official",
+      "upstreamName": "claude-security",
+      "variantPluginIds": [
+        "plugin:claude-official:claude-security"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 15,
+        "executable": 43,
+        "mcp-server": 2,
+        "skill": 15
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Codex Security workflows for security scans, analysis, and investigation.",
+      "displayName": "codex-security",
+      "icon": {
+        "asset": "icon-9b9c2b09b2fa064611fb62307d321d5c.png",
+        "bytes": 99567,
+        "contentType": "image/png",
+        "digest": "sha256:9b9c2b09b2fa064611fb62307d321d5c2ea70cf0789f7ce34cdb0fc0d9190b3a",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "codex",
+        "security"
+      ],
+      "license": "Proprietary",
+      "monogram": {
+        "hue": 234,
+        "text": "CS"
+      },
+      "pluginId": "plugin:openai-official:codex-security",
+      "primaryCategory": "security",
+      "productKey": "codex-security",
+      "releaseId": "release:666dadae53ec6ab15e72e294cec313193d5de1ea56f33b1083c4dd288709f08e",
+      "sourceId": "openai-official",
+      "upstreamName": "codex-security",
+      "variantPluginIds": [
+        "plugin:openai-official:codex-security"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 2,
+        "rule": 1,
+        "skill": 2
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Operational skill for installing, configuring, operating, and debugging CrowdSec (cscli, LAPI/CAPI, hub, bouncers, WAF/AppSec) across bare-metal, Docker, and Kubernetes.",
+      "displayName": "crowdsec",
+      "homepage": "https://www.crowdsec.net/",
+      "icon": {
+        "asset": "icon-74e50edb9b2aef28e6c4020c23590a29.ico",
+        "bytes": 15406,
+        "contentType": "image/x-icon",
+        "digest": "sha256:74e50edb9b2aef28e6c4020c23590a294310bc9ba643580b1086242937792ce5",
+        "homepage": "https://www.crowdsec.net/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.crowdsec.net/favicon.ico"
+      },
+      "keywords": [
+        "crowdsec",
+        "security"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 228,
+        "text": "CR"
+      },
+      "pluginId": "plugin:claude-official:crowdsec",
+      "primaryCategory": "security",
+      "productKey": "crowdsec",
+      "releaseId": "release:e3e7e792d4c60fb5e2cde85750a6a898b8c120353922c7c889194071f40f30bc",
+      "sourceId": "claude-official",
+      "upstreamName": "crowdsec",
+      "variantPluginIds": [
+        "plugin:claude-official:crowdsec"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 21,
+        "hook": 5,
+        "rule": 2,
+        "skill": 11
+      },
+      "categories": [
+        "developer-tools",
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "CrowdStrike Falcon Foundry development skills for building cybersecurity applications on the Falcon platform. Includes UI development, collections, functions, workflows, API integration, security patterns, and debugging workflows.",
+      "displayName": "crowdstrike-falcon-foundry",
+      "homepage": "https://github.com/CrowdStrike/foundry-skills",
+      "icon": {
+        "asset": "icon-61f4d2f3d6ec66f6fc081e554339de24.png",
+        "bytes": 29441,
+        "contentType": "image/png",
+        "digest": "sha256:61f4d2f3d6ec66f6fc081e554339de247cf2cda4f7192cb26fe24e2ef3bce45b",
+        "homepage": null,
+        "kind": "content",
+        "path": "images/cs-logo.png",
+        "url": null
+      },
+      "keywords": [
+        "crowdstrike",
+        "falcon",
+        "foundry",
+        "security"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 237,
+        "text": "CF"
+      },
+      "pluginId": "plugin:claude-official:crowdstrike-falcon-foundry",
+      "primaryCategory": "developer-tools",
+      "productKey": "crowdstrike-falcon-foundry",
+      "releaseId": "release:43c693e424862ad2e222313ce46f376d04d0d8da22787ee477fd8564663a07c4",
+      "sourceId": "claude-official",
+      "upstreamName": "crowdstrike-falcon-foundry",
+      "variantPluginIds": [
+        "plugin:claude-official:crowdstrike-falcon-foundry",
+        "plugin:openai-official:crowdstrike-falcon-foundry"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 64,
+        "hook": 4,
+        "rule": 2,
+        "skill": 7
+      },
+      "categories": [
+        "developer-tools",
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "CrowdStrike Falcon Fusion skills for authoring, deploying, and executing Fusion workflows. Includes live action discovery, YAML authoring with schema validation, workflow import and release, execution monitoring, and Falcon Next-Gen SIEM lookup files.",
+      "displayName": "crowdstrike-falcon-fusion",
+      "homepage": "https://github.com/CrowdStrike/fusion-skills",
+      "icon": {
+        "asset": "icon-5132bd5af60a22182bd531e1e9e3f0f1.png",
+        "bytes": 10229,
+        "contentType": "image/png",
+        "digest": "sha256:5132bd5af60a22182bd531e1e9e3f0f11784038b0ef2ef611459af7b80cb6ff9",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/crowdstrike-logo.png",
+        "url": null
+      },
+      "keywords": [
+        "crowdstrike",
+        "falcon",
+        "fusion",
+        "security"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 75,
+        "text": "CF"
+      },
+      "pluginId": "plugin:claude-official:crowdstrike-falcon-fusion",
+      "primaryCategory": "developer-tools",
+      "productKey": "crowdstrike-falcon-fusion",
+      "releaseId": "release:e45c189031d7df04b4d7cb1cfe03ce294f0584b56fd9dd81f59be5a0abcfd86d",
+      "sourceId": "claude-official",
+      "upstreamName": "crowdstrike-falcon-fusion",
+      "variantPluginIds": [
+        "plugin:claude-official:crowdstrike-falcon-fusion",
+        "plugin:openai-official:crowdstrike-falcon-fusion"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 2,
+        "executable": 7,
+        "rule": 2,
+        "skill": 24
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Duende development skills and agents for Claude Code — covering OAuth/OIDC protocols, IdentityServer, token management, ASP.NET Core authentication/authorization, BFF patterns, and secure identity architecture",
+      "displayName": "duende-skills",
+      "homepage": "https://duendesoftware.com/",
+      "icon": {
+        "asset": "icon-68052225ea383474318b1db3abc88be5.svg",
+        "bytes": 1202,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:68052225ea383474318b1db3abc88be5b62248dc35b61448afa2e0a455443df1",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "duende",
+        "security",
+        "skills"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 12,
+        "text": "DS"
+      },
+      "pluginId": "plugin:claude-official:duende-skills",
+      "primaryCategory": "security",
+      "productKey": "duende-skills",
+      "releaseId": "release:15943ecca853ef8ba964157b44f9a008a98ea0dccc6a2ad025ccd5d5a8bfccb9",
+      "sourceId": "claude-official",
+      "upstreamName": "duende-skills",
+      "variantPluginIds": [
+        "plugin:claude-official:duende-skills"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 16,
+        "hook": 1,
+        "mcp-server": 1,
+        "skill": 7
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Use the JFrog Platform from Claude Code: Artifactory repos and artifacts, security findings and exposures, Catalog package safety and downloads, workflows across the SDLC, and platform administration.",
+      "displayName": "JFrog",
+      "homepage": "https://jfrog.com/",
+      "icon": {
+        "asset": "icon-724bac4c30d54be6676a4cce2abf01b2.svg",
+        "bytes": 6971,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:724bac4c30d54be6676a4cce2abf01b2977e4c13fa7ba700a00b54ce0d91ae7d",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "jfrog",
+        "security"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 120,
+        "text": "JF"
+      },
+      "pluginId": "plugin:claude-official:jfrog",
+      "primaryCategory": "security",
+      "productKey": "jfrog",
+      "releaseId": "release:72badd2dcc49250e7f0397061bb7a4fdbba7d87929cf7597ad27102e88242b28",
+      "sourceId": "claude-official",
+      "upstreamName": "jfrog",
+      "variantPluginIds": [
+        "plugin:claude-official:jfrog"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 14,
+        "hook": 13
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Security review for Claude-generated code. Pattern-based warnings on edits, LLM-powered diff review on Stop, and an agentic commit reviewer that catches injection, XSS, SSRF, hardcoded secrets, and 25+ other vulnerability classes.",
+      "displayName": "Security Guidance",
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/security-guidance",
+      "icon": null,
+      "keywords": [
+        "guidance",
+        "security"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 102,
+        "text": "SG"
+      },
+      "pluginId": "plugin:knowledge-work-official:security-guidance",
+      "primaryCategory": "security",
+      "productKey": "security-guidance",
+      "releaseId": "release:5121332975f506fcd5378650ebfd953cdd8d90436112f2d76835d3399683cfc8",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "security-guidance",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:security-guidance",
+        "plugin:claude-official:security-guidance"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 1,
+        "executable": 1,
+        "hook": 1,
+        "mcp-server": 2,
+        "rule": 1,
+        "skill": 9
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Automatically enforce SonarQube code quality and security in the agent coding loop — 7,000+ rules, secrets scanning, agentic analysis, and quality gates across 40+ languages. PostToolUse hooks run analysis after every file edit. Pre-tool secrets scanning prevents 450+ patterns from reaching the LLM. Slash commands give on-demand access to quality gate status, coverage, duplication, and dependency risks. Includes SonarQube CLI, MCP Server, skills, hooks, and slash commands.",
+      "displayName": "sonarqube",
+      "homepage": "https://www.sonarsource.com/",
+      "icon": {
+        "asset": "icon-f229ce40967152b9f6ec6bab2b4989cf.svg",
+        "bytes": 19688,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:f229ce40967152b9f6ec6bab2b4989cf65bb3d723c044fd3a9945db58a686028",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "security",
+        "sonarqube"
+      ],
+      "license": "SSAL-1.0",
+      "monogram": {
+        "hue": 123,
+        "text": "SO"
+      },
+      "pluginId": "plugin:claude-official:sonarqube",
+      "primaryCategory": "security",
+      "productKey": "sonarqube",
+      "releaseId": "release:8aa7fd7a72f0dea6400c3be778d23b9ef7e72bc603a2d6f6e3c9ff4fb1c487f1",
+      "sourceId": "claude-official",
+      "upstreamName": "sonarqube",
+      "variantPluginIds": [
+        "plugin:claude-official:sonarqube"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 1
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Sonatype Guide MCP server for software supply chain intelligence and dependency security. Analyze dependencies for vulnerabilities, get secure version recommendations, and check component quality metrics.",
+      "displayName": "sonatype-guide",
+      "homepage": "https://github.com/sonatype/sonatype-guide-claude-plugin.git",
+      "icon": null,
+      "keywords": [
+        "guide",
+        "security",
+        "sonatype"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 258,
+        "text": "SG"
+      },
+      "pluginId": "plugin:claude-official:sonatype-guide",
+      "primaryCategory": "security",
+      "productKey": "sonatype-guide",
+      "releaseId": "release:3698aaef74082b616cc70976f99c37e3e0dcd6f8812aa7bcbe42f85b3cdf78dd",
+      "sourceId": "claude-official",
+      "upstreamName": "sonatype-guide",
+      "variantPluginIds": [
+        "plugin:claude-official:sonatype-guide"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 1
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Query the StackHawk platform API for security posture reporting, findings analysis, and app management. Guides agents through authentication, data retrieval, and result presentation.",
+      "displayName": "StackHawk API",
+      "homepage": "https://docs.stackhawk.com/ai-security/",
+      "icon": {
+        "asset": "icon-4bf4e1993874a9b467d2719b5d836b21.ico",
+        "bytes": 15406,
+        "contentType": "image/x-icon",
+        "digest": "sha256:4bf4e1993874a9b467d2719b5d836b21cf6b3f7c45af2d739bdfecf77c894833",
+        "homepage": "https://docs.stackhawk.com/ai-security/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://docs.stackhawk.com/favicon.ico"
+      },
+      "keywords": [
+        "api",
+        "security",
+        "stackhawk"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 210,
+        "text": "SA"
+      },
+      "pluginId": "plugin:claude-official:stackhawk-api",
+      "primaryCategory": "security",
+      "productKey": "stackhawk-api",
+      "releaseId": "release:ff3ecb8b1e37d46891e3c6373239e408370c51ca0859413f97d69c1b092baf3e",
+      "sourceId": "claude-official",
+      "upstreamName": "stackhawk-api",
+      "variantPluginIds": [
+        "plugin:claude-official:stackhawk-api",
+        "plugin:knowledge-work-official:stackhawk-api"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "executable": 1,
+        "hook": 8,
+        "skill": 1
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Configure, run, and interpret HawkScan DAST results inside Claude Code. Generates stackhawk.yml configs, runs scans via CLI or Docker, and transforms security findings into prioritized fix tasks for your coding agent.",
+      "displayName": "StackHawk HawkScan",
+      "homepage": "https://docs.stackhawk.com/ai-security/",
+      "icon": {
+        "asset": "icon-4bf4e1993874a9b467d2719b5d836b21.ico",
+        "bytes": 15406,
+        "contentType": "image/x-icon",
+        "digest": "sha256:4bf4e1993874a9b467d2719b5d836b21cf6b3f7c45af2d739bdfecf77c894833",
+        "homepage": "https://docs.stackhawk.com/ai-security/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://docs.stackhawk.com/favicon.ico"
+      },
+      "keywords": [
+        "hawkscan",
+        "security",
+        "stackhawk"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 354,
+        "text": "SH"
+      },
+      "pluginId": "plugin:claude-official:stackhawk-hawkscan",
+      "primaryCategory": "security",
+      "productKey": "stackhawk-hawkscan",
+      "releaseId": "release:d9caf236c1aeb90d4b22db9ca4ebfcb30f45281165ea125a792cd5f778d685dc",
+      "sourceId": "claude-official",
+      "upstreamName": "stackhawk-hawkscan",
+      "variantPluginIds": [
+        "plugin:claude-official:stackhawk-hawkscan",
+        "plugin:knowledge-work-official:stackhawk-hawkscan"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "rule": 1,
+        "skill": 3
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "The Vanta plugin connects Claude Code to Vanta's security and compliance platform through the Vanta MCP server. It combines Vanta's test-specific remediation intelligence with your local repository context to help you fix compliance failures faster.",
+      "displayName": "vanta",
+      "homepage": "https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337",
+      "icon": {
+        "asset": "icon-509143a9a1fda5d7777e81b44ca172ae.png",
+        "bytes": 20514,
+        "contentType": "image/png",
+        "digest": "sha256:509143a9a1fda5d7777e81b44ca172aeb6b296de12ae9e9377293d01703a99e8",
+        "homepage": "https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://intercom.help/vanta-ceb3b688ec0b/assets/favicon"
+      },
+      "keywords": [
+        "security",
+        "vanta"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 345,
+        "text": "VA"
+      },
+      "pluginId": "plugin:claude-official:vanta",
+      "primaryCategory": "security",
+      "productKey": "vanta",
+      "releaseId": "release:495aef22b54bee5b2668cea33c98c9949ecc3b9272c9a6f96bf0b3bc142b8359",
+      "sourceId": "claude-official",
+      "upstreamName": "vanta",
+      "variantPluginIds": [
+        "plugin:claude-official:vanta"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "rule": 1,
+        "skill": 3
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "The Vanta plugin connects Claude Code to Vanta's security and compliance platform through the Vanta MCP server. It combines Vanta's test-specific remediation intelligence with your local repository context to help you fix compliance failures faster.",
+      "displayName": "Vanta",
+      "homepage": "https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337",
+      "icon": {
+        "asset": "icon-509143a9a1fda5d7777e81b44ca172ae.png",
+        "bytes": 20514,
+        "contentType": "image/png",
+        "digest": "sha256:509143a9a1fda5d7777e81b44ca172aeb6b296de12ae9e9377293d01703a99e8",
+        "homepage": "https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://intercom.help/vanta-ceb3b688ec0b/assets/favicon"
+      },
+      "keywords": [
+        "mcp",
+        "plugin",
+        "security",
+        "vanta"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 180,
+        "text": "VA"
+      },
+      "pluginId": "plugin:claude-official:vanta-mcp-plugin",
+      "primaryCategory": "security",
+      "productKey": "vanta-mcp-plugin",
+      "releaseId": "release:495aef22b54bee5b2668cea33c98c9949ecc3b9272c9a6f96bf0b3bc142b8359",
+      "sourceId": "claude-official",
+      "upstreamName": "vanta-mcp-plugin",
+      "variantPluginIds": [
+        "plugin:claude-official:vanta-mcp-plugin",
+        "plugin:knowledge-work-official:vanta-mcp-plugin"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 2
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "WorkOS integration skills for AuthKit, SSO, Directory Sync, RBAC, Vault, Audit Logs, migrations, and API references.",
+      "displayName": "workos",
+      "homepage": "https://workos.com/",
+      "icon": {
+        "asset": "icon-d4fc17cf0d25ad88fb1e0ac80432f1e0.png",
+        "bytes": 5415,
+        "contentType": "image/png",
+        "digest": "sha256:d4fc17cf0d25ad88fb1e0ac80432f1e03d1944e8b91a068b56cf46c4e9d41aeb",
+        "homepage": "https://workos.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://cdn.prod.website-files.com/621f54116cab10f6e9215d8b/621f549024eb2947f6f2f7f7_Favicon%20256x256.png"
+      },
+      "keywords": [
+        "security",
+        "workos"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 111,
+        "text": "WO"
+      },
+      "pluginId": "plugin:claude-official:workos",
+      "primaryCategory": "security",
+      "productKey": "workos",
+      "releaseId": "release:1809678539e5dfe8d0a5b1084a037ed12214f1c3569c7aa4825347c8e9d6b568",
+      "sourceId": "claude-official",
+      "upstreamName": "workos",
+      "variantPluginIds": [
+        "plugin:claude-official:workos"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1
+}

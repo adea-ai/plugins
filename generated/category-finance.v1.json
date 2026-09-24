@@ -1,0 +1,1100 @@
+{
+  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "category": "finance",
+  "pluginCount": 27,
+  "productCount": 22,
+  "products": [
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Read balances, transactions, statements, and cards.",
+      "displayName": "Mercury",
+      "icon": {
+        "asset": "icon-72e5d9eded3682cc2300db58d2bc3972.png",
+        "bytes": 46482,
+        "contentType": "image/png",
+        "digest": "sha256:72e5d9eded3682cc2300db58d2bc3972f9f79c2a438f0cb087326610a6e6b87a",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "finance",
+        "mercury"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 132,
+        "text": "ME"
+      },
+      "pluginId": "plugin:cursor-official:mercury",
+      "primaryCategory": "finance",
+      "productKey": "mercury",
+      "releaseId": "release:524a63da407d232f3d2fe0ce1ad1c6398cb0534c309f06bd75fd0e8fd5c2b0d7",
+      "sourceId": "cursor-official",
+      "upstreamName": "mercury",
+      "variantPluginIds": [
+        "plugin:cursor-official:mercury"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Review positions, balances, P&L, and draft trade instructions.",
+      "displayName": "Interactive Brokers",
+      "icon": {
+        "asset": "icon-e2145b7694f27b37fb40d7671ba6eb5e.png",
+        "bytes": 9057,
+        "contentType": "image/png",
+        "digest": "sha256:e2145b7694f27b37fb40d7671ba6eb5e870c256c1e147444187e7ef22cb5e4de",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "brokers",
+        "finance",
+        "interactive"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 264,
+        "text": "IB"
+      },
+      "pluginId": "plugin:cursor-official:interactive-brokers",
+      "primaryCategory": "finance",
+      "productKey": "interactive-brokers",
+      "releaseId": "release:046e13ff530ad114e69f3f342f504aaf3e786b3f17e9c966155cc072ceb1841d",
+      "sourceId": "cursor-official",
+      "upstreamName": "interactive-brokers",
+      "variantPluginIds": [
+        "plugin:cursor-official:interactive-brokers"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Query expenses, receipts, bills, cards, and travel.",
+      "displayName": "Brex",
+      "icon": {
+        "asset": "icon-3ef094b024795ba7426b1a7e42979e7f.png",
+        "bytes": 3815,
+        "contentType": "image/png",
+        "digest": "sha256:3ef094b024795ba7426b1a7e42979e7f1e5e77b7fdfa0a255c5c48edcfef94ee",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "brex",
+        "finance"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 180,
+        "text": "BR"
+      },
+      "pluginId": "plugin:cursor-official:brex",
+      "primaryCategory": "finance",
+      "productKey": "brex",
+      "releaseId": "release:27fc757fb8be09157c5f162c5d9de702a7e2878698f50b1f625fa9e4577a30ee",
+      "sourceId": "cursor-official",
+      "upstreamName": "brex",
+      "variantPluginIds": [
+        "plugin:cursor-official:brex"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "View accounts, positions, orders, watchlists, and market data.",
+      "displayName": "Webull",
+      "icon": {
+        "asset": "icon-a209946494b30cab9e53ceedba655adb.png",
+        "bytes": 6600,
+        "contentType": "image/png",
+        "digest": "sha256:a209946494b30cab9e53ceedba655adb9fc6e6b941a5d572796c6f2ae6709889",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "finance",
+        "webull"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 201,
+        "text": "WE"
+      },
+      "pluginId": "plugin:cursor-official:webull",
+      "primaryCategory": "finance",
+      "productKey": "webull",
+      "releaseId": "release:c2f5437f9ed5978eed18e5ec83cfcc88684a4d927758546414078b6d6d07e8f5",
+      "sourceId": "cursor-official",
+      "upstreamName": "webull",
+      "variantPluginIds": [
+        "plugin:cursor-official:webull"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Read and write invoices, contacts, reports, and payroll.",
+      "displayName": "Xero",
+      "icon": {
+        "asset": "icon-1afeeff143a66b32e7038ec3bae9e758.png",
+        "bytes": 14904,
+        "contentType": "image/png",
+        "digest": "sha256:1afeeff143a66b32e7038ec3bae9e758b95ebeb26001a0eca9953b8b2f8d6ba9",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "finance",
+        "xero"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 300,
+        "text": "XE"
+      },
+      "pluginId": "plugin:cursor-official:xero",
+      "primaryCategory": "finance",
+      "productKey": "xero",
+      "releaseId": "release:ed973a84b58958ca6230e0a18acd9d01ea8fe8143e3576eb54cae38c035de9ee",
+      "sourceId": "cursor-official",
+      "upstreamName": "xero",
+      "variantPluginIds": [
+        "plugin:cursor-official:xero"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 5
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities.",
+      "displayName": "Airwallex",
+      "homepage": "https://www.airwallex.com/docs",
+      "icon": {
+        "asset": "icon-03276e1e0a355132331e7d1467dc070e.svg",
+        "bytes": 914,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:03276e1e0a355132331e7d1467dc070ebc23d7261eeb4a4499d7497ef4c70f97",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "agentos",
+        "airwallex",
+        "finance",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 27,
+        "text": "AI"
+      },
+      "pluginId": "plugin:claude-official:airwallex-agentos",
+      "primaryCategory": "finance",
+      "productKey": "airwallex-agentos",
+      "releaseId": "release:c20a1421154a3aeb61df8ba31821fac7de4cdb36923ded07f745c1d17d3f1f95",
+      "sourceId": "claude-official",
+      "upstreamName": "airwallex-agentos",
+      "variantPluginIds": [
+        "plugin:claude-official:airwallex-agentos",
+        "plugin:knowledge-work-official:airwallex-agentos"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 6
+      },
+      "categories": [
+        "developer-tools",
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Build Airwallex payment integrations in your own codebase. Generates the checkout, card-element, onboarding, and subscription-billing code for an Airwallex integration and wires it into your project: Hosted Payment Page, Drop-in and Split Card elements, connected-account KYC onboarding, and Billing Hosted Checkout for subscriptions and card-saving. Also plans card-on-file merchant-initiated flows for AI providers such as top-ups and auto-recharge.",
+      "displayName": "airwallex-dev",
+      "homepage": "https://www.airwallex.com/docs",
+      "icon": {
+        "asset": "icon-03276e1e0a355132331e7d1467dc070e.svg",
+        "bytes": 914,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:03276e1e0a355132331e7d1467dc070ebc23d7261eeb4a4499d7497ef4c70f97",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "airwallex",
+        "dev",
+        "developer-tools",
+        "finance"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 240,
+        "text": "AD"
+      },
+      "pluginId": "plugin:claude-official:airwallex-dev",
+      "primaryCategory": "developer-tools",
+      "productKey": "airwallex-dev",
+      "releaseId": "release:f0f03e756bdf8e4d26a39f58699793124e3e26ab89c0aa7d97ae4b373ce138d4",
+      "sourceId": "claude-official",
+      "upstreamName": "airwallex-dev",
+      "variantPluginIds": [
+        "plugin:claude-official:airwallex-dev"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 6
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "BlackRock Advisor Center 360° skills for financial advisors: portfolio review, opportunity and fund-health checks, guided benchmark selection, guided portfolio building, wealth projections, and routing to Advisor Center web workflows. Requires the BlackRock Advisor Center connector and an Advisor Center account.",
+      "displayName": "BlackRock Advisor Center",
+      "homepage": "https://github.com/blackrock/advisor-center-agent-skills",
+      "icon": null,
+      "keywords": [
+        "advisor",
+        "blackrock",
+        "center",
+        "plugin",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 15,
+        "text": "BA"
+      },
+      "pluginId": "plugin:claude-official:blackrock-advisor-center-plugin",
+      "primaryCategory": "finance",
+      "productKey": "blackrock-advisor-center-plugin",
+      "releaseId": "release:2941cbf218baf77052d5a28ba0add4552d63cebad18ef72f5f5b89019e4ef2cf",
+      "sourceId": "claude-official",
+      "upstreamName": "blackrock-advisor-center-plugin",
+      "variantPluginIds": [
+        "plugin:claude-official:blackrock-advisor-center-plugin",
+        "plugin:knowledge-work-official:blackrock-advisor-center-plugin"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "executable": 28,
+        "hook": 47,
+        "skill": 22,
+        "ui-component": 4
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Carta Cap Table plugin — skills and hooks for querying cap tables, grants, SAFEs, 409A valuations, waterfall scenarios, and more",
+      "displayName": "carta-cap-table",
+      "homepage": "https://carta.com/",
+      "icon": {
+        "asset": "icon-162aefb6da8e2670b2d3a6797adced2e.png",
+        "bytes": 5341,
+        "contentType": "image/png",
+        "digest": "sha256:162aefb6da8e2670b2d3a6797adced2edecd960120d66f89845d882f303c171f",
+        "homepage": null,
+        "kind": "content",
+        "path": "skills/carta-reporting-excel/assets/Carta_Logo.png",
+        "url": null
+      },
+      "keywords": [
+        "cap",
+        "carta",
+        "finance",
+        "productivity",
+        "table"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 168,
+        "text": "CC"
+      },
+      "pluginId": "plugin:claude-official:carta-cap-table",
+      "primaryCategory": "finance",
+      "productKey": "carta-cap-table",
+      "releaseId": "release:63fc0cf589c46b2ac1f9b7a4d4f03f31e4e82b0af146260f067a098f6b92e316",
+      "sourceId": "claude-official",
+      "upstreamName": "carta-cap-table",
+      "variantPluginIds": [
+        "plugin:claude-official:carta-cap-table",
+        "plugin:knowledge-work-official:carta-cap-table"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "command": 2,
+        "executable": 49,
+        "hook": 48,
+        "scheduled-task": 1,
+        "skill": 16,
+        "ui-component": 27
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Carta Investors plugin — skills for querying investor data, performance benchmarks, regulatory reporting, AGM deck generation, brand extraction, and more via the Carta MCP Server.",
+      "displayName": "carta-investors",
+      "homepage": "https://carta.com/",
+      "icon": {
+        "asset": "icon-e753d59e2e1a4b471831d3bbf13387d9.svg",
+        "bytes": 1479,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:e753d59e2e1a4b471831d3bbf13387d9604ec0316a83668923a8e662f502513e",
+        "homepage": null,
+        "kind": "content",
+        "path": "skills/carta-agm-deck-builder/references/assets/logo-dark.svg",
+        "url": null
+      },
+      "keywords": [
+        "carta",
+        "finance",
+        "investors",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 120,
+        "text": "CI"
+      },
+      "pluginId": "plugin:claude-official:carta-investors",
+      "primaryCategory": "finance",
+      "productKey": "carta-investors",
+      "releaseId": "release:78ea9e074aeeb832a29dcefbdc1466d0e913399819b5377942030699bbf2c7ed",
+      "sourceId": "claude-official",
+      "upstreamName": "carta-investors",
+      "variantPluginIds": [
+        "plugin:claude-official:carta-investors",
+        "plugin:knowledge-work-official:carta-investors"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "agent": 6,
+        "skill": 5
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Portfolio monitoring, valuations and analytics for private-capital GP teams using the Chronograph connector: portfolio-company one-pagers, fund quarterly review packs, markup/markdown briefs, TVPI attribution and budget-vs-actuals. Requires a Chronograph account and the Chronograph connector.",
+      "displayName": "Chronograph GP",
+      "homepage": "https://www.chronograph.pe/",
+      "icon": {
+        "asset": "icon-d3cae2ef925520f68fc4f1896d39da43.png",
+        "bytes": 277,
+        "contentType": "image/png",
+        "digest": "sha256:d3cae2ef925520f68fc4f1896d39da43e620d4e2d79859507114dddfaaf54a41",
+        "homepage": "https://www.chronograph.pe/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.chronograph.pe/wp-content/themes/chronograph/assets/images/favicon/apple-touch-icon.png"
+      },
+      "keywords": [
+        "chronograph",
+        "gp",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 333,
+        "text": "CG"
+      },
+      "pluginId": "plugin:claude-official:chronograph-gp",
+      "primaryCategory": "finance",
+      "productKey": "chronograph-gp",
+      "releaseId": "release:d2e417c2aeac9670963adab1f664040ff5a6ddf741701235c498e382e43f0417",
+      "sourceId": "claude-official",
+      "upstreamName": "chronograph-gp",
+      "variantPluginIds": [
+        "plugin:claude-official:chronograph-gp",
+        "plugin:knowledge-work-official:chronograph-gp"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "agent": 5,
+        "skill": 4
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Portfolio monitoring and analytics for private-capital LP teams using the Chronograph connector: cashflow forecasting, commitment pacing, look-through exposure scans and GP-meeting prep. Requires a Chronograph account and the Chronograph connector.",
+      "displayName": "Chronograph LP",
+      "homepage": "https://www.chronograph.pe/",
+      "icon": {
+        "asset": "icon-d3cae2ef925520f68fc4f1896d39da43.png",
+        "bytes": 277,
+        "contentType": "image/png",
+        "digest": "sha256:d3cae2ef925520f68fc4f1896d39da43e620d4e2d79859507114dddfaaf54a41",
+        "homepage": "https://www.chronograph.pe/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.chronograph.pe/wp-content/themes/chronograph/assets/images/favicon/apple-touch-icon.png"
+      },
+      "keywords": [
+        "chronograph",
+        "lp",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 351,
+        "text": "CL"
+      },
+      "pluginId": "plugin:claude-official:chronograph-lp",
+      "primaryCategory": "finance",
+      "productKey": "chronograph-lp",
+      "releaseId": "release:5011164cf05e3110f6293fcfd425999a873e76448682a6373ed8627297ded1e7",
+      "sourceId": "claude-official",
+      "upstreamName": "chronograph-lp",
+      "variantPluginIds": [
+        "plugin:claude-official:chronograph-lp",
+        "plugin:knowledge-work-official:chronograph-lp"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "agent": 6,
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Ready-to-run workflows for financial advisors in Claude Cowork, drawing live data from the tools their firm already uses through third-party connectors. The plugin holds no client data, and the advisor approves any write back to an external system. Claude gathers, organizes, summarizes, compares and presents information, while the advisor exercises judgment, makes the recommendation and gives the advice. For financial professional use only; not investment, legal, or tax advice.",
+      "displayName": "Claude for Financial Advisors",
+      "homepage": "https://github.com/anthropics/claude-for-financial-advisors",
+      "icon": null,
+      "keywords": [
+        "advisors",
+        "claude",
+        "finance",
+        "financial",
+        "for"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 162,
+        "text": "CF"
+      },
+      "pluginId": "plugin:knowledge-work-official:claude-for-financial-advisors",
+      "primaryCategory": "finance",
+      "productKey": "claude-for-financial-advisors",
+      "releaseId": "release:859a7a5c93b13c0cf5b7b19a8c642dac7b6ba2f14f82f0b5106f1f9b63af060b",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "claude-for-financial-advisors",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:claude-for-financial-advisors"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 21
+      },
+      "categories": [
+        "data-analytics",
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Financial analysis skills powered by Daloopa's institutional-grade data",
+      "displayName": "Daloopa",
+      "homepage": "https://github.com/daloopa/plugin",
+      "icon": {
+        "asset": "icon-a5fce38fb9723e9e29081544a1bd20d0.png",
+        "bytes": 19473,
+        "contentType": "image/png",
+        "digest": "sha256:a5fce38fb9723e9e29081544a1bd20d00613dc3058660d7bd45e36b7f94df5ae",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "daloopa",
+        "data-analytics",
+        "finance"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 153,
+        "text": "DA"
+      },
+      "pluginId": "plugin:knowledge-work-official:daloopa",
+      "primaryCategory": "data-analytics",
+      "productKey": "daloopa",
+      "releaseId": "release:29962241f909f7fd3054c7304e6ae7bef4285908f9294697215ab16ef54a4dbd",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "daloopa",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:daloopa",
+        "plugin:cursor-official:daloopa"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Link your bank, card, and investment accounts through Plaid so Grok can answer questions about balances, spending, subscriptions, and investments. You'll share contact details, account and balance info, transactions, credit and loans, and investments. Grok syncs and stores your linked account data so the connector can work, and Grok Bot's privacy mode still controls whether your conversations are stored or used for training. Access is read-only, xAI never sees or stores your bank login, and you can unlink accounts anytime from cursor.com.",
+      "displayName": "Finance",
+      "icon": {
+        "asset": "icon-64cc327564fc9077cb80564bbf12190b.svg",
+        "bytes": 959,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:64cc327564fc9077cb80564bbf12190ba6c6f19093f3db2ef0f82d25f8584e23",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "finance"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 51,
+        "text": "FI"
+      },
+      "pluginId": "plugin:cursor-official:finance",
+      "primaryCategory": "finance",
+      "productKey": "finance",
+      "releaseId": "release:70d0c69c0c856d359dc93e3719786aa89ade0ee6814c5a08759e73c51e2c6e57",
+      "sourceId": "cursor-official",
+      "upstreamName": "finance",
+      "variantPluginIds": [
+        "plugin:cursor-official:finance",
+        "plugin:knowledge-work-official:finance"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 10
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "QuickBooks business insights and actions: financial health briefings across P&L, cash flow, balance sheet and A/R, industry benchmarking, payroll cost analysis, overdue-invoice reminders, estimate/invoice drafting from email, payroll onboarding and base-pay changes (with confirmation), and QuickBooks Capital lending guidance. Requires the Intuit QuickBooks connector.",
+      "displayName": "Intuit QuickBooks",
+      "homepage": "https://github.com/intuit/quickbooks-claude-plugin",
+      "icon": null,
+      "keywords": [
+        "intuit",
+        "productivity",
+        "quickbooks"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 297,
+        "text": "IQ"
+      },
+      "pluginId": "plugin:claude-official:intuit-quickbooks",
+      "primaryCategory": "finance",
+      "productKey": "intuit-quickbooks",
+      "releaseId": "release:0abcad214edeb5e29a1aa90ef244b13822f542b98a8a811d1b3bb6319bc5fe20",
+      "sourceId": "claude-official",
+      "upstreamName": "intuit-quickbooks",
+      "variantPluginIds": [
+        "plugin:claude-official:intuit-quickbooks",
+        "plugin:knowledge-work-official:intuit-quickbooks"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "command": 8,
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Price bonds, analyze yield curves, evaluate FX carry trades, value options, and build macro dashboards using LSEG financial data and analytics.",
+      "displayName": "LSEG",
+      "homepage": "https://github.com/LSEG-API-Samples/lseg-claude-plugin",
+      "icon": null,
+      "keywords": [
+        "finance",
+        "lseg"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 234,
+        "text": "LS"
+      },
+      "pluginId": "plugin:knowledge-work-official:lseg",
+      "primaryCategory": "finance",
+      "productKey": "lseg",
+      "releaseId": "release:89825506fc954c1048ffb3fb4f30dc1004cf8263c2434562656e67c97c6e7e39",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "lseg",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:lseg"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 23,
+        "executable": 135,
+        "skill": 23
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Public equity investing workflows for listed-company research, earnings analysis, valuation, model updates, long/short pitches, catalysts, thesis tracking, ETF/index and constituent diligence, sell-side research notes, risk sizing, hedging, dashboards, and investment memos.",
+      "displayName": "public-equity-investing",
+      "icon": {
+        "asset": "icon-0fb0504afd09933dd2a2c8f94e18475d.svg",
+        "bytes": 513,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:0fb0504afd09933dd2a2c8f94e18475da84094c7f84be36945efcd3847c9fa4f",
+        "homepage": null,
+        "kind": "content",
+        "path": "skills/meeting-prep/assets/icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "equity",
+        "finance",
+        "investing",
+        "public"
+      ],
+      "license": "Proprietary",
+      "monogram": {
+        "hue": 105,
+        "text": "PE"
+      },
+      "pluginId": "plugin:openai-official:public-equity-investing",
+      "primaryCategory": "finance",
+      "productKey": "public-equity-investing",
+      "releaseId": "release:90687dbe944097ee6565cac71c4e25ffc5ca41947dfc0ad8267f6950b75f5f27",
+      "sourceId": "openai-official",
+      "upstreamName": "public-equity-investing",
+      "variantPluginIds": [
+        "plugin:openai-official:public-equity-investing"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 3
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "S&P Global - Financial data and analytics skills including company tearsheets, earnings previews, and transaction summaries",
+      "displayName": "S&P Global",
+      "homepage": "https://kensho.com/",
+      "icon": {
+        "asset": "icon-4c4c3f44acf96a54267911f088006307.webp",
+        "bytes": 4284,
+        "contentType": "image/webp",
+        "digest": "sha256:4c4c3f44acf96a54267911f08800630714dc4a953c170aecf0772f56934117bd",
+        "homepage": "https://kensho.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://images.squarespace-cdn.com/content/v1/6970e57a847a982ccab43554/a2fbb6b0-b249-49c4-a6e8-b4a348c748a7/favicon.ico?format=300w"
+      },
+      "keywords": [
+        "finance",
+        "global",
+        "sp"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 27,
+        "text": "SP"
+      },
+      "pluginId": "plugin:knowledge-work-official:sp-global",
+      "primaryCategory": "finance",
+      "productKey": "sp-global",
+      "releaseId": "release:9cd3c4298a32ba297ef3641f94042a3fdc3b5d9788c3f64d3977e636056a3b24",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "sp-global",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:sp-global",
+        "plugin:cursor-official:sp-global"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 1,
+        "command": 2,
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "developer-tools",
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Stripe development plugin for Claude",
+      "displayName": "stripe",
+      "homepage": "https://github.com/stripe/ai/tree/main/providers/claude/plugin",
+      "icon": {
+        "asset": "icon-8034d1975f2ff4408cb399089eb6c4b5.png",
+        "bytes": 2370,
+        "contentType": "image/png",
+        "digest": "sha256:8034d1975f2ff4408cb399089eb6c4b575a7ebe267063c2074327e64a710732c",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "developer-tools",
+        "stripe"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 93,
+        "text": "ST"
+      },
+      "pluginId": "plugin:claude-official:stripe",
+      "primaryCategory": "developer-tools",
+      "productKey": "stripe",
+      "releaseId": "release:1750bf590bbb616cc4ae96def6c5ed45822559b2dce21ef27d8996c414fe1c5d",
+      "sourceId": "claude-official",
+      "upstreamName": "stripe",
+      "variantPluginIds": [
+        "plugin:claude-official:stripe",
+        "plugin:openai-official:stripe"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Ask Claude about the contractors you pay through Wingspan, what you owe them, and what is holding up a payment, then onboard contractors and log payments as drafts, with a preview before anything is written. Requires a Wingspan account; bundles the Wingspan MCP server (OAuth on first use).",
+      "displayName": "Wingspan",
+      "homepage": "https://github.com/wingspanHQ/mcp-claude-plugin",
+      "icon": null,
+      "keywords": [
+        "productivity",
+        "wingspan"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 318,
+        "text": "WI"
+      },
+      "pluginId": "plugin:claude-official:wingspan",
+      "primaryCategory": "finance",
+      "productKey": "wingspan",
+      "releaseId": "release:7d931c6ddf8ad6fac6098e9dbfab858160ed47ee485769f6501c165bd2f74411",
+      "sourceId": "claude-official",
+      "upstreamName": "wingspan",
+      "variantPluginIds": [
+        "plugin:claude-official:wingspan",
+        "plugin:knowledge-work-official:wingspan"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 7
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Seven skills for financial advisors built on Zocks meeting intelligence: client behavioral profiles, attrition-risk ranking, held-away asset radar, client journey dossiers, household review packs, next-best-action analysis and a tax opportunity scan. Requires the Zocks connector and a Zocks account.",
+      "displayName": "Zocks Advisor Intelligence",
+      "homepage": "https://github.com/zocks-communications/zocks-agent-plugins",
+      "icon": null,
+      "keywords": [
+        "advisor",
+        "productivity",
+        "zocks"
+      ],
+      "license": "LicenseRef-Zocks-Modified-Apache-2.0",
+      "monogram": {
+        "hue": 129,
+        "text": "ZA"
+      },
+      "pluginId": "plugin:claude-official:zocks-advisor",
+      "primaryCategory": "finance",
+      "productKey": "zocks-advisor",
+      "releaseId": "release:3f890a7f39aa07b36f3ee35a2cd000a50eeef969eb15dc1e7ec6ef0d5a6c5832",
+      "sourceId": "claude-official",
+      "upstreamName": "zocks-advisor",
+      "variantPluginIds": [
+        "plugin:claude-official:zocks-advisor",
+        "plugin:knowledge-work-official:zocks-advisor"
+      ],
+      "variantsIdentical": true
+    }
+  ],
+  "schemaVersion": 1
+}

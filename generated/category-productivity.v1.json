@@ -1,0 +1,4788 @@
+{
+  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "category": "productivity",
+  "pluginCount": 131,
+  "productCount": 98,
+  "products": [
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search events and schedule meetings.",
+      "displayName": "Google Calendar",
+      "icon": {
+        "asset": "icon-a7f14f0621c73d86170e16b2f6ca6978.svg",
+        "bytes": 3446,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:a7f14f0621c73d86170e16b2f6ca69782e4f554f1e3d4596bcb1f9d57d3cbe5c",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "calendar",
+        "google",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 252,
+        "text": "GC"
+      },
+      "pluginId": "plugin:cursor-official:google-calendar",
+      "primaryCategory": "productivity",
+      "productKey": "google-calendar",
+      "releaseId": "release:ae3c3ac6d27c93774e568fefc8a698799b8a292b562dbdde9cdf7268ee49e622",
+      "sourceId": "cursor-official",
+      "upstreamName": "google-calendar",
+      "variantPluginIds": [
+        "plugin:cursor-official:google-calendar",
+        "plugin:openai-official:google-calendar"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search, read, create, and share files.",
+      "displayName": "Google Drive",
+      "icon": {
+        "asset": "icon-474264985c6d8b3d521289c6e1095eb7.svg",
+        "bytes": 1409,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:474264985c6d8b3d521289c6e1095eb7b7e24f549889c55e7877376c21b715b2",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "drive",
+        "google",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 144,
+        "text": "GD"
+      },
+      "pluginId": "plugin:cursor-official:google-drive",
+      "primaryCategory": "productivity",
+      "productKey": "google-drive",
+      "releaseId": "release:4a4cc0ac59ae03f0bd7064eeceadb64b5996bb0be0e201a2c2dbcc27d79caa13",
+      "sourceId": "cursor-official",
+      "upstreamName": "google-drive",
+      "variantPluginIds": [
+        "plugin:cursor-official:google-drive",
+        "plugin:openai-official:google-drive"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "command": 10,
+        "mcp-server": 1,
+        "skill": 4
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Notion workspace integration. Search pages, create and update documents, manage databases, and access your team's knowledge base directly from Claude Code for seamless documentation workflows.",
+      "displayName": "Notion",
+      "homepage": "https://github.com/makenotion/claude-code-notion-plugin",
+      "icon": {
+        "asset": "icon-e20b9668553aeb46b55a366d0a8eddd9.png",
+        "bytes": 3581,
+        "contentType": "image/png",
+        "digest": "sha256:e20b9668553aeb46b55a366d0a8eddd9051b5ac55207ab067ed347029a53434e",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/notion.png",
+        "url": null
+      },
+      "keywords": [
+        "notion",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 333,
+        "text": "NO"
+      },
+      "pluginId": "plugin:claude-official:notion",
+      "primaryCategory": "productivity",
+      "productKey": "notion",
+      "releaseId": "release:cacc4557a338d6850e05fcde59fbb93ad3857227f819174cb01f61b6cad6517f",
+      "sourceId": "claude-official",
+      "upstreamName": "notion",
+      "variantPluginIds": [
+        "plugin:claude-official:notion",
+        "plugin:openai-official:notion"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Create, find, and complete tasks and projects.",
+      "displayName": "Todoist",
+      "icon": {
+        "asset": "icon-f8cd00a19c4ea0bf0391f3ff295bffaf.png",
+        "bytes": 17680,
+        "contentType": "image/png",
+        "digest": "sha256:f8cd00a19c4ea0bf0391f3ff295bffaf7a6bb54e2dd52cbe1c3eb895b63b7427",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "productivity",
+        "todoist"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 204,
+        "text": "TO"
+      },
+      "pluginId": "plugin:cursor-official:todoist",
+      "primaryCategory": "productivity",
+      "productKey": "todoist",
+      "releaseId": "release:443f15ba77b49015c19c21f6d024e79e4030feee30a3a412a1d2fd12950b604e",
+      "sourceId": "cursor-official",
+      "upstreamName": "todoist",
+      "variantPluginIds": [
+        "plugin:cursor-official:todoist"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search highlights and Reader documents, save articles.",
+      "displayName": "Readwise",
+      "icon": {
+        "asset": "icon-4b8c10c83d28f5026c0206e394eebe45.png",
+        "bytes": 7216,
+        "contentType": "image/png",
+        "digest": "sha256:4b8c10c83d28f5026c0206e394eebe45713f222bcb9deced8dfa875148454b62",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "productivity",
+        "readwise"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 162,
+        "text": "RE"
+      },
+      "pluginId": "plugin:cursor-official:readwise",
+      "primaryCategory": "productivity",
+      "productKey": "readwise",
+      "releaseId": "release:6ddfdf4a07ff524096f60d6b16c685ca85bb4c50e084d166bcaa2425faaf94d6",
+      "sourceId": "cursor-official",
+      "upstreamName": "readwise",
+      "variantPluginIds": [
+        "plugin:cursor-official:readwise"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Query and update sheets, rows, and workspaces.",
+      "displayName": "Smartsheet",
+      "icon": {
+        "asset": "icon-c4540b41fea9ecae37c611bd09d7ba08.png",
+        "bytes": 7228,
+        "contentType": "image/png",
+        "digest": "sha256:c4540b41fea9ecae37c611bd09d7ba08588ca0d4b612d7c9bae181cffb7e4d40",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "productivity",
+        "smartsheet"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 72,
+        "text": "SM"
+      },
+      "pluginId": "plugin:cursor-official:smartsheet",
+      "primaryCategory": "productivity",
+      "productKey": "smartsheet",
+      "releaseId": "release:6135b0f1965ee1bb5fac221149c38f53f849f2bbcad6667ac8ddc581285e63fe",
+      "sourceId": "cursor-official",
+      "upstreamName": "smartsheet",
+      "variantPluginIds": [
+        "plugin:cursor-official:smartsheet"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 2,
+        "command": 5,
+        "mcp-server": 2,
+        "skill": 6
+      },
+      "categories": [
+        "business-operations",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Marketing automation, CRM, and email marketing powered by ActiveCampaign. Manage contacts, campaigns, automations, deals, and get AI-powered marketing insights — all from Claude.",
+      "displayName": "ActiveCampaign",
+      "homepage": "https://www.activecampaign.com/",
+      "icon": {
+        "asset": "icon-9d8e91f168b523510ff53affb08be505.webp",
+        "bytes": 2440,
+        "contentType": "image/webp",
+        "digest": "sha256:9d8e91f168b523510ff53affb08be505ea78bebbd1fef9c55a227cf34c48ff62",
+        "homepage": "https://www.activecampaign.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.activecampaign.com/dist/favicon-180x180.png"
+      },
+      "keywords": [
+        "activecampaign",
+        "business-operations",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 15,
+        "text": "AC"
+      },
+      "pluginId": "plugin:claude-official:activecampaign",
+      "primaryCategory": "business-operations",
+      "productKey": "activecampaign",
+      "releaseId": "release:b9e23f828402c30db9397da8f1ac1844fb026880cf4218ebc53ae300dec82442",
+      "sourceId": "claude-official",
+      "upstreamName": "activecampaign",
+      "variantPluginIds": [
+        "plugin:claude-official:activecampaign",
+        "plugin:knowledge-work-official:activecampaign"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "agent": 2,
+        "command": 5,
+        "mcp-server": 1,
+        "skill": 15
+      },
+      "categories": [
+        "business-operations",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Cross-platform ad management for Google Ads, Meta Ads, TikTok Ads, and LinkedIn Ads. 91 tools for keyword research, campaign creation, performance analysis, and budget optimization.",
+      "displayName": "Adspirer",
+      "homepage": "https://www.adspirer.com/",
+      "icon": {
+        "asset": "icon-59e6bbd3120897d1566554a00769770a.png",
+        "bytes": 9414,
+        "contentType": "image/png",
+        "digest": "sha256:59e6bbd3120897d1566554a00769770a02f987088f46b22a61a1782fe6aea28e",
+        "homepage": "https://www.adspirer.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.adspirer.com/apple-icon.png"
+      },
+      "keywords": [
+        "ads",
+        "adspirer",
+        "agent",
+        "business-operations",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 291,
+        "text": "AD"
+      },
+      "pluginId": "plugin:knowledge-work-official:adspirer-ads-agent",
+      "primaryCategory": "business-operations",
+      "productKey": "adspirer-ads-agent",
+      "releaseId": "release:e9357a0bca2420bf32ee7bf35b719b02879d11a3a314d75f2aae94bdd54135fb",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "adspirer-ads-agent",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:adspirer-ads-agent"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Airtable is the database and operations layer for your agents — whether running product, marketing, sales, ops, HR, or a custom business app. It combines structured data with multiplayer visual surfaces (grid, kanban, calendar, gallery, timeline) humans and agents share — plus sync integrations to Jira, Salesforce, Zendesk, Google Drive, Databricks, and the rest of your stack, all backed by enterprise governance. This plugin makes Claude fluent in Airtable: creating bases and schema, working with records, and sharing UI for collaboration. Bundles the official Airtable MCP server.",
+      "displayName": "airtable",
+      "homepage": "https://www.airtable.com/",
+      "icon": {
+        "asset": "icon-1875d18bf33291f53d2c78e9e9485551.svg",
+        "bytes": 1340,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:1875d18bf33291f53d2c78e9e9485551ab45d998a5cef8ad25c966f518e57d45",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "airtable",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 150,
+        "text": "AI"
+      },
+      "pluginId": "plugin:claude-official:airtable",
+      "primaryCategory": "productivity",
+      "productKey": "airtable",
+      "releaseId": "release:00ee61d7f81a4a467a26d79e4f78c87a0d1552aa0c1579f3dd38249dba856ef5",
+      "sourceId": "claude-official",
+      "upstreamName": "airtable",
+      "variantPluginIds": [
+        "plugin:claude-official:airtable",
+        "plugin:knowledge-work-official:airtable",
+        "plugin:openai-official:airtable"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 5
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities.",
+      "displayName": "Airwallex",
+      "homepage": "https://www.airwallex.com/docs",
+      "icon": {
+        "asset": "icon-03276e1e0a355132331e7d1467dc070e.svg",
+        "bytes": 914,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:03276e1e0a355132331e7d1467dc070ebc23d7261eeb4a4499d7497ef4c70f97",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "agentos",
+        "airwallex",
+        "finance",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 27,
+        "text": "AI"
+      },
+      "pluginId": "plugin:claude-official:airwallex-agentos",
+      "primaryCategory": "finance",
+      "productKey": "airwallex-agentos",
+      "releaseId": "release:c20a1421154a3aeb61df8ba31821fac7de4cdb36923ded07f745c1d17d3f1f95",
+      "sourceId": "claude-official",
+      "upstreamName": "airwallex-agentos",
+      "variantPluginIds": [
+        "plugin:claude-official:airwallex-agentos",
+        "plugin:knowledge-work-official:airwallex-agentos"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "command": 3,
+        "mcp-server": 1,
+        "skill": 11
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect your Amazon Seller Central account to Claude. Ask about sales, inventory, and listing performance and get recommendations grounded in your own data, then review and approve every listing, inventory or FBA action before it runs. Bundles the Amazon Selling Partner MCP server (Seller Central OAuth on first use). Currently in beta.",
+      "displayName": "Amazon Selling Partner",
+      "homepage": "https://github.com/amzn/selling-partner-agentic-toolkit",
+      "icon": {
+        "asset": "icon-49a6387c8ea610f5a7284cc0b94e1129.png",
+        "bytes": 54023,
+        "contentType": "image/png",
+        "digest": "sha256:49a6387c8ea610f5a7284cc0b94e1129afa582af4a30b3ac69ddda682d7986a3",
+        "homepage": null,
+        "kind": "content",
+        "path": "icon.png",
+        "url": null
+      },
+      "keywords": [
+        "amazon",
+        "partner",
+        "productivity",
+        "selling"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 210,
+        "text": "AS"
+      },
+      "pluginId": "plugin:claude-official:amazon-selling-partner",
+      "primaryCategory": "productivity",
+      "productKey": "amazon-selling-partner",
+      "releaseId": "release:e457468bcc3d3bd7d9501dea926717140d897c9617b4806d999f8a3917a40b1f",
+      "sourceId": "claude-official",
+      "upstreamName": "amazon-selling-partner",
+      "variantPluginIds": [
+        "plugin:claude-official:amazon-selling-partner",
+        "plugin:knowledge-work-official:amazon-selling-partner"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 4
+      },
+      "categories": [
+        "business-operations",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
+      "displayName": "Apollo.io",
+      "homepage": "https://www.apollo.io/",
+      "icon": {
+        "asset": "icon-25ae17edffd848672eceaca705a64de7.png",
+        "bytes": 9841,
+        "contentType": "image/png",
+        "digest": "sha256:25ae17edffd848672eceaca705a64de7e7e5226db6d81a8a89208c8def07064f",
+        "homepage": "https://www.apollo.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.apollo.io/apple-icon.png?apple-icon.0-gy.9xjm.kcw.png"
+      },
+      "keywords": [
+        "apollo",
+        "business-operations",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 201,
+        "text": "AI"
+      },
+      "pluginId": "plugin:claude-official:apollo",
+      "primaryCategory": "business-operations",
+      "productKey": "apollo",
+      "releaseId": "release:9ebcd902611602641b83dfd386109d689494a217cdde1196f7dc303121e40b1e",
+      "sourceId": "claude-official",
+      "upstreamName": "apollo",
+      "variantPluginIds": [
+        "plugin:claude-official:apollo",
+        "plugin:knowledge-work-official:apollo"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "command": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Asana project management integration. Connects Claude Code to Asana's V2 MCP server to create and manage tasks, search projects, update assignments, and track progress. Requires a one-time Asana OAuth app setup — run /asana-setup after installing.",
+      "displayName": "asana",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/asana",
+      "icon": null,
+      "keywords": [
+        "asana",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 306,
+        "text": "AS"
+      },
+      "pluginId": "plugin:claude-official:asana",
+      "primaryCategory": "productivity",
+      "productKey": "asana",
+      "releaseId": "release:c4e7d651c97f37a1a388e685735aea9650ae90a30e0488b8b2bb1a251c439fe5",
+      "sourceId": "claude-official",
+      "upstreamName": "asana",
+      "variantPluginIds": [
+        "plugin:claude-official:asana"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 12,
+        "mcp-server": 2,
+        "skill": 12
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Connect to Atlassian products including Jira and Confluence. Search and create issues, access documentation, manage sprints, and integrate your development workflow with Atlassian's collaboration tools.",
+      "displayName": "atlassian",
+      "homepage": "https://github.com/atlassian/atlassian-mcp-server",
+      "icon": {
+        "asset": "icon-0ab515fcad8b2a4104871a672211ac7b.svg",
+        "bytes": 838,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:0ab515fcad8b2a4104871a672211ac7bc9bcec0236808918fb29b0f322fcf4f5",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "atlassian",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 30,
+        "text": "AT"
+      },
+      "pluginId": "plugin:claude-official:atlassian",
+      "primaryCategory": "productivity",
+      "productKey": "atlassian",
+      "releaseId": "release:35a3d049245960cc0265528bd09ed048d2f2babbdb41704178e9f98d585bd350",
+      "sourceId": "claude-official",
+      "upstreamName": "atlassian",
+      "variantPluginIds": [
+        "plugin:claude-official:atlassian"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 1,
+        "mcp-server": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Manage Jira and Confluence fast",
+      "displayName": "atlassian-rovo",
+      "icon": {
+        "asset": "icon-7205fb2631152725e0aedd16534a020a.png",
+        "bytes": 7690,
+        "contentType": "image/png",
+        "digest": "sha256:7205fb2631152725e0aedd16534a020a0bd89a2c1acfc726a2b3fd5b52838722",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "atlassian",
+        "productivity",
+        "rovo"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 246,
+        "text": "AR"
+      },
+      "pluginId": "plugin:openai-official:atlassian-rovo",
+      "primaryCategory": "productivity",
+      "productKey": "atlassian-rovo",
+      "releaseId": "release:d7ca4f83b417f3164ebf114676dbc2a606de4026dbcd7b00a612dbc332ec7600",
+      "sourceId": "openai-official",
+      "upstreamName": "atlassian-rovo",
+      "variantPluginIds": [
+        "plugin:openai-official:atlassian-rovo"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Teamwork Graph CLI is Atlassian's agent-first interface to your entire work context: Jira issues, Confluence pages, Bitbucket PRs, along with your connected third-party data sources. Purpose-built for coding agents like Claude Code (terminal or desktop), and powered by Atlassian's context graph. Try: \"draft a Jira issue from this PR and link it to the epic.\" Using Claude Code in the browser? Install the Atlassian Rovo MCP plugin instead. Run /twg-setup after install to connect Atlassian Teamwork Graph CLI to Claude Code.",
+      "displayName": "atlassian-twg-cli",
+      "homepage": "https://developer.atlassian.com/cloud/twg-cli/",
+      "icon": {
+        "asset": "icon-9fb7883c2f5e9d1c35140cea3d2cfa51.png",
+        "bytes": 15330,
+        "contentType": "image/png",
+        "digest": "sha256:9fb7883c2f5e9d1c35140cea3d2cfa510ebb75b310b9b9cdfa4d2c115245acc2",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/twg-logo.png",
+        "url": null
+      },
+      "keywords": [
+        "atlassian",
+        "cli",
+        "productivity",
+        "twg"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 114,
+        "text": "AT"
+      },
+      "pluginId": "plugin:claude-official:atlassian-twg-cli",
+      "primaryCategory": "productivity",
+      "productKey": "atlassian-twg-cli",
+      "releaseId": "release:38bb146e7b3d77c2896b265a89d683104c1c50def7b178a1a9cc19529ef6974e",
+      "sourceId": "claude-official",
+      "upstreamName": "atlassian-twg-cli",
+      "variantPluginIds": [
+        "plugin:claude-official:atlassian-twg-cli"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 6
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "BlackRock Advisor Center 360° skills for financial advisors: portfolio review, opportunity and fund-health checks, guided benchmark selection, guided portfolio building, wealth projections, and routing to Advisor Center web workflows. Requires the BlackRock Advisor Center connector and an Advisor Center account.",
+      "displayName": "BlackRock Advisor Center",
+      "homepage": "https://github.com/blackrock/advisor-center-agent-skills",
+      "icon": null,
+      "keywords": [
+        "advisor",
+        "blackrock",
+        "center",
+        "plugin",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 15,
+        "text": "BA"
+      },
+      "pluginId": "plugin:claude-official:blackrock-advisor-center-plugin",
+      "primaryCategory": "finance",
+      "productKey": "blackrock-advisor-center-plugin",
+      "releaseId": "release:2941cbf218baf77052d5a28ba0add4552d63cebad18ef72f5f5b89019e4ef2cf",
+      "sourceId": "claude-official",
+      "upstreamName": "blackrock-advisor-center-plugin",
+      "variantPluginIds": [
+        "plugin:claude-official:blackrock-advisor-center-plugin",
+        "plugin:knowledge-work-official:blackrock-advisor-center-plugin"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "rule": 1,
+        "skill": 5
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Work with your Box content directly from Claude Code — search files, organize folders, collaborate with your team, and use Box AI to answer questions, summarize documents, and extract data without leaving your workflow.",
+      "displayName": "Box",
+      "homepage": "https://github.com/box/skills",
+      "icon": {
+        "asset": "icon-1dea00259e3edd6bce92015cfb9d62b6.svg",
+        "bytes": 2862,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:1dea00259e3edd6bce92015cfb9d62b6c785e771f51f843e1256b2e0caf9e1a7",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "box",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 93,
+        "text": "BO"
+      },
+      "pluginId": "plugin:claude-official:box",
+      "primaryCategory": "productivity",
+      "productKey": "box",
+      "releaseId": "release:946d198c942098f12481517003ced3586483a09201c676738f3033e4a63d212e",
+      "sourceId": "claude-official",
+      "upstreamName": "box",
+      "variantPluginIds": [
+        "plugin:claude-official:box",
+        "plugin:knowledge-work-official:box"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Check availability and book, cancel, or reschedule.",
+      "displayName": "Calendly",
+      "icon": {
+        "asset": "icon-2a90a362c2cb786fd93f9083ff0baa7a.png",
+        "bytes": 14632,
+        "contentType": "image/png",
+        "digest": "sha256:2a90a362c2cb786fd93f9083ff0baa7aa867d976e9a52f094cad9480b9038104",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "calendly",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 291,
+        "text": "CA"
+      },
+      "pluginId": "plugin:cursor-official:calendly",
+      "primaryCategory": "productivity",
+      "productKey": "calendly",
+      "releaseId": "release:4f45286383326f98f370d91222cd29b97803cdaed979688caaa90dde692f9416",
+      "sourceId": "cursor-official",
+      "upstreamName": "calendly",
+      "variantPluginIds": [
+        "plugin:cursor-official:calendly"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "rule": 1,
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Official Carbone skill — complete templating language reference covering tags, loops, conditions, formatters, aggregators, and all output formats (DOCX, XLSX, PPTX, ODT, HTML, Markdown, PDF)",
+      "displayName": "Carbone",
+      "homepage": "https://carbone.io/",
+      "icon": {
+        "asset": "icon-b3e8de7eb914d38a5c711ed17268c346.ico",
+        "bytes": 15086,
+        "contentType": "image/x-icon",
+        "digest": "sha256:b3e8de7eb914d38a5c711ed17268c346a14d5c8113f5fec370aac8fb37b92865",
+        "homepage": "https://carbone.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://carbone.io/favicon.ico"
+      },
+      "keywords": [
+        "carbone",
+        "productivity",
+        "skill"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 165,
+        "text": "CA"
+      },
+      "pluginId": "plugin:claude-official:carbone-skill",
+      "primaryCategory": "productivity",
+      "productKey": "carbone-skill",
+      "releaseId": "release:cd4f40546bc0125382da4db93c83d31c7f84cc787790c08aa9874cd6f11b0f4b",
+      "sourceId": "claude-official",
+      "upstreamName": "carbone-skill",
+      "variantPluginIds": [
+        "plugin:claude-official:carbone-skill",
+        "plugin:knowledge-work-official:carbone-skill"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "executable": 28,
+        "hook": 47,
+        "skill": 22,
+        "ui-component": 4
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Carta Cap Table plugin — skills and hooks for querying cap tables, grants, SAFEs, 409A valuations, waterfall scenarios, and more",
+      "displayName": "carta-cap-table",
+      "homepage": "https://carta.com/",
+      "icon": {
+        "asset": "icon-162aefb6da8e2670b2d3a6797adced2e.png",
+        "bytes": 5341,
+        "contentType": "image/png",
+        "digest": "sha256:162aefb6da8e2670b2d3a6797adced2edecd960120d66f89845d882f303c171f",
+        "homepage": null,
+        "kind": "content",
+        "path": "skills/carta-reporting-excel/assets/Carta_Logo.png",
+        "url": null
+      },
+      "keywords": [
+        "cap",
+        "carta",
+        "finance",
+        "productivity",
+        "table"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 168,
+        "text": "CC"
+      },
+      "pluginId": "plugin:claude-official:carta-cap-table",
+      "primaryCategory": "finance",
+      "productKey": "carta-cap-table",
+      "releaseId": "release:63fc0cf589c46b2ac1f9b7a4d4f03f31e4e82b0af146260f067a098f6b92e316",
+      "sourceId": "claude-official",
+      "upstreamName": "carta-cap-table",
+      "variantPluginIds": [
+        "plugin:claude-official:carta-cap-table",
+        "plugin:knowledge-work-official:carta-cap-table"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "executable": 8,
+        "hook": 47,
+        "skill": 26
+      },
+      "categories": [
+        "business-operations",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Manage the Carta CRM conversationally — search, add, update, and enrich investors, companies, contacts, deals, notes, and fundraisings via the Carta CRM MCP Server.",
+      "displayName": "carta-crm",
+      "homepage": "https://carta.com/",
+      "icon": {
+        "asset": "icon-6162f3f9e53710d73db087278ed1d81e.ico",
+        "bytes": 15406,
+        "contentType": "image/x-icon",
+        "digest": "sha256:6162f3f9e53710d73db087278ed1d81e7b741dae598e80f7c54aadabd872172a",
+        "homepage": "https://carta.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://carta.com/favicon.ico?f698f762107ca70d"
+      },
+      "keywords": [
+        "business-operations",
+        "carta",
+        "crm",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 84,
+        "text": "CC"
+      },
+      "pluginId": "plugin:claude-official:carta-crm",
+      "primaryCategory": "business-operations",
+      "productKey": "carta-crm",
+      "releaseId": "release:1d7919c28b85968d2e84bb0853911a0cc942dca47b29cb6695bf6d44fc87fae7",
+      "sourceId": "claude-official",
+      "upstreamName": "carta-crm",
+      "variantPluginIds": [
+        "plugin:claude-official:carta-crm",
+        "plugin:knowledge-work-official:carta-crm"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "command": 2,
+        "executable": 49,
+        "hook": 48,
+        "scheduled-task": 1,
+        "skill": 16,
+        "ui-component": 27
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Carta Investors plugin — skills for querying investor data, performance benchmarks, regulatory reporting, AGM deck generation, brand extraction, and more via the Carta MCP Server.",
+      "displayName": "carta-investors",
+      "homepage": "https://carta.com/",
+      "icon": {
+        "asset": "icon-e753d59e2e1a4b471831d3bbf13387d9.svg",
+        "bytes": 1479,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:e753d59e2e1a4b471831d3bbf13387d9604ec0316a83668923a8e662f502513e",
+        "homepage": null,
+        "kind": "content",
+        "path": "skills/carta-agm-deck-builder/references/assets/logo-dark.svg",
+        "url": null
+      },
+      "keywords": [
+        "carta",
+        "finance",
+        "investors",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 120,
+        "text": "CI"
+      },
+      "pluginId": "plugin:claude-official:carta-investors",
+      "primaryCategory": "finance",
+      "productKey": "carta-investors",
+      "releaseId": "release:78ea9e074aeeb832a29dcefbdc1466d0e913399819b5377942030699bbf2c7ed",
+      "sourceId": "claude-official",
+      "upstreamName": "carta-investors",
+      "variantPluginIds": [
+        "plugin:claude-official:carta-investors",
+        "plugin:knowledge-work-official:carta-investors"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "agent": 6,
+        "skill": 5
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Portfolio monitoring, valuations and analytics for private-capital GP teams using the Chronograph connector: portfolio-company one-pagers, fund quarterly review packs, markup/markdown briefs, TVPI attribution and budget-vs-actuals. Requires a Chronograph account and the Chronograph connector.",
+      "displayName": "Chronograph GP",
+      "homepage": "https://www.chronograph.pe/",
+      "icon": {
+        "asset": "icon-d3cae2ef925520f68fc4f1896d39da43.png",
+        "bytes": 277,
+        "contentType": "image/png",
+        "digest": "sha256:d3cae2ef925520f68fc4f1896d39da43e620d4e2d79859507114dddfaaf54a41",
+        "homepage": "https://www.chronograph.pe/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.chronograph.pe/wp-content/themes/chronograph/assets/images/favicon/apple-touch-icon.png"
+      },
+      "keywords": [
+        "chronograph",
+        "gp",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 333,
+        "text": "CG"
+      },
+      "pluginId": "plugin:claude-official:chronograph-gp",
+      "primaryCategory": "finance",
+      "productKey": "chronograph-gp",
+      "releaseId": "release:d2e417c2aeac9670963adab1f664040ff5a6ddf741701235c498e382e43f0417",
+      "sourceId": "claude-official",
+      "upstreamName": "chronograph-gp",
+      "variantPluginIds": [
+        "plugin:claude-official:chronograph-gp",
+        "plugin:knowledge-work-official:chronograph-gp"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "agent": 5,
+        "skill": 4
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Portfolio monitoring and analytics for private-capital LP teams using the Chronograph connector: cashflow forecasting, commitment pacing, look-through exposure scans and GP-meeting prep. Requires a Chronograph account and the Chronograph connector.",
+      "displayName": "Chronograph LP",
+      "homepage": "https://www.chronograph.pe/",
+      "icon": {
+        "asset": "icon-d3cae2ef925520f68fc4f1896d39da43.png",
+        "bytes": 277,
+        "contentType": "image/png",
+        "digest": "sha256:d3cae2ef925520f68fc4f1896d39da43e620d4e2d79859507114dddfaaf54a41",
+        "homepage": "https://www.chronograph.pe/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.chronograph.pe/wp-content/themes/chronograph/assets/images/favicon/apple-touch-icon.png"
+      },
+      "keywords": [
+        "chronograph",
+        "lp",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 351,
+        "text": "CL"
+      },
+      "pluginId": "plugin:claude-official:chronograph-lp",
+      "primaryCategory": "finance",
+      "productKey": "chronograph-lp",
+      "releaseId": "release:5011164cf05e3110f6293fcfd425999a873e76448682a6373ed8627297ded1e7",
+      "sourceId": "claude-official",
+      "upstreamName": "chronograph-lp",
+      "variantPluginIds": [
+        "plugin:claude-official:chronograph-lp",
+        "plugin:knowledge-work-official:chronograph-lp"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Circleback conversational context integration. Search and access meetings, emails, calendar events, and more.",
+      "displayName": "Circleback",
+      "homepage": "https://github.com/circlebackai/claude-code-plugin.git",
+      "icon": {
+        "asset": "icon-0f71025bd7d42d11c252882087eb7954.png",
+        "bytes": 7270,
+        "contentType": "image/png",
+        "digest": "sha256:0f71025bd7d42d11c252882087eb79549e25af5fa5bbd5d40cec6450c18b4e39",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "circleback",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 24,
+        "text": "CI"
+      },
+      "pluginId": "plugin:claude-official:circleback",
+      "primaryCategory": "productivity",
+      "productKey": "circleback",
+      "releaseId": "release:387766451a12988a074df0a19bc9fac172b84c0f8b948d9c4a797fe45dfd660e",
+      "sourceId": "claude-official",
+      "upstreamName": "circleback",
+      "variantPluginIds": [
+        "plugin:claude-official:circleback",
+        "plugin:cursor-official:circleback"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Analyze codebases and recommend tailored Claude Code automations such as hooks, skills, MCP servers, and subagents.",
+      "displayName": "claude-code-setup",
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup",
+      "icon": null,
+      "keywords": [
+        "claude",
+        "code",
+        "productivity",
+        "setup"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 21,
+        "text": "CC"
+      },
+      "pluginId": "plugin:claude-official:claude-code-setup",
+      "primaryCategory": "productivity",
+      "productKey": "claude-code-setup",
+      "releaseId": "release:41e8fe6faa2450692531c2ff972d64107190b40ec4f7b4168d8312b62e248dc1",
+      "sourceId": "claude-official",
+      "upstreamName": "claude-code-setup",
+      "variantPluginIds": [
+        "plugin:claude-official:claude-code-setup"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "command": 1,
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Tools to maintain and improve CLAUDE.md files - audit quality, capture session learnings, and keep project memory current.",
+      "displayName": "claude-md-management",
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-md-management",
+      "icon": null,
+      "keywords": [
+        "claude",
+        "management",
+        "md",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 114,
+        "text": "CM"
+      },
+      "pluginId": "plugin:claude-official:claude-md-management",
+      "primaryCategory": "productivity",
+      "productKey": "claude-md-management",
+      "releaseId": "release:c62eeba770741defd55d155cef083b5380a28593790e0a3207cd35dba24a947e",
+      "sourceId": "claude-official",
+      "upstreamName": "claude-md-management",
+      "variantPluginIds": [
+        "plugin:claude-official:claude-md-management"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 5,
+        "hook": 5,
+        "skill": 31
+      },
+      "categories": [
+        "business-operations",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Work with Clay from Claude Code: set up and sign in to the clay CLI, query and analyze Clay tables, search Clay's GTM database for people and companies, manage audiences, signals, routines and workflows, and draft and review Sequencer campaigns. Includes hooks that auto-approve the plugin's own clay CLI calls and Clay skills; requires a Clay account.",
+      "displayName": "Clay",
+      "homepage": "https://github.com/clay-run/agent-plugins/tree/main/clay",
+      "icon": {
+        "asset": "icon-be4e9d359788e8917a61f6b7972721fb.png",
+        "bytes": 13118,
+        "contentType": "image/png",
+        "digest": "sha256:be4e9d359788e8917a61f6b7972721fbb13377a541772cca1960949bb7daa1ae",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "clay",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 99,
+        "text": "CL"
+      },
+      "pluginId": "plugin:claude-official:clay",
+      "primaryCategory": "business-operations",
+      "productKey": "clay",
+      "releaseId": "release:4200159347b1b4eac010d9c2d2234c5265beed68ddd52eaba42294a2a3497fc1",
+      "sourceId": "claude-official",
+      "upstreamName": "clay",
+      "variantPluginIds": [
+        "plugin:claude-official:clay",
+        "plugin:cursor-official:clay"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Turn Codex into your ClickUp command center.",
+      "displayName": "clickup",
+      "icon": {
+        "asset": "icon-218b96eecc8b8039227db1f6edbf6c64.png",
+        "bytes": 34700,
+        "contentType": "image/png",
+        "digest": "sha256:218b96eecc8b8039227db1f6edbf6c64dfaaffc08dd2c6465f6a4a355e9d2248",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "clickup",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 147,
+        "text": "CL"
+      },
+      "pluginId": "plugin:openai-official:clickup",
+      "primaryCategory": "productivity",
+      "productKey": "clickup",
+      "releaseId": "release:dd3b22732e38e4a838017817bf7b5e774eec1ac5ad1aff279b4596bcefda9c91",
+      "sourceId": "openai-official",
+      "upstreamName": "clickup",
+      "variantPluginIds": [
+        "plugin:openai-official:clickup"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search docs, read pages, and update tables.",
+      "displayName": "Coda",
+      "icon": {
+        "asset": "icon-98fa38d5b8bdda69cd1b346b6b45a957.png",
+        "bytes": 3145,
+        "contentType": "image/png",
+        "digest": "sha256:98fa38d5b8bdda69cd1b346b6b45a957b80bc5adc232413a2688688939f4488a",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "coda",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 171,
+        "text": "CO"
+      },
+      "pluginId": "plugin:cursor-official:coda",
+      "primaryCategory": "productivity",
+      "productKey": "coda",
+      "releaseId": "release:a84cd72340fdd97623429c4414459e6f43fd76ad651206a2750f602b4d581865",
+      "sourceId": "cursor-official",
+      "upstreamName": "coda",
+      "variantPluginIds": [
+        "plugin:cursor-official:coda"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "command": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Automated code review for pull requests using multiple specialized agents with confidence-based scoring to filter false positives",
+      "displayName": "code-review",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/code-review",
+      "icon": null,
+      "keywords": [
+        "code",
+        "productivity",
+        "review"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 321,
+        "text": "CR"
+      },
+      "pluginId": "plugin:claude-official:code-review",
+      "primaryCategory": "productivity",
+      "productKey": "code-review",
+      "releaseId": "release:b01b522055365c56c4f9c7fc68560c2361c5e4ccc251fb9d8579116c099ec7eb",
+      "sourceId": "claude-official",
+      "upstreamName": "code-review",
+      "variantPluginIds": [
+        "plugin:claude-official:code-review"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Agent that simplifies and refines code for clarity, consistency, and maintainability while preserving functionality. Focuses on recently modified code.",
+      "displayName": "code-simplifier",
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier",
+      "icon": null,
+      "keywords": [
+        "code",
+        "productivity",
+        "simplifier"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 216,
+        "text": "CS"
+      },
+      "pluginId": "plugin:claude-official:code-simplifier",
+      "primaryCategory": "productivity",
+      "productKey": "code-simplifier",
+      "releaseId": "release:507df68cebbb6f970dbe9a646da633a3053890e1997ceb6b8f9cffe681ff2b3f",
+      "sourceId": "claude-official",
+      "upstreamName": "code-simplifier",
+      "variantPluginIds": [
+        "plugin:claude-official:code-simplifier"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 1,
+        "command": 2,
+        "skill": 2
+      },
+      "categories": [
+        "developer-tools",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Your code review partner. CodeRabbit provides external validation using a specialized AI architecture and 40+ integrated static analyzers—offering a different perspective that catches bugs, security vulnerabilities, logic errors, and edge cases. Context-aware analysis via AST parsing and codegraph relationships. Automatically incorporates CLAUDE.md and project coding guidelines into reviews. Useful after writing or modifying code, before commits, when implementing complex or security-sensitive logic, or when a second opinion would increase confidence in the changes. Returns specific findings with suggested fixes that can be applied immediately. Free to use.",
+      "displayName": "coderabbit",
+      "homepage": "https://github.com/coderabbitai/skills",
+      "icon": {
+        "asset": "icon-34aa366bf020df325b24b42a822714cb.svg",
+        "bytes": 1154,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:34aa366bf020df325b24b42a822714cbac167fd7d166b79c4da626fb09b5acf9",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/coderabbit-logomark.svg",
+        "url": null
+      },
+      "keywords": [
+        "coderabbit",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 96,
+        "text": "CO"
+      },
+      "pluginId": "plugin:claude-official:coderabbit",
+      "primaryCategory": "developer-tools",
+      "productKey": "coderabbit",
+      "releaseId": "release:936e3c06fc35f61ac1c1483c1b9d89bdf0f77d752ceeb4dd2dd099789c813a99",
+      "sourceId": "claude-official",
+      "upstreamName": "coderabbit",
+      "variantPluginIds": [
+        "plugin:claude-official:coderabbit",
+        "plugin:openai-official:coderabbit"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "command": 3
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Commands for git commit workflows including commit, push, and PR creation",
+      "displayName": "commit-commands",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/commit-commands",
+      "icon": null,
+      "keywords": [
+        "commands",
+        "commit",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 48,
+        "text": "CC"
+      },
+      "pluginId": "plugin:claude-official:commit-commands",
+      "primaryCategory": "productivity",
+      "productKey": "commit-commands",
+      "releaseId": "release:f1975d9b7f99e5baf6bca962c1fc31c2481ce5348339781dbb31877077fab41f",
+      "sourceId": "claude-official",
+      "upstreamName": "commit-commands",
+      "variantPluginIds": [
+        "plugin:claude-official:commit-commands"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search, create, and update documents and daily notes.",
+      "displayName": "Craft",
+      "icon": {
+        "asset": "icon-14a499b3726a4433a085d6a15c0f2b64.png",
+        "bytes": 6270,
+        "contentType": "image/png",
+        "digest": "sha256:14a499b3726a4433a085d6a15c0f2b6440de9fa897faec0da3d3499d41d8fe65",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "craft",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 48,
+        "text": "CR"
+      },
+      "pluginId": "plugin:cursor-official:craft",
+      "primaryCategory": "productivity",
+      "productKey": "craft",
+      "releaseId": "release:061709e08433f85d85da264c611c6177ba31350775ba026c6f9facec1910986c",
+      "sourceId": "cursor-official",
+      "upstreamName": "craft",
+      "variantPluginIds": [
+        "plugin:cursor-official:craft"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "command": 1,
+        "skill": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Onboard a Code-with-Claude Makers Cardputer with one /maker-setup command — clones the build-with-claude repo, flashes UIFlow firmware, and installs the Claude Buddy app bundle.",
+      "displayName": "cwc-makers",
+      "homepage": "https://claude.com/cwc-makers",
+      "icon": {
+        "asset": "icon-4004381309500f25e49a1ae639912ce3.png",
+        "bytes": 1198,
+        "contentType": "image/png",
+        "digest": "sha256:4004381309500f25e49a1ae639912ce307ea81da74cc383954a1ac8b9d343fe6",
+        "homepage": "https://claude.com/cwc-makers",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://assets.claude.com/95a868946ac8a31e5ff832e2899f294aa368b836.png?w=32&amp;h=32"
+      },
+      "keywords": [
+        "cwc",
+        "makers",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 165,
+        "text": "CM"
+      },
+      "pluginId": "plugin:claude-official:cwc-makers",
+      "primaryCategory": "productivity",
+      "productKey": "cwc-makers",
+      "releaseId": "release:3df561ba63105e463f034e2937b4f3c21562973c1713f3ff808b17707b371a77",
+      "sourceId": "claude-official",
+      "upstreamName": "cwc-makers",
+      "variantPluginIds": [
+        "plugin:claude-official:cwc-makers"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 6
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "MCP server for terminal commands, process management, and file operations across text, code, PDF, DOCX, Excel, images, and structured data.",
+      "displayName": "Desktop Commander",
+      "homepage": "https://desktopcommander.app/",
+      "icon": {
+        "asset": "icon-61895f8af06635267b842e0bb0e223a6.png",
+        "bytes": 19721,
+        "contentType": "image/png",
+        "digest": "sha256:61895f8af06635267b842e0bb0e223a609feed2e0036e5038c2e2b127da87a70",
+        "homepage": "https://desktopcommander.app/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://desktopcommander.app/apple-touch-icon.png"
+      },
+      "keywords": [
+        "commander",
+        "desktop",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 81,
+        "text": "DC"
+      },
+      "pluginId": "plugin:claude-official:desktop-commander",
+      "primaryCategory": "productivity",
+      "productKey": "desktop-commander",
+      "releaseId": "release:97548f03cf3dc938f705f1b5a76e4b5c57bc2761d916c86e89c1705db38c2ba8",
+      "sourceId": "claude-official",
+      "upstreamName": "desktop-commander",
+      "variantPluginIds": [
+        "plugin:claude-official:desktop-commander",
+        "plugin:knowledge-work-official:desktop-commander"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Discord messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /discord:access.",
+      "displayName": "discord",
+      "icon": null,
+      "keywords": [
+        "discord",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 324,
+        "text": "DI"
+      },
+      "pluginId": "plugin:claude-official:discord",
+      "primaryCategory": "productivity",
+      "productKey": "discord",
+      "releaseId": "release:849aa00e376a7bcad125d5b07c2ca2a48016299b84fb7e9fa538583688c1a1c9",
+      "sourceId": "claude-official",
+      "upstreamName": "discord",
+      "variantPluginIds": [
+        "plugin:claude-official:discord"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Render documentation as a navigable canvas.",
+      "displayName": "Docs Canvas",
+      "icon": {
+        "asset": "icon-7b472ecdd8d881d07df7fc83975fb422.png",
+        "bytes": 24255,
+        "contentType": "image/png",
+        "digest": "sha256:7b472ecdd8d881d07df7fc83975fb422ac02a32ab6ef48cdb49cfbe6e22e182b",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/avatar.png",
+        "url": null
+      },
+      "keywords": [
+        "canvas",
+        "docs",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 300,
+        "text": "DC"
+      },
+      "pluginId": "plugin:cursor-official:docs-canvas",
+      "primaryCategory": "productivity",
+      "productKey": "docs-canvas",
+      "releaseId": "release:e68c3da94a5fb800b43a5e4e290a40c4c951fc9aea597d49c9647785bb7ae9ab",
+      "sourceId": "cursor-official",
+      "upstreamName": "docs-canvas",
+      "variantPluginIds": [
+        "plugin:cursor-official:docs-canvas"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 6
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "The Dropbox plugin for Claude connects your Dropbox files directly to Claude, so you can search, organize, save generated content, and create sharing links without switching tools. It respects your existing Dropbox permissions, and Claude only works with files you already have access to.",
+      "displayName": "Dropbox",
+      "homepage": "https://www.dropbox.com/",
+      "icon": {
+        "asset": "icon-d543e555eb1c376f21c2b1d08d4fc76e.png",
+        "bytes": 10621,
+        "contentType": "image/png",
+        "digest": "sha256:d543e555eb1c376f21c2b1d08d4fc76e3b348ab6b3ccf10ccc682f8dc2cbe273",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "dropbox",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 213,
+        "text": "DR"
+      },
+      "pluginId": "plugin:claude-official:dropbox",
+      "primaryCategory": "productivity",
+      "productKey": "dropbox",
+      "releaseId": "release:9cb1b444cba0d878b75178faae326ae4bad23984ae382d063cd4f986f21439aa",
+      "sourceId": "claude-official",
+      "upstreamName": "dropbox",
+      "variantPluginIds": [
+        "plugin:claude-official:dropbox",
+        "plugin:knowledge-work-official:dropbox",
+        "plugin:openai-official:dropbox"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 5
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Search across all of your company's tools in one place. Find anything across email, chat, documents, and wikis without switching between apps.",
+      "displayName": "Enterprise Search",
+      "icon": null,
+      "keywords": [
+        "enterprise",
+        "productivity",
+        "search"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 324,
+        "text": "ES"
+      },
+      "pluginId": "plugin:knowledge-work-official:enterprise-search",
+      "primaryCategory": "productivity",
+      "productKey": "enterprise-search",
+      "releaseId": "release:48e42c6f2f7be4c94b1284f70cb21c87921b3f376fa84b4919c16214061f2449",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "enterprise-search",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:enterprise-search"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Exa AI web search, deep research, and content extraction. Provides MCP tools and research skills for comprehensive web search, people discovery, company research, academic papers, and more.",
+      "displayName": "Exa",
+      "homepage": "https://exa.ai/docs/reference/exa-mcp",
+      "icon": {
+        "asset": "icon-3370144d994ce3021db0ce5cf952563b.svg",
+        "bytes": 1147,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:3370144d994ce3021db0ce5cf952563b7a198346920b0ce61d5b8af65b3518a3",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/Exa.svg",
+        "url": null
+      },
+      "keywords": [
+        "exa",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 78,
+        "text": "EX"
+      },
+      "pluginId": "plugin:claude-official:exa",
+      "primaryCategory": "productivity",
+      "productKey": "exa",
+      "releaseId": "release:b31356b15959ac4dc7a2c3713410adb326a2594766c056066299a56cce51f377",
+      "sourceId": "claude-official",
+      "upstreamName": "exa",
+      "variantPluginIds": [
+        "plugin:claude-official:exa",
+        "plugin:knowledge-work-official:exa"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search meetings and pull transcripts and summaries.",
+      "displayName": "Fathom",
+      "icon": {
+        "asset": "icon-f8b187a02c5c551a706c5427c3cb9ac1.png",
+        "bytes": 7708,
+        "contentType": "image/png",
+        "digest": "sha256:f8b187a02c5c551a706c5427c3cb9ac125cd892ad72a1fc6d656d8b6d5911e2c",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "fathom",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 69,
+        "text": "FA"
+      },
+      "pluginId": "plugin:cursor-official:fathom",
+      "primaryCategory": "productivity",
+      "productKey": "fathom",
+      "releaseId": "release:c94c234bdd5afa9a63f5fb802a04af58fa211699b9f55fc0cc2b6af6c5ea1f5b",
+      "sourceId": "cursor-official",
+      "upstreamName": "fathom",
+      "variantPluginIds": [
+        "plugin:cursor-official:fathom"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 1,
+        "mcp-server": 1,
+        "skill": 3
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Work in your GC AI legal knowledge base from Claude: upload documents, run review playbooks, and ask questions grounded in your own files, all as you.",
+      "displayName": "GC AI",
+      "homepage": "https://docs.gc.ai/api-reference/mcp/overview",
+      "icon": {
+        "asset": "icon-ac6c2eb313b85002cf4b5afb45af984c.png",
+        "bytes": 2236,
+        "contentType": "image/png",
+        "digest": "sha256:ac6c2eb313b85002cf4b5afb45af984c5d2242b2ae3d6d7f8bb9a7cdaaaeeba2",
+        "homepage": "https://docs.gc.ai/api-reference/mcp/overview",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://docs.gc.ai/mintlify-assets/_mintlify/favicons/gcai/XpTjQtvSBPYuCpWI/_generated/favicon/apple-touch-icon.png"
+      },
+      "keywords": [
+        "ai",
+        "gc",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 243,
+        "text": "GA"
+      },
+      "pluginId": "plugin:claude-official:gc-ai",
+      "primaryCategory": "productivity",
+      "productKey": "gc-ai",
+      "releaseId": "release:1e3a1f21bd292b08fcd2a50af0b1764c03100b1d87d2a29b94b46a35ed6df5b4",
+      "sourceId": "claude-official",
+      "upstreamName": "gc-ai",
+      "variantPluginIds": [
+        "plugin:claude-official:gc-ai",
+        "plugin:knowledge-work-official:gc-ai"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1
+      },
+      "categories": [
+        "developer-tools",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Official GitHub MCP server for repository management. Create issues, manage pull requests, review code, search repositories, and interact with GitHub's full API directly from Claude Code.",
+      "displayName": "GitHub",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/github",
+      "icon": {
+        "asset": "icon-5b02d8c41edb37734aa70362506d757f.svg",
+        "bytes": 934,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:5b02d8c41edb37734aa70362506d757f27af89a37ff0975baf3871244305976e",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "developer-tools",
+        "github",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 60,
+        "text": "GI"
+      },
+      "pluginId": "plugin:claude-official:github",
+      "primaryCategory": "developer-tools",
+      "productKey": "github",
+      "releaseId": "release:aaf4d4d2aa95c842821ce5355dd3873b613790f7fe95bed2f6f1fbdf66680620",
+      "sourceId": "claude-official",
+      "upstreamName": "github",
+      "variantPluginIds": [
+        "plugin:claude-official:github",
+        "plugin:cursor-official:github",
+        "plugin:openai-official:github"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "GitLab DevOps platform integration. Manage repositories, merge requests, CI/CD pipelines, issues, and wikis. Full access to GitLab's comprehensive DevOps lifecycle tools.",
+      "displayName": "gitlab",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/gitlab",
+      "icon": null,
+      "keywords": [
+        "gitlab",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 267,
+        "text": "GI"
+      },
+      "pluginId": "plugin:claude-official:gitlab",
+      "primaryCategory": "productivity",
+      "productKey": "gitlab",
+      "releaseId": "release:b1023689b1909e15c1639f7a7b965c0133f67e2d50ce4d5b9c61029227002180",
+      "sourceId": "claude-official",
+      "upstreamName": "gitlab",
+      "variantPluginIds": [
+        "plugin:claude-official:gitlab"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 14,
+        "mcp-server": 1,
+        "skill": 5
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Government contracting research and capture workflows in Claude: opportunity and pipeline briefs, bid/no-bid and competitor analysis, price-to-win and proposal prep, powered by the GovTribe connector.",
+      "displayName": "GovTribe",
+      "homepage": "https://govtribe.com/",
+      "icon": {
+        "asset": "icon-051cc4325f665badcb1c66191970a7ff.png",
+        "bytes": 46151,
+        "contentType": "image/png",
+        "digest": "sha256:051cc4325f665badcb1c66191970a7ff285019f4ffe0e5bdb526acc8bb55f21a",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/govtribe-logo.png",
+        "url": null
+      },
+      "keywords": [
+        "govtribe",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 90,
+        "text": "GO"
+      },
+      "pluginId": "plugin:claude-official:govtribe",
+      "primaryCategory": "productivity",
+      "productKey": "govtribe",
+      "releaseId": "release:a26fe3a387b5be1bcef6d7ba626e18ba7ff769438431422b0bed740a585abac7",
+      "sourceId": "claude-official",
+      "upstreamName": "govtribe",
+      "variantPluginIds": [
+        "plugin:claude-official:govtribe"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Granola MCP connects your meeting history to ChatGPT so your assistant can pull real context from past conversations while you work.\n\nUse MCP when you're already working on something bigger:\n\n-   Writing PRDs or proposals: Pull customer feedback, stakeholder input, and decisions from relevant meetings directly into your draft\n    \n-   Building presentations or reports: Combine insights from multiple conversations with your other research and data\n    \n-   Coding with context: Give your AI the project background, requirements, and technical decisions discussed in planning meetings\n    \n-   Strategic analysis: Merge meeting insights with documents, data, and other sources for comprehensive analysis\n    \nHow it works:\n\nYour AI assistant can search your Granola meetings by topic, person, company, or timeframe - then cite specific conversations in its responses. No more switching tabs to find \"what the customer said\" or \"when we decided that.\"\n\nThe difference:\n\nInstead of copy-pasting meeting notes into prompts, your AI pulls exactly what it needs from your meeting history automatically. You stay focused on the work, not the research or context.",
+      "displayName": "granola",
+      "icon": {
+        "asset": "icon-1360b28dec57099b071790a9d709cc9f.png",
+        "bytes": 18723,
+        "contentType": "image/png",
+        "digest": "sha256:1360b28dec57099b071790a9d709cc9f2c1cc3039c543ae7e39e51b06802bdd0",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "granola",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 54,
+        "text": "GR"
+      },
+      "pluginId": "plugin:openai-official:granola",
+      "primaryCategory": "productivity",
+      "productKey": "granola",
+      "releaseId": "release:dd3c631925d0ceeeb9d0e4e335ce40db90b14e26588b958ec4e8c1df3fcbdfd9",
+      "sourceId": "openai-official",
+      "upstreamName": "granola",
+      "variantPluginIds": [
+        "plugin:openai-official:granola"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 6
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Deal-work workflows powered by Grasp company lookup, table creation, import, buyer, transaction, table enrichment, contact, and market research tools.",
+      "displayName": "Grasp",
+      "homepage": "https://www.grasp-ai.com/",
+      "icon": {
+        "asset": "icon-4e8ff1e39454169d7e0c20c756d2a441.png",
+        "bytes": 2622,
+        "contentType": "image/png",
+        "digest": "sha256:4e8ff1e39454169d7e0c20c756d2a44157946ff2b57974cac6183b9685c979ff",
+        "homepage": "https://www.grasp-ai.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://cdn.prod.website-files.com/62864558fd8bb6eef9d56899/62b9adb62607ee564a6b0c14_App.png"
+      },
+      "keywords": [
+        "grasp",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 348,
+        "text": "GR"
+      },
+      "pluginId": "plugin:knowledge-work-official:grasp",
+      "primaryCategory": "productivity",
+      "productKey": "grasp",
+      "releaseId": "release:15f7d2f39224bb18277b99853529d1ce759b5d41b86d8bf31cdfd65a85b51017",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "grasp",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:grasp"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search company knowledge and draft verified answers.",
+      "displayName": "Guru",
+      "icon": {
+        "asset": "icon-c77819aaa2ec48796134d9830e70f078.png",
+        "bytes": 13274,
+        "contentType": "image/png",
+        "digest": "sha256:c77819aaa2ec48796134d9830e70f0787c7ace3641969d9d37ec86c6aaab39b1",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "guru",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 138,
+        "text": "GU"
+      },
+      "pluginId": "plugin:cursor-official:guru",
+      "primaryCategory": "productivity",
+      "productKey": "guru",
+      "releaseId": "release:8465ec201033afce3d236e90fac88c408559fa490eaff78cca18968384d54ac7",
+      "sourceId": "cursor-official",
+      "upstreamName": "guru",
+      "variantPluginIds": [
+        "plugin:cursor-official:guru"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 1,
+        "command": 4,
+        "executable": 10,
+        "hook": 6,
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Easily create custom hooks to prevent unwanted behaviors by analyzing conversation patterns or from explicit instructions. Define rules via simple markdown files.",
+      "displayName": "hookify",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/hookify",
+      "icon": null,
+      "keywords": [
+        "hookify",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 315,
+        "text": "HO"
+      },
+      "pluginId": "plugin:claude-official:hookify",
+      "primaryCategory": "productivity",
+      "productKey": "hookify",
+      "releaseId": "release:f35c0c25e1f9aa61832bc34d33a50453fd74357f1de0318cc25f081377baf692",
+      "sourceId": "claude-official",
+      "upstreamName": "hookify",
+      "variantPluginIds": [
+        "plugin:claude-official:hookify"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 2,
+        "mcp-server": 1,
+        "skill": 9
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Run your HubSpot sales workflow directly from Claude. Adds skills that cover the full sales day: import contacts and deals into HubSpot, get a prioritised morning brief, prep for any call with full CRM context, draft personalised follow-ups grounded in deal history, log calls and update records by describing what happened, and review your pipeline to surface stalling deals. Everything writes back to HubSpot.",
+      "displayName": "HubSpot Sales",
+      "homepage": "https://www.hubspot.com/",
+      "icon": {
+        "asset": "icon-81ba53ce8917d2e443e5f4b17bbb8239.png",
+        "bytes": 5123,
+        "contentType": "image/png",
+        "digest": "sha256:81ba53ce8917d2e443e5f4b17bbb8239ee7d73e8212008c4299525a0b80caf1a",
+        "homepage": "https://www.hubspot.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.hubspot.com/hubfs/HubSpot_Logos/HubSpot-Inversed-Favicon.png"
+      },
+      "keywords": [
+        "hubspot",
+        "productivity",
+        "sales"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 351,
+        "text": "HS"
+      },
+      "pluginId": "plugin:claude-official:hubspot-sales",
+      "primaryCategory": "productivity",
+      "productKey": "hubspot-sales",
+      "releaseId": "release:0916c80a240994bf16c9435aeb2c0364fe7691edde6598a743cd3bbf321fe8f8",
+      "sourceId": "claude-official",
+      "upstreamName": "hubspot-sales",
+      "variantPluginIds": [
+        "plugin:claude-official:hubspot-sales",
+        "plugin:knowledge-work-official:hubspot-sales"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 13
+      },
+      "categories": [
+        "business-operations",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Find and verify professional email addresses, search contacts by domain, and enrich company data -- directly in Claude.",
+      "displayName": "Hunter",
+      "homepage": "https://hunter.io/",
+      "icon": {
+        "asset": "icon-fd9330e31552eeaa12b177489943de99.png",
+        "bytes": 2851,
+        "contentType": "image/png",
+        "digest": "sha256:fd9330e31552eeaa12b177489943de997551bfd991c4c44e8c3d572e78aea5f3",
+        "homepage": "https://hunter.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://hunter.io/assets/touch-icon-iphone-BHR1wsDV.png"
+      },
+      "keywords": [
+        "business-operations",
+        "hunter",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 66,
+        "text": "HU"
+      },
+      "pluginId": "plugin:claude-official:hunter",
+      "primaryCategory": "business-operations",
+      "productKey": "hunter",
+      "releaseId": "release:259df3b6a3a7503fc14672ee73dded1495a293bae312eab6736045408972d76c",
+      "sourceId": "claude-official",
+      "upstreamName": "hunter",
+      "variantPluginIds": [
+        "plugin:claude-official:hunter",
+        "plugin:cursor-official:hunter"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "iMessage messaging bridge with built-in access control. Reads chat.db directly, sends via AppleScript. Manage pairing, allowlists, and policy via /imessage:access.",
+      "displayName": "imessage",
+      "icon": null,
+      "keywords": [
+        "imessage",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 6,
+        "text": "IM"
+      },
+      "pluginId": "plugin:claude-official:imessage",
+      "primaryCategory": "productivity",
+      "productKey": "imessage",
+      "releaseId": "release:7e84feff98e128d335ff1558cea33538263eacca8fbba1c25c55f53a846205e6",
+      "sourceId": "claude-official",
+      "upstreamName": "imessage",
+      "variantPluginIds": [
+        "plugin:claude-official:imessage"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "rule": 1,
+        "skill": 4
+      },
+      "categories": [
+        "communication",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Intercom integration for Claude Code. Search conversations, analyze customer support patterns, look up contacts and companies, and install the Intercom Messenger. Connect your Intercom workspace to get real-time insights from customer data.",
+      "displayName": "Intercom",
+      "homepage": "https://github.com/intercom/claude-plugin-external",
+      "icon": {
+        "asset": "icon-45836f3ea3e572ef6430323feb98876b.svg",
+        "bytes": 1134,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:45836f3ea3e572ef6430323feb98876b5f8a893a6ce264d7bf2a83b7fb29fd43",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "intercom",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 102,
+        "text": "IN"
+      },
+      "pluginId": "plugin:claude-official:intercom",
+      "primaryCategory": "communication",
+      "productKey": "intercom",
+      "releaseId": "release:74eb163cf63a11804a1c2975f653ad7780aa10fc340e02c06508289ae1fd1414",
+      "sourceId": "claude-official",
+      "upstreamName": "intercom",
+      "variantPluginIds": [
+        "plugin:claude-official:intercom",
+        "plugin:cursor-official:intercom",
+        "plugin:knowledge-work-official:intercom"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 10
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "QuickBooks business insights and actions: financial health briefings across P&L, cash flow, balance sheet and A/R, industry benchmarking, payroll cost analysis, overdue-invoice reminders, estimate/invoice drafting from email, payroll onboarding and base-pay changes (with confirmation), and QuickBooks Capital lending guidance. Requires the Intuit QuickBooks connector.",
+      "displayName": "Intuit QuickBooks",
+      "homepage": "https://github.com/intuit/quickbooks-claude-plugin",
+      "icon": null,
+      "keywords": [
+        "intuit",
+        "productivity",
+        "quickbooks"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 297,
+        "text": "IQ"
+      },
+      "pluginId": "plugin:claude-official:intuit-quickbooks",
+      "primaryCategory": "finance",
+      "productKey": "intuit-quickbooks",
+      "releaseId": "release:0abcad214edeb5e29a1aa90ef244b13822f542b98a8a811d1b3bb6319bc5fe20",
+      "sourceId": "claude-official",
+      "upstreamName": "intuit-quickbooks",
+      "variantPluginIds": [
+        "plugin:claude-official:intuit-quickbooks",
+        "plugin:knowledge-work-official:intuit-quickbooks"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Create and edit forms, then read submissions.",
+      "displayName": "Jotform",
+      "icon": {
+        "asset": "icon-08716d4588ef5e0d85e24a0601acbb9d.png",
+        "bytes": 7175,
+        "contentType": "image/png",
+        "digest": "sha256:08716d4588ef5e0d85e24a0601acbb9dea421c00749ae7dde347dc174a938123",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "jotform",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 156,
+        "text": "JO"
+      },
+      "pluginId": "plugin:cursor-official:jotform",
+      "primaryCategory": "productivity",
+      "productKey": "jotform",
+      "releaseId": "release:ee50911bbba85f39190a02f73bb550f61ce402b354bad5e08e9005953eebd94a",
+      "sourceId": "cursor-official",
+      "upstreamName": "jotform",
+      "variantPluginIds": [
+        "plugin:cursor-official:jotform"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 6
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Turn website visitor signals into pipeline with Leadfeeder: daily visitor briefs, visitor company research, buyer and contact discovery, personalised outreach drafts, and adding companies to your Leadfeeder lists, via the Leadfeeder connector. Requires a Leadfeeder account.",
+      "displayName": "Leadfeeder",
+      "homepage": "https://www.leadfeeder.com/",
+      "icon": {
+        "asset": "icon-644d96a89c7eea8ad87cb6e64e2c09c3.svg",
+        "bytes": 1234,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:644d96a89c7eea8ad87cb6e64e2c09c3f484a6b5a847c2376fd7988b834096ec",
+        "homepage": "https://www.leadfeeder.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.leadfeeder.com/favicon.svg"
+      },
+      "keywords": [
+        "leadfeeder",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 9,
+        "text": "LE"
+      },
+      "pluginId": "plugin:claude-official:leadfeeder",
+      "primaryCategory": "productivity",
+      "productKey": "leadfeeder",
+      "releaseId": "release:b3ee7849ef591e36a61b7a63bf1860619cc43fedd2e15dd72543d14cb32382e4",
+      "sourceId": "claude-official",
+      "upstreamName": "leadfeeder",
+      "variantPluginIds": [
+        "plugin:claude-official:leadfeeder",
+        "plugin:knowledge-work-official:leadfeeder"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Linear issue tracking integration. Create issues, manage projects, update statuses, search across workspaces, and streamline your software development workflow with Linear's modern issue tracker.",
+      "displayName": "linear",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/linear",
+      "icon": {
+        "asset": "icon-6699a52fa24d4b802674d0178fd2c4ab.svg",
+        "bytes": 7589,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:6699a52fa24d4b802674d0178fd2c4aba9db3a80dde33c7dea9ef963fa96a3ab",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "linear",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 159,
+        "text": "LI"
+      },
+      "pluginId": "plugin:claude-official:linear",
+      "primaryCategory": "productivity",
+      "productKey": "linear",
+      "releaseId": "release:b59fb2d36a1e26bd9c9cab98cbd4a87c453b48e8fd8c5ee3eaaae3efb8248006",
+      "sourceId": "claude-official",
+      "upstreamName": "linear",
+      "variantPluginIds": [
+        "plugin:claude-official:linear",
+        "plugin:openai-official:linear"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 3
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "LinqAlpha financial research in Claude: guided setup for the LinqAlpha connector, capability-based source selection for fundamentals, estimates, transcripts, filings and market data, and an optional, opt-in default-source preference you can remove at any time. Requires a LinqAlpha account.",
+      "displayName": "LinqAlpha",
+      "homepage": "https://www.linqalpha.com/",
+      "icon": {
+        "asset": "icon-e5a8b846e1146fbd3c821240cfdb5b13.png",
+        "bytes": 955,
+        "contentType": "image/png",
+        "digest": "sha256:e5a8b846e1146fbd3c821240cfdb5b137b007cc7f43c04dfe8d15e5298e915b1",
+        "homepage": "https://www.linqalpha.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://framerusercontent.com/images/AbwTwD2ZqryPaCk08RsFBFmCmuk.png"
+      },
+      "keywords": [
+        "alpha",
+        "linq",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 129,
+        "text": "LI"
+      },
+      "pluginId": "plugin:claude-official:linq-alpha",
+      "primaryCategory": "productivity",
+      "productKey": "linq-alpha",
+      "releaseId": "release:a4403325d6bac2e810fd7afe863e1967ebe0757f60703f7cbf061f6580f16f3b",
+      "sourceId": "claude-official",
+      "upstreamName": "linq-alpha",
+      "variantPluginIds": [
+        "plugin:claude-official:linq-alpha"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 6
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Prospect, enrich, and build call-ready lead lists using Lusha's B2B intelligence platform — verified phone numbers, company signals, and lookalike targeting.",
+      "displayName": "Lusha",
+      "homepage": "https://www.lusha.com/",
+      "icon": {
+        "asset": "icon-23151d750f4d8d24d1e0bf5762d1fb59.png",
+        "bytes": 1369,
+        "contentType": "image/png",
+        "digest": "sha256:23151d750f4d8d24d1e0bf5762d1fb5964006ab1487c8fe293bebd4b9442fb1e",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "lusha",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 348,
+        "text": "LU"
+      },
+      "pluginId": "plugin:claude-official:lusha",
+      "primaryCategory": "productivity",
+      "productKey": "lusha",
+      "releaseId": "release:9c59e589619d9631a88ed967139b4c34af5af0d90f9e87b8f0463d9913f4a8ff",
+      "sourceId": "claude-official",
+      "upstreamName": "lusha",
+      "variantPluginIds": [
+        "plugin:claude-official:lusha",
+        "plugin:knowledge-work-official:lusha"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "agent": 1,
+        "mcp-server": 2,
+        "skill": 16
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Evidence-backed BioPharma research workflows over Maven Bio's drug, trial, company, and deal knowledge graph. Skills for competitive pipelines, indication landscapes, asset profiles, deal and financing activity, and evidence synthesis grounded in FDA, SEC, clinical, and press sources. Requires a Maven Bio account.",
+      "displayName": "Maven Bio",
+      "homepage": "https://mavenbio.com/mcp/docs",
+      "icon": {
+        "asset": "icon-b672bf8a5081b053a1ea154926e3bc62.png",
+        "bytes": 4764,
+        "contentType": "image/png",
+        "digest": "sha256:b672bf8a5081b053a1ea154926e3bc621a73be4ee0fabb4baaf7e2e2c517a6d4",
+        "homepage": "https://mavenbio.com/mcp/docs",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://mavenbio.com/icons/apple-icon.png"
+      },
+      "keywords": [
+        "bio",
+        "maven",
+        "productivity"
+      ],
+      "license": "LicenseRef-Proprietary",
+      "monogram": {
+        "hue": 294,
+        "text": "MB"
+      },
+      "pluginId": "plugin:knowledge-work-official:maven-bio",
+      "primaryCategory": "productivity",
+      "productKey": "maven-bio",
+      "releaseId": "release:c13c7b51f82cd408a27101884360a2a33f2a5e643d760bb2a930254d784049ba",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "maven-bio",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:maven-bio"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Capture, search, and organize notes and collections.",
+      "displayName": "Mem",
+      "icon": {
+        "asset": "icon-a37ee2e55f58a8ced92b74fe438fb3c5.png",
+        "bytes": 4641,
+        "contentType": "image/png",
+        "digest": "sha256:a37ee2e55f58a8ced92b74fe438fb3c5cb4d9b4bb636352b280a678947412582",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "mem",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 126,
+        "text": "ME"
+      },
+      "pluginId": "plugin:cursor-official:mem",
+      "primaryCategory": "productivity",
+      "productKey": "mem",
+      "releaseId": "release:b9bcf1dc7791b91436479c1199888e03b9d56d412d0b23e01198c274c65b0bad",
+      "sourceId": "cursor-official",
+      "upstreamName": "mem",
+      "variantPluginIds": [
+        "plugin:cursor-official:mem"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 5
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "The official monday.com plugin for Claude Cowork. Manage boards, items, docs, and forms across work management, CRM, dev, service, and campaigns. Full read and write access via OAuth.",
+      "displayName": "monday.com",
+      "homepage": "https://monday.com/",
+      "icon": {
+        "asset": "icon-03c5839ffc8eaec1759f3ce99e329d1c.png",
+        "bytes": 4373,
+        "contentType": "image/png",
+        "digest": "sha256:03c5839ffc8eaec1759f3ce99e329d1cb52e8de5e9cff1e0f0e779fe604c6c08",
+        "homepage": "https://monday.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://cdn.prod.website-files.com/656da6fea306219773d04208/65af6bd6e742d497b5f23f69_645898132bbaac20f1963919_256x256.png"
+      },
+      "keywords": [
+        "com",
+        "monday",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 309,
+        "text": "MC"
+      },
+      "pluginId": "plugin:knowledge-work-official:monday-com",
+      "primaryCategory": "productivity",
+      "productKey": "monday-com",
+      "releaseId": "release:bc5748d18804c6ed922d42e049e14e58ae6aef9b4ff3140019cb7141ffc5b600",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "monday-com",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:monday-com",
+        "plugin:openai-official:monday-com"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 9
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Run your monday CRM in plain language. Build a pipeline from scratch, start the day with a ranked deal briefing, spin up a forecast dashboard, audit board health, clean up messy data in bulk, and turn meeting notes into deal updates. Every skill writes back into monday as a real update, doc, or dashboard. Built on the official monday MCP connector.",
+      "displayName": "monday CRM",
+      "homepage": "https://monday.com/",
+      "icon": {
+        "asset": "icon-03c5839ffc8eaec1759f3ce99e329d1c.png",
+        "bytes": 4373,
+        "contentType": "image/png",
+        "digest": "sha256:03c5839ffc8eaec1759f3ce99e329d1cb52e8de5e9cff1e0f0e779fe604c6c08",
+        "homepage": "https://monday.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://cdn.prod.website-files.com/656da6fea306219773d04208/65af6bd6e742d497b5f23f69_645898132bbaac20f1963919_256x256.png"
+      },
+      "keywords": [
+        "crm",
+        "monday",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 42,
+        "text": "MC"
+      },
+      "pluginId": "plugin:claude-official:monday-crm",
+      "primaryCategory": "productivity",
+      "productKey": "monday-crm",
+      "releaseId": "release:cfacd3e14c9862946c212c6f0d1fb77e40aa5ddcba49e2c136f239de43fde56f",
+      "sourceId": "claude-official",
+      "upstreamName": "monday-crm",
+      "variantPluginIds": [
+        "plugin:claude-official:monday-crm",
+        "plugin:knowledge-work-official:monday-crm"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Guides AI assistants that use the NetSuite AI Connector: tool-selection order, output formatting, NetSuite domain knowledge, multi-subsidiary and currency handling, and SuiteQL safety guardrails. Requires the NetSuite AI Connector Service.",
+      "displayName": "NetSuite AI Companion",
+      "homepage": "https://github.com/oracle/netsuite-suitecloud-sdk/tree/ai-plugins-dist/anthropic/netsuite-ai-companion",
+      "icon": null,
+      "keywords": [
+        "ai",
+        "companion",
+        "netsuite",
+        "productivity"
+      ],
+      "license": "The Universal Permissive License (UPL), Version 1.0",
+      "monogram": {
+        "hue": 234,
+        "text": "NA"
+      },
+      "pluginId": "plugin:claude-official:netsuite-ai-companion",
+      "primaryCategory": "productivity",
+      "productKey": "netsuite-ai-companion",
+      "releaseId": "release:827bcb98c304c7a5fc321d104857e332d98cf8f2fb2b922165b9316c329fd4db",
+      "sourceId": "claude-official",
+      "upstreamName": "netsuite-ai-companion",
+      "variantPluginIds": [
+        "plugin:claude-official:netsuite-ai-companion",
+        "plugin:knowledge-work-official:netsuite-ai-companion"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Director-level finance analysis on live NetSuite data: financial reporting, period close, variance, aging and reconciliation reviews, cash reporting, and board-ready narratives with next actions. Requires the NetSuite AI Connector Service.",
+      "displayName": "NetSuite Finance Analyst",
+      "homepage": "https://github.com/oracle/netsuite-suitecloud-sdk/tree/ai-plugins-dist/anthropic/netsuite-finance-analyst",
+      "icon": null,
+      "keywords": [
+        "analyst",
+        "finance",
+        "netsuite",
+        "productivity"
+      ],
+      "license": "The Universal Permissive License (UPL), Version 1.0",
+      "monogram": {
+        "hue": 303,
+        "text": "NF"
+      },
+      "pluginId": "plugin:claude-official:netsuite-finance-analyst",
+      "primaryCategory": "productivity",
+      "productKey": "netsuite-finance-analyst",
+      "releaseId": "release:b971f081280459296e6f1829f2a0d6d2afb61cf3c740232e64d03b5c5f8c2781",
+      "sourceId": "claude-official",
+      "upstreamName": "netsuite-finance-analyst",
+      "variantPluginIds": [
+        "plugin:claude-official:netsuite-finance-analyst",
+        "plugin:knowledge-work-official:netsuite-finance-analyst"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Browse, search, and read Microsoft OneDrive files.",
+      "displayName": "OneDrive",
+      "icon": {
+        "asset": "icon-cec3aadecf96ec8089a603e81ac8c542.svg",
+        "bytes": 755,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:cec3aadecf96ec8089a603e81ac8c5425cac0d764bb6bb8a80989436bf4db1c1",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "onedrive",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 54,
+        "text": "ON"
+      },
+      "pluginId": "plugin:cursor-official:onedrive",
+      "primaryCategory": "productivity",
+      "productKey": "onedrive",
+      "releaseId": "release:0a9bb86d196d88108c650fdaca237e3b6b28b56e9d6cfba3092589e1552ac9e7",
+      "sourceId": "cursor-official",
+      "upstreamName": "onedrive",
+      "variantPluginIds": [
+        "plugin:cursor-official:onedrive"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Fan large tasks out across parallel cloud agents with planners, workers, verifiers, and structured handoffs.",
+      "displayName": "Orchestrate",
+      "icon": {
+        "asset": "icon-a2354ec78a719ab20749d4aefe0278c6.png",
+        "bytes": 68126,
+        "contentType": "image/png",
+        "digest": "sha256:a2354ec78a719ab20749d4aefe0278c631a754b18e991cfaa71679242d10c33b",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/avatar.png",
+        "url": null
+      },
+      "keywords": [
+        "orchestrate",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 318,
+        "text": "OR"
+      },
+      "pluginId": "plugin:cursor-official:orchestrate",
+      "primaryCategory": "productivity",
+      "productKey": "orchestrate",
+      "releaseId": "release:367f655536c88ddae7ebaa38fee8ee04e235caf16766b421cca03256333dce1b",
+      "sourceId": "cursor-official",
+      "upstreamName": "orchestrate",
+      "variantPluginIds": [
+        "plugin:cursor-official:orchestrate"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "communication",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "List, create, update, and cancel Microsoft Outlook calendar events.",
+      "displayName": "Outlook Calendar",
+      "icon": {
+        "asset": "icon-67c88e5b24ca41f8d9981e3468475c26.svg",
+        "bytes": 877,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:67c88e5b24ca41f8d9981e3468475c2617fbd19a0dc32d6aadae81b140d16cfb",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "calendar",
+        "communication",
+        "outlook"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 336,
+        "text": "OC"
+      },
+      "pluginId": "plugin:cursor-official:outlook-calendar",
+      "primaryCategory": "communication",
+      "productKey": "outlook-calendar",
+      "releaseId": "release:ee643f1f3bb19c22fcedc341365ff6ada7c9c5050ba50dc0678086d036126f03",
+      "sourceId": "cursor-official",
+      "upstreamName": "outlook-calendar",
+      "variantPluginIds": [
+        "plugin:cursor-official:outlook-calendar",
+        "plugin:openai-official:outlook-calendar"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "command": 4,
+        "mcp-server": 1,
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "View, annotate, and sign PDFs in a live interactive viewer. Mark up contracts, fill forms with visual feedback, stamp approvals, and place signatures — then download the annotated copy.",
+      "displayName": "PDF Viewer",
+      "icon": null,
+      "keywords": [
+        "pdf",
+        "productivity",
+        "viewer"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 237,
+        "text": "PV"
+      },
+      "pluginId": "plugin:knowledge-work-official:pdf-viewer",
+      "primaryCategory": "productivity",
+      "productKey": "pdf-viewer",
+      "releaseId": "release:5b31c9ab3ce37d47d78d825cbd45bd5cd72d4cc5497e56b2de8dcea9ec4a36a5",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "pdf-viewer",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:pdf-viewer"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 5
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Bring Pendo product analytics into Claude Code: account health, feature adoption, session replay lookup and triage, feedback analysis, and data-informed planning grounded in real usage data. Requires the Pendo connector and a Pendo subscription.",
+      "displayName": "Pendo Analytics",
+      "homepage": "https://github.com/pendo-io/claude-pendo-plugin/tree/main/plugins/pendo-analytics",
+      "icon": {
+        "asset": "icon-891addb081afe5aa144a855067114bd0.png",
+        "bytes": 3340,
+        "contentType": "image/png",
+        "digest": "sha256:891addb081afe5aa144a855067114bd057aca8b7a86e905c62b2bfe6dbb83777",
+        "homepage": "https://www.pendo.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.pendo.io/apple-touch-icon.png"
+      },
+      "keywords": [
+        "analytics",
+        "pendo",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 351,
+        "text": "PA"
+      },
+      "pluginId": "plugin:claude-official:pendo-analytics",
+      "primaryCategory": "productivity",
+      "productKey": "pendo-analytics",
+      "releaseId": "release:20d3ce65c4291b512c9cd29a0072383ba782af2cbd17431201f147cf09cba491",
+      "sourceId": "claude-official",
+      "upstreamName": "pendo-analytics",
+      "variantPluginIds": [
+        "plugin:claude-official:pendo-analytics",
+        "plugin:knowledge-work-official:pendo-analytics"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 1,
+        "ui-component": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Create production-ready Pendo in-app guides (walkthroughs, announcements, alerts, polls, promotions) as HTML/CSS/JS from a short intake conversation, using Pendo's guide components.",
+      "displayName": "Pendo Guides",
+      "homepage": "https://github.com/pendo-io/claude-pendo-plugin/tree/main/plugins/pendo-guides",
+      "icon": {
+        "asset": "icon-891addb081afe5aa144a855067114bd0.png",
+        "bytes": 3340,
+        "contentType": "image/png",
+        "digest": "sha256:891addb081afe5aa144a855067114bd057aca8b7a86e905c62b2bfe6dbb83777",
+        "homepage": "https://www.pendo.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.pendo.io/apple-touch-icon.png"
+      },
+      "keywords": [
+        "guides",
+        "pendo",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 234,
+        "text": "PG"
+      },
+      "pluginId": "plugin:claude-official:pendo-guides",
+      "primaryCategory": "productivity",
+      "productKey": "pendo-guides",
+      "releaseId": "release:7a8851c6462284f3d7073f78da91ddc3128a95747c108893eb13fdb6bb2d1c5a",
+      "sourceId": "claude-official",
+      "upstreamName": "pendo-guides",
+      "variantPluginIds": [
+        "plugin:claude-official:pendo-guides",
+        "plugin:knowledge-work-official:pendo-guides"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Create, configure and edit draft Pendo Orchestrate email journeys, including multi-email and conditional split flows, via the Pendo connector. Journeys stay in draft; activation happens in the Orchestrate UI.",
+      "displayName": "Pendo Orchestrate",
+      "homepage": "https://github.com/pendo-io/claude-pendo-plugin/tree/main/plugins/pendo-orchestrate",
+      "icon": {
+        "asset": "icon-891addb081afe5aa144a855067114bd0.png",
+        "bytes": 3340,
+        "contentType": "image/png",
+        "digest": "sha256:891addb081afe5aa144a855067114bd057aca8b7a86e905c62b2bfe6dbb83777",
+        "homepage": "https://www.pendo.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.pendo.io/apple-touch-icon.png"
+      },
+      "keywords": [
+        "orchestrate",
+        "pendo",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 357,
+        "text": "PO"
+      },
+      "pluginId": "plugin:claude-official:pendo-orchestrate",
+      "primaryCategory": "productivity",
+      "productKey": "pendo-orchestrate",
+      "releaseId": "release:28fd9d439d653045ba417f10b66226a059cb0f878a1614a0da93524914d0c5ee",
+      "sourceId": "claude-official",
+      "upstreamName": "pendo-orchestrate",
+      "variantPluginIds": [
+        "plugin:claude-official:pendo-orchestrate",
+        "plugin:knowledge-work-official:pendo-orchestrate"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 12
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Analyze business data and build custom Pigment models, metrics, and boards through natural language.",
+      "displayName": "pigment",
+      "homepage": "https://www.pigment.com/",
+      "icon": {
+        "asset": "icon-290288c59b0698367b53c9693562514d.svg",
+        "bytes": 894,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:290288c59b0698367b53c9693562514d8eb4088b919877cc6494ee477b49b4b4",
+        "homepage": null,
+        "kind": "content",
+        "path": "logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "pigment",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 156,
+        "text": "PI"
+      },
+      "pluginId": "plugin:claude-official:pigment",
+      "primaryCategory": "productivity",
+      "productKey": "pigment",
+      "releaseId": "release:06751d7cbda325b7024ed81f7d8f027c973baf9541c9d2ed5fc3bff3d7733946",
+      "sourceId": "claude-official",
+      "upstreamName": "pigment",
+      "variantPluginIds": [
+        "plugin:claude-official:pigment"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 6,
+        "command": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Comprehensive PR review agents specializing in comments, tests, error handling, type design, code quality, and code simplification",
+      "displayName": "pr-review-toolkit",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/pr-review-toolkit",
+      "icon": null,
+      "keywords": [
+        "pr",
+        "productivity",
+        "review",
+        "toolkit"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 102,
+        "text": "PR"
+      },
+      "pluginId": "plugin:claude-official:pr-review-toolkit",
+      "primaryCategory": "productivity",
+      "productKey": "pr-review-toolkit",
+      "releaseId": "release:73319da446614c26cf17638b17296c05ee9b62d6021c5f1555b9f3894c9adfed",
+      "sourceId": "claude-official",
+      "upstreamName": "pr-review-toolkit",
+      "variantPluginIds": [
+        "plugin:claude-official:pr-review-toolkit"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 4
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Manage tasks, plan your day, and build up memory of important context about your work. Syncs with your calendar, email, and chat to keep everything organized and on track.",
+      "displayName": "Productivity",
+      "icon": null,
+      "keywords": [
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 108,
+        "text": "PR"
+      },
+      "pluginId": "plugin:knowledge-work-official:productivity",
+      "primaryCategory": "productivity",
+      "productKey": "productivity",
+      "releaseId": "release:69c529a5ce62c0ddd998e65340aeded4c58a0f8e48a6630e31c41579f26b0159",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "productivity",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:productivity"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Generate and publish a living project status page — overview & success criteria, the workstream sequence, and next steps — as a shareable claude.ai artifact backed by a per-project config, so refreshes re-gather live state, redeploy the same URL, and report only the delta.",
+      "displayName": "project-artifact",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/project-artifact",
+      "icon": null,
+      "keywords": [
+        "artifact",
+        "productivity",
+        "project"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 270,
+        "text": "PA"
+      },
+      "pluginId": "plugin:claude-official:project-artifact",
+      "primaryCategory": "productivity",
+      "productKey": "project-artifact",
+      "releaseId": "release:97c7e21bd909bb250dfa397b8513406127f40d5b27a19a030aa702229a5ab0f5",
+      "sourceId": "claude-official",
+      "upstreamName": "project-artifact",
+      "variantPluginIds": [
+        "plugin:claude-official:project-artifact"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "A personal Claude Code impact report for justifying your usage to a manager or a self-review: what you shipped, which projects it went to, and each project's share of your usage. Reads your ~/.claude/projects transcripts and runs read-only git locally; only counts and project names are sent to write it up, and the report stays on your machine.",
+      "displayName": "receipts",
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/receipts",
+      "icon": null,
+      "keywords": [
+        "productivity",
+        "receipts"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 237,
+        "text": "RE"
+      },
+      "pluginId": "plugin:claude-official:receipts",
+      "primaryCategory": "productivity",
+      "productKey": "receipts",
+      "releaseId": "release:a7473d19993f4471b437c9ab505063c0635eb8f55ad7bf5c0c131e51245f943c",
+      "sourceId": "claude-official",
+      "upstreamName": "receipts",
+      "variantPluginIds": [
+        "plugin:claude-official:receipts"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "command": 1,
+        "executable": 262,
+        "hook": 3,
+        "rule": 1,
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Continuous memory for Claude Code. Extracts, summarizes, and compresses conversations into tiered daily logs. Claude remembers what you did yesterday.",
+      "displayName": "remember",
+      "homepage": "https://github.com/Digital-Process-Tools/claude-remember",
+      "icon": null,
+      "keywords": [
+        "productivity",
+        "remember"
+      ],
+      "license": "Community License",
+      "monogram": {
+        "hue": 294,
+        "text": "RE"
+      },
+      "pluginId": "plugin:claude-official:remember",
+      "primaryCategory": "productivity",
+      "productKey": "remember",
+      "releaseId": "release:3e35d23bdbe392b5353f6308f3ef57077a97b003b20ccc22b6881f0df5546805",
+      "sourceId": "claude-official",
+      "upstreamName": "remember",
+      "variantPluginIds": [
+        "plugin:claude-official:remember"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Create polished audio episodes with TTS narration, rich timelines, cover images, and save them to Spotify via the save-to-spotify CLI.",
+      "displayName": "save-to-spotify",
+      "homepage": "https://github.com/spotify/save-to-spotify",
+      "icon": null,
+      "keywords": [
+        "productivity",
+        "save",
+        "spotify",
+        "to"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 0,
+        "text": "ST"
+      },
+      "pluginId": "plugin:claude-official:save-to-spotify",
+      "primaryCategory": "productivity",
+      "productKey": "save-to-spotify",
+      "releaseId": "release:bf09fdce9f4dc37c786aa85afcca09d2848e2c531970af13b0e11a9d446f4284",
+      "sourceId": "claude-official",
+      "upstreamName": "save-to-spotify",
+      "variantPluginIds": [
+        "plugin:claude-official:save-to-spotify"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Generate an explorable HTML report of Claude Code session usage — tokens, cache efficiency, subagents, skills, and the most expensive prompts — from local ~/.claude/projects transcripts.",
+      "displayName": "session-report",
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/session-report",
+      "icon": null,
+      "keywords": [
+        "productivity",
+        "report",
+        "session"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 195,
+        "text": "SR"
+      },
+      "pluginId": "plugin:claude-official:session-report",
+      "primaryCategory": "productivity",
+      "productKey": "session-report",
+      "releaseId": "release:1de276382fb6d8e7c7848415fafc4ccc1ba3e6034630ce513edc0a25468f14fe",
+      "sourceId": "claude-official",
+      "upstreamName": "session-report",
+      "variantPluginIds": [
+        "plugin:claude-official:session-report"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "other",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search and read Microsoft SharePoint sites, document libraries, files, and lists.",
+      "displayName": "SharePoint",
+      "icon": {
+        "asset": "icon-443fc6d5a3963757be94c5c601a40f09.svg",
+        "bytes": 2416,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:443fc6d5a3963757be94c5c601a40f09a4a2ebdfa642044f2269642907c76c60",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "other",
+        "sharepoint"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 99,
+        "text": "SH"
+      },
+      "pluginId": "plugin:cursor-official:sharepoint",
+      "primaryCategory": "other",
+      "productKey": "sharepoint",
+      "releaseId": "release:c1e475b878fd87b172c7e4c0117d0783b2613aef258d86d91e1e6bec5a0adcc0",
+      "sourceId": "cursor-official",
+      "upstreamName": "sharepoint",
+      "variantPluginIds": [
+        "plugin:cursor-official:sharepoint",
+        "plugin:openai-official:sharepoint"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 9
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Shippo connects you to USPS, UPS, FedEx, DHL, and 40+ carriers, so you can handle a shipment end to end right inside Claude. Compare live rates and pick the cheapest or best option, buy and print labels (domestic and international, with customs declarations), validate and standardize addresses, and track packages across carriers. Just ask in plain language: rate-shop a parcel, buy the right label, check a delivery status, or confirm an address before you ship. Whether you run a store or just need to send a package, Shippo turns a pile of carrier accounts into one simple conversation.",
+      "displayName": "shippo",
+      "homepage": "https://docs.goshippo.com/",
+      "icon": {
+        "asset": "icon-2d5fd45996a8ebfe9ae321454bcafd84.png",
+        "bytes": 4051,
+        "contentType": "image/png",
+        "digest": "sha256:2d5fd45996a8ebfe9ae321454bcafd8439c36ebae280c0a48d6dbb894d06519f",
+        "homepage": "https://docs.goshippo.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://docs.goshippo.com/mintlify-assets/_mintlify/favicons/shippo-f4b7b609/gcyqE9-1OT8BeY1o/_generated/favicon/apple-touch-icon.png"
+      },
+      "keywords": [
+        "productivity",
+        "shippo"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 333,
+        "text": "SH"
+      },
+      "pluginId": "plugin:claude-official:shippo",
+      "primaryCategory": "productivity",
+      "productKey": "shippo",
+      "releaseId": "release:aa705b92006297bba2aa9f2296f36d7262f6f15baaae1610b40c094d14ae1279",
+      "sourceId": "claude-official",
+      "upstreamName": "shippo",
+      "variantPluginIds": [
+        "plugin:claude-official:shippo"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "command": 5,
+        "executable": 17,
+        "mcp-server": 1,
+        "rule": 2,
+        "skill": 8
+      },
+      "categories": [
+        "communication",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Slack workspace integration. Search messages, access channels, read threads, and stay connected with your team's communications while coding. Find relevant discussions and context quickly.",
+      "displayName": "slack",
+      "homepage": "https://github.com/slackapi/slack-mcp-plugin/tree/main",
+      "icon": {
+        "asset": "icon-22860d9a3bdf29402f53345ae9bc8ee0.png",
+        "bytes": 23428,
+        "contentType": "image/png",
+        "digest": "sha256:22860d9a3bdf29402f53345ae9bc8ee0cd057c652eda418ef8433ff0c363fb02",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "productivity",
+        "slack"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 33,
+        "text": "SL"
+      },
+      "pluginId": "plugin:claude-official:slack",
+      "primaryCategory": "communication",
+      "productKey": "slack",
+      "releaseId": "release:48e09694217b103bda4d91a6f9ef83268bde8d269865249c3067d38be109f5cd",
+      "sourceId": "claude-official",
+      "upstreamName": "slack",
+      "variantPluginIds": [
+        "plugin:claude-official:slack",
+        "plugin:openai-official:slack"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 5,
+        "command": 1,
+        "executable": 11,
+        "hook": 5,
+        "rule": 2,
+        "skill": 19
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Manage Spotify ad campaigns with natural language. Create campaigns, ad sets, ads, pull reports, and handle OAuth — all through conversation.",
+      "displayName": "spotify-ads-api",
+      "homepage": "https://github.com/spotify/ads-claude-plugin",
+      "icon": null,
+      "keywords": [
+        "ads",
+        "api",
+        "productivity",
+        "spotify"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 195,
+        "text": "SA"
+      },
+      "pluginId": "plugin:claude-official:spotify-ads-api",
+      "primaryCategory": "productivity",
+      "productKey": "spotify-ads-api",
+      "releaseId": "release:83ca2cce498eccf4ddb5cb927788d4b3816d238033486028787b21216a675c8d",
+      "sourceId": "claude-official",
+      "upstreamName": "spotify-ads-api",
+      "variantPluginIds": [
+        "plugin:claude-official:spotify-ads-api"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Telegram messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /telegram:access.",
+      "displayName": "telegram",
+      "icon": null,
+      "keywords": [
+        "productivity",
+        "telegram"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 9,
+        "text": "TE"
+      },
+      "pluginId": "plugin:claude-official:telegram",
+      "primaryCategory": "productivity",
+      "productKey": "telegram",
+      "releaseId": "release:1ef9edda14d879d4b2f9605212610bf3d9fdaa4d726c0ab548a55e6e6274399b",
+      "sourceId": "claude-official",
+      "upstreamName": "telegram",
+      "variantPluginIds": [
+        "plugin:claude-official:telegram"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Build forms, analyze responses, and manage contacts.",
+      "displayName": "Typeform",
+      "icon": {
+        "asset": "icon-3b021902340db0fb62f6deaba5508baf.png",
+        "bytes": 3846,
+        "contentType": "image/png",
+        "digest": "sha256:3b021902340db0fb62f6deaba5508baff912ac7492d59684fae62347a0ccd263",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "productivity",
+        "typeform"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 303,
+        "text": "TY"
+      },
+      "pluginId": "plugin:cursor-official:typeform",
+      "primaryCategory": "productivity",
+      "productKey": "typeform",
+      "releaseId": "release:3f89940ec282188ac14d06f178203b0e96f4f257b8f36d8ec331ea04c306fb8a",
+      "sourceId": "cursor-official",
+      "upstreamName": "typeform",
+      "variantPluginIds": [
+        "plugin:cursor-official:typeform"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 5
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect sources and search processed documents with Unstructured Foundation. Provides MCP access to source setup, processing status, document search, and document retrieval.",
+      "displayName": "Unstructured Foundation",
+      "homepage": "https://unstructured.io/",
+      "icon": {
+        "asset": "icon-ff5a294c754d288aea7d834432b4f93c.png",
+        "bytes": 5114,
+        "contentType": "image/png",
+        "digest": "sha256:ff5a294c754d288aea7d834432b4f93ce2cebea024c05994046ed7649394e6bf",
+        "homepage": "https://unstructured.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://unstructured.io/apple-touch-icon.png?v=20260223"
+      },
+      "keywords": [
+        "foundation",
+        "productivity",
+        "unstructured"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 30,
+        "text": "UF"
+      },
+      "pluginId": "plugin:knowledge-work-official:unstructured-foundation",
+      "primaryCategory": "productivity",
+      "productKey": "unstructured-foundation",
+      "releaseId": "release:ad19cf140f3f6d9ad4af56ba4ff38ef04d18e637df46fb3a8c8d009a0e085289",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "unstructured-foundation",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:unstructured-foundation"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "command": 1,
+        "executable": 3,
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Vibe Prospecting connects Claude to live B2B company and contact data so users can search, match, enrich, filter, and export prospects at scale. It turns natural-language requests into structured GTM workflows for lead generation, CRM enrichment, company research, executive discovery, and multi-step prospecting automation inside Claude Cowork and Claude Code.",
+      "displayName": "vpai",
+      "homepage": "https://www.vibeprospecting.ai/product/claude-plugin",
+      "icon": {
+        "asset": "icon-55e3ad1f27fc0dd0c4f01a6e2c77f93d.png",
+        "bytes": 13702,
+        "contentType": "image/png",
+        "digest": "sha256:55e3ad1f27fc0dd0c4f01a6e2c77f93d32f156a3c2d4a77f1d6ffe6f9ab6d748",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.png",
+        "url": null
+      },
+      "keywords": [
+        "productivity",
+        "prospecting",
+        "vibe"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 255,
+        "text": "VP"
+      },
+      "pluginId": "plugin:claude-official:vibe-prospecting",
+      "primaryCategory": "productivity",
+      "productKey": "vibe-prospecting",
+      "releaseId": "release:47b0c0e29085680b8e7a7bbcd0f72ef7f4ef3b016cbf706a52934b2053d010eb",
+      "sourceId": "claude-official",
+      "upstreamName": "vibe-prospecting",
+      "variantPluginIds": [
+        "plugin:claude-official:vibe-prospecting",
+        "plugin:knowledge-work-official:vibe-prospecting"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "agent": 1,
+        "command": 3,
+        "mcp-server": 1,
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect Claude Code to 325+ business data sources via Windsor.ai. Query marketing, sales, CRM, ecommerce, finance, and analytics data from Google Ads, Meta, HubSpot, Salesforce, Shopify, Stripe, and hundreds more — directly from your terminal.",
+      "displayName": "windsor-ai",
+      "homepage": "https://windsor.ai/",
+      "icon": {
+        "asset": "icon-0fd54d0fe1df834bbf86e1f738d7bdf1.png",
+        "bytes": 8830,
+        "contentType": "image/png",
+        "digest": "sha256:0fd54d0fe1df834bbf86e1f738d7bdf1a26a89da9fc4e7d3b7c61e2ab2d81c57",
+        "homepage": "https://windsor.ai/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://windsor.ai/wp-content/uploads/2020/02/favicon-310-300x300.png"
+      },
+      "keywords": [
+        "ai",
+        "productivity",
+        "windsor"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 48,
+        "text": "WA"
+      },
+      "pluginId": "plugin:claude-official:windsor-ai",
+      "primaryCategory": "productivity",
+      "productKey": "windsor-ai",
+      "releaseId": "release:42cc3c40e6c618dd6afb10af9670a93edaa5ea5da3e59338665dfe1ee286cfae",
+      "sourceId": "claude-official",
+      "upstreamName": "windsor-ai",
+      "variantPluginIds": [
+        "plugin:claude-official:windsor-ai"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Ask Claude about the contractors you pay through Wingspan, what you owe them, and what is holding up a payment, then onboard contractors and log payments as drafts, with a preview before anything is written. Requires a Wingspan account; bundles the Wingspan MCP server (OAuth on first use).",
+      "displayName": "Wingspan",
+      "homepage": "https://github.com/wingspanHQ/mcp-claude-plugin",
+      "icon": null,
+      "keywords": [
+        "productivity",
+        "wingspan"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 318,
+        "text": "WI"
+      },
+      "pluginId": "plugin:claude-official:wingspan",
+      "primaryCategory": "finance",
+      "productKey": "wingspan",
+      "releaseId": "release:7d931c6ddf8ad6fac6098e9dbfab858160ed47ee485769f6501c165bd2f74411",
+      "sourceId": "claude-official",
+      "upstreamName": "wingspan",
+      "variantPluginIds": [
+        "plugin:claude-official:wingspan",
+        "plugin:knowledge-work-official:wingspan"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Search projects, create tasks, and post comments.",
+      "displayName": "Wrike",
+      "icon": {
+        "asset": "icon-d7513b1e33615d6d44d25e950ce79529.png",
+        "bytes": 4208,
+        "contentType": "image/png",
+        "digest": "sha256:d7513b1e33615d6d44d25e950ce79529be70848a258afee51c0947f20291eb9a",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "productivity",
+        "wrike"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 216,
+        "text": "WR"
+      },
+      "pluginId": "plugin:cursor-official:wrike",
+      "primaryCategory": "productivity",
+      "productKey": "wrike",
+      "releaseId": "release:00ae0fdd49627fbcfe402b154e3b29053537df13dc0e5aadd64f5d0d788bb5c5",
+      "sourceId": "cursor-official",
+      "upstreamName": "wrike",
+      "variantPluginIds": [
+        "plugin:cursor-official:wrike"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 4,
+        "rule": 2,
+        "skill": 17
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "You.com agent skills for web search, research with citations, and content extraction. Guided integrations for Vercel AI SDK, Claude Agent SDK, OpenAI Agents SDK, crewAI, LangChain, Microsoft Teams.ai, direct REST API, and bash CLI.",
+      "displayName": "you",
+      "homepage": "https://you.com/",
+      "icon": {
+        "asset": "icon-bc108afac8491e981082ecbb84c1edc8.ico",
+        "bytes": 1150,
+        "contentType": "image/x-icon",
+        "digest": "sha256:bc108afac8491e981082ecbb84c1edc8a743c9da5d011bf50ccac677007b892e",
+        "homepage": "https://you.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://you.com/favicon.ico?favicon.2oo7buuzhxlge.ico"
+      },
+      "keywords": [
+        "agent",
+        "productivity",
+        "skills",
+        "youdotcom"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 234,
+        "text": "YO"
+      },
+      "pluginId": "plugin:claude-official:youdotcom-agent-skills",
+      "primaryCategory": "productivity",
+      "productKey": "youdotcom-agent-skills",
+      "releaseId": "release:7740bc8847b4bb3e2ba5f577e8fe67c3d47e43f1267532aeb7c2ecaee6f79be6",
+      "sourceId": "claude-official",
+      "upstreamName": "youdotcom-agent-skills",
+      "variantPluginIds": [
+        "plugin:claude-official:youdotcom-agent-skills"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 1,
+        "mcp-server": 2,
+        "rule": 1,
+        "skill": 4
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect 8,000+ apps to your AI workflow. Discover, enable, and execute Zapier actions directly from your client.",
+      "displayName": "Zapier",
+      "homepage": "https://github.com/zapier/zapier-mcp/tree/main/plugins/zapier",
+      "icon": {
+        "asset": "icon-27609bad28e21ed329448a3d95c6d2a2.svg",
+        "bytes": 4916,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:27609bad28e21ed329448a3d95c6d2a2e185ec35ba9f06c00e4f5cc34724109c",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "productivity",
+        "zapier"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 141,
+        "text": "ZA"
+      },
+      "pluginId": "plugin:claude-official:zapier",
+      "primaryCategory": "productivity",
+      "productKey": "zapier",
+      "releaseId": "release:ffe524b466f13be61c17a9c0ce770d7ac72ec1626cf788ff51fda7690fa75f42",
+      "sourceId": "claude-official",
+      "upstreamName": "zapier",
+      "variantPluginIds": [
+        "plugin:claude-official:zapier",
+        "plugin:knowledge-work-official:zapier"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 7
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Seven skills for financial advisors built on Zocks meeting intelligence: client behavioral profiles, attrition-risk ranking, held-away asset radar, client journey dossiers, household review packs, next-best-action analysis and a tax opportunity scan. Requires the Zocks connector and a Zocks account.",
+      "displayName": "Zocks Advisor Intelligence",
+      "homepage": "https://github.com/zocks-communications/zocks-agent-plugins",
+      "icon": null,
+      "keywords": [
+        "advisor",
+        "productivity",
+        "zocks"
+      ],
+      "license": "LicenseRef-Zocks-Modified-Apache-2.0",
+      "monogram": {
+        "hue": 129,
+        "text": "ZA"
+      },
+      "pluginId": "plugin:claude-official:zocks-advisor",
+      "primaryCategory": "finance",
+      "productKey": "zocks-advisor",
+      "releaseId": "release:3f890a7f39aa07b36f3ee35a2cd000a50eeef969eb15dc1e7ec6ef0d5a6c5832",
+      "sourceId": "claude-official",
+      "upstreamName": "zocks-advisor",
+      "variantPluginIds": [
+        "plugin:claude-official:zocks-advisor",
+        "plugin:knowledge-work-official:zocks-advisor"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2,
+        "skill": 35
+      },
+      "categories": [
+        "business-operations",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Search companies and contacts, enrich leads, find lookalikes, and get AI-ranked contact recommendations. Pre-built skills chain multiple ZoomInfo tools into complete B2B sales workflows.",
+      "displayName": "ZoomInfo",
+      "homepage": "https://www.zoominfo.com/",
+      "icon": {
+        "asset": "icon-43929ad3b61f391a9d9dc07f56eca859.svg",
+        "bytes": 8146,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:43929ad3b61f391a9d9dc07f56eca8593d0def6941328acb3d7db365467050b3",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/zoominfo-logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "productivity",
+        "zoominfo"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 195,
+        "text": "ZO"
+      },
+      "pluginId": "plugin:claude-official:zoominfo",
+      "primaryCategory": "business-operations",
+      "productKey": "zoominfo",
+      "releaseId": "release:3db22bb6d71f193f8008aae36e4cabbd478ddc6a18514788d349327c3808add8",
+      "sourceId": "claude-official",
+      "upstreamName": "zoominfo",
+      "variantPluginIds": [
+        "plugin:claude-official:zoominfo",
+        "plugin:knowledge-work-official:zoominfo"
+      ],
+      "variantsIdentical": true
+    }
+  ],
+  "schemaVersion": 1
+}

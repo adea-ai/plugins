@@ -1,0 +1,291 @@
+{
+  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "category": "developer-tools",
+  "products": [
+    {
+      "capabilitySummary": {
+        "mcp-server": 1
+      },
+      "categories": [
+        "developer-tools",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Official GitHub MCP server for repository management. Create issues, manage pull requests, review code, search repositories, and interact with GitHub's full API directly from Claude Code.",
+      "displayName": "GitHub",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/github",
+      "icon": {
+        "asset": "icon-5b02d8c41edb37734aa70362506d757f.svg",
+        "bytes": 934,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:5b02d8c41edb37734aa70362506d757f27af89a37ff0975baf3871244305976e",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "developer-tools",
+        "github",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 60,
+        "text": "GI"
+      },
+      "pluginId": "plugin:claude-official:github",
+      "primaryCategory": "developer-tools",
+      "productKey": "github",
+      "releaseId": "release:aaf4d4d2aa95c842821ce5355dd3873b613790f7fe95bed2f6f1fbdf66680620",
+      "sourceId": "claude-official",
+      "upstreamName": "github",
+      "variantPluginIds": [
+        "plugin:claude-official:github",
+        "plugin:cursor-official:github",
+        "plugin:openai-official:github"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1
+      },
+      "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Browser automation and end-to-end testing MCP server by Microsoft. Enables Claude to interact with web pages, take screenshots, fill forms, click elements, and perform automated browser testing workflows.",
+      "displayName": "Playwright",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/playwright",
+      "icon": {
+        "asset": "icon-16ed6279a8e7ef91373a595a647eea40.svg",
+        "bytes": 5125,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:16ed6279a8e7ef91373a595a647eea405ed9bcc7dee42111ebf8a9c5202fcaf5",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "developer-tools",
+        "playwright"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 66,
+        "text": "PL"
+      },
+      "pluginId": "plugin:claude-official:playwright",
+      "primaryCategory": "developer-tools",
+      "productKey": "playwright",
+      "releaseId": "release:1b0be894855f7bfb0362f1a3d46b3328af3e06e74331160a0ef6ff1e2fa28ba5",
+      "sourceId": "claude-official",
+      "upstreamName": "playwright",
+      "variantPluginIds": [
+        "plugin:claude-official:playwright",
+        "plugin:cursor-official:playwright"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 1
+      },
+      "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Build apps, scripts, and automations with the TypeScript SDK.",
+      "displayName": "Cursor SDK",
+      "icon": null,
+      "keywords": [
+        "cursor",
+        "developer-tools",
+        "sdk"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 141,
+        "text": "CS"
+      },
+      "pluginId": "plugin:cursor-official:cursor-sdk",
+      "primaryCategory": "developer-tools",
+      "productKey": "cursor-sdk",
+      "releaseId": "release:c1ee996a87aac901d4d1c66a1b8fe29f8897db50fdb61d56305ad17d3d5ff745",
+      "sourceId": "cursor-official",
+      "upstreamName": "cursor-sdk",
+      "variantPluginIds": [
+        "plugin:cursor-official:cursor-sdk"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 2,
+        "command": 1
+      },
+      "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Development kit for working with the Claude Agent SDK",
+      "displayName": "agent-sdk-dev",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/agent-sdk-dev",
+      "icon": null,
+      "keywords": [
+        "agent",
+        "dev",
+        "developer-tools",
+        "sdk"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 75,
+        "text": "AS"
+      },
+      "pluginId": "plugin:claude-official:agent-sdk-dev",
+      "primaryCategory": "developer-tools",
+      "productKey": "agent-sdk-dev",
+      "releaseId": "release:b167e8b3f451ff131b4119054e908fefd85160dcaa2d2dfea1ecf07111004236",
+      "sourceId": "claude-official",
+      "upstreamName": "agent-sdk-dev",
+      "variantPluginIds": [
+        "plugin:claude-official:agent-sdk-dev"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 3,
+        "skill": 10
+      },
+      "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Fastly development tools and platform skills",
+      "displayName": "Fastly",
+      "homepage": "https://github.com/fastly/fastly-agent-toolkit/blob/main/README.md",
+      "icon": null,
+      "keywords": [
+        "agent",
+        "developer-tools",
+        "fastly",
+        "toolkit"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 27,
+        "text": "FA"
+      },
+      "pluginId": "plugin:claude-official:fastly-agent-toolkit",
+      "primaryCategory": "developer-tools",
+      "productKey": "fastly-agent-toolkit",
+      "releaseId": "release:b6b06440396a252ad7aab604aa1945008cd2ea3d0f48992aff3f8044ac03cfd7",
+      "sourceId": "claude-official",
+      "upstreamName": "fastly-agent-toolkit",
+      "variantPluginIds": [
+        "plugin:claude-official:fastly-agent-toolkit",
+        "plugin:knowledge-work-official:fastly-agent-toolkit"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "browser": 13,
+        "mcp-server": 1,
+        "scheduled-task": 15,
+        "skill": 8
+      },
+      "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Sentry error monitoring integration. Access error reports, analyze stack traces, search issues by fingerprint, and debug production errors directly from your development environment.",
+      "displayName": "sentry",
+      "homepage": "https://github.com/getsentry/plugin-claude",
+      "icon": {
+        "asset": "icon-e5935afc31e5084860e5ddafae804b06.svg",
+        "bytes": 763,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:e5935afc31e5084860e5ddafae804b0620d38345bd09250c9ef081edae0ef733",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "developer-tools",
+        "sentry"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 201,
+        "text": "SE"
+      },
+      "pluginId": "plugin:claude-official:sentry",
+      "primaryCategory": "developer-tools",
+      "productKey": "sentry",
+      "releaseId": "release:10e03a5b559348cf581b99b7184fa4de19aad232378a13ea48f81ecb74a113ac",
+      "sourceId": "claude-official",
+      "upstreamName": "sentry",
+      "variantPluginIds": [
+        "plugin:claude-official:sentry",
+        "plugin:openai-official:sentry"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1,
+  "topCount": 6
+}

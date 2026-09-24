@@ -1,0 +1,281 @@
+{
+  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "category": "education-research",
+  "products": [
+    {
+      "capabilitySummary": {
+        "skill": 2
+      },
+      "categories": [
+        "education-research"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Skill mapping, practice plans, and learning retrospectives.",
+      "displayName": "Teaching",
+      "icon": {
+        "asset": "icon-003bdda2cc2575e3f5c702fae65b0615.png",
+        "bytes": 56807,
+        "contentType": "image/png",
+        "digest": "sha256:003bdda2cc2575e3f5c702fae65b061528faaa151b920c0e6f35891dae9dafbc",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/avatar.png",
+        "url": null
+      },
+      "keywords": [
+        "education-research",
+        "teaching"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 342,
+        "text": "TE"
+      },
+      "pluginId": "plugin:cursor-official:teaching",
+      "primaryCategory": "education-research",
+      "productKey": "teaching",
+      "releaseId": "release:e86e195df854acad2eafc22d58f5e57c786ec76972de70ac3f908a6978896288",
+      "sourceId": "cursor-official",
+      "upstreamName": "teaching",
+      "variantPluginIds": [
+        "plugin:cursor-official:teaching"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 1,
+        "hook": 3,
+        "skill": 1
+      },
+      "categories": [
+        "education-research"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Incremental transcript-driven memory updates for AGENTS.md using high-signal bullet points only.",
+      "displayName": "Continual Learning",
+      "icon": {
+        "asset": "icon-7fcbec269ec57b3f9c227c964907692d.png",
+        "bytes": 64347,
+        "contentType": "image/png",
+        "digest": "sha256:7fcbec269ec57b3f9c227c964907692d044dbe4e8495fc42cd72a5794d7c11fb",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/avatar.png",
+        "url": null
+      },
+      "keywords": [
+        "continual",
+        "education-research",
+        "learning"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 66,
+        "text": "CL"
+      },
+      "pluginId": "plugin:cursor-official:continual-learning",
+      "primaryCategory": "education-research",
+      "productKey": "continual-learning",
+      "releaseId": "release:a7e4cb99954aad54fac91f42ab78b00457e9e5ce39b203eb1f789eafd45f969c",
+      "sourceId": "cursor-official",
+      "upstreamName": "continual-learning",
+      "variantPluginIds": [
+        "plugin:cursor-official:continual-learning"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 1
+      },
+      "categories": [
+        "education-research"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Turn any learning intent into a personalized Coursera experience. Asks three quick questions (topic, familiarity, preferred format), searches Coursera's catalog, and delivers the right next step — a course, hands-on project, short video, or live roleplay — then maps a path forward. Requires the Coursera connector for catalog tools.",
+      "displayName": "Learn with Coursera",
+      "homepage": "https://github.com/coursera/skills",
+      "icon": null,
+      "keywords": [
+        "coursera",
+        "education-research",
+        "learn",
+        "with"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 312,
+        "text": "LW"
+      },
+      "pluginId": "plugin:claude-official:learn-with-coursera",
+      "primaryCategory": "education-research",
+      "productKey": "learn-with-coursera",
+      "releaseId": "release:3fd0add87e2b576f8a2bdeffce06f38f56d4af99718e8269544e498a9d05b8d7",
+      "sourceId": "claude-official",
+      "upstreamName": "learn-with-coursera",
+      "variantPluginIds": [
+        "plugin:claude-official:learn-with-coursera",
+        "plugin:knowledge-work-official:learn-with-coursera"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "agent": 1,
+        "executable": 1,
+        "skill": 1
+      },
+      "categories": [
+        "education-research"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Work with Zotero from Codex: search your library, export BibTeX, insert citations, and import references through the Zotero desktop app.",
+      "displayName": "zotero",
+      "icon": {
+        "asset": "icon-7ac4579b4a075173126862ebf70243ff.png",
+        "bytes": 9908,
+        "contentType": "image/png",
+        "digest": "sha256:7ac4579b4a075173126862ebf70243ff0a447ffe843e7fbdf16ea2681f4fff13",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.png",
+        "url": null
+      },
+      "keywords": [
+        "education-research",
+        "zotero"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 195,
+        "text": "ZO"
+      },
+      "pluginId": "plugin:openai-official:zotero",
+      "primaryCategory": "education-research",
+      "productKey": "zotero",
+      "releaseId": "release:d847bc3a9a237ef3c9fcfcfc754b81a077d0a1d516a8f5497e74ae2c0c1f4787",
+      "sourceId": "openai-official",
+      "upstreamName": "zotero",
+      "variantPluginIds": [
+        "plugin:openai-official:zotero"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1
+      },
+      "categories": [
+        "education-research"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Consensus is the go-to MCP for academic research. Connect directly to 220M+ peer-reviewed papers to search, synthesize, and build structured research outputs from within your conversation.\n\nRun literature reviews, build boolean search strategies, generate bibliographies, identify research gaps, and draft cited content — grounded in studies from PubMed, Semantic Scholar, and ArXiv. Pre-built workflows handle complex tasks in minutes: systematic reviews, curriculum reading lists, grant research with novelty analysis, and clinical evidence synthesis.\n\nBuilt for researchers, students, faculty, and clinicians across biomedical, social science, STEM, and all academic disciplines.",
+      "displayName": "consensus",
+      "icon": null,
+      "keywords": [
+        "consensus",
+        "education-research"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 183,
+        "text": "CO"
+      },
+      "pluginId": "plugin:openai-official:consensus",
+      "primaryCategory": "education-research",
+      "productKey": "consensus",
+      "releaseId": "release:ca068c400edf826dc2a8abe8243d9a380cbed1f1f419776ccc791f0ad1d1b273",
+      "sourceId": "openai-official",
+      "upstreamName": "consensus",
+      "variantPluginIds": [
+        "plugin:openai-official:consensus"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 25,
+        "mcp-server": 1,
+        "skill": 6
+      },
+      "categories": [
+        "education-research"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect to preclinical research tools and databases (literature search, genomics analysis, target prioritization) to accelerate early-stage life sciences R&D",
+      "displayName": "Bio Research",
+      "icon": null,
+      "keywords": [
+        "bio",
+        "education-research",
+        "research"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 321,
+        "text": "BR"
+      },
+      "pluginId": "plugin:knowledge-work-official:bio-research",
+      "primaryCategory": "education-research",
+      "productKey": "bio-research",
+      "releaseId": "release:e055f605d0c17b1d0a8c6fba558fe70cba2b724e2d46ab778ecaea8491dc4fdd",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "bio-research",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:bio-research"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1,
+  "topCount": 6
+}

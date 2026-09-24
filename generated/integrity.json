@@ -1,11 +1,2226 @@
 {
-  "catalogId": "catalog:84979770ab6b1e16c18e4794fb3e6081ff1af6bebbd99f78fa0bdb3ba589bf07",
+  "assets": [
+    {
+      "bytes": 56807,
+      "contentType": "image/png",
+      "digest": "sha256:003bdda2cc2575e3f5c702fae65b061528faaa151b920c0e6f35891dae9dafbc",
+      "kind": "content",
+      "name": "icon-003bdda2cc2575e3f5c702fae65b0615.png",
+      "origin": "assets/avatar.png"
+    },
+    {
+      "bytes": 17108,
+      "contentType": "image/png",
+      "digest": "sha256:02ad1294721616472a6a58783a8e0a3b16fb858acb87eae8921f2ca231e40717",
+      "kind": "content",
+      "name": "icon-02ad1294721616472a6a58783a8e0a3b.png",
+      "origin": "assets/app-icon.png"
+    },
+    {
+      "bytes": 914,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:03276e1e0a355132331e7d1467dc070ebc23d7261eeb4a4499d7497ef4c70f97",
+      "kind": "content",
+      "name": "icon-03276e1e0a355132331e7d1467dc070e.svg",
+      "origin": "assets/icon.svg"
+    },
+    {
+      "bytes": 4373,
+      "contentType": "image/png",
+      "digest": "sha256:03c5839ffc8eaec1759f3ce99e329d1cb52e8de5e9cff1e0f0e779fe604c6c08",
+      "kind": "favicon",
+      "name": "icon-03c5839ffc8eaec1759f3ce99e329d1c.png",
+      "origin": "https://cdn.prod.website-files.com/656da6fea306219773d04208/65af6bd6e742d497b5f23f69_645898132bbaac20f1963919_256x256.png"
+    },
+    {
+      "bytes": 46151,
+      "contentType": "image/png",
+      "digest": "sha256:051cc4325f665badcb1c66191970a7ff285019f4ffe0e5bdb526acc8bb55f21a",
+      "kind": "content",
+      "name": "icon-051cc4325f665badcb1c66191970a7ff.png",
+      "origin": "assets/govtribe-logo.png"
+    },
+    {
+      "bytes": 7175,
+      "contentType": "image/png",
+      "digest": "sha256:08716d4588ef5e0d85e24a0601acbb9dea421c00749ae7dde347dc174a938123",
+      "kind": "content",
+      "name": "icon-08716d4588ef5e0d85e24a0601acbb9d.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 45424,
+      "contentType": "image/png",
+      "digest": "sha256:09329dddfafba7fb2d52981f017c064b467e42b8c8c0df095435f208e5b760a5",
+      "kind": "content",
+      "name": "icon-09329dddfafba7fb2d52981f017c064b.png",
+      "origin": "assets/nvidia.png"
+    },
+    {
+      "bytes": 25427,
+      "contentType": "image/png",
+      "digest": "sha256:0986ba639d9f45151f7f94b3182fe671ae21ea18c8628c91e0af1a62b9ad1751",
+      "kind": "content",
+      "name": "icon-0986ba639d9f45151f7f94b3182fe671.png",
+      "origin": "assets/nimble-logo.png"
+    },
+    {
+      "bytes": 3891,
+      "contentType": "image/png",
+      "digest": "sha256:0a329943a657e1d9279f93c696adbce27259aefb97a30818745e12706ab1ae62",
+      "kind": "content",
+      "name": "icon-0a329943a657e1d9279f93c696adbce2.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 838,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:0ab515fcad8b2a4104871a672211ac7bc9bcec0236808918fb29b0f322fcf4f5",
+      "kind": "content",
+      "name": "icon-0ab515fcad8b2a4104871a672211ac7b.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 21730,
+      "contentType": "image/webp",
+      "digest": "sha256:0b474314d9cc2937c0e503ec81d7048b9b8229fda4b107320b034aa454e9bdf8",
+      "kind": "content",
+      "name": "icon-0b474314d9cc2937c0e503ec81d7048b.webp",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 9590,
+      "contentType": "image/png",
+      "digest": "sha256:0ba822e011727cfc40dfc7207e5d99fed81c78a7ff8a4389d128352714390839",
+      "kind": "content",
+      "name": "icon-0ba822e011727cfc40dfc7207e5d99fe.png",
+      "origin": "skills/twilio/twilio-email-send/assets/icon-large.png"
+    },
+    {
+      "bytes": 3398,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:0bedee7732d81af2ddf0a20ba347ac8381cd2fde0182f2ae688c76a9b0f1ed18",
+      "kind": "content",
+      "name": "icon-0bedee7732d81af2ddf0a20ba347ac83.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 2237,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:0db3debcfd64741145c6fab173775e74c349576da82a18512aaede7e2a39c3ec",
+      "kind": "content",
+      "name": "icon-0db3debcfd64741145c6fab173775e74.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 4299,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:0f49b14acb967866aba5f85c7728aa18c61b03b85c512e0a6bdcef4903dbc66f",
+      "kind": "content",
+      "name": "icon-0f49b14acb967866aba5f85c7728aa18.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 7270,
+      "contentType": "image/png",
+      "digest": "sha256:0f71025bd7d42d11c252882087eb79549e25af5fa5bbd5d40cec6450c18b4e39",
+      "kind": "content",
+      "name": "icon-0f71025bd7d42d11c252882087eb7954.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 513,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:0fb0504afd09933dd2a2c8f94e18475da84094c7f84be36945efcd3847c9fa4f",
+      "kind": "content",
+      "name": "icon-0fb0504afd09933dd2a2c8f94e18475d.svg",
+      "origin": "skills/meeting-prep/assets/icon.svg"
+    },
+    {
+      "bytes": 8830,
+      "contentType": "image/png",
+      "digest": "sha256:0fd54d0fe1df834bbf86e1f738d7bdf1a26a89da9fc4e7d3b7c61e2ab2d81c57",
+      "kind": "favicon",
+      "name": "icon-0fd54d0fe1df834bbf86e1f738d7bdf1.png",
+      "origin": "https://windsor.ai/wp-content/uploads/2020/02/favicon-310-300x300.png"
+    },
+    {
+      "bytes": 1894,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:11881710a2401d619e34239bbc12f9c87f579ac5e599e7524bfa5b57954b1b81",
+      "kind": "content",
+      "name": "icon-11881710a2401d619e34239bbc12f9c8.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 10386,
+      "contentType": "image/png",
+      "digest": "sha256:12cfc13f585f0bf27b406de1c18f8ac533ce3d1873e20481340c0e423a99c24e",
+      "kind": "content",
+      "name": "icon-12cfc13f585f0bf27b406de1c18f8ac5.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 59641,
+      "contentType": "image/png",
+      "digest": "sha256:13127219825cd53eff1f09686798f2dd7f5e00d0a7093e74d2619e72d5a44c26",
+      "kind": "content",
+      "name": "icon-13127219825cd53eff1f09686798f2dd.png",
+      "origin": "assets/avatar.png"
+    },
+    {
+      "bytes": 18723,
+      "contentType": "image/png",
+      "digest": "sha256:1360b28dec57099b071790a9d709cc9f2c1cc3039c543ae7e39e51b06802bdd0",
+      "kind": "content",
+      "name": "icon-1360b28dec57099b071790a9d709cc9f.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 6270,
+      "contentType": "image/png",
+      "digest": "sha256:14a499b3726a4433a085d6a15c0f2b6440de9fa897faec0da3d3499d41d8fe65",
+      "kind": "content",
+      "name": "icon-14a499b3726a4433a085d6a15c0f2b64.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 2205,
+      "contentType": "image/png",
+      "digest": "sha256:15b7d1138830b2ecc644a0d0ae76502b8aaf557be9a6579ef6047a9c18c08259",
+      "kind": "content",
+      "name": "icon-15b7d1138830b2ecc644a0d0ae76502b.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 5341,
+      "contentType": "image/png",
+      "digest": "sha256:162aefb6da8e2670b2d3a6797adced2edecd960120d66f89845d882f303c171f",
+      "kind": "content",
+      "name": "icon-162aefb6da8e2670b2d3a6797adced2e.png",
+      "origin": "skills/carta-reporting-excel/assets/Carta_Logo.png"
+    },
+    {
+      "bytes": 5430,
+      "contentType": "image/x-icon",
+      "digest": "sha256:1690c4e20869c3763b7fc111e2f94035b0a7ee830311dd680ac91421daad3667",
+      "kind": "favicon",
+      "name": "icon-1690c4e20869c3763b7fc111e2f94035.ico",
+      "origin": "https://developer.paypal.com/favicon.ico?3a553e458582f04f"
+    },
+    {
+      "bytes": 1392,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:16b247249328458d1f22b1e6c9766dcce8d75ac6316f4be8c999ca36d33f9d17",
+      "kind": "content",
+      "name": "icon-16b247249328458d1f22b1e6c9766dcc.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 5125,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:16ed6279a8e7ef91373a595a647eea405ed9bcc7dee42111ebf8a9c5202fcaf5",
+      "kind": "content",
+      "name": "icon-16ed6279a8e7ef91373a595a647eea40.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 4048,
+      "contentType": "image/png",
+      "digest": "sha256:186925a9bc476daf5c73f3c1778e1c38202a066b74853c0310dc5435952f54d4",
+      "kind": "favicon",
+      "name": "icon-186925a9bc476daf5c73f3c1778e1c38.png",
+      "origin": "https://edc-cdn.net/assets/images/favicon-light.png"
+    },
+    {
+      "bytes": 1340,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:1875d18bf33291f53d2c78e9e9485551ab45d998a5cef8ad25c966f518e57d45",
+      "kind": "content",
+      "name": "icon-1875d18bf33291f53d2c78e9e9485551.svg",
+      "origin": "assets/icon.svg"
+    },
+    {
+      "bytes": 1368,
+      "contentType": "image/png",
+      "digest": "sha256:19f23b04752c438be532027459a1570a0b7b2c08faecfe6b8438fd8043bc3934",
+      "kind": "favicon",
+      "name": "icon-19f23b04752c438be532027459a1570a.png",
+      "origin": "https://docs.rilldata.com/img/favicon.png"
+    },
+    {
+      "bytes": 43931,
+      "contentType": "image/png",
+      "digest": "sha256:1a593ba1b2745af27f443249843d6e8c615f694ae802886f7753639951183e3f",
+      "kind": "content",
+      "name": "icon-1a593ba1b2745af27f443249843d6e8c.png",
+      "origin": "assets/mergify-icon-black.png"
+    },
+    {
+      "bytes": 14904,
+      "contentType": "image/png",
+      "digest": "sha256:1afeeff143a66b32e7038ec3bae9e758b95ebeb26001a0eca9953b8b2f8d6ba9",
+      "kind": "content",
+      "name": "icon-1afeeff143a66b32e7038ec3bae9e758.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 12740,
+      "contentType": "image/png",
+      "digest": "sha256:1b7b2bb638dcea175cf45b0c4025e03ae16e8ca55f30e29e9e83e532d5e1d0f8",
+      "kind": "favicon",
+      "name": "icon-1b7b2bb638dcea175cf45b0c4025e03a.png",
+      "origin": "https://gitkraken.com/wp-content/uploads/2021/03/android-chrome-144x144-1.png"
+    },
+    {
+      "bytes": 4518,
+      "contentType": "image/png",
+      "digest": "sha256:1be856772a6e13e3e582115048629acc61df28806c3a6f43fbd482710996c31b",
+      "kind": "content",
+      "name": "icon-1be856772a6e13e3e582115048629acc.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 488,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:1c585a9a56315edec99a2655c3b404fd66d50e75f45d2d75b769b8119b3872fb",
+      "kind": "content",
+      "name": "icon-1c585a9a56315edec99a2655c3b404fd.svg",
+      "origin": "skills/adobe-edit-quick-cut/assets/icon-large.svg"
+    },
+    {
+      "bytes": 6030,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:1c82cef498d7507e6d7b765ec38a48c2dfc9fd2f45b3dbd7a65f7e8966632ea5",
+      "kind": "content",
+      "name": "icon-1c82cef498d7507e6d7b765ec38a48c2.svg",
+      "origin": "skills/domino-ui-design/assets/domino-logo.svg"
+    },
+    {
+      "bytes": 2862,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:1dea00259e3edd6bce92015cfb9d62b6c785e771f51f843e1256b2e0caf9e1a7",
+      "kind": "content",
+      "name": "icon-1dea00259e3edd6bce92015cfb9d62b6.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 19475,
+      "contentType": "image/png",
+      "digest": "sha256:1ecec40ec7a7189a69e52a54766e267d21f915a256204a54e38e803415f0d5f0",
+      "kind": "content",
+      "name": "icon-1ecec40ec7a7189a69e52a54766e267d.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 15909,
+      "contentType": "image/png",
+      "digest": "sha256:210f59c3c06b340d63907bd30dc8dc4162bfb4dd017bceb71c537c89609de3ad",
+      "kind": "content",
+      "name": "icon-210f59c3c06b340d63907bd30dc8dc41.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 505835,
+      "contentType": "image/png",
+      "digest": "sha256:216877657558f80885d1fec323dcfb5803bf8c1a4ece0c235b486ff75ea86c1d",
+      "kind": "content",
+      "name": "icon-216877657558f80885d1fec323dcfb58.png",
+      "origin": "docs/_static/logo.png"
+    },
+    {
+      "bytes": 34700,
+      "contentType": "image/png",
+      "digest": "sha256:218b96eecc8b8039227db1f6edbf6c64dfaaffc08dd2c6465f6a4a355e9d2248",
+      "kind": "content",
+      "name": "icon-218b96eecc8b8039227db1f6edbf6c64.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 37858,
+      "contentType": "image/png",
+      "digest": "sha256:21c28b6b5b9f7e547feac09ba4c4f377f51e2ad4c854e2edd95e6b41462fc50b",
+      "kind": "favicon",
+      "name": "icon-21c28b6b5b9f7e547feac09ba4c4f377.png",
+      "origin": "https://cdn.prod.website-files.com/67558e246490829b0a44ad8e/680f3c8cf4185727e41de2af_favicon%20large.png"
+    },
+    {
+      "bytes": 23428,
+      "contentType": "image/png",
+      "digest": "sha256:22860d9a3bdf29402f53345ae9bc8ee0cd057c652eda418ef8433ff0c363fb02",
+      "kind": "content",
+      "name": "icon-22860d9a3bdf29402f53345ae9bc8ee0.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 15406,
+      "contentType": "image/x-icon",
+      "digest": "sha256:22ca80792471b2e393ebfa7d68c2e12a3a40b5c1e8ef932254a159f5ff38b8a1",
+      "kind": "favicon",
+      "name": "icon-22ca80792471b2e393ebfa7d68c2e12a.ico",
+      "origin": "https://www.mintlify.com/favicon.ico?favicon.d9fa433b.ico"
+    },
+    {
+      "bytes": 1369,
+      "contentType": "image/png",
+      "digest": "sha256:23151d750f4d8d24d1e0bf5762d1fb5964006ab1487c8fe293bebd4b9442fb1e",
+      "kind": "content",
+      "name": "icon-23151d750f4d8d24d1e0bf5762d1fb59.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 55083,
+      "contentType": "image/png",
+      "digest": "sha256:23605d0ffa85f0095716fb216525cb701386192391320f94c459fd6dac5e3cfe",
+      "kind": "content",
+      "name": "icon-23605d0ffa85f0095716fb216525cb70.png",
+      "origin": "assets/avatar.png"
+    },
+    {
+      "bytes": 9325,
+      "contentType": "image/png",
+      "digest": "sha256:236c3a6b3771412e1c525781097f1d1496c94d1192f27347c21be1882ff75514",
+      "kind": "favicon",
+      "name": "icon-236c3a6b3771412e1c525781097f1d14.png",
+      "origin": "https://www.snowflake.com/etc.clientlibs/snowflake-site/clientlibs/clientlib-react/resources/apple-touch-icon.png?v=3"
+    },
+    {
+      "bytes": 4029,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:258d51a8e98a58b805850aed142ac87cfd31120a3fae4c2ad5a5fc3611021401",
+      "kind": "content",
+      "name": "icon-258d51a8e98a58b805850aed142ac87c.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 9841,
+      "contentType": "image/png",
+      "digest": "sha256:25ae17edffd848672eceaca705a64de7e7e5226db6d81a8a89208c8def07064f",
+      "kind": "favicon",
+      "name": "icon-25ae17edffd848672eceaca705a64de7.png",
+      "origin": "https://www.apollo.io/apple-icon.png?apple-icon.0-gy.9xjm.kcw.png"
+    },
+    {
+      "bytes": 1247,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:26dc944d922a6e1c272fb4b75b7a0a747f6aadeabf72ad7666f00340a9b59988",
+      "kind": "content",
+      "name": "icon-26dc944d922a6e1c272fb4b75b7a0a74.svg",
+      "origin": "plugins/code/assets/icon.svg"
+    },
+    {
+      "bytes": 4916,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:27609bad28e21ed329448a3d95c6d2a2e185ec35ba9f06c00e4f5cc34724109c",
+      "kind": "content",
+      "name": "icon-27609bad28e21ed329448a3d95c6d2a2.svg",
+      "origin": "assets/icon.svg"
+    },
+    {
+      "bytes": 894,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:290288c59b0698367b53c9693562514d8eb4088b919877cc6494ee477b49b4b4",
+      "kind": "content",
+      "name": "icon-290288c59b0698367b53c9693562514d.svg",
+      "origin": "logo.svg"
+    },
+    {
+      "bytes": 6293,
+      "contentType": "image/png",
+      "digest": "sha256:29a0c1a4c61553a13ce7015656729968002e0bf441dc86973b8a8f1ebbafaa8b",
+      "kind": "content",
+      "name": "icon-29a0c1a4c61553a13ce7015656729968.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 13917,
+      "contentType": "image/png",
+      "digest": "sha256:2a2244803facfdae776abf7f41baf1d85d7f47f948908d896fe8b23fa4f24c45",
+      "kind": "content",
+      "name": "icon-2a2244803facfdae776abf7f41baf1d8.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 14632,
+      "contentType": "image/png",
+      "digest": "sha256:2a90a362c2cb786fd93f9083ff0baa7aa867d976e9a52f094cad9480b9038104",
+      "kind": "content",
+      "name": "icon-2a90a362c2cb786fd93f9083ff0baa7a.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 4286,
+      "contentType": "image/x-icon",
+      "digest": "sha256:2bc0a6cca1d6889acba9864ace2ac1cdee05f5e8e8da07cc9d04aff1f4aa091e",
+      "kind": "favicon",
+      "name": "icon-2bc0a6cca1d6889acba9864ace2ac1cd.ico",
+      "origin": "https://www.zohowebstatic.com/sites/zweb/images/catalyst/favicon.ico"
+    },
+    {
+      "bytes": 711,
+      "contentType": "image/png",
+      "digest": "sha256:2bc73ee98cff43e3ab4d82aa2cc61f01b220dc3647cd7032e0dba827b3d22908",
+      "kind": "favicon",
+      "name": "icon-2bc73ee98cff43e3ab4d82aa2cc61f01.png",
+      "origin": "https://planetscale.com/apple-touch-icon.png"
+    },
+    {
+      "bytes": 532,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:2d336b83e95c31ac9e726c97eed4cb65b6adb39664127e6114c1c150981f4c02",
+      "kind": "favicon",
+      "name": "icon-2d336b83e95c31ac9e726c97eed4cb65.svg",
+      "origin": "https://sourcegraph.com/favicon.ico"
+    },
+    {
+      "bytes": 4051,
+      "contentType": "image/png",
+      "digest": "sha256:2d5fd45996a8ebfe9ae321454bcafd8439c36ebae280c0a48d6dbb894d06519f",
+      "kind": "favicon",
+      "name": "icon-2d5fd45996a8ebfe9ae321454bcafd84.png",
+      "origin": "https://docs.goshippo.com/mintlify-assets/_mintlify/favicons/shippo-f4b7b609/gcyqE9-1OT8BeY1o/_generated/favicon/apple-touch-icon.png"
+    },
+    {
+      "bytes": 3784,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:2f9f850d9e8567a72b5b3d7da9b7c9fdaad3bb70769fd0c1caf94d44650d997e",
+      "kind": "content",
+      "name": "icon-2f9f850d9e8567a72b5b3d7da9b7c9fd.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 950160,
+      "contentType": "image/png",
+      "digest": "sha256:31b305da0887cc92f0aed49caafb76d25f846a419b39924967d1b7e040d7afb3",
+      "kind": "content",
+      "name": "icon-31b305da0887cc92f0aed49caafb76d2.png",
+      "origin": "logo.png"
+    },
+    {
+      "bytes": 8915,
+      "contentType": "image/png",
+      "digest": "sha256:32d8073ba96b112e5d131617298999e5cae0e1f70df5da54881f83aa8e0e1ae7",
+      "kind": "content",
+      "name": "icon-32d8073ba96b112e5d131617298999e5.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 1463,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:3327f51e319e1f3071d953887cfa9b86b9369a519975cae357a56e0fcda72b58",
+      "kind": "content",
+      "name": "icon-3327f51e319e1f3071d953887cfa9b86.svg",
+      "origin": "assets/temporal-logo.svg"
+    },
+    {
+      "bytes": 962,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:336c0b0d48174164a70293d0a7a53e17fb163e7019f2fadf4b0c45272d6ede27",
+      "kind": "content",
+      "name": "icon-336c0b0d48174164a70293d0a7a53e17.svg",
+      "origin": "assets/fullstory.svg"
+    },
+    {
+      "bytes": 1147,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:3370144d994ce3021db0ce5cf952563b7a198346920b0ce61d5b8af65b3518a3",
+      "kind": "content",
+      "name": "icon-3370144d994ce3021db0ce5cf952563b.svg",
+      "origin": "assets/Exa.svg"
+    },
+    {
+      "bytes": 1154,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:34aa366bf020df325b24b42a822714cbac167fd7d166b79c4da626fb09b5acf9",
+      "kind": "content",
+      "name": "icon-34aa366bf020df325b24b42a822714cb.svg",
+      "origin": "assets/coderabbit-logomark.svg"
+    },
+    {
+      "bytes": 35694,
+      "contentType": "image/webp",
+      "digest": "sha256:3562ce93625a23a8bddc57e7329652a6c125cd3b79bada3bb471455915fe04d9",
+      "kind": "content",
+      "name": "icon-3562ce93625a23a8bddc57e7329652a6.webp",
+      "origin": "docs/images/codex-mcp-setup.webp"
+    },
+    {
+      "bytes": 5533,
+      "contentType": "image/png",
+      "digest": "sha256:3716a74d937c060454c2fb6ab4e6a33d2af411eac65a87335182581dec2a781d",
+      "kind": "favicon",
+      "name": "icon-3716a74d937c060454c2fb6ab4e6a33d.png",
+      "origin": "https://langfuse.com/apple-touch-icon.png"
+    },
+    {
+      "bytes": 18265,
+      "contentType": "image/png",
+      "digest": "sha256:3771cdf690509ff288aa6f57b34d458fce785029169c4378decb73cc1c6e481d",
+      "kind": "content",
+      "name": "icon-3771cdf690509ff288aa6f57b34d458f.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 547,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:380b1c2dfbc55538d7ea0ad1fa86a3aab8e8ccf53d07cbd42f47e9a1a2fad9d5",
+      "kind": "content",
+      "name": "icon-380b1c2dfbc55538d7ea0ad1fa86a3aa.svg",
+      "origin": "assets/plugin-eval.svg"
+    },
+    {
+      "bytes": 4623,
+      "contentType": "image/png",
+      "digest": "sha256:39395cbfe086812dc2584ecf763926c6da0497dd090fa4d4db886d7cbaa3d434",
+      "kind": "favicon",
+      "name": "icon-39395cbfe086812dc2584ecf763926c6.png",
+      "origin": "https://duckdb.org/images/favicon/apple-touch-icon.png"
+    },
+    {
+      "bytes": 3846,
+      "contentType": "image/png",
+      "digest": "sha256:3b021902340db0fb62f6deaba5508baff912ac7492d59684fae62347a0ccd263",
+      "kind": "content",
+      "name": "icon-3b021902340db0fb62f6deaba5508baf.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 188527,
+      "contentType": "image/png",
+      "digest": "sha256:3bc1cce0aa35f12d7de7c537726305f6125692ef5f147774abd683a7b269917e",
+      "kind": "content",
+      "name": "icon-3bc1cce0aa35f12d7de7c537726305f6.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 4050,
+      "contentType": "image/png",
+      "digest": "sha256:3e2faca446df1dbad9b4a32f5f81942c01ad292ed5337fd8a7d8166de3ea02ce",
+      "kind": "content",
+      "name": "icon-3e2faca446df1dbad9b4a32f5f81942c.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 79014,
+      "contentType": "image/png",
+      "digest": "sha256:3e9984bfb849473e25a31b2df5b030209f27f76c0a5754008aa0460599ee34b4",
+      "kind": "content",
+      "name": "icon-3e9984bfb849473e25a31b2df5b03020.png",
+      "origin": "assets/app-icon.png"
+    },
+    {
+      "bytes": 10093,
+      "contentType": "image/png",
+      "digest": "sha256:3ebcb85818875354ca119b5651b1eee0467fa50d3ddf4243104dada9381ed8c2",
+      "kind": "content",
+      "name": "icon-3ebcb85818875354ca119b5651b1eee0.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 3815,
+      "contentType": "image/png",
+      "digest": "sha256:3ef094b024795ba7426b1a7e42979e7f1e5e77b7fdfa0a255c5c48edcfef94ee",
+      "kind": "content",
+      "name": "icon-3ef094b024795ba7426b1a7e42979e7f.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 1198,
+      "contentType": "image/png",
+      "digest": "sha256:4004381309500f25e49a1ae639912ce307ea81da74cc383954a1ac8b9d343fe6",
+      "kind": "favicon",
+      "name": "icon-4004381309500f25e49a1ae639912ce3.png",
+      "origin": "https://assets.claude.com/95a868946ac8a31e5ff832e2899f294aa368b836.png?w=32&amp;h=32"
+    },
+    {
+      "bytes": 1928,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:410740a6cf3fce41e9509054cec3a59b724c68381b4dda8fd64c65a67bbe0ea8",
+      "kind": "favicon",
+      "name": "icon-410740a6cf3fce41e9509054cec3a59b.svg",
+      "origin": "https://developers.zoom.us/svgs/favicon.svg"
+    },
+    {
+      "bytes": 15086,
+      "contentType": "image/x-icon",
+      "digest": "sha256:42d52b9abd4b903268aa5d6b143d4b6a85eaee07d99133d4eec7433c99821cf0",
+      "kind": "favicon",
+      "name": "icon-42d52b9abd4b903268aa5d6b143d4b6a.ico",
+      "origin": "https://qdrant.tech/favicon.ico"
+    },
+    {
+      "bytes": 8146,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:43929ad3b61f391a9d9dc07f56eca8593d0def6941328acb3d7db365467050b3",
+      "kind": "content",
+      "name": "icon-43929ad3b61f391a9d9dc07f56eca859.svg",
+      "origin": "assets/zoominfo-logo.svg"
+    },
+    {
+      "bytes": 4733,
+      "contentType": "image/png",
+      "digest": "sha256:43ca09cc67d3f42fc950a47e3a5b846928ad09d805fe705c9e1e33ca1a4bc662",
+      "kind": "content",
+      "name": "icon-43ca09cc67d3f42fc950a47e3a5b8469.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 2416,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:443fc6d5a3963757be94c5c601a40f09a4a2ebdfa642044f2269642907c76c60",
+      "kind": "content",
+      "name": "icon-443fc6d5a3963757be94c5c601a40f09.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 1134,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:45836f3ea3e572ef6430323feb98876b5f8a893a6ce264d7bf2a83b7fb29fd43",
+      "kind": "content",
+      "name": "icon-45836f3ea3e572ef6430323feb98876b.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 8157,
+      "contentType": "image/png",
+      "digest": "sha256:465ab17ed899fcfa0ad4689ad6dddce88c17c56c3280f4fe6d292d35191b2c4a",
+      "kind": "content",
+      "name": "icon-465ab17ed899fcfa0ad4689ad6dddce8.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 1409,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:474264985c6d8b3d521289c6e1095eb7b7e24f549889c55e7877376c21b715b2",
+      "kind": "content",
+      "name": "icon-474264985c6d8b3d521289c6e1095eb7.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 60914,
+      "contentType": "image/png",
+      "digest": "sha256:48a816d7369b86a5e658e36c9200df57694ab555b6224da4037234bd16c3b001",
+      "kind": "content",
+      "name": "icon-48a816d7369b86a5e658e36c9200df57.png",
+      "origin": "assets/avatar.png"
+    },
+    {
+      "bytes": 9392,
+      "contentType": "image/png",
+      "digest": "sha256:498fd1421656a6afba2d63f0ef4e308b3c31f6acba08c13dbeb120ea3c404d83",
+      "kind": "content",
+      "name": "icon-498fd1421656a6afba2d63f0ef4e308b.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 4956,
+      "contentType": "image/png",
+      "digest": "sha256:499a2436325cee27b3ba4db99914085b3a544a4238374f5e9cb9c741d218cf01",
+      "kind": "favicon",
+      "name": "icon-499a2436325cee27b3ba4db99914085b.png",
+      "origin": "https://boltz.bio/apple-touch-icon.png"
+    },
+    {
+      "bytes": 15406,
+      "contentType": "image/x-icon",
+      "digest": "sha256:49a1d2db07116397feff5454872ecec134df7cad81aa366c0ced3a2940f13355",
+      "kind": "favicon",
+      "name": "icon-49a1d2db07116397feff5454872ecec1.ico",
+      "origin": "https://sentry.io/favicon.ico"
+    },
+    {
+      "bytes": 54023,
+      "contentType": "image/png",
+      "digest": "sha256:49a6387c8ea610f5a7284cc0b94e1129afa582af4a30b3ac69ddda682d7986a3",
+      "kind": "content",
+      "name": "icon-49a6387c8ea610f5a7284cc0b94e1129.png",
+      "origin": "icon.png"
+    },
+    {
+      "bytes": 7216,
+      "contentType": "image/png",
+      "digest": "sha256:4b8c10c83d28f5026c0206e394eebe45713f222bcb9deced8dfa875148454b62",
+      "kind": "content",
+      "name": "icon-4b8c10c83d28f5026c0206e394eebe45.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 15406,
+      "contentType": "image/x-icon",
+      "digest": "sha256:4bf4e1993874a9b467d2719b5d836b21cf6b3f7c45af2d739bdfecf77c894833",
+      "kind": "favicon",
+      "name": "icon-4bf4e1993874a9b467d2719b5d836b21.ico",
+      "origin": "https://docs.stackhawk.com/favicon.ico"
+    },
+    {
+      "bytes": 4284,
+      "contentType": "image/webp",
+      "digest": "sha256:4c4c3f44acf96a54267911f08800630714dc4a953c170aecf0772f56934117bd",
+      "kind": "favicon",
+      "name": "icon-4c4c3f44acf96a54267911f088006307.webp",
+      "origin": "https://images.squarespace-cdn.com/content/v1/6970e57a847a982ccab43554/a2fbb6b0-b249-49c4-a6e8-b4a348c748a7/favicon.ico?format=300w"
+    },
+    {
+      "bytes": 8563,
+      "contentType": "image/png",
+      "digest": "sha256:4c7a2e66ba282a92981712dfb27e6bc02169720c4dd54f048f9cc6c5cb005400",
+      "kind": "favicon",
+      "name": "icon-4c7a2e66ba282a92981712dfb27e6bc0.png",
+      "origin": "https://dac-static.atlassian.com/favicon.ico"
+    },
+    {
+      "bytes": 1048,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:4de6561f7a865f6d987ea828fdfd7b8d45a14bf1a2cdb955a49d690b601cc430",
+      "kind": "content",
+      "name": "icon-4de6561f7a865f6d987ea828fdfd7b8d.svg",
+      "origin": ".codex-plugin/assets/railway-logo-light.svg"
+    },
+    {
+      "bytes": 2622,
+      "contentType": "image/png",
+      "digest": "sha256:4e8ff1e39454169d7e0c20c756d2a44157946ff2b57974cac6183b9685c979ff",
+      "kind": "favicon",
+      "name": "icon-4e8ff1e39454169d7e0c20c756d2a441.png",
+      "origin": "https://cdn.prod.website-files.com/62864558fd8bb6eef9d56899/62b9adb62607ee564a6b0c14_App.png"
+    },
+    {
+      "bytes": 57606,
+      "contentType": "image/png",
+      "digest": "sha256:4ef07273108e26afd81c30f837c90cc3a43cb0806955000f1ad777b080a04db0",
+      "kind": "content",
+      "name": "icon-4ef07273108e26afd81c30f837c90cc3.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 20514,
+      "contentType": "image/png",
+      "digest": "sha256:509143a9a1fda5d7777e81b44ca172aeb6b296de12ae9e9377293d01703a99e8",
+      "kind": "favicon",
+      "name": "icon-509143a9a1fda5d7777e81b44ca172ae.png",
+      "origin": "https://intercom.help/vanta-ceb3b688ec0b/assets/favicon"
+    },
+    {
+      "bytes": 2605,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:50a4d42fae4d94cce0112e31637d88570d4890b7d9eef903dc1f9b4b3afe6a1e",
+      "kind": "content",
+      "name": "icon-50a4d42fae4d94cce0112e31637d8857.svg",
+      "origin": "assets/icon.svg"
+    },
+    {
+      "bytes": 10229,
+      "contentType": "image/png",
+      "digest": "sha256:5132bd5af60a22182bd531e1e9e3f0f11784038b0ef2ef611459af7b80cb6ff9",
+      "kind": "content",
+      "name": "icon-5132bd5af60a22182bd531e1e9e3f0f1.png",
+      "origin": "assets/crowdstrike-logo.png"
+    },
+    {
+      "bytes": 57172,
+      "contentType": "image/png",
+      "digest": "sha256:521cc2088a18d6d38211e34dcf816a52ad8cfd06a0583ace65f6307d49f0b26e",
+      "kind": "content",
+      "name": "icon-521cc2088a18d6d38211e34dcf816a52.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 36410,
+      "contentType": "image/png",
+      "digest": "sha256:5294459904f0d143bd6caa37272f332d791b1a1ecbda5f8e26446502357032ab",
+      "kind": "content",
+      "name": "icon-5294459904f0d143bd6caa37272f332d.png",
+      "origin": "Dynatrace_Logo_color_positive.png"
+    },
+    {
+      "bytes": 23322,
+      "contentType": "image/png",
+      "digest": "sha256:5335d7747d4a58b3a99ece47d142a127fbc4a5acec2e335fab6d17b42f4ec16d",
+      "kind": "content",
+      "name": "icon-5335d7747d4a58b3a99ece47d142a127.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 1733,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:54a632d9ee6197ccbc10d43d42217e23d08375bea63ba8eb4b6af757c1535038",
+      "kind": "content",
+      "name": "icon-54a632d9ee6197ccbc10d43d42217e23.svg",
+      "origin": ".codex-plugin/assets/composer-icon.svg"
+    },
+    {
+      "bytes": 1691,
+      "contentType": "image/png",
+      "digest": "sha256:558cc526a1d0c2ca849c6989f230b6b10e0eb9e98c554520dd746c6b106fef70",
+      "kind": "favicon",
+      "name": "icon-558cc526a1d0c2ca849c6989f230b6b1.png",
+      "origin": "https://ckeditor.com/assets/images/favicons/180x180.png"
+    },
+    {
+      "bytes": 13702,
+      "contentType": "image/png",
+      "digest": "sha256:55e3ad1f27fc0dd0c4f01a6e2c77f93d32f156a3c2d4a77f1d6ffe6f9ab6d748",
+      "kind": "content",
+      "name": "icon-55e3ad1f27fc0dd0c4f01a6e2c77f93d.png",
+      "origin": "assets/icon.png"
+    },
+    {
+      "bytes": 4175,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:58109ffc55a61352f144b7f350e60bd0aabf5c0d6c475daa9d07f2c4717d73ae",
+      "kind": "content",
+      "name": "icon-58109ffc55a61352f144b7f350e60bd0.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 7252,
+      "contentType": "image/png",
+      "digest": "sha256:587c717c31aa5b2cf3310822262890d56ef5716fdc5694cc3883e59455aeca10",
+      "kind": "content",
+      "name": "icon-587c717c31aa5b2cf3310822262890d5.png",
+      "origin": "assets/avatar.png"
+    },
+    {
+      "bytes": 9414,
+      "contentType": "image/png",
+      "digest": "sha256:59e6bbd3120897d1566554a00769770a02f987088f46b22a61a1782fe6aea28e",
+      "kind": "favicon",
+      "name": "icon-59e6bbd3120897d1566554a00769770a.png",
+      "origin": "https://www.adspirer.com/apple-icon.png"
+    },
+    {
+      "bytes": 934,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:5b02d8c41edb37734aa70362506d757f27af89a37ff0975baf3871244305976e",
+      "kind": "content",
+      "name": "icon-5b02d8c41edb37734aa70362506d757f.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 8885,
+      "contentType": "image/png",
+      "digest": "sha256:5b3b083e4acc72b2d905e08b99dff08b811c1140aeb25adfc878a278e6dff20e",
+      "kind": "content",
+      "name": "icon-5b3b083e4acc72b2d905e08b99dff08b.png",
+      "origin": "assets/app-icon.png"
+    },
+    {
+      "bytes": 257516,
+      "contentType": "image/png",
+      "digest": "sha256:5c683651ae6ebf90e799eefd3e79b089511d4fa8e14514b7426e997c03581491",
+      "kind": "content",
+      "name": "icon-5c683651ae6ebf90e799eefd3e79b089.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 1280,
+      "contentType": "image/png",
+      "digest": "sha256:5d4bbaf47f8d198da2ef59d8234d3885aa89ae7f4dadf584217cb6c69b197943",
+      "kind": "favicon",
+      "name": "icon-5d4bbaf47f8d198da2ef59d8234d3885.png",
+      "origin": "https://42crunch.com/img/42crunch-symbol-32.png"
+    },
+    {
+      "bytes": 15406,
+      "contentType": "image/x-icon",
+      "digest": "sha256:6162f3f9e53710d73db087278ed1d81e7b741dae598e80f7c54aadabd872172a",
+      "kind": "favicon",
+      "name": "icon-6162f3f9e53710d73db087278ed1d81e.ico",
+      "origin": "https://carta.com/favicon.ico?f698f762107ca70d"
+    },
+    {
+      "bytes": 19721,
+      "contentType": "image/png",
+      "digest": "sha256:61895f8af06635267b842e0bb0e223a609feed2e0036e5038c2e2b127da87a70",
+      "kind": "favicon",
+      "name": "icon-61895f8af06635267b842e0bb0e223a6.png",
+      "origin": "https://desktopcommander.app/apple-touch-icon.png"
+    },
+    {
+      "bytes": 29441,
+      "contentType": "image/png",
+      "digest": "sha256:61f4d2f3d6ec66f6fc081e554339de247cf2cda4f7192cb26fe24e2ef3bce45b",
+      "kind": "content",
+      "name": "icon-61f4d2f3d6ec66f6fc081e554339de24.png",
+      "origin": "images/cs-logo.png"
+    },
+    {
+      "bytes": 4591,
+      "contentType": "image/png",
+      "digest": "sha256:62e06a98d49f2904b704793a838ad33214c3b089c9964a99c0511117c195df85",
+      "kind": "favicon",
+      "name": "icon-62e06a98d49f2904b704793a838ad332.png",
+      "origin": "https://output.ai/icon.png"
+    },
+    {
+      "bytes": 304,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:6307b50a890cd413a367a3df907803dcaed8fec27ffb7dc5bb6a9d92682a834c",
+      "kind": "content",
+      "name": "icon-6307b50a890cd413a367a3df907803dc.svg",
+      "origin": "skills/produce/helpers/moodboards/assets/mood-board-app/components/empty-state-grid/assets/bg-make-logo-from-scratch-01.svg"
+    },
+    {
+      "bytes": 1234,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:644d96a89c7eea8ad87cb6e64e2c09c3f484a6b5a847c2376fd7988b834096ec",
+      "kind": "favicon",
+      "name": "icon-644d96a89c7eea8ad87cb6e64e2c09c3.svg",
+      "origin": "https://www.leadfeeder.com/favicon.svg"
+    },
+    {
+      "bytes": 959,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:64cc327564fc9077cb80564bbf12190ba6c6f19093f3db2ef0f82d25f8584e23",
+      "kind": "content",
+      "name": "icon-64cc327564fc9077cb80564bbf12190b.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 14359,
+      "contentType": "image/png",
+      "digest": "sha256:6536c1d5e3d1a1381e1a594481e6633f146c55b3b3f403a1ab8d1a729af435aa",
+      "kind": "content",
+      "name": "icon-6536c1d5e3d1a1381e1a594481e6633f.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 7589,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:6699a52fa24d4b802674d0178fd2c4aba9db3a80dde33c7dea9ef963fa96a3ab",
+      "kind": "content",
+      "name": "icon-6699a52fa24d4b802674d0178fd2c4ab.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 1701,
+      "contentType": "image/png",
+      "digest": "sha256:66e3a1f7e8f515bd53ff26f9b5dd83d2b52b1c2029ee6e0419e77b9fc3ae76e9",
+      "kind": "favicon",
+      "name": "icon-66e3a1f7e8f515bd53ff26f9b5dd83d2.png",
+      "origin": "https://prisma.io/apple-icon.png?apple-icon.2fqk5558kkh79.png"
+    },
+    {
+      "bytes": 361140,
+      "contentType": "image/png",
+      "digest": "sha256:672f6791589ef758b0ced2c4c477913fa2758623c438e265639a0d539ce90695",
+      "kind": "content",
+      "name": "icon-672f6791589ef758b0ced2c4c477913f.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 877,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:67c88e5b24ca41f8d9981e3468475c2617fbd19a0dc32d6aadae81b140d16cfb",
+      "kind": "content",
+      "name": "icon-67c88e5b24ca41f8d9981e3468475c26.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 1202,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:68052225ea383474318b1db3abc88be5b62248dc35b61448afa2e0a455443df1",
+      "kind": "content",
+      "name": "icon-68052225ea383474318b1db3abc88be5.svg",
+      "origin": "assets/icon.svg"
+    },
+    {
+      "bytes": 9690,
+      "contentType": "image/png",
+      "digest": "sha256:69d872c1227f095df9d2b6a1c254aeaf3557fe98bdfac2b7d957466653118bbd",
+      "kind": "content",
+      "name": "icon-69d872c1227f095df9d2b6a1c254aeaf.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 37852,
+      "contentType": "image/png",
+      "digest": "sha256:6a2f49ec981534ef3c7fc3ac1340b8a309b5f6f1d5309620a0006d8a7089a585",
+      "kind": "favicon",
+      "name": "icon-6a2f49ec981534ef3c7fc3ac1340b8a3.png",
+      "origin": "https://signoz.io/static/favicons/apple-touch-icon.png"
+    },
+    {
+      "bytes": 4066,
+      "contentType": "image/png",
+      "digest": "sha256:6ad403a36b01b263404d5b100a690c8ef07136a5e4d57b03f31ec28671fbff27",
+      "kind": "favicon",
+      "name": "icon-6ad403a36b01b263404d5b100a690c8e.png",
+      "origin": "https://avatars.slack-edge.com/2025-03-05/8558511455908_c1ec6534129188c21a66_88.png"
+    },
+    {
+      "bytes": 488,
+      "contentType": "image/png",
+      "digest": "sha256:6b3d83d7ecd44edb1c2bf95c2cab40cc716fc14a13eaf401d62b0216d4ee840a",
+      "kind": "favicon",
+      "name": "icon-6b3d83d7ecd44edb1c2bf95c2cab40cc.png",
+      "origin": "https://docs.voxel51.com/_static/favicon/favicon-32.png"
+    },
+    {
+      "bytes": 1245,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:6c906e695bfcf004f7fee0b1d7388967da4a7c6a2c2f7935dac2576d04887c4c",
+      "kind": "content",
+      "name": "icon-6c906e695bfcf004f7fee0b1d7388967.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 1273,
+      "contentType": "image/png",
+      "digest": "sha256:6d1a97e6922fee40efab035b669d1feb74d54074721b968321183a715213b605",
+      "kind": "favicon",
+      "name": "icon-6d1a97e6922fee40efab035b669d1feb.png",
+      "origin": "https://framerusercontent.com/images/6FBG66PBxjV2QFaDfIdUi5mi9A.png"
+    },
+    {
+      "bytes": 2222,
+      "contentType": "image/png",
+      "digest": "sha256:6ec59863904b2dce7ee3d935915ed98167a572cb33f0849340b2021986445be9",
+      "kind": "content",
+      "name": "icon-6ec59863904b2dce7ee3d935915ed981.png",
+      "origin": "viz/assets/datadog-icon.png"
+    },
+    {
+      "bytes": 9022,
+      "contentType": "image/png",
+      "digest": "sha256:6ff593c4ad552dac01a10b8ef460ff916ec15196d795a1e27ae2e8320c872912",
+      "kind": "content",
+      "name": "icon-6ff593c4ad552dac01a10b8ef460ff91.png",
+      "origin": "assets/icon.png"
+    },
+    {
+      "bytes": 6779,
+      "contentType": "image/png",
+      "digest": "sha256:71b3d6c06a900989f0d791a3324bb7e7dfd0e9d4889514b8cedec00a2664a037",
+      "kind": "content",
+      "name": "icon-71b3d6c06a900989f0d791a3324bb7e7.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 7690,
+      "contentType": "image/png",
+      "digest": "sha256:7205fb2631152725e0aedd16534a020a0bd89a2c1acfc726a2b3fd5b52838722",
+      "kind": "content",
+      "name": "icon-7205fb2631152725e0aedd16534a020a.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 6971,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:724bac4c30d54be6676a4cce2abf01b2977e4c13fa7ba700a00b54ce0d91ae7d",
+      "kind": "content",
+      "name": "icon-724bac4c30d54be6676a4cce2abf01b2.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 46482,
+      "contentType": "image/png",
+      "digest": "sha256:72e5d9eded3682cc2300db58d2bc3972f9f79c2a438f0cb087326610a6e6b87a",
+      "kind": "content",
+      "name": "icon-72e5d9eded3682cc2300db58d2bc3972.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 19604,
+      "contentType": "image/png",
+      "digest": "sha256:740df6167e01959f2b1cadbcabb6e3d63e9da654d193f29f9d582fe2df02c1c2",
+      "kind": "content",
+      "name": "icon-740df6167e01959f2b1cadbcabb6e3d6.png",
+      "origin": "assets/app-icon.png"
+    },
+    {
+      "bytes": 15406,
+      "contentType": "image/x-icon",
+      "digest": "sha256:74e50edb9b2aef28e6c4020c23590a294310bc9ba643580b1086242937792ce5",
+      "kind": "favicon",
+      "name": "icon-74e50edb9b2aef28e6c4020c23590a29.ico",
+      "origin": "https://www.crowdsec.net/favicon.ico"
+    },
+    {
+      "bytes": 2525,
+      "contentType": "image/png",
+      "digest": "sha256:7637efc1d8dad442d2c87b9dd1b6dc89fe9c11751bca251a7c62c06d291b7f66",
+      "kind": "favicon",
+      "name": "icon-7637efc1d8dad442d2c87b9dd1b6dc89.png",
+      "origin": "https://ai-first.techwolf.ai/favicon.png"
+    },
+    {
+      "bytes": 2699,
+      "contentType": "image/png",
+      "digest": "sha256:776310bcb0f0f191c616f31a13fcb8de8cc94d920c77625c271b3a034199ac43",
+      "kind": "content",
+      "name": "icon-776310bcb0f0f191c616f31a13fcb8de.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 1417,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:776aec16beef775f56b9ad38b780cbacb1d75ee8893112847765e6aa881b5001",
+      "kind": "content",
+      "name": "icon-776aec16beef775f56b9ad38b780cbac.svg",
+      "origin": "assets/icon.svg"
+    },
+    {
+      "bytes": 10261,
+      "contentType": "image/png",
+      "digest": "sha256:79038a3f370c0a247ac307a43443cf6e17a113b3962b2488aca2d9d28b1243ab",
+      "kind": "favicon",
+      "name": "icon-79038a3f370c0a247ac307a43443cf6e.png",
+      "origin": "https://browser-use.com/apple-touch-icon.png"
+    },
+    {
+      "bytes": 5991,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:7954504455a9ff816a10859d06dfe43384791d654ed26d826c67dc48992d9cff",
+      "kind": "content",
+      "name": "icon-7954504455a9ff816a10859d06dfe433.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 9908,
+      "contentType": "image/png",
+      "digest": "sha256:7ac4579b4a075173126862ebf70243ff0a447ffe843e7fbdf16ea2681f4fff13",
+      "kind": "content",
+      "name": "icon-7ac4579b4a075173126862ebf70243ff.png",
+      "origin": "assets/icon.png"
+    },
+    {
+      "bytes": 24255,
+      "contentType": "image/png",
+      "digest": "sha256:7b472ecdd8d881d07df7fc83975fb422ac02a32ab6ef48cdb49cfbe6e22e182b",
+      "kind": "content",
+      "name": "icon-7b472ecdd8d881d07df7fc83975fb422.png",
+      "origin": "assets/avatar.png"
+    },
+    {
+      "bytes": 3217,
+      "contentType": "image/png",
+      "digest": "sha256:7f8dd7b74386f30b061ddfe57e58217d6d32f9318e3f95fdf4130db6a22e60dc",
+      "kind": "favicon",
+      "name": "icon-7f8dd7b74386f30b061ddfe57e58217d.png",
+      "origin": "https://www.tavily.com/apple-icon.png?apple-icon.2rsjznomrsf77.png"
+    },
+    {
+      "bytes": 64347,
+      "contentType": "image/png",
+      "digest": "sha256:7fcbec269ec57b3f9c227c964907692d044dbe4e8495fc42cd72a5794d7c11fb",
+      "kind": "content",
+      "name": "icon-7fcbec269ec57b3f9c227c964907692d.png",
+      "origin": "assets/avatar.png"
+    },
+    {
+      "bytes": 2370,
+      "contentType": "image/png",
+      "digest": "sha256:8034d1975f2ff4408cb399089eb6c4b575a7ebe267063c2074327e64a710732c",
+      "kind": "content",
+      "name": "icon-8034d1975f2ff4408cb399089eb6c4b5.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 59582,
+      "contentType": "image/x-icon",
+      "digest": "sha256:8041e8f11cec00b191e3aeb56179a03dd88b852b868fe86dfbf641a5d2db80ac",
+      "kind": "favicon",
+      "name": "icon-8041e8f11cec00b191e3aeb56179a03d.ico",
+      "origin": "https://docs.oracle.com/sp_common/site-template/ohc-common/img/favicon.ico"
+    },
+    {
+      "bytes": 5123,
+      "contentType": "image/png",
+      "digest": "sha256:81ba53ce8917d2e443e5f4b17bbb8239ee7d73e8212008c4299525a0b80caf1a",
+      "kind": "favicon",
+      "name": "icon-81ba53ce8917d2e443e5f4b17bbb8239.png",
+      "origin": "https://www.hubspot.com/hubfs/HubSpot_Logos/HubSpot-Inversed-Favicon.png"
+    },
+    {
+      "bytes": 5300,
+      "contentType": "image/png",
+      "digest": "sha256:82e2d2f25ba840a8b9a30b128445d04c149c767f7ddda09ce449ff846cbd186a",
+      "kind": "content",
+      "name": "icon-82e2d2f25ba840a8b9a30b128445d04c.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 1803,
+      "contentType": "image/png",
+      "digest": "sha256:84282b677d74f59787c88269e47512b2928dd634d9aaa1099923b1493aaee4b3",
+      "kind": "content",
+      "name": "icon-84282b677d74f59787c88269e47512b2.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 1008,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:8536995b0c781c1bd4f1b3301a73abf39d101a97b0cad016535c163687bad488",
+      "kind": "content",
+      "name": "icon-8536995b0c781c1bd4f1b3301a73abf3.svg",
+      "origin": "logo.svg"
+    },
+    {
+      "bytes": 5379,
+      "contentType": "image/png",
+      "digest": "sha256:86e5270f994539a9919863c8877e2b4bff369a86009cdb93de6a0839f6e74844",
+      "kind": "content",
+      "name": "icon-86e5270f994539a9919863c8877e2b4b.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 3340,
+      "contentType": "image/png",
+      "digest": "sha256:891addb081afe5aa144a855067114bd057aca8b7a86e905c62b2bfe6dbb83777",
+      "kind": "favicon",
+      "name": "icon-891addb081afe5aa144a855067114bd0.png",
+      "origin": "https://www.pendo.io/apple-touch-icon.png"
+    },
+    {
+      "bytes": 10299,
+      "contentType": "image/png",
+      "digest": "sha256:8a0da01fdd368341cb7d5103c6435d7b94a8a09521da6c65d57be34e97c4cb2a",
+      "kind": "content",
+      "name": "icon-8a0da01fdd368341cb7d5103c6435d7b.png",
+      "origin": "assets/expo.png"
+    },
+    {
+      "bytes": 15908,
+      "contentType": "image/png",
+      "digest": "sha256:8a338496614f7dac92f3f044f4e814472757cfe1056d3130ea66edd0f4645a78",
+      "kind": "favicon",
+      "name": "icon-8a338496614f7dac92f3f044f4e81447.png",
+      "origin": "https://www.qodo.ai/wp-content/uploads/2025/03/qodo-fav-300x300.png"
+    },
+    {
+      "bytes": 1276,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:8d7deb7f7224deaaf4129368695c8bacb4e4edebfdc724aa66c852088b1d7ce8",
+      "kind": "favicon",
+      "name": "icon-8d7deb7f7224deaaf4129368695c8bac.svg",
+      "origin": "https://zilliz.com/favicon.svg"
+    },
+    {
+      "bytes": 16774,
+      "contentType": "image/png",
+      "digest": "sha256:9082312993373e52b2bc5e5045acf6412671e21cf0104178befb3417078b46cc",
+      "kind": "content",
+      "name": "icon-9082312993373e52b2bc5e5045acf641.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 724,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:9705cd36b7eba1c63514ef9676c60ff3d125d25cbc380c3d6c3082f0c73051a4",
+      "kind": "content",
+      "name": "icon-9705cd36b7eba1c63514ef9676c60ff3.svg",
+      "origin": "assets/datascience.svg"
+    },
+    {
+      "bytes": 646,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:9798b710e015c7f3fa6101779e323568d6a5a022651d427021262ce850467b07",
+      "kind": "content",
+      "name": "icon-9798b710e015c7f3fa6101779e323568.svg",
+      "origin": "Figma Icon (Full-color).svg"
+    },
+    {
+      "bytes": 969,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:98cb142b8fcff83824dd96eb86b66796546b583099947a1dd85588e3ab586a72",
+      "kind": "content",
+      "name": "icon-98cb142b8fcff83824dd96eb86b66796.svg",
+      "origin": "assets/app-icon.svg"
+    },
+    {
+      "bytes": 3145,
+      "contentType": "image/png",
+      "digest": "sha256:98fa38d5b8bdda69cd1b346b6b45a957b80bc5adc232413a2688688939f4488a",
+      "kind": "content",
+      "name": "icon-98fa38d5b8bdda69cd1b346b6b45a957.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 21458,
+      "contentType": "image/png",
+      "digest": "sha256:9b2be11cf01d51a73b612a40f952576e75b8cc3099f01608796bcf7e68a73de7",
+      "kind": "content",
+      "name": "icon-9b2be11cf01d51a73b612a40f952576e.png",
+      "origin": "assets/redis-logo.png"
+    },
+    {
+      "bytes": 99567,
+      "contentType": "image/png",
+      "digest": "sha256:9b9c2b09b2fa064611fb62307d321d5c2ea70cf0789f7ce34cdb0fc0d9190b3a",
+      "kind": "content",
+      "name": "icon-9b9c2b09b2fa064611fb62307d321d5c.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 2440,
+      "contentType": "image/webp",
+      "digest": "sha256:9d8e91f168b523510ff53affb08be505ea78bebbd1fef9c55a227cf34c48ff62",
+      "kind": "favicon",
+      "name": "icon-9d8e91f168b523510ff53affb08be505.webp",
+      "origin": "https://www.activecampaign.com/dist/favicon-180x180.png"
+    },
+    {
+      "bytes": 198,
+      "contentType": "image/x-icon",
+      "digest": "sha256:9deb629637088856fe61dc868bf40a7d21ed942e4117659f3d6c3408f59b906b",
+      "kind": "favicon",
+      "name": "icon-9deb629637088856fe61dc868bf40a7d.ico",
+      "origin": "https://www.preset.io/favicon.ico"
+    },
+    {
+      "bytes": 11115,
+      "contentType": "image/png",
+      "digest": "sha256:9ea89ef38e7aa52f054fb3875297f40e51960036c1f2fc255cfc7e7a00a414cf",
+      "kind": "content",
+      "name": "icon-9ea89ef38e7aa52f054fb3875297f40e.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 20124,
+      "contentType": "image/png",
+      "digest": "sha256:9eea8621e2dc7aa1985ad9124b3f16d301d2e891e3c849166a3119c8ef30a64c",
+      "kind": "favicon",
+      "name": "icon-9eea8621e2dc7aa1985ad9124b3f16d3.png",
+      "origin": "https://www.gstatic.com/devrel-devsite/prod/v01e820f11dab21f3ca0f6bae75161414eea27d2d73afb4b420c81b7d54dc150c/chrome/images/touchicon-180.png"
+    },
+    {
+      "bytes": 42574,
+      "contentType": "image/png",
+      "digest": "sha256:9f0a8595e55bee9c83e218eaf9fb43da56b428bb17bc74de8799ebf5cf586cd7",
+      "kind": "favicon",
+      "name": "icon-9f0a8595e55bee9c83e218eaf9fb43da.png",
+      "origin": "https://dash0.com/apple-touch-icon.png"
+    },
+    {
+      "bytes": 15330,
+      "contentType": "image/png",
+      "digest": "sha256:9fb7883c2f5e9d1c35140cea3d2cfa510ebb75b310b9b9cdfa4d2c115245acc2",
+      "kind": "content",
+      "name": "icon-9fb7883c2f5e9d1c35140cea3d2cfa51.png",
+      "origin": "assets/twg-logo.png"
+    },
+    {
+      "bytes": 42873,
+      "contentType": "image/png",
+      "digest": "sha256:a0ec1bdfe81f767f30fd5227402dcf73bd1b54f8b58bd0d3ac51100d684949b7",
+      "kind": "content",
+      "name": "icon-a0ec1bdfe81f767f30fd5227402dcf73.png",
+      "origin": "codex-plugin/assets/atlan-logo.png"
+    },
+    {
+      "bytes": 205,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:a1e8945b324f235b0e5536d9b6a9241b3676f45141c8f9bf9e82eaa17bcaa3fc",
+      "kind": "content",
+      "name": "icon-a1e8945b324f235b0e5536d9b6a9241b.svg",
+      "origin": "assets/vercel.svg"
+    },
+    {
+      "bytes": 121628,
+      "contentType": "image/png",
+      "digest": "sha256:a1f718f71e727e6573b5810fee5ea33c887d1161203037746dfcdf856df2db3d",
+      "kind": "content",
+      "name": "icon-a1f718f71e727e6573b5810fee5ea33c.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 6600,
+      "contentType": "image/png",
+      "digest": "sha256:a209946494b30cab9e53ceedba655adb9fc6e6b941a5d572796c6f2ae6709889",
+      "kind": "content",
+      "name": "icon-a209946494b30cab9e53ceedba655adb.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 68126,
+      "contentType": "image/png",
+      "digest": "sha256:a2354ec78a719ab20749d4aefe0278c631a754b18e991cfaa71679242d10c33b",
+      "kind": "content",
+      "name": "icon-a2354ec78a719ab20749d4aefe0278c6.png",
+      "origin": "assets/avatar.png"
+    },
+    {
+      "bytes": 9447,
+      "contentType": "image/png",
+      "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+      "kind": "favicon",
+      "name": "icon-a332b54b620a2fa04413561c01c925cd.png",
+      "origin": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+    },
+    {
+      "bytes": 4641,
+      "contentType": "image/png",
+      "digest": "sha256:a37ee2e55f58a8ced92b74fe438fb3c5cb4d9b4bb636352b280a678947412582",
+      "kind": "content",
+      "name": "icon-a37ee2e55f58a8ced92b74fe438fb3c5.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 19473,
+      "contentType": "image/png",
+      "digest": "sha256:a5fce38fb9723e9e29081544a1bd20d00613dc3058660d7bd45e36b7f94df5ae",
+      "kind": "content",
+      "name": "icon-a5fce38fb9723e9e29081544a1bd20d0.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 6356,
+      "contentType": "image/png",
+      "digest": "sha256:a6e58b7cdbd590b9964fb5f7e7ceba159c151da8aa09ccbd4f3ae3c99931fa13",
+      "kind": "favicon",
+      "name": "icon-a6e58b7cdbd590b9964fb5f7e7ceba15.png",
+      "origin": "https://newrelic.com/themes/custom/erno/assets/images/metadata/apple-touch-icon.png"
+    },
+    {
+      "bytes": 3259,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:a771c202679a56266768ac0c63d0a5a23fbe5c142aed105fd8cadabb63ec4b04",
+      "kind": "content",
+      "name": "icon-a771c202679a56266768ac0c63d0a5a2.svg",
+      "origin": "assets/icon.svg"
+    },
+    {
+      "bytes": 1571,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:a7993e5bd1c0550e179a273b20cd0879326a0a03c74456b0fe309e462ea61cc0",
+      "kind": "content",
+      "name": "icon-a7993e5bd1c0550e179a273b20cd0879.svg",
+      "origin": "assets/composer-icon.svg"
+    },
+    {
+      "bytes": 3446,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:a7f14f0621c73d86170e16b2f6ca69782e4f554f1e3d4596bcb1f9d57d3cbe5c",
+      "kind": "content",
+      "name": "icon-a7f14f0621c73d86170e16b2f6ca6978.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 3010,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:a8963a893a3abfc498abe278d321649ecf96c46fb89f28bb9120214a8544e0e8",
+      "kind": "content",
+      "name": "icon-a8963a893a3abfc498abe278d321649e.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 9273,
+      "contentType": "image/png",
+      "digest": "sha256:a96194d7ff679eb3bfb71f971e989cd1f16fc48e5231f275c286160df68cfcd7",
+      "kind": "content",
+      "name": "icon-a96194d7ff679eb3bfb71f971e989cd1.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 2236,
+      "contentType": "image/png",
+      "digest": "sha256:ac6c2eb313b85002cf4b5afb45af984c5d2242b2ae3d6d7f8bb9a7cdaaaeeba2",
+      "kind": "favicon",
+      "name": "icon-ac6c2eb313b85002cf4b5afb45af984c.png",
+      "origin": "https://docs.gc.ai/mintlify-assets/_mintlify/favicons/gcai/XpTjQtvSBPYuCpWI/_generated/favicon/apple-touch-icon.png"
+    },
+    {
+      "bytes": 4195,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:acc71752b4124a4ebf921eceb700877b5dacab3f8f3ac7ed7fd5593bd9b2a153",
+      "kind": "content",
+      "name": "icon-acc71752b4124a4ebf921eceb700877b.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 27423,
+      "contentType": "image/png",
+      "digest": "sha256:ad103ac35e9bd800d96b4663ed1ca5d5bcdf21c71299a546d275759c5f78733a",
+      "kind": "content",
+      "name": "icon-ad103ac35e9bd800d96b4663ed1ca5d5.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 2456,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:ae712bdd74621ac0ec7b9eb5be560966c976b0d44203763b759815792420fc78",
+      "kind": "content",
+      "name": "icon-ae712bdd74621ac0ec7b9eb5be560966.svg",
+      "origin": "assets/unity.svg"
+    },
+    {
+      "bytes": 44919,
+      "contentType": "image/png",
+      "digest": "sha256:afb54276bf45167125048872621a14156c03034484519d81b5160cb73c2d7c20",
+      "kind": "content",
+      "name": "icon-afb54276bf45167125048872621a1415.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 8502,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:b258e8b9fc32dfe2dc2a0fb6a44b2cc19f0b64ad40837e00b0f9205d652a8c92",
+      "kind": "content",
+      "name": "icon-b258e8b9fc32dfe2dc2a0fb6a44b2cc1.svg",
+      "origin": "assets/header.svg"
+    },
+    {
+      "bytes": 15086,
+      "contentType": "image/x-icon",
+      "digest": "sha256:b3e8de7eb914d38a5c711ed17268c346a14d5c8113f5fec370aac8fb37b92865",
+      "kind": "favicon",
+      "name": "icon-b3e8de7eb914d38a5c711ed17268c346.ico",
+      "origin": "https://carbone.io/favicon.ico"
+    },
+    {
+      "bytes": 4267,
+      "contentType": "image/png",
+      "digest": "sha256:b4755d2c1d2ac7c67ff2002ae2d237db5a9c6c592606d64625991e5a7cf8568f",
+      "kind": "favicon",
+      "name": "icon-b4755d2c1d2ac7c67ff2002ae2d237db.png",
+      "origin": "https://cdn.prod.website-files.com/69654e88dce9154b5f1206dd/69a59cff65ed0f267dd2fbe8_touchicon.png"
+    },
+    {
+      "bytes": 4216,
+      "contentType": "image/png",
+      "digest": "sha256:b4a3a7a955f29afb3698658c05a53e8f4acff80ca3f680662114829ddb9b2ed2",
+      "kind": "content",
+      "name": "icon-b4a3a7a955f29afb3698658c05a53e8f.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 8049,
+      "contentType": "image/png",
+      "digest": "sha256:b5eeb6a49ccb830198bb6668a331c2659ed4b9698a67cab46dde257504d9cb57",
+      "kind": "content",
+      "name": "icon-b5eeb6a49ccb830198bb6668a331c265.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 4764,
+      "contentType": "image/png",
+      "digest": "sha256:b672bf8a5081b053a1ea154926e3bc621a73be4ee0fabb4baaf7e2e2c517a6d4",
+      "kind": "favicon",
+      "name": "icon-b672bf8a5081b053a1ea154926e3bc62.png",
+      "origin": "https://mavenbio.com/icons/apple-icon.png"
+    },
+    {
+      "bytes": 7574,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:b6d6425cb92db07c465273fc4617833ff350d8d10af4b813e13fee586bfdb806",
+      "kind": "content",
+      "name": "icon-b6d6425cb92db07c465273fc4617833f.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 1150,
+      "contentType": "image/x-icon",
+      "digest": "sha256:bc108afac8491e981082ecbb84c1edc8a743c9da5d011bf50ccac677007b892e",
+      "kind": "favicon",
+      "name": "icon-bc108afac8491e981082ecbb84c1edc8.ico",
+      "origin": "https://you.com/favicon.ico?favicon.2oo7buuzhxlge.ico"
+    },
+    {
+      "bytes": 542,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:bc5e83df48f9ebaf98a750e4a16efb7290a8f39bb4fb6aabe07416aa319e711d",
+      "kind": "content",
+      "name": "icon-bc5e83df48f9ebaf98a750e4a16efb72.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 15086,
+      "contentType": "image/x-icon",
+      "digest": "sha256:bdd206c6a14948995d983a3a7cef47d4b6b7bf096c212b6169f8211c8b7f7db4",
+      "kind": "favicon",
+      "name": "icon-bdd206c6a14948995d983a3a7cef47d4.ico",
+      "origin": "https://www.hostinger.com/favicon.ico"
+    },
+    {
+      "bytes": 13118,
+      "contentType": "image/png",
+      "digest": "sha256:be4e9d359788e8917a61f6b7972721fbb13377a541772cca1960949bb7daa1ae",
+      "kind": "content",
+      "name": "icon-be4e9d359788e8917a61f6b7972721fb.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 2869,
+      "contentType": "image/png",
+      "digest": "sha256:bf7a5a8d52fe292c6964ea4361018ecb346a065d8a374d0e1ea6fe56170fb566",
+      "kind": "favicon",
+      "name": "icon-bf7a5a8d52fe292c6964ea4361018ecb.png",
+      "origin": "https://modelcontextprotocol.io/mintlify-assets/_mintlify/favicons/mcp/ebiVJzri-bsiCfVZ/_generated/favicon/apple-touch-icon.png"
+    },
+    {
+      "bytes": 795,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:c19c82a56aa25377058150f7037ee5d7f4ec82914a25fc22bf8482b3447fc052",
+      "kind": "content",
+      "name": "icon-c19c82a56aa25377058150f7037ee5d7.svg",
+      "origin": "assets/icon.svg"
+    },
+    {
+      "bytes": 7228,
+      "contentType": "image/png",
+      "digest": "sha256:c4540b41fea9ecae37c611bd09d7ba08588ca0d4b612d7c9bae181cffb7e4d40",
+      "kind": "content",
+      "name": "icon-c4540b41fea9ecae37c611bd09d7ba08.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 1350,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:c4acc0c249be250d94ce6c8d4413679bd24f0104580f677f87aff97a6fb4bc4d",
+      "kind": "content",
+      "name": "icon-c4acc0c249be250d94ce6c8d4413679b.svg",
+      "origin": "assets/composer-icon.svg"
+    },
+    {
+      "bytes": 654,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:c6be9965a6c0f1516dae02750c88bc4b989e5e6bfc44fbf6a096e74dd3494148",
+      "kind": "content",
+      "name": "icon-c6be9965a6c0f1516dae02750c88bc4b.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 13274,
+      "contentType": "image/png",
+      "digest": "sha256:c77819aaa2ec48796134d9830e70f0787c7ace3641969d9d37ec86c6aaab39b1",
+      "kind": "content",
+      "name": "icon-c77819aaa2ec48796134d9830e70f078.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 5738,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:c7e6c3a1af641dc921fe92ccf31acb9c80dad0ff1c0073f110c30ed4c41b9023",
+      "kind": "content",
+      "name": "icon-c7e6c3a1af641dc921fe92ccf31acb9c.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 2036,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:c8883c41e2a4249e8ada891ee32b630e357027ab92a26a2dba223a029403bc10",
+      "kind": "content",
+      "name": "icon-c8883c41e2a4249e8ada891ee32b630e.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 1634,
+      "contentType": "image/png",
+      "digest": "sha256:ca087eacbf7a30b3d1c3e79feecaa80a46cbdba169fa2ed300e3e95a5dace854",
+      "kind": "favicon",
+      "name": "icon-ca087eacbf7a30b3d1c3e79feecaa80a.png",
+      "origin": "https://docs.brightdata.com/mintlify-assets/_mintlify/favicons/brightdata/uUUbPQlQGu6JyjN0/_generated/favicon/apple-touch-icon.png"
+    },
+    {
+      "bytes": 8433,
+      "contentType": "image/png",
+      "digest": "sha256:cbb150ab10df6970a9757eff215386829b1c72b7086e98dee7b926da1b3f0ef2",
+      "kind": "content",
+      "name": "icon-cbb150ab10df6970a9757eff21538682.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 25268,
+      "contentType": "image/png",
+      "digest": "sha256:cc97812c2f8b56feb96854141c609cdda17d64502d01da7ad7c0e5649bf8472e",
+      "kind": "content",
+      "name": "icon-cc97812c2f8b56feb96854141c609cdd.png",
+      "origin": "assets/icon.png"
+    },
+    {
+      "bytes": 14905,
+      "contentType": "image/png",
+      "digest": "sha256:cd876c08d8bbdaad0b75485103bed7b6dba51a1feede59c3d5094d060a56a99e",
+      "kind": "content",
+      "name": "icon-cd876c08d8bbdaad0b75485103bed7b6.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 755,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:cec3aadecf96ec8089a603e81ac8c5425cac0d764bb6bb8a80989436bf4db1c1",
+      "kind": "content",
+      "name": "icon-cec3aadecf96ec8089a603e81ac8c542.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 3187,
+      "contentType": "image/png",
+      "digest": "sha256:cee14d54dd789fda5a542d3e19f38eafbf731e9cdc489dfd6ecc4a334de3020f",
+      "kind": "content",
+      "name": "icon-cee14d54dd789fda5a542d3e19f38eaf.png",
+      "origin": "assets/nv-icon.png"
+    },
+    {
+      "bytes": 1403,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:cf9014d1762529a0fb53336e5d79c80bb702659c2e90ae73245e668e659af80c",
+      "kind": "content",
+      "name": "icon-cf9014d1762529a0fb53336e5d79c80b.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 58940,
+      "contentType": "image/png",
+      "digest": "sha256:d07ba65f41b524aee6d51d7a9e1ec35d88b92ef2bca44f81aea9f9f9cfc7a075",
+      "kind": "content",
+      "name": "icon-d07ba65f41b524aee6d51d7a9e1ec35d.png",
+      "origin": "assets/icon.png"
+    },
+    {
+      "bytes": 4136,
+      "contentType": "image/png",
+      "digest": "sha256:d263f3c265621460040fb8d1074d8b5226bd39174e17e5ce67ca3667a2b9ae4b",
+      "kind": "content",
+      "name": "icon-d263f3c265621460040fb8d1074d8b52.png",
+      "origin": "revenuecat/assets/logo.png"
+    },
+    {
+      "bytes": 20296,
+      "contentType": "image/png",
+      "digest": "sha256:d3c261c132e56841924c7db046eb3958036f0dc29fb6066235d4c2e9a4ed3668",
+      "kind": "content",
+      "name": "icon-d3c261c132e56841924c7db046eb3958.png",
+      "origin": "assets/magicpath.png"
+    },
+    {
+      "bytes": 277,
+      "contentType": "image/png",
+      "digest": "sha256:d3cae2ef925520f68fc4f1896d39da43e620d4e2d79859507114dddfaaf54a41",
+      "kind": "favicon",
+      "name": "icon-d3cae2ef925520f68fc4f1896d39da43.png",
+      "origin": "https://www.chronograph.pe/wp-content/themes/chronograph/assets/images/favicon/apple-touch-icon.png"
+    },
+    {
+      "bytes": 5415,
+      "contentType": "image/png",
+      "digest": "sha256:d4fc17cf0d25ad88fb1e0ac80432f1e03d1944e8b91a068b56cf46c4e9d41aeb",
+      "kind": "favicon",
+      "name": "icon-d4fc17cf0d25ad88fb1e0ac80432f1e0.png",
+      "origin": "https://cdn.prod.website-files.com/621f54116cab10f6e9215d8b/621f549024eb2947f6f2f7f7_Favicon%20256x256.png"
+    },
+    {
+      "bytes": 4722,
+      "contentType": "image/png",
+      "digest": "sha256:d5389b5252eb373894508c6a8b1f65d8a7837b2672c3955276ee8cdd75780e4d",
+      "kind": "content",
+      "name": "icon-d5389b5252eb373894508c6a8b1f65d8.png",
+      "origin": "assets/app-icon.png"
+    },
+    {
+      "bytes": 10621,
+      "contentType": "image/png",
+      "digest": "sha256:d543e555eb1c376f21c2b1d08d4fc76e3b348ab6b3ccf10ccc682f8dc2cbe273",
+      "kind": "content",
+      "name": "icon-d543e555eb1c376f21c2b1d08d4fc76e.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 4208,
+      "contentType": "image/png",
+      "digest": "sha256:d7513b1e33615d6d44d25e950ce79529be70848a258afee51c0947f20291eb9a",
+      "kind": "content",
+      "name": "icon-d7513b1e33615d6d44d25e950ce79529.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 2094,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:d80a4c3e0fd2efa7af88433a53b25a92c78a644175c6669dd78fee50fb53acf6",
+      "kind": "content",
+      "name": "icon-d80a4c3e0fd2efa7af88433a53b25a92.svg",
+      "origin": "skills/narrator/assets/icon.svg"
+    },
+    {
+      "bytes": 4049,
+      "contentType": "image/png",
+      "digest": "sha256:d83c4aebc93b4d894973ef6891e2135709e0ec4a91cdf51f1af7c9f9075f632a",
+      "kind": "content",
+      "name": "icon-d83c4aebc93b4d894973ef6891e21357.png",
+      "origin": "assets/app-icon.png"
+    },
+    {
+      "bytes": 13944,
+      "contentType": "image/png",
+      "digest": "sha256:da53b36046def313f66193e1289d9276a93772596f94e936a46ed8999af05d6e",
+      "kind": "favicon",
+      "name": "icon-da53b36046def313f66193e1289d9276.png",
+      "origin": "https://docs.pixeltable.com/mintlify-assets/_mintlify/favicons/pixeltable/zFspt0AMs-B9M_V8/_generated/favicon/apple-touch-icon.png"
+    },
+    {
+      "bytes": 3348,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:dd71a017db5a7ef05b2c334c4c0c3a8dcf8f268ea6ca643efb11c22f646fbd44",
+      "kind": "content",
+      "name": "icon-dd71a017db5a7ef05b2c334c4c0c3a8d.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 10287,
+      "contentType": "image/png",
+      "digest": "sha256:dde77d8adc5e25871e75ea196b4a57cc4f9251b4046d573b676bf6dca4e6c3f6",
+      "kind": "content",
+      "name": "icon-dde77d8adc5e25871e75ea196b4a57cc.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 39140,
+      "contentType": "image/png",
+      "digest": "sha256:de2f5931b97d9b2ce6325208dd514c69ee9bf13201af635d8fb17345a5ef4737",
+      "kind": "content",
+      "name": "icon-de2f5931b97d9b2ce6325208dd514c69.png",
+      "origin": "assets/app-icon.png"
+    },
+    {
+      "bytes": 43889,
+      "contentType": "image/png",
+      "digest": "sha256:df380ee7463646f242f3da851f1754f31fc1d9dafb65fcb9ebe55c6c19fb6bf3",
+      "kind": "content",
+      "name": "icon-df380ee7463646f242f3da851f1754f3.png",
+      "origin": "assets/nvidia.png"
+    },
+    {
+      "bytes": 5067,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:df71c0111148d116515a02c5cb07483caad2bcb779664fa16fd837a4709504ab",
+      "kind": "content",
+      "name": "icon-df71c0111148d116515a02c5cb07483c.svg",
+      "origin": "assets/dataverse-logo.svg"
+    },
+    {
+      "bytes": 4539,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:dfee34b6310559423ae4205b930feb0935436256094c78cfb8a60a855fe4ed3a",
+      "kind": "content",
+      "name": "icon-dfee34b6310559423ae4205b930feb09.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 611,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:e1b148f3ba50ee687aebd2039aad30fa5b2dba459fab820bc81ea99ab44da466",
+      "kind": "favicon",
+      "name": "icon-e1b148f3ba50ee687aebd2039aad30fa.svg",
+      "origin": "https://www.ory.sh/icon.svg?c4370a965aac90e8"
+    },
+    {
+      "bytes": 51485,
+      "contentType": "image/png",
+      "digest": "sha256:e1de5bb2c12f4fb98a0c7aad2614c4485e22b021ebfb123f3b0fd7ea90597741",
+      "kind": "content",
+      "name": "icon-e1de5bb2c12f4fb98a0c7aad2614c448.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 5188,
+      "contentType": "image/png",
+      "digest": "sha256:e1e012cdbcbae94ae151879d5f05468127706701ff6dc23e142cc77693cbffa7",
+      "kind": "content",
+      "name": "icon-e1e012cdbcbae94ae151879d5f054681.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 3581,
+      "contentType": "image/png",
+      "digest": "sha256:e20b9668553aeb46b55a366d0a8eddd9051b5ac55207ab067ed347029a53434e",
+      "kind": "content",
+      "name": "icon-e20b9668553aeb46b55a366d0a8eddd9.png",
+      "origin": "assets/notion.png"
+    },
+    {
+      "bytes": 9057,
+      "contentType": "image/png",
+      "digest": "sha256:e2145b7694f27b37fb40d7671ba6eb5e870c256c1e147444187e7ef22cb5e4de",
+      "kind": "content",
+      "name": "icon-e2145b7694f27b37fb40d7671ba6eb5e.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 3608,
+      "contentType": "image/png",
+      "digest": "sha256:e2a2bb032d6b0fc59d46369492ac36c264355943fe13af22ab1819f52c8623d3",
+      "kind": "content",
+      "name": "icon-e2a2bb032d6b0fc59d46369492ac36c2.png",
+      "origin": "assets/logo-square.png"
+    },
+    {
+      "bytes": 21063,
+      "contentType": "image/png",
+      "digest": "sha256:e363278ee1b467ea26360bec8e818b85d07b7d6b374681314fed125514fd30e2",
+      "kind": "content",
+      "name": "icon-e363278ee1b467ea26360bec8e818b85.png",
+      "origin": "icon.png"
+    },
+    {
+      "bytes": 509,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:e364d0c19c6d370a08b628540880548a8935c49365e02664e93dedaea96bb861",
+      "kind": "content",
+      "name": "icon-e364d0c19c6d370a08b628540880548a.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 1837,
+      "contentType": "image/png",
+      "digest": "sha256:e36a100a09e5ea48e1e3b1eae097e4e7d8fbe592e06245a98e576f7c471d1c3f",
+      "kind": "favicon",
+      "name": "icon-e36a100a09e5ea48e1e3b1eae097e4e7.png",
+      "origin": "https://developer.amd.com/apple-touch-icon.png"
+    },
+    {
+      "bytes": 2592,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:e3f4b7baefb22b89684c247a819e073b85c79c99b72065e5ca15925c82cfd8ef",
+      "kind": "content",
+      "name": "icon-e3f4b7baefb22b89684c247a819e073b.svg",
+      "origin": "docs/assets/img/plugin-logo.svg"
+    },
+    {
+      "bytes": 763,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:e5935afc31e5084860e5ddafae804b0620d38345bd09250c9ef081edae0ef733",
+      "kind": "content",
+      "name": "icon-e5935afc31e5084860e5ddafae804b06.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 955,
+      "contentType": "image/png",
+      "digest": "sha256:e5a8b846e1146fbd3c821240cfdb5b137b007cc7f43c04dfe8d15e5298e915b1",
+      "kind": "favicon",
+      "name": "icon-e5a8b846e1146fbd3c821240cfdb5b13.png",
+      "origin": "https://framerusercontent.com/images/AbwTwD2ZqryPaCk08RsFBFmCmuk.png"
+    },
+    {
+      "bytes": 18214,
+      "contentType": "image/png",
+      "digest": "sha256:e70217b2e33d57aad2d85c96a4fa73a1a97faa2aaf010e89c2b057cc08e78565",
+      "kind": "content",
+      "name": "icon-e70217b2e33d57aad2d85c96a4fa73a1.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 1479,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:e753d59e2e1a4b471831d3bbf13387d9604ec0316a83668923a8e662f502513e",
+      "kind": "content",
+      "name": "icon-e753d59e2e1a4b471831d3bbf13387d9.svg",
+      "origin": "skills/carta-agm-deck-builder/references/assets/logo-dark.svg"
+    },
+    {
+      "bytes": 1734,
+      "contentType": "image/png",
+      "digest": "sha256:e80d52cd3a4a3c908cb0ae8d67962667badce26e8574f4ab091fa050f6e13e18",
+      "kind": "favicon",
+      "name": "icon-e80d52cd3a4a3c908cb0ae8d67962667.png",
+      "origin": "https://clickhouse.com/apple-icon.png?apple-icon.18ftzencg_4sl.png"
+    },
+    {
+      "bytes": 12763,
+      "contentType": "image/png",
+      "digest": "sha256:e826ea328fe21c34f6eb7140a550316c59c08d7e6a29f8bceb9410652ab533b6",
+      "kind": "content",
+      "name": "icon-e826ea328fe21c34f6eb7140a550316c.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 1107,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:eb9ffcd100ad26228a578100ba7cbfc5b383e4995338d122abdc6a3b4d210ed3",
+      "kind": "content",
+      "name": "icon-eb9ffcd100ad26228a578100ba7cbfc5.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 5613,
+      "contentType": "image/png",
+      "digest": "sha256:ec8d45e699974da7a894ec39256910bb2df6925160efd15493f6de0cf6c15bb9",
+      "kind": "content",
+      "name": "icon-ec8d45e699974da7a894ec39256910bb.png",
+      "origin": "assets/zyte-logo.png"
+    },
+    {
+      "bytes": 18847,
+      "contentType": "image/png",
+      "digest": "sha256:efe7c0b3b1cec588bd074ea7cca68e2812515d8dacfd0ce90e42d14ec183f484",
+      "kind": "content",
+      "name": "icon-efe7c0b3b1cec588bd074ea7cca68e28.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 19688,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:f229ce40967152b9f6ec6bab2b4989cf65bb3d723c044fd3a9945db58a686028",
+      "kind": "content",
+      "name": "icon-f229ce40967152b9f6ec6bab2b4989cf.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 5552,
+      "contentType": "image/png",
+      "digest": "sha256:f35ca19e9bf56cfdf5a08fc7793d2cee8bc2546ea2b4833acf235190206e607f",
+      "kind": "favicon",
+      "name": "icon-f35ca19e9bf56cfdf5a08fc7793d2cee.png",
+      "origin": "https://docs.tinyfish.ai/mintlify-assets/_mintlify/favicons/tinyfish/05k5zsm6ySkMI6wO/_generated/favicon/apple-touch-icon.png"
+    },
+    {
+      "bytes": 9111,
+      "contentType": "image/png",
+      "digest": "sha256:f39a44cf4ec7acf87f8d164cee77c6e927b2256a3e75b2970d817b69e20b4dbd",
+      "kind": "content",
+      "name": "icon-f39a44cf4ec7acf87f8d164cee77c6e9.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 7527,
+      "contentType": "image/png",
+      "digest": "sha256:f461e472b139cae381f75eda075e0ec264a378bd1f5626ce1c496a368857738c",
+      "kind": "content",
+      "name": "icon-f461e472b139cae381f75eda075e0ec2.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 4846,
+      "contentType": "image/png",
+      "digest": "sha256:f545e0e706d0c6be0e8602a8e8d685d4f43ab72880bd5e6a234916e765ff2b70",
+      "kind": "content",
+      "name": "icon-f545e0e706d0c6be0e8602a8e8d685d4.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 22429,
+      "contentType": "image/png",
+      "digest": "sha256:f6d5538f2ed2ac405feba266a513725d86a6e57fcd39a716d9ecc88ba6703919",
+      "kind": "favicon",
+      "name": "icon-f6d5538f2ed2ac405feba266a513725d.png",
+      "origin": "https://www.altimate.ai/logo192.png"
+    },
+    {
+      "bytes": 5400,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:f6f1e503cc44ad969e50c1c0f762ebc92dc4dd08f18514fbafae0159377a9248",
+      "kind": "content",
+      "name": "icon-f6f1e503cc44ad969e50c1c0f762ebc9.svg",
+      "origin": "assets/composer-icon.svg"
+    },
+    {
+      "bytes": 7708,
+      "contentType": "image/png",
+      "digest": "sha256:f8b187a02c5c551a706c5427c3cb9ac125cd892ad72a1fc6d656d8b6d5911e2c",
+      "kind": "content",
+      "name": "icon-f8b187a02c5c551a706c5427c3cb9ac1.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 17680,
+      "contentType": "image/png",
+      "digest": "sha256:f8cd00a19c4ea0bf0391f3ff295bffaf7a6bb54e2dd52cbe1c3eb895b63b7427",
+      "kind": "content",
+      "name": "icon-f8cd00a19c4ea0bf0391f3ff295bffaf.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 19375,
+      "contentType": "image/png",
+      "digest": "sha256:f9afb1d72d08e139d33207548790bc14ed58365a3b01539fc8c0523c1252ba08",
+      "kind": "favicon",
+      "name": "icon-f9afb1d72d08e139d33207548790bc14.png",
+      "origin": "https://www.accoil.com/favicon/apple-touch-icon.png"
+    },
+    {
+      "bytes": 673,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:fa1ea08c2cf370851a0dda31a8eb09c2bfec6ad392eb7e771f20ca155de6fd1c",
+      "kind": "content",
+      "name": "icon-fa1ea08c2cf370851a0dda31a8eb09c2.svg",
+      "origin": "assets/logfire-icon.svg"
+    },
+    {
+      "bytes": 4838,
+      "contentType": "image/png",
+      "digest": "sha256:fb10d06a71b932a52665423c9400f8071e331c1a66a063ad9572c7984cb0f770",
+      "kind": "favicon",
+      "name": "icon-fb10d06a71b932a52665423c9400f807.png",
+      "origin": "https://cdn.prod.website-files.com/6050a76fa6a633d5d54ae714/6050ac04955ff26c84dcb8c8_mapbox_favicon_256x256.png"
+    },
+    {
+      "bytes": 2489,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:fb71a91ef4937bdac04520d7e7b1852bb28635ae850934d440360ccc8142c1a4",
+      "kind": "content",
+      "name": "icon-fb71a91ef4937bdac04520d7e7b1852b.svg",
+      "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 2342,
+      "contentType": "image/png",
+      "digest": "sha256:fb7f9b1022323bd87d3a784e6626f680af400333e95a155b25b63a6c9199c9df",
+      "kind": "favicon",
+      "name": "icon-fb7f9b1022323bd87d3a784e6626f680.png",
+      "origin": "https://learning.postman.com/api/fern-docs/favicon.ico"
+    },
+    {
+      "bytes": 2851,
+      "contentType": "image/png",
+      "digest": "sha256:fd9330e31552eeaa12b177489943de997551bfd991c4c44e8c3d572e78aea5f3",
+      "kind": "favicon",
+      "name": "icon-fd9330e31552eeaa12b177489943de99.png",
+      "origin": "https://hunter.io/assets/touch-icon-iphone-BHR1wsDV.png"
+    },
+    {
+      "bytes": 11020,
+      "contentType": "image/png",
+      "digest": "sha256:fdb324b1fca409bcba27e831b4e06b331150e670f5d0bfbe2cd596bbd4344cc4",
+      "kind": "content",
+      "name": "icon-fdb324b1fca409bcba27e831b4e06b33.png",
+      "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 5114,
+      "contentType": "image/png",
+      "digest": "sha256:ff5a294c754d288aea7d834432b4f93ce2cebea024c05994046ed7649394e6bf",
+      "kind": "favicon",
+      "name": "icon-ff5a294c754d288aea7d834432b4f93c.png",
+      "origin": "https://unstructured.io/apple-touch-icon.png?v=20260223"
+    },
+    {
+      "bytes": 3278,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:ff5f5c933aaaea83325fba4d01e0dd64679df139b6ac3e2e5bef76c72ad7e162",
+      "kind": "content",
+      "name": "icon-ff5f5c933aaaea83325fba4d01e0dd64.svg",
+      "origin": "assets/bigdata-icon-black.svg"
+    }
+  ],
+  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
   "files": {
-    "catalog-summary.v1.json": "sha256:a2a267b600272e88dc4aea86073e30266b8433cae675843c8e88983f41446737",
-    "catalog.v1.json": "sha256:2b8bcf4535e0604036d245ad185c09b8815151c762f155d7a8f5617997743cc0",
-    "categories.v1.json": "sha256:061b70161557aa07fb245bd2f6ace5bf100b1f3370fe5c127fe4bdf348eb0d31",
-    "compatibility.v1.json": "sha256:33d01e548eafa029ff477d2ccd05083f7c716a269a4dacd4c335ca27a247e534",
-    "sources.lock.json": "sha256:cef6e7ced1239f229952b13b3ad46d326c87c05861e4e9352f494e00cbd538f4"
+    "catalog-index.v1.json": "sha256:47d1c88d2df33de2ff6b24a8dc7f8b568a042df165e39b976e4f2f8cea34bf12",
+    "catalog-summary.v1.json": "sha256:bf9627121f45731a50095606ce956fed99b88fdbee43850179e6ecc5dbb52228",
+    "catalog.v1.json": "sha256:c78f308598cd1ece4537f340e07ad52fac5a97e68e91a76b60f8d9ca13748658",
+    "categories.v1.json": "sha256:240b0ba00ac0043e89dab27379f4a7dfdc94ea9734df62539b8755e55bd57216",
+    "category-business-operations.v1.json": "sha256:caaca70a5e510eff30185a43fbddadd90c1ef00ec6b088457029b8467bbed11c",
+    "category-communication.v1.json": "sha256:0569f68b13e9f62790f1814ddcc6367a9dda030ecaa7cca5982384b38919efcb",
+    "category-creativity.v1.json": "sha256:9bccb99880828445f43d342c3f9df5a578a771e874f95136a7d9bc59040aa8df",
+    "category-data-analytics.v1.json": "sha256:c88f46f53edd8bef8cfe8e4fbc48c0289116b86b6a3273c801b2119dab3ce9a5",
+    "category-developer-tools.v1.json": "sha256:3bfaaa6b788f1564f762087b0ebc81198dca75d7613737df492d64781e88e926",
+    "category-education-research.v1.json": "sha256:66327b19b0640ee767dedf17b42893459c56624babfca242a2a5f7048414329d",
+    "category-finance.v1.json": "sha256:a664c02b88e58697f5fad8f12c88b9a005b2509cd129ae3a67ff051d37683b72",
+    "category-other.v1.json": "sha256:5d288a63a2a819e85789c3d81573d5da09366c9791604feb73977b9608b85e28",
+    "category-productivity.v1.json": "sha256:20460a42a3e81bc047b783ef95d95d884fdfe531ea30f2cabb2e7d170e5dde8d",
+    "category-security.v1.json": "sha256:b98f443926b743a11ded31b44948fdea2bae2baf8ef0a0708cb73b6ee6b75cfe",
+    "compatibility.v1.json": "sha256:69346c962d4636737daa0be86c3d58f87dba5f031a4764f3fccdd34c0ea76db2",
+    "shelf-business-operations.v1.json": "sha256:aa4c950a89576dc2be79473b494df81a768e747d1b15d63344a274354e46b6bf",
+    "shelf-communication.v1.json": "sha256:e33182dc016d30b9b3749272c2f306eb2cbf57e95c58cda4eddb54530eb05efd",
+    "shelf-creativity.v1.json": "sha256:55219d3ffcfcb120e2f30ca0ff272db55c71c33a08bd67585432f54793f64be5",
+    "shelf-data-analytics.v1.json": "sha256:35e53ac6d0d9b0ce437b3d1544b64d515078f67a596da4d32706af337e1b3972",
+    "shelf-developer-tools.v1.json": "sha256:488301ce91746ba665bfbf518f9aa29f3cd22e0bd5652e586c559ccf9061cfc9",
+    "shelf-education-research.v1.json": "sha256:8c5b6f458e50628c239ea93db527a95b28605b657e337983ac0c4cf81c100d0a",
+    "shelf-finance.v1.json": "sha256:de6e3dd5f274710dc7a7f8ac4cc528530370fe932296f9ff4f46f2cc512b6b9d",
+    "shelf-other.v1.json": "sha256:ea9108b57a23a572069eeebef09294a610e1db1b745c03255d01a3c9df83c68b",
+    "shelf-productivity.v1.json": "sha256:00e3d78cf99554f16141455cb4d814adfda9e63ead8e9c0821f1facc65da5969",
+    "shelf-security.v1.json": "sha256:0a50d088e88c9eb31024b80bf347e6f3aa11722e474b82faaf0a5fa22a18aee4",
+    "sources.lock.json": "sha256:3b32c5f01699e2b033c70f383273b7b9ca5caf4f5c34fbe0cd293bbe591b8143"
   },
   "schemaVersion": 1
 }

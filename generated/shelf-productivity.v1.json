@@ -1,0 +1,304 @@
+{
+  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "category": "productivity",
+  "products": [
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search events and schedule meetings.",
+      "displayName": "Google Calendar",
+      "icon": {
+        "asset": "icon-a7f14f0621c73d86170e16b2f6ca6978.svg",
+        "bytes": 3446,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:a7f14f0621c73d86170e16b2f6ca69782e4f554f1e3d4596bcb1f9d57d3cbe5c",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "calendar",
+        "google",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 252,
+        "text": "GC"
+      },
+      "pluginId": "plugin:cursor-official:google-calendar",
+      "primaryCategory": "productivity",
+      "productKey": "google-calendar",
+      "releaseId": "release:ae3c3ac6d27c93774e568fefc8a698799b8a292b562dbdde9cdf7268ee49e622",
+      "sourceId": "cursor-official",
+      "upstreamName": "google-calendar",
+      "variantPluginIds": [
+        "plugin:cursor-official:google-calendar",
+        "plugin:openai-official:google-calendar"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search, read, create, and share files.",
+      "displayName": "Google Drive",
+      "icon": {
+        "asset": "icon-474264985c6d8b3d521289c6e1095eb7.svg",
+        "bytes": 1409,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:474264985c6d8b3d521289c6e1095eb7b7e24f549889c55e7877376c21b715b2",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "drive",
+        "google",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 144,
+        "text": "GD"
+      },
+      "pluginId": "plugin:cursor-official:google-drive",
+      "primaryCategory": "productivity",
+      "productKey": "google-drive",
+      "releaseId": "release:4a4cc0ac59ae03f0bd7064eeceadb64b5996bb0be0e201a2c2dbcc27d79caa13",
+      "sourceId": "cursor-official",
+      "upstreamName": "google-drive",
+      "variantPluginIds": [
+        "plugin:cursor-official:google-drive",
+        "plugin:openai-official:google-drive"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "command": 10,
+        "mcp-server": 1,
+        "skill": 4
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Notion workspace integration. Search pages, create and update documents, manage databases, and access your team's knowledge base directly from Claude Code for seamless documentation workflows.",
+      "displayName": "Notion",
+      "homepage": "https://github.com/makenotion/claude-code-notion-plugin",
+      "icon": {
+        "asset": "icon-e20b9668553aeb46b55a366d0a8eddd9.png",
+        "bytes": 3581,
+        "contentType": "image/png",
+        "digest": "sha256:e20b9668553aeb46b55a366d0a8eddd9051b5ac55207ab067ed347029a53434e",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/notion.png",
+        "url": null
+      },
+      "keywords": [
+        "notion",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 333,
+        "text": "NO"
+      },
+      "pluginId": "plugin:claude-official:notion",
+      "primaryCategory": "productivity",
+      "productKey": "notion",
+      "releaseId": "release:cacc4557a338d6850e05fcde59fbb93ad3857227f819174cb01f61b6cad6517f",
+      "sourceId": "claude-official",
+      "upstreamName": "notion",
+      "variantPluginIds": [
+        "plugin:claude-official:notion",
+        "plugin:openai-official:notion"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Create, find, and complete tasks and projects.",
+      "displayName": "Todoist",
+      "icon": {
+        "asset": "icon-f8cd00a19c4ea0bf0391f3ff295bffaf.png",
+        "bytes": 17680,
+        "contentType": "image/png",
+        "digest": "sha256:f8cd00a19c4ea0bf0391f3ff295bffaf7a6bb54e2dd52cbe1c3eb895b63b7427",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "productivity",
+        "todoist"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 204,
+        "text": "TO"
+      },
+      "pluginId": "plugin:cursor-official:todoist",
+      "primaryCategory": "productivity",
+      "productKey": "todoist",
+      "releaseId": "release:443f15ba77b49015c19c21f6d024e79e4030feee30a3a412a1d2fd12950b604e",
+      "sourceId": "cursor-official",
+      "upstreamName": "todoist",
+      "variantPluginIds": [
+        "plugin:cursor-official:todoist"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search highlights and Reader documents, save articles.",
+      "displayName": "Readwise",
+      "icon": {
+        "asset": "icon-4b8c10c83d28f5026c0206e394eebe45.png",
+        "bytes": 7216,
+        "contentType": "image/png",
+        "digest": "sha256:4b8c10c83d28f5026c0206e394eebe45713f222bcb9deced8dfa875148454b62",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "productivity",
+        "readwise"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 162,
+        "text": "RE"
+      },
+      "pluginId": "plugin:cursor-official:readwise",
+      "primaryCategory": "productivity",
+      "productKey": "readwise",
+      "releaseId": "release:6ddfdf4a07ff524096f60d6b16c685ca85bb4c50e084d166bcaa2425faaf94d6",
+      "sourceId": "cursor-official",
+      "upstreamName": "readwise",
+      "variantPluginIds": [
+        "plugin:cursor-official:readwise"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Query and update sheets, rows, and workspaces.",
+      "displayName": "Smartsheet",
+      "icon": {
+        "asset": "icon-c4540b41fea9ecae37c611bd09d7ba08.png",
+        "bytes": 7228,
+        "contentType": "image/png",
+        "digest": "sha256:c4540b41fea9ecae37c611bd09d7ba08588ca0d4b612d7c9bae181cffb7e4d40",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "productivity",
+        "smartsheet"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 72,
+        "text": "SM"
+      },
+      "pluginId": "plugin:cursor-official:smartsheet",
+      "primaryCategory": "productivity",
+      "productKey": "smartsheet",
+      "releaseId": "release:6135b0f1965ee1bb5fac221149c38f53f849f2bbcad6667ac8ddc581285e63fe",
+      "sourceId": "cursor-official",
+      "upstreamName": "smartsheet",
+      "variantPluginIds": [
+        "plugin:cursor-official:smartsheet"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1,
+  "topCount": 6
+}
