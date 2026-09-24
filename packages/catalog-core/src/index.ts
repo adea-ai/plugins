@@ -41,11 +41,13 @@ import {
   type ProductPreference,
 } from './consumer-index.js'
 import {
+  iconAssetName,
   iconOverrideFor,
   inspectIconBytes,
   selectIconPath,
   type ProductIconOverrides,
 } from './icons.js'
+import { stageIconBytes } from './icon-mirror.js'
 import { isVendorHomepage, resolveSiteIcon, type SiteIcon } from './site-icons.js'
 
 export interface CatalogPolicy {
@@ -108,6 +110,8 @@ export interface SyncInput extends ConsumerIndexOptions {
   readonly productAliases: ProductAliases
   readonly productCategories?: Record<string, string>
   readonly productIconOverrides?: ProductIconOverrides
+  /** Directory that receives mirrored brand marks as the catalog is built. */
+  readonly iconAssetsDirectory?: string
   readonly policy: CatalogPolicy
   readonly mode?: 'live' | 'offline'
   readonly fixtureRoot?: string
@@ -337,6 +341,7 @@ export async function synchronize(input: SyncInput): Promise<SyncResult> {
     ...(input.productCategories ? { productCategories: input.productCategories } : {}),
     ...(input.leading ? { leading: input.leading } : {}),
     ...(input.productIconOverrides ? { productIconOverrides: input.productIconOverrides } : {}),
+    ...(input.iconAssetsDirectory ? { iconAssetsDirectory: input.iconAssetsDirectory } : {}),
     productAliases: input.productAliases,
     policy: input.policy,
     metadataOnly: input.metadataOnly ?? false,
@@ -385,6 +390,7 @@ export async function buildCatalog(input: {
   readonly productCategories?: Record<string, string>
   readonly leading?: Record<string, readonly string[]>
   readonly productIconOverrides?: ProductIconOverrides
+  readonly iconAssetsDirectory?: string
   readonly policy?: CatalogPolicy
   readonly metadataOnly?: boolean
   readonly snapshotLoader: SnapshotLoader
@@ -415,6 +421,7 @@ interface BuildCatalogInput {
   readonly productCategories?: Record<string, string>
   readonly leading?: Record<string, readonly string[]>
   readonly productIconOverrides?: ProductIconOverrides
+  readonly iconAssetsDirectory?: string
   readonly policy?: CatalogPolicy
   readonly metadataOnly?: boolean
   readonly snapshotLoader: SnapshotLoader
@@ -466,6 +473,7 @@ async function buildCatalogInternal(input: BuildCatalogInput): Promise<BuildCata
           ...(input.productIconOverrides
             ? { productIconOverrides: input.productIconOverrides }
             : {}),
+          ...(input.iconAssetsDirectory ? { iconAssetsDirectory: input.iconAssetsDirectory } : {}),
           policy,
           metadataOnly: input.metadataOnly ?? false,
           snapshotLoader: input.snapshotLoader,
@@ -609,6 +617,7 @@ async function normalizePlugin(input: {
   readonly productCategories?: Record<string, string>
   readonly productAliases: ProductAliases
   readonly productIconOverrides?: ProductIconOverrides
+  readonly iconAssetsDirectory?: string
   readonly policy: CatalogPolicy
   readonly metadataOnly: boolean
   readonly snapshotLoader: SnapshotLoader
@@ -657,6 +666,22 @@ async function normalizePlugin(input: {
           live: input.resolveExternalRefs === true,
         })
       : undefined
+  // Stage the mark while its bytes are in hand. Publication then needs no
+  // re-fetch, and a site icon cannot drift between resolution and release.
+  if (input.iconAssetsDirectory) {
+    const staged = contentIcon
+      ? snapshot.files.get(contentIcon.kind === 'content' ? contentIcon.path : '')
+      : favicon?.bytes
+    if (staged)
+      await stageIconBytes(
+        input.iconAssetsDirectory,
+        iconAssetName(
+          contentIcon ? contentIcon.digest : favicon!.digest,
+          contentIcon ? contentIcon.contentType : favicon!.contentType
+        ),
+        staged
+      )
+  }
   const releaseId = stableReleaseId(
     resolved.repositoryUrl,
     resolved.subdirectory,

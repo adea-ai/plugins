@@ -110,6 +110,9 @@ async function syncCommand(flags: Flags): Promise<number> {
     ...(config.topCount !== undefined ? { topCount: config.topCount } : {}),
     ...(config.productPreference ? { productPreference: config.productPreference } : {}),
     ...(config.productIconOverrides ? { productIconOverrides: config.productIconOverrides } : {}),
+    // Marks are staged as the catalog is built, so publication never re-fetches
+    // a brand source and a site icon cannot drift after it is resolved.
+    iconAssetsDirectory: assetsDirectory(flags),
     policy: config.policy,
     mode: flags.offline ? 'offline' : 'live',
     fixtureRoot: flags.fixtureRoot
