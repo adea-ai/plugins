@@ -1,0 +1,45 @@
+name: Keep the catalog release latest
+
+# Release Please publishes a package release for every merge to main, and GitHub
+# marks the newest non-prerelease release as "latest". The stable catalog URL
+# documented in the consumer contract
+# (`releases/latest/download/catalog-latest.v1.json`) then resolves against a
+# package release and 404s for every consumer until the next synchronization
+# re-asserts the catalog — up to six hours, and every time a package releases.
+#
+# This re-points the marker at the newest catalog release instead.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalog-latest-pointer
+  cancel-in-progress: false
+
+jobs:
+  repoint:
+    name: Re-point latest
+    # A catalog release already sets the marker when it publishes.
+    if: ${{ !startsWith(github.event.release.tag_name || '', 'catalog/') }}
+    runs-on: ubuntu-slim
+    timeout-minutes: 5
+    steps:
+      - name: Point latest at the newest catalog release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          tag=$(gh release list --limit 200 --json tagName,createdAt \
+            --jq '[.[] | select(.tagName | startswith("catalog/"))] | sort_by(.createdAt) | last | .tagName')
+          if [ -z "$tag" ]; then
+            echo 'No catalog release exists yet; nothing to do.'
+            exit 0
+          fi
+          gh release edit "$tag" --latest
+          test "$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" --jq '.tag_name')" = "$tag"
+          echo "latest now points at $tag"
