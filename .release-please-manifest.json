@@ -1,5 +1,5 @@
 {
-  ".": "1.5.2",
+  ".": "1.5.3",
   "packages/catalog-core": "1.5.2",
   "packages/catalog-schema": "1.4.0",
   "packages/harness-adapters": "1.3.1",
