@@ -26,6 +26,8 @@
     "sync:fixtures": "bun run packages/cli/src/index.ts sync --offline --fixture-root fixtures",
     "sync:live": "bun run packages/cli/src/index.ts sync",
     "verify:integrity": "bun run packages/cli/src/index.ts verify-integrity",
+    "mirror-icons": "bun run packages/cli/src/index.ts mirror-icons",
+    "verify:assets": "bun run packages/cli/src/index.ts verify-assets",
     "publish:packages": "bun scripts/publish-packages.mjs",
     "prepare": "husky 2>/dev/null || true",
     "schema:plugins": "bun run scripts/agent-plugin-schemas.ts --check"

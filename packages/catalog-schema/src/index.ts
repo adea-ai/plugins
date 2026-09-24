@@ -124,6 +124,15 @@ export const PluginProvenanceSchema = z
   })
   .strict()
 
+export const IconContentTypeSchema = z.enum([
+  'image/png',
+  'image/jpeg',
+  'image/gif',
+  'image/webp',
+  'image/svg+xml',
+  'image/x-icon',
+])
+
 export const PluginReleaseSchema = z
   .object({
     releaseId: z.string().regex(/^release:[a-f0-9]{64}$/),
@@ -141,6 +150,34 @@ export const PluginReleaseSchema = z
     permissionSensitiveChanges: z.array(z.string().min(1).max(200)).max(128),
     fileIndex: z.array(z.string().min(1).max(512)).max(4096),
     publicationTimestamp: TimestampSchema,
+    /**
+     * Brand mark resolved at compile time. `content` comes from the release's
+     * own files; `favicon` comes from the product's declared homepage, for
+     * products that ship no mark of their own.
+     */
+    icon: z
+      .discriminatedUnion('kind', [
+        z
+          .object({
+            kind: z.literal('content'),
+            path: z.string().min(1).max(512),
+            contentType: IconContentTypeSchema,
+            digest: DigestSchema,
+            bytes: z.number().int().positive().max(1048576),
+          })
+          .strict(),
+        z
+          .object({
+            kind: z.literal('favicon'),
+            url: z.string().url().max(1024),
+            homepage: z.string().url().max(1024),
+            contentType: IconContentTypeSchema,
+            digest: DigestSchema,
+            bytes: z.number().int().positive().max(1048576),
+          })
+          .strict(),
+      ])
+      .optional(),
   })
   .strict()
 

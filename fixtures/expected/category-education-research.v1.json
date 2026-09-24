@@ -1,0 +1,51 @@
+{
+  "catalogId": "catalog:dbc3495bad32c7e9e49284d96cd8c03d2d67af90e73d79d523282467d1ed7aa0",
+  "category": "education-research",
+  "pluginCount": 1,
+  "productCount": 1,
+  "products": [
+    {
+      "capabilitySummary": {
+        "rule": 1,
+        "skill": 1
+      },
+      "categories": [
+        "developer-tools",
+        "education-research"
+      ],
+      "compatibility": {
+        "claude-code": "portable",
+        "codex": "portable",
+        "cursor": "native",
+        "generic-skill-mcp": "portable",
+        "hermes": "portable",
+        "opencode": "portable",
+        "pi": "portable"
+      },
+      "description": "Practice and learning workflows.",
+      "displayName": "teaching",
+      "icon": null,
+      "keywords": [
+        "developer-tools",
+        "education-research",
+        "teaching"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 342,
+        "text": "TE"
+      },
+      "pluginId": "plugin:cursor-official:teaching",
+      "primaryCategory": "developer-tools",
+      "productKey": "teaching",
+      "releaseId": "release:18ce8f072ca693885ce731feffbd78dd1307c81a8ad43920edf991e2032176db",
+      "sourceId": "cursor-official",
+      "upstreamName": "teaching",
+      "variantPluginIds": [
+        "plugin:cursor-official:teaching"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1
+}

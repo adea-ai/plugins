@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "overrides": {
+    "lovable": "https://lovable.dev/",
+    "qdrant-skills": "https://qdrant.tech/",
+    "snowflake-cortex-code": "https://www.snowflake.com/",
+    "zilliz": "https://zilliz.com/"
+  }
+}

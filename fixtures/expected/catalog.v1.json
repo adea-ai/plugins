@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:b50b46bedaad86265e56ac6e7eb49e26474d765a207d99c9bbb529a40be5f9b4",
+  "catalogId": "catalog:dbc3495bad32c7e9e49284d96cd8c03d2d67af90e73d79d523282467d1ed7aa0",
   "generatedAt": "2026-01-01T00:00:00.000Z",
   "plugins": [
     {
@@ -536,7 +536,7 @@
       ],
       "availableReleases": [
         {
-          "canonicalContentDigest": "sha256:4634cbef2cff633edf73ff6a874b27a1628f5bef91cf1dbc04bb457c033560d7",
+          "canonicalContentDigest": "sha256:a46cd7d399722305c024ce32261aaec04df4a454b3ebf5e5855dbb76772306e5",
           "capabilities": [
             {
               "metadata": {},
@@ -550,14 +550,22 @@
           ],
           "contentResolution": "complete",
           "fileIndex": [
+            "assets/logo.svg",
             "commands/plan.md",
             "plugin.json"
           ],
+          "icon": {
+            "bytes": 196,
+            "contentType": "image/svg+xml",
+            "digest": "sha256:7a209aa198e491e40010c6d1711a518a5e12aa6eb8dfa471815afe926eac6a50",
+            "kind": "content",
+            "path": "assets/logo.svg"
+          },
           "manifestDigest": "sha256:f7e815716c8e4f7c4852a3a70e4a22e426ae44afbdd328cd73717d6881be6e1e",
           "permissionSensitiveChanges": [],
           "pluginSubdirectory": "calendar",
           "publicationTimestamp": "2026-01-01T00:00:00.000Z",
-          "releaseId": "release:6bdd190b71dcbe2a7ef0e8dbb145078cde83a2e19ebaa670dfd3b832d1489ed7",
+          "releaseId": "release:3b3df4fd670ca9771cbb71aa107466b7c31536b95e12caf7f0a3bfe3bf2fee6e",
           "releaseMetadata": {
             "marketplaceEntry": {
               "category": "Productivity",
@@ -585,7 +593,7 @@
       "categories": [
         "productivity"
       ],
-      "currentReleaseId": "release:6bdd190b71dcbe2a7ef0e8dbb145078cde83a2e19ebaa670dfd3b832d1489ed7",
+      "currentReleaseId": "release:3b3df4fd670ca9771cbb71aa107466b7c31536b95e12caf7f0a3bfe3bf2fee6e",
       "description": "Calendar workflows.",
       "displayName": "calendar",
       "harnessCompatibility": {
@@ -690,7 +698,7 @@
       ],
       "availableReleases": [
         {
-          "canonicalContentDigest": "sha256:e5debd651dd71f1b28c67ab00fd4ac9f60638ee715b014c19467cf2dcfdf9532",
+          "canonicalContentDigest": "sha256:bfea61502710eba5004ed46f08562cf414415958fc5749aa13180eb90d6d6503",
           "capabilities": [
             {
               "metadata": {},
@@ -704,6 +712,7 @@
           ],
           "contentResolution": "complete",
           "fileIndex": [
+            "assets/icon.svg",
             "plugin.json",
             "skills/day-plan/SKILL.md"
           ],
@@ -711,7 +720,7 @@
           "permissionSensitiveChanges": [],
           "pluginSubdirectory": "productivity",
           "publicationTimestamp": "2026-01-01T00:00:00.000Z",
-          "releaseId": "release:d09058e1ab3ede6d824d1c4da05df0b09ef0fc27b7d7590652317740a1693607",
+          "releaseId": "release:2ec69915a2ba1c711787cdf2cf5e0df13c22383a38d5a3793136bd82dae94325",
           "releaseMetadata": {
             "marketplaceEntry": {
               "description": "Organize work.",
@@ -739,7 +748,7 @@
       "categories": [
         "productivity"
       ],
-      "currentReleaseId": "release:d09058e1ab3ede6d824d1c4da05df0b09ef0fc27b7d7590652317740a1693607",
+      "currentReleaseId": "release:2ec69915a2ba1c711787cdf2cf5e0df13c22383a38d5a3793136bd82dae94325",
       "description": "Organize work.",
       "displayName": "Productivity",
       "harnessCompatibility": {
@@ -1010,7 +1019,7 @@
       ],
       "availableReleases": [
         {
-          "canonicalContentDigest": "sha256:166adb663b819db711fd6c951bf34368afada4bf479836f907162d8bc9c013bc",
+          "canonicalContentDigest": "sha256:107506a6d5af5d99a937bb5377b98ea6c1223d3baabbdcd04dd35cea8af60b51",
           "capabilities": [
             {
               "metadata": {},
@@ -1024,14 +1033,22 @@
           ],
           "contentResolution": "complete",
           "fileIndex": [
+            "assets/logo.png",
             "commands/today.md",
             "plugin.json"
           ],
+          "icon": {
+            "bytes": 70,
+            "contentType": "image/png",
+            "digest": "sha256:a4bcd7b80c65e14e3809783fc4c587ce66a995dcc142e25bf61c9337ef6f3443",
+            "kind": "content",
+            "path": "assets/logo.png"
+          },
           "manifestDigest": "sha256:1c7f7ce1af230079b42ebdfb84b899017cc9991a4cecb562a58ab2e46d985388",
           "permissionSensitiveChanges": [],
           "pluginSubdirectory": "plugins/calendar",
           "publicationTimestamp": "2026-01-01T00:00:00.000Z",
-          "releaseId": "release:af149eab73860cc4d5e2e8ae377052ec1fc9862412de01836ed961070d6fbe5f",
+          "releaseId": "release:92be914b09fa812243e6d4d57f9c9c91dc31ebe1c8bca4731155384c21732a69",
           "releaseMetadata": {
             "marketplaceEntry": {
               "category": "Productivity",
@@ -1063,7 +1080,7 @@
       "categories": [
         "productivity"
       ],
-      "currentReleaseId": "release:af149eab73860cc4d5e2e8ae377052ec1fc9862412de01836ed961070d6fbe5f",
+      "currentReleaseId": "release:92be914b09fa812243e6d4d57f9c9c91dc31ebe1c8bca4731155384c21732a69",
       "description": "Plan calendar work.",
       "displayName": "Calendar",
       "harnessCompatibility": {

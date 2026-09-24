@@ -1,0 +1,135 @@
+{
+  "catalogId": "catalog:dbc3495bad32c7e9e49284d96cd8c03d2d67af90e73d79d523282467d1ed7aa0",
+  "category": "productivity",
+  "pluginCount": 4,
+  "productCount": 3,
+  "products": [
+    {
+      "capabilitySummary": {
+        "command": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "portable",
+        "codex": "portable",
+        "cursor": "native",
+        "generic-skill-mcp": "portable",
+        "hermes": "portable",
+        "opencode": "portable",
+        "pi": "portable"
+      },
+      "description": "Calendar workflows.",
+      "displayName": "Calendar",
+      "icon": {
+        "asset": "icon-7a209aa198e491e40010c6d1711a518a.svg",
+        "bytes": 196,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:7a209aa198e491e40010c6d1711a518a5e12aa6eb8dfa471815afe926eac6a50",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "calendar",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 303,
+        "text": "CA"
+      },
+      "pluginId": "plugin:cursor-official:calendar",
+      "primaryCategory": "productivity",
+      "productKey": "calendar",
+      "releaseId": "release:3b3df4fd670ca9771cbb71aa107466b7c31536b95e12caf7f0a3bfe3bf2fee6e",
+      "sourceId": "cursor-official",
+      "upstreamName": "calendar",
+      "variantPluginIds": [
+        "plugin:cursor-official:calendar",
+        "plugin:openai-official:calendar"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "portable",
+        "codex": "native",
+        "cursor": "portable",
+        "generic-skill-mcp": "portable",
+        "hermes": "portable",
+        "opencode": "portable",
+        "pi": "portable"
+      },
+      "description": "Manage Linear issues with a portable skill.",
+      "displayName": "Linear",
+      "icon": null,
+      "keywords": [
+        "linear",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 159,
+        "text": "LI"
+      },
+      "pluginId": "plugin:openai-official:linear",
+      "primaryCategory": "productivity",
+      "productKey": "linear",
+      "releaseId": "release:fe1c3cf71f61a5edb9f9d88ce3492aaf97ffdd683ef469e8b3b06327fedd1358",
+      "sourceId": "openai-official",
+      "upstreamName": "linear",
+      "variantPluginIds": [
+        "plugin:openai-official:linear"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "native",
+        "codex": "portable",
+        "cursor": "portable",
+        "generic-skill-mcp": "portable",
+        "hermes": "portable",
+        "opencode": "portable",
+        "pi": "portable"
+      },
+      "description": "Organize work.",
+      "displayName": "Productivity",
+      "icon": null,
+      "keywords": [
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 108,
+        "text": "PR"
+      },
+      "pluginId": "plugin:knowledge-work-official:productivity",
+      "primaryCategory": "productivity",
+      "productKey": "productivity",
+      "releaseId": "release:2ec69915a2ba1c711787cdf2cf5e0df13c22383a38d5a3793136bd82dae94325",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "productivity",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:productivity"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1
+}

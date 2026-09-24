@@ -1,0 +1,49 @@
+{
+  "catalogId": "catalog:dbc3495bad32c7e9e49284d96cd8c03d2d67af90e73d79d523282467d1ed7aa0",
+  "category": "security",
+  "pluginCount": 1,
+  "productCount": 1,
+  "products": [
+    {
+      "capabilitySummary": {
+        "executable": 1,
+        "hook": 1,
+        "skill": 1
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "unsupported",
+        "codex": "unsupported",
+        "cursor": "unsupported",
+        "generic-skill-mcp": "unsupported",
+        "hermes": "unsupported",
+        "opencode": "unsupported",
+        "pi": "unsupported"
+      },
+      "description": "Audit application security.",
+      "displayName": "Security",
+      "icon": null,
+      "keywords": [
+        "security"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 168,
+        "text": "SE"
+      },
+      "pluginId": "plugin:claude-official:security",
+      "primaryCategory": "security",
+      "productKey": "security",
+      "releaseId": "release:5b02dbca6c6abb490bec11acb3e72e366d15232e9855f8b7cca4363bf596f932",
+      "sourceId": "claude-official",
+      "upstreamName": "security",
+      "variantPluginIds": [
+        "plugin:claude-official:security"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1
+}

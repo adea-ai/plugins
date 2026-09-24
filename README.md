@@ -108,7 +108,17 @@ The published artifact set contains:
   `releaseMetadata.agentPlugins` recipes.
 - `catalog-summary.v1.json` — counts, categories, product groups, and search text.
 - `sources.lock.json` — resolved immutable marketplace commits and manifest digests.
-- `compatibility.v1.json` and `categories.v1.json` — narrow consumer indexes.
+- `compatibility.v1.json` — per-plugin harness compatibility index.
+- `categories.v1.json` — the browsing index: category navigation, curated shelf
+  order and the shard names to fetch. See
+  [categories and ranking](docs/categories-and-ranking.md) and
+  [consumer fetch patterns](docs/consumer-fetch-patterns.md).
+- `catalog-index.v1.json`, `shelf-<category>.v1.json`,
+  `category-<category>.v1.json` — the consumer shards: deduplicated product
+  records, pre-sorted and ready to render.
+- `icon-<digest>.<ext>` release assets — brand marks mirrored at publish time
+  from the plugin's own content, or from the product site's icon when the plugin
+  ships none, so consumers never fetch a vendor repository or a favicon service.
 - `integrity.json` — SHA-256 digests for every artifact except itself.
 
 `generated/` is replaced using a temporary directory swap only after parsing,

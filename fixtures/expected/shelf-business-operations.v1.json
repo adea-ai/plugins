@@ -1,0 +1,47 @@
+{
+  "catalogId": "catalog:dbc3495bad32c7e9e49284d96cd8c03d2d67af90e73d79d523282467d1ed7aa0",
+  "category": "business-operations",
+  "products": [
+    {
+      "capabilitySummary": {
+        "command": 1
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "native",
+        "codex": "portable",
+        "cursor": "portable",
+        "generic-skill-mcp": "portable",
+        "hermes": "portable",
+        "opencode": "portable",
+        "pi": "portable"
+      },
+      "description": "Prepare sales work.",
+      "displayName": "sales",
+      "icon": null,
+      "keywords": [
+        "business-operations",
+        "sales"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 270,
+        "text": "SA"
+      },
+      "pluginId": "plugin:claude-official:sales",
+      "primaryCategory": "business-operations",
+      "productKey": "sales",
+      "releaseId": "release:dc304fb0c5f79f0fccbba74dcb29b78049d6972eadd084d05935384755b5a1f4",
+      "sourceId": "claude-official",
+      "upstreamName": "sales",
+      "variantPluginIds": [
+        "plugin:claude-official:sales"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1,
+  "topCount": 6
+}

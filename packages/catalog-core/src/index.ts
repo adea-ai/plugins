@@ -30,6 +30,23 @@ import {
   type PluginSourceSpec,
   type SourceConfig,
 } from '@adea-ai/source-adapters'
+import {
+  buildConsumerIndex,
+  CATALOG_INDEX_ARTIFACT,
+  iconCoverage,
+  type ConsumerCategory,
+  type ConsumerIndex,
+  type ConsumerProduct,
+  type LeadingDiagnostic,
+  type ProductPreference,
+} from './consumer-index.js'
+import {
+  iconOverrideFor,
+  inspectIconBytes,
+  selectIconPath,
+  type ProductIconOverrides,
+} from './icons.js'
+import { isVendorHomepage, resolveSiteIcon, type SiteIcon } from './site-icons.js'
 
 export interface CatalogPolicy {
   readonly allowedRepositoryProtocols: readonly string[]
@@ -85,12 +102,12 @@ export interface PluginSourcePin {
   readonly resolvedCommitSha: string
 }
 
-export interface SyncInput {
+export interface SyncInput extends ConsumerIndexOptions {
   readonly sources: readonly SourceConfig[]
   readonly categoryMap: CategoryMap
   readonly productAliases: ProductAliases
   readonly productCategories?: Record<string, string>
-  readonly leading?: Record<string, readonly string[]>
+  readonly productIconOverrides?: ProductIconOverrides
   readonly policy: CatalogPolicy
   readonly mode?: 'live' | 'offline'
   readonly fixtureRoot?: string
@@ -152,13 +169,51 @@ export interface SkippedPlugin {
   readonly paths: readonly string[]
 }
 
+/**
+ * Published artifacts by file name. The core six are always present; the
+ * consumer shards (`catalog-index.v1.json`, `shelf-<category>.v1.json` and
+ * `category-<category>.v1.json`) follow the configured categories.
+ */
 export interface GeneratedArtifacts {
+  readonly [name: string]: string
   readonly 'catalog.v1.json': string
   readonly 'catalog-summary.v1.json': string
   readonly 'sources.lock.json': string
   readonly 'compatibility.v1.json': string
   readonly 'categories.v1.json': string
   readonly 'integrity.json': string
+}
+
+/** Result of checking a published consumer index against its catalog. */
+export interface ConsumerIndexVerification {
+  readonly hasConsumerIndex: boolean
+  readonly diagnostics: readonly LeadingDiagnostic[]
+  readonly counts?: ConsumerIndex['counts']
+  readonly topCount?: number
+  readonly products?: Readonly<Record<string, ConsumerProduct>>
+  readonly categories?: readonly ConsumerCategory[]
+  /** Shards the published integrity file set must carry for this index. */
+  readonly shards: readonly ShardArtifact[]
+}
+
+/** One consumer shard artifact and what it must contain. */
+export interface ShardArtifact {
+  readonly name: string
+  readonly kind: 'index' | 'shelf' | 'list'
+  readonly category?: string
+}
+
+/** Consumer index inputs: curated shelves and canonical-variant placement. */
+export interface ConsumerIndexOptions {
+  readonly leading?: Readonly<Record<string, readonly string[]>>
+  readonly topCount?: number
+  readonly productPreference?: ProductPreference
+  /**
+   * Whether curated-name drift is published in the consumer index. An offline
+   * build replays fixtures rather than the upstream catalogs, so its curation
+   * findings are noise and are omitted by default.
+   */
+  readonly curationDiagnostics?: boolean
 }
 
 const DEFAULT_POLICY: CatalogPolicy = {
@@ -281,6 +336,7 @@ export async function synchronize(input: SyncInput): Promise<SyncResult> {
     categoryMap: input.categoryMap,
     ...(input.productCategories ? { productCategories: input.productCategories } : {}),
     ...(input.leading ? { leading: input.leading } : {}),
+    ...(input.productIconOverrides ? { productIconOverrides: input.productIconOverrides } : {}),
     productAliases: input.productAliases,
     policy: input.policy,
     metadataOnly: input.metadataOnly ?? false,
@@ -294,7 +350,12 @@ export async function synchronize(input: SyncInput): Promise<SyncResult> {
   })
   const catalog = buildResult.catalog
   const lock = createSourcesLock(resolved)
-  const artifacts = createArtifacts(orderLeadingPlugins(catalog, input.leading), lock)
+  const artifacts = createArtifacts(orderLeadingPlugins(catalog, input.leading), lock, {
+    ...(input.leading ? { leading: input.leading } : {}),
+    ...(input.topCount !== undefined ? { topCount: input.topCount } : {}),
+    ...(input.productPreference ? { productPreference: input.productPreference } : {}),
+    curationDiagnostics: (input.mode ?? 'live') !== 'offline',
+  })
   verifyArtifacts(artifacts)
   const report = createChangeReport(
     catalog,
@@ -323,6 +384,7 @@ export async function buildCatalog(input: {
   readonly productAliases: ProductAliases
   readonly productCategories?: Record<string, string>
   readonly leading?: Record<string, readonly string[]>
+  readonly productIconOverrides?: ProductIconOverrides
   readonly policy?: CatalogPolicy
   readonly metadataOnly?: boolean
   readonly snapshotLoader: SnapshotLoader
@@ -341,6 +403,7 @@ export async function buildCatalog(input: {
       ...(input.transformRelease ? { transformRelease: input.transformRelease } : {}),
       ...(input.productCategories ? { productCategories: input.productCategories } : {}),
       ...(input.leading ? { leading: input.leading } : {}),
+      ...(input.productIconOverrides ? { productIconOverrides: input.productIconOverrides } : {}),
     })
   ).catalog
 }
@@ -351,6 +414,7 @@ interface BuildCatalogInput {
   readonly productAliases: ProductAliases
   readonly productCategories?: Record<string, string>
   readonly leading?: Record<string, readonly string[]>
+  readonly productIconOverrides?: ProductIconOverrides
   readonly policy?: CatalogPolicy
   readonly metadataOnly?: boolean
   readonly snapshotLoader: SnapshotLoader
@@ -399,6 +463,9 @@ async function buildCatalogInternal(input: BuildCatalogInput): Promise<BuildCata
           categoryMap: input.categoryMap,
           ...(input.productCategories ? { productCategories: input.productCategories } : {}),
           productAliases: input.productAliases,
+          ...(input.productIconOverrides
+            ? { productIconOverrides: input.productIconOverrides }
+            : {}),
           policy,
           metadataOnly: input.metadataOnly ?? false,
           snapshotLoader: input.snapshotLoader,
@@ -541,6 +608,7 @@ async function normalizePlugin(input: {
   readonly categoryMap: CategoryMap
   readonly productCategories?: Record<string, string>
   readonly productAliases: ProductAliases
+  readonly productIconOverrides?: ProductIconOverrides
   readonly policy: CatalogPolicy
   readonly metadataOnly: boolean
   readonly snapshotLoader: SnapshotLoader
@@ -575,6 +643,20 @@ async function normalizePlugin(input: {
   const pluginManifest = findPluginManifest(snapshot, input.transformRelease !== undefined)
   const manifestDigest = pluginManifest ? digest(pluginManifest.metadata) : entry.entryDigest
   const capabilities = classifyCapabilities(snapshot.files, pluginManifest?.metadata)
+  const iconOverride = iconOverrideFor(
+    input.productIconOverrides,
+    productGroupingKey(entry.name, input.productAliases)
+  )
+  const contentIcon = resolveContentIcon(snapshot, iconOverride, input.metadataOnly ?? false)
+  const favicon =
+    contentIcon === undefined
+      ? await resolveFavicon({
+          entry,
+          iconOverride,
+          metadataOnly: input.metadataOnly ?? false,
+          live: input.resolveExternalRefs === true,
+        })
+      : undefined
   const releaseId = stableReleaseId(
     resolved.repositoryUrl,
     resolved.subdirectory,
@@ -591,6 +673,8 @@ async function normalizePlugin(input: {
     snapshot,
     ...(pluginManifest ? { pluginManifest } : {}),
     releaseId,
+    ...(contentIcon ? { contentIcon } : {}),
+    ...(favicon ? { favicon } : {}),
     metadataOnly: input.metadataOnly,
   })
   const release =
@@ -654,7 +738,7 @@ async function normalizePlugin(input: {
   }
 }
 
-function createRelease(input: {
+interface CreateReleaseInput {
   readonly source: ResolvedSource
   readonly entry: MarketplacePluginEntry
   readonly resolved: ResolvedPluginSource
@@ -664,8 +748,12 @@ function createRelease(input: {
   readonly snapshot: Snapshot
   readonly pluginManifest?: PluginManifest
   readonly releaseId: string
+  readonly contentIcon?: PluginRelease['icon'] | undefined
+  readonly favicon?: SiteIcon | undefined
   readonly metadataOnly: boolean
-}): PluginRelease {
+}
+
+function createRelease(input: CreateReleaseInput): PluginRelease {
   const requiredCredentials = new Set<string>()
   const auth = input.entry.policy.authentication
   if (typeof auth === 'string' && auth !== 'NONE' && auth !== 'DISABLED')
@@ -703,7 +791,98 @@ function createRelease(input: {
     permissionSensitiveChanges: [...new Set(permissionSensitiveChanges)],
     fileIndex: [...input.snapshot.files.keys()].toSorted(),
     publicationTimestamp: input.source.retrievedAt,
+    ...assembleIcon(input),
   }
+}
+
+/**
+ * Resolves the product site's icon, for a plugin whose content ships no mark.
+ *
+ * Only a live build with complete content attempts this: a metadata-only or
+ * offline run must not reach out to vendor sites, and neither may a product the
+ * curator has already decided about.
+ */
+async function resolveFavicon(input: {
+  readonly entry: MarketplacePluginEntry
+  readonly iconOverride?: IconOverride | undefined
+  readonly metadataOnly: boolean
+  readonly live: boolean
+}): Promise<SiteIcon | undefined> {
+  if (!input.live || input.metadataOnly) return undefined
+  if (input.iconOverride?.forced === null || input.iconOverride?.forced) return undefined
+  const homepage = input.iconOverride?.site ?? input.entry.homepage
+  if (!isVendorHomepage(homepage)) return undefined
+  // Bound both fetches: a vendor site that never answers must not stall a
+  // catalogue build. A timeout simply leaves the product on its monogram.
+  const signal = AbortSignal.timeout(SITE_FETCH_TIMEOUT_MS)
+  const resolved = await resolveSiteIcon(homepage!, {
+    fetchText: async (url) => new TextDecoder().decode(await fetchUpstreamBytes(url, signal)),
+    fetchBytes: (url) => fetchUpstreamBytes(url, signal),
+    digest: byteDigest,
+  })
+  return 'contentType' in resolved ? resolved : undefined
+}
+
+/**
+ * Picks and vets the brand mark for a release.
+ *
+ * A file in the plugin's own content is preferred, because it is the mark the
+ * vendor ships with the plugin. When the content has none, a live build falls
+ * back to the declared homepage's site icon: many plugins are a thin wrapper
+ * over a vendor API and point at the vendor's site rather than shipping a logo.
+ * Whatever the source, an icon that fails inspection is absent rather than
+ * advertised: the catalog never publishes content it would refuse to mirror.
+ */
+function resolveContentIcon(
+  snapshot: Snapshot,
+  iconOverride: IconOverride | undefined,
+  metadataOnly: boolean
+): PluginRelease['icon'] | undefined {
+  if (metadataOnly || snapshot.files.size === 0) return undefined
+  // A curator override wins over every rule, including "publish no icon".
+  if (iconOverride?.forced === null) return undefined
+  const files = [...snapshot.files.keys()].toSorted()
+  const forced = iconOverride?.forced
+  if (forced && !files.includes(forced)) return undefined
+  const path = forced ?? selectIconPath(files)
+  if (!path) return undefined
+  const bytes = snapshot.files.get(path)
+  if (!bytes) return undefined
+  const inspected = inspectIconBytes(bytes)
+  if (!('contentType' in inspected)) return undefined
+  return {
+    kind: 'content',
+    path,
+    contentType: inspected.contentType,
+    digest: byteDigest(bytes),
+    bytes: bytes.byteLength,
+  }
+}
+
+type IconOverride = ReturnType<typeof iconOverrideFor>
+
+/** Assembles the release icon from whichever source produced one. */
+function assembleIcon(
+  input: Pick<CreateReleaseInput, 'contentIcon' | 'favicon'>
+): { icon: NonNullable<PluginRelease['icon']> } | Record<string, never> {
+  if (input.contentIcon) return { icon: input.contentIcon }
+  if (input.favicon)
+    return {
+      icon: {
+        kind: 'favicon',
+        url: input.favicon.url,
+        homepage: input.favicon.homepage,
+        contentType: input.favicon.contentType,
+        digest: input.favicon.digest,
+        bytes: input.favicon.bytes.byteLength,
+      },
+    }
+  return {}
+}
+
+/** SHA-256 of a single byte buffer, in the catalog's digest format. */
+export function byteDigest(bytes: Uint8Array): string {
+  return `sha256:${createHash('sha256').update(bytes).digest('hex')}`
 }
 
 async function resolvePluginSource(
@@ -1045,7 +1224,17 @@ export function orderLeadingPlugins<
   }
 }
 
-export function createArtifacts(catalog: Catalog, lock: SourcesLock): GeneratedArtifacts {
+export function createArtifacts(
+  catalog: Catalog,
+  lock: SourcesLock,
+  options: ConsumerIndexOptions = {}
+): GeneratedArtifacts {
+  const index = buildConsumerIndex({
+    catalog,
+    ...(options.leading ? { leading: options.leading } : {}),
+    ...(options.topCount !== undefined ? { topCount: options.topCount } : {}),
+    ...(options.productPreference ? { preference: options.productPreference } : {}),
+  })
   const summary = {
     schemaVersion: 1,
     catalogId: catalog.catalogId,
@@ -1071,20 +1260,61 @@ export function createArtifacts(catalog: Catalog, lock: SourcesLock): GeneratedA
       harnessCompatibility: plugin.harnessCompatibility,
     })),
   }
-  const categories = [...new Set(catalog.plugins.flatMap((plugin) => plugin.categories))]
-    .toSorted()
-    .map((category) => ({
-      category,
-      pluginIds: catalog.plugins
-        .filter((plugin) => plugin.categories.includes(category))
-        .map((plugin) => plugin.pluginId),
-    }))
-  const files: Omit<GeneratedArtifacts, 'integrity.json'> = {
+  // Navigation stays small and points at the shards a client then fetches:
+  // `shelf-*` for a default view, `category-*` for "view more", and
+  // `catalog-index.v1.json` for the complete product list.
+  const navigation = {
+    schemaVersion: 1,
+    catalogId: catalog.catalogId,
+    generatedAt: catalog.generatedAt,
+    topCount: index.topCount,
+    sourcePreference: index.sourcePreference,
+    counts: index.counts,
+    catalogIndexArtifact: CATALOG_INDEX_ARTIFACT,
+    iconCoverage: iconCoverage(index),
+    categories: index.categories,
+    diagnostics: options.curationDiagnostics === false ? [] : index.diagnostics,
+  }
+  const shards: Record<string, string> = {
+    [CATALOG_INDEX_ARTIFACT]: json({
+      schemaVersion: 1,
+      catalogId: catalog.catalogId,
+      generatedAt: catalog.generatedAt,
+      topCount: index.topCount,
+      sourcePreference: index.sourcePreference,
+      counts: index.counts,
+      products: index.products,
+      categories: index.categories.map((category) => ({
+        category: category.category,
+        productCount: category.productCount,
+        productKeys: category.productKeys,
+      })),
+    }),
+  }
+  for (const category of index.categories) {
+    shards[category.shelfArtifact] = json({
+      schemaVersion: 1,
+      catalogId: catalog.catalogId,
+      category: category.category,
+      topCount: index.topCount,
+      products: category.topProductKeys.map((productKey) => index.products[productKey]),
+    })
+    shards[category.listArtifact] = json({
+      schemaVersion: 1,
+      catalogId: catalog.catalogId,
+      category: category.category,
+      productCount: category.productCount,
+      pluginCount: category.pluginCount,
+      products: category.productKeys.map((productKey) => index.products[productKey]),
+    })
+  }
+  const files: Record<string, string> = {
     'catalog.v1.json': json(catalog),
     'catalog-summary.v1.json': json(summary),
     'sources.lock.json': json(lock),
     'compatibility.v1.json': json(compatibility),
-    'categories.v1.json': json({ schemaVersion: 1, catalogId: catalog.catalogId, categories }),
+    'categories.v1.json': json(navigation),
+    ...shards,
   }
   const integrityBody = {
     schemaVersion: 1,
@@ -1094,8 +1324,41 @@ export function createArtifacts(catalog: Catalog, lock: SourcesLock): GeneratedA
         .toSorted()
         .map(([name, content]) => [name, digest(content)])
     ),
+    // Mirrored brand marks are published next to the artifacts, never inside
+    // them: the digest and size let a consumer or the release check verify the
+    // bytes it fetched without trusting the release listing.
+    assets: iconAssets(index),
   }
-  return { ...files, 'integrity.json': json(integrityBody) }
+  return { ...files, 'integrity.json': json(integrityBody) } as GeneratedArtifacts
+}
+
+export interface PublishedAsset {
+  readonly name: string
+  readonly digest: string
+  readonly bytes: number
+  readonly contentType: string
+  /** `content` mirrors a plugin file; `favicon` mirrors the product site's icon. */
+  readonly kind: 'content' | 'favicon'
+  /** Upstream path or URL the bytes came from, for provenance. */
+  readonly origin: string
+}
+
+/** Every mirrored icon in the catalog, deduplicated by asset name. */
+export function iconAssets(index: ConsumerIndex): readonly PublishedAsset[] {
+  const assets = new Map<string, PublishedAsset>()
+  for (const product of Object.values(index.products)) {
+    if (!product.icon) continue
+    assets.set(product.icon.asset, {
+      name: product.icon.asset,
+      digest: product.icon.digest,
+      bytes: product.icon.bytes,
+      contentType: product.icon.contentType,
+      kind: product.icon.kind,
+      origin:
+        product.icon.kind === 'content' ? (product.icon.path ?? '') : (product.icon.url ?? ''),
+    })
+  }
+  return [...assets.values()].toSorted((left, right) => left.name.localeCompare(right.name))
 }
 
 export async function writeArtifacts(
@@ -1148,12 +1411,17 @@ export function verifyArtifacts(artifacts: GeneratedArtifacts): void {
   const categories = JSON.parse(artifacts['categories.v1.json']) as {
     schemaVersion?: unknown
     catalogId?: unknown
+    topCount?: unknown
+    counts?: { plugins?: unknown; products?: unknown; redundantPlugins?: unknown }
     categories?: unknown
+    products?: unknown
+    diagnostics?: unknown
   }
   const integrity = JSON.parse(artifacts['integrity.json']) as {
     schemaVersion?: unknown
     catalogId?: unknown
     files?: Record<string, string>
+    assets?: unknown
   }
   if (parsedCatalog.sources.length !== lock.sources.length)
     throw new Error('INTEGRITY_SOURCE_COUNT_MISMATCH')
@@ -1170,29 +1438,247 @@ export function verifyArtifacts(artifacts: GeneratedArtifacts): void {
     categories.schemaVersion !== 1 ||
     categories.catalogId !== parsedCatalog.catalogId ||
     !Array.isArray(categories.categories) ||
+    (categories.products !== undefined &&
+      (typeof categories.products !== 'object' || categories.products === null)) ||
+    (categories.diagnostics !== undefined && !Array.isArray(categories.diagnostics)) ||
     integrity.schemaVersion !== 1 ||
     integrity.catalogId !== parsedCatalog.catalogId ||
-    !integrity.files
+    !integrity.files ||
+    (integrity.assets !== undefined && !Array.isArray(integrity.assets))
   ) {
     throw new Error('INTEGRITY_ARTIFACT_METADATA_MISMATCH')
   }
-  const expectedFiles = [
-    'catalog.v1.json',
-    'catalog-summary.v1.json',
-    'sources.lock.json',
-    'compatibility.v1.json',
-    'categories.v1.json',
-  ]
-  if (
-    Object.keys(integrity.files).length !== expectedFiles.length ||
-    expectedFiles.some((name) => integrity.files?.[name] === undefined)
-  ) {
-    throw new Error('INTEGRITY_FILE_SET_MISMATCH')
-  }
+  // The published file set is exactly what integrity.json enumerates, so the
+  // shards can grow with the category configuration without a fixed list here.
+  for (const name of Object.keys(artifacts))
+    if (name !== 'integrity.json' && integrity.files?.[name] === undefined)
+      throw new Error(`INTEGRITY_FILE_SET_MISMATCH: ${name}`)
   for (const [name, expected] of Object.entries(integrity.files ?? {})) {
-    const content = artifacts[name as keyof Omit<GeneratedArtifacts, 'integrity.json'>]
-    if (content === undefined || digest(content) !== expected)
-      throw new Error(`INTEGRITY_DIGEST_MISMATCH: ${name}`)
+    const content = artifacts[name]
+    if (content === undefined) throw new Error(`INTEGRITY_FILE_SET_MISMATCH: ${name}`)
+    if (digest(content) !== expected) throw new Error(`INTEGRITY_DIGEST_MISMATCH: ${name}`)
+  }
+  const indexArtifact = artifacts[CATALOG_INDEX_ARTIFACT]
+  const verification = verifyConsumerIndex(
+    artifacts['categories.v1.json'],
+    parsedCatalog,
+    indexArtifact
+  )
+  if (verification.hasConsumerIndex && indexArtifact === undefined)
+    throw new Error(`SHARD_MISSING: ${CATALOG_INDEX_ARTIFACT}`)
+  for (const shard of verification.shards)
+    verifyShardArtifact(shard, artifacts[shard.name], verification)
+  verifyIconAssets(integrity.assets, verification)
+}
+
+/**
+ * Re-checks one consumer shard against the navigation index: a shelf carries
+ * exactly the curated products in order, and a category list carries exactly
+ * the category's products in order.
+ */
+export function verifyShardArtifact(
+  shard: ShardArtifact,
+  content: string | undefined,
+  verification: ConsumerIndexVerification
+): void {
+  if (content === undefined) throw new Error(`SHARD_MISSING: ${shard.name}`)
+  const parsed = JSON.parse(content) as {
+    catalogId?: unknown
+    category?: unknown
+    topCount?: unknown
+    products?: unknown
+  }
+  // The index shard carries products keyed by productKey; the shelf and list
+  // shards carry them as ordered arrays.
+  const products: readonly ConsumerProduct[] =
+    shard.kind === 'index'
+      ? Object.values((parsed.products ?? {}) as Record<string, ConsumerProduct>)
+      : (parsed.products as readonly ConsumerProduct[])
+  if (!Array.isArray(products)) throw new Error(`SHARD_PRODUCTS_INVALID: ${shard.name}`)
+  const keys = products.map((product) => product.productKey)
+  if (new Set(keys).size !== keys.length) throw new Error(`SHARD_DUPLICATE_PRODUCT: ${shard.name}`)
+  if (shard.kind === 'index') {
+    const expected = Object.keys(verification.products ?? {}).toSorted()
+    if (keys.toSorted().join('\n') !== expected.join('\n'))
+      throw new Error('SHARD_INDEX_MEMBERSHIP_MISMATCH')
+    return
+  }
+  const category = verification.categories?.find((item) => item.category === shard.category)
+  if (!category) throw new Error(`SHARD_CATEGORY_UNKNOWN: ${shard.name}`)
+  const expected = shard.kind === 'shelf' ? category.topProductKeys : category.productKeys
+  if (keys.join('\n') !== expected.join('\n'))
+    throw new Error(`SHARD_ORDER_MISMATCH: ${shard.name}`)
+  for (const product of products) {
+    const index = verification.products?.[product.productKey]
+    if (!index || digest(index) !== digest(product))
+      throw new Error(`SHARD_PRODUCT_MISMATCH: ${shard.name}: ${product.productKey}`)
+  }
+}
+
+/** Every mirrored icon is declared once, with the digest the index advertises. */
+function verifyIconAssets(assets: unknown, verification: ConsumerIndexVerification): void {
+  const declared = (assets ?? []) as readonly PublishedAsset[]
+  if (!Array.isArray(declared)) throw new Error('INTEGRITY_ASSETS_INVALID')
+  const referenced = new Map<string, PublishedAsset>()
+  for (const product of Object.values(verification.products ?? {})) {
+    if (!product.icon) continue
+    const existing = referenced.get(product.icon.asset)
+    if (existing && existing.digest !== product.icon.digest)
+      throw new Error(`ICON_ASSET_DIGEST_CONFLICT: ${product.icon.asset}`)
+    referenced.set(product.icon.asset, {
+      name: product.icon.asset,
+      digest: product.icon.digest,
+      bytes: product.icon.bytes,
+      contentType: product.icon.contentType,
+      kind: product.icon.kind,
+      origin:
+        product.icon.kind === 'content' ? (product.icon.path ?? '') : (product.icon.url ?? ''),
+    })
+  }
+  if (declared.length !== referenced.size) throw new Error('INTEGRITY_ASSET_SET_MISMATCH')
+  for (const asset of declared) {
+    const expected = referenced.get(asset.name)
+    if (!expected) throw new Error(`INTEGRITY_ASSET_UNDECLARED: ${asset.name}`)
+    if (
+      expected.digest !== asset.digest ||
+      expected.bytes !== asset.bytes ||
+      expected.contentType !== asset.contentType ||
+      expected.kind !== asset.kind ||
+      expected.origin !== asset.origin
+    )
+      throw new Error(`INTEGRITY_ASSET_MISMATCH: ${asset.name}`)
+  }
+}
+
+/**
+ * Re-checks the published consumer index against the catalog it indexes. The
+ * index is what Adea renders directly, so a contradiction between the two
+ * artifacts must never reach a release. Snapshots published before the index
+ * existed carry membership only; those are still membership-checked and
+ * reported as `hasConsumerIndex: false`.
+ */
+export function verifyConsumerIndex(
+  content: string,
+  catalog: Pick<Catalog, 'plugins'>,
+  indexContent?: string
+): ConsumerIndexVerification {
+  const index = JSON.parse(content) as Partial<ConsumerIndex>
+  const knownPlugins = new Map(catalog.plugins.map((plugin) => [plugin.pluginId, plugin]))
+  // Products live in the index shard; the navigation artifact only points at it.
+  const shard = indexContent ? (JSON.parse(indexContent) as Partial<ConsumerIndex>) : undefined
+  const products =
+    shard && typeof shard.products === 'object' && shard.products !== null
+      ? shard.products
+      : typeof index.products === 'object' && index.products !== null
+        ? index.products
+        : undefined
+  const diagnostics = Array.isArray(index.diagnostics) ? index.diagnostics : []
+  for (const category of index.categories ?? []) {
+    const members = catalog.plugins.filter((plugin) =>
+      plugin.categories.includes(category.category)
+    )
+    if (category.pluginCount !== undefined && category.pluginCount !== members.length)
+      throw new Error(`CONSUMER_INDEX_PLUGIN_COUNT_MISMATCH: ${category.category}`)
+    if (category.pluginIds.length !== members.length)
+      throw new Error(`CONSUMER_INDEX_PLUGIN_LIST_MISMATCH: ${category.category}`)
+    if (new Set(category.pluginIds).size !== category.pluginIds.length)
+      throw new Error(`CONSUMER_INDEX_DUPLICATE_PLUGIN: ${category.category}`)
+    for (const pluginId of category.pluginIds) {
+      const plugin = knownPlugins.get(pluginId)
+      if (!plugin || !plugin.categories.includes(category.category))
+        throw new Error(`CONSUMER_INDEX_FOREIGN_PLUGIN: ${category.category}: ${pluginId}`)
+    }
+    if (!products) continue
+    if (category.productKeys === undefined || category.topProductKeys === undefined)
+      throw new Error(`CONSUMER_INDEX_PRODUCTS_INCOMPLETE: ${category.category}`)
+    if (new Set(category.productKeys).size !== category.productKeys.length)
+      throw new Error(`CONSUMER_INDEX_DUPLICATE_PRODUCT: ${category.category}`)
+    for (const productKey of category.productKeys) {
+      const product = products[productKey]
+      if (!product) throw new Error(`CONSUMER_INDEX_UNKNOWN_PRODUCT: ${productKey}`)
+      if (!product.categories.includes(category.category))
+        throw new Error(`CONSUMER_INDEX_PRODUCT_CATEGORY_MISMATCH: ${productKey}`)
+    }
+    if (category.productCount !== category.productKeys.length)
+      throw new Error(`CONSUMER_INDEX_PRODUCT_COUNT_MISMATCH: ${category.category}`)
+    const topCount = index.topCount
+    if (topCount === undefined || !Number.isInteger(topCount) || topCount < 0)
+      throw new Error('CONSUMER_INDEX_TOP_COUNT_INVALID')
+    if (category.topProductKeys.length > topCount)
+      throw new Error(`CONSUMER_INDEX_TOP_OVERFLOW: ${category.category}`)
+    const shelved = new Set<string>()
+    for (const productKey of category.topProductKeys) {
+      if (!category.productKeys.includes(productKey))
+        throw new Error(`CONSUMER_INDEX_TOP_NOT_MEMBER: ${category.category}: ${productKey}`)
+      if (shelved.has(productKey)) throw new Error(`CONSUMER_INDEX_TOP_REPEATED: ${productKey}`)
+      shelved.add(productKey)
+    }
+  }
+  if (products) {
+    // A product headlines one category only, so no product is shelved twice.
+    const claimed = new Set<string>()
+    for (const category of index.categories ?? [])
+      for (const productKey of category.topProductKeys ?? []) {
+        if (claimed.has(productKey))
+          throw new Error(`CONSUMER_INDEX_TOP_CROSS_CATEGORY: ${productKey}`)
+        claimed.add(productKey)
+      }
+    for (const [productKey, product] of Object.entries(products)) {
+      if (productKey !== product.productKey) throw new Error('CONSUMER_INDEX_PRODUCT_KEY_MISMATCH')
+      if (product.variantPluginIds[0] !== product.pluginId)
+        throw new Error(`CONSUMER_INDEX_CANONICAL_NOT_FIRST: ${productKey}`)
+      const variants = new Set(
+        product.variantPluginIds.map((pluginId) => {
+          const plugin = knownPlugins.get(pluginId)
+          if (!plugin) throw new Error(`CONSUMER_INDEX_UNKNOWN_PLUGIN: ${pluginId}`)
+          if (plugin.productGroupingKey !== productKey)
+            throw new Error(`CONSUMER_INDEX_VARIANT_PRODUCT_MISMATCH: ${pluginId}`)
+          return pluginId
+        })
+      )
+      if (variants.size !== product.variantPluginIds.length)
+        throw new Error(`CONSUMER_INDEX_DUPLICATE_VARIANT: ${productKey}`)
+    }
+    const counts = shard?.counts ?? index.counts
+    if (counts?.plugins !== catalog.plugins.length) throw new Error('CONSUMER_INDEX_TOTAL_MISMATCH')
+    if (counts?.products !== Object.keys(products).length)
+      throw new Error('CONSUMER_INDEX_PRODUCT_TOTAL_MISMATCH')
+    if (counts?.redundantPlugins !== catalog.plugins.length - counts.products)
+      throw new Error('CONSUMER_INDEX_REDUNDANCY_MISMATCH')
+    if (index.counts && shard?.counts && digest(index.counts) !== digest(shard.counts))
+      throw new Error('CONSUMER_INDEX_COUNTS_MISMATCH')
+    if (shard?.topCount !== undefined && index.topCount !== shard.topCount)
+      throw new Error('CONSUMER_INDEX_TOP_COUNT_MISMATCH')
+  }
+  if (products && index.iconCoverage) {
+    const expected = iconCoverage({ products })
+    if (
+      index.iconCoverage.total !== expected.total ||
+      index.iconCoverage.content !== expected.content ||
+      index.iconCoverage.favicon !== expected.favicon ||
+      index.iconCoverage.monogramOnly !== expected.monogramOnly ||
+      index.iconCoverage.monogramProductKeys.join('\n') !== expected.monogramProductKeys.join('\n')
+    )
+      throw new Error('CONSUMER_INDEX_ICON_COVERAGE_MISMATCH')
+  }
+  const shards: ShardArtifact[] = [
+    ...(products ? [{ name: CATALOG_INDEX_ARTIFACT, kind: 'index' as const }] : []),
+    ...(index.categories ?? []).flatMap((category) =>
+      products && category.shelfArtifact && category.listArtifact
+        ? [
+            { name: category.shelfArtifact, kind: 'shelf' as const, category: category.category },
+            { name: category.listArtifact, kind: 'list' as const, category: category.category },
+          ]
+        : []
+    ),
+  ]
+  return {
+    hasConsumerIndex: products !== undefined,
+    diagnostics,
+    ...(products ? { counts: index.counts as ConsumerIndex['counts'] } : {}),
+    ...(products && index.topCount !== undefined ? { topCount: index.topCount } : {}),
+    ...(products ? { products, categories: index.categories ?? [] } : {}),
+    shards: products ? shards : [],
   }
 }
 
@@ -1445,6 +1931,21 @@ async function resolveGitRef(repositoryUrl: string, ref: string): Promise<string
   return sha
 }
 
+/** Raw content URL for one file at an immutable commit. */
+export function rawContentUrl(repositoryUrl: string, commitSha: string, path: string): string {
+  return rawUrl(repositoryUrl, commitSha, path)
+}
+
+/** Fetches bytes from an allow-listed upstream URL with the shared retry policy. */
+export async function fetchUpstreamBytes(url: string, signal?: AbortSignal): Promise<Uint8Array> {
+  const response = await fetchUpstream(url, {
+    headers: githubRequestHeaders(),
+    ...(signal ? { signal } : {}),
+  })
+  if (!response.ok) throw new Error(`HTTP_FETCH_FAILED: ${response.status}: ${url}`)
+  return new Uint8Array(await response.arrayBuffer())
+}
+
 function rawUrl(repositoryUrl: string, commitSha: string, path: string): string {
   const parsed = new URL(canonicalRepositoryUrl(repositoryUrl))
   return `https://raw.githubusercontent.com${parsed.pathname}/${commitSha}/${path.split('/').map(encodeURIComponent).join('/')}`
@@ -1466,6 +1967,9 @@ function githubRequestHeaders(): Record<string, string> {
       }
     : { 'user-agent': 'agent-hq-plugin-marketplace' }
 }
+
+/** Ceiling for a single product-site request during icon discovery. */
+export const SITE_FETCH_TIMEOUT_MS = 15_000
 
 const UPSTREAM_FETCH_MAX_ATTEMPTS = 3
 const UPSTREAM_FETCH_BASE_DELAY_MS = 1000

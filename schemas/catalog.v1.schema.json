@@ -6,15 +6,39 @@
   "additionalProperties": false,
   "required": ["schemaVersion", "catalogId", "generatedAt", "sources", "plugins"],
   "properties": {
-    "schemaVersion": { "const": 1 },
-    "catalogId": { "type": "string", "pattern": "^catalog:[a-f0-9]{64}$" },
-    "generatedAt": { "type": "string", "format": "date-time" },
-    "sources": { "type": "array", "items": { "$ref": "#/$defs/source" } },
-    "plugins": { "type": "array", "items": { "$ref": "#/$defs/plugin" } }
+    "schemaVersion": {
+      "const": 1
+    },
+    "catalogId": {
+      "type": "string",
+      "pattern": "^catalog:[a-f0-9]{64}$"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "plugins": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/plugin"
+      }
+    }
   },
   "$defs": {
-    "digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
-    "sha": { "type": "string", "pattern": "^[a-f0-9]{40}$" },
+    "digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "sha": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
     "source": {
       "type": "object",
       "additionalProperties": false,
@@ -32,17 +56,41 @@
         "synchronizationStatus"
       ],
       "properties": {
-        "sourceId": { "type": "string" },
-        "displayName": { "type": "string" },
-        "repositoryUrl": { "type": "string", "format": "uri" },
-        "marketplaceDialect": { "enum": ["openai", "cursor", "claude"] },
-        "manifestPath": { "type": "string" },
-        "defaultBranch": { "type": "string" },
-        "resolvedCommitSha": { "$ref": "#/$defs/sha" },
-        "retrievalTimestamp": { "type": "string", "format": "date-time" },
-        "trustClassification": { "const": "official" },
-        "sourceManifestDigest": { "$ref": "#/$defs/digest" },
-        "synchronizationStatus": { "enum": ["synchronized", "unchanged", "failed"] }
+        "sourceId": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "repositoryUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "marketplaceDialect": {
+          "enum": ["openai", "cursor", "claude"]
+        },
+        "manifestPath": {
+          "type": "string"
+        },
+        "defaultBranch": {
+          "type": "string"
+        },
+        "resolvedCommitSha": {
+          "$ref": "#/$defs/sha"
+        },
+        "retrievalTimestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "trustClassification": {
+          "const": "official"
+        },
+        "sourceManifestDigest": {
+          "$ref": "#/$defs/digest"
+        },
+        "synchronizationStatus": {
+          "enum": ["synchronized", "unchanged", "failed"]
+        }
       }
     },
     "capability": {
@@ -50,11 +98,24 @@
       "additionalProperties": false,
       "required": ["type", "name", "paths", "metadata", "securityImpact"],
       "properties": {
-        "type": { "type": "string" },
-        "name": { "type": "string" },
-        "paths": { "type": "array", "items": { "type": "string" } },
-        "metadata": { "type": "object" },
-        "securityImpact": { "enum": ["none", "review", "sensitive"] }
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "paths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "metadata": {
+          "type": "object"
+        },
+        "securityImpact": {
+          "enum": ["none", "review", "sensitive"]
+        }
       }
     },
     "compatibility": {
@@ -62,9 +123,21 @@
       "additionalProperties": false,
       "required": ["status", "reasons", "responsibleCapabilities"],
       "properties": {
-        "status": { "type": "string" },
-        "reasons": { "type": "array", "items": { "type": "string" } },
-        "responsibleCapabilities": { "type": "array", "items": { "type": "string" } }
+        "status": {
+          "type": "string"
+        },
+        "reasons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "responsibleCapabilities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
       }
     },
     "release": {
@@ -87,21 +160,145 @@
         "publicationTimestamp"
       ],
       "properties": {
-        "releaseId": { "type": "string", "pattern": "^release:[a-f0-9]{64}$" },
-        "upstreamVersion": { "type": "string" },
-        "resolvedRepositoryUrl": { "type": "string", "format": "uri" },
-        "resolvedCommitSha": { "$ref": "#/$defs/sha" },
-        "pluginSubdirectory": { "type": "string" },
-        "canonicalContentDigest": { "$ref": "#/$defs/digest" },
-        "manifestDigest": { "$ref": "#/$defs/digest" },
-        "contentResolution": { "enum": ["complete", "metadata-only"] },
-        "releaseMetadata": { "type": "object" },
-        "capabilities": { "type": "array", "items": { "$ref": "#/$defs/capability" } },
-        "requiredConnectors": { "type": "array", "items": { "type": "string" } },
-        "requiredCredentials": { "type": "array", "items": { "type": "string" } },
-        "permissionSensitiveChanges": { "type": "array", "items": { "type": "string" } },
-        "fileIndex": { "type": "array", "items": { "type": "string" } },
-        "publicationTimestamp": { "type": "string", "format": "date-time" }
+        "canonicalContentDigest": {
+          "$ref": "#/$defs/digest"
+        },
+        "capabilities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/capability"
+          }
+        },
+        "contentResolution": {
+          "enum": ["complete", "metadata-only"]
+        },
+        "fileIndex": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "icon": {
+          "description": "Brand mark resolved at compile time: a file from the release content, or the product site's icon.",
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["kind", "path", "contentType", "digest", "bytes"],
+              "properties": {
+                "kind": {
+                  "const": "content"
+                },
+                "path": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 512
+                },
+                "contentType": {
+                  "enum": [
+                    "image/png",
+                    "image/jpeg",
+                    "image/gif",
+                    "image/webp",
+                    "image/svg+xml",
+                    "image/x-icon"
+                  ]
+                },
+                "digest": {
+                  "$ref": "#/$defs/digest"
+                },
+                "bytes": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 1048576
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["kind", "url", "homepage", "contentType", "digest", "bytes"],
+              "properties": {
+                "kind": {
+                  "const": "favicon"
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "maxLength": 1024
+                },
+                "homepage": {
+                  "type": "string",
+                  "format": "uri",
+                  "maxLength": 1024
+                },
+                "contentType": {
+                  "enum": [
+                    "image/png",
+                    "image/jpeg",
+                    "image/gif",
+                    "image/webp",
+                    "image/svg+xml",
+                    "image/x-icon"
+                  ]
+                },
+                "digest": {
+                  "$ref": "#/$defs/digest"
+                },
+                "bytes": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 1048576
+                }
+              }
+            }
+          ]
+        },
+        "manifestDigest": {
+          "$ref": "#/$defs/digest"
+        },
+        "permissionSensitiveChanges": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pluginSubdirectory": {
+          "type": "string"
+        },
+        "publicationTimestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "releaseId": {
+          "type": "string",
+          "pattern": "^release:[a-f0-9]{64}$"
+        },
+        "releaseMetadata": {
+          "type": "object"
+        },
+        "requiredConnectors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "requiredCredentials": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "resolvedCommitSha": {
+          "$ref": "#/$defs/sha"
+        },
+        "resolvedRepositoryUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "upstreamVersion": {
+          "type": "string"
+        }
       }
     },
     "plugin": {
@@ -127,30 +324,83 @@
         "securityClassification"
       ],
       "properties": {
-        "pluginId": { "type": "string" },
-        "displayName": { "type": "string" },
-        "description": { "type": "string" },
-        "productGroupingKey": { "type": "string" },
-        "categories": { "type": "array", "items": { "type": "string" } },
-        "keywords": { "type": "array", "items": { "type": "string" } },
-        "authors": { "type": "array", "items": { "type": "string" } },
-        "homepage": { "type": "string", "format": "uri" },
-        "icons": { "type": "array", "items": { "type": "string" } },
-        "sourceId": { "type": "string" },
-        "upstreamPluginName": { "type": "string" },
-        "currentReleaseId": { "type": "string" },
-        "availableReleases": { "type": "array", "items": { "$ref": "#/$defs/release" } },
+        "pluginId": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "productGroupingKey": {
+          "type": "string"
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "homepage": {
+          "type": "string",
+          "format": "uri"
+        },
+        "icons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sourceId": {
+          "type": "string"
+        },
+        "upstreamPluginName": {
+          "type": "string"
+        },
+        "currentReleaseId": {
+          "type": "string"
+        },
+        "availableReleases": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/release"
+          }
+        },
         "capabilitySummary": {
           "type": "object",
-          "additionalProperties": { "type": "integer", "minimum": 0 }
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
         },
         "harnessCompatibility": {
           "type": "object",
-          "additionalProperties": { "$ref": "#/$defs/compatibility" }
+          "additionalProperties": {
+            "$ref": "#/$defs/compatibility"
+          }
         },
-        "license": { "type": "object" },
-        "provenance": { "type": "object" },
-        "securityClassification": { "type": "object" }
+        "license": {
+          "type": "object"
+        },
+        "provenance": {
+          "type": "object"
+        },
+        "securityClassification": {
+          "type": "object"
+        }
       }
     }
   }
