@@ -9,11 +9,16 @@ The immutable release URL for the current catalog is derived from `catalogId`:
 `https://github.com/adea-ai/plugins/releases/download/catalog/<catalogId-suffix>/catalog.v1.json`
 
 For example, `catalog:abc...` is published under the immutable tag
-`catalog/abc...`. Each catalog release contains these six required versioned
-artifacts: `catalog.v1.json`, `catalog-summary.v1.json`, `categories.v1.json`,
-`compatibility.v1.json`, `integrity.json`, and `sources.lock.json`. It also
-contains the `catalog-latest.v1.json` pointer asset, which is byte-identical to
-`catalog.v1.json` in that release. The repository’s GitHub immutable-release
+`catalog/abc...`. Each catalog release contains six core artifacts —
+`catalog.v1.json`, `catalog-summary.v1.json`, `categories.v1.json`,
+`compatibility.v1.json`, `integrity.json`, and `sources.lock.json` — plus the
+consumer shards `catalog-index.v1.json`, `shelf-<category>.v1.json` and
+`category-<category>.v1.json`, and one asset per mirrored brand mark.
+`integrity.json` enumerates every artifact and asset in the release with its
+digest, so the release inventory is self-describing rather than fixed. The
+`catalog-latest.v1.json` pointer asset is byte-identical to `catalog.v1.json`
+in that release. Fetch patterns and cache lifetimes are defined in
+[consumer fetch patterns](consumer-fetch-patterns.md). The repository’s GitHub immutable-release
 setting is enabled; this seven-file asset set is attached before the release is
 published.
 Consumers should use the stable latest URL for discovery, then pin the
@@ -43,7 +48,18 @@ the following identifiers and fields as opaque, exact values:
 
 Adea is a read-only catalog consumer. It may use the summary, categories,
 search text, product grouping, icons, source badges, compatibility, and update
-state for browsing. An install or enable action submits `pluginId`, exact
+state for browsing.
+
+`categories.v1.json` is the browsing index and is already deduplicated, ranked
+and sorted. It carries the category list, each category's display order and
+curated `topProductKeys` shelf, the shard artifact names to fetch for records,
+and `diagnostics` (an advisory list of curated names that no longer resolve).
+Product records live in `catalog-index.v1.json` and in the per-category shards:
+each holds one entry per product with its canonical `pluginId`, its
+`variantPluginIds`, and its `icon`, `license`, `capabilitySummary` and
+compatibility statuses. Consumers must not re-group, re-sort or slice
+`pluginIds` for a shelf, and must not derive icons by inspecting file paths:
+`icon.asset` names a mirrored asset in the same release. An install or enable action submits `pluginId`, exact
 `releaseId`, `canonicalContentDigest`, and the requested harness to Control
 Plane. Adea never downloads or executes upstream plugin content.
 

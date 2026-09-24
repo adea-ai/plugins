@@ -32,6 +32,26 @@ publication fails, the workflow fails and the previous generated snapshot and
 release remain available. Recovery is to fix the source or policy issue and
 rerun `workflow_dispatch`; no human approval queue is created.
 
+The published set has a fixed core and two derived families:
+
+- core: `catalog.v1.json`, `catalog-summary.v1.json`, `sources.lock.json`,
+  `compatibility.v1.json`, `categories.v1.json`, `integrity.json`;
+- consumer shards: `catalog-index.v1.json`, `shelf-<category>.v1.json` and
+  `category-<category>.v1.json`, one shelf and one list per configured category;
+- brand marks: `icon-<digest>.<ext>` assets, staged outside `generated/` so the
+  repository keeps only text artifacts and the release carries the bytes.
+
+`categories.v1.json` is navigation: the category list, each category's display
+order, its curated `topProductKeys` shelf, the shard names to fetch for full
+records, and a `diagnostics` list of curated names that no longer resolve.
+Product records live in the shards — one entry per product with a canonical
+plugin ID, its source variants, and its `icon`, licence, capability summary and
+compatibility statuses. Everything is derived from `catalog.v1.json` and never
+adds or removes plugins; `verify-integrity` rejects a set whose membership,
+counts, shelves, shards or declared asset digests contradict it. `integrity.json`
+enumerates every artifact and every mirrored asset, so the release inventory is
+self-describing and the workflow uploads exactly what the catalog declares.
+
 An unsafe individual plugin does not become executable content. When its
 snapshot contains symlinks, unsafe paths, unsupported submodules, invalid
 plugin metadata, or exceeds a content limit, it is skipped and the JSON change
