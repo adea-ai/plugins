@@ -60,7 +60,7 @@
   "dependencies": {
     "@adea-ai/catalog-schema": "workspace:^",
     "@adea-ai/source-adapters": "workspace:^",
-    "yaml": "2.9.0"
+    "yaml": "2.9.1"
   },
   "engines": {
     "bun": ">=1.4.0 <2",
