@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.5.0...plugins-marketplace-v1.5.1) (2026-09-24)
+
+
+### Bug Fixes
+
+* **catalog:** file a product under every category its variants belong to ([#80](https://github.com/adea-ai/plugins/issues/80)) ([2dd8f2e](https://github.com/adea-ai/plugins/commit/2dd8f2e00476a497b19e973017a0a0c972faae00))
+
 ## [1.5.0](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.4.5...plugins-marketplace-v1.5.0) (2026-09-24)
 
 
