@@ -96,6 +96,27 @@ describe('product placement', () => {
     expect(index.categories[0]!.topProductKeys).toEqual(['google-calendar'])
   })
 
+  test('files a product under every category its variants belong to', () => {
+    const base = catalog([
+      plugin({ sourceId: 'claude-official', name: 'slack', categories: ['productivity'] }),
+      plugin({ sourceId: 'openai-official', name: 'slack', categories: ['communication'] }),
+    ])
+    const index = buildConsumerIndex({ catalog: base, preference })
+    // Sources disagree about where Slack belongs; the product belongs in both,
+    // while the canonical variant still decides identity.
+    expect(index.products.slack!.categories).toEqual(['communication', 'productivity'])
+    expect(index.products.slack!.primaryCategory).toBe('communication')
+    expect(index.products.slack!.pluginId).toBe('plugin:claude-official:slack')
+    expect(index.categories.map((category) => category.category)).toEqual([
+      'communication',
+      'productivity',
+    ])
+    for (const category of index.categories)
+      expect(category.productKeys, category.category).toEqual(['slack'])
+    // The published index must satisfy its own membership check.
+    expect(() => verifyConsumerIndex(JSON.stringify(index), base)).not.toThrow()
+  })
+
   test('marks variants that ship byte-identical content', () => {
     const shared = { releaseRepositoryUrl: 'https://github.com/vendor/plugin' }
     const first = plugin({

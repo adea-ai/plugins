@@ -321,6 +321,9 @@ export function buildConsumerIndex(input: {
             : left.localeCompare(right)
       )
     const releaseIds = new Set(variants.map((plugin) => plugin.currentReleaseId))
+    const productCategories = [
+      ...new Set(variants.flatMap((plugin) => plugin.categories)),
+    ].toSorted()
     products[productKey] = {
       productKey,
       pluginId: canonical.pluginId,
@@ -331,8 +334,11 @@ export function buildConsumerIndex(input: {
       description:
         canonical.description || (variants.find((v) => v.description)?.description ?? ''),
       sourceId: canonical.sourceId,
-      categories: [...canonical.categories],
-      primaryCategory: canonical.categories[0] ?? 'other',
+      // A product's categories are the union across its variants: sources
+      // disagree (one marketplace files Slack under productivity, another under
+      // communication), and a product belongs wherever any variant is filed.
+      categories: productCategories,
+      primaryCategory: productCategories[0] ?? 'other',
       license: canonical.license.name,
       ...(canonical.homepage ? { homepage: canonical.homepage } : {}),
       capabilitySummary: { ...canonical.capabilitySummary },
