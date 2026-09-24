@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.3](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.5.2...plugins-marketplace-v1.5.3) (2026-09-24)
+
+
+### Bug Fixes
+
+* **ci:** retry the catalog release download ([#84](https://github.com/adea-ai/plugins/issues/84)) ([dbad227](https://github.com/adea-ai/plugins/commit/dbad227d113af6fa82a1e1b6df512ade83371e40))
+
 ## [1.5.2](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.5.1...plugins-marketplace-v1.5.2) (2026-09-24)
 
 
