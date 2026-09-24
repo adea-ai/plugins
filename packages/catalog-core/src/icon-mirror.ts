@@ -174,3 +174,23 @@ function publishedAssetOf(source: IconSource): PublishedAsset {
     origin: source.kind === 'content' ? source.sourcePath : source.url,
   }
 }
+
+/**
+ * Writes one verified icon into the assets directory.
+ *
+ * The build already holds the exact bytes it recorded a digest for, so staging
+ * them here removes the re-fetch a later mirror would need. That matters for
+ * site icons: their URL is not content-addressed, so a vendor can change the
+ * file between resolution and publication.
+ */
+export async function stageIconBytes(
+  assetsDirectory: string,
+  asset: string,
+  bytes: Uint8Array
+): Promise<void> {
+  const destination = join(assetsDirectory, asset)
+  const existing = await fs.readFile(destination).catch(() => undefined)
+  if (existing && byteDigest(existing) === byteDigest(bytes)) return
+  await fs.mkdir(dirname(destination), { recursive: true })
+  await fs.writeFile(destination, bytes)
+}

@@ -42,10 +42,12 @@ are republished, and it is constrained:
   `foreignObject`, `iframe`, an event handler, a `javascript:` URL, an external
   `href`/`src`, or an entity declaration is refused, and the product simply
   reports no icon;
-- assets are content addressed and published beside the artifacts, never
-  committed to the repository; every release declares each asset's digest and
-  byte length in `integrity.json`, and both the publish step and the release
-  verification refetch and compare them.
+- assets are content addressed and staged by the build from the exact bytes the
+  recorded digest was taken over, never committed to the repository. A site icon
+  is therefore never re-fetched after resolution: its URL is not content
+  addressed, so a vendor could otherwise change the file between the build and
+  the release. Every release declares each asset's digest and byte length in
+  `integrity.json`, and the publish step and release verification compare them.
 
 Consumers must render a mirrored SVG through an image element and never inline
 it into a document, where its contents would share the page's origin.

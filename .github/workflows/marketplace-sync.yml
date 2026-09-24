@@ -55,13 +55,16 @@ jobs:
           bun packages/cli/src/index.ts sync --json | tee "$RUNNER_TEMP/catalog-change-report.json"
       - name: Validate catalog
         run: bun run catalog validate --json
-      - name: Mirror brand marks
+      - name: Verify brand marks
         if: inputs['bootstrap-only'] != true
         run: |
           set -o pipefail
-          bun packages/cli/src/index.ts mirror-icons --json \
+          # Marks are staged by the build from the exact bytes each digest was
+          # taken over, so this is a local integrity check with no re-fetch.
+          # `catalog mirror-icons` remains the backfill path when a snapshot is
+          # published from a checkout that has no staged assets.
+          bun packages/cli/src/index.ts verify-assets --json \
             | tee "$RUNNER_TEMP/catalog-icon-report.json"
-          bun packages/cli/src/index.ts verify-assets --json
       - name: Determine publication
         id: publication
         env:
