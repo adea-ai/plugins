@@ -146,7 +146,29 @@ jobs:
           if ! printf '%s\n' "$assets" | grep -Fxq 'catalog-latest.v1.json'; then
             gh release upload "$tag" "$latest_asset"
           fi
-          gh release edit "$tag" --draft=false --latest
+          # Publishing a draft is the only edit this step may make: a release
+          # that is already published is immutable, and GitHub rejects any edit
+          # of it. Re-running a build that produced an identical catalog (the
+          # same source pins yield the same tag) therefore finds the release
+          # already published and latest, and needs no edit at all.
+          if [ "$(gh release view "$tag" --json isDraft --jq '.isDraft' 2>/dev/null)" = "true" ]; then
+            # Publishing a draft is the only edit this step may make: a release
+          # that is already published is immutable, and GitHub rejects any edit
+          # of it. Re-running a build that produced an identical catalog (the
+          # same source pins yield the same tag) therefore finds the release
+          # already published and latest, and needs no edit at all.
+          if [ "$(gh release view "$tag" --json isDraft --jq '.isDraft' 2>/dev/null)" = "true" ]; then
+            gh release edit "$tag" --draft=false --latest
+          else
+            test "$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" --jq '.tag_name')" = "$tag" \
+              || { echo "existing release $tag is not latest; refusing to rewrite an immutable release" >&2; exit 1; }
+            echo "release $tag is already published and latest; no edit needed."
+          fi
+          else
+            test "$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" --jq '.tag_name')" = "$tag" \
+              || { echo "existing release $tag is not latest; refusing to rewrite an immutable release" >&2; exit 1; }
+            echo "release $tag is already published and latest; no edit needed."
+          fi
       - name: Verify published catalog assets
         if: steps.publication.outputs.publish == 'true'
         env:
