@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "sourcePreference": [
+    "claude-official",
+    "cursor-official",
+    "openai-official",
+    "knowledge-work-official"
+  ],
+  "canonicalOverrides": {}
+}

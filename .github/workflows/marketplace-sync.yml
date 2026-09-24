@@ -55,6 +55,13 @@ jobs:
           bun packages/cli/src/index.ts sync --json | tee "$RUNNER_TEMP/catalog-change-report.json"
       - name: Validate catalog
         run: bun run catalog validate --json
+      - name: Mirror brand marks
+        if: inputs['bootstrap-only'] != true
+        run: |
+          set -o pipefail
+          bun packages/cli/src/index.ts mirror-icons --json \
+            | tee "$RUNNER_TEMP/catalog-icon-report.json"
+          bun packages/cli/src/index.ts verify-assets --json
       - name: Determine publication
         id: publication
         env:
@@ -66,7 +73,10 @@ jobs:
           changed=$(node -e "const fs=require('fs'); const r=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/catalog-change-report.json','utf8')); process.stdout.write(String(r.changed === true))")
           assets=$(gh release view "$tag" --json assets --jq '.assets[].name' 2>/dev/null || true)
           bootstrap=false
-          for artifact in catalog.v1.json catalog-summary.v1.json categories.v1.json compatibility.v1.json integrity.json sources.lock.json catalog-latest.v1.json; do
+          # integrity.json enumerates every published artifact and mirrored
+          # brand mark, so the required asset set follows the catalog itself.
+          required=$(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); const names=[...Object.keys(i.files),(i.assets??[]).map(a=>a.name),'integrity.json','catalog-latest.v1.json'].flat().sort(); process.stdout.write(names.join('\n'))")
+          for artifact in $required; do
             if ! printf '%s\n' "$assets" | grep -Fxq "$artifact"; then
               bootstrap=true
             fi
@@ -103,12 +113,8 @@ jobs:
           cp generated/catalog.v1.json "$latest_asset"
           if ! gh release view "$tag" >/dev/null 2>&1; then
             gh release create "$tag" \
-              generated/catalog.v1.json \
-              generated/catalog-summary.v1.json \
-              generated/categories.v1.json \
-              generated/compatibility.v1.json \
-              generated/integrity.json \
-              generated/sources.lock.json \
+              $(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); process.stdout.write([...Object.keys(i.files),'integrity.json'].map(n=>'generated/'+n).join(' '))") \
+              $(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); process.stdout.write((i.assets??[]).map(a=>'published-assets/'+a.name).join(' '))") \
               "$latest_asset" \
               --target "$(git rev-parse HEAD)" \
               --draft \
@@ -122,9 +128,14 @@ jobs:
               exit 1
             fi
             assets=$(gh release view "$tag" --json assets --jq '.assets[].name' 2>/dev/null || true)
-            for artifact in catalog.v1.json catalog-summary.v1.json categories.v1.json compatibility.v1.json integrity.json sources.lock.json; do
+            for artifact in $(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); process.stdout.write([...Object.keys(i.files),'integrity.json'].join(' '))"); do
               if ! printf '%s\n' "$assets" | grep -Fxq "$artifact"; then
                 gh release upload "$tag" "generated/$artifact"
+              fi
+            done
+            for asset in $(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); process.stdout.write((i.assets??[]).map(a=>a.name).join(' '))"); do
+              if ! printf '%s\n' "$assets" | grep -Fxq "$asset"; then
+                gh release upload "$tag" "published-assets/$asset"
               fi
             done
           fi
@@ -144,10 +155,10 @@ jobs:
           mkdir -p "$release_dir"
           tag="$RELEASE_TAG"
           actual_assets=$(gh release view "$tag" --json assets --jq '.assets[].name' | sort)
-          expected_assets=$(printf '%s\n' catalog-latest.v1.json catalog-summary.v1.json catalog.v1.json categories.v1.json compatibility.v1.json integrity.json sources.lock.json | sort)
+          expected_assets=$(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); const names=[...Object.keys(i.files),(i.assets??[]).map(a=>a.name),'integrity.json','catalog-latest.v1.json'].flat().sort(); process.stdout.write(names.join('\n')+'\n')")
           test "$actual_assets" = "$expected_assets"
-          gh release download "$tag" --dir "$release_dir" --pattern '*.json'
-          bun run verify:published -- "$release_dir"
+          gh release download "$tag" --dir "$release_dir"
+          bun run verify:published -- "$release_dir" "$release_dir"
           cmp "$release_dir/catalog.v1.json" "$release_dir/catalog-latest.v1.json"
           test "$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" --jq '.tag_name')" = "$tag"
           test "$(gh release view "$tag" --json isImmutable --jq '.isImmutable')" = true

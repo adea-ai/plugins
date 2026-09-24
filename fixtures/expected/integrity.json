@@ -1,10 +1,33 @@
 {
-  "catalogId": "catalog:b50b46bedaad86265e56ac6e7eb49e26474d765a207d99c9bbb529a40be5f9b4",
+  "assets": [
+    {
+      "bytes": 196,
+      "contentType": "image/svg+xml",
+      "digest": "sha256:7a209aa198e491e40010c6d1711a518a5e12aa6eb8dfa471815afe926eac6a50",
+      "kind": "content",
+      "name": "icon-7a209aa198e491e40010c6d1711a518a.svg",
+      "origin": "assets/logo.svg"
+    }
+  ],
+  "catalogId": "catalog:dbc3495bad32c7e9e49284d96cd8c03d2d67af90e73d79d523282467d1ed7aa0",
   "files": {
-    "catalog-summary.v1.json": "sha256:f52ee8bc1e28a97aad496e2dba9afd05754ca1d9c044878b12e30e1a83b9ab7e",
-    "catalog.v1.json": "sha256:a49b623eac611ab914746dc4c213c070d56f40694a48dd0317b0e1448dab8083",
-    "categories.v1.json": "sha256:fbe845f0eb1bd95c3a6c9788935b177a0bf840dcfededfdbab3cb619829288fb",
-    "compatibility.v1.json": "sha256:e900f374b57551bddd048c12063657da82e9a8f3bcd1774a0a5aad4d1adaf6e0",
+    "catalog-index.v1.json": "sha256:0b4d2b3d9831e98f58df65eda5b7fabae8e3e73e0a8af021b49bb645cc09d2e8",
+    "catalog-summary.v1.json": "sha256:4ad88310611e86ce2d92bbb23c4bbd4bb09d097e320811ef2afcb4432a354c2e",
+    "catalog.v1.json": "sha256:a591bc05a00ddd4707858b617b479453558839370ffac8ce00cfcbd9cb38b53f",
+    "categories.v1.json": "sha256:ad66b4d73f21eb70c83f849da08838603b6f2f7f0145a07b0cb6ca9f3ede987c",
+    "category-business-operations.v1.json": "sha256:b50060493780b98ff2e0df53cbc3d3bc52fa50ce125bfee88d120a62b2a4b1ea",
+    "category-data-analytics.v1.json": "sha256:9d418e4eaab7855c94ccea4a32787187ec859d426b665f384e56cae9fec2f259",
+    "category-developer-tools.v1.json": "sha256:8ae9e9e0684d95742458b212206322aca55552808a64d74a687a30ca0983593f",
+    "category-education-research.v1.json": "sha256:d97a617f6443239a0ecc8becb36c91f51ba66c499744a5fc0537adb4f4d09aed",
+    "category-productivity.v1.json": "sha256:a8d8d4093f67af949c605fd890059a481b079c4f9f58f2507f64084e479a8bfe",
+    "category-security.v1.json": "sha256:865e75834a32db440bd26302c04adb9e219931d9a4075c2a263d68574d5131e5",
+    "compatibility.v1.json": "sha256:76bccd6a50d546b55d3466d88cfbfd4155bf295c32f7255167a8ad2e9901e62d",
+    "shelf-business-operations.v1.json": "sha256:1d42c095d307a4dc47c711e86fe183aefac4c4442157b4a5e189d6d7b68b5492",
+    "shelf-data-analytics.v1.json": "sha256:bd414433db28f1e5ebac6a3e674d9e3f8331e95b09709f27660097ae01bdb0ca",
+    "shelf-developer-tools.v1.json": "sha256:f8b8331e49acc0f6b8b4aca78ee843580c1040fe0c90c85b041e18000a37ae87",
+    "shelf-education-research.v1.json": "sha256:06115cab2d1da782ea03c5a02a7b4763559b985eedc03173aba28ae95bc47f90",
+    "shelf-productivity.v1.json": "sha256:4bf4182ab380db68b806f8a36b8342fa90f5aa64d348d43e1d4b2e7b1df4661d",
+    "shelf-security.v1.json": "sha256:a6a77784d967ff7aae42c46b1c5579c95e9fb735214d79340aaf77bf6e733a00",
     "sources.lock.json": "sha256:3b7c0f2011e29d7bc2aa5f025b83e38dcad79d4faab5bd7782cc55f2116f391f"
   },
   "schemaVersion": 1

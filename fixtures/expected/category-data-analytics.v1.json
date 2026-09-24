@@ -1,0 +1,48 @@
+{
+  "catalogId": "catalog:dbc3495bad32c7e9e49284d96cd8c03d2d67af90e73d79d523282467d1ed7aa0",
+  "category": "data-analytics",
+  "pluginCount": 1,
+  "productCount": 1,
+  "products": [
+    {
+      "capabilitySummary": {
+        "mcp-server": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "native",
+        "codex": "portable",
+        "cursor": "portable",
+        "generic-skill-mcp": "portable",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Search connected data.",
+      "displayName": "Search",
+      "icon": null,
+      "keywords": [
+        "data-analytics",
+        "search"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 120,
+        "text": "SE"
+      },
+      "pluginId": "plugin:knowledge-work-official:search",
+      "primaryCategory": "data-analytics",
+      "productKey": "search",
+      "releaseId": "release:24dcda1228d0962c9b2bc807c631a90749d910e24b491cbecb09389ec68187ff",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "search",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:search"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1
+}

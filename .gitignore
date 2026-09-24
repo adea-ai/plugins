@@ -82,3 +82,6 @@ mise.local.lock
 # Repository-specific rules
 eval-results.json
 eval-results/
+
+# Mirrored brand marks; published as release assets, never committed.
+published-assets/

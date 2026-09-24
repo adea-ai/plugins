@@ -1,45 +1,136 @@
 {
-  "catalogId": "catalog:b50b46bedaad86265e56ac6e7eb49e26474d765a207d99c9bbb529a40be5f9b4",
+  "catalogId": "catalog:dbc3495bad32c7e9e49284d96cd8c03d2d67af90e73d79d523282467d1ed7aa0",
+  "catalogIndexArtifact": "catalog-index.v1.json",
   "categories": [
     {
       "category": "business-operations",
+      "listArtifact": "category-business-operations.v1.json",
+      "pluginCount": 1,
       "pluginIds": [
         "plugin:claude-official:sales"
+      ],
+      "productCount": 1,
+      "productKeys": [
+        "sales"
+      ],
+      "shelfArtifact": "shelf-business-operations.v1.json",
+      "topProductKeys": [
+        "sales"
       ]
     },
     {
       "category": "data-analytics",
+      "listArtifact": "category-data-analytics.v1.json",
+      "pluginCount": 1,
       "pluginIds": [
         "plugin:knowledge-work-official:search"
+      ],
+      "productCount": 1,
+      "productKeys": [
+        "search"
+      ],
+      "shelfArtifact": "shelf-data-analytics.v1.json",
+      "topProductKeys": [
+        "search"
       ]
     },
     {
       "category": "developer-tools",
+      "listArtifact": "category-developer-tools.v1.json",
+      "pluginCount": 1,
       "pluginIds": [
         "plugin:cursor-official:teaching"
-      ]
+      ],
+      "productCount": 1,
+      "productKeys": [
+        "teaching"
+      ],
+      "shelfArtifact": "shelf-developer-tools.v1.json",
+      "topProductKeys": []
     },
     {
       "category": "education-research",
+      "listArtifact": "category-education-research.v1.json",
+      "pluginCount": 1,
       "pluginIds": [
         "plugin:cursor-official:teaching"
+      ],
+      "productCount": 1,
+      "productKeys": [
+        "teaching"
+      ],
+      "shelfArtifact": "shelf-education-research.v1.json",
+      "topProductKeys": [
+        "teaching"
       ]
     },
     {
       "category": "productivity",
+      "listArtifact": "category-productivity.v1.json",
+      "pluginCount": 4,
       "pluginIds": [
         "plugin:cursor-official:calendar",
-        "plugin:knowledge-work-official:productivity",
         "plugin:openai-official:calendar",
-        "plugin:openai-official:linear"
+        "plugin:openai-official:linear",
+        "plugin:knowledge-work-official:productivity"
+      ],
+      "productCount": 3,
+      "productKeys": [
+        "calendar",
+        "linear",
+        "productivity"
+      ],
+      "shelfArtifact": "shelf-productivity.v1.json",
+      "topProductKeys": [
+        "calendar",
+        "linear",
+        "productivity"
       ]
     },
     {
       "category": "security",
+      "listArtifact": "category-security.v1.json",
+      "pluginCount": 1,
       "pluginIds": [
         "plugin:claude-official:security"
+      ],
+      "productCount": 1,
+      "productKeys": [
+        "security"
+      ],
+      "shelfArtifact": "shelf-security.v1.json",
+      "topProductKeys": [
+        "security"
       ]
     }
   ],
-  "schemaVersion": 1
+  "counts": {
+    "plugins": 8,
+    "products": 7,
+    "redundantPlugins": 1
+  },
+  "diagnostics": [],
+  "generatedAt": "2026-01-01T00:00:00.000Z",
+  "iconCoverage": {
+    "content": 1,
+    "favicon": 0,
+    "monogramOnly": 6,
+    "monogramProductKeys": [
+      "linear",
+      "productivity",
+      "sales",
+      "search",
+      "security",
+      "teaching"
+    ],
+    "total": 7
+  },
+  "schemaVersion": 1,
+  "sourcePreference": [
+    "claude-official",
+    "cursor-official",
+    "openai-official",
+    "knowledge-work-official"
+  ],
+  "topCount": 6
 }

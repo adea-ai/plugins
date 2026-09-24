@@ -10,15 +10,36 @@ import {
 } from '../../catalog-core/src/portable-catalog.js'
 import { HarnessProfileSchema } from '../../catalog-schema/src/agent-plugins.js'
 import {
+  byteDigest,
   digest,
+  fetchUpstreamBytes,
+  FixtureSnapshotLoader,
+  rawContentUrl,
   synchronize,
   verifyArtifacts,
+  verifyConsumerIndex,
   writeArtifacts,
+  type PublishedAsset,
   type CatalogPolicy,
   type CategoryMap,
   type GeneratedArtifacts,
   type ProductAliases,
 } from '../../catalog-core/src/index.js'
+import {
+  parseProductPreference,
+  type ConsumerIndex,
+  type ProductPreference,
+} from '../../catalog-core/src/consumer-index.js'
+import {
+  parseProductIconOverrides,
+  type ProductIconOverrides,
+} from '../../catalog-core/src/icons.js'
+import { isPublicHostname } from '../../catalog-core/src/site-icons.js'
+import {
+  resolveIconSources,
+  stageIconAssets,
+  type IconSource,
+} from '../../catalog-core/src/icon-mirror.js'
 import {
   HarnessSchema,
   parseCatalog,
@@ -48,6 +69,10 @@ export async function main(
         return await validateCommand(flags)
       case 'verify-integrity':
         return await verifyIntegrityCommand(flags)
+      case 'mirror-icons':
+        return await mirrorIconsCommand(flags)
+      case 'verify-assets':
+        return await verifyAssetsCommand(flags)
       case 'inspect':
         return await inspectCommand(positionals[0], flags)
       case 'diff':
@@ -82,6 +107,9 @@ async function syncCommand(flags: Flags): Promise<number> {
     productAliases: config.productAliases,
     ...(config.productCategories ? { productCategories: config.productCategories } : {}),
     ...(config.leading ? { leading: config.leading } : {}),
+    ...(config.topCount !== undefined ? { topCount: config.topCount } : {}),
+    ...(config.productPreference ? { productPreference: config.productPreference } : {}),
+    ...(config.productIconOverrides ? { productIconOverrides: config.productIconOverrides } : {}),
     policy: config.policy,
     mode: flags.offline ? 'offline' : 'live',
     fixtureRoot: flags.fixtureRoot
@@ -134,16 +162,152 @@ async function validateCommand(flags: Flags): Promise<number> {
     if (plugin.currentReleaseId !== plugin.availableReleases[0]?.releaseId)
       throw new Error(`CURRENT_RELEASE_INVALID: ${plugin.pluginId}`)
   }
+  // Curated shelf names are hand-maintained; report drift instead of failing a
+  // live build, because an upstream rename must not block catalogue refresh.
+  const index = verifyConsumerIndex(
+    artifacts['categories.v1.json'],
+    catalog,
+    artifacts['catalog-index.v1.json']
+  )
+  for (const diagnostic of index.diagnostics)
+    console.error(
+      `leading entry ignored: ${diagnostic.category}/${diagnostic.name} (${diagnostic.reason})`
+    )
   print(
     {
       ok: true,
       catalogId: catalog.catalogId,
       pluginCount: catalog.plugins.length,
       sourceCount: catalog.sources.length,
+      ...(index.counts
+        ? {
+            productCount: index.counts.products,
+            redundantPluginCount: index.counts.redundantPlugins,
+          }
+        : {}),
+      leadingDiagnostics: index.diagnostics,
     },
     flags.json
   )
   return 0
+}
+
+/**
+ * A mirrored mark may only be re-fetched from an HTTPS public host: the catalog
+ * is an input, not an authority, so the mirror repeats the eligibility check.
+ */
+function assertPublicAssetUrl(url: string): void {
+  let parsed: URL
+  try {
+    parsed = new URL(url)
+  } catch {
+    throw new Error(`ICON_URL_INVALID: ${url}`)
+  }
+  if (parsed.protocol !== 'https:' || !isPublicHostname(parsed.hostname))
+    throw new Error(`ICON_URL_UNSUPPORTED: ${url}`)
+}
+
+/**
+ * Offline icon reader: the fixture tree stands in for upstream content, so the
+ * whole mirror path is exercised without network access.
+ */
+async function fixtureIconReader(
+  flags: Flags
+): Promise<(source: IconSource) => Promise<Uint8Array>> {
+  const config = await loadConfiguration(flags.root)
+  const loader = new FixtureSnapshotLoader(
+    resolve(flags.root, flags.fixtureRoot ?? 'fixtures'),
+    config.sources
+  )
+  return async (source) => {
+    // A fixture build has no network, so a product-site icon cannot be
+    // re-read; only in-content marks are mirrored offline.
+    if (source.kind === 'favicon') throw new Error(`ICON_FIXTURE_UNAVAILABLE: ${source.asset}`)
+    const snapshot = await loader.load(
+      source.repositoryUrl,
+      source.commitSha,
+      source.pluginSubdirectory
+    )
+    const bytes = snapshot.files.get(source.path)
+    if (!bytes) throw new Error(`ICON_FILE_ABSENT: ${source.path}`)
+    return bytes
+  }
+}
+
+/**
+ * Mirrors each product's brand mark beside the artifacts. Bytes are refetched
+ * from the exact commit the catalog pinned and checked against the digest the
+ * catalog advertises, so a mismatch is refused rather than published.
+ */
+async function mirrorIconsCommand(flags: Flags): Promise<number> {
+  const directory = outputDirectory(flags)
+  const artifacts = await readArtifacts(directory)
+  verifyArtifacts(artifacts)
+  const catalog = parseCatalog(JSON.parse(artifacts['catalog.v1.json']))
+  const verification = verifyConsumerIndex(
+    artifacts['categories.v1.json'],
+    catalog,
+    artifacts['catalog-index.v1.json']
+  )
+  if (!verification.hasConsumerIndex) throw new Error('CONSUMER_INDEX_REQUIRED')
+  const indexArtifact = artifacts['catalog-index.v1.json']
+  if (!indexArtifact) throw new Error('CATALOG_INDEX_ABSENT')
+  const sources = resolveIconSources(catalog, JSON.parse(indexArtifact) as ConsumerIndex)
+  const result = await stageIconAssets({
+    sources,
+    assetsDirectory: assetsDirectory(flags),
+    readBytes: flags.offline
+      ? await fixtureIconReader(flags)
+      : (source) => {
+          if (source.kind === 'content')
+            return fetchUpstreamBytes(
+              rawContentUrl(source.repositoryUrl, source.commitSha, source.sourcePath)
+            )
+          // The URL comes from the artifact, so re-apply the host guard here
+          // rather than trusting what was published.
+          assertPublicAssetUrl(source.url)
+          return fetchUpstreamBytes(source.url)
+        },
+  })
+  const declared = (JSON.parse(artifacts['integrity.json']) as { assets?: unknown[] }).assets ?? []
+  print(
+    {
+      ok: result.skipped.length === 0 && result.staged.length === declared.length,
+      assetsDirectory: assetsDirectory(flags),
+      declared: declared.length,
+      staged: result.staged.length,
+      skipped: result.skipped,
+    },
+    flags.json
+  )
+  // A release must not advertise an asset it did not stage, and must not stage
+  // an asset it does not advertise.
+  return result.skipped.length === 0 && result.staged.length === declared.length ? 0 : 1
+}
+
+/** Checks staged icon bytes against the digests the catalog advertises. */
+async function verifyAssetsCommand(flags: Flags): Promise<number> {
+  const artifacts = await readArtifacts(outputDirectory(flags))
+  const declared = (JSON.parse(artifacts['integrity.json']) as { assets?: PublishedAsset[] }).assets
+  if (declared === undefined) throw new Error('INTEGRITY_ASSETS_ABSENT')
+  const directory = assetsDirectory(flags)
+  const missing: string[] = []
+  const mismatched: string[] = []
+  for (const asset of declared) {
+    const bytes = await fs.readFile(join(directory, asset.name)).catch(() => undefined)
+    if (!bytes) {
+      missing.push(asset.name)
+      continue
+    }
+    if (byteDigest(bytes) !== asset.digest || bytes.byteLength !== asset.bytes)
+      mismatched.push(asset.name)
+  }
+  const ok = missing.length === 0 && mismatched.length === 0
+  print(
+    { ok, checked: declared.length, missing, mismatched, assetsDirectory: directory },
+    flags.json
+  )
+  return ok ? 0 : 1
 }
 
 async function verifyIntegrityCommand(flags: Flags): Promise<number> {
@@ -232,29 +396,50 @@ async function loadConfiguration(root: string): Promise<{
   productAliases: ProductAliases
   productCategories?: Record<string, string>
   leading?: Record<string, string[]>
+  topCount?: number
+  productPreference?: ProductPreference
+  productIconOverrides?: ProductIconOverrides
   policy: CatalogPolicy
 }> {
   const configDirectory = join(root, 'config')
-  const [sources, categoryMap, productAliases, policy, productCategories, leading] =
-    await Promise.all([
-      readJson<{ sources: SourceConfig[] }>(join(configDirectory, 'sources.json')),
-      readJson<CategoryMap>(join(configDirectory, 'category-map.json')),
-      readJson<ProductAliases>(join(configDirectory, 'product-aliases.json')),
-      readJson<CatalogPolicy>(join(configDirectory, 'policy.json')),
-      // Curation configs are optional: fixture roots and older checkouts omit them.
-      readOptionalJson<{ categories: Record<string, string> }>(
-        join(configDirectory, 'product-categories.json')
-      ),
-      readOptionalJson<{ leading: Record<string, string[]> }>(
-        join(configDirectory, 'leading.json')
-      ),
-    ])
+  const [
+    sources,
+    categoryMap,
+    productAliases,
+    policy,
+    productCategories,
+    leading,
+    productPreference,
+    productIconOverrides,
+  ] = await Promise.all([
+    readJson<{ sources: SourceConfig[] }>(join(configDirectory, 'sources.json')),
+    readJson<CategoryMap>(join(configDirectory, 'category-map.json')),
+    readJson<ProductAliases>(join(configDirectory, 'product-aliases.json')),
+    readJson<CatalogPolicy>(join(configDirectory, 'policy.json')),
+    // Curation configs are optional: fixture roots and older checkouts omit them.
+    readOptionalJson<{ categories: Record<string, string> }>(
+      join(configDirectory, 'product-categories.json')
+    ),
+    readOptionalJson<{ leading: Record<string, string[]>; topCount?: number }>(
+      join(configDirectory, 'leading.json')
+    ),
+    readOptionalJson<unknown>(join(configDirectory, 'product-preference.json')),
+    readOptionalJson<unknown>(join(configDirectory, 'product-icons.json')),
+  ])
   return {
     sources: sources.sources,
     categoryMap,
     productAliases,
     ...(productCategories?.categories ? { productCategories: productCategories.categories } : {}),
     ...(leading?.leading ? { leading: leading.leading } : {}),
+    // topCount and canonical placement are curation inputs to the consumer index.
+    ...(leading?.topCount !== undefined ? { topCount: leading.topCount } : {}),
+    ...(productPreference !== undefined
+      ? { productPreference: parseProductPreference(productPreference) }
+      : {}),
+    ...(productIconOverrides !== undefined
+      ? { productIconOverrides: parseProductIconOverrides(productIconOverrides) }
+      : {}),
     policy,
   }
 }
@@ -305,19 +490,21 @@ async function readRequiredLock(path: string): Promise<SourcesLock> {
   return parseSourcesLock(JSON.parse(await fs.readFile(resolve(path), 'utf8')))
 }
 
+/**
+ * Reads the published artifact set. `integrity.json` is the file list, so the
+ * consumer shards can grow with the category configuration.
+ */
 async function readArtifacts(directory: string): Promise<GeneratedArtifacts> {
-  const names = [
-    'catalog.v1.json',
-    'catalog-summary.v1.json',
-    'sources.lock.json',
-    'compatibility.v1.json',
-    'categories.v1.json',
-    'integrity.json',
-  ] as const
+  const integrity = await fs.readFile(join(directory, 'integrity.json'), 'utf8')
+  const { files } = JSON.parse(integrity) as { files?: Record<string, string> }
+  const names = Object.keys(files ?? {}).toSorted()
   const values = await Promise.all(
     names.map(async (name) => [name, await fs.readFile(join(directory, name), 'utf8')] as const)
   )
-  return Object.fromEntries(values) as unknown as GeneratedArtifacts
+  return Object.fromEntries([
+    ...values,
+    ['integrity.json', integrity],
+  ]) as unknown as GeneratedArtifacts
 }
 
 async function readJson<T>(path: string): Promise<T> {
@@ -330,6 +517,14 @@ function print(value: unknown, asJson: boolean): void {
 
 function outputDirectory(flags: Flags): string {
   return flags.output ? resolve(flags.output) : join(flags.root, 'generated')
+}
+
+/**
+ * Mirrored brand marks live beside the artifacts, never inside them: the
+ * repository keeps text artifacts, and the release carries the bytes.
+ */
+function assetsDirectory(flags: Flags): string {
+  return flags.assetsDir ? resolve(flags.assetsDir) : join(flags.root, 'published-assets')
 }
 
 interface Flags {
@@ -351,6 +546,7 @@ interface Flags {
   fixtureRoot: string | undefined
   lockPath: string | undefined
   fromLock: string | undefined
+  assetsDir: string | undefined
   plugin: string | undefined
   harness: string | undefined
   version: string | undefined
@@ -378,6 +574,7 @@ function parseArgs(argv: readonly string[]): {
     schemaOnly: false,
     source: undefined,
     fixtureRoot: undefined,
+    assetsDir: undefined,
     lockPath: undefined,
     fromLock: undefined,
     plugin: undefined,
@@ -437,6 +634,9 @@ function parseArgs(argv: readonly string[]): {
         break
       case '--output':
         flags.output = takeValue()
+        break
+      case '--assets-dir':
+        flags.assetsDir = takeValue()
         break
       case '--json':
         flags.json = takeBoolean()
@@ -515,8 +715,12 @@ Commands:
   materialize-plan --legacy-plan --plugin ID --harness ID [--version RELEASE_ID]
   build-catalog [--offline] [--write]
   verify-integrity
+  mirror-icons [--output DIR] [--assets-dir DIR]
+  verify-assets [--output DIR] [--assets-dir DIR]
 
 All commands support --json. Synchronization never executes upstream content.
+mirror-icons re-hosts each product's brand mark as a content-addressed release
+asset; verify-assets checks staged bytes against the catalog digests.
 Agent Plugins normalization and plan v2 are the defaults. Plans are not execution grants.
 Dry-run and metadata-only never publish artifacts, even with --write.
 Use --legacy-catalog only for v1 fixture compatibility or explicit rollback.`

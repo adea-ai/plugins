@@ -126,7 +126,12 @@ export async function synchronizePortable(options: SyncInput): Promise<SyncResul
     catalogId: `catalog:${digest(ordered).slice(7)}`,
   })
   verifyPortableCatalog(catalog)
-  const artifacts = createArtifacts(catalog, result.lock)
+  const artifacts = createArtifacts(catalog, result.lock, {
+    ...(options.leading ? { leading: options.leading } : {}),
+    ...(options.topCount !== undefined ? { topCount: options.topCount } : {}),
+    ...(options.productPreference ? { productPreference: options.productPreference } : {}),
+    curationDiagnostics: (options.mode ?? 'live') !== 'offline',
+  })
   verifyArtifacts(artifacts)
   const changed = catalog.plugins
     .filter((plugin) => {
