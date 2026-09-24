@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.2](https://github.com/adea-ai/plugins/compare/catalog-core-v1.5.1...catalog-core-v1.5.2) (2026-09-24)
+
+
+### Bug Fixes
+
+* **catalog:** stage brand marks during the build ([#82](https://github.com/adea-ai/plugins/issues/82)) ([6fca141](https://github.com/adea-ai/plugins/commit/6fca14152501dd747c99550631cb9b05457ec4b6))
+
 ## [1.5.1](https://github.com/adea-ai/plugins/compare/catalog-core-v1.5.0...catalog-core-v1.5.1) (2026-09-24)
 
 
