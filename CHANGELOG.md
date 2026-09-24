@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.4.5...plugins-marketplace-v1.5.0) (2026-09-24)
+
+
+### Features
+
+* **catalog:** compile consumer shards and mirrored brand marks ([#77](https://github.com/adea-ai/plugins/issues/77)) ([8a3c2a8](https://github.com/adea-ai/plugins/commit/8a3c2a85ad677e12f7b37186341cc59103229a4e))
+
 ## [1.4.5](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.4.4...plugins-marketplace-v1.4.5) (2026-09-18)
 
 

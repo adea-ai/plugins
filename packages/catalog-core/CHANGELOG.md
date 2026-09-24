@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/adea-ai/plugins/compare/catalog-core-v1.4.1...catalog-core-v1.5.0) (2026-09-24)
+
+
+### Features
+
+* **catalog:** compile consumer shards and mirrored brand marks ([#77](https://github.com/adea-ai/plugins/issues/77)) ([8a3c2a8](https://github.com/adea-ai/plugins/commit/8a3c2a85ad677e12f7b37186341cc59103229a4e))
+
 ## [1.4.1](https://github.com/adea-ai/plugins/compare/catalog-core-v1.4.0...catalog-core-v1.4.1) (2026-09-17)
 
 
