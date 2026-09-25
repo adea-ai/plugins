@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.9.0...plugins-marketplace-v1.10.0) (2026-09-25)
+
+
+### Features
+
+* **catalog:** carry the publisher and source in the product index ([#106](https://github.com/adea-ai/plugins/issues/106)) ([f220d67](https://github.com/adea-ai/plugins/commit/f220d67ef870f199ded8f7be34bb173a60f1a3fb))
+
 ## [1.9.0](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.8.0...plugins-marketplace-v1.9.0) (2026-09-25)
 
 
