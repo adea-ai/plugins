@@ -99,10 +99,11 @@ describe('curation of the checked-in snapshot', () => {
     readFileSync(join(root, 'generated', 'categories.v1.json'), 'utf8')
   ) as { products?: unknown; diagnostics?: { category: string; name: string; reason: string }[] }
 
-  // A snapshot published before the consumer index existed carries membership
-  // only, so there is nothing yet to check. This guard lifts automatically once
-  // a live synchronization republishes the index.
-  test.skipIf(snapshot.products === undefined)(
+  // Guard on the field the assertion reads, not on the shape of an older
+  // artifact: navigation stopped carrying `products` in the same change that
+  // added this test, so guarding on it skipped the check forever. A snapshot
+  // from before `diagnostics` existed still has nothing to assert.
+  test.skipIf(snapshot.diagnostics === undefined)(
     'every curated shelf name resolves in the published catalog',
     () => {
       expect(snapshot.diagnostics).toEqual([])
