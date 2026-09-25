@@ -1,9 +1,32 @@
 {
   "schemaVersion": 1,
   "overrides": {
+    "amplitude": "https://amplitude.com/",
+    "appwrite": "https://appwrite.io/",
+    "aws-agents": "https://amazon.com/",
+    "aws-agents-for-devsecops": "https://amazon.com/",
+    "aws-core": "https://amazon.com/",
+    "aws-data-analytics": "https://amazon.com/",
+    "blackrock-advisor-center-plugin": "https://blackrock.com/",
+    "fastly-agent-toolkit": "https://www.fastly.com/",
+    "firecrawl": "https://firecrawl.dev/",
+    "huggingface-skills": "https://huggingface.co/",
+    "idmp-plugin": "https://tdengine.com/",
+    "intuit-quickbooks": "https://opensource.intuit.com/",
     "lovable": "https://lovable.dev/",
+    "netlify-skills": "https://www.netlify.com/",
+    "netsuite-ai-companion": "https://developer.oracle.com/",
+    "netsuite-finance-analyst": "https://developer.oracle.com/",
+    "netsuite-suitecloud": "https://developer.oracle.com/",
+    "pagerduty": "https://www.pagerduty.com/",
+    "pydantic-ai": "https://pydantic.dev/",
     "qdrant-skills": "https://qdrant.tech/",
+    "remember": "https://www.digitalprocesstools.com/",
+    "save-to-spotify": "https://spotify.github.io/",
+    "searchfit-seo": "https://searchfit.ai/",
     "snowflake-cortex-code": "https://www.snowflake.com/",
+    "sonatype-guide": "https://www.sonatype.com/",
+    "spotify-ads-api": "https://spotify.github.io/",
     "zilliz": "https://zilliz.com/"
   }
 }
