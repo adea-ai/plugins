@@ -31,7 +31,8 @@
     "verify:assets": "bun run packages/cli/src/index.ts verify-assets",
     "publish:packages": "bun scripts/publish-packages.mjs",
     "prepare": "husky 2>/dev/null || true",
-    "schema:plugins": "bun run scripts/agent-plugin-schemas.ts --check"
+    "schema:plugins": "bun run scripts/agent-plugin-schemas.ts --check",
+    "verify:brand-sites": "bun run scripts/verify-brand-sites.ts"
   },
   "dependencies": {
     "zod": "4.5.4"

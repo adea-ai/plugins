@@ -131,7 +131,7 @@ async function syncCommand(flags: Flags): Promise<number> {
     dryRun: flags.dryRun,
     ...(existingLock ? { existingLock } : {}),
     ...(existingCatalog ? { existingCatalog } : {}),
-    ...(flags.legacyCatalog ? { forceRebuild: true } : {}),
+    ...(flags.legacyCatalog || flags.forceRebuild ? { forceRebuild: true } : {}),
     ...(fromLock ? { fromLock } : {}),
   })
   // Metadata-only and dry-run are always non-writing, including with --write.
@@ -562,6 +562,7 @@ function assetsDirectory(flags: Flags): string {
 
 interface Flags {
   root: string
+  forceRebuild: boolean
   legacyCatalog: boolean
   legacyPlan: boolean
   allowPartial: boolean
@@ -592,6 +593,7 @@ function parseArgs(argv: readonly string[]): {
 } {
   const flags: Flags = {
     root: repositoryRoot,
+    forceRebuild: false,
     legacyCatalog: false,
     legacyPlan: false,
     allowPartial: false,
@@ -647,6 +649,12 @@ function parseArgs(argv: readonly string[]): {
       throw new Error(`BOOLEAN_FLAG_INVALID: ${key}`)
     }
     switch (key) {
+      case '--force-rebuild':
+        // Rebuilds and republishes even when every source pin is unchanged:
+        // curation and build-logic changes produce different artifacts under
+        // the same pins, and nothing else would make them publishable.
+        flags.forceRebuild = takeBoolean()
+        break
       case '--legacy-catalog':
         flags.legacyCatalog = takeBoolean()
         break

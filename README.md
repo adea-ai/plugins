@@ -83,15 +83,21 @@ activation-planning contract is in [`docs/agent-plugins.md`](docs/agent-plugins.
 
 ## Commands
 
-| Command                                                          | Purpose                                                                                                                                        |
-| ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| `sync`                                                           | Resolve immutable sources and compile canonical packages; supports `--offline`, `--dry-run`, `--metadata-only`, `--from-lock`, and `--output`. |
-| `validate`                                                       | Validate catalog, lock and integrity; `--require-portable` additionally requires complete sources and canonical descriptors.                   |
-| `inspect <plugin-id>`                                            | Show normalized metadata and component diagnostics.                                                                                            |
-| `diff <old-lock> <new-lock>`                                     | Compare immutable source pins.                                                                                                                 |
-| `materialize-plan --plugin ID --capabilities PATH --instance ID` | Produce a v2 native-package or component-adapter plan without installing.                                                                      |
-| `build-catalog`                                                  | Alias for synchronization; dry-run and metadata-only remain nonwriting.                                                                        |
-| `verify-integrity`                                               | Verify generated artifact digests and canonical metadata.                                                                                      |
+| Command                                                          | Purpose                                                                                                                                                                     |
+| ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `sync`                                                           | Resolve immutable sources and compile canonical packages; supports `--offline`, `--dry-run`, `--metadata-only`, `--from-lock`, `--output`, and `--force-rebuild`.           |
+| `validate`                                                       | Validate catalog, lock and integrity; `--require-portable` additionally requires complete sources and canonical descriptors.                                                |
+| `inspect <plugin-id>`                                            | Show normalized metadata and component diagnostics.                                                                                                                         |
+| `diff <old-lock> <new-lock>`                                     | Compare immutable source pins.                                                                                                                                              |
+| `materialize-plan --plugin ID --capabilities PATH --instance ID` | Produce a v2 native-package or component-adapter plan without installing.                                                                                                   |
+| `build-catalog`                                                  | Alias for synchronization; dry-run and metadata-only remain nonwriting.                                                                                                     |
+| `verify-integrity`                                               | Verify generated artifact digests and canonical metadata.                                                                                                                   |
+| `verify:brand-sites`                                             | Re-resolve every curated site override in `config/product-icons.json`; a site that stops yielding a mark silently costs that product a monogram (`--strict` fails the run). |
+
+`--force-rebuild` rebuilds and republishes even when every source pin is
+unchanged, which is how a curation or build-logic change (a new brand mark, a
+changed resolution rule) becomes publishable — the sync otherwise exits
+unchanged and republishes nothing.
 
 `--legacy-catalog` selects the original compiler. `materialize-plan --legacy-plan
 --plugin ID --harness H` retains the v1 planning path. These switches are for
