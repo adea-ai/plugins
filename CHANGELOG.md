@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.6](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.5...plugins-marketplace-v1.10.6) (2026-09-25)
+
+
+### Bug Fixes
+
+* **catalog:** publish browser assets to their own branch ([#119](https://github.com/adea-ai/plugins/issues/119)) ([e3bdaab](https://github.com/adea-ai/plugins/commit/e3bdaab66f59e5be23d1aedf3a854b16b5bb5544))
+
 ## [1.10.5](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.4...plugins-marketplace-v1.10.5) (2026-09-25)
 
 
