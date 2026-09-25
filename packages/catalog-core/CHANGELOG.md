@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.1](https://github.com/adea-ai/plugins/compare/catalog-core-v1.10.0...catalog-core-v1.10.1) (2026-09-25)
+
+
+### Maintenance
+
+* **catalog:** republish on a catalog format change, and scope the test command ([#108](https://github.com/adea-ai/plugins/issues/108)) ([ad2e4c4](https://github.com/adea-ai/plugins/commit/ad2e4c42603f298a6afd2001a081975987488b80))
+
 ## [1.10.0](https://github.com/adea-ai/plugins/compare/catalog-core-v1.9.0...catalog-core-v1.10.0) (2026-09-25)
 
 
