@@ -235,11 +235,21 @@ jobs:
           export GH_TOKEN="$SYNC_TOKEN"
           existing=$(gh pr list --head "$branch" --base main --state open --json number --jq '.[0].number // empty')
           if [ -z "$existing" ]; then
-            gh pr create --base main --head "$branch" --title "chore(catalog): refresh marketplace snapshot" --body "$body"
+            gh pr create --draft --base main --head "$branch" --title "chore(catalog): refresh marketplace snapshot" --body "$body"
             existing=$(gh pr list --head "$branch" --base main --state open --json number --jq '.[0].number // empty')
           else
             echo "Updated existing pull request #${existing}."
           fi
+          # Marketplace CI runs only on the ready_for_review transition, so a
+          # pull request created as ready -- or a fresh push onto one that is
+          # already ready -- never reports the required `checks` context, and
+          # the auto-merge below waits forever. Toggling to draft and back
+          # guarantees exactly one ready_for_review per refresh, whether the
+          # pull request was just created, reopened, or force-pushed.
+          if [ "$(gh pr view "$existing" --json isDraft --jq '.isDraft')" != "true" ]; then
+            gh pr ready --undo "$existing"
+          fi
+          gh pr ready "$existing"
           # Land without human action once required checks pass; a red
           # snapshot stays open for inspection instead.
           gh pr merge "$existing" --squash --auto
