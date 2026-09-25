@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/adea-ai/plugins/compare/catalog-core-v1.7.0...catalog-core-v1.8.0) (2026-09-25)
+
+
+### Features
+
+* **catalog:** publish the browsing index URL in the navigation artifact ([#102](https://github.com/adea-ai/plugins/issues/102)) ([0b3726f](https://github.com/adea-ai/plugins/commit/0b3726f8235142b63262c1167e4a8ef1b4e390a1))
+
 ## [1.7.0](https://github.com/adea-ai/plugins/compare/catalog-core-v1.6.0...catalog-core-v1.7.0) (2026-09-25)
 
 
