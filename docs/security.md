@@ -36,6 +36,17 @@ are republished, and it is constrained:
   host is refused because its icon is the forge's, not the product's. Only the
   first 256 KiB of the page is parsed, and the mirror repeats the host check on
   the recorded URL rather than trusting the artifact;
+- that fetch is anonymous: the credential and GitHub's media type are attached
+  only to GitHub hosts, never to a vendor page or the icon CDN it points at,
+  because the build runs with a token that authorises repository writes for the
+  duration of the job. Sending them is also self-defeating — `appwrite.io`
+  answers a page carrying an `Authorization` header with HTTP 500, and a CDN
+  asked for an image with `accept: application/vnd.github+json` can answer with
+  bytes that are not the mark — so a build that leaked the token silently dropped
+  marks a curator had already added. `upstreamRequestHeaders` is the single place
+  that decides this, and `verify:brand-sites` fetches through the build's own
+  fetcher, so a curated site cannot be reported healthy while the build fails to
+  resolve it;
 - bytes are sniffed by magic number and must be PNG, JPEG, GIF, WebP or SVG, and
   must be at most 1 MiB;
 - SVG is treated as active content: a mark containing `script`,
