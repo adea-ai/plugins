@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.3](https://github.com/adea-ai/plugins/compare/catalog-core-v1.10.2...catalog-core-v1.10.3) (2026-09-25)
+
+
+### Bug Fixes
+
+* **catalog:** serve marks and the index from the repository, not release assets ([#116](https://github.com/adea-ai/plugins/issues/116)) ([2a6b642](https://github.com/adea-ai/plugins/commit/2a6b642a41d9696ae710865a8b4109fd8bf6a79f))
+
 ## [1.10.2](https://github.com/adea-ai/plugins/compare/catalog-core-v1.10.1...catalog-core-v1.10.2) (2026-09-25)
 
 
