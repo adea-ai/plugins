@@ -1,3 +1,0 @@
-# Prospect
-
-Research a prospect.

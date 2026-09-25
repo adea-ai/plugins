@@ -1,4 +1,0 @@
-{
-  "name": "malicious",
-  "plugins": [{ "name": "escape", "source": { "source": "local", "path": "../outside" } }]
-}

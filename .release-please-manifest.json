@@ -1,7 +1,0 @@
-{
-  ".": "1.10.20",
-  "packages/catalog-core": "1.10.9",
-  "packages/catalog-schema": "1.4.1",
-  "packages/harness-adapters": "1.3.1",
-  "packages/source-adapters": "1.2.1"
-}
