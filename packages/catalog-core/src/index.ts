@@ -51,6 +51,17 @@ import { stageIconBytes } from './icon-mirror.js'
 import { isVendorHomepage, resolveSiteIcon, type SiteIcon } from './site-icons.js'
 import { immutableAssetUrl } from './publication.js'
 
+/**
+ * Marks the catalog format this compiler emits.
+ *
+ * Bumping or first introducing this value makes a synchronization replay its
+ * verified pins and rebuild, which is how a format change reaches the published
+ * catalog when no upstream source has moved. It is deliberately separate from
+ * the agent-package normalizer version, which describes package normalization
+ * and would misreport a change here.
+ */
+export const CATALOG_CONTRACT_VERSION = 'adea-catalog/1'
+
 export interface CatalogPolicy {
   readonly allowedRepositoryProtocols: readonly string[]
   readonly allowedRepositoryHosts: readonly string[]
@@ -804,6 +815,7 @@ function createRelease(input: CreateReleaseInput): PluginRelease {
     .map((capability) => capability.type)
     .toSorted()
   const metadata: Record<string, unknown> = {
+    catalogContract: CATALOG_CONTRACT_VERSION,
     marketplaceEntry: input.entry.raw,
     ...(input.pluginManifest ? { pluginManifest: input.pluginManifest.metadata } : {}),
     sourceDialect: input.source.config.marketplaceDialect,
