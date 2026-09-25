@@ -173,6 +173,18 @@ async function tarballResponse(
 
 const isArchive = (url: string): boolean => url.includes('/tarball/')
 
+/**
+ * Exact hostname match. A substring test on a URL is not a host check: the
+ * needle can appear anywhere in the string.
+ */
+function isRawGitHubHost(url: string): boolean {
+  try {
+    return new URL(url).hostname === 'raw.githubusercontent.com'
+  } catch {
+    return false
+  }
+}
+
 function testEntry(name: string, subdir: string) {
   return {
     name,
@@ -773,7 +785,7 @@ describe('upstream fetch quarantine', () => {
       expect([...second.files.keys()].toSorted()).toEqual(['plugin.json', 'run.sh'])
       // The whole point: three files, and the archive is fetched once.
       expect(stub.calls.filter(isArchive)).toHaveLength(1)
-      expect(stub.calls.filter((url) => url.includes('raw.githubusercontent.com'))).toHaveLength(0)
+      expect(stub.calls.filter(isRawGitHubHost)).toHaveLength(0)
     } finally {
       stub.restore()
     }
@@ -849,7 +861,7 @@ describe('upstream fetch quarantine', () => {
       }
     )
     expect(calls.length).toBeGreaterThan(0)
-    expect(calls.filter((url) => url.includes('raw.githubusercontent.com'))).toHaveLength(0)
+    expect(calls.filter(isRawGitHubHost)).toHaveLength(0)
     expect(catalog.plugins.map((plugin) => plugin.pluginId)).toEqual([
       'plugin:openai-official:calendar',
     ])
