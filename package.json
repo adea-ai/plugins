@@ -1,6 +1,6 @@
 {
   "name": "@agent-hq/plugins-marketplace",
-  "version": "1.10.14",
+  "version": "1.10.15",
   "private": true,
   "license": "Apache-2.0",
   "workspaces": [
