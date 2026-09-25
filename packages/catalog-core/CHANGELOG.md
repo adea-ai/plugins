@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/adea-ai/plugins/compare/catalog-core-v1.6.0...catalog-core-v1.7.0) (2026-09-25)
+
+
+### Features
+
+* **catalog:** carry compiled brand marks in the navigation artifact ([#101](https://github.com/adea-ai/plugins/issues/101)) ([29e7458](https://github.com/adea-ai/plugins/commit/29e7458bef0725e86ceceb5a0d8ae1d52dc8e9ac))
+
 ## [1.6.0](https://github.com/adea-ai/plugins/compare/catalog-core-v1.5.2...catalog-core-v1.6.0) (2026-09-25)
 
 
