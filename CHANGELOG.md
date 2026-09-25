@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.12](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.11...plugins-marketplace-v1.10.12) (2026-09-25)
+
+
+### Bug Fixes
+
+* **deps:** let Dependabot read the lockfile this repository actually has ([#130](https://github.com/adea-ai/plugins/issues/130)) ([10d5c3b](https://github.com/adea-ai/plugins/commit/10d5c3b53efe21a4922e392e69c5f91214c0373f))
+
 ## [1.10.11](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.10...plugins-marketplace-v1.10.11) (2026-09-25)
 
 
