@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:6e7f499b1973aaaad55affa270c2b3970233ed9be837d3c635f6a492927b3e4e",
+  "catalogId": "catalog:46d35646d0c825e0b3caa3d97b4bf786ce6cadd8bc16eaa416461d28db04f483",
   "categories": [
     "business-operations",
     "communication",
@@ -12,8 +12,8 @@
     "productivity",
     "security"
   ],
-  "generatedAt": "2026-09-25T19:46:52.730Z",
-  "pluginCount": 544,
+  "generatedAt": "2026-09-25T21:27:42.043Z",
+  "pluginCount": 546,
   "productGroups": [
     "42crunch-api-security-testing",
     "activecampaign",
@@ -61,6 +61,7 @@
     "azure-cosmos-db-assistant",
     "azure-sql-developer",
     "b12-claude-plugin",
+    "beehiiv",
     "bigdata-com",
     "bigquery-data-analytics",
     "bio-research",
@@ -404,6 +405,7 @@
     "tinyfish",
     "todoist",
     "togetherai-skills",
+    "trello",
     "twilio-developer-kit",
     "typeform",
     "typescript-lsp",
@@ -1574,6 +1576,10 @@
       "text": "Attio Search and update CRM records, lists, notes, and tasks. attio business-operations"
     },
     {
+      "pluginId": "plugin:cursor-official:beehiiv",
+      "text": "Beehiiv Run your beehiiv newsletter from chat: draft and edit posts, organize subscribers with tags, custom fields, and segments, build automations, and review publication, post, and website performance. beehiiv other"
+    },
+    {
       "pluginId": "plugin:cursor-official:brevo",
       "text": "Brevo Manage contacts, email and SMS campaigns, and CRM deals. brevo business-operations"
     },
@@ -1864,6 +1870,10 @@
     {
       "pluginId": "plugin:cursor-official:todoist",
       "text": "Todoist Create, find, and complete tasks and projects. productivity todoist"
+    },
+    {
+      "pluginId": "plugin:cursor-official:trello",
+      "text": "Trello Manage your Trello workspace from chat: browse and create boards, view and move lists, create, update, move, archive, and complete cards with labels and due dates, manage checklists, capture Inbox cards, schedule Planner focus time, and search across boards. other trello"
     },
     {
       "pluginId": "plugin:cursor-official:typeform",

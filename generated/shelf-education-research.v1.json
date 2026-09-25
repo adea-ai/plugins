@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:6e7f499b1973aaaad55affa270c2b3970233ed9be837d3c635f6a492927b3e4e",
+  "catalogId": "catalog:46d35646d0c825e0b3caa3d97b4bf786ce6cadd8bc16eaa416461d28db04f483",
   "category": "education-research",
   "products": [
     {
@@ -50,7 +50,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "teaching",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
+        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
       },
       "release": {
         "canonicalContentDigest": "sha256:80446f7306ec88594f42a8bb09bbade4601754c5db8b082fbaaf0e4b319770ab",
@@ -63,13 +63,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:c8564cd60fb82a2b7f64985d2bf350746b671dc7566c0865d928ced9eadd6f1f",
         "packageStatus": "portable",
-        "releaseId": "release:38dbe276b0f047f6b6c2d6ed4a6d7d942b2fe6f41c5b71ac1803332911651448",
+        "releaseId": "release:73bde938f3220288cd53f76caa4d0f409578188898c8674eadcfcb36e37b0633",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
+        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:38dbe276b0f047f6b6c2d6ed4a6d7d942b2fe6f41c5b71ac1803332911651448",
+      "releaseId": "release:73bde938f3220288cd53f76caa4d0f409578188898c8674eadcfcb36e37b0633",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -136,7 +136,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "continual-learning",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
+        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
       },
       "release": {
         "canonicalContentDigest": "sha256:9388a810088ad9c2f4aff68c27c0f40c9addeac3f12b9d20c367ad530f764dfd",
@@ -157,13 +157,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6504719a147b348d83a1244767f28dc4f78fd31d90064124fd9d327b3d6dd3e4",
         "packageStatus": "partial",
-        "releaseId": "release:b43adabbb022a9ddee61c9b907624d6608da0c7ea388ee81c67693bc01e28a78",
+        "releaseId": "release:534428404255ac4ac21a7b3225e762b2a68cae9b8670c6bf50a1125996247e85",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
+        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:b43adabbb022a9ddee61c9b907624d6608da0c7ea388ee81c67693bc01e28a78",
+      "releaseId": "release:534428404255ac4ac21a7b3225e762b2a68cae9b8670c6bf50a1125996247e85",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -385,7 +385,17 @@
       },
       "description": "Consensus is the go-to MCP for academic research. Connect directly to 220M+ peer-reviewed papers to search, synthesize, and build structured research outputs from within your conversation.\n\nRun literature reviews, build boolean search strategies, generate bibliographies, identify research gaps, and draft cited content — grounded in studies from PubMed, Semantic Scholar, and ArXiv. Pre-built workflows handle complex tasks in minutes: systematic reviews, curriculum reading lists, grant research with novelty analysis, and clinical evidence synthesis.\n\nBuilt for researchers, students, faculty, and clinicians across biomedical, social science, STEM, and all academic disciplines.",
       "displayName": "Consensus",
-      "icon": null,
+      "icon": {
+        "asset": "icon-035702ad5f998033f1ab621b62832784.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-035702ad5f998033f1ab621b62832784.png",
+        "bytes": 4091,
+        "contentType": "image/png",
+        "digest": "sha256:035702ad5f998033f1ab621b62832784be3e901b68e5992bd27593c903d09c4f",
+        "homepage": "https://consensus.app/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://consensus.app/images/icon-384.png"
+      },
       "keywords": [
         "consensus",
         "education-research"
