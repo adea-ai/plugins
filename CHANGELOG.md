@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.10](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.9...plugins-marketplace-v1.10.10) (2026-09-25)
+
+
+### Bug Fixes
+
+* **catalog:** keep the snapshot pull request mergeable and the asset branch behind a verified release ([#126](https://github.com/adea-ai/plugins/issues/126)) ([f4b819e](https://github.com/adea-ai/plugins/commit/f4b819e801bb0e629b6c8a768bd3546497e0f383))
+
 ## [1.10.9](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.8...plugins-marketplace-v1.10.9) (2026-09-25)
 
 
