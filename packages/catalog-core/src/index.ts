@@ -1411,6 +1411,11 @@ export function createArtifacts(
   const integrityBody = {
     schemaVersion: 1,
     catalogId: catalog.catalogId,
+    // An artifact's digest is the canonical digest of its text, not a hash of
+    // the file bytes: consumers read the artifact as a string and compare it
+    // with `canonicalDigest`, so a checker hashing the raw bytes will disagree
+    // with every published release. Mirrored marks below are the byte case,
+    // because a client stores those bytes.
     files: Object.fromEntries(
       Object.entries(files)
         .toSorted()

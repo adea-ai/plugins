@@ -95,22 +95,45 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
+          # Reads one reviewable field out of the audit written below; list
+          # fields print one entry per line so shell loops can consume them.
+          audit_field() {
+            node -e "const fs=require('fs'); const a=JSON.parse(fs.readFileSync(process.env.AUDIT_FILE,'utf8')); const v=a[process.argv[1]]; process.stdout.write(Array.isArray(v)?v.join('\n'):v===undefined||v===null?'':String(v))" "$1"
+          }
+          export AUDIT_FILE="$RUNNER_TEMP/catalog-release-audit.json"
           catalog_id=$(node -e "const fs=require('fs'); const c=JSON.parse(fs.readFileSync('generated/catalog.v1.json','utf8')); process.stdout.write(c.catalogId)")
           tag="catalog/${catalog_id#catalog:}"
           changed=$(node -e "const fs=require('fs'); const r=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/catalog-change-report.json','utf8')); process.stdout.write(String(r.changed === true))")
-          assets=$(gh release view "$tag" --json assets --jq '.assets[].name' 2>/dev/null || true)
-          bootstrap=false
-          # integrity.json enumerates every published artifact and mirrored
-          # brand mark, so the required asset set follows the catalog itself.
-          required=$(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); const names=[...Object.keys(i.files),(i.assets??[]).map(a=>a.name),'integrity.json','catalog-latest.v1.json'].flat().sort(); process.stdout.write(names.join('\n'))")
-          for artifact in $required; do
-            if ! printf '%s\n' "$assets" | grep -Fxq "$artifact"; then
-              bootstrap=true
-            fi
-          done
+          release_state="$RUNNER_TEMP/catalog-release-state.json"
+          release_exists=true
+          if ! gh release view "$tag" --json assets,isDraft,isImmutable > "$release_state" 2>/dev/null; then
+            release_exists=false
+            printf '{}' > "$release_state"
+          fi
           release_is_immutable=false
-          if gh release view "$tag" >/dev/null 2>&1; then
+          release_is_draft=false
+          if [ "$release_exists" = true ]; then
             release_is_immutable=$(gh release view "$tag" --json isImmutable --jq '.isImmutable')
+            release_is_draft=$(gh release view "$tag" --json isDraft --jq '.isDraft')
+          fi
+          # "Already uploaded" is not evidence of correctness, so a release is
+          # never trusted because an asset of that name is attached: every
+          # declared artifact and mirrored mark is compared against the bytes
+          # this build staged. An asset left by another build under the same tag
+          # therefore surfaces here, while a draft can still be repaired and
+          # before a published release is promoted. integrity.json enumerates
+          # the required set, so it follows the catalog itself.
+          bun run audit:release -- \
+            --artifacts generated \
+            --assets catalog-assets \
+            --catalog-id "$catalog_id" \
+            --release-tag "$tag" \
+            --release-state "$release_state" \
+            | tee "$AUDIT_FILE"
+          audit=$(audit_field agrees)
+          bootstrap=false
+          if [ "$audit" != true ]; then
+            bootstrap=true
           fi
           latest_tag=$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" --jq '.tag_name' 2>/dev/null || true)
           is_latest=false
@@ -124,8 +147,12 @@ jobs:
           {
             echo "catalog_id=$catalog_id"
             echo "release_tag=$tag"
-            echo "bootstrap=$bootstrap"
+            echo "release_exists=$release_exists"
+            echo "release_is_draft=$release_is_draft"
             echo "release_is_immutable=$release_is_immutable"
+            echo "assets_agree=$audit"
+            echo "bootstrap=$bootstrap"
+            echo "audit_file=$AUDIT_FILE"
             echo "publish=$publish"
           } >> "$GITHUB_OUTPUT"
       - name: Publish immutable catalog release
@@ -135,6 +162,12 @@ jobs:
           RELEASE_TAG: ${{ steps.publication.outputs.release_tag }}
         run: |
           set -euo pipefail
+          # Reads one reviewable field out of the audit written above; list
+          # fields print one entry per line so shell loops can consume them.
+          audit_field() {
+            node -e "const fs=require('fs'); const a=JSON.parse(fs.readFileSync(process.env.AUDIT_FILE,'utf8')); const v=a[process.argv[1]]; process.stdout.write(Array.isArray(v)?v.join('\n'):v===undefined||v===null?'':String(v))" "$1"
+          }
+          export AUDIT_FILE="$RUNNER_TEMP/catalog-release-audit.json"
           tag="$RELEASE_TAG"
           latest_asset="$RUNNER_TEMP/catalog-latest.v1.json"
           cp generated/catalog.v1.json "$latest_asset"
@@ -154,21 +187,36 @@ jobs:
               echo "Published release $tag is not immutable; refusing to mutate it. Remove the invalid release and rerun bootstrap." >&2
               exit 1
             fi
-            assets=$(gh release view "$tag" --json assets --jq '.assets[].name' 2>/dev/null || true)
-            for artifact in $(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); process.stdout.write([...Object.keys(i.files),'integrity.json'].join(' '))"); do
-              if ! printf '%s\n' "$assets" | grep -Fxq "$artifact"; then
-                gh release upload "$tag" "generated/$artifact"
+            # A published release is immutable, so a disagreement the audit
+            # found there cannot be repaired in place. Stop instead of
+            # promoting a release that would advertise bytes it does not hold.
+            blocked=$(audit_field blocked)
+            if [ -n "$blocked" ]; then
+              echo "$blocked" >&2
+              exit 1
+            fi
+            # A draft is editable, so every asset the audit found missing,
+            # carrying other bytes, or unverifiable is re-uploaded from this
+            # build, and assets this build does not declare are dropped.
+            while IFS= read -r asset; do
+              test -n "$asset" || continue
+              gh release delete-asset "$tag" "$asset" --yes
+            done <<< "$(audit_field remove)"
+            while IFS= read -r asset; do
+              test -n "$asset" || continue
+              path="generated/$asset"
+              if [ ! -f "$path" ]; then path="catalog-assets/$asset"; fi
+              if [ ! -f "$path" ]; then
+                if [ "$asset" = "catalog-latest.v1.json" ]; then
+                  path="$latest_asset"
+                else
+                  echo "no staged bytes for declared asset $asset; refusing to publish a release the catalog cannot fill" >&2
+                  exit 1
+                fi
               fi
-            done
-            for asset in $(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); process.stdout.write((i.assets??[]).map(a=>a.name).join(' '))"); do
-              if ! printf '%s\n' "$assets" | grep -Fxq "$asset"; then
-                gh release upload "$tag" "catalog-assets/$asset"
-              fi
-            done
-          fi
-          assets=$(gh release view "$tag" --json assets --jq '.assets[].name' 2>/dev/null || true)
-          if ! printf '%s\n' "$assets" | grep -Fxq 'catalog-latest.v1.json'; then
-            gh release upload "$tag" "$latest_asset"
+              echo "uploading $asset from $path"
+              gh release upload "$tag" "$path" --clobber
+            done <<< "$(audit_field upload)"
           fi
           # Publishing a draft is the only edit this step may make: a release
           # that is already published is immutable, and GitHub rejects any edit
@@ -176,18 +224,7 @@ jobs:
           # same source pins yield the same tag) therefore finds the release
           # already published and latest, and needs no edit at all.
           if [ "$(gh release view "$tag" --json isDraft --jq '.isDraft' 2>/dev/null)" = "true" ]; then
-            # Publishing a draft is the only edit this step may make: a release
-          # that is already published is immutable, and GitHub rejects any edit
-          # of it. Re-running a build that produced an identical catalog (the
-          # same source pins yield the same tag) therefore finds the release
-          # already published and latest, and needs no edit at all.
-          if [ "$(gh release view "$tag" --json isDraft --jq '.isDraft' 2>/dev/null)" = "true" ]; then
             gh release edit "$tag" --draft=false --latest
-          else
-            test "$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" --jq '.tag_name')" = "$tag" \
-              || { echo "existing release $tag is not latest; refusing to rewrite an immutable release" >&2; exit 1; }
-            echo "release $tag is already published and latest; no edit needed."
-          fi
           else
             test "$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" --jq '.tag_name')" = "$tag" \
               || { echo "existing release $tag is not latest; refusing to rewrite an immutable release" >&2; exit 1; }
