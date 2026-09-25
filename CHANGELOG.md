@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.5.5](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.5.4...plugins-marketplace-v1.5.5) (2026-09-24)
+
+
+### Bug Fixes
+
+* **ci:** keep the catalog release as the latest release ([#88](https://github.com/adea-ai/plugins/issues/88)) ([4dc310d](https://github.com/adea-ai/plugins/commit/4dc310da142c040f5c2c649e3d25ba632990d2fa))
+
+## [1.5.4](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.5.3...plugins-marketplace-v1.5.4) (2026-09-24)
+
+
+### Bug Fixes
+
+* **ci:** never edit an already-published immutable release ([#86](https://github.com/adea-ai/plugins/issues/86)) ([c1d60af](https://github.com/adea-ai/plugins/commit/c1d60af39e1017fbf99147ab367f5a27795d4cfa))
+
 ## [1.5.3](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.5.2...plugins-marketplace-v1.5.3) (2026-09-24)
 
 
