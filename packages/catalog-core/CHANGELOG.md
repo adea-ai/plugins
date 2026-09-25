@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/adea-ai/plugins/compare/catalog-core-v1.5.2...catalog-core-v1.6.0) (2026-09-25)
+
+
+### Features
+
+* **catalog:** publish absolute, immutable icon asset URLs ([#91](https://github.com/adea-ai/plugins/issues/91)) ([956df84](https://github.com/adea-ai/plugins/commit/956df84d7094b6f271e8b2e88aa5b0711f56ca43))
+
 ## [1.5.2](https://github.com/adea-ai/plugins/compare/catalog-core-v1.5.1...catalog-core-v1.5.2) (2026-09-24)
 
 
