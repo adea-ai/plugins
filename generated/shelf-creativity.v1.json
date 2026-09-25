@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e",
+  "catalogId": "catalog:caad4379ad867c0d7cd395064656bdfbc4e49f592ca1ff3c4a6266d9fdd3ca89",
   "category": "creativity",
   "products": [
     {
@@ -26,7 +26,7 @@
       "displayName": "canva",
       "icon": {
         "asset": "icon-afb54276bf45167125048872621a1415.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-afb54276bf45167125048872621a1415.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-afb54276bf45167125048872621a1415.png",
         "bytes": 44919,
         "contentType": "image/png",
         "digest": "sha256:afb54276bf45167125048872621a14156c03034484519d81b5160cb73c2d7c20",
@@ -119,7 +119,7 @@
       "homepage": "https://miro.com/",
       "icon": {
         "asset": "icon-6d1a97e6922fee40efab035b669d1feb.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-6d1a97e6922fee40efab035b669d1feb.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-6d1a97e6922fee40efab035b669d1feb.png",
         "bytes": 1273,
         "contentType": "image/png",
         "digest": "sha256:6d1a97e6922fee40efab035b669d1feb74d54074721b968321183a715213b605",
@@ -209,7 +209,7 @@
       "displayName": "Excalidraw",
       "icon": {
         "asset": "icon-b5eeb6a49ccb830198bb6668a331c265.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-b5eeb6a49ccb830198bb6668a331c265.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-b5eeb6a49ccb830198bb6668a331c265.png",
         "bytes": 8049,
         "contentType": "image/png",
         "digest": "sha256:b5eeb6a49ccb830198bb6668a331c2659ed4b9698a67cab46dde257504d9cb57",
@@ -294,7 +294,7 @@
       "displayName": "Gamma",
       "icon": {
         "asset": "icon-efe7c0b3b1cec588bd074ea7cca68e28.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-efe7c0b3b1cec588bd074ea7cca68e28.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-efe7c0b3b1cec588bd074ea7cca68e28.png",
         "bytes": 18847,
         "contentType": "image/png",
         "digest": "sha256:efe7c0b3b1cec588bd074ea7cca68e2812515d8dacfd0ce90e42d14ec183f484",
@@ -381,7 +381,7 @@
       "homepage": "https://cloudinary.com/documentation",
       "icon": {
         "asset": "icon-c8883c41e2a4249e8ada891ee32b630e.svg",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-c8883c41e2a4249e8ada891ee32b630e.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-c8883c41e2a4249e8ada891ee32b630e.svg",
         "bytes": 2036,
         "contentType": "image/svg+xml",
         "digest": "sha256:c8883c41e2a4249e8ada891ee32b630e357027ab92a26a2dba223a029403bc10",
@@ -472,7 +472,7 @@
       "displayName": "adobe",
       "icon": {
         "asset": "icon-1c585a9a56315edec99a2655c3b404fd.svg",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-1c585a9a56315edec99a2655c3b404fd.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-1c585a9a56315edec99a2655c3b404fd.svg",
         "bytes": 488,
         "contentType": "image/svg+xml",
         "digest": "sha256:1c585a9a56315edec99a2655c3b404fd66d50e75f45d2d75b769b8119b3872fb",

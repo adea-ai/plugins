@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e",
+  "catalogId": "catalog:caad4379ad867c0d7cd395064656bdfbc4e49f592ca1ff3c4a6266d9fdd3ca89",
   "category": "productivity",
   "products": [
     {
@@ -25,7 +25,7 @@
       "displayName": "Google Calendar",
       "icon": {
         "asset": "icon-a7f14f0621c73d86170e16b2f6ca6978.svg",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-a7f14f0621c73d86170e16b2f6ca6978.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a7f14f0621c73d86170e16b2f6ca6978.svg",
         "bytes": 3446,
         "contentType": "image/svg+xml",
         "digest": "sha256:a7f14f0621c73d86170e16b2f6ca69782e4f554f1e3d4596bcb1f9d57d3cbe5c",
@@ -112,7 +112,7 @@
       "displayName": "Google Drive",
       "icon": {
         "asset": "icon-474264985c6d8b3d521289c6e1095eb7.svg",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-474264985c6d8b3d521289c6e1095eb7.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-474264985c6d8b3d521289c6e1095eb7.svg",
         "bytes": 1409,
         "contentType": "image/svg+xml",
         "digest": "sha256:474264985c6d8b3d521289c6e1095eb7b7e24f549889c55e7877376c21b715b2",
@@ -202,7 +202,7 @@
       "homepage": "https://github.com/makenotion/claude-code-notion-plugin",
       "icon": {
         "asset": "icon-e20b9668553aeb46b55a366d0a8eddd9.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-e20b9668553aeb46b55a366d0a8eddd9.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-e20b9668553aeb46b55a366d0a8eddd9.png",
         "bytes": 3581,
         "contentType": "image/png",
         "digest": "sha256:e20b9668553aeb46b55a366d0a8eddd9051b5ac55207ab067ed347029a53434e",
@@ -296,7 +296,7 @@
       "displayName": "Todoist",
       "icon": {
         "asset": "icon-f8cd00a19c4ea0bf0391f3ff295bffaf.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-f8cd00a19c4ea0bf0391f3ff295bffaf.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f8cd00a19c4ea0bf0391f3ff295bffaf.png",
         "bytes": 17680,
         "contentType": "image/png",
         "digest": "sha256:f8cd00a19c4ea0bf0391f3ff295bffaf7a6bb54e2dd52cbe1c3eb895b63b7427",
@@ -381,7 +381,7 @@
       "displayName": "Readwise",
       "icon": {
         "asset": "icon-4b8c10c83d28f5026c0206e394eebe45.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-4b8c10c83d28f5026c0206e394eebe45.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-4b8c10c83d28f5026c0206e394eebe45.png",
         "bytes": 7216,
         "contentType": "image/png",
         "digest": "sha256:4b8c10c83d28f5026c0206e394eebe45713f222bcb9deced8dfa875148454b62",
@@ -466,7 +466,7 @@
       "displayName": "Smartsheet",
       "icon": {
         "asset": "icon-c4540b41fea9ecae37c611bd09d7ba08.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-c4540b41fea9ecae37c611bd09d7ba08.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-c4540b41fea9ecae37c611bd09d7ba08.png",
         "bytes": 7228,
         "contentType": "image/png",
         "digest": "sha256:c4540b41fea9ecae37c611bd09d7ba08588ca0d4b612d7c9bae181cffb7e4d40",

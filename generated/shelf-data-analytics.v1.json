@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e",
+  "catalogId": "catalog:caad4379ad867c0d7cd395064656bdfbc4e49f592ca1ff3c4a6266d9fdd3ca89",
   "category": "data-analytics",
   "products": [
     {
@@ -28,7 +28,7 @@
       "homepage": "https://docs.atlan.com/",
       "icon": {
         "asset": "icon-a0ec1bdfe81f767f30fd5227402dcf73.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-a0ec1bdfe81f767f30fd5227402dcf73.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a0ec1bdfe81f767f30fd5227402dcf73.png",
         "bytes": 42873,
         "contentType": "image/png",
         "digest": "sha256:a0ec1bdfe81f767f30fd5227402dcf73bd1b54f8b58bd0d3ac51100d684949b7",
@@ -217,7 +217,7 @@
       "homepage": "https://github.com/daloopa/plugin",
       "icon": {
         "asset": "icon-a5fce38fb9723e9e29081544a1bd20d0.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-a5fce38fb9723e9e29081544a1bd20d0.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a5fce38fb9723e9e29081544a1bd20d0.png",
         "bytes": 19473,
         "contentType": "image/png",
         "digest": "sha256:a5fce38fb9723e9e29081544a1bd20d00613dc3058660d7bd45e36b7f94df5ae",
@@ -393,7 +393,7 @@
       "homepage": "https://docs.brightdata.com/",
       "icon": {
         "asset": "icon-ca087eacbf7a30b3d1c3e79feecaa80a.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-ca087eacbf7a30b3d1c3e79feecaa80a.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-ca087eacbf7a30b3d1c3e79feecaa80a.png",
         "bytes": 1634,
         "contentType": "image/png",
         "digest": "sha256:ca087eacbf7a30b3d1c3e79feecaa80a46cbdba169fa2ed300e3e95a5dace854",
@@ -494,7 +494,17 @@
       "description": "Build high-quality datasets and computer vision models. Visualize datasets, analyze models, find duplicates, run inference, evaluate predictions, and develop custom plugins.",
       "displayName": "fiftyone",
       "homepage": "https://docs.voxel51.com/",
-      "icon": null,
+      "icon": {
+        "asset": "icon-3a32be5f9426a8f9af9804b84b0f7fc2.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3a32be5f9426a8f9af9804b84b0f7fc2.png",
+        "bytes": 1430,
+        "contentType": "image/png",
+        "digest": "sha256:3a32be5f9426a8f9af9804b84b0f7fc2453af3d410b4c4717eccb74b9e6596f2",
+        "homepage": "https://docs.voxel51.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://docs.voxel51.com/_static/favicon/favicon-128.png"
+      },
       "keywords": [
         "data-analytics",
         "fiftyone"

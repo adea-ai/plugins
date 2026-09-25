@@ -601,6 +601,14 @@
       "origin": "https://duckdb.org/images/favicon/apple-touch-icon.png"
     },
     {
+      "bytes": 1430,
+      "contentType": "image/png",
+      "digest": "sha256:3a32be5f9426a8f9af9804b84b0f7fc2453af3d410b4c4717eccb74b9e6596f2",
+      "kind": "favicon",
+      "name": "icon-3a32be5f9426a8f9af9804b84b0f7fc2.png",
+      "origin": "https://docs.voxel51.com/_static/favicon/favicon-128.png"
+    },
+    {
       "bytes": 3846,
       "contentType": "image/png",
       "digest": "sha256:3b021902340db0fb62f6deaba5508baff912ac7492d59684fae62347a0ccd263",
@@ -801,20 +809,20 @@
       "origin": ".codex-plugin/assets/railway-logo-light.svg"
     },
     {
-      "bytes": 2622,
-      "contentType": "image/png",
-      "digest": "sha256:4e8ff1e39454169d7e0c20c756d2a44157946ff2b57974cac6183b9685c979ff",
-      "kind": "favicon",
-      "name": "icon-4e8ff1e39454169d7e0c20c756d2a441.png",
-      "origin": "https://cdn.prod.website-files.com/62864558fd8bb6eef9d56899/62b9adb62607ee564a6b0c14_App.png"
-    },
-    {
       "bytes": 57606,
       "contentType": "image/png",
       "digest": "sha256:4ef07273108e26afd81c30f837c90cc3a43cb0806955000f1ad777b080a04db0",
       "kind": "content",
       "name": "icon-4ef07273108e26afd81c30f837c90cc3.png",
       "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 10022,
+      "contentType": "image/webp",
+      "digest": "sha256:505d7841292488b3d76c2c3135253a6bdd804d771829cbba1f02c75287041cff",
+      "kind": "favicon",
+      "name": "icon-505d7841292488b3d76c2c3135253a6b.webp",
+      "origin": "https://www.qodo.ai/wp-content/uploads/2025/03/qodo-fav-300x300.png"
     },
     {
       "bytes": 20514,
@@ -1313,14 +1321,6 @@
       "origin": "assets/expo.png"
     },
     {
-      "bytes": 15908,
-      "contentType": "image/png",
-      "digest": "sha256:8a338496614f7dac92f3f044f4e814472757cfe1056d3130ea66edd0f4645a78",
-      "kind": "favicon",
-      "name": "icon-8a338496614f7dac92f3f044f4e81447.png",
-      "origin": "https://www.qodo.ai/wp-content/uploads/2025/03/qodo-fav-300x300.png"
-    },
-    {
       "bytes": 1276,
       "contentType": "image/svg+xml",
       "digest": "sha256:8d7deb7f7224deaaf4129368695c8bacb4e4edebfdc724aa66c852088b1d7ce8",
@@ -1422,7 +1422,7 @@
       "digest": "sha256:9eea8621e2dc7aa1985ad9124b3f16d301d2e891e3c849166a3119c8ef30a64c",
       "kind": "favicon",
       "name": "icon-9eea8621e2dc7aa1985ad9124b3f16d3.png",
-      "origin": "https://www.gstatic.com/devrel-devsite/prod/v01e820f11dab21f3ca0f6bae75161414eea27d2d73afb4b420c81b7d54dc150c/chrome/images/touchicon-180.png"
+      "origin": "https://www.gstatic.com/devrel-devsite/prod/v5be16d8c9f9402e54c2da2ff24cb75c148f5d2bc84c6f8dfc8b9e16ae456160b/chrome/images/touchicon-180.png"
     },
     {
       "bytes": 42574,
@@ -1663,6 +1663,14 @@
       "kind": "content",
       "name": "icon-b6d6425cb92db07c465273fc4617833f.svg",
       "origin": "assets/logo.svg"
+    },
+    {
+      "bytes": 1756,
+      "contentType": "image/png",
+      "digest": "sha256:bad17f9a363cc04d4b81ee9521fb6d76d45cc7242b3b101402393adcb2d78319",
+      "kind": "favicon",
+      "name": "icon-bad17f9a363cc04d4b81ee9521fb6d76.png",
+      "origin": "https://www.grasp-ai.com/apple-touch-icon.png"
     },
     {
       "bytes": 11789,
@@ -2305,33 +2313,33 @@
       "origin": "assets/bigdata-icon-black.svg"
     }
   ],
-  "catalogId": "catalog:6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e",
+  "catalogId": "catalog:caad4379ad867c0d7cd395064656bdfbc4e49f592ca1ff3c4a6266d9fdd3ca89",
   "files": {
-    "catalog-index.v1.json": "sha256:959548205485ce50f6ddd86e5223e460e96504fdb09ad83d6c7442893ca0234d",
-    "catalog-summary.v1.json": "sha256:b322868be2d623c21438622348d6e660aca7ea5e61f95921fbb9201b6aaecc0b",
-    "catalog.v1.json": "sha256:7bc24a4e999bb4355993cb8ef40270f8dd6e87e8369e815e151ad1b5256f6353",
-    "categories.v1.json": "sha256:c8fc8e592f4bdca44fd973867754d2f0b6a53946a7d1e5fb6d87cb0c29740f6d",
-    "category-business-operations.v1.json": "sha256:a377ba31e0971558ce66cbe0059c2ccf2013b70c882681fc2664cb78e16cb8d0",
-    "category-communication.v1.json": "sha256:cd51b315aed5003daf1b441baab110651c8bb0452160a637a68575696f821f56",
-    "category-creativity.v1.json": "sha256:2a472fe2e2ea4f1bb96e69f9cbecfaa8c59aa585dd7a6261e792ccfb4d90dbde",
-    "category-data-analytics.v1.json": "sha256:0f98766ec9d1d2cf3547d9a42f6f58f872434174addec51bb136a6df2b2ae443",
-    "category-developer-tools.v1.json": "sha256:f739e4ef056db3b8ccbcc90ff0d32ca59d3514aaef4efd8e5b2ea45e3a613fb0",
-    "category-education-research.v1.json": "sha256:d346077b26fdf896288ec39f13c05d13fc09565e30c6cbd7d9795de484306006",
-    "category-finance.v1.json": "sha256:29275de525c5c69f7eafd05ddf08f16c1e89252fd33ca9761a473d18d51133b0",
-    "category-other.v1.json": "sha256:704f8e15937b4e0ea20999f4fb8385d9ff112f8cb521d2d1381ec9ace465bd36",
-    "category-productivity.v1.json": "sha256:26179be01592f8fec70bc9c33d35f9c4cc668c9188d3e90b5ebf29a787e302ba",
-    "category-security.v1.json": "sha256:e744c365bfc5b5dc4c7b96ab6e25145e7a2dc6be4fd382e62babb712ba26fd09",
-    "compatibility.v1.json": "sha256:8e75873c1ab3d97346d73cd8a178f283d446c0f287e7d707626e7726ce83c1f6",
-    "shelf-business-operations.v1.json": "sha256:140862fbaa87352fb33a2ec922ef27057194a18f86bff5ca9ca4169e5c7a533b",
-    "shelf-communication.v1.json": "sha256:3433622e04f413f30f6e30826c7756489f64a9bdfe6ad7e691befc4aa7c96fbe",
-    "shelf-creativity.v1.json": "sha256:2d64d8a58a93b60551654aa89cb2ddaaaee697fd2afb58dd8cf9b7ca6da75458",
-    "shelf-data-analytics.v1.json": "sha256:14fdca1c23d4e7858976d5291d28dbaf280e9e9203be79025a274102162ef2ac",
-    "shelf-developer-tools.v1.json": "sha256:e2282a6fd994f662a81187bf29d2e040cf4c00582d54e810187e423ac1df113c",
-    "shelf-education-research.v1.json": "sha256:73c66e6d28a80edea03246887ea363a137eb130b4e462fa7684416eb00c3978c",
-    "shelf-finance.v1.json": "sha256:ee9d1c219dfda2d1d35bfb122a0071900128e34ec03e67a6f7a4dec178318721",
-    "shelf-other.v1.json": "sha256:0a079924764d570172c07c1491f963c7fbe43b57d4aaaf9babdc70dc7e7547b8",
-    "shelf-productivity.v1.json": "sha256:b4918f9f3a62893eadcdd0c0db8c2832e4bc0b561ad37a010a6101dddbb31f3f",
-    "shelf-security.v1.json": "sha256:447a3b9f532e49bc32c0bc09d86d39ce18ccea2f44077cd3f976c1ce9b58a421",
+    "catalog-index.v1.json": "sha256:8c3f6da57a68925351437eb5334a93a879366691f6b1bd10c59bd64cd8de2613",
+    "catalog-summary.v1.json": "sha256:4013e8c6cadbd84ab4682c00287d17f6fa7eb8d121cef02b084afa7fdca315c2",
+    "catalog.v1.json": "sha256:999c7d44712d494bbfb4f931a8d335e7fe9554dd6e83f30c9885fc978eccdb5b",
+    "categories.v1.json": "sha256:0bf361f0b35e11ce40c0a43139cf6212da1cfc931b039a01d9670ea2fa3a0375",
+    "category-business-operations.v1.json": "sha256:c94d6e4abe8391f663c58868abe422941e8ec4a6445517d72f99687a59f91f61",
+    "category-communication.v1.json": "sha256:86edd073c0951a182864643819e7a21d568bb6434e6a34c3a5c2f2c43d00a46d",
+    "category-creativity.v1.json": "sha256:00c7085a80d9fcc3d07525158864d76fd66a2b19bc326cec9d8d9eb1bc404534",
+    "category-data-analytics.v1.json": "sha256:322178d490b1adf5e631dec6093236b46bc8d4410f1528f8878250e548ed2fc3",
+    "category-developer-tools.v1.json": "sha256:ae06e4bf8b77200298aa3afc8094a065f8d3dfc6f8e05c07a381895faa027bee",
+    "category-education-research.v1.json": "sha256:da21c797383d39b40f2c7a91eec05e97968dd9f59b9147ffc72add6430ba51d0",
+    "category-finance.v1.json": "sha256:30c99b8de70c7ac177b3d2b172c119cc23bad1fd4c65878fd08d3cd6e647ff6e",
+    "category-other.v1.json": "sha256:b9f9b08dd4ea6b9049dfd7c1cd6135689884c55d2be9c1e1643f15fd7c091786",
+    "category-productivity.v1.json": "sha256:63674a9bd635166e6f7b67c738e6230917084db0b5659b8df039f04297fbaa8c",
+    "category-security.v1.json": "sha256:6496a2290fd511e1b0135c11a661ea4bb8242cb328faa8c24d97e79de979f877",
+    "compatibility.v1.json": "sha256:34d693ada3dea445615ef5116208df46b7bf28900118bbd364ed44c34095a768",
+    "shelf-business-operations.v1.json": "sha256:ecf8ac7703221df73ec94b3f00610d3d851b273d0e1afb83a12bac9a7a18d2c7",
+    "shelf-communication.v1.json": "sha256:e4fa720994ba346f76710b44aa84f34187d9da15c6d2baedf7c3480df1dbef2b",
+    "shelf-creativity.v1.json": "sha256:564b650d36d061d40fd96d3e8ef48979e2e466d1f463503d52fe497b443acc6a",
+    "shelf-data-analytics.v1.json": "sha256:8a0da25da65212fb0ccd2c0210208494b557e32c0e5e414856c96b3a55b5d118",
+    "shelf-developer-tools.v1.json": "sha256:8b4ee139ad945f11e33f6a271933a4f43db65145a3f9e699e8c384cc3d99aa11",
+    "shelf-education-research.v1.json": "sha256:0ea7ce5810b7b33a5277e8e20df666fe5b6c19b161f0a7ede29b91e037f7e81b",
+    "shelf-finance.v1.json": "sha256:3cc275627a534ad72cd9f30ebf2504198b344d7aec735b8815e70def94e4da7a",
+    "shelf-other.v1.json": "sha256:21c623faf300e2e57051e2801ec15b20974739da104291c322b26290d482d2f9",
+    "shelf-productivity.v1.json": "sha256:9c81b242d1ad671dfcac11c3df5fc73bc6d0604c80288c5c84a8914b80ad2cbe",
+    "shelf-security.v1.json": "sha256:29673f29a14deafe2ce1f5cf071bc247624d6fe81f1d46930a11755cedb92217",
     "sources.lock.json": "sha256:3b32c5f01699e2b033c70f383273b7b9ca5caf4f5c34fbe0cd293bbe591b8143"
   },
   "schemaVersion": 1

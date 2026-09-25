@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e",
+  "catalogId": "catalog:caad4379ad867c0d7cd395064656bdfbc4e49f592ca1ff3c4a6266d9fdd3ca89",
   "category": "communication",
   "pluginCount": 23,
   "productCount": 16,
@@ -33,7 +33,7 @@
       "homepage": "https://github.com/slackapi/slack-mcp-plugin/tree/main",
       "icon": {
         "asset": "icon-22860d9a3bdf29402f53345ae9bc8ee0.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-22860d9a3bdf29402f53345ae9bc8ee0.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-22860d9a3bdf29402f53345ae9bc8ee0.png",
         "bytes": 23428,
         "contentType": "image/png",
         "digest": "sha256:22860d9a3bdf29402f53345ae9bc8ee0cd057c652eda418ef8433ff0c363fb02",
@@ -137,7 +137,7 @@
       "displayName": "Zoom",
       "icon": {
         "asset": "icon-9082312993373e52b2bc5e5045acf641.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-9082312993373e52b2bc5e5045acf641.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-9082312993373e52b2bc5e5045acf641.png",
         "bytes": 16774,
         "contentType": "image/png",
         "digest": "sha256:9082312993373e52b2bc5e5045acf6412671e21cf0104178befb3417078b46cc",
@@ -227,7 +227,7 @@
       "homepage": "https://github.com/intercom/claude-plugin-external",
       "icon": {
         "asset": "icon-45836f3ea3e572ef6430323feb98876b.svg",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-45836f3ea3e572ef6430323feb98876b.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-45836f3ea3e572ef6430323feb98876b.svg",
         "bytes": 1134,
         "contentType": "image/svg+xml",
         "digest": "sha256:45836f3ea3e572ef6430323feb98876b5f8a893a6ce264d7bf2a83b7fb29fd43",
@@ -323,7 +323,7 @@
       "displayName": "Fireflies",
       "icon": {
         "asset": "icon-498fd1421656a6afba2d63f0ef4e308b.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-498fd1421656a6afba2d63f0ef4e308b.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-498fd1421656a6afba2d63f0ef4e308b.png",
         "bytes": 9392,
         "contentType": "image/png",
         "digest": "sha256:498fd1421656a6afba2d63f0ef4e308b3c31f6acba08c13dbeb120ea3c404d83",
@@ -408,7 +408,7 @@
       "displayName": "Otter.ai",
       "icon": {
         "asset": "icon-e1e012cdbcbae94ae151879d5f054681.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-e1e012cdbcbae94ae151879d5f054681.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-e1e012cdbcbae94ae151879d5f054681.png",
         "bytes": 5188,
         "contentType": "image/png",
         "digest": "sha256:e1e012cdbcbae94ae151879d5f05468127706701ff6dc23e142cc77693cbffa7",
@@ -493,7 +493,7 @@
       "displayName": "Gmail",
       "icon": {
         "asset": "icon-16b247249328458d1f22b1e6c9766dcc.svg",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-16b247249328458d1f22b1e6c9766dcc.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-16b247249328458d1f22b1e6c9766dcc.svg",
         "bytes": 1392,
         "contentType": "image/svg+xml",
         "digest": "sha256:16b247249328458d1f22b1e6c9766dcce8d75ac6316f4be8c999ca36d33f9d17",
@@ -579,7 +579,7 @@
       "displayName": "Customer.io",
       "icon": {
         "asset": "icon-29a0c1a4c61553a13ce7015656729968.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-29a0c1a4c61553a13ce7015656729968.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-29a0c1a4c61553a13ce7015656729968.png",
         "bytes": 6293,
         "contentType": "image/png",
         "digest": "sha256:29a0c1a4c61553a13ce7015656729968002e0bf441dc86973b8a8f1ebbafaa8b",
@@ -746,7 +746,7 @@
       "displayName": "Grok Voice",
       "icon": {
         "asset": "icon-c6be9965a6c0f1516dae02750c88bc4b.svg",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-c6be9965a6c0f1516dae02750c88bc4b.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-c6be9965a6c0f1516dae02750c88bc4b.svg",
         "bytes": 654,
         "contentType": "image/svg+xml",
         "digest": "sha256:c6be9965a6c0f1516dae02750c88bc4b989e5e6bfc44fbf6a096e74dd3494148",
@@ -830,7 +830,7 @@
       "displayName": "Outlook",
       "icon": {
         "asset": "icon-258d51a8e98a58b805850aed142ac87c.svg",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-258d51a8e98a58b805850aed142ac87c.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-258d51a8e98a58b805850aed142ac87c.svg",
         "bytes": 4029,
         "contentType": "image/svg+xml",
         "digest": "sha256:258d51a8e98a58b805850aed142ac87cfd31120a3fae4c2ad5a5fc3611021401",
@@ -916,7 +916,7 @@
       "displayName": "Outlook Calendar",
       "icon": {
         "asset": "icon-67c88e5b24ca41f8d9981e3468475c26.svg",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-67c88e5b24ca41f8d9981e3468475c26.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-67c88e5b24ca41f8d9981e3468475c26.svg",
         "bytes": 877,
         "contentType": "image/svg+xml",
         "digest": "sha256:67c88e5b24ca41f8d9981e3468475c2617fbd19a0dc32d6aadae81b140d16cfb",
@@ -1003,7 +1003,7 @@
       "displayName": "outlook-email",
       "icon": {
         "asset": "icon-5335d7747d4a58b3a99ece47d142a127.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-5335d7747d4a58b3a99ece47d142a127.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-5335d7747d4a58b3a99ece47d142a127.png",
         "bytes": 23322,
         "contentType": "image/png",
         "digest": "sha256:5335d7747d4a58b3a99ece47d142a127fbc4a5acec2e335fab6d17b42f4ec16d",
@@ -1181,7 +1181,7 @@
       "displayName": "Teams",
       "icon": {
         "asset": "icon-0db3debcfd64741145c6fab173775e74.svg",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-0db3debcfd64741145c6fab173775e74.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-0db3debcfd64741145c6fab173775e74.svg",
         "bytes": 2237,
         "contentType": "image/svg+xml",
         "digest": "sha256:0db3debcfd64741145c6fab173775e74c349576da82a18512aaede7e2a39c3ec",
@@ -1268,7 +1268,7 @@
       "displayName": "X",
       "icon": {
         "asset": "icon-bc5e83df48f9ebaf98a750e4a16efb72.svg",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-bc5e83df48f9ebaf98a750e4a16efb72.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-bc5e83df48f9ebaf98a750e4a16efb72.svg",
         "bytes": 542,
         "contentType": "image/svg+xml",
         "digest": "sha256:bc5e83df48f9ebaf98a750e4a16efb7290a8f39bb4fb6aabe07416aa319e711d",
@@ -1363,7 +1363,7 @@
       "homepage": "https://developers.zoom.us/",
       "icon": {
         "asset": "icon-410740a6cf3fce41e9509054cec3a59b.svg",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-410740a6cf3fce41e9509054cec3a59b.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-410740a6cf3fce41e9509054cec3a59b.svg",
         "bytes": 1928,
         "contentType": "image/svg+xml",
         "digest": "sha256:410740a6cf3fce41e9509054cec3a59b724c68381b4dda8fd64c65a67bbe0ea8",
