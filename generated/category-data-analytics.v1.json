@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:6e7f499b1973aaaad55affa270c2b3970233ed9be837d3c635f6a492927b3e4e",
+  "catalogId": "catalog:46d35646d0c825e0b3caa3d97b4bf786ce6cadd8bc16eaa416461d28db04f483",
   "category": "data-analytics",
   "pluginCount": 49,
   "productCount": 42,
@@ -516,7 +516,17 @@
       "description": "Build high-quality datasets and computer vision models. Visualize datasets, analyze models, find duplicates, run inference, evaluate predictions, and develop custom plugins.",
       "displayName": "Fiftyone",
       "homepage": "https://docs.voxel51.com/",
-      "icon": null,
+      "icon": {
+        "asset": "icon-def46a4525d67c2cecbc3b4156173c76.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-def46a4525d67c2cecbc3b4156173c76.png",
+        "bytes": 5070,
+        "contentType": "image/png",
+        "digest": "sha256:def46a4525d67c2cecbc3b4156173c7681dc0776dc8bbbdf0cb4c8254096726e",
+        "homepage": "https://voxel51.com/fiftyone/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://cdn.sanity.io/images/h6toihm1/production/ac5eeac7c3e7c21e4b66f7e04b9841b876d0fb6e-250x248.png?rect=1,0,248,248&amp;w=512&amp;h=512&amp;fit=max&amp;auto=format"
+      },
       "keywords": [
         "data-analytics",
         "fiftyone"
@@ -2668,7 +2678,17 @@
       "description": "Connect to Knowledge Catalog to discover, manage, monitor, and govern data and AI artifacts across your data platform",
       "displayName": "Knowledge Catalog",
       "homepage": "https://github.com/gemini-cli-extensions/knowledge-catalog",
-      "icon": null,
+      "icon": {
+        "asset": "icon-46dea242a643a5e1d36b969f369c64f6.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-46dea242a643a5e1d36b969f369c64f6.png",
+        "bytes": 6289,
+        "contentType": "image/png",
+        "digest": "sha256:46dea242a643a5e1d36b969f369c64f68134586de60a5bd5a5e1ce64808cd159",
+        "homepage": "https://ai.google.dev/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/devrel-devsite/prod/v5be16d8c9f9402e54c2da2ff24cb75c148f5d2bc84c6f8dfc8b9e16ae456160b/googledevai/images/touchicon-180-new.png"
+      },
       "keywords": [
         "catalog",
         "data-analytics",

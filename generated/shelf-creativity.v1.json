@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:6e7f499b1973aaaad55affa270c2b3970233ed9be837d3c635f6a492927b3e4e",
+  "catalogId": "catalog:46d35646d0c825e0b3caa3d97b4bf786ce6cadd8bc16eaa416461d28db04f483",
   "category": "creativity",
   "products": [
     {
@@ -234,7 +234,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/excalidraw",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
+        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
       },
       "release": {
         "canonicalContentDigest": "sha256:acf67cb9ec45e885a9bf3e790291ad37e24e6dc57bb10ef42e84cd4f5169eccd",
@@ -247,13 +247,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6b930238faac690506d672bfb166b309d120fbd0b2086b0abeb2153459317129",
         "packageStatus": "portable",
-        "releaseId": "release:ce7b6f99f3aed952b981e354654480c29f79465f7ed6b0fadb65d73538110a49",
+        "releaseId": "release:bead2e7177bfb19d8417f244f6284e775b032d4b033f1476edd837f5131147fb",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
+        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
         "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:ce7b6f99f3aed952b981e354654480c29f79465f7ed6b0fadb65d73538110a49",
+      "releaseId": "release:bead2e7177bfb19d8417f244f6284e775b032d4b033f1476edd837f5131147fb",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -319,7 +319,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/gamma",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
+        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
       },
       "release": {
         "canonicalContentDigest": "sha256:855867dad26c1704aa7cd0ebd2119c2660b44de7784a02cf120583e39dde4d9d",
@@ -332,13 +332,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:1939f1c8b0e89c19379fddab562c7a110a61055221f523ef927918527e71c3f8",
         "packageStatus": "portable",
-        "releaseId": "release:b6e7909f8a33b67969dc080e04ba6e39dca30c8effe0a99aef3cd9f569dd4014",
+        "releaseId": "release:10d6e3e2773350780fe5bb897ed4d73ccb59b84f597f0b6c23806ed93d562e9b",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
+        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:b6e7909f8a33b67969dc080e04ba6e39dca30c8effe0a99aef3cd9f569dd4014",
+      "releaseId": "release:10d6e3e2773350780fe5bb897ed4d73ccb59b84f597f0b6c23806ed93d562e9b",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",

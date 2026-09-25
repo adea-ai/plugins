@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:6e7f499b1973aaaad55affa270c2b3970233ed9be837d3c635f6a492927b3e4e",
+  "catalogId": "catalog:46d35646d0c825e0b3caa3d97b4bf786ce6cadd8bc16eaa416461d28db04f483",
   "category": "developer-tools",
   "pluginCount": 213,
   "productCount": 175,
@@ -228,7 +228,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "cursor-sdk",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
+        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
       },
       "release": {
         "canonicalContentDigest": "sha256:0be74b4325362ba174f1ea044da829f83a85bb4b2a2b1a30be020ae677054404",
@@ -241,13 +241,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:4db2af962162a1cbcca2754a64d2767b19182059d8400e0470122acc4a4dc325",
         "packageStatus": "partial",
-        "releaseId": "release:86671291eb314a36a46fead1a4f2664a08d384d1efa229f6d24561e2c49b116f",
+        "releaseId": "release:4de3567fcc69a3394214ef6c9cc8938ccbca5da54b8ed22141ed4c544e7acfe5",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
+        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:86671291eb314a36a46fead1a4f2664a08d384d1efa229f6d24561e2c49b116f",
+      "releaseId": "release:4de3567fcc69a3394214ef6c9cc8938ccbca5da54b8ed22141ed4c544e7acfe5",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -593,7 +593,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "agent-compatibility",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
+        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
       },
       "release": {
         "canonicalContentDigest": "sha256:1b112554d0c0cea410d4fefbf7c0f39a13c12377e47d4a1e8c806f8a94723291",
@@ -610,13 +610,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:42b1dc9e4ee345c2224e15ee38579b7ddc4e5cf2107095a4bbca72f487e0e18d",
         "packageStatus": "partial",
-        "releaseId": "release:4f871cb1a975e6830573696b8e0a386d1be6b283b695cd12f4de314d6613efa0",
+        "releaseId": "release:be0618e0ff1b802343dac485cd525e6b65e2d2afe8240b3f9f245b9e9d892653",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
+        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:4f871cb1a975e6830573696b8e0a386d1be6b283b695cd12f4de314d6613efa0",
+      "releaseId": "release:be0618e0ff1b802343dac485cd525e6b65e2d2afe8240b3f9f245b9e9d892653",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -1371,7 +1371,17 @@
       "description": "Appwrite tools for Claude Code, including SDK skills, Appwrite MCP servers, and deployment commands.",
       "displayName": "Appwrite",
       "homepage": "https://appwrite.io/",
-      "icon": null,
+      "icon": {
+        "asset": "icon-3c364967aa6e0d28508ee505aff8b2ce.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3c364967aa6e0d28508ee505aff8b2ce.png",
+        "bytes": 4056,
+        "contentType": "image/png",
+        "digest": "sha256:3c364967aa6e0d28508ee505aff8b2ce171a56680e6f05a82b7add6c5935571e",
+        "homepage": "https://appwrite.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://appwrite.io/apple-touch-icon.png"
+      },
       "keywords": [
         "appwrite",
         "developer-tools"
@@ -3634,7 +3644,17 @@
       },
       "description": "Patterns for designing CLIs that coding agents can run reliably: flags, help with examples, pipelines, errors, idempotency, dry-run.",
       "displayName": "CLI for Agents",
-      "icon": null,
+      "icon": {
+        "asset": "icon-a57fcff6994c83bd2acc0ea84d8b950b.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a57fcff6994c83bd2acc0ea84d8b950b.png",
+        "bytes": 6194,
+        "contentType": "image/png",
+        "digest": "sha256:a57fcff6994c83bd2acc0ea84d8b950b0ace6e00c1bf25d9abc7d15704de73db",
+        "homepage": "https://cursor.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://cursor.com/marketing-static/apple-touch-icon-light.png"
+      },
       "keywords": [
         "agent",
         "cli",
@@ -3653,7 +3673,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "cli-for-agent",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
+        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
       },
       "release": {
         "canonicalContentDigest": "sha256:9170ba40394c32a14da98ed946d52a26988e0e5bcc066ffeb1d8201654dc6c5e",
@@ -3666,13 +3686,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:c0c97b4e9a7e33e2fd64f49d1d3c9496fc3a72045f5e7db683c1d9cc82b2a764",
         "packageStatus": "portable",
-        "releaseId": "release:c1b8a07629c8ee93dfb0e7be38f6463f783552fac4b15c9c167afc0d552caa5f",
+        "releaseId": "release:10f5216193f85ef9b4747760a44f2d5e992d2de608dbc037e65f2e74d040d173",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
+        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:c1b8a07629c8ee93dfb0e7be38f6463f783552fac4b15c9c167afc0d552caa5f",
+      "releaseId": "release:10f5216193f85ef9b4747760a44f2d5e992d2de608dbc037e65f2e74d040d173",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -4122,7 +4142,17 @@
       "description": "Upstash Context7 MCP server for up-to-date documentation lookup. Connects to Context7's hosted remote MCP server (https://mcp.context7.com/mcp) — no local Node.js or npx required — to pull version-specific documentation and code examples directly from source repositories into your LLM context. Works anonymously out of the box; set CONTEXT7_API_KEY for higher rate limits.",
       "displayName": "Context7",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/context7",
-      "icon": null,
+      "icon": {
+        "asset": "icon-5d42a0cad320600ee0ebb805065f212a.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-5d42a0cad320600ee0ebb805065f212a.png",
+        "bytes": 1489,
+        "contentType": "image/png",
+        "digest": "sha256:5d42a0cad320600ee0ebb805065f212a81a257895e9dc39687b7958602ea4f70",
+        "homepage": "https://context7.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://context7.com/favicon.ico"
+      },
       "keywords": [
         "context7",
         "developer-tools"
@@ -4301,7 +4331,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "create-plugin",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
+        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
       },
       "release": {
         "canonicalContentDigest": "sha256:0d14c7691cda946b96a977f432de9680951800ad3881c7a970e22a432299a9c7",
@@ -4322,13 +4352,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:2d0bf88e7ef5ae04e298da6deac66580fe535f1cf8d1eec9c13ba54c81dca42b",
         "packageStatus": "partial",
-        "releaseId": "release:6714e5cc6d84d985136143d50c50113d47fffd3b694e789e4e49042c8827196c",
+        "releaseId": "release:9aaf3f464ce6f9888e53431b8805de257a7d5ee59562bfb5a276dcebe55d2908",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
+        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:6714e5cc6d84d985136143d50c50113d47fffd3b694e789e4e49042c8827196c",
+      "releaseId": "release:9aaf3f464ce6f9888e53431b8805de257a7d5ee59562bfb5a276dcebe55d2908",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -4694,7 +4724,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "cursor-team-kit",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
+        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
       },
       "release": {
         "canonicalContentDigest": "sha256:8132d5be9365584f329567eebd0c084e80940b2f0e37e4fca60dfabc40695865",
@@ -4715,13 +4745,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:f2707f63d0aa7a20cacd3d107259f3b4a8d0b5960f2099504f67eaa854314e80",
         "packageStatus": "partial",
-        "releaseId": "release:6f65e3372243980400fea9422d88ac0cccbfd68e69d43eb879fc93b33bd1262c",
+        "releaseId": "release:aca65d75886c15c9007d718b1ac09a7359541704b675dbd3caba2d5c14bbabe9",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
+        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
         "upstreamVersion": "1.2.0"
       },
-      "releaseId": "release:6f65e3372243980400fea9422d88ac0cccbfd68e69d43eb879fc93b33bd1262c",
+      "releaseId": "release:aca65d75886c15c9007d718b1ac09a7359541704b675dbd3caba2d5c14bbabe9",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -4875,7 +4905,17 @@
       "description": "This plugin provides a specialized suite of skills for data engineers and database practitioners working on Google Cloud. It acts as an expert assistant, allowing you to use natural language prompts in your preferred coding agent to architect complex data pipelines, transform data with dbt, write Spark and BigQuery SQL notebooks, and orchestrate end-to-end workflows across GCP's data ecosystem.",
       "displayName": "DAK",
       "homepage": "https://github.com/gemini-cli-extensions/data-agent-kit-starter-pack",
-      "icon": null,
+      "icon": {
+        "asset": "icon-46dea242a643a5e1d36b969f369c64f6.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-46dea242a643a5e1d36b969f369c64f6.png",
+        "bytes": 6289,
+        "contentType": "image/png",
+        "digest": "sha256:46dea242a643a5e1d36b969f369c64f68134586de60a5bd5a5e1ce64808cd159",
+        "homepage": "https://ai.google.dev/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/devrel-devsite/prod/v5be16d8c9f9402e54c2da2ff24cb75c148f5d2bc84c6f8dfc8b9e16ae456160b/googledevai/images/touchicon-180-new.png"
+      },
       "keywords": [
         "agent",
         "data",
@@ -11338,7 +11378,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "pr-review-canvas",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
+        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
       },
       "release": {
         "canonicalContentDigest": "sha256:1400f52bb9c8074fbdfbe3c91af9f931e39034fddeced37b88dea7d2942c3b38",
@@ -11351,13 +11391,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:5ce7b6aa1db06b4e8c755454c45083ded892e95e887674e97fff6879bb171799",
         "packageStatus": "portable",
-        "releaseId": "release:4bf93e1c3139a6264458645ceb54806c8d12738c9c625ccc45ed6934fe52196a",
+        "releaseId": "release:48f748465e0bb2d7f0b93abc9aa9f843e5d87c3b7f05eb925251a3d514ad83b4",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
+        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
         "upstreamVersion": "0.1.0"
       },
-      "releaseId": "release:4bf93e1c3139a6264458645ceb54806c8d12738c9c625ccc45ed6934fe52196a",
+      "releaseId": "release:48f748465e0bb2d7f0b93abc9aa9f843e5d87c3b7f05eb925251a3d514ad83b4",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -13895,7 +13935,17 @@
       "description": "Detect AI agents in your codebase and instrument them with Pendo Agent Analytics via the best-fit path: Python SDK, TypeScript SDK, client-side trackAgent(), or the Conversations API.",
       "displayName": "Setup Agent Analytics",
       "homepage": "https://github.com/pendo-io/claude-pendo-plugin/tree/main/plugins/setup-agent-analytics",
-      "icon": null,
+      "icon": {
+        "asset": "icon-891addb081afe5aa144a855067114bd0.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-891addb081afe5aa144a855067114bd0.png",
+        "bytes": 3340,
+        "contentType": "image/png",
+        "digest": "sha256:891addb081afe5aa144a855067114bd057aca8b7a86e905c62b2bfe6dbb83777",
+        "homepage": "https://www.pendo.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.pendo.io/apple-touch-icon.png"
+      },
       "keywords": [
         "agent",
         "analytics",
@@ -13971,7 +14021,17 @@
       "description": "Detect an MCP server's language (Python, TypeScript or Go) and instrument it with the matching Pendo SDK so MCP tool calls flow into Pendo Agent Analytics.",
       "displayName": "Setup MCP Agent Analytics",
       "homepage": "https://github.com/pendo-io/claude-pendo-plugin/tree/main/plugins/setup-mcp-agent-analytics",
-      "icon": null,
+      "icon": {
+        "asset": "icon-891addb081afe5aa144a855067114bd0.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-891addb081afe5aa144a855067114bd0.png",
+        "bytes": 3340,
+        "contentType": "image/png",
+        "digest": "sha256:891addb081afe5aa144a855067114bd057aca8b7a86e905c62b2bfe6dbb83777",
+        "homepage": "https://www.pendo.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.pendo.io/apple-touch-icon.png"
+      },
       "keywords": [
         "agent",
         "analytics",
@@ -15391,7 +15451,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "thermos",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
+        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
       },
       "release": {
         "canonicalContentDigest": "sha256:1327f77d3336ebc99941cf2dab0f8643490205f1655699ce34e88fa90f972887",
@@ -15408,13 +15468,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6374eddbf2a1dba5b94f93fc1d6894ee6b0fd15072e470b005a301d2363b68bf",
         "packageStatus": "partial",
-        "releaseId": "release:a2da152f3df8fc91bdb9253f25f977e66bb3a97b4c651d0b7efeafbafa91e946",
+        "releaseId": "release:3de6eb1b699fd37c06009a7ea2b0cc8a0b6f3b9807a11a4e8f9be8ea4affa0c2",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
+        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:a2da152f3df8fc91bdb9253f25f977e66bb3a97b4c651d0b7efeafbafa91e946",
+      "releaseId": "release:3de6eb1b699fd37c06009a7ea2b0cc8a0b6f3b9807a11a4e8f9be8ea4affa0c2",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",

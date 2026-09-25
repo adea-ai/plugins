@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:6e7f499b1973aaaad55affa270c2b3970233ed9be837d3c635f6a492927b3e4e",
+  "catalogId": "catalog:46d35646d0c825e0b3caa3d97b4bf786ce6cadd8bc16eaa416461d28db04f483",
   "category": "data-analytics",
   "products": [
     {
@@ -514,7 +514,17 @@
       "description": "Build high-quality datasets and computer vision models. Visualize datasets, analyze models, find duplicates, run inference, evaluate predictions, and develop custom plugins.",
       "displayName": "Fiftyone",
       "homepage": "https://docs.voxel51.com/",
-      "icon": null,
+      "icon": {
+        "asset": "icon-def46a4525d67c2cecbc3b4156173c76.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-def46a4525d67c2cecbc3b4156173c76.png",
+        "bytes": 5070,
+        "contentType": "image/png",
+        "digest": "sha256:def46a4525d67c2cecbc3b4156173c7681dc0776dc8bbbdf0cb4c8254096726e",
+        "homepage": "https://voxel51.com/fiftyone/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://cdn.sanity.io/images/h6toihm1/production/ac5eeac7c3e7c21e4b66f7e04b9841b876d0fb6e-250x248.png?rect=1,0,248,248&amp;w=512&amp;h=512&amp;fit=max&amp;auto=format"
+      },
       "keywords": [
         "data-analytics",
         "fiftyone"
