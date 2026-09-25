@@ -14,7 +14,7 @@
     "format:check": "oxfmt --check .",
     "lint": "oxlint --deny-warnings",
     "type-check": "tsc --noEmit",
-    "test": "bun test --timeout 30000",
+    "test": "bun test packages --timeout 30000",
     "test:unit": "bun test packages --timeout 30000",
     "validate": "bun run catalog validate",
     "inspect": "bun run catalog inspect",

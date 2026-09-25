@@ -10,6 +10,7 @@ import {
   type ReleaseTransform,
 } from './index.js'
 import { compileAgentPackage, verifyAgentPackage, NORMALIZER_VERSION } from './agent-plugins.js'
+import { CATALOG_CONTRACT_VERSION } from './index.js'
 
 export const PACKAGE_METADATA_KEY = 'agentPlugins'
 function currentContract(catalog: Catalog | undefined): boolean {
@@ -20,6 +21,9 @@ function currentContract(catalog: Catalog | undefined): boolean {
         const value = release.releaseMetadata[PACKAGE_METADATA_KEY]
         return (
           release.contentResolution === 'complete' &&
+          // A release compiled by an earlier catalog format is not current, so a
+          // format change republishes instead of waiting for an upstream commit.
+          release.releaseMetadata.catalogContract === CATALOG_CONTRACT_VERSION &&
           value !== null &&
           typeof value === 'object' &&
           'normalizerVersion' in value &&
