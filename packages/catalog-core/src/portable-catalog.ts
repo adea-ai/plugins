@@ -141,6 +141,9 @@ export async function synchronizePortable(options: SyncInput): Promise<SyncResul
     ...(options.publicationRepositoryUrl
       ? { publicationRepositoryUrl: options.publicationRepositoryUrl }
       : {}),
+    ...(options.publicationAssetsBaseUrl
+      ? { publicationAssetsBaseUrl: options.publicationAssetsBaseUrl }
+      : {}),
     curationDiagnostics: (options.mode ?? 'live') !== 'offline',
   })
   verifyArtifacts(artifacts)

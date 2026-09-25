@@ -60,7 +60,7 @@ import { immutableAssetUrl } from './publication.js'
  * the agent-package normalizer version, which describes package normalization
  * and would misreport a change here.
  */
-export const CATALOG_CONTRACT_VERSION = 'adea-catalog/2'
+export const CATALOG_CONTRACT_VERSION = 'adea-catalog/3'
 
 export interface CatalogPolicy {
   readonly allowedRepositoryProtocols: readonly string[]
@@ -232,6 +232,15 @@ export interface ConsumerIndexOptions {
    */
   readonly publicationRepositoryUrl?: string
   /**
+   * Base URL of the committed asset directory that browsers fetch directly.
+   *
+   * GitHub release assets answer a cross-origin `fetch` with no CORS header and
+   * redirect through a URL that cannot be cached, so a browser neither reads the
+   * index nor reuses an icon. The same files served from the repository are
+   * CORS-enabled, direct and cacheable.
+   */
+  readonly publicationAssetsBaseUrl?: string
+  /**
    * Whether curated-name drift is published in the consumer index. An offline
    * build replays fixtures rather than the upstream catalogs, so its curation
    * findings are noise and are omitted by default.
@@ -380,6 +389,9 @@ export async function synchronize(input: SyncInput): Promise<SyncResult> {
     ...(input.productPreference ? { productPreference: input.productPreference } : {}),
     ...(input.publicationRepositoryUrl
       ? { publicationRepositoryUrl: input.publicationRepositoryUrl }
+      : {}),
+    ...(input.publicationAssetsBaseUrl
+      ? { publicationAssetsBaseUrl: input.publicationAssetsBaseUrl }
       : {}),
     curationDiagnostics: (input.mode ?? 'live') !== 'offline',
   })
@@ -1285,6 +1297,9 @@ export function createArtifacts(
     ...(options.publicationRepositoryUrl
       ? { publicationRepositoryUrl: options.publicationRepositoryUrl }
       : {}),
+    ...(options.publicationAssetsBaseUrl
+      ? { publicationAssetsBaseUrl: options.publicationAssetsBaseUrl }
+      : {}),
   })
   const summary = {
     schemaVersion: 1,
@@ -1327,15 +1342,17 @@ export function createArtifacts(
     // browsing index from the publication it was told about, verify it against
     // the digest in integrity.json, and never compose a URL or need this
     // service to proxy it. Absent for an unpublished build.
-    ...(options.publicationRepositoryUrl
-      ? {
-          catalogIndexUrl: immutableAssetUrl(
-            options.publicationRepositoryUrl,
-            catalog.catalogId,
-            CATALOG_INDEX_ARTIFACT
-          ),
-        }
-      : {}),
+    ...(options.publicationAssetsBaseUrl
+      ? { catalogIndexUrl: `${options.publicationAssetsBaseUrl}/${CATALOG_INDEX_ARTIFACT}` }
+      : options.publicationRepositoryUrl
+        ? {
+            catalogIndexUrl: immutableAssetUrl(
+              options.publicationRepositoryUrl,
+              catalog.catalogId,
+              CATALOG_INDEX_ARTIFACT
+            ),
+          }
+        : {}),
     // Marks ride in the navigation artifact so a client that already receives it
     // renders compiled brand marks without fetching the browsing index. Keys are
     // sorted for a stable artifact.

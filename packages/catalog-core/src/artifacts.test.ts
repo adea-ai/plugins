@@ -304,6 +304,31 @@ describe('artifact shards', () => {
     )
   })
 
+  test('serves marks and the index from the committed asset base when configured', () => {
+    const base = catalog([
+      plugin({
+        sourceId: 'cursor-official',
+        name: 'calendar',
+        categories: ['productivity'],
+        icon: { path: 'assets/logo.svg', bytes: CLEAN_SVG },
+      }),
+    ])
+    const assetsBase = 'https://raw.githubusercontent.com/adea-ai/plugins/main/catalog-assets'
+    const artifacts = createArtifacts(base, lockFor([base.plugins[0]!]) as never, {
+      curationDiagnostics: false,
+      publicationRepositoryUrl: 'https://github.com/adea-ai/plugins',
+      publicationAssetsBaseUrl: assetsBase,
+    })
+    const navigation = JSON.parse(artifacts['categories.v1.json']!)
+    // A release asset answers a browser fetch with no CORS header and an
+    // uncacheable redirect; the committed path is what a browser can use.
+    expect(navigation.catalogIndexUrl).toBe(`${assetsBase}/catalog-index.v1.json`)
+    expect(navigation.brandMarks.calendar).toBe(`${assetsBase}/${svgAsset}`)
+    const index = JSON.parse(artifacts['catalog-index.v1.json']!)
+    expect(index.products.calendar.icon.assetUrl).toBe(`${assetsBase}/${svgAsset}`)
+    expect(index.products.calendar.icon.assetUrl).not.toContain('/releases/download/')
+  })
+
   test('carries compiled marks in the navigation artifact', () => {
     const base = catalog([
       plugin({

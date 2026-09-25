@@ -10,6 +10,7 @@
     "plugin.json",
     ".github/CONTRIBUTING.md",
     "generated/**",
-    "fixtures/expected/**"
+    "fixtures/expected/**",
+    "catalog-assets/**"
   ]
 }
