@@ -1,8 +1,8 @@
 import { promises as fs } from 'node:fs'
 import { join } from 'node:path'
-import { byteDigest } from '../packages/catalog-core/src/index.js'
+import { createSiteIconFetcher, SITE_FETCH_TIMEOUT_MS } from '../packages/catalog-core/src/index.js'
 import { parseProductIconOverrides } from '../packages/catalog-core/src/icons.js'
-import { resolveSiteIcon, type SiteIconFetcher } from '../packages/catalog-core/src/site-icons.js'
+import { resolveSiteIcon } from '../packages/catalog-core/src/site-icons.js'
 
 /**
  * Re-resolves every curated site override against the policy a live build uses.
@@ -12,35 +12,14 @@ import { resolveSiteIcon, type SiteIconFetcher } from '../packages/catalog-core/
  * starts answering 403 — the next live build silently publishes a monogram
  * again, and nothing reports it. This walks the configured list and says which
  * entries no longer resolve.
+ *
+ * The fetcher is the build's own, headers included. A verifier carrying its own
+ * `accept`/`user-agent` reports sites healthy that the build then fails to
+ * resolve, which is how a curated entry can rot unnoticed.
  */
 const flags = new Set(process.argv.slice(2))
 const strict = flags.has('--strict')
 const asJson = flags.has('--json')
-
-const fetcher: SiteIconFetcher = {
-  fetchText: async (url) => {
-    const response = await fetch(url, {
-      headers: {
-        accept: 'text/html,application/xhtml+xml',
-        'user-agent': 'adea-catalog-curation/1.0',
-      },
-      redirect: 'follow',
-      signal: AbortSignal.timeout(15_000),
-    })
-    if (!response.ok) throw new Error(`HTTP ${response.status}`)
-    return await response.text()
-  },
-  fetchBytes: async (url) => {
-    const response = await fetch(url, {
-      headers: { accept: 'image/*', 'user-agent': 'adea-catalog-curation/1.0' },
-      redirect: 'follow',
-      signal: AbortSignal.timeout(15_000),
-    })
-    if (!response.ok) throw new Error(`HTTP ${response.status}`)
-    return new Uint8Array(await response.arrayBuffer())
-  },
-  digest: (bytes) => byteDigest(bytes),
-}
 
 const configPath = join(process.cwd(), 'config', 'product-icons.json')
 const overrides = parseProductIconOverrides(JSON.parse(await fs.readFile(configPath, 'utf8')))
@@ -53,7 +32,12 @@ const sites = Object.entries(overrides.overrides)
 const resolved: Record<string, string> = {}
 const failures: Record<string, string> = {}
 for (const [productKey, site] of sites) {
-  const result = await resolveSiteIcon(site, fetcher)
+  // One deadline per site, as a live build gives each product: a vendor that
+  // never answers spends its own budget and not the next site's.
+  const result = await resolveSiteIcon(
+    site,
+    createSiteIconFetcher(AbortSignal.timeout(SITE_FETCH_TIMEOUT_MS))
+  )
   if ('failed' in result) {
     failures[productKey] = `${site}: ${result.failed}`
     if (!asJson) console.error(`FAIL  ${productKey.padEnd(34)} ${site.padEnd(46)} ${result.failed}`)

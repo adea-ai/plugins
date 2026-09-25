@@ -48,7 +48,12 @@ import {
   type ProductIconOverrides,
 } from './icons.js'
 import { stageIconBytes } from './icon-mirror.js'
-import { isVendorHomepage, resolveSiteIcon, type SiteIcon } from './site-icons.js'
+import {
+  isVendorHomepage,
+  resolveSiteIcon,
+  type SiteIcon,
+  type SiteIconFetcher,
+} from './site-icons.js'
 import { normalizeDisplayName } from './display-name.js'
 import { immutableAssetUrl } from './publication.js'
 
@@ -881,11 +886,7 @@ async function resolveFavicon(input: {
   // Bound both fetches: a vendor site that never answers must not stall a
   // catalogue build. A timeout simply leaves the product on its monogram.
   const signal = AbortSignal.timeout(SITE_FETCH_TIMEOUT_MS)
-  const resolved = await resolveSiteIcon(homepage!, {
-    fetchText: async (url) => new TextDecoder().decode(await fetchUpstreamBytes(url, signal)),
-    fetchBytes: (url) => fetchUpstreamBytes(url, signal),
-    digest: byteDigest,
-  })
+  const resolved = await resolveSiteIcon(homepage!, createSiteIconFetcher(signal))
   return 'contentType' in resolved ? resolved : undefined
 }
 
@@ -2066,7 +2067,7 @@ export function rawContentUrl(repositoryUrl: string, commitSha: string, path: st
 /** Fetches bytes from an allow-listed upstream URL with the shared retry policy. */
 export async function fetchUpstreamBytes(url: string, signal?: AbortSignal): Promise<Uint8Array> {
   const response = await fetchUpstream(url, {
-    headers: githubRequestHeaders(),
+    headers: upstreamRequestHeaders(url),
     ...(signal ? { signal } : {}),
   })
   if (!response.ok) throw new Error(`HTTP_FETCH_FAILED: ${response.status}: ${url}`)
@@ -2079,20 +2080,72 @@ function rawUrl(repositoryUrl: string, commitSha: string, path: string): string 
 }
 
 async function fetchText(url: string): Promise<string> {
-  const response = await fetch(url, { headers: githubRequestHeaders() })
+  const response = await fetch(url, { headers: upstreamRequestHeaders(url) })
   if (!response.ok) throw new Error(`HTTP_FETCH_FAILED: ${response.status}:${url}`)
   return response.text()
 }
 
-function githubRequestHeaders(): Record<string, string> {
+const UPSTREAM_USER_AGENT = 'agent-hq-plugin-marketplace'
+
+/**
+ * Hosts that may receive the repository credential.
+ *
+ * Everything else is fetched anonymously. The token this build runs with
+ * authorises repository writes for the duration of the job, so a vendor
+ * homepage, its icon CDN or any other third party must never be handed it.
+ */
+const GITHUB_CREDENTIAL_HOSTS = /(^|\.)(github\.com|githubusercontent\.com)$/
+
+/**
+ * Request headers for one upstream URL.
+ *
+ * The credential and GitHub's media type are attached only for GitHub hosts.
+ * Sending them elsewhere is not merely a needless disclosure: `appwrite.io`
+ * answers a page carrying an `Authorization` header with HTTP 500, and a CDN
+ * asked for an image with `accept: application/vnd.github+json` can answer with
+ * bytes that are not the mark. A build that did this dropped marks it had
+ * already curated, and the curation verifier — which used its own anonymous
+ * headers — could not see it.
+ */
+export function upstreamRequestHeaders(url: string): Record<string, string> {
+  const anonymous = { 'user-agent': UPSTREAM_USER_AGENT }
+  let host: string
+  try {
+    host = new URL(url).hostname.toLowerCase()
+  } catch {
+    return anonymous
+  }
   const token = process.env.GITHUB_TOKEN ?? process.env.GH_TOKEN
-  return token
-    ? {
-        accept: 'application/vnd.github+json',
-        authorization: `Bearer ${token}`,
-        'user-agent': 'agent-hq-plugin-marketplace',
-      }
-    : { 'user-agent': 'agent-hq-plugin-marketplace' }
+  if (!token || !GITHUB_CREDENTIAL_HOSTS.test(host)) return anonymous
+  return {
+    accept: 'application/vnd.github+json',
+    authorization: `Bearer ${token}`,
+    'user-agent': UPSTREAM_USER_AGENT,
+  }
+}
+
+/**
+ * Fetches vendor-site documents exactly as a live build does.
+ *
+ * Shared with the curation verifier so both ask a vendor the same question: a
+ * verifier with its own headers reports sites healthy that the build then fails
+ * to resolve.
+ *
+ * `deadline` optionally bounds one product's whole resolution. The per-request
+ * ceiling is always created fresh inside each fetch, so a caller that passes a
+ * deadline — or shares one — can never hand later requests an already-expired
+ * signal.
+ */
+export function createSiteIconFetcher(deadline?: AbortSignal): SiteIconFetcher {
+  const bounded = (): AbortSignal => {
+    const ceiling = AbortSignal.timeout(SITE_FETCH_TIMEOUT_MS)
+    return deadline ? AbortSignal.any([deadline, ceiling]) : ceiling
+  }
+  return {
+    fetchText: async (url) => new TextDecoder().decode(await fetchUpstreamBytes(url, bounded())),
+    fetchBytes: (url) => fetchUpstreamBytes(url, bounded()),
+    digest: byteDigest,
+  }
 }
 
 /** Ceiling for a single product-site request during icon discovery. */
@@ -2183,12 +2236,10 @@ export class NetworkSnapshotLoader implements SnapshotLoader {
     const key = `${owner}/${repo}@${commitSha}`
     let tree = this.#trees.get(key)
     if (!tree) {
-      const response = await fetchUpstream(
-        `https://api.github.com/repos/${owner}/${repo}/git/trees/${commitSha}?recursive=1`,
-        {
-          headers: githubRequestHeaders(),
-        }
-      )
+      const treeUrl = `https://api.github.com/repos/${owner}/${repo}/git/trees/${commitSha}?recursive=1`
+      const response = await fetchUpstream(treeUrl, {
+        headers: upstreamRequestHeaders(treeUrl),
+      })
       if (!response.ok)
         throw new PluginSafetyError('PLUGIN_SOURCE_UNAVAILABLE', [`${owner}/${repo}`])
       const payload = (await response.json()) as { truncated?: boolean; tree?: TreeEntry[] }
@@ -2220,8 +2271,9 @@ export class NetworkSnapshotLoader implements SnapshotLoader {
       if (size > this.#policy.maxFileBytes || totalSize + size > this.#policy.maxBytesPerPlugin)
         throw new Error(`PLUGIN_SIZE_POLICY: ${entry.path}`)
       totalSize += size
-      const response = await fetchUpstream(rawUrl(repositoryUrl, commitSha, entry.path), {
-        headers: githubRequestHeaders(),
+      const fileUrl = rawUrl(repositoryUrl, commitSha, entry.path)
+      const response = await fetchUpstream(fileUrl, {
+        headers: upstreamRequestHeaders(fileUrl),
       })
       if (!response.ok) {
         if (response.status === 404)
