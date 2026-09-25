@@ -277,6 +277,9 @@ describe('artifact shards', () => {
       }
     )
     const navigation = JSON.parse(artifacts['categories.v1.json']!)
+    expect(navigation.catalogIndexUrl).toBe(
+      `https://github.com/adea-ai/plugins/releases/download/catalog/${base.catalogId.slice('catalog:'.length)}/catalog-index.v1.json`
+    )
     expect(Object.keys(navigation.brandMarks)).toEqual(['calendar'])
     expect(navigation.brandMarks.calendar).toContain(
       `/catalog/${base.catalogId.slice(8)}/${svgAsset}`
@@ -289,6 +292,7 @@ describe('artifact shards', () => {
       })['categories.v1.json']!
     )
     expect(offline.brandMarks).toEqual({})
+    expect(offline.catalogIndexUrl).toBeUndefined()
   })
 
   test('declares exactly the mirrored assets the index references', () => {
