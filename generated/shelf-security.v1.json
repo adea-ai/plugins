@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:caad4379ad867c0d7cd395064656bdfbc4e49f592ca1ff3c4a6266d9fdd3ca89",
+  "catalogId": "catalog:6e7f499b1973aaaad55affa270c2b3970233ed9be837d3c635f6a492927b3e4e",
   "category": "security",
   "products": [
     {
@@ -22,7 +22,7 @@
         "pi": "unknown"
       },
       "description": "Skills for working with NightVision, a DAST and API Discovery platform that finds exploitable vulnerabilities in web applications and REST APIs",
-      "displayName": "nightvision",
+      "displayName": "Nightvision",
       "homepage": "https://github.com/nvsecurity/nightvision-skills",
       "icon": {
         "asset": "icon-cee14d54dd789fda5a542d3e19f38eaf.png",
@@ -110,7 +110,7 @@
         "pi": "partially-supported"
       },
       "description": "Manage Zscaler cloud security platform including ZPA (private access), ZIA (internet access), ZDX (digital experience), ZCC (client connector), EASM (attack surface), and Z-Insights (analytics). Create and manage policies, troubleshoot connectivity, audit security configurations, and investigate incidents across the full Zscaler ecosystem.",
-      "displayName": "zscaler",
+      "displayName": "Zscaler",
       "homepage": "https://github.com/zscaler/zscaler-mcp-server",
       "icon": {
         "asset": "icon-fb71a91ef4937bdac04520d7e7b1852b.svg",
@@ -214,7 +214,7 @@
         "pi": "unknown"
       },
       "description": "Automate API security directly in Claude Code with 42Crunch - automatically audit OpenAPI specs, detect vulnerabilities aligned with OWASP API Security risks (including BOLA/BFLA), and apply AI-powered fixes. Designed for AI-assisted development workflows, it provides continuous guardrails through an audit->scan->remediate->validate loop, ensuring APIs meet enterprise security standards before deployment.",
-      "displayName": "42crunch-api-security-testing",
+      "displayName": "42Crunch API Security Testing",
       "homepage": "https://42crunch.com/",
       "icon": {
         "asset": "icon-5d4bbaf47f8d198da2ef59d8234d3885.png",
@@ -382,8 +382,8 @@
         "Anthropic"
       ],
       "capabilitySummary": {
-        "agent": 8,
-        "executable": 19,
+        "agent": 9,
+        "executable": 22,
         "hook": 3,
         "skill": 1
       },
@@ -400,7 +400,7 @@
         "pi": "partially-supported"
       },
       "description": "Deep vulnerability scanning of your own code, run entirely inside your Claude Code session at a chosen effort tier, with every finding challenged before it is reported and the verification tally computed in code. Turns surviving findings into targeted patches, each verified by a panel of agents, that you apply when you choose.",
-      "displayName": "claude-security",
+      "displayName": "Claude Security",
       "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-security",
       "icon": null,
       "keywords": [
@@ -419,10 +419,10 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/claude-security",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
-        "canonicalContentDigest": "sha256:3fa44a9a852a8e18432490acc3d5d86eb3bb09e0326e10a08fef07ac94226475",
+        "canonicalContentDigest": "sha256:9a181fad2ad1673e05007fffbe259ddffa70149f8f2aa6c14309a848027487fe",
         "capabilities": [
           {
             "name": "agent",
@@ -442,15 +442,15 @@
           }
         ],
         "contentResolution": "complete",
-        "packageDigest": "sha256:a94d62c08a7a9975ead819b50e6e113a21d2406c95882e776f1038f2bd5618b4",
+        "packageDigest": "sha256:a642243f4885444f7f37cc514a7d1d23e33caee7dab1be904ba8d72d2519172c",
         "packageStatus": "partial",
-        "releaseId": "release:706648e3b5eed698cdbc42aaeec7dbbc87c98283d71129277daa388fe636f756",
+        "releaseId": "release:1e0db1ba678a268a76fd1550503173cdd9dd38437374f8b6d368db4c3e948df5",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
-        "upstreamVersion": "0.11.0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
+        "upstreamVersion": "0.12.0"
       },
-      "releaseId": "release:706648e3b5eed698cdbc42aaeec7dbbc87c98283d71129277daa388fe636f756",
+      "releaseId": "release:1e0db1ba678a268a76fd1550503173cdd9dd38437374f8b6d368db4c3e948df5",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -493,7 +493,7 @@
         "pi": "partially-supported"
       },
       "description": "Codex Security workflows for security scans, analysis, and investigation.",
-      "displayName": "codex-security",
+      "displayName": "Codex Security",
       "icon": {
         "asset": "icon-9b9c2b09b2fa064611fb62307d321d5c.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-9b9c2b09b2fa064611fb62307d321d5c.png",

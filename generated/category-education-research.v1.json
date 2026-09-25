@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:caad4379ad867c0d7cd395064656bdfbc4e49f592ca1ff3c4a6266d9fdd3ca89",
+  "catalogId": "catalog:6e7f499b1973aaaad55affa270c2b3970233ed9be837d3c635f6a492927b3e4e",
   "category": "education-research",
   "pluginCount": 13,
   "productCount": 12,
@@ -52,7 +52,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "teaching",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:80446f7306ec88594f42a8bb09bbade4601754c5db8b082fbaaf0e4b319770ab",
@@ -65,13 +65,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:c8564cd60fb82a2b7f64985d2bf350746b671dc7566c0865d928ced9eadd6f1f",
         "packageStatus": "portable",
-        "releaseId": "release:e86e195df854acad2eafc22d58f5e57c786ec76972de70ac3f908a6978896288",
+        "releaseId": "release:38dbe276b0f047f6b6c2d6ed4a6d7d942b2fe6f41c5b71ac1803332911651448",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:e86e195df854acad2eafc22d58f5e57c786ec76972de70ac3f908a6978896288",
+      "releaseId": "release:38dbe276b0f047f6b6c2d6ed4a6d7d942b2fe6f41c5b71ac1803332911651448",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -138,7 +138,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "continual-learning",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:9388a810088ad9c2f4aff68c27c0f40c9addeac3f12b9d20c367ad530f764dfd",
@@ -159,13 +159,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6504719a147b348d83a1244767f28dc4f78fd31d90064124fd9d327b3d6dd3e4",
         "packageStatus": "partial",
-        "releaseId": "release:a7e4cb99954aad54fac91f42ab78b00457e9e5ce39b203eb1f789eafd45f969c",
+        "releaseId": "release:b43adabbb022a9ddee61c9b907624d6608da0c7ea388ee81c67693bc01e28a78",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:a7e4cb99954aad54fac91f42ab78b00457e9e5ce39b203eb1f789eafd45f969c",
+      "releaseId": "release:b43adabbb022a9ddee61c9b907624d6608da0c7ea388ee81c67693bc01e28a78",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -205,7 +205,17 @@
       "description": "Turn any learning intent into a personalized Coursera experience. Asks three quick questions (topic, familiarity, preferred format), searches Coursera's catalog, and delivers the right next step — a course, hands-on project, short video, or live roleplay — then maps a path forward. Requires the Coursera connector for catalog tools.",
       "displayName": "Learn with Coursera",
       "homepage": "https://github.com/coursera/skills",
-      "icon": null,
+      "icon": {
+        "asset": "icon-18dcaf9572c721b7ea9f22d75ab5ae8f.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-18dcaf9572c721b7ea9f22d75ab5ae8f.png",
+        "bytes": 9194,
+        "contentType": "image/png",
+        "digest": "sha256:18dcaf9572c721b7ea9f22d75ab5ae8fa38a273d87e32118e682e7966f3b076d",
+        "homepage": "https://www.coursera.org/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/apple-touch-icon-v2-180x180.png"
+      },
       "keywords": [
         "coursera",
         "education-research",
@@ -281,7 +291,7 @@
         "pi": "partially-supported"
       },
       "description": "Work with Zotero from Codex: search your library, export BibTeX, insert citations, and import references through the Zotero desktop app.",
-      "displayName": "zotero",
+      "displayName": "Zotero",
       "icon": {
         "asset": "icon-7ac4579b4a075173126862ebf70243ff.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-7ac4579b4a075173126862ebf70243ff.png",
@@ -376,7 +386,7 @@
         "pi": "unknown"
       },
       "description": "Consensus is the go-to MCP for academic research. Connect directly to 220M+ peer-reviewed papers to search, synthesize, and build structured research outputs from within your conversation.\n\nRun literature reviews, build boolean search strategies, generate bibliographies, identify research gaps, and draft cited content — grounded in studies from PubMed, Semantic Scholar, and ArXiv. Pre-built workflows handle complex tasks in minutes: systematic reviews, curriculum reading lists, grant research with novelty analysis, and clinical evidence synthesis.\n\nBuilt for researchers, students, faculty, and clinicians across biomedical, social science, STEM, and all academic disciplines.",
-      "displayName": "consensus",
+      "displayName": "Consensus",
       "icon": null,
       "keywords": [
         "consensus",
@@ -544,7 +554,7 @@
         "pi": "unknown"
       },
       "description": "Predict structures, screen molecules and proteins, and design binders.",
-      "displayName": "boltz-api-cli",
+      "displayName": "Boltz API CLI",
       "icon": {
         "asset": "icon-740df6167e01959f2b1cadbcabb6e3d6.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-740df6167e01959f2b1cadbcabb6e3d6.png",
@@ -643,7 +653,7 @@
         "pi": "partially-supported"
       },
       "description": "Adds educational insights about implementation choices and codebase patterns (mimics the deprecated Explanatory output style)",
-      "displayName": "explanatory-output-style",
+      "displayName": "Explanatory Output Style",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/explanatory-output-style",
       "icon": null,
       "keywords": [
@@ -664,7 +674,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/explanatory-output-style",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:d291f74406dc83bdd56a4bf9870d266f26f2f4969a9ad56c1f71086dc64847ce",
@@ -681,13 +691,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:282ae2e058e6b3a55677b77b5d5149c1ea184c6617c5dacf980aa5a86987a63a",
         "packageStatus": "partial",
-        "releaseId": "release:af6d133c7293be0a5f234f45fcce2aeb97ff0d0777e24867d5d0f9b5db33457f",
+        "releaseId": "release:9cf127247c52604794d9de7fcd551559dd8a3e3a724cd11ee8176975c0c3b02f",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:af6d133c7293be0a5f234f45fcce2aeb97ff0d0777e24867d5d0f9b5db33457f",
+      "releaseId": "release:9cf127247c52604794d9de7fcd551559dd8a3e3a724cd11ee8176975c0c3b02f",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -728,7 +738,7 @@
         "pi": "partially-supported"
       },
       "description": "Interactive learning mode that requests meaningful code contributions at decision points (mimics the unshipped Learning output style)",
-      "displayName": "learning-output-style",
+      "displayName": "Learning Output Style",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/learning-output-style",
       "icon": null,
       "keywords": [
@@ -749,7 +759,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/learning-output-style",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:0ff43d817c13f8154730f4b6f2610f70b2aacf976fd43b8977b59d4991154564",
@@ -766,13 +776,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:2c650ab691fdc726a01b8680df1c06f2128259fcf2467032980c7a96e53a1ece",
         "packageStatus": "partial",
-        "releaseId": "release:0f3fa0c9217d0c8e5453be86adb1a50386070428d7579da9343d76cd6b9afedc",
+        "releaseId": "release:614875c4a221a1928724daa9bbc4912f7bff26094e58abcc44e0464c63f558e0",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:0f3fa0c9217d0c8e5453be86adb1a50386070428d7579da9343d76cd6b9afedc",
+      "releaseId": "release:614875c4a221a1928724daa9bbc4912f7bff26094e58abcc44e0464c63f558e0",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -814,7 +824,7 @@
         "pi": "unknown"
       },
       "description": "General life-sciences research workflows with query routing, evidence synthesis, and optional parallel subagent analysis across genetics, omics, biology, chemistry, structure, clinical evidence, and public dataset discovery.",
-      "displayName": "life-science-research",
+      "displayName": "Life Science Research",
       "icon": {
         "asset": "icon-02ad1294721616472a6a58783a8e0a3b.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-02ad1294721616472a6a58783a8e0a3b.png",
@@ -912,7 +922,7 @@
         "pi": "partially-supported"
       },
       "description": "Solve competition math (IMO, Putnam, USAMO) with adversarial verification that catches what self-verification misses. Fresh-context verifiers attack proofs with specific failure patterns. Calibrated abstention over bluffing.",
-      "displayName": "math-olympiad",
+      "displayName": "Math Olympiad",
       "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/math-olympiad",
       "icon": null,
       "keywords": [
@@ -932,7 +942,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/math-olympiad",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:3b0f4966a6bb13f763403cf53a96389243ad5c757fb6e247ff102f1c93e461f9",
@@ -949,12 +959,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:1fab05db58e048ca498253a22331eeb8aa6e6b2fe338e451a1a4dd25f14f5cc0",
         "packageStatus": "partial",
-        "releaseId": "release:6fc0c7f34821418bd05c41640511fb6b7bbf25b824119873e7d0b88846661ef0",
+        "releaseId": "release:f7c623c75e6837c7689f2bb833da972910ef00fc5bc06a9cc44a0cfcf533d862",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:6fc0c7f34821418bd05c41640511fb6b7bbf25b824119873e7d0b88846661ef0",
+      "releaseId": "release:f7c623c75e6837c7689f2bb833da972910ef00fc5bc06a9cc44a0cfcf533d862",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -994,7 +1004,7 @@
         "pi": "unknown"
       },
       "description": "Guided NGS intake, local execution, and public-pipeline routing for BCL, FASTQ, DNA variant, RNA-seq, single-cell, epigenomics, amplicon, and metagenomics analyses, with deeper decision skills for high-risk assay branches.",
-      "displayName": "ngs-analysis",
+      "displayName": "NGS Analysis",
       "icon": {
         "asset": "icon-de2f5931b97d9b2ce6325208dd514c69.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-de2f5931b97d9b2ce6325208dd514c69.png",
