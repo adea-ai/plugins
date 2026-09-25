@@ -14,7 +14,7 @@
     "catalog-index.v1.json": "sha256:0b4d2b3d9831e98f58df65eda5b7fabae8e3e73e0a8af021b49bb645cc09d2e8",
     "catalog-summary.v1.json": "sha256:4ad88310611e86ce2d92bbb23c4bbd4bb09d097e320811ef2afcb4432a354c2e",
     "catalog.v1.json": "sha256:a591bc05a00ddd4707858b617b479453558839370ffac8ce00cfcbd9cb38b53f",
-    "categories.v1.json": "sha256:ad66b4d73f21eb70c83f849da08838603b6f2f7f0145a07b0cb6ca9f3ede987c",
+    "categories.v1.json": "sha256:5f414e35f343ced7af2ea7ce889828423ef31139ebf919dd34e1cb8b4470c1e8",
     "category-business-operations.v1.json": "sha256:b50060493780b98ff2e0df53cbc3d3bc52fa50ce125bfee88d120a62b2a4b1ea",
     "category-data-analytics.v1.json": "sha256:9d418e4eaab7855c94ccea4a32787187ec859d426b665f384e56cae9fec2f259",
     "category-developer-tools.v1.json": "sha256:8ae9e9e0684d95742458b212206322aca55552808a64d74a687a30ca0983593f",

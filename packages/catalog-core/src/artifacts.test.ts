@@ -258,6 +258,39 @@ describe('artifact shards', () => {
     )
   })
 
+  test('carries compiled marks in the navigation artifact', () => {
+    const base = catalog([
+      plugin({
+        sourceId: 'cursor-official',
+        name: 'calendar',
+        categories: ['productivity'],
+        icon: { path: 'assets/logo.svg', bytes: CLEAN_SVG },
+      }),
+      plugin({ sourceId: 'claude-official', name: 'sales', categories: ['business-operations'] }),
+    ])
+    const artifacts = createArtifacts(
+      base,
+      lockFor([base.plugins[0]!, base.plugins[1]!]) as never,
+      {
+        curationDiagnostics: false,
+        publicationRepositoryUrl: 'https://github.com/adea-ai/plugins',
+      }
+    )
+    const navigation = JSON.parse(artifacts['categories.v1.json']!)
+    expect(Object.keys(navigation.brandMarks)).toEqual(['calendar'])
+    expect(navigation.brandMarks.calendar).toContain(
+      `/catalog/${base.catalogId.slice(8)}/${svgAsset}`
+    )
+
+    // An unpublished build carries no marks rather than URLs that would not resolve.
+    const offline = JSON.parse(
+      createArtifacts(base, lockFor([base.plugins[0]!, base.plugins[1]!]) as never, {
+        curationDiagnostics: false,
+      })['categories.v1.json']!
+    )
+    expect(offline.brandMarks).toEqual({})
+  })
+
   test('declares exactly the mirrored assets the index references', () => {
     const { artifacts, index } = artifactsOf(plugins)
     const integrity = JSON.parse(artifacts['integrity.json']!)
