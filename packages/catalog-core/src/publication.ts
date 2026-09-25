@@ -53,6 +53,12 @@ export interface ReleaseAssetAudit {
   /** Assets a draft release must drop because this build does not declare them. */
   readonly remove: readonly string[]
   /**
+   * Declared assets this build has no staged bytes for. They can never be
+   * compared, so they count as a disagreement: a release cannot be called
+   * complete on the strength of a declaration alone.
+   */
+  readonly unstaged: readonly string[]
+  /**
    * Why the release cannot be brought into agreement, when it cannot. A
    * published release is immutable, so a disagreement found there is not
    * repairable in place and publication must stop instead of promoting it.
@@ -78,22 +84,42 @@ export function auditReleaseAssets(input: {
   readonly releaseIsDraft?: boolean
   readonly releaseAssets?: readonly ReleaseAssetState[]
   readonly declared: readonly DeclaredAsset[]
+  readonly unstaged?: readonly string[]
 }): ReleaseAssetAudit {
   const match = /^catalog:([a-f0-9]{64})$/.exec(input.catalogId)
   if (!match) throw new Error(`CATALOG_ID_INVALID: ${input.catalogId}`)
+  const derivedTag = `catalog/${match[1]}`
+  const identity: ReleaseAssetAudit['identity'] =
+    input.releaseAssets === undefined
+      ? 'absent'
+      : input.releaseTag === derivedTag
+        ? 'matches'
+        : 'different'
   const empty = {
     missing: [] as string[],
     divergent: [] as string[],
     unverifiable: [] as string[],
     extra: [] as string[],
+    unstaged: [] as string[],
     upload: [] as string[],
     remove: [] as string[],
     agrees: false,
   }
-  if (input.releaseAssets === undefined) return { identity: 'absent', ...empty }
-  if (input.releaseTag !== `catalog/${match[1]}`)
+  const unstagedAll = [...new Set(input.unstaged ?? [])].toSorted()
+  // An incomplete checkout blocks in every direction: a release cannot be
+  // created, repaired or verified from bytes this build does not have, and a
+  // declaration is not a substitute for them.
+  if (unstagedAll.length > 0)
     return {
-      identity: 'different',
+      identity,
+      ...empty,
+      unstaged: unstagedAll,
+      blocked: `this checkout has no staged bytes for ${unstagedAll.length} declared asset(s) (${unstagedAll.slice(0, 3).join(', ')}${unstagedAll.length > 3 ? ', …' : ''}); stage them with \`bun run catalog mirror-icons\` or publish from a snapshot that carries them, because a release cannot be checked against a declaration alone`,
+    }
+  if (input.releaseAssets === undefined) return { identity, ...empty }
+  if (identity === 'different')
+    return {
+      identity,
       ...empty,
       blocked: `release ${input.releaseTag} does not belong to ${input.catalogId}; refusing to compare or repair across catalog identities`,
     }
@@ -124,21 +150,22 @@ export function auditReleaseAssets(input: {
     .toSorted()
   const disagrees = missing.length + divergent.length + unverifiable.length + extra.length > 0
   const isDraft = input.releaseIsDraft === true
+  const blocked =
+    disagrees && !isDraft
+      ? `published release ${input.releaseTag} is immutable but does not carry this build's bytes (missing: ${missing.length}, divergent: ${divergent.length}, unverifiable: ${unverifiable.length}, extra: ${extra.length}); the tag is immutable, so the catalog cannot be repaired in place and a new catalog identity is required before publication`
+      : undefined
   return {
-    identity: 'matches',
+    identity,
     missing: missing.toSorted(),
     divergent: divergent.toSorted(),
     unverifiable: unverifiable.toSorted(),
     extra,
+    unstaged: [],
     // A draft is the only release GitHub lets an upload change, so the repair
     // lists stay empty everywhere else and `blocked` explains the refusal.
     upload: isDraft ? [...missing, ...divergent, ...unverifiable].toSorted() : [],
     remove: isDraft ? extra : [],
-    ...(disagrees && !isDraft
-      ? {
-          blocked: `published release ${input.releaseTag} is immutable but does not carry this build's bytes (missing: ${missing.length}, divergent: ${divergent.length}, unverifiable: ${unverifiable.length}, extra: ${extra.length}); the tag is immutable, so the catalog cannot be repaired in place and a new catalog identity is required before publication`,
-        }
-      : {}),
+    ...(blocked === undefined ? {} : { blocked }),
     agrees: !disagrees,
   }
 }
