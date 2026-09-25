@@ -144,6 +144,18 @@ export interface ConsumerProduct {
   readonly upstreamName: string
   readonly description: string
   readonly sourceId: string
+  /**
+   * Who publishes the product, from the canonical variant. A card renders the
+   * first author as the publisher, so it travels with the product.
+   */
+  readonly authors: readonly string[]
+  /** Where the canonical release came from, for source links and audit. */
+  readonly provenance: {
+    readonly repositoryUrl: string
+    readonly resolvedCommitSha: string
+    readonly manifestPath: string
+    readonly pluginSubdirectory: string
+  }
   readonly categories: readonly string[]
   readonly primaryCategory: string
   readonly license: string
@@ -154,6 +166,13 @@ export interface ConsumerProduct {
   /** The release `pluginId` pins, with the facts an install needs. */
   readonly release: ConsumerRelease
   readonly keywords: readonly string[]
+  /** Security classification of the canonical variant, for a detail panel. */
+  readonly securityClassification: {
+    readonly level: string
+    readonly reasons: readonly string[]
+    readonly permissionSensitiveChanges: readonly string[]
+    readonly contentResolution: string
+  }
   readonly icon: ProductIcon | null
   readonly monogram: ProductMonogram
 }
@@ -432,6 +451,13 @@ export function buildConsumerIndex(input: {
       description:
         canonical.description || (variants.find((v) => v.description)?.description ?? ''),
       sourceId: canonical.sourceId,
+      authors: [...canonical.authors],
+      provenance: {
+        repositoryUrl: canonical.provenance.repositoryUrl,
+        resolvedCommitSha: currentRelease(canonical)!.resolvedCommitSha,
+        manifestPath: canonical.provenance.manifestPath,
+        pluginSubdirectory: canonical.provenance.pluginSubdirectory,
+      },
       // A product's categories are the union across its variants: sources
       // disagree (one marketplace files Slack under productivity, another under
       // communication), and a product belongs wherever any variant is filed.
@@ -444,6 +470,14 @@ export function buildConsumerIndex(input: {
       releaseId: canonical.currentReleaseId,
       release: describeRelease(canonical),
       keywords: [...canonical.keywords],
+      securityClassification: {
+        level: canonical.securityClassification.level,
+        reasons: [...canonical.securityClassification.reasons],
+        permissionSensitiveChanges: [
+          ...canonical.securityClassification.permissionSensitiveChanges,
+        ],
+        contentResolution: canonical.securityClassification.contentResolution,
+      },
       icon: selectProductIcon(variants, canonical, catalogId, input.publicationRepositoryUrl),
       monogram: monogramFor(selectDisplayName(variants, canonical), productKey),
     }

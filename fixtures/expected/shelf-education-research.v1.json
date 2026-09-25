@@ -3,6 +3,9 @@
   "category": "education-research",
   "products": [
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "rule": 1,
         "skill": 1
@@ -36,6 +39,12 @@
       "pluginId": "plugin:cursor-official:teaching",
       "primaryCategory": "developer-tools",
       "productKey": "teaching",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "teaching",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "2222222222222222222222222222222222222222"
+      },
       "release": {
         "canonicalContentDigest": "sha256:ffe69c9130cc5928a7e53fe30e7d931a6b3d3d55c689ff1b5eadce5da41fe500",
         "capabilities": [
@@ -56,6 +65,14 @@
         "upstreamVersion": "0.3.0"
       },
       "releaseId": "release:18ce8f072ca693885ce731feffbd78dd1307c81a8ad43920edf991e2032176db",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "teaching",
       "variantPluginIds": [

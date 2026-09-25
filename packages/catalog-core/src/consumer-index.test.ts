@@ -55,8 +55,20 @@ function plugin(input: PluginInput): Plugin {
       cursor: { status: 'native', reasons: [], responsibleCapabilities: [] },
     },
     license: { name: 'MIT', source: 'plugin-manifest' },
-    provenance: {},
-    securityClassification: {},
+    provenance: {
+      manifestPath: 'marketplace.json',
+      pluginSubdirectory: '.',
+      repositoryUrl: `https://github.com/${input.sourceId}/marketplace`,
+      resolvedCommitSha: 'a'.repeat(40),
+      sourceManifestDigest: `sha256:${'d'.repeat(64)}`,
+      upstreamEntryDigest: `sha256:${'d'.repeat(64)}`,
+    },
+    securityClassification: {
+      level: 'low',
+      reasons: [],
+      permissionSensitiveChanges: [],
+      contentResolution: 'complete',
+    },
   } as unknown as Plugin
 }
 

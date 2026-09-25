@@ -3,6 +3,9 @@
   "category": "security",
   "products": [
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "executable": 1,
         "hook": 1,
@@ -34,6 +37,12 @@
       "pluginId": "plugin:claude-official:security",
       "primaryCategory": "security",
       "productKey": "security",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/security",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "3333333333333333333333333333333333333333"
+      },
       "release": {
         "canonicalContentDigest": "sha256:8e18e64bebacea3c1de7a42034154db464616a94901f7b71c46cdf75351e800b",
         "capabilities": [
@@ -58,6 +67,18 @@
         "upstreamVersion": "1.0.0"
       },
       "releaseId": "release:5b02dbca6c6abb490bec11acb3e72e366d15232e9855f8b7cca4363bf596f932",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "security",
       "variantPluginIds": [
