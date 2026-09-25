@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.11](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.10...plugins-marketplace-v1.10.11) (2026-09-25)
+
+
+### Bug Fixes
+
+* **build:** keep the test run honest — no compiled copies, no permanently skipped check ([#127](https://github.com/adea-ai/plugins/issues/127)) ([daa5760](https://github.com/adea-ai/plugins/commit/daa57601e688798daf44944ed8f4c00c562811dd))
+
 ## [1.10.10](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.9...plugins-marketplace-v1.10.10) (2026-09-25)
 
 
