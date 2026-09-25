@@ -245,6 +245,21 @@ describe('deterministic catalog synchronization', () => {
       existingLock: first.lock!,
     })
     expect(unchanged.changed).toBe(false)
+    // Curation and build-logic changes produce different artifacts under the
+    // same pins, so an explicit force must not take the unchanged path — that
+    // is the only way such a change becomes publishable.
+    const forced = await synchronize({
+      sources,
+      categoryMap,
+      productAliases,
+      policy,
+      mode: 'offline',
+      fixtureRoot: join(process.cwd(), 'fixtures'),
+      existingLock: first.lock!,
+      forceRebuild: true,
+    })
+    expect(forced.changed).toBe(true)
+    expect(forced.artifacts).toEqual(first.artifacts)
     const rebuilt = await synchronize({
       sources,
       categoryMap,

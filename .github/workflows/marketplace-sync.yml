@@ -10,6 +10,11 @@ on:
         required: false
         type: boolean
         default: false
+      force-rebuild:
+        description: Rebuild and republish even when every source pin is unchanged, so a curation or build-logic change can land.
+        required: false
+        type: boolean
+        default: false
 
 # Repository writes are granted only to the synchronization job below.
 permissions: {}
@@ -50,9 +55,15 @@ jobs:
         if: inputs['bootstrap-only'] != true
         env:
           GH_TOKEN: ${{ github.token }}
+          FORCE_REBUILD: ${{ inputs['force-rebuild'] }}
         run: |
           set -o pipefail
-          bun packages/cli/src/index.ts sync --json | tee "$RUNNER_TEMP/catalog-change-report.json"
+          # Curation and build-logic changes alter the artifacts without moving a
+          # source pin, and the CLI would otherwise exit unchanged and publish
+          # nothing, so the dispatch input is forwarded as an explicit force.
+          args=(--json)
+          if [ "$FORCE_REBUILD" = "true" ]; then args+=(--force-rebuild); fi
+          bun packages/cli/src/index.ts sync "${args[@]}" | tee "$RUNNER_TEMP/catalog-change-report.json"
       - name: Validate catalog
         run: bun run catalog validate --json
       - name: Verify brand marks
