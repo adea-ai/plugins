@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.7.0](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.6.3...plugins-marketplace-v1.7.0) (2026-09-25)
+
+
+### Features
+
+* **catalog:** carry compiled brand marks in the navigation artifact ([#101](https://github.com/adea-ai/plugins/issues/101)) ([29e7458](https://github.com/adea-ai/plugins/commit/29e7458bef0725e86ceceb5a0d8ae1d52dc8e9ac))
+
+
+### Maintenance
+
+* **catalog:** curate brand marks from vendor-declared websites ([#98](https://github.com/adea-ai/plugins/issues/98)) ([78a17ba](https://github.com/adea-ai/plugins/commit/78a17ba88fc20dc28985be79495f8a352392110b))
+
 ## [1.6.3](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.6.2...plugins-marketplace-v1.6.3) (2026-09-25)
 
 
