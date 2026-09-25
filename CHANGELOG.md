@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.10.17](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.16...plugins-marketplace-v1.10.17) (2026-09-25)
+
+
+### Bug Fixes
+
+* **catalog:** read domain-style names as domains ([#141](https://github.com/adea-ai/plugins/issues/141)) ([7c4e2f7](https://github.com/adea-ai/plugins/commit/7c4e2f771aea1e651657eb8ff882b425800a8368))
+
+## [1.10.16](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.15...plugins-marketplace-v1.10.16) (2026-09-25)
+
+
+### Bug Fixes
+
+* **catalog:** point the two stubborn brand marks at hosts a build can reach ([#139](https://github.com/adea-ai/plugins/issues/139)) ([a98d309](https://github.com/adea-ai/plugins/commit/a98d30961902ad69dd4f09075ecec49c76aee6f3))
+
+## [1.10.15](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.14...plugins-marketplace-v1.10.15) (2026-09-25)
+
+
+### Bug Fixes
+
+* **catalog:** publish written display names and mark the brands still missing ([#137](https://github.com/adea-ai/plugins/issues/137)) ([5dabd25](https://github.com/adea-ai/plugins/commit/5dabd2577adeb80bda5beaf734ba69c6e6eeb11d))
+
 ## [1.10.14](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.13...plugins-marketplace-v1.10.14) (2026-09-25)
 
 

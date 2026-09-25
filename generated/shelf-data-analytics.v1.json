@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:caad4379ad867c0d7cd395064656bdfbc4e49f592ca1ff3c4a6266d9fdd3ca89",
+  "catalogId": "catalog:6e7f499b1973aaaad55affa270c2b3970233ed9be837d3c635f6a492927b3e4e",
   "category": "data-analytics",
   "products": [
     {
@@ -123,9 +123,19 @@
         "pi": "partially-supported"
       },
       "description": "Connect, query, and generate data insights for BigQuery datasets and data.",
-      "displayName": "bigquery-data-analytics",
+      "displayName": "BigQuery Data Analytics",
       "homepage": "https://github.com/gemini-cli-extensions/bigquery-data-analytics",
-      "icon": null,
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/bigquery",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
       "keywords": [
         "analytics",
         "bigquery",
@@ -306,9 +316,19 @@
         "pi": "partially-supported"
       },
       "description": "Create, connect, and interact with an AlloyDB Omni database and data.",
-      "displayName": "alloydb-omni",
+      "displayName": "AlloyDB Omni",
       "homepage": "https://github.com/gemini-cli-extensions/alloydb-omni",
-      "icon": null,
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/alloydb",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
       "keywords": [
         "alloydb",
         "data-analytics",
@@ -492,19 +512,9 @@
         "pi": "partially-supported"
       },
       "description": "Build high-quality datasets and computer vision models. Visualize datasets, analyze models, find duplicates, run inference, evaluate predictions, and develop custom plugins.",
-      "displayName": "fiftyone",
+      "displayName": "Fiftyone",
       "homepage": "https://docs.voxel51.com/",
-      "icon": {
-        "asset": "icon-3a32be5f9426a8f9af9804b84b0f7fc2.png",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3a32be5f9426a8f9af9804b84b0f7fc2.png",
-        "bytes": 1430,
-        "contentType": "image/png",
-        "digest": "sha256:3a32be5f9426a8f9af9804b84b0f7fc2453af3d410b4c4717eccb74b9e6596f2",
-        "homepage": "https://docs.voxel51.com/",
-        "kind": "favicon",
-        "path": null,
-        "url": "https://docs.voxel51.com/_static/favicon/favicon-128.png"
-      },
+      "icon": null,
       "keywords": [
         "data-analytics",
         "fiftyone"

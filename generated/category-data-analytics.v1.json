@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:caad4379ad867c0d7cd395064656bdfbc4e49f592ca1ff3c4a6266d9fdd3ca89",
+  "catalogId": "catalog:6e7f499b1973aaaad55affa270c2b3970233ed9be837d3c635f6a492927b3e4e",
   "category": "data-analytics",
   "pluginCount": 49,
   "productCount": 42,
@@ -125,9 +125,19 @@
         "pi": "partially-supported"
       },
       "description": "Connect, query, and generate data insights for BigQuery datasets and data.",
-      "displayName": "bigquery-data-analytics",
+      "displayName": "BigQuery Data Analytics",
       "homepage": "https://github.com/gemini-cli-extensions/bigquery-data-analytics",
-      "icon": null,
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/bigquery",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
       "keywords": [
         "analytics",
         "bigquery",
@@ -308,9 +318,19 @@
         "pi": "partially-supported"
       },
       "description": "Create, connect, and interact with an AlloyDB Omni database and data.",
-      "displayName": "alloydb-omni",
+      "displayName": "AlloyDB Omni",
       "homepage": "https://github.com/gemini-cli-extensions/alloydb-omni",
-      "icon": null,
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/alloydb",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
       "keywords": [
         "alloydb",
         "data-analytics",
@@ -494,19 +514,9 @@
         "pi": "partially-supported"
       },
       "description": "Build high-quality datasets and computer vision models. Visualize datasets, analyze models, find duplicates, run inference, evaluate predictions, and develop custom plugins.",
-      "displayName": "fiftyone",
+      "displayName": "Fiftyone",
       "homepage": "https://docs.voxel51.com/",
-      "icon": {
-        "asset": "icon-3a32be5f9426a8f9af9804b84b0f7fc2.png",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3a32be5f9426a8f9af9804b84b0f7fc2.png",
-        "bytes": 1430,
-        "contentType": "image/png",
-        "digest": "sha256:3a32be5f9426a8f9af9804b84b0f7fc2453af3d410b4c4717eccb74b9e6596f2",
-        "homepage": "https://docs.voxel51.com/",
-        "kind": "favicon",
-        "path": null,
-        "url": "https://docs.voxel51.com/_static/favicon/favicon-128.png"
-      },
+      "icon": null,
       "keywords": [
         "data-analytics",
         "fiftyone"
@@ -605,7 +615,7 @@
         "pi": "partially-supported"
       },
       "description": "Easily deploy managed PostgreSQL (pg), Kafka, OpenSearch, Clickhouse and other databases, streaming and apps. Free tier available, up and running in minutes.",
-      "displayName": "aiven",
+      "displayName": "Aiven",
       "homepage": "https://aiven.io/",
       "icon": {
         "asset": "icon-58109ffc55a61352f144b7f350e60bd0.svg",
@@ -696,7 +706,7 @@
         "pi": "partially-supported"
       },
       "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
-      "displayName": "alloydb",
+      "displayName": "AlloyDB",
       "homepage": "https://cloud.google.com/alloydb",
       "icon": {
         "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
@@ -999,7 +1009,7 @@
         "pi": "partially-supported"
       },
       "description": "Agent skills for Azure SQL Developer, the Azure SQL Database engine running locally in a container. Teaches your agent to run the engine, connect, migrate, scaffold, build RAG, wire CI, and go local-to-cloud, using the real Private Preview image instead of the SQL Server image.",
-      "displayName": "azure-sql-database-container",
+      "displayName": "Azure SQL Database Container",
       "homepage": "https://github.com/microsoft/azure-sql-database-container",
       "icon": {
         "asset": "icon-e3f4b7baefb22b89684c247a819e073b.svg",
@@ -1102,7 +1112,7 @@
         "pi": "unknown"
       },
       "description": "Official Bigdata.com plugin providing financial research, analytics, and intelligence tools powered by Bigdata MCP.",
-      "displayName": "Bigdata.com",
+      "displayName": "BigData.com",
       "homepage": "https://docs.bigdata.com/",
       "icon": {
         "asset": "icon-ff5f5c933aaaea83325fba4d01e0dd64.svg",
@@ -1207,7 +1217,7 @@
         "pi": "partially-supported"
       },
       "description": "Design, critique, implement, test, and export web data visualizations in Codex, including charts, maps, dashboards, Gantt, UML, scrollytelling, reports, slides, mobile views, shareable state, and advanced WebGL concepts.",
-      "displayName": "build-web-data-visualization",
+      "displayName": "Build Web Data Visualization",
       "icon": {
         "asset": "icon-98cb142b8fcff83824dd96eb86b66796.svg",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-98cb142b8fcff83824dd96eb86b66796.svg",
@@ -1308,7 +1318,7 @@
         "pi": "partially-supported"
       },
       "description": "28 best practice rules for ClickHouse schema design, query optimization, and data ingestion — prioritized by impact",
-      "displayName": "clickhouse-best-practices",
+      "displayName": "ClickHouse Best Practices",
       "homepage": "https://clickhouse.com/",
       "icon": {
         "asset": "icon-e80d52cd3a4a3c908cb0ae8d67962667.png",
@@ -1405,9 +1415,19 @@
         "pi": "partially-supported"
       },
       "description": "Connect and interact with a Cloud SQL for MySQL database and data.",
-      "displayName": "cloud-sql-mysql",
+      "displayName": "Cloud SQL MySQL",
       "homepage": "https://github.com/gemini-cli-extensions/cloud-sql-mysql",
-      "icon": null,
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/sql",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
       "keywords": [
         "cloud",
         "data-analytics",
@@ -1490,7 +1510,7 @@
         "pi": "partially-supported"
       },
       "description": "Create, connect, and interact with a Cloud SQL for PostgreSQL database and data.",
-      "displayName": "cloud-sql-postgresql",
+      "displayName": "Cloud SQL PostgreSQL",
       "homepage": "https://cloud.google.com/sql",
       "icon": {
         "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
@@ -1585,9 +1605,19 @@
         "pi": "partially-supported"
       },
       "description": "Connect to Cloud SQL for SQL Server",
-      "displayName": "cloud-sql-sqlserver",
+      "displayName": "Cloud SQL Sqlserver",
       "homepage": "https://github.com/gemini-cli-extensions/cloud-sql-sqlserver",
-      "icon": null,
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/sql",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
       "keywords": [
         "cloud",
         "data-analytics",
@@ -1880,7 +1910,7 @@
         "pi": "partially-supported"
       },
       "description": "Answer product and business questions with data",
-      "displayName": "data-analytics",
+      "displayName": "Data Analytics",
       "icon": {
         "asset": "icon-9705cd36b7eba1c63514ef9676c60ff3.svg",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-9705cd36b7eba1c63514ef9676c60ff3.svg",
@@ -1995,9 +2025,19 @@
         "pi": "partially-supported"
       },
       "description": "Expert database guidance for the AWS database portfolio. Design schemas, execute queries, handle migrations, and choose the right database for your workload.",
-      "displayName": "databases-on-aws",
+      "displayName": "Databases on AWS",
       "homepage": "https://github.com/awslabs/agent-plugins",
-      "icon": null,
+      "icon": {
+        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "bytes": 3061,
+        "contentType": "image/png",
+        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
+        "homepage": "https://aws.amazon.com/products/databases/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+      },
       "keywords": [
         "aws",
         "data-analytics",
@@ -2089,9 +2129,19 @@
         "pi": "partially-supported"
       },
       "description": "Manage Dataproc clusters and jobs.",
-      "displayName": "dataproc",
+      "displayName": "Dataproc",
       "homepage": "https://github.com/gemini-cli-extensions/dataproc",
-      "icon": null,
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/dataproc",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
       "keywords": [
         "data-analytics",
         "dataproc"
@@ -2167,7 +2217,7 @@
         "pi": "unknown"
       },
       "description": "Agent skills for building on, analyzing, and managing Microsoft Dataverse — with Dataverse MCP, PAC CLI, and Python SDK.",
-      "displayName": "dataverse",
+      "displayName": "Dataverse",
       "homepage": "https://github.com/microsoft/Dataverse-skills",
       "icon": {
         "asset": "icon-df71c0111148d116515a02c5cb07483c.svg",
@@ -2262,7 +2312,7 @@
         "pi": "partially-supported"
       },
       "description": "DuckDB-powered skills for Claude Code: read any data file, attach and query DuckDB databases, search DuckDB/DuckLake docs, search past session logs, and install/update DuckDB extensions.",
-      "displayName": "duckdb-skills",
+      "displayName": "Duckdb Skills",
       "homepage": "https://duckdb.org/",
       "icon": {
         "asset": "icon-39395cbfe086812dc2584ecf763926c6.png",
@@ -2353,7 +2403,7 @@
         "pi": "unknown"
       },
       "description": "Google Firebase MCP integration. Manage Firestore databases, authentication, cloud functions, hosting, and storage. Build and manage your Firebase backend directly from your development workflow.",
-      "displayName": "firebase",
+      "displayName": "Firebase",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/firebase",
       "icon": null,
       "keywords": [
@@ -2372,7 +2422,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/firebase",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:60af04352ae238ec8d87b22936c237ba33fd4a44e908d6fdd51cf81034224fd9",
@@ -2385,12 +2435,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d3981670b791b2c9c58847c292c7204bedc35df79e3876c10ec6f681d650c0d9",
         "packageStatus": "portable",
-        "releaseId": "release:253e69b390f35a3564170ca850d11ae56f0c04503005f32e86ff523c545a32fd",
+        "releaseId": "release:0d77dd186eb0ae81fe2d3c76752aba933c119970cc8734630257caa738ff8cbf",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:253e69b390f35a3564170ca850d11ae56f0c04503005f32e86ff523c545a32fd",
+      "releaseId": "release:0d77dd186eb0ae81fe2d3c76752aba933c119970cc8734630257caa738ff8cbf",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -2428,9 +2478,19 @@
         "pi": "partially-supported"
       },
       "description": "Connect and interact with Firestore databases, collections, and documents.",
-      "displayName": "firestore-native",
+      "displayName": "Firestore Native",
       "homepage": "https://github.com/gemini-cli-extensions/firestore-native",
-      "icon": null,
+      "icon": {
+        "asset": "icon-f7d596ba99b42959b41076af51a73eda.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f7d596ba99b42959b41076af51a73eda.png",
+        "bytes": 2763,
+        "contentType": "image/png",
+        "digest": "sha256:f7d596ba99b42959b41076af51a73edae82cb366d8199ae465d42fcad144a70b",
+        "homepage": "https://firebase.google.com/products/firestore",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/devrel-devsite/prod/v5be16d8c9f9402e54c2da2ff24cb75c148f5d2bc84c6f8dfc8b9e16ae456160b/firebase/images/touchicon-180.png"
+      },
       "keywords": [
         "data-analytics",
         "firestore",
@@ -2509,7 +2569,17 @@
       "description": "Governed catalog discovery for Informatica Intelligent Data Management Cloud (CDGC): find tables, columns, files, glossary terms and policies across the enterprise catalog, check ownership, certification, sensitivity and applicable policy, and get safe-usage guidance grounded in catalog metadata before querying any data. Requires an Informatica IDMC tenant and the Informatica Catalog Discovery connector.",
       "displayName": "Informatica",
       "homepage": "https://github.com/forcedotcom/informatica-claude-plugins/tree/main/informatica-for-claude-platform",
-      "icon": null,
+      "icon": {
+        "asset": "icon-64b56ace0e5b7fc36f1ebf3e46c31d86.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-64b56ace0e5b7fc36f1ebf3e46c31d86.png",
+        "bytes": 1660,
+        "contentType": "image/png",
+        "digest": "sha256:64b56ace0e5b7fc36f1ebf3e46c31d86d98a26d56873a7272f28092b0b4cb21f",
+        "homepage": "https://www.informatica.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.informatica.com/etc.clientlibs/informatica-commons/clientlibs/clientlib-base/resources/images/favicon.png"
+      },
       "keywords": [
         "claude",
         "data-analytics",
@@ -2596,7 +2666,7 @@
         "pi": "partially-supported"
       },
       "description": "Connect to Knowledge Catalog to discover, manage, monitor, and govern data and AI artifacts across your data platform",
-      "displayName": "knowledge-catalog",
+      "displayName": "Knowledge Catalog",
       "homepage": "https://github.com/gemini-cli-extensions/knowledge-catalog",
       "icon": null,
       "keywords": [
@@ -2680,7 +2750,7 @@
         "pi": "partially-supported"
       },
       "description": "Connect to Looker and interact with your data using LookML.",
-      "displayName": "looker",
+      "displayName": "Looker",
       "homepage": "https://github.com/gemini-cli-extensions/looker",
       "icon": null,
       "keywords": [
@@ -2763,7 +2833,7 @@
         "pi": "partially-supported"
       },
       "description": "Analyze Mixpanel data with the mixpanel_headless Python SDK and Codex skills.",
-      "displayName": "mixpanel-headless",
+      "displayName": "Mixpanel Headless",
       "icon": {
         "asset": "icon-3ebcb85818875354ca119b5651b1eee0.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3ebcb85818875354ca119b5651b1eee0.png",
@@ -2856,7 +2926,7 @@
         "pi": "unknown"
       },
       "description": "Official Claude plugin for MongoDB (MCP Server + Skills). Connect to databases, explore data, manage collections, optimize queries, generate reliable code, implement best practices, develop advanced features, and more.",
-      "displayName": "mongodb",
+      "displayName": "MongoDB",
       "homepage": "https://www.mongodb.com/docs/mcp-server/overview/",
       "icon": {
         "asset": "icon-e70217b2e33d57aad2d85c96a4fa73a1.png",
@@ -2946,7 +3016,7 @@
         "pi": "partially-supported"
       },
       "description": "Connect to MongoDB Atlas clusters only through the Atlas Managed MCP Server. Sign in with your Atlas account to explore data, manage collections, optimize queries, generate reliable code with MongoDB best practices, and manage Atlas resources such as clusters, projects, database users, and network access. If you are running a different MongoDB deployment or want to run a local MongoDB MCP Server, install the MongoDB (Self-Managed MCP) plugin instead.",
-      "displayName": "mongodb-atlas",
+      "displayName": "MongoDB Atlas",
       "homepage": "https://www.mongodb.com/docs/mcp-server/get-started/",
       "icon": {
         "asset": "icon-e70217b2e33d57aad2d85c96a4fa73a1.png",
@@ -3032,9 +3102,19 @@
         "pi": "partially-supported"
       },
       "description": "Connect, query, and interact with Oracle Databases and their data.",
-      "displayName": "oracledb",
+      "displayName": "Oracle Database",
       "homepage": "https://github.com/gemini-cli-extensions/oracledb",
-      "icon": null,
+      "icon": {
+        "asset": "icon-f0cec8c17444fdfd24b2d78874f969dd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f0cec8c17444fdfd24b2d78874f969dd.png",
+        "bytes": 8052,
+        "contentType": "image/png",
+        "digest": "sha256:f0cec8c17444fdfd24b2d78874f969dd18bfa00698a7942ea0538ff041d1e952",
+        "homepage": "https://www.oracle.com/database/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.oracle.com/asset/web/favicons/favicon-180.png"
+      },
       "keywords": [
         "data-analytics",
         "oracledb"
@@ -3042,7 +3122,7 @@
       "license": "Apache-2.0",
       "monogram": {
         "hue": 228,
-        "text": "OR"
+        "text": "OD"
       },
       "pluginId": "plugin:claude-official:oracledb",
       "primaryCategory": "data-analytics",
@@ -3119,9 +3199,19 @@
         "pi": "partially-supported"
       },
       "description": "Pinecone vector database integration. Streamline your Pinecone development with powerful tools for managing vector indexes, querying data, and rapid prototyping. Use slash commands like /quickstart to generate AGENTS.md files and initialize Python projects and /query to quickly explore indexes. Access the Pinecone MCP server for creating, describing, upserting and querying indexes with Claude. Perfect for developers building semantic search, RAG applications, recommendation systems, and other vector-based applications with Pinecone.",
-      "displayName": "pinecone",
+      "displayName": "Pinecone",
       "homepage": "https://github.com/pinecone-io/pinecone-claude-code-plugin",
-      "icon": null,
+      "icon": {
+        "asset": "icon-faa9c834fac8e86cd94f446ece9689ed.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-faa9c834fac8e86cd94f446ece9689ed.ico",
+        "bytes": 15086,
+        "contentType": "image/x-icon",
+        "digest": "sha256:faa9c834fac8e86cd94f446ece9689edd0dd3203ff261453ffda1764879f5c68",
+        "homepage": "https://www.pinecone.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.pinecone.io/favicon.ico?favicon.16aah0kd0o17q.ico"
+      },
       "keywords": [
         "data-analytics",
         "pinecone"
@@ -3324,7 +3414,7 @@
         "pi": "partially-supported"
       },
       "description": "Access PostHog analytics, feature flags, experiments, error tracking, and insights directly from Claude Code.",
-      "displayName": "posthog",
+      "displayName": "PostHog",
       "homepage": "https://posthog.com/docs/model-context-protocol",
       "icon": {
         "asset": "icon-a8963a893a3abfc498abe278d321649e.svg",
@@ -3533,7 +3623,7 @@
         "pi": "unknown"
       },
       "description": "Redis development best practices — data structures, query engine, vector search, caching, and performance optimization",
-      "displayName": "redis-development",
+      "displayName": "Redis Development",
       "homepage": "https://redis.io/",
       "icon": {
         "asset": "icon-9b2be11cf01d51a73b612a40f952576e.png",
@@ -3618,9 +3708,19 @@
         "pi": "unknown"
       },
       "description": "150+ SAP HANA database tools for AI assistants. Query tables, import/export data, profile data quality, compare schemas, manage backups, monitor performance, and more. Connects to SAP HANA Cloud and on-premise databases.",
-      "displayName": "hana-cli",
+      "displayName": "Hana CLI",
       "homepage": "https://github.com/SAP-samples/hana-cli-claude-plugin",
-      "icon": null,
+      "icon": {
+        "asset": "icon-3f109a1d8dfce9f2c6b514f8222219d4.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3f109a1d8dfce9f2c6b514f8222219d4.ico",
+        "bytes": 9662,
+        "contentType": "image/x-icon",
+        "digest": "sha256:3f109a1d8dfce9f2c6b514f8222219d47810a8afb54f60ccf15d6f75e7b03bb2",
+        "homepage": "https://developers.sap.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://developers.sap.com/favicon.ico"
+      },
       "keywords": [
         "cli",
         "data-analytics",
@@ -3697,9 +3797,19 @@
         "pi": "partially-supported"
       },
       "description": "Connect and interact with Spanner data using natural language.",
-      "displayName": "spanner",
+      "displayName": "Spanner",
       "homepage": "https://github.com/gemini-cli-extensions/spanner",
-      "icon": null,
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/spanner",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
       "keywords": [
         "data-analytics",
         "spanner"
@@ -3780,7 +3890,7 @@
         "pi": "partially-supported"
       },
       "description": "Builds a VillageSQL extension for MySQL end-to-end through a 7-phase persona-driven workflow. Commonly used to port PostgreSQL extensions to MySQL.",
-      "displayName": "villagesql",
+      "displayName": "Villagesql",
       "homepage": "https://villagesql.com/",
       "icon": {
         "asset": "icon-776aec16beef775f56b9ad38b780cbac.svg",
@@ -3870,7 +3980,7 @@
         "pi": "partially-supported"
       },
       "description": "Zilliz Cloud management plugin with 14 skills covering cluster lifecycle, collection schema, vector search, index tuning, bulk import, RBAC, backups, and monitoring.",
-      "displayName": "zilliz",
+      "displayName": "Zilliz",
       "homepage": "https://docs.zilliz.com/",
       "icon": {
         "asset": "icon-8d7deb7f7224deaaf4129368695c8bac.svg",
