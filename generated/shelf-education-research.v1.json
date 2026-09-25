@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e",
+  "catalogId": "catalog:caad4379ad867c0d7cd395064656bdfbc4e49f592ca1ff3c4a6266d9fdd3ca89",
   "category": "education-research",
   "products": [
     {
@@ -25,7 +25,7 @@
       "displayName": "Teaching",
       "icon": {
         "asset": "icon-003bdda2cc2575e3f5c702fae65b0615.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-003bdda2cc2575e3f5c702fae65b0615.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-003bdda2cc2575e3f5c702fae65b0615.png",
         "bytes": 56807,
         "contentType": "image/png",
         "digest": "sha256:003bdda2cc2575e3f5c702fae65b061528faaa151b920c0e6f35891dae9dafbc",
@@ -110,7 +110,7 @@
       "displayName": "Continual Learning",
       "icon": {
         "asset": "icon-7fcbec269ec57b3f9c227c964907692d.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-7fcbec269ec57b3f9c227c964907692d.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-7fcbec269ec57b3f9c227c964907692d.png",
         "bytes": 64347,
         "contentType": "image/png",
         "digest": "sha256:7fcbec269ec57b3f9c227c964907692d044dbe4e8495fc42cd72a5794d7c11fb",
@@ -282,7 +282,7 @@
       "displayName": "zotero",
       "icon": {
         "asset": "icon-7ac4579b4a075173126862ebf70243ff.png",
-        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-7ac4579b4a075173126862ebf70243ff.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-7ac4579b4a075173126862ebf70243ff.png",
         "bytes": 9908,
         "contentType": "image/png",
         "digest": "sha256:7ac4579b4a075173126862ebf70243ff0a447ffe843e7fbdf16ea2681f4fff13",
