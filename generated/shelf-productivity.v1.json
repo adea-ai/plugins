@@ -1,8 +1,11 @@
 {
-  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "catalogId": "catalog:ae9047e0a1d48f6d7fb73f706f685d6421d735910d8b66833010784fbbe651f3",
   "category": "productivity",
   "products": [
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -43,7 +46,40 @@
       "pluginId": "plugin:cursor-official:google-calendar",
       "primaryCategory": "productivity",
       "productKey": "google-calendar",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/google-calendar",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:c126f9eaddf0e058b26e64a4d696cd293e71a999202ddcb3ac9aedb247ee84eb",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:5ac0b24b4a33fa769d4fd776900cd14015a68935799a57447a2d4ac75089893f",
+        "packageStatus": "portable",
+        "releaseId": "release:ae3c3ac6d27c93774e568fefc8a698799b8a292b562dbdde9cdf7268ee49e622",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:ae3c3ac6d27c93774e568fefc8a698799b8a292b562dbdde9cdf7268ee49e622",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "google-calendar",
       "variantPluginIds": [
@@ -53,6 +89,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -93,7 +132,40 @@
       "pluginId": "plugin:cursor-official:google-drive",
       "primaryCategory": "productivity",
       "productKey": "google-drive",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/google-drive",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:1f8f5e7d4080c734ebe2e673d71b2d92c4c3441b06fdc36e777de1ec6ba0937f",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:ff674fef0e3e2ec4a88e464ba78a8c64839358f2717d391e411ff674e7880b88",
+        "packageStatus": "portable",
+        "releaseId": "release:4a4cc0ac59ae03f0bd7064eeceadb64b5996bb0be0e201a2c2dbcc27d79caa13",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:4a4cc0ac59ae03f0bd7064eeceadb64b5996bb0be0e201a2c2dbcc27d79caa13",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "google-drive",
       "variantPluginIds": [
@@ -103,6 +175,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "command": 10,
         "mcp-server": 1,
@@ -145,7 +220,48 @@
       "pluginId": "plugin:claude-official:notion",
       "primaryCategory": "productivity",
       "productKey": "notion",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "9847f2aa1a15f25df35ed1fb7b4557dbb60cd651"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:c8bb0a3cae1183e34967ed5f798559fecf6a8b64af3b66e3637882df422f5db9",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:25176bf420eb562774a302685a3cc941f12a21b87930f629f70bfe0f2dadbcab",
+        "packageStatus": "partial",
+        "releaseId": "release:cacc4557a338d6850e05fcde59fbb93ad3857227f819174cb01f61b6cad6517f",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "9847f2aa1a15f25df35ed1fb7b4557dbb60cd651",
+        "upstreamVersion": "0.1.0"
+      },
       "releaseId": "release:cacc4557a338d6850e05fcde59fbb93ad3857227f819174cb01f61b6cad6517f",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "notion",
       "variantPluginIds": [
@@ -155,6 +271,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -194,7 +313,40 @@
       "pluginId": "plugin:cursor-official:todoist",
       "primaryCategory": "productivity",
       "productKey": "todoist",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/todoist",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:a03b07bc5c2fef3961191970a288ac1287e22ccdc5c4fcb24a568b797868a18d",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:78ef4d2a237980cb32f2f6656bb098064a0fa699b6f36df75bcbb5fa719c0c58",
+        "packageStatus": "portable",
+        "releaseId": "release:443f15ba77b49015c19c21f6d024e79e4030feee30a3a412a1d2fd12950b604e",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:443f15ba77b49015c19c21f6d024e79e4030feee30a3a412a1d2fd12950b604e",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "todoist",
       "variantPluginIds": [
@@ -203,6 +355,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -242,7 +397,40 @@
       "pluginId": "plugin:cursor-official:readwise",
       "primaryCategory": "productivity",
       "productKey": "readwise",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/readwise",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:770ed24488a5b61846d5b3242b22ac27e942fe1ef13abbe9273fc972173a9d93",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:df783223168ef6162756337ea53bcec049c54116d384c45ee11c014a17c0a5e9",
+        "packageStatus": "portable",
+        "releaseId": "release:6ddfdf4a07ff524096f60d6b16c685ca85bb4c50e084d166bcaa2425faaf94d6",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:6ddfdf4a07ff524096f60d6b16c685ca85bb4c50e084d166bcaa2425faaf94d6",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "readwise",
       "variantPluginIds": [
@@ -251,6 +439,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -290,7 +481,40 @@
       "pluginId": "plugin:cursor-official:smartsheet",
       "primaryCategory": "productivity",
       "productKey": "smartsheet",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/smartsheet",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:90b23989ddf32fff6c3f15a80a55d9a03fc45738acf805aeea6346291335ec5a",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:37a642de3dfdd41160295d5dc9ef5c2835a7e0b39038d1af3404d45c0be707d7",
+        "packageStatus": "partial",
+        "releaseId": "release:6135b0f1965ee1bb5fac221149c38f53f849f2bbcad6667ac8ddc581285e63fe",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:6135b0f1965ee1bb5fac221149c38f53f849f2bbcad6667ac8ddc581285e63fe",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "smartsheet",
       "variantPluginIds": [

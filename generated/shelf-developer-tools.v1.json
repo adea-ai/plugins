@@ -1,8 +1,11 @@
 {
-  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "catalogId": "catalog:ae9047e0a1d48f6d7fb73f706f685d6421d735910d8b66833010784fbbe651f3",
   "category": "developer-tools",
   "products": [
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "mcp-server": 1
       },
@@ -45,7 +48,39 @@
       "pluginId": "plugin:claude-official:github",
       "primaryCategory": "developer-tools",
       "productKey": "github",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "external_plugins/github",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:3a8aa90c77c19d4efaefe32703f8daf81020f7927f26f66feae7c66c9e991fc3",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:57c44f8d573dc9277263d5b767e56feff729bf954a5662e9e2b755d1a49aa5ac",
+        "packageStatus": "partial",
+        "releaseId": "release:aaf4d4d2aa95c842821ce5355dd3873b613790f7fe95bed2f6f1fbdf66680620",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+      },
       "releaseId": "release:aaf4d4d2aa95c842821ce5355dd3873b613790f7fe95bed2f6f1fbdf66680620",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "github",
       "variantPluginIds": [
@@ -56,6 +91,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "mcp-server": 1
       },
@@ -96,7 +134,39 @@
       "pluginId": "plugin:claude-official:playwright",
       "primaryCategory": "developer-tools",
       "productKey": "playwright",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "external_plugins/playwright",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:09b920f4bea9253e4d1863c57ea4a66b3bef629f3a0e9b2ae62198bf291d2c4b",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:11a00f5ebacb2af4f3e94169d5e476245fc9364adde041968e17c9c81a7f1aa6",
+        "packageStatus": "portable",
+        "releaseId": "release:1b0be894855f7bfb0362f1a3d46b3328af3e06e74331160a0ef6ff1e2fa28ba5",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+      },
       "releaseId": "release:1b0be894855f7bfb0362f1a3d46b3328af3e06e74331160a0ef6ff1e2fa28ba5",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "playwright",
       "variantPluginIds": [
@@ -106,6 +176,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "skill": 1
       },
@@ -137,7 +210,38 @@
       "pluginId": "plugin:cursor-official:cursor-sdk",
       "primaryCategory": "developer-tools",
       "productKey": "cursor-sdk",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "cursor-sdk",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:0be74b4325362ba174f1ea044da829f83a85bb4b2a2b1a30be020ae677054404",
+        "capabilities": [
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:4db2af962162a1cbcca2754a64d2767b19182059d8400e0470122acc4a4dc325",
+        "packageStatus": "partial",
+        "releaseId": "release:c1ee996a87aac901d4d1c66a1b8fe29f8897db50fdb61d56305ad17d3d5ff745",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:c1ee996a87aac901d4d1c66a1b8fe29f8897db50fdb61d56305ad17d3d5ff745",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "cursor-sdk",
       "variantPluginIds": [
@@ -146,6 +250,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "agent": 2,
         "command": 1
@@ -180,7 +287,41 @@
       "pluginId": "plugin:claude-official:agent-sdk-dev",
       "primaryCategory": "developer-tools",
       "productKey": "agent-sdk-dev",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/agent-sdk-dev",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:a6f37a1aa41c164cad0661e8c5d534451141100098f7ba12edd74937c5ced495",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:23adf47094dfdf00561c88d431adbb2abd19bfca6f587821480f16e1a8669e7c",
+        "packageStatus": "partial",
+        "releaseId": "release:b167e8b3f451ff131b4119054e908fefd85160dcaa2d2dfea1ecf07111004236",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+      },
       "releaseId": "release:b167e8b3f451ff131b4119054e908fefd85160dcaa2d2dfea1ecf07111004236",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "agent-sdk-dev",
       "variantPluginIds": [
@@ -189,6 +330,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "executable": 3,
         "skill": 10
@@ -208,7 +352,16 @@
       "description": "Fastly development tools and platform skills",
       "displayName": "Fastly",
       "homepage": "https://github.com/fastly/fastly-agent-toolkit/blob/main/README.md",
-      "icon": null,
+      "icon": {
+        "asset": "icon-1fa9b91552d947e9e6d0bb911aae5db8.ico",
+        "bytes": 15086,
+        "contentType": "image/x-icon",
+        "digest": "sha256:1fa9b91552d947e9e6d0bb911aae5db85840bad624723e604bb154c7d6794814",
+        "homepage": "https://www.fastly.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.fastly.com/favicon.ico"
+      },
       "keywords": [
         "agent",
         "developer-tools",
@@ -223,7 +376,44 @@
       "pluginId": "plugin:claude-official:fastly-agent-toolkit",
       "primaryCategory": "developer-tools",
       "productKey": "fastly-agent-toolkit",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "2b3bdd647a81df7a8286e516eb05874ef2efc4fa"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:6c349201e297c636548103025309a8247ce4e2b72e4bd6942e95999fa492b1df",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:8bace0a07c169d96b35650e071439e0f67b76f1e6208545436d6c10ca0c04f7b",
+        "packageStatus": "portable",
+        "releaseId": "release:b6b06440396a252ad7aab604aa1945008cd2ea3d0f48992aff3f8044ac03cfd7",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "2b3bdd647a81df7a8286e516eb05874ef2efc4fa",
+        "upstreamVersion": "0.1.0"
+      },
       "releaseId": "release:b6b06440396a252ad7aab604aa1945008cd2ea3d0f48992aff3f8044ac03cfd7",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "fastly-agent-toolkit",
       "variantPluginIds": [
@@ -233,6 +423,9 @@
       "variantsIdentical": true
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "browser": 13,
         "mcp-server": 1,
@@ -276,7 +469,56 @@
       "pluginId": "plugin:claude-official:sentry",
       "primaryCategory": "developer-tools",
       "productKey": "sentry",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "73e53541d7af21672e27428c7067f4264b8a3d65"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:cb9515123a8ef7b3bed7f9f55c8bb99056be759129f0e0ed038e3a9c736f4fc5",
+        "capabilities": [
+          {
+            "name": "browser",
+            "type": "browser"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "scheduled-task",
+            "type": "scheduled-task"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:06e92e702b0055dc4cb0db999280699c9546be1e9801fe041056ce1574e8bef7",
+        "packageStatus": "portable",
+        "releaseId": "release:10e03a5b559348cf581b99b7184fa4de19aad232378a13ea48f81ecb74a113ac",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "73e53541d7af21672e27428c7067f4264b8a3d65",
+        "upstreamVersion": "1.4.0"
+      },
       "releaseId": "release:10e03a5b559348cf581b99b7184fa4de19aad232378a13ea48f81ecb74a113ac",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "browser",
+          "mcp-server",
+          "scheduled-task"
+        ],
+        "reasons": [
+          "Contains browser capability metadata.",
+          "Contains mcp-server capability metadata.",
+          "Contains scheduled-task capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "sentry",
       "variantPluginIds": [
