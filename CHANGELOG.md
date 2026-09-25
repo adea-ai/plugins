@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.13](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.12...plugins-marketplace-v1.10.13) (2026-09-25)
+
+
+### Maintenance
+
+* **deps:** record why the Bun update entry cannot succeed yet ([#132](https://github.com/adea-ai/plugins/issues/132)) ([7de3d6c](https://github.com/adea-ai/plugins/commit/7de3d6c5fc4657279b7a6f954aef0967a5e2f5b0))
+
 ## [1.10.12](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.11...plugins-marketplace-v1.10.12) (2026-09-25)
 
 
