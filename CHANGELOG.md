@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.14](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.13...plugins-marketplace-v1.10.14) (2026-09-25)
+
+
+### Bug Fixes
+
+* **catalog:** mirror the brand sites that still answered with a monogram ([#134](https://github.com/adea-ai/plugins/issues/134)) ([d1428a3](https://github.com/adea-ai/plugins/commit/d1428a34fb4390ec8e64f1c1fce9b69c44c8fdaa))
+
 ## [1.10.13](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.12...plugins-marketplace-v1.10.13) (2026-09-25)
 
 
