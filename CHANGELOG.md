@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.2](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.6.1...plugins-marketplace-v1.6.2) (2026-09-25)
+
+
+### Bug Fixes
+
+* **ci:** open the snapshot pull request as a draft, then ready it ([#94](https://github.com/adea-ai/plugins/issues/94)) ([51fec90](https://github.com/adea-ai/plugins/commit/51fec90d375a013c6bceba2f9c9a93afff47e230))
+
 ## [1.6.1](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.6.0...plugins-marketplace-v1.6.1) (2026-09-25)
 
 
