@@ -342,7 +342,8 @@ function selectProductIcon(
   variants: readonly Plugin[],
   canonical: Plugin,
   catalogId: string,
-  publicationRepositoryUrl: string | undefined
+  publicationRepositoryUrl: string | undefined,
+  publicationAssetsBaseUrl: string | undefined
 ): ProductIcon | null {
   const ordered = [canonical, ...variants.filter((plugin) => plugin !== canonical)]
   for (const plugin of ordered) {
@@ -352,9 +353,11 @@ function selectProductIcon(
     return {
       kind: icon.kind,
       asset,
-      ...(publicationRepositoryUrl
-        ? { assetUrl: immutableAssetUrl(publicationRepositoryUrl, catalogId, asset) }
-        : {}),
+      ...(publicationAssetsBaseUrl
+        ? { assetUrl: `${publicationAssetsBaseUrl}/${asset}` }
+        : publicationRepositoryUrl
+          ? { assetUrl: immutableAssetUrl(publicationRepositoryUrl, catalogId, asset) }
+          : {}),
       digest: icon.digest,
       contentType: icon.contentType,
       bytes: icon.bytes,
@@ -406,6 +409,8 @@ export function buildConsumerIndex(input: {
   readonly preference?: ProductPreference
   /** Where the catalog will be published, so records can carry absolute URLs. */
   readonly publicationRepositoryUrl?: string
+  /** Committed asset base a browser can fetch directly; preferred when set. */
+  readonly publicationAssetsBaseUrl?: string
 }): ConsumerIndex {
   const preference = input.preference ?? {
     schemaVersion: 1 as const,
@@ -478,7 +483,13 @@ export function buildConsumerIndex(input: {
         ],
         contentResolution: canonical.securityClassification.contentResolution,
       },
-      icon: selectProductIcon(variants, canonical, catalogId, input.publicationRepositoryUrl),
+      icon: selectProductIcon(
+        variants,
+        canonical,
+        catalogId,
+        input.publicationRepositoryUrl,
+        input.publicationAssetsBaseUrl
+      ),
       monogram: monogramFor(selectDisplayName(variants, canonical), productKey),
     }
   }

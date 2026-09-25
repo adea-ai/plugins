@@ -118,6 +118,9 @@ async function syncCommand(flags: Flags): Promise<number> {
     ...(config.publicationRepositoryUrl && !flags.offline
       ? { publicationRepositoryUrl: config.publicationRepositoryUrl }
       : {}),
+    ...(config.publicationAssetsBaseUrl && !flags.offline
+      ? { publicationAssetsBaseUrl: config.publicationAssetsBaseUrl }
+      : {}),
     policy: config.policy,
     mode: flags.offline ? 'offline' : 'live',
     fixtureRoot: flags.fixtureRoot
@@ -134,6 +137,14 @@ async function syncCommand(flags: Flags): Promise<number> {
   // Metadata-only and dry-run are always non-writing, including with --write.
   if (result.changed && result.artifacts && !flags.dryRun && !flags.metadataOnly) {
     await writeArtifacts(directory, result.artifacts)
+    // Publish the browsing index next to the marks so a browser reads it from
+    // the repository rather than a release asset it cannot fetch.
+    const index = result.artifacts['catalog-index.v1.json']
+    if (index !== undefined && config.publicationAssetsBaseUrl && !flags.offline) {
+      const assets = assetsDirectory(flags)
+      await fs.mkdir(assets, { recursive: true })
+      await fs.writeFile(join(assets, 'catalog-index.v1.json'), index, 'utf8')
+    }
   }
   const output = {
     ok: true,
@@ -408,6 +419,7 @@ async function loadConfiguration(root: string): Promise<{
   productPreference?: ProductPreference
   productIconOverrides?: ProductIconOverrides
   publicationRepositoryUrl?: string
+  publicationAssetsBaseUrl?: string
   policy: CatalogPolicy
 }> {
   const configDirectory = join(root, 'config')
@@ -435,7 +447,9 @@ async function loadConfiguration(root: string): Promise<{
     ),
     readOptionalJson<unknown>(join(configDirectory, 'product-preference.json')),
     readOptionalJson<unknown>(join(configDirectory, 'product-icons.json')),
-    readOptionalJson<{ repositoryUrl?: unknown }>(join(configDirectory, 'publication.json')),
+    readOptionalJson<{ repositoryUrl?: unknown; assetsBaseUrl?: unknown }>(
+      join(configDirectory, 'publication.json')
+    ),
   ])
   return {
     sources: sources.sources,
@@ -453,6 +467,9 @@ async function loadConfiguration(root: string): Promise<{
       : {}),
     ...(publication && typeof publication.repositoryUrl === 'string'
       ? { publicationRepositoryUrl: publication.repositoryUrl }
+      : {}),
+    ...(publication && typeof publication.assetsBaseUrl === 'string'
+      ? { publicationAssetsBaseUrl: publication.assetsBaseUrl }
       : {}),
     policy,
   }
@@ -534,11 +551,13 @@ function outputDirectory(flags: Flags): string {
 }
 
 /**
- * Mirrored brand marks live beside the artifacts, never inside them: the
- * repository keeps text artifacts, and the release carries the bytes.
+ * Mirrored marks and the browsing index live in a committed directory, not
+ * inside `generated/`: a browser fetches them from the repository, where they
+ * are CORS-enabled, direct and cacheable, unlike release assets. `generated/`
+ * stays reserved for the artifacts the fixture consistency check compares.
  */
 function assetsDirectory(flags: Flags): string {
-  return flags.assetsDir ? resolve(flags.assetsDir) : join(flags.root, 'published-assets')
+  return flags.assetsDir ? resolve(flags.assetsDir) : join(flags.root, 'catalog-assets')
 }
 
 interface Flags {

@@ -55,8 +55,12 @@ An `icon` is a mirrored asset inside the same catalog release, so there is
 nothing to search, sniff or fall back to:
 
 ```
-https://github.com/<owner>/<repo>/releases/download/catalog/<catalogId-suffix>/<icon.asset>
+https://raw.githubusercontent.com/<owner>/<repo>/<ref>/catalog-assets/<icon.asset>
 ```
+
+`icon.digest` remains the check that matters: the file name is content addressed,
+so the reference can move without the bytes for that name changing, and the index
+is verified against the digest in `integrity.json` before it is trusted.
 
 `icon.kind` says where the mark came from, and `icon.digest` is SHA-256 over the
 bytes, so a client can verify what it stored:
@@ -114,19 +118,29 @@ enforces policy before an install, and it keeps working unchanged if this
 repository becomes private. Adding the shards to that surface is additive: the
 same artifacts, the same digests, proxied.
 
-**Brand-mark bytes are served from an immutable asset base, not proxied per
-request.** Icons are numerous, small, binary and content-addressed, which is the
-shape a cache serves well and an API proxy serves badly: routing 274 binary files
-through the verified-JSON path would add latency and egress without adding a
+**Brand-mark bytes and the browsing index are served from the repository, not
+proxied per request.** Icons are numerous, small, binary and content-addressed,
+which is the shape a cache serves well and an API proxy serves badly: routing
+them through the verified-JSON path would add latency and egress without adding a
 security decision the compile-time gate has not already made.
+
+They are served from `raw.githubusercontent.com` under `catalog-assets/`, not from
+release assets, because a browser cannot use the latter: a cross-origin fetch of a
+release asset returns no `access-control-allow-origin` header, so a client cannot
+read the index at all, and every image request redirects through a signed URL
+marked `no-cache`, so images are re-downloaded on every render.
 
 To keep that a deployment decision rather than hardcoded client logic, product
 records carry an absolute, immutable URL in `icon.assetUrl`, composed at build
 time from `config/publication.json`:
 
 ```
-https://github.com/<owner>/<repo>/releases/download/catalog/<catalogId-suffix>/<icon.asset>
+https://raw.githubusercontent.com/<owner>/<repo>/<ref>/catalog-assets/<icon.asset>
 ```
+
+`icon.digest` remains the check that matters: the file name is content addressed,
+so the reference can move without the bytes for that name changing, and the index
+is verified against the digest in `integrity.json` before it is trusted.
 
 A client renders `icon.assetUrl` and never composes a URL itself. A deployment
 that hosts assets elsewhere substitutes its base in that config, and every

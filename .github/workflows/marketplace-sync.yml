@@ -117,7 +117,7 @@ jobs:
           if ! gh release view "$tag" >/dev/null 2>&1; then
             gh release create "$tag" \
               $(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); process.stdout.write([...Object.keys(i.files),'integrity.json'].map(n=>'generated/'+n).join(' '))") \
-              $(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); process.stdout.write((i.assets??[]).map(a=>'published-assets/'+a.name).join(' '))") \
+              $(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); process.stdout.write((i.assets??[]).map(a=>'catalog-assets/'+a.name).join(' '))") \
               "$latest_asset" \
               --target "$(git rev-parse HEAD)" \
               --draft \
@@ -138,7 +138,7 @@ jobs:
             done
             for asset in $(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); process.stdout.write((i.assets??[]).map(a=>a.name).join(' '))"); do
               if ! printf '%s\n' "$assets" | grep -Fxq "$asset"; then
-                gh release upload "$tag" "published-assets/$asset"
+                gh release upload "$tag" "catalog-assets/$asset"
               fi
             done
           fi
@@ -228,7 +228,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git remote set-url origin "https://x-access-token:${SYNC_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git add generated
+          git add generated catalog-assets
           git commit -m "chore(catalog): refresh marketplace snapshot ${catalog_id}"
           git push --force origin "HEAD:${branch}"
           body="Automated marketplace snapshot refresh for ${catalog_id}. Merge with squash once Validation, Review Policy, and Marketplace CI pass."

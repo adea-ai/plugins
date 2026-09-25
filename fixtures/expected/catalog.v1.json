@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:42980594a86c56de1f9eece060e5cb797b4c30a24dca551f92682bc658c4b82f",
+  "catalogId": "catalog:c537a286b7e8721c056057a22b7b6efce046dcf37c6b01ca0721c64f1f80a59c",
   "generatedAt": "2026-01-01T00:00:00.000Z",
   "plugins": [
     {
@@ -41,7 +41,7 @@
           "publicationTimestamp": "2026-01-01T00:00:00.000Z",
           "releaseId": "release:18ce8f072ca693885ce731feffbd78dd1307c81a8ad43920edf991e2032176db",
           "releaseMetadata": {
-            "catalogContract": "adea-catalog/2",
+            "catalogContract": "adea-catalog/3",
             "marketplaceEntry": {
               "category": "Developer Tools",
               "description": "Practice and learning workflows.",
@@ -206,7 +206,7 @@
           "publicationTimestamp": "2026-01-01T00:00:00.000Z",
           "releaseId": "release:dc304fb0c5f79f0fccbba74dcb29b78049d6972eadd084d05935384755b5a1f4",
           "releaseMetadata": {
-            "catalogContract": "adea-catalog/2",
+            "catalogContract": "adea-catalog/3",
             "marketplaceEntry": {
               "category": "sales",
               "description": "Prepare sales work.",
@@ -386,7 +386,7 @@
           "publicationTimestamp": "2026-01-01T00:00:00.000Z",
           "releaseId": "release:5b02dbca6c6abb490bec11acb3e72e366d15232e9855f8b7cca4363bf596f932",
           "releaseMetadata": {
-            "catalogContract": "adea-catalog/2",
+            "catalogContract": "adea-catalog/3",
             "marketplaceEntry": {
               "category": "security",
               "description": "Audit application security.",
@@ -570,7 +570,7 @@
           "publicationTimestamp": "2026-01-01T00:00:00.000Z",
           "releaseId": "release:3b3df4fd670ca9771cbb71aa107466b7c31536b95e12caf7f0a3bfe3bf2fee6e",
           "releaseMetadata": {
-            "catalogContract": "adea-catalog/2",
+            "catalogContract": "adea-catalog/3",
             "marketplaceEntry": {
               "category": "Productivity",
               "description": "Calendar workflows.",
@@ -726,7 +726,7 @@
           "publicationTimestamp": "2026-01-01T00:00:00.000Z",
           "releaseId": "release:2ec69915a2ba1c711787cdf2cf5e0df13c22383a38d5a3793136bd82dae94325",
           "releaseMetadata": {
-            "catalogContract": "adea-catalog/2",
+            "catalogContract": "adea-catalog/3",
             "marketplaceEntry": {
               "description": "Organize work.",
               "displayName": "Productivity",
@@ -882,7 +882,7 @@
           "publicationTimestamp": "2026-01-01T00:00:00.000Z",
           "releaseId": "release:24dcda1228d0962c9b2bc807c631a90749d910e24b491cbecb09389ec68187ff",
           "releaseMetadata": {
-            "catalogContract": "adea-catalog/2",
+            "catalogContract": "adea-catalog/3",
             "marketplaceEntry": {
               "category": "data",
               "description": "Search connected data.",
@@ -1056,7 +1056,7 @@
           "publicationTimestamp": "2026-01-01T00:00:00.000Z",
           "releaseId": "release:92be914b09fa812243e6d4d57f9c9c91dc31ebe1c8bca4731155384c21732a69",
           "releaseMetadata": {
-            "catalogContract": "adea-catalog/2",
+            "catalogContract": "adea-catalog/3",
             "marketplaceEntry": {
               "category": "Productivity",
               "description": "Plan calendar work.",
@@ -1215,7 +1215,7 @@
           "publicationTimestamp": "2026-01-01T00:00:00.000Z",
           "releaseId": "release:fe1c3cf71f61a5edb9f9d88ce3492aaf97ffdd683ef469e8b3b06327fedd1358",
           "releaseMetadata": {
-            "catalogContract": "adea-catalog/2",
+            "catalogContract": "adea-catalog/3",
             "marketplaceEntry": {
               "category": "Productivity",
               "description": "Manage Linear issues with a portable skill.",

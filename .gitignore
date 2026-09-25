@@ -83,5 +83,5 @@ mise.local.lock
 eval-results.json
 eval-results/
 
-# Mirrored brand marks; published as release assets, never committed.
-published-assets/
+# Brand marks and the browsing index are committed under catalog-assets/ and
+# served to browsers from the repository rather than from release assets.

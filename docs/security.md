@@ -43,10 +43,16 @@ are republished, and it is constrained:
   `href`/`src`, or an entity declaration is refused, and the product simply
   reports no icon;
 - assets are content addressed and staged by the build from the exact bytes the
-  recorded digest was taken over, never committed to the repository. A site icon
-  is therefore never re-fetched after resolution: its URL is not content
-  addressed, so a vendor could otherwise change the file between the build and
-  the release. Every release declares each asset's digest and byte length in
+  recorded digest was taken over, then committed under `catalog-assets/` together
+  with the browsing index. A site icon is therefore never re-fetched after
+  resolution: its URL is not content addressed, so a vendor could otherwise
+  change the file between the build and the release.
+- they are committed rather than published only as release assets because a
+  browser cannot use the latter: GitHub answers a cross-origin fetch with no
+  `access-control-allow-origin` header, and every asset request redirects through
+  a signed URL marked `no-cache`, which defeats image caching. From the repository
+  the same bytes are CORS-enabled, direct and cacheable, and content-addressed
+  names keep that cache correct. Every release declares each asset's digest and byte length in
   `integrity.json`, and the publish step and release verification compare them.
 
 Consumers must render a mirrored SVG through an image element and never inline
