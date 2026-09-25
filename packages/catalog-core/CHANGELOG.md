@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.10](https://github.com/adea-ai/plugins/compare/catalog-core-v1.10.9...catalog-core-v1.10.10) (2026-09-25)
+
+
+### Bug Fixes
+
+* **catalog:** fetch brand marks anonymously, and curate what that was costing ([#147](https://github.com/adea-ai/plugins/issues/147)) ([76b3598](https://github.com/adea-ai/plugins/commit/76b3598fb651852349918b777269b919d17d6fd4))
+
 ## [1.10.9](https://github.com/adea-ai/plugins/compare/catalog-core-v1.10.8...catalog-core-v1.10.9) (2026-09-25)
 
 
