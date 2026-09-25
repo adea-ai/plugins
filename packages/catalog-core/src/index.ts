@@ -2,6 +2,9 @@ import { spawn } from 'node:child_process'
 import { createHash } from 'node:crypto'
 import { promises as fs } from 'node:fs'
 import { basename, dirname, join, relative, resolve } from 'node:path'
+import { Readable } from 'node:stream'
+import { createGunzip } from 'node:zlib'
+import { extract } from 'tar-stream'
 import {
   CatalogSchema,
   type Catalog,
@@ -2215,9 +2218,100 @@ async function fetchUpstream(url: string, init: RequestInit): Promise<Response> 
   }
 }
 
+/**
+ * Ceiling on bytes read out of one repository archive.
+ *
+ * The per-plugin policy still bounds what any single plugin may contain; this
+ * only stops a decompression bomb from exhausting the build host, and it is
+ * enforced while the stream is read rather than after it is buffered.
+ */
+const MAX_ARCHIVE_BYTES = 512 * 1024 * 1024
+
+function concatChunks(chunks: readonly Uint8Array[], length: number): Uint8Array {
+  const out = new Uint8Array(length)
+  let offset = 0
+  for (const chunk of chunks) {
+    out.set(chunk, offset)
+    offset += chunk.byteLength
+  }
+  return out
+}
+
+/**
+ * Read one GitHub repository tarball into path -> bytes.
+ *
+ * GitHub wraps every entry in a single top-level `<repo>-<sha>/` directory,
+ * which is stripped so the keys match the tree API's repository-relative
+ * paths. Only regular files are taken: directories, symlinks, hardlinks and
+ * the `pax_global_header` record are skipped, so a link can never be
+ * materialized as content. Every remaining path goes through
+ * `safeRelativePath`, so an archive that tries to escape the repository is
+ * rejected rather than partially trusted.
+ */
+export async function readArchiveFiles(
+  archive: Uint8Array,
+  policy: CatalogPolicy
+): Promise<Map<string, Uint8Array>> {
+  const files = new Map<string, Uint8Array>()
+  let totalBytes = 0
+  const parser = extract()
+  const gunzip = createGunzip()
+  const settled = new Promise<void>((resolveDone, rejectDone) => {
+    const fail = (error: unknown): void => {
+      gunzip.destroy()
+      parser.destroy()
+      rejectDone(error)
+    }
+    parser.on('entry', (header, stream, next) => {
+      const skip = (): void => {
+        stream.on('end', next)
+        stream.resume()
+      }
+      if (header.type !== 'file') return skip()
+      const segments = header.name.split('/')
+      if (segments.length < 2) return skip()
+      let path: string
+      try {
+        path = safeRelativePath(segments.slice(1).join('/'), 'TREE_PATH_INVALID')
+      } catch (error) {
+        return fail(error)
+      }
+      const chunks: Uint8Array[] = []
+      let length = 0
+      stream.on('data', (chunk: unknown) => {
+        const bytes = chunk as Uint8Array
+        length += bytes.byteLength
+        chunks.push(bytes)
+      })
+      stream.on('error', fail)
+      stream.on('end', () => {
+        try {
+          const bytes = concatChunks(chunks, length)
+          if (bytes.byteLength > policy.maxFileBytes)
+            throw new Error(`PLUGIN_FILE_TOO_LARGE: ${path}`)
+          totalBytes += bytes.byteLength
+          if (totalBytes > MAX_ARCHIVE_BYTES) throw new Error('PLUGIN_SIZE_POLICY: archive')
+          files.set(path, bytes)
+          next()
+        } catch (error) {
+          fail(error)
+        }
+      })
+      stream.resume()
+    })
+    parser.on('error', fail)
+    gunzip.on('error', fail)
+    parser.on('finish', () => resolveDone())
+  })
+  Readable.from([archive]).pipe(gunzip).pipe(parser)
+  await settled
+  return files
+}
+
 export class NetworkSnapshotLoader implements SnapshotLoader {
   readonly #policy: CatalogPolicy
   readonly #trees = new Map<string, readonly TreeEntry[]>()
+  readonly #archives = new Map<string, ReadonlyMap<string, Uint8Array>>()
 
   constructor(policy: CatalogPolicy) {
     this.#policy = policy
@@ -2271,16 +2365,14 @@ export class NetworkSnapshotLoader implements SnapshotLoader {
       if (size > this.#policy.maxFileBytes || totalSize + size > this.#policy.maxBytesPerPlugin)
         throw new Error(`PLUGIN_SIZE_POLICY: ${entry.path}`)
       totalSize += size
-      const fileUrl = rawUrl(repositoryUrl, commitSha, entry.path)
-      const response = await fetchUpstream(fileUrl, {
-        headers: upstreamRequestHeaders(fileUrl),
-      })
-      if (!response.ok) {
-        if (response.status === 404)
-          throw new PluginSafetyError('PLUGIN_PATH_NOT_FOUND', [entry.path])
-        throw new PluginSafetyError('PLUGIN_FILE_UNAVAILABLE', [entry.path])
-      }
-      const bytes = new Uint8Array(await response.arrayBuffer())
+    }
+    // The tree above already bounded this plugin before a byte was pulled, so
+    // the archive is the only unbounded read left and it is capped while it
+    // streams. One archive per repository replaces one request per file.
+    const archive = await this.#archiveFiles(key, owner, repo, commitSha)
+    for (const entry of selected) {
+      const bytes = archive.get(entry.path)
+      if (!bytes) throw new PluginSafetyError('PLUGIN_FILE_UNAVAILABLE', [entry.path])
       if (bytes.byteLength > this.#policy.maxFileBytes)
         throw new Error(`PLUGIN_FILE_TOO_LARGE: ${entry.path}`)
       files.set(
@@ -2289,6 +2381,26 @@ export class NetworkSnapshotLoader implements SnapshotLoader {
       )
     }
     return { files, symlinks }
+  }
+
+  /**
+   * One repository archive per (repository, commit), shared by every plugin
+   * that repository hosts.
+   */
+  async #archiveFiles(
+    key: string,
+    owner: string,
+    repo: string,
+    commitSha: string
+  ): Promise<ReadonlyMap<string, Uint8Array>> {
+    const cached = this.#archives.get(key)
+    if (cached) return cached
+    const url = `https://api.github.com/repos/${owner}/${repo}/tarball/${commitSha}`
+    const response = await fetchUpstream(url, { headers: upstreamRequestHeaders(url) })
+    if (!response.ok) throw new PluginSafetyError('PLUGIN_SOURCE_UNAVAILABLE', [`${owner}/${repo}`])
+    const files = await readArchiveFiles(new Uint8Array(await response.arrayBuffer()), this.#policy)
+    this.#archives.set(key, files)
+    return files
   }
 }
 
