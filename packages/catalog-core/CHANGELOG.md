@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.8](https://github.com/adea-ai/plugins/compare/catalog-core-v1.10.7...catalog-core-v1.10.8) (2026-09-25)
+
+
+### Bug Fixes
+
+* **catalog:** read domain-style names as domains ([#141](https://github.com/adea-ai/plugins/issues/141)) ([7c4e2f7](https://github.com/adea-ai/plugins/commit/7c4e2f771aea1e651657eb8ff882b425800a8368))
+
 ## [1.10.7](https://github.com/adea-ai/plugins/compare/catalog-core-v1.10.6...catalog-core-v1.10.7) (2026-09-25)
 
 
