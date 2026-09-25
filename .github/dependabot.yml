@@ -17,10 +17,17 @@ updates:
       github-actions:
         applies-to: version-updates
         patterns: ['*']
-  # This repository is managed by Bun (`bun.lock`, no package-lock.json), and
-  # Dependabot's npm_and_yarn ecosystem cannot update a bun.lock: every run ends
-  # in `misconfigured_tooling` and no dependency pull request is ever produced.
-  # `bun` is the ecosystem that reads and updates bun.lock.
+  # Bun, not npm: this repository is managed by Bun (`bun.lock`, no
+  # package-lock.json), and Dependabot's npm_and_yarn ecosystem cannot update a
+  # bun.lock - every run ended in `misconfigured_tooling` with no dependency pull
+  # request produced. The `bun` ecosystem is the one that reads and updates
+  # bun.lock, so the entry stays as `bun` even though it cannot succeed yet:
+  # measured 2026-09-25, Dependabot's bundled Bun supports `bun.lock`
+  # lockfileVersion up to 1 while `bun.lock` here is 2, and it reports
+  # `Unsupported bun.lock 'lockfileVersion' 2`. Version and security updates for
+  # the root therefore stay blocked until Dependabot's Bun catches up; the
+  # validation lane's dependency audit still reports vulnerable dependencies, and
+  # remediation is a manual `bun update` until then.
   - package-ecosystem: bun
     directory: /
     target-branch: main
