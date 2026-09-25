@@ -42,6 +42,21 @@
       "pluginId": "plugin:cursor-official:calendar",
       "primaryCategory": "productivity",
       "productKey": "calendar",
+      "release": {
+        "canonicalContentDigest": "sha256:a46cd7d399722305c024ce32261aaec04df4a454b3ebf5e5855dbb76772306e5",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          }
+        ],
+        "contentResolution": "complete",
+        "releaseId": "release:3b3df4fd670ca9771cbb71aa107466b7c31536b95e12caf7f0a3bfe3bf2fee6e",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "2222222222222222222222222222222222222222",
+        "upstreamVersion": "0.1.0"
+      },
       "releaseId": "release:3b3df4fd670ca9771cbb71aa107466b7c31536b95e12caf7f0a3bfe3bf2fee6e",
       "sourceId": "cursor-official",
       "upstreamName": "calendar",
@@ -82,6 +97,23 @@
       "pluginId": "plugin:openai-official:linear",
       "primaryCategory": "productivity",
       "productKey": "linear",
+      "release": {
+        "canonicalContentDigest": "sha256:7d1c1d82ca7c59f494f88ca8b25a3e4e834af21340236e79b3bc453ed8b1abe1",
+        "capabilities": [
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "releaseId": "release:fe1c3cf71f61a5edb9f9d88ce3492aaf97ffdd683ef469e8b3b06327fedd1358",
+        "requiredConnectors": [],
+        "requiredCredentials": [
+          "authentication"
+        ],
+        "sourceRevision": "1111111111111111111111111111111111111111",
+        "upstreamVersion": "1.2.3"
+      },
       "releaseId": "release:fe1c3cf71f61a5edb9f9d88ce3492aaf97ffdd683ef469e8b3b06327fedd1358",
       "sourceId": "openai-official",
       "upstreamName": "linear",
@@ -120,6 +152,21 @@
       "pluginId": "plugin:knowledge-work-official:productivity",
       "primaryCategory": "productivity",
       "productKey": "productivity",
+      "release": {
+        "canonicalContentDigest": "sha256:bfea61502710eba5004ed46f08562cf414415958fc5749aa13180eb90d6d6503",
+        "capabilities": [
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "releaseId": "release:2ec69915a2ba1c711787cdf2cf5e0df13c22383a38d5a3793136bd82dae94325",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "4444444444444444444444444444444444444444",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:2ec69915a2ba1c711787cdf2cf5e0df13c22383a38d5a3793136bd82dae94325",
       "sourceId": "knowledge-work-official",
       "upstreamName": "productivity",
