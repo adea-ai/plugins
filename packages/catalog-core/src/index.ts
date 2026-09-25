@@ -49,6 +49,7 @@ import {
 } from './icons.js'
 import { stageIconBytes } from './icon-mirror.js'
 import { isVendorHomepage, resolveSiteIcon, type SiteIcon } from './site-icons.js'
+import { immutableAssetUrl } from './publication.js'
 
 export interface CatalogPolicy {
   readonly allowedRepositoryProtocols: readonly string[]
@@ -1310,6 +1311,19 @@ export function createArtifacts(
     counts: index.counts,
     catalogIndexArtifact: CATALOG_INDEX_ARTIFACT,
     iconCoverage: iconCoverage(index),
+    // The index URL rides in the navigation artifact so a client can fetch the
+    // browsing index from the publication it was told about, verify it against
+    // the digest in integrity.json, and never compose a URL or need this
+    // service to proxy it. Absent for an unpublished build.
+    ...(options.publicationRepositoryUrl
+      ? {
+          catalogIndexUrl: immutableAssetUrl(
+            options.publicationRepositoryUrl,
+            catalog.catalogId,
+            CATALOG_INDEX_ARTIFACT
+          ),
+        }
+      : {}),
     // Marks ride in the navigation artifact so a client that already receives it
     // renders compiled brand marks without fetching the browsing index. Keys are
     // sorted for a stable artifact.
