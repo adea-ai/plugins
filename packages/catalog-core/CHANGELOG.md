@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.4](https://github.com/adea-ai/plugins/compare/catalog-core-v1.10.3...catalog-core-v1.10.4) (2026-09-25)
+
+
+### Bug Fixes
+
+* **catalog:** verify published assets instead of trusting what is attached ([#121](https://github.com/adea-ai/plugins/issues/121)) ([490fa17](https://github.com/adea-ai/plugins/commit/490fa17c3c073ed7b1b54fd3bf3e57b2b84e4426))
+
 ## [1.10.3](https://github.com/adea-ai/plugins/compare/catalog-core-v1.10.2...catalog-core-v1.10.3) (2026-09-25)
 
 
