@@ -120,6 +120,17 @@ const SMALL_WORDS = new Set([
 ])
 
 /**
+ * Names whose slug form hides a domain or an initialism, which the token rules
+ * below cannot recover: `monday-com` is `monday.com`, not `Monday Com`.
+ */
+const FULL_NAMES: Readonly<Record<string, string>> = {
+  'bigdata-com': 'BigData.com',
+  'incident-io': 'Incident.io',
+  'monday-com': 'Monday.com',
+  vpai: 'VPAI',
+}
+
+/**
  * Title-cases a slug-shaped name and leaves a properly cased one alone.
  *
  * Separators become spaces (`adobe-for-creativity` → `Adobe for Creativity`),
@@ -127,10 +138,10 @@ const SMALL_WORDS = new Set([
  * (`monday.com` → `Monday.com`).
  */
 export function normalizeDisplayName(value: string): string {
-  const tokens = value
-    .trim()
-    .split(/[-_\s]+/u)
-    .filter(Boolean)
+  const trimmed = value.trim()
+  const known = FULL_NAMES[trimmed.toLowerCase()]
+  if (known !== undefined) return known
+  const tokens = trimmed.split(/[-_\s]+/u).filter(Boolean)
   if (tokens.length === 0) return value
   return tokens
     .map((token, index) => {

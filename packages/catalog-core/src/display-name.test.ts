@@ -36,6 +36,11 @@ describe('plugin display names', () => {
   test('keeps domain-style names and small words readable', () => {
     expect(normalizeDisplayName('incident.io')).toBe('Incident.io')
     expect(normalizeDisplayName('monday.com')).toBe('Monday.com')
+    // The slug form hides the domain, so the token rules alone cannot get there.
+    expect(normalizeDisplayName('monday-com')).toBe('Monday.com')
+    expect(normalizeDisplayName('bigdata-com')).toBe('BigData.com')
+    expect(normalizeDisplayName('incident-io')).toBe('Incident.io')
+    expect(normalizeDisplayName('vpai')).toBe('VPAI')
     expect(normalizeDisplayName('Claude for Financial Advisors')).toBe(
       'Claude for Financial Advisors'
     )
