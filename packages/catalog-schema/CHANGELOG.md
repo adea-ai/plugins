@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/adea-ai/plugins/compare/catalog-schema-v1.4.0...catalog-schema-v1.4.1) (2026-09-25)
+
+
+### Maintenance
+
+* **deps:** refresh the Bun dependency group with its lockfile ([#144](https://github.com/adea-ai/plugins/issues/144)) ([7fcb56d](https://github.com/adea-ai/plugins/commit/7fcb56df1813dff55160ece423723354f91a85bb))
+
 ## [1.4.0](https://github.com/adea-ai/plugins/compare/catalog-schema-v1.3.0...catalog-schema-v1.4.0) (2026-09-24)
 
 

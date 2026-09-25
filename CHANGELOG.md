@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.20](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.19...plugins-marketplace-v1.10.20) (2026-09-25)
+
+
+### Maintenance
+
+* **deps:** refresh the Bun dependency group with its lockfile ([#144](https://github.com/adea-ai/plugins/issues/144)) ([7fcb56d](https://github.com/adea-ai/plugins/commit/7fcb56df1813dff55160ece423723354f91a85bb))
+
 ## [1.10.19](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.18...plugins-marketplace-v1.10.19) (2026-09-25)
 
 
