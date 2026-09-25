@@ -110,6 +110,8 @@ export interface SyncInput extends ConsumerIndexOptions {
   readonly productAliases: ProductAliases
   readonly productCategories?: Record<string, string>
   readonly productIconOverrides?: ProductIconOverrides
+  /** Where this catalog is published, so records carry absolute asset URLs. */
+  readonly publicationRepositoryUrl?: string
   /** Directory that receives mirrored brand marks as the catalog is built. */
   readonly iconAssetsDirectory?: string
   readonly policy: CatalogPolicy
@@ -212,6 +214,11 @@ export interface ConsumerIndexOptions {
   readonly leading?: Readonly<Record<string, readonly string[]>>
   readonly topCount?: number
   readonly productPreference?: ProductPreference
+  /**
+   * Where this catalog is published. When known, product records carry an
+   * absolute, immutable URL for their brand mark so no client composes one.
+   */
+  readonly publicationRepositoryUrl?: string
   /**
    * Whether curated-name drift is published in the consumer index. An offline
    * build replays fixtures rather than the upstream catalogs, so its curation
@@ -359,6 +366,9 @@ export async function synchronize(input: SyncInput): Promise<SyncResult> {
     ...(input.leading ? { leading: input.leading } : {}),
     ...(input.topCount !== undefined ? { topCount: input.topCount } : {}),
     ...(input.productPreference ? { productPreference: input.productPreference } : {}),
+    ...(input.publicationRepositoryUrl
+      ? { publicationRepositoryUrl: input.publicationRepositoryUrl }
+      : {}),
     curationDiagnostics: (input.mode ?? 'live') !== 'offline',
   })
   verifyArtifacts(artifacts)
@@ -1259,6 +1269,9 @@ export function createArtifacts(
     ...(options.leading ? { leading: options.leading } : {}),
     ...(options.topCount !== undefined ? { topCount: options.topCount } : {}),
     ...(options.productPreference ? { preference: options.productPreference } : {}),
+    ...(options.publicationRepositoryUrl
+      ? { publicationRepositoryUrl: options.publicationRepositoryUrl }
+      : {}),
   })
   const summary = {
     schemaVersion: 1,
@@ -1632,6 +1645,12 @@ export function verifyConsumerIndex(
     if (category.topProductKeys.length > topCount)
       throw new Error(`CONSUMER_INDEX_TOP_OVERFLOW: ${category.category}`)
     const shelved = new Set<string>()
+    for (const product of Object.values(products)) {
+      const icon = product.icon
+      if (!icon?.assetUrl) continue
+      if (!icon.assetUrl.startsWith('https://') || !icon.assetUrl.endsWith(`/${icon.asset}`))
+        throw new Error(`CONSUMER_INDEX_ASSET_URL_INVALID: ${icon.asset}`)
+    }
     for (const productKey of category.topProductKeys) {
       if (!category.productKeys.includes(productKey))
         throw new Error(`CONSUMER_INDEX_TOP_NOT_MEMBER: ${category.category}: ${productKey}`)
