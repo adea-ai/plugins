@@ -49,6 +49,7 @@ import {
 } from './icons.js'
 import { stageIconBytes } from './icon-mirror.js'
 import { isVendorHomepage, resolveSiteIcon, type SiteIcon } from './site-icons.js'
+import { normalizeDisplayName } from './display-name.js'
 import { immutableAssetUrl } from './publication.js'
 
 /**
@@ -756,7 +757,12 @@ async function normalizePlugin(input: {
       ).filter(Boolean)
     ),
   ].toSorted()
-  const displayName = entry.displayName ?? pluginManifest?.displayName ?? entry.name
+  // The name a list renders: marketplace manifests are inconsistent (`Gmail`
+  // beside `zapier` beside `aws-agents-for-devsecops`), so the catalog
+  // publishes the written form once and every consumer shows the same thing.
+  const displayName = normalizeDisplayName(
+    entry.displayName ?? pluginManifest?.displayName ?? entry.name
+  )
   const authors =
     entry.authors.length > 0
       ? [...entry.authors]
