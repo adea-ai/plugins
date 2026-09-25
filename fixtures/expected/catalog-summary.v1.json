@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:c537a286b7e8721c056057a22b7b6efce046dcf37c6b01ca0721c64f1f80a59c",
+  "catalogId": "catalog:f2246c85cbbc41fcdc2ffd91bc13d2b1803aba50c0bb7b3fe1f99965a03ea588",
   "categories": [
     "business-operations",
     "data-analytics",
@@ -23,7 +23,7 @@
   "search": [
     {
       "pluginId": "plugin:claude-official:sales",
-      "text": "sales Prepare sales work. business-operations sales"
+      "text": "Sales Prepare sales work. business-operations sales"
     },
     {
       "pluginId": "plugin:claude-official:security",
@@ -31,11 +31,11 @@
     },
     {
       "pluginId": "plugin:cursor-official:calendar",
-      "text": "calendar Calendar workflows. calendar productivity"
+      "text": "Calendar Calendar workflows. calendar productivity"
     },
     {
       "pluginId": "plugin:cursor-official:teaching",
-      "text": "teaching Practice and learning workflows. developer-tools education-research teaching"
+      "text": "Teaching Practice and learning workflows. developer-tools education-research teaching"
     },
     {
       "pluginId": "plugin:knowledge-work-official:productivity",
