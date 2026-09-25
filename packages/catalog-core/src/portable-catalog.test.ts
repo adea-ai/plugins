@@ -166,3 +166,21 @@ it('makes the root manifest authoritative even when nested legacy manifests are 
     assert.equal(result.changeReport.skippedPlugins.length, 0)
     verifyPortableCatalog(result.catalog!, true)
   }))
+
+it('advertises where it is published once the publication is known', () =>
+  withPortableFixture(async (input) => {
+    // The default compiler replaces the artifacts the legacy pass produced, so it
+    // must repeat every option it needs: dropping this one silently strips the
+    // brand-mark and browsing-index URLs from a published catalog.
+    const result = await synchronizePortable({
+      ...input,
+      publicationRepositoryUrl: 'https://github.com/adea-ai/plugins',
+    })
+    const navigation = JSON.parse(result.artifacts!['categories.v1.json']) as {
+      catalogIndexUrl?: string
+      brandMarks?: Record<string, string>
+    }
+    assert.match(navigation.catalogIndexUrl ?? '', /\/releases\/download\/catalog\/[a-f0-9]{64}\//)
+    // The fixture plugin ships no mark, so the map is present and empty.
+    assert.deepEqual(navigation.brandMarks, {})
+  }))
