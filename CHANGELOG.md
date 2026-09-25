@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.23](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.22...plugins-marketplace-v1.10.23) (2026-09-25)
+
+
+### Performance
+
+* **catalog:** fetch one archive per repository, not one per file ([#151](https://github.com/adea-ai/plugins/issues/151)) ([e4f145c](https://github.com/adea-ai/plugins/commit/e4f145cc5be5703085704be82264343b26db11aa))
+
 ## [1.10.22](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.21...plugins-marketplace-v1.10.22) (2026-09-25)
 
 
