@@ -1,5 +1,7 @@
 import { mkdtemp, mkdir, readFile, symlink, writeFile } from 'node:fs/promises'
 import { readdirSync, readFileSync } from 'node:fs'
+import { gzipSync } from 'node:zlib'
+import { pack } from 'tar-stream'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, expect, test } from 'bun:test'
@@ -136,6 +138,52 @@ const treePayload = (paths: string[]) => ({
     mode: '100644',
   })),
 })
+
+const ARCHIVE_ROOT = 'demo-a1b2c3d'
+
+/**
+ * A real gzipped tarball, because the loader streams and parses the archive
+ * rather than trusting a stubbed body.
+ */
+async function tarballResponse(
+  entries: readonly { path: string; body?: string; type?: 'symlink'; linkpath?: string }[]
+): Promise<Response> {
+  const packer = pack()
+  const chunks: Buffer[] = []
+  packer.on('data', (chunk: unknown) => chunks.push(chunk as Buffer))
+  const finished = new Promise<void>((done, fail) => {
+    packer.on('end', () => done())
+    packer.on('error', fail)
+  })
+  for (const entry of entries) {
+    // GitHub wraps every entry in one top-level directory; the loader strips
+    // it, so fixtures must carry it too.
+    const name = `${ARCHIVE_ROOT}/${entry.path}`
+    if (entry.type === 'symlink')
+      packer.entry({ name, type: 'symlink', linkname: entry.linkpath ?? '../escape' }, '')
+    else packer.entry({ name }, entry.body ?? '')
+  }
+  packer.finalize()
+  await finished
+  return new Response(gzipSync(Buffer.concat(chunks)), {
+    status: 200,
+    headers: { 'content-type': 'application/gzip' },
+  })
+}
+
+const isArchive = (url: string): boolean => url.includes('/tarball/')
+
+/**
+ * Exact hostname match. A substring test on a URL is not a host check: the
+ * needle can appear anywhere in the string.
+ */
+function isRawGitHubHost(url: string): boolean {
+  try {
+    return new URL(url).hostname === 'raw.githubusercontent.com'
+  } catch {
+    return false
+  }
+}
 
 function testEntry(name: string, subdir: string) {
   return {
@@ -591,12 +639,14 @@ describe('upstream fetch quarantine', () => {
 
   test('retries transient tree failures then succeeds', async () => {
     let treeCalls = 0
-    const stub = stubFetch((url) => {
+    const stub = stubFetch(async (url) => {
       if (url === treeUrl) {
         treeCalls += 1
         if (treeCalls < 3) return new Response('busy', { status: 500 })
         return jsonResponse(treePayload(['plugins/demo/plugin.json']))
       }
+      if (isArchive(url))
+        return tarballResponse([{ path: 'plugins/demo/plugin.json', body: manifestBytes }])
       return new Response(manifestBytes, { status: 200 })
     })
     try {
@@ -627,10 +677,11 @@ describe('upstream fetch quarantine', () => {
     }
   })
 
-  test('does not retry a missing file', async () => {
-    const stub = stubFetch((url) => {
+  test('reports a tree entry the archive does not carry', async () => {
+    const stub = stubFetch(async (url) => {
       if (url === treeUrl) return jsonResponse(treePayload(['plugins/demo/plugin.json']))
-      return new Response('gone', { status: 404 })
+      if (isArchive(url)) return tarballResponse([])
+      return new Response('unexpected', { status: 200 })
     })
     try {
       const loader = new NetworkSnapshotLoader(policy)
@@ -638,17 +689,20 @@ describe('upstream fetch quarantine', () => {
         () => undefined,
         (caught: unknown) => caught as Error
       )
-      expect(error?.message).toMatch(/^PLUGIN_PATH_NOT_FOUND:/)
-      expect(stub.calls.filter((url) => url !== treeUrl)).toHaveLength(1)
+      // The archive arrived intact, so a missing entry is a content gap, not
+      // a fetch to retry: exactly one archive call, no backoff.
+      expect(error?.message).toMatch(/^PLUGIN_FILE_UNAVAILABLE:/)
+      expect(stub.calls.filter(isArchive)).toHaveLength(1)
     } finally {
       stub.restore()
     }
   })
 
-  test('quarantines a plugin when file fetches keep failing', async () => {
+  test('quarantines a plugin when the archive keeps failing', async () => {
     const stub = stubFetch((url) => {
       if (url === treeUrl) return jsonResponse(treePayload(['plugins/demo/plugin.json']))
-      return new Response('broken', { status: 500 })
+      if (isArchive(url)) return new Response('broken', { status: 500 })
+      return new Response('unexpected', { status: 200 })
     })
     try {
       const loader = new NetworkSnapshotLoader(policy)
@@ -656,8 +710,8 @@ describe('upstream fetch quarantine', () => {
         () => undefined,
         (caught: unknown) => caught as Error
       )
-      expect(error?.message).toMatch(/^PLUGIN_FILE_UNAVAILABLE:/)
-      expect(stub.calls.filter((url) => url !== treeUrl)).toHaveLength(3)
+      expect(error?.message).toMatch(/^PLUGIN_SOURCE_UNAVAILABLE:/)
+      expect(stub.calls.filter(isArchive)).toHaveLength(3)
     } finally {
       stub.restore()
     }
@@ -665,7 +719,7 @@ describe('upstream fetch quarantine', () => {
 
   test('retries a rate-limited tree without hammering', async () => {
     let treeCalls = 0
-    const stub = stubFetch((url) => {
+    const stub = stubFetch(async (url) => {
       if (url === treeUrl) {
         treeCalls += 1
         if (treeCalls === 1)
@@ -675,6 +729,8 @@ describe('upstream fetch quarantine', () => {
           })
         return jsonResponse(treePayload(['plugins/demo/plugin.json']))
       }
+      if (isArchive(url))
+        return tarballResponse([{ path: 'plugins/demo/plugin.json', body: manifestBytes }])
       return new Response(manifestBytes, { status: 200 })
     })
     try {
@@ -709,12 +765,84 @@ describe('upstream fetch quarantine', () => {
     }
   })
 
+  test('one archive serves every plugin in a repository', async () => {
+    const paths = ['plugins/one/plugin.json', 'plugins/two/plugin.json', 'plugins/two/run.sh']
+    const stub = stubFetch(async (url) => {
+      if (url === treeUrl) return jsonResponse(treePayload(paths))
+      if (isArchive(url))
+        return tarballResponse([
+          { path: 'plugins/one/plugin.json', body: manifestBytes },
+          { path: 'plugins/two/plugin.json', body: manifestBytes },
+          { path: 'plugins/two/run.sh', body: '#!/bin/sh\n' },
+        ])
+      return new Response('unexpected', { status: 500 })
+    })
+    try {
+      const loader = new NetworkSnapshotLoader(policy)
+      const first = await loader.load(repo, sha, 'plugins/one')
+      const second = await loader.load(repo, sha, 'plugins/two')
+      expect([...first.files.keys()]).toEqual(['plugin.json'])
+      expect([...second.files.keys()].toSorted()).toEqual(['plugin.json', 'run.sh'])
+      // The whole point: three files, and the archive is fetched once.
+      expect(stub.calls.filter(isArchive)).toHaveLength(1)
+      expect(stub.calls.filter(isRawGitHubHost)).toHaveLength(0)
+    } finally {
+      stub.restore()
+    }
+  })
+
+  test('rejects an archive entry that escapes the repository', async () => {
+    const stub = stubFetch(async (url) => {
+      if (url === treeUrl) return jsonResponse(treePayload(['plugins/demo/plugin.json']))
+      if (isArchive(url))
+        return tarballResponse([
+          { path: 'plugins/demo/plugin.json', body: manifestBytes },
+          { path: '../escape.txt', body: 'owned' },
+        ])
+      return new Response('unexpected', { status: 500 })
+    })
+    try {
+      const loader = new NetworkSnapshotLoader(policy)
+      const error = await loader.load(repo, sha, 'plugins/demo').then(
+        () => undefined,
+        (caught: unknown) => caught as Error
+      )
+      expect(String(error?.message)).toMatch(/PATH_TRAVERSAL|TREE_PATH_INVALID/)
+    } finally {
+      stub.restore()
+    }
+  })
+
+  test('never materializes a symlink entry as file content', async () => {
+    const stub = stubFetch(async (url) => {
+      if (url === treeUrl) return jsonResponse(treePayload(['plugins/demo/plugin.json']))
+      if (isArchive(url))
+        return tarballResponse([
+          { path: 'plugins/demo/plugin.json', body: manifestBytes },
+          { path: 'plugins/demo/link', type: 'symlink', linkpath: '../../../../etc/passwd' },
+        ])
+      return new Response('unexpected', { status: 500 })
+    })
+    try {
+      const loader = new NetworkSnapshotLoader(policy)
+      const snapshot = await loader.load(repo, sha, 'plugins/demo')
+      expect(snapshot.files.has('link')).toBe(false)
+      expect(snapshot.files.has('plugin.json')).toBe(true)
+    } finally {
+      stub.restore()
+    }
+  })
+
   test('keeps reachable plugins when only some fail', async () => {
     const fixtureRoot = join(process.cwd(), 'fixtures', 'openai', 'plugins', 'calendar')
     const calendarFiles = walkFixtureFiles(fixtureRoot)
+    // The archive is per repository, so a per-file 404 no longer exists: the
+    // `gone` plugin now fails because the tree advertises a file the archive
+    // does not carry, which is the same quarantine outcome for one plugin
+    // while its sibling still resolves from the same archive.
     const { catalog, calls } = await buildWith(
       [testEntry('calendar', 'plugins/calendar'), testEntry('gone', 'plugins/gone')],
-      (url) => {
+      async (url) => {
         if (url.includes('/git/trees/'))
           return jsonResponse(
             treePayload([
@@ -722,30 +850,18 @@ describe('upstream fetch quarantine', () => {
               'plugins/gone/plugin.json',
             ])
           )
-        if (url.endsWith('plugins/gone/plugin.json')) return new Response('gone', { status: 404 })
-        let isRawGitHubHost: boolean
-        try {
-          isRawGitHubHost = new URL(url).hostname === 'raw.githubusercontent.com'
-        } catch {
-          isRawGitHubHost = false
-        }
-        if (isRawGitHubHost) {
-          const marker = '/plugins/calendar/'
-          const index = url.indexOf(marker)
-          if (index >= 0) {
-            const rel = url
-              .slice(index + marker.length)
-              .split('/')
-              .map(decodeURIComponent)
-              .join('/')
-            return new Response(readFileSync(join(fixtureRoot, rel)), { status: 200 })
-          }
-          return new Response(manifestBytes, { status: 200 })
-        }
+        if (isArchive(url))
+          return tarballResponse(
+            calendarFiles.map((file) => ({
+              path: `plugins/calendar/${file}`,
+              body: readFileSync(join(fixtureRoot, file), 'utf8'),
+            }))
+          )
         return new Response('unexpected', { status: 500 })
       }
     )
     expect(calls.length).toBeGreaterThan(0)
+    expect(calls.filter(isRawGitHubHost)).toHaveLength(0)
     expect(catalog.plugins.map((plugin) => plugin.pluginId)).toEqual([
       'plugin:openai-official:calendar',
     ])
