@@ -76,6 +76,16 @@ describe('placement configuration', () => {
   })
 })
 
+describe('publication configuration', () => {
+  test('names a repository the release URLs can be composed from', () => {
+    const publication = read<{ schemaVersion: number; repositoryUrl: string }>('publication.json')
+    expect(publication.schemaVersion).toBe(1)
+    expect(publication.repositoryUrl).toMatch(
+      /^https:\/\/github\.com\/[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/
+    )
+  })
+})
+
 describe('brand mark configuration', () => {
   test('the shipped override file parses', () => {
     const overrides = parseProductIconOverrides(read('product-icons.json'))

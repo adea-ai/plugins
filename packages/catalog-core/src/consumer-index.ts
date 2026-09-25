@@ -1,5 +1,6 @@
 import type { Catalog, Plugin, PluginRelease } from '@adea-ai/catalog-schema'
 import { iconAssetName, type IconContentType } from './icons.js'
+import { immutableAssetUrl } from './publication.js'
 
 /**
  * Placement policy that decides which source variant represents a product.
@@ -61,6 +62,12 @@ export interface ProductIcon {
   readonly kind: 'content' | 'favicon'
   /** Release asset name; fetch it from the release for this `catalogId`. */
   readonly asset: string
+  /**
+   * Absolute, immutable URL for the asset, present when the build knows where
+   * the catalog will be published. A client renders this and never composes a
+   * URL; a deployment that hosts assets elsewhere substitutes its base here.
+   */
+  readonly assetUrl?: string
   readonly digest: string
   readonly contentType: IconContentType
   readonly bytes: number
@@ -233,14 +240,23 @@ function currentRelease(plugin: Plugin): PluginRelease | undefined {
 }
 
 /** Prefers the canonical variant's mark, then any variant that has one. */
-function selectProductIcon(variants: readonly Plugin[], canonical: Plugin): ProductIcon | null {
+function selectProductIcon(
+  variants: readonly Plugin[],
+  canonical: Plugin,
+  catalogId: string,
+  publicationRepositoryUrl: string | undefined
+): ProductIcon | null {
   const ordered = [canonical, ...variants.filter((plugin) => plugin !== canonical)]
   for (const plugin of ordered) {
     const icon = currentRelease(plugin)?.icon
     if (!icon) continue
+    const asset = iconAssetName(icon.digest, icon.contentType)
     return {
       kind: icon.kind,
-      asset: iconAssetName(icon.digest, icon.contentType),
+      asset,
+      ...(publicationRepositoryUrl
+        ? { assetUrl: immutableAssetUrl(publicationRepositoryUrl, catalogId, asset) }
+        : {}),
       digest: icon.digest,
       contentType: icon.contentType,
       bytes: icon.bytes,
@@ -290,6 +306,8 @@ export function buildConsumerIndex(input: {
   readonly leading?: Readonly<Record<string, readonly string[]>>
   readonly topCount?: number
   readonly preference?: ProductPreference
+  /** Where the catalog will be published, so records can carry absolute URLs. */
+  readonly publicationRepositoryUrl?: string
 }): ConsumerIndex {
   const preference = input.preference ?? {
     schemaVersion: 1 as const,
@@ -306,6 +324,7 @@ export function buildConsumerIndex(input: {
     if (list) list.push(plugin)
     else variantsByProduct.set(plugin.productGroupingKey, [plugin])
   }
+  const catalogId = (input.catalog as { catalogId?: string }).catalogId ?? ''
   const products: Record<string, ConsumerProduct> = {}
   for (const [productKey, variants] of [...variantsByProduct].toSorted((left, right) =>
     left[0].localeCompare(right[0])
@@ -345,7 +364,7 @@ export function buildConsumerIndex(input: {
       compatibility: compactCompatibility(canonical),
       releaseId: canonical.currentReleaseId,
       keywords: [...canonical.keywords],
-      icon: selectProductIcon(variants, canonical),
+      icon: selectProductIcon(variants, canonical, catalogId, input.publicationRepositoryUrl),
       monogram: monogramFor(selectDisplayName(variants, canonical), productKey),
     }
   }

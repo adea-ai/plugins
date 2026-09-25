@@ -4,8 +4,8 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, expect, test } from 'bun:test'
 import type { Catalog, Plugin } from '../../catalog-schema/src/index.js'
-import { byteDigest, createArtifacts, verifyArtifacts } from './index.js'
-import type { ConsumerIndex } from './consumer-index.js'
+import { byteDigest, createArtifacts, verifyArtifacts, verifyConsumerIndex } from './index.js'
+import { buildConsumerIndex, type ConsumerIndex } from './consumer-index.js'
 import { resolveIconSources, stageIconAssets, type IconSource } from './icon-mirror.js'
 import { iconAssetName } from './icons.js'
 
@@ -222,6 +222,40 @@ describe('artifact shards', () => {
     const other = JSON.parse(artifacts['catalog-index.v1.json']!).products.sales
     expect(other.icon).toBeNull()
     expect(other.monogram.text).toBe('SA')
+  })
+
+  test('advertises an absolute immutable URL when the publication is known', () => {
+    const base = catalog([
+      plugin({
+        sourceId: 'cursor-official',
+        name: 'calendar',
+        categories: ['productivity'],
+        icon: { path: 'assets/logo.svg', bytes: CLEAN_SVG },
+      }),
+    ])
+    const index = buildConsumerIndex({
+      catalog: base,
+      publicationRepositoryUrl: 'https://github.com/adea-ai/plugins',
+    })
+    expect(index.products.calendar!.icon!.assetUrl).toBe(
+      `https://github.com/adea-ai/plugins/releases/download/catalog/${base.catalogId.slice('catalog:'.length)}/${svgAsset}`
+    )
+    // An unpublished build advertises no URL rather than a wrong one.
+    const unpublished = buildConsumerIndex({ catalog: base })
+    expect(unpublished.products.calendar!.icon!.assetUrl).toBeUndefined()
+    // A URL that does not point at its own asset is rejected.
+    const tampered = {
+      ...index,
+      products: {
+        calendar: {
+          ...index.products.calendar!,
+          icon: { ...index.products.calendar!.icon!, assetUrl: 'https://evil.example/icon.png' },
+        },
+      },
+    }
+    expect(() => verifyConsumerIndex(JSON.stringify(tampered), base)).toThrow(
+      'CONSUMER_INDEX_ASSET_URL_INVALID'
+    )
   })
 
   test('declares exactly the mirrored assets the index references', () => {
