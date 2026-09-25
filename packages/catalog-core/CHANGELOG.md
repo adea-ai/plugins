@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.11](https://github.com/adea-ai/plugins/compare/catalog-core-v1.10.10...catalog-core-v1.10.11) (2026-09-25)
+
+
+### Performance
+
+* **catalog:** fetch one archive per repository, not one per file ([#151](https://github.com/adea-ai/plugins/issues/151)) ([e4f145c](https://github.com/adea-ai/plugins/commit/e4f145cc5be5703085704be82264343b26db11aa))
+
 ## [1.10.10](https://github.com/adea-ai/plugins/compare/catalog-core-v1.10.9...catalog-core-v1.10.10) (2026-09-25)
 
 
