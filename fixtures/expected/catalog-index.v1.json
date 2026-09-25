@@ -93,6 +93,21 @@
       "pluginId": "plugin:cursor-official:calendar",
       "primaryCategory": "productivity",
       "productKey": "calendar",
+      "release": {
+        "canonicalContentDigest": "sha256:a46cd7d399722305c024ce32261aaec04df4a454b3ebf5e5855dbb76772306e5",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          }
+        ],
+        "contentResolution": "complete",
+        "releaseId": "release:3b3df4fd670ca9771cbb71aa107466b7c31536b95e12caf7f0a3bfe3bf2fee6e",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "2222222222222222222222222222222222222222",
+        "upstreamVersion": "0.1.0"
+      },
       "releaseId": "release:3b3df4fd670ca9771cbb71aa107466b7c31536b95e12caf7f0a3bfe3bf2fee6e",
       "sourceId": "cursor-official",
       "upstreamName": "calendar",
@@ -133,6 +148,23 @@
       "pluginId": "plugin:openai-official:linear",
       "primaryCategory": "productivity",
       "productKey": "linear",
+      "release": {
+        "canonicalContentDigest": "sha256:7d1c1d82ca7c59f494f88ca8b25a3e4e834af21340236e79b3bc453ed8b1abe1",
+        "capabilities": [
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "releaseId": "release:fe1c3cf71f61a5edb9f9d88ce3492aaf97ffdd683ef469e8b3b06327fedd1358",
+        "requiredConnectors": [],
+        "requiredCredentials": [
+          "authentication"
+        ],
+        "sourceRevision": "1111111111111111111111111111111111111111",
+        "upstreamVersion": "1.2.3"
+      },
       "releaseId": "release:fe1c3cf71f61a5edb9f9d88ce3492aaf97ffdd683ef469e8b3b06327fedd1358",
       "sourceId": "openai-official",
       "upstreamName": "linear",
@@ -171,6 +203,21 @@
       "pluginId": "plugin:knowledge-work-official:productivity",
       "primaryCategory": "productivity",
       "productKey": "productivity",
+      "release": {
+        "canonicalContentDigest": "sha256:bfea61502710eba5004ed46f08562cf414415958fc5749aa13180eb90d6d6503",
+        "capabilities": [
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "releaseId": "release:2ec69915a2ba1c711787cdf2cf5e0df13c22383a38d5a3793136bd82dae94325",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "4444444444444444444444444444444444444444",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:2ec69915a2ba1c711787cdf2cf5e0df13c22383a38d5a3793136bd82dae94325",
       "sourceId": "knowledge-work-official",
       "upstreamName": "productivity",
@@ -210,6 +257,21 @@
       "pluginId": "plugin:claude-official:sales",
       "primaryCategory": "business-operations",
       "productKey": "sales",
+      "release": {
+        "canonicalContentDigest": "sha256:10462f80a006c7d518fcccb34d09981bf7fda532c4d0974e525ec2555a6a1ff0",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          }
+        ],
+        "contentResolution": "complete",
+        "releaseId": "release:dc304fb0c5f79f0fccbba74dcb29b78049d6972eadd084d05935384755b5a1f4",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "3333333333333333333333333333333333333333",
+        "upstreamVersion": "1.1.0"
+      },
       "releaseId": "release:dc304fb0c5f79f0fccbba74dcb29b78049d6972eadd084d05935384755b5a1f4",
       "sourceId": "claude-official",
       "upstreamName": "sales",
@@ -249,6 +311,21 @@
       "pluginId": "plugin:knowledge-work-official:search",
       "primaryCategory": "data-analytics",
       "productKey": "search",
+      "release": {
+        "canonicalContentDigest": "sha256:6f972ae6548dc8e1141c079e77e31d0bcc46068b9a6d882d234340d3bdaa123c",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "releaseId": "release:24dcda1228d0962c9b2bc807c631a90749d910e24b491cbecb09389ec68187ff",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "4444444444444444444444444444444444444444",
+        "upstreamVersion": "0.8.0"
+      },
       "releaseId": "release:24dcda1228d0962c9b2bc807c631a90749d910e24b491cbecb09389ec68187ff",
       "sourceId": "knowledge-work-official",
       "upstreamName": "search",
@@ -289,6 +366,29 @@
       "pluginId": "plugin:claude-official:security",
       "primaryCategory": "security",
       "productKey": "security",
+      "release": {
+        "canonicalContentDigest": "sha256:8e18e64bebacea3c1de7a42034154db464616a94901f7b71c46cdf75351e800b",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "releaseId": "release:5b02dbca6c6abb490bec11acb3e72e366d15232e9855f8b7cca4363bf596f932",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "3333333333333333333333333333333333333333",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:5b02dbca6c6abb490bec11acb3e72e366d15232e9855f8b7cca4363bf596f932",
       "sourceId": "claude-official",
       "upstreamName": "security",
@@ -331,6 +431,25 @@
       "pluginId": "plugin:cursor-official:teaching",
       "primaryCategory": "developer-tools",
       "productKey": "teaching",
+      "release": {
+        "canonicalContentDigest": "sha256:ffe69c9130cc5928a7e53fe30e7d931a6b3d3d55c689ff1b5eadce5da41fe500",
+        "capabilities": [
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "releaseId": "release:18ce8f072ca693885ce731feffbd78dd1307c81a8ad43920edf991e2032176db",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "2222222222222222222222222222222222222222",
+        "upstreamVersion": "0.3.0"
+      },
       "releaseId": "release:18ce8f072ca693885ce731feffbd78dd1307c81a8ad43920edf991e2032176db",
       "sourceId": "cursor-official",
       "upstreamName": "teaching",

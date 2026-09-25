@@ -88,7 +88,53 @@ export interface ProductMonogram {
   readonly hue: number
 }
 
-/** One installable product, resolved from every source variant that publishes it. */ /** One installable product, resolved from every source variant that publishes it. */
+/**
+ * The install-relevant facts of the release a product installs.
+ *
+ * A browsing client shows a plugin, then plans an install from it: the digest it
+ * must pin, the connectors and credentials setup will ask for, and the
+ * capabilities the harness has to negotiate. Carrying them here means the grid
+ * needs no second artifact.
+ */
+export interface ConsumerRelease {
+  readonly releaseId: string
+  readonly canonicalContentDigest: string
+  readonly contentResolution: string
+  readonly capabilities: readonly { readonly type: string; readonly name: string }[]
+  readonly requiredConnectors: readonly string[]
+  readonly requiredCredentials: readonly string[]
+  /** Commit the release was resolved from, for audit and update state. */
+  readonly sourceRevision: string
+  readonly upstreamVersion?: string
+  /** Canonical package status, when the release carries one. */
+  readonly packageStatus?: string
+  readonly packageDigest?: string
+}
+
+/** One installable product, resolved from every source variant that publishes it. */ /**
+ * The install-relevant facts of the release a product installs.
+ *
+ * A browsing client shows a plugin, then plans an install from it: the digest it
+ * must pin, the connectors and credentials setup will ask for, and the
+ * capabilities the harness has to negotiate. Carrying them here means the grid
+ * needs no second artifact.
+ */
+export interface ConsumerRelease {
+  readonly releaseId: string
+  readonly canonicalContentDigest: string
+  readonly contentResolution: string
+  readonly capabilities: readonly { readonly type: string; readonly name: string }[]
+  readonly requiredConnectors: readonly string[]
+  readonly requiredCredentials: readonly string[]
+  /** Commit the release was resolved from, for audit and update state. */
+  readonly sourceRevision: string
+  readonly upstreamVersion?: string
+  /** Canonical package status, when the release carries one. */
+  readonly packageStatus?: string
+  readonly packageDigest?: string
+}
+
+/** One installable product, resolved from every source variant that publishes it. */
 export interface ConsumerProduct {
   readonly productKey: string
   readonly pluginId: string
@@ -105,6 +151,8 @@ export interface ConsumerProduct {
   readonly capabilitySummary: Readonly<Record<string, number>>
   readonly compatibility: Readonly<Record<string, string>>
   readonly releaseId: string
+  /** The release `pluginId` pins, with the facts an install needs. */
+  readonly release: ConsumerRelease
   readonly keywords: readonly string[]
   readonly icon: ProductIcon | null
   readonly monogram: ProductMonogram
@@ -239,6 +287,37 @@ function currentRelease(plugin: Plugin): PluginRelease | undefined {
   )
 }
 
+/** Reads a nested string out of untrusted release metadata. */
+function nestedString(value: unknown, key: string): string | undefined {
+  if (typeof value !== 'object' || value === null) return undefined
+  const nested = (value as Record<string, unknown>)[key]
+  return typeof nested === 'string' && nested.length > 0 ? nested : undefined
+}
+
+function describeRelease(plugin: Plugin): ConsumerRelease {
+  const release = currentRelease(plugin)!
+  const packages = ((release.releaseMetadata ?? {}) as Record<string, unknown>).agentPlugins
+  return {
+    releaseId: release.releaseId,
+    canonicalContentDigest: release.canonicalContentDigest,
+    contentResolution: release.contentResolution,
+    capabilities: release.capabilities.map((capability) => ({
+      type: capability.type,
+      name: capability.name,
+    })),
+    requiredConnectors: [...release.requiredConnectors],
+    requiredCredentials: [...release.requiredCredentials],
+    sourceRevision: release.resolvedCommitSha,
+    ...(release.upstreamVersion ? { upstreamVersion: release.upstreamVersion } : {}),
+    ...(nestedString(packages, 'status')
+      ? { packageStatus: nestedString(packages, 'status')! }
+      : {}),
+    ...(nestedString(packages, 'packageDigest')
+      ? { packageDigest: nestedString(packages, 'packageDigest')! }
+      : {}),
+  }
+}
+
 /** Prefers the canonical variant's mark, then any variant that has one. */
 function selectProductIcon(
   variants: readonly Plugin[],
@@ -363,6 +442,7 @@ export function buildConsumerIndex(input: {
       capabilitySummary: { ...canonical.capabilitySummary },
       compatibility: compactCompatibility(canonical),
       releaseId: canonical.currentReleaseId,
+      release: describeRelease(canonical),
       keywords: [...canonical.keywords],
       icon: selectProductIcon(variants, canonical, catalogId, input.publicationRepositoryUrl),
       monogram: monogramFor(selectDisplayName(variants, canonical), productKey),

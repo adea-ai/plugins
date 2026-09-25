@@ -33,6 +33,21 @@
       "pluginId": "plugin:claude-official:sales",
       "primaryCategory": "business-operations",
       "productKey": "sales",
+      "release": {
+        "canonicalContentDigest": "sha256:10462f80a006c7d518fcccb34d09981bf7fda532c4d0974e525ec2555a6a1ff0",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          }
+        ],
+        "contentResolution": "complete",
+        "releaseId": "release:dc304fb0c5f79f0fccbba74dcb29b78049d6972eadd084d05935384755b5a1f4",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "3333333333333333333333333333333333333333",
+        "upstreamVersion": "1.1.0"
+      },
       "releaseId": "release:dc304fb0c5f79f0fccbba74dcb29b78049d6972eadd084d05935384755b5a1f4",
       "sourceId": "claude-official",
       "upstreamName": "sales",

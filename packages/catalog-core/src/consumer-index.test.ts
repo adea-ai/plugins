@@ -38,8 +38,16 @@ function plugin(input: PluginInput): Plugin {
     // Defaults to the marketplace's own repository, i.e. a wrapper package.
     availableReleases: [
       {
+        releaseId: `release:${input.sourceId}-${input.name}`,
         resolvedRepositoryUrl:
           input.releaseRepositoryUrl ?? `https://github.com/${input.sourceId}/marketplace`,
+        resolvedCommitSha: 'a'.repeat(40),
+        canonicalContentDigest: `sha256:${'d'.repeat(64)}`,
+        contentResolution: 'complete',
+        capabilities: [],
+        requiredConnectors: [],
+        requiredCredentials: [],
+        releaseMetadata: {},
       },
     ],
     capabilitySummary: { 'mcp-server': 1 },

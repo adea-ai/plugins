@@ -36,6 +36,29 @@
       "pluginId": "plugin:claude-official:security",
       "primaryCategory": "security",
       "productKey": "security",
+      "release": {
+        "canonicalContentDigest": "sha256:8e18e64bebacea3c1de7a42034154db464616a94901f7b71c46cdf75351e800b",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "releaseId": "release:5b02dbca6c6abb490bec11acb3e72e366d15232e9855f8b7cca4363bf596f932",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "3333333333333333333333333333333333333333",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:5b02dbca6c6abb490bec11acb3e72e366d15232e9855f8b7cca4363bf596f932",
       "sourceId": "claude-official",
       "upstreamName": "security",

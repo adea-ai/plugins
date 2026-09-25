@@ -1671,6 +1671,23 @@ export function verifyConsumerIndex(
       throw new Error(`CONSUMER_INDEX_TOP_OVERFLOW: ${category.category}`)
     const shelved = new Set<string>()
     for (const product of Object.values(products)) {
+      // Indexes published before the install facts existed carry no `release`,
+      // and are still valid; a record that does carry one must agree with the
+      // catalog it claims to describe.
+      if (product.release) {
+        const plugin = knownPlugins.get(product.pluginId)
+        const release = plugin?.availableReleases.find(
+          (candidate) => candidate.releaseId === plugin.currentReleaseId
+        )
+        if (
+          !plugin ||
+          !release ||
+          product.release.releaseId !== release.releaseId ||
+          product.release.canonicalContentDigest !== release.canonicalContentDigest ||
+          product.release.sourceRevision !== release.resolvedCommitSha
+        )
+          throw new Error(`CONSUMER_INDEX_RELEASE_MISMATCH: ${product.productKey}`)
+      }
       const icon = product.icon
       if (!icon?.assetUrl) continue
       if (!icon.assetUrl.startsWith('https://') || !icon.assetUrl.endsWith(`/${icon.asset}`))

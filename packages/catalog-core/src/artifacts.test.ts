@@ -258,6 +258,45 @@ describe('artifact shards', () => {
     )
   })
 
+  test('carries the install facts of the release a product pins', () => {
+    const base = catalog([
+      plugin({
+        sourceId: 'cursor-official',
+        name: 'calendar',
+        categories: ['productivity'],
+        icon: { path: 'assets/logo.svg', bytes: CLEAN_SVG },
+      }),
+    ])
+    const index = buildConsumerIndex({ catalog: base })
+    const product = index.products.calendar!
+    expect(product.release).toEqual({
+      releaseId: base.plugins[0]!.currentReleaseId,
+      canonicalContentDigest: DIGEST,
+      contentResolution: 'complete',
+      capabilities: [],
+      requiredConnectors: [],
+      requiredCredentials: [],
+      sourceRevision: SHA,
+    })
+    // A browsing client can plan an install from the index alone.
+    expect(product.release.canonicalContentDigest).toBe(
+      base.plugins[0]!.availableReleases[0]!.canonicalContentDigest
+    )
+    // A record whose release facts disagree with the catalog is rejected.
+    const tampered = {
+      ...index,
+      products: {
+        calendar: {
+          ...product,
+          release: { ...product.release, canonicalContentDigest: `sha256:${'f'.repeat(64)}` },
+        },
+      },
+    }
+    expect(() => verifyConsumerIndex(JSON.stringify(tampered), base)).toThrow(
+      'CONSUMER_INDEX_RELEASE_MISMATCH'
+    )
+  })
+
   test('carries compiled marks in the navigation artifact', () => {
     const base = catalog([
       plugin({

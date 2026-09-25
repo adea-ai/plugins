@@ -36,6 +36,25 @@
       "pluginId": "plugin:cursor-official:teaching",
       "primaryCategory": "developer-tools",
       "productKey": "teaching",
+      "release": {
+        "canonicalContentDigest": "sha256:ffe69c9130cc5928a7e53fe30e7d931a6b3d3d55c689ff1b5eadce5da41fe500",
+        "capabilities": [
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "releaseId": "release:18ce8f072ca693885ce731feffbd78dd1307c81a8ad43920edf991e2032176db",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "2222222222222222222222222222222222222222",
+        "upstreamVersion": "0.3.0"
+      },
       "releaseId": "release:18ce8f072ca693885ce731feffbd78dd1307c81a8ad43920edf991e2032176db",
       "sourceId": "cursor-official",
       "upstreamName": "teaching",
