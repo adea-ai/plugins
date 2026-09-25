@@ -1684,7 +1684,8 @@ export function verifyConsumerIndex(
           !release ||
           product.release.releaseId !== release.releaseId ||
           product.release.canonicalContentDigest !== release.canonicalContentDigest ||
-          product.release.sourceRevision !== release.resolvedCommitSha
+          product.release.sourceRevision !== release.resolvedCommitSha ||
+          product.provenance?.resolvedCommitSha !== release.resolvedCommitSha
         )
           throw new Error(`CONSUMER_INDEX_RELEASE_MISMATCH: ${product.productKey}`)
       }

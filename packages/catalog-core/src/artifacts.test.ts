@@ -278,6 +278,13 @@ describe('artifact shards', () => {
       requiredCredentials: [],
       sourceRevision: SHA,
     })
+    expect(product.authors).toEqual(['Test'])
+    expect(product.provenance).toEqual({
+      repositoryUrl: 'https://github.com/cursor-official/marketplace',
+      resolvedCommitSha: SHA,
+      manifestPath: 'marketplace.json',
+      pluginSubdirectory: '.',
+    })
     // A browsing client can plan an install from the index alone.
     expect(product.release.canonicalContentDigest).toBe(
       base.plugins[0]!.availableReleases[0]!.canonicalContentDigest

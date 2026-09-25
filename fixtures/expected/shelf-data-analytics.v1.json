@@ -3,6 +3,9 @@
   "category": "data-analytics",
   "products": [
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "mcp-server": 1
       },
@@ -33,6 +36,12 @@
       "pluginId": "plugin:knowledge-work-official:search",
       "primaryCategory": "data-analytics",
       "productKey": "search",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "search",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "4444444444444444444444444444444444444444"
+      },
       "release": {
         "canonicalContentDigest": "sha256:6f972ae6548dc8e1141c079e77e31d0bcc46068b9a6d882d234340d3bdaa123c",
         "capabilities": [
@@ -49,6 +58,16 @@
         "upstreamVersion": "0.8.0"
       },
       "releaseId": "release:24dcda1228d0962c9b2bc807c631a90749d910e24b491cbecb09389ec68187ff",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "knowledge-work-official",
       "upstreamName": "search",
       "variantPluginIds": [

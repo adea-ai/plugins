@@ -3,6 +3,9 @@
   "category": "business-operations",
   "products": [
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "command": 1
       },
@@ -33,6 +36,12 @@
       "pluginId": "plugin:claude-official:sales",
       "primaryCategory": "business-operations",
       "productKey": "sales",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/sales",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "3333333333333333333333333333333333333333"
+      },
       "release": {
         "canonicalContentDigest": "sha256:10462f80a006c7d518fcccb34d09981bf7fda532c4d0974e525ec2555a6a1ff0",
         "capabilities": [
@@ -49,6 +58,14 @@
         "upstreamVersion": "1.1.0"
       },
       "releaseId": "release:dc304fb0c5f79f0fccbba74dcb29b78049d6972eadd084d05935384755b5a1f4",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "sales",
       "variantPluginIds": [
