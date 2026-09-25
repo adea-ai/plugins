@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.7](https://github.com/adea-ai/plugins/compare/catalog-core-v1.10.6...catalog-core-v1.10.7) (2026-09-25)
+
+
+### Bug Fixes
+
+* **catalog:** publish written display names and mark the brands still missing ([#137](https://github.com/adea-ai/plugins/issues/137)) ([5dabd25](https://github.com/adea-ai/plugins/commit/5dabd2577adeb80bda5beaf734ba69c6e6eeb11d))
+
 ## [1.10.6](https://github.com/adea-ai/plugins/compare/catalog-core-v1.10.5...catalog-core-v1.10.6) (2026-09-25)
 
 
