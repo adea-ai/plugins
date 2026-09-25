@@ -53,7 +53,11 @@ are republished, and it is constrained:
   a signed URL marked `no-cache`, which defeats image caching. From the repository
   the same bytes are CORS-enabled, direct and cacheable, and content-addressed
   names keep that cache correct. Every release declares each asset's digest and byte length in
-  `integrity.json`, and the publish step and release verification compare them.
+  `integrity.json`, and the publish step compares the bytes it is about to
+  publish against the bytes already attached. "Already uploaded" is not
+  evidence of correctness: an asset carrying another build's bytes is
+  re-uploaded while the release is still a draft, and a published release that
+  disagrees stops the publication instead of being promoted.
 
 Consumers must render a mirrored SVG through an image element and never inline
 it into a document, where its contents would share the page's origin.

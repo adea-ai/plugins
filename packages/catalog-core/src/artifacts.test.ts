@@ -4,7 +4,13 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, expect, test } from 'bun:test'
 import type { Catalog, Plugin } from '../../catalog-schema/src/index.js'
-import { byteDigest, createArtifacts, verifyArtifacts, verifyConsumerIndex } from './index.js'
+import {
+  byteDigest,
+  createArtifacts,
+  digest,
+  verifyArtifacts,
+  verifyConsumerIndex,
+} from './index.js'
 import { buildConsumerIndex, type ConsumerIndex } from './consumer-index.js'
 import { resolveIconSources, stageIconAssets, type IconSource } from './icon-mirror.js'
 import { iconAssetName } from './icons.js'
@@ -381,6 +387,21 @@ describe('artifact shards', () => {
     ])
     expect(index.products.calendar!.icon!.asset).toBe(svgAsset)
     expect(index.products.sales!.icon).toBeNull()
+  })
+
+  // The published convention is the canonical digest of the artifact text,
+  // which consumers reproduce after reading the artifact as a string. It is
+  // deliberately not a hash of the file bytes, so switching this to a byte
+  // digest would make every shipped consumer reject the catalog.
+  test('digests artifacts the way consumers verify them, not as raw file bytes', () => {
+    const { artifacts } = artifactsOf(plugins)
+    const integrity = JSON.parse(artifacts['integrity.json']!)
+    for (const [name, declared] of Object.entries(integrity.files as Record<string, string>)) {
+      expect(declared).toBe(digest(artifacts[name as keyof typeof artifacts]!))
+      expect(declared).not.toBe(
+        byteDigest(new TextEncoder().encode(artifacts[name as keyof typeof artifacts]!))
+      )
+    }
   })
 
   test('verifies a consistent release and rejects a tampered shard', () => {

@@ -24,6 +24,21 @@ published.
 Consumers should use the stable latest URL for discovery, then pin the
 digest-derived release URL and exact `catalogId` for caching and audit records.
 
+The two kinds of digest in `integrity.json` are taken over different things,
+and a verifier has to reproduce each exactly:
+
+- an **artifact** digest (`files`) is the canonical digest of the artifact
+  _text_: read the fetched artifact as a string, canonicalize that string as a
+  JSON value (a string canonicalizes to its own quoted JSON form), then hash the
+  UTF-8 bytes of the result. It is deliberately not `sha256` of the file bytes,
+  so a checker hashing the raw file disagrees with every published release even
+  though the release is consistent. `canonicalDigest` in Adea's
+  `@adea/workspace-ui` and `digest` in this repository's `catalog-core`
+  implement the convention on either side.
+- an **asset** digest (`assets[i].digest`) is `sha256` over the mirrored mark's
+  bytes, because a client stores those bytes; `icon.digest` in a product record
+  is the same value.
+
 The checked-in bootstrap/fixture snapshot is not a production freshness claim.
 Only a successful live synchronization, identified by current source SHAs and
 its generated timestamp, is a production catalog. A release change report may
