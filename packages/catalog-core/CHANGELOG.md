@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.9](https://github.com/adea-ai/plugins/compare/catalog-core-v1.10.8...catalog-core-v1.10.9) (2026-09-25)
+
+
+### Maintenance
+
+* **deps:** refresh the Bun dependency group with its lockfile ([#144](https://github.com/adea-ai/plugins/issues/144)) ([7fcb56d](https://github.com/adea-ai/plugins/commit/7fcb56df1813dff55160ece423723354f91a85bb))
+
 ## [1.10.8](https://github.com/adea-ai/plugins/compare/catalog-core-v1.10.7...catalog-core-v1.10.8) (2026-09-25)
 
 
