@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:caad4379ad867c0d7cd395064656bdfbc4e49f592ca1ff3c4a6266d9fdd3ca89",
+  "catalogId": "catalog:6e7f499b1973aaaad55affa270c2b3970233ed9be837d3c635f6a492927b3e4e",
   "category": "productivity",
   "products": [
     {
@@ -51,7 +51,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/google-calendar",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:c126f9eaddf0e058b26e64a4d696cd293e71a999202ddcb3ac9aedb247ee84eb",
@@ -64,13 +64,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:5ac0b24b4a33fa769d4fd776900cd14015a68935799a57447a2d4ac75089893f",
         "packageStatus": "portable",
-        "releaseId": "release:ae3c3ac6d27c93774e568fefc8a698799b8a292b562dbdde9cdf7268ee49e622",
+        "releaseId": "release:4bc89451fe0d4c67180723ea47264e9ac261c5386052221f828aaa102430d8cc",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:ae3c3ac6d27c93774e568fefc8a698799b8a292b562dbdde9cdf7268ee49e622",
+      "releaseId": "release:4bc89451fe0d4c67180723ea47264e9ac261c5386052221f828aaa102430d8cc",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -138,7 +138,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/google-drive",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:1f8f5e7d4080c734ebe2e673d71b2d92c4c3441b06fdc36e777de1ec6ba0937f",
@@ -151,13 +151,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:ff674fef0e3e2ec4a88e464ba78a8c64839358f2717d391e411ff674e7880b88",
         "packageStatus": "portable",
-        "releaseId": "release:4a4cc0ac59ae03f0bd7064eeceadb64b5996bb0be0e201a2c2dbcc27d79caa13",
+        "releaseId": "release:42d5abfc698fc35858617613384d05bb64ea0e0983aebf2b618abe5984a87fe5",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:4a4cc0ac59ae03f0bd7064eeceadb64b5996bb0be0e201a2c2dbcc27d79caa13",
+      "releaseId": "release:42d5abfc698fc35858617613384d05bb64ea0e0983aebf2b618abe5984a87fe5",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -321,7 +321,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/todoist",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:a03b07bc5c2fef3961191970a288ac1287e22ccdc5c4fcb24a568b797868a18d",
@@ -334,13 +334,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:78ef4d2a237980cb32f2f6656bb098064a0fa699b6f36df75bcbb5fa719c0c58",
         "packageStatus": "portable",
-        "releaseId": "release:443f15ba77b49015c19c21f6d024e79e4030feee30a3a412a1d2fd12950b604e",
+        "releaseId": "release:d38f26dd5567dea18d60a4633383216205b8765a84f46d1478e2089d2055b4bc",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:443f15ba77b49015c19c21f6d024e79e4030feee30a3a412a1d2fd12950b604e",
+      "releaseId": "release:d38f26dd5567dea18d60a4633383216205b8765a84f46d1478e2089d2055b4bc",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -406,7 +406,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/readwise",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:770ed24488a5b61846d5b3242b22ac27e942fe1ef13abbe9273fc972173a9d93",
@@ -419,13 +419,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:df783223168ef6162756337ea53bcec049c54116d384c45ee11c014a17c0a5e9",
         "packageStatus": "portable",
-        "releaseId": "release:6ddfdf4a07ff524096f60d6b16c685ca85bb4c50e084d166bcaa2425faaf94d6",
+        "releaseId": "release:7b9cc91c55c726e49b8367c8fe2f23bcad9265e1177b571dd43e1f0430d23550",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:6ddfdf4a07ff524096f60d6b16c685ca85bb4c50e084d166bcaa2425faaf94d6",
+      "releaseId": "release:7b9cc91c55c726e49b8367c8fe2f23bcad9265e1177b571dd43e1f0430d23550",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -491,7 +491,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/smartsheet",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:90b23989ddf32fff6c3f15a80a55d9a03fc45738acf805aeea6346291335ec5a",
@@ -504,13 +504,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:37a642de3dfdd41160295d5dc9ef5c2835a7e0b39038d1af3404d45c0be707d7",
         "packageStatus": "partial",
-        "releaseId": "release:6135b0f1965ee1bb5fac221149c38f53f849f2bbcad6667ac8ddc581285e63fe",
+        "releaseId": "release:1f5cc7ae9c767d79e44a3036715af111f6178efd99b7dc80ae60a77e252b5f39",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:6135b0f1965ee1bb5fac221149c38f53f849f2bbcad6667ac8ddc581285e63fe",
+      "releaseId": "release:1f5cc7ae9c767d79e44a3036715af111f6178efd99b7dc80ae60a77e252b5f39",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",

@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:caad4379ad867c0d7cd395064656bdfbc4e49f592ca1ff3c4a6266d9fdd3ca89",
+  "catalogId": "catalog:6e7f499b1973aaaad55affa270c2b3970233ed9be837d3c635f6a492927b3e4e",
   "category": "creativity",
   "pluginCount": 23,
   "productCount": 18,
@@ -25,7 +25,7 @@
         "pi": "unknown"
       },
       "description": "Bring your Canva design workflow into Codex and create, refine, and review designs through natural conversation.\nAvailable skills:\nResize for social media: Adapt a design for Facebook, Instagram, and LinkedIn in one step.\nBulk create: Generate multiple designs from spreadsheet data using a brand template.\nEdit designs: Update text, media, and formatting, or reposition and resize elements.\nGet design feedback: Receive structured feedback on visual hierarchy, layout, readability, consistency, and accessibility.\nImplement feedback: Review comment threads and apply clear, actionable changes.\nBrand check: Check colors, fonts, logo usage, and copy against your Brand Kit.\nOnce installed, describe what you want in plain language or invoke Canva directly with @Canva.\nTry prompts like:\n- @Canva, resize this design for social media.\n- @Canva, create designs from this spreadsheet using my brand template.\n- @Canva, update the headline in this design.\n- @Canva, review this design’s visual hierarchy and readability.\n- @Canva, implement the feedback in the comment threads.\n- @Canva, check this design against my Brand Kit.\n\nRequirements: Connect your Canva account to use the plugin. Bulk Create requires an eligible Canva Enterprise plan.\n\nWant to take a more hands-on approach? Instantly open your design in Canva’s powerful editor for the final touches.",
-      "displayName": "canva",
+      "displayName": "Canva",
       "icon": {
         "asset": "icon-afb54276bf45167125048872621a1415.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-afb54276bf45167125048872621a1415.png",
@@ -236,7 +236,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/excalidraw",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:acf67cb9ec45e885a9bf3e790291ad37e24e6dc57bb10ef42e84cd4f5169eccd",
@@ -249,13 +249,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6b930238faac690506d672bfb166b309d120fbd0b2086b0abeb2153459317129",
         "packageStatus": "portable",
-        "releaseId": "release:2bc0fd09d63d3e827dc98e90dfd0d14ca8da859b4ceb6b2f0a00a6ef42236438",
+        "releaseId": "release:ce7b6f99f3aed952b981e354654480c29f79465f7ed6b0fadb65d73538110a49",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:2bc0fd09d63d3e827dc98e90dfd0d14ca8da859b4ceb6b2f0a00a6ef42236438",
+      "releaseId": "release:ce7b6f99f3aed952b981e354654480c29f79465f7ed6b0fadb65d73538110a49",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -321,7 +321,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/gamma",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:855867dad26c1704aa7cd0ebd2119c2660b44de7784a02cf120583e39dde4d9d",
@@ -334,13 +334,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:1939f1c8b0e89c19379fddab562c7a110a61055221f523ef927918527e71c3f8",
         "packageStatus": "portable",
-        "releaseId": "release:3838c044707fca972130cad1970bcfbf828d6da9f3d1b9da7fdcf3f46a627983",
+        "releaseId": "release:b6e7909f8a33b67969dc080e04ba6e39dca30c8effe0a99aef3cd9f569dd4014",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:3838c044707fca972130cad1970bcfbf828d6da9f3d1b9da7fdcf3f46a627983",
+      "releaseId": "release:b6e7909f8a33b67969dc080e04ba6e39dca30c8effe0a99aef3cd9f569dd4014",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -471,7 +471,7 @@
         "pi": "partially-supported"
       },
       "description": "Adobe unlocks more ways to create and get work done from the conversation. Previously available as Photoshop, the Adobe connector now brings creativity and productivity capabilities across Creative Cloud and Acrobat. Describe what you want to make or change, and Adobe can help turn ideas, images, videos, and documents into polished outputs — from editing photos and creating PDFs to designing social assets, resizing videos, searching Creative Cloud assets, and generating data-driven documents.\nKey capabilities:\n\n* Retouch portraits or edit photos in bulk: Drop in photos and describe the look you want — adjust color, lighting, and tone; remove distractions and generate new elements; apply Lightroom presets; remove backgrounds; blur, crop, resize, and expand images.\n* Design from template: Start from an Express template, update text and colors, and then animate for social media or convert to PDF.\n* Refine video for any platform: Upload a horizontal clip and ask to reformat it for YouTube Shorts, Instagram Reels, or any platform. You can also stitch clips into a single sequence.\n* Search and organize creative work: Describe what you're looking for and surface assets from your Creative Cloud library — by subject, style, mood, or content — without browsing folders.\n* Work with PDFs and documents: Create and convert polished PDFs and documents.\n* Create data-driven documents: Describe your output and provide your data — the connector turns raw data or content into formatted, shareable PDFs, including badges, cards, catalogs, and more.\n\nYou can get started as a guest, and sign in with your Adobe account for more capabilities and tools, Creative Cloud storage, and saved work across sessions.",
-      "displayName": "adobe",
+      "displayName": "Adobe",
       "icon": {
         "asset": "icon-1c585a9a56315edec99a2655c3b404fd.svg",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-1c585a9a56315edec99a2655c3b404fd.svg",
@@ -735,7 +735,7 @@
         "pi": "unknown"
       },
       "description": "Install, open, and connect the signed ChatCut Desktop app from Codex.",
-      "displayName": "chatcut",
+      "displayName": "Chatcut",
       "icon": {
         "asset": "icon-521cc2088a18d6d38211e34dcf816a52.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-521cc2088a18d6d38211e34dcf816a52.png",
@@ -828,7 +828,7 @@
         "pi": "partially-supported"
       },
       "description": "Explore campaign ideas, concept images, mood boards, product placements, ad directions, listing images, social posts, and launch assets.",
-      "displayName": "creative-production",
+      "displayName": "Creative Production",
       "icon": {
         "asset": "icon-6307b50a890cd413a367a3df907803dc.svg",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-6307b50a890cd413a367a3df907803dc.svg",
@@ -1117,7 +1117,7 @@
         "pi": "unknown"
       },
       "description": "Generate images and videos from a text prompt or your own photo. Turn a product shot into a video ad, restyle a photo, animate a still, or build a two-minute narrated explainer. Every major image and video model in one place.",
-      "displayName": "higgsfield",
+      "displayName": "Higgsfield",
       "icon": {
         "asset": "icon-d80a4c3e0fd2efa7af88433a53b25a92.svg",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-d80a4c3e0fd2efa7af88433a53b25a92.svg",
@@ -1221,7 +1221,7 @@
         "pi": "unknown"
       },
       "description": "Write HTML, render video. Compositions, GSAP animations, captions, voiceovers, audio-reactive visuals, and website-to-video capture for HyperFrames.",
-      "displayName": "hyperframes",
+      "displayName": "Hyperframes",
       "icon": {
         "asset": "icon-cc97812c2f8b56feb96854141c609cdd.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-cc97812c2f8b56feb96854141c609cdd.png",
@@ -1326,7 +1326,7 @@
         "pi": "partially-supported"
       },
       "description": "The Product Design plugin is built for turning early ideas into prototypes teams can review. It starts design and build work by confirming the brief, then helps teams explore product directions, audit user flows, prototype from a live URL, and make static screenshots interactive.",
-      "displayName": "product-design",
+      "displayName": "Product Design",
       "icon": {
         "asset": "icon-a1f718f71e727e6573b5810fee5ea33c.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a1f718f71e727e6573b5810fee5ea33c.png",
@@ -1433,7 +1433,7 @@
         "pi": "partially-supported"
       },
       "description": "Remotion video creation skills — best practices, animations, audio, captions, 3D, and more for building programmatic videos with React.",
-      "displayName": "remotion",
+      "displayName": "Remotion",
       "icon": {
         "asset": "icon-c4acc0c249be250d94ce6c8d4413679b.svg",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-c4acc0c249be250d94ce6c8d4413679b.svg",
@@ -1523,7 +1523,7 @@
         "pi": "partially-supported"
       },
       "description": "Video generation at scale. Generate videos, images, and audio with Runway's API — batch ad campaigns, product videos, multishot stories, and creative iteration. Supports seedance2, gen4.5, veo3, Nano, Banana Pro, and more.",
-      "displayName": "runway-api",
+      "displayName": "Runway API",
       "homepage": "https://runwayml.com/",
       "icon": {
         "asset": "icon-f545e0e706d0c6be0e8602a8e8d685d4.png",
@@ -1614,7 +1614,7 @@
         "pi": "partially-supported"
       },
       "description": "Plugin for coding agents working with UI theme designer. Bundles two skills: how-to and conceptual answers about UI theme designer on BTP, and questions about the SAP Design System and SAP Fiori design tokens — theme parameters and component-level parameter usage in UI5, UI5 Web Components, and Fundamental Styles.",
-      "displayName": "ui-theme-designer",
+      "displayName": "UI Theme Designer",
       "homepage": "https://github.com/SAP/ui-theme-designer-plugins-for-coding-agents",
       "icon": null,
       "keywords": [

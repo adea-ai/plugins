@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:caad4379ad867c0d7cd395064656bdfbc4e49f592ca1ff3c4a6266d9fdd3ca89",
+  "catalogId": "catalog:6e7f499b1973aaaad55affa270c2b3970233ed9be837d3c635f6a492927b3e4e",
   "category": "developer-tools",
   "pluginCount": 213,
   "productCount": 175,
@@ -55,7 +55,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/github",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:3a8aa90c77c19d4efaefe32703f8daf81020f7927f26f66feae7c66c9e991fc3",
@@ -68,12 +68,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:57c44f8d573dc9277263d5b767e56feff729bf954a5662e9e2b755d1a49aa5ac",
         "packageStatus": "partial",
-        "releaseId": "release:aaf4d4d2aa95c842821ce5355dd3873b613790f7fe95bed2f6f1fbdf66680620",
+        "releaseId": "release:7ec3e028020e3364a9939f4d01e32899dfa5d6e876f8c6f634f7f7563e407455",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:aaf4d4d2aa95c842821ce5355dd3873b613790f7fe95bed2f6f1fbdf66680620",
+      "releaseId": "release:7ec3e028020e3364a9939f4d01e32899dfa5d6e876f8c6f634f7f7563e407455",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -142,7 +142,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/playwright",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:09b920f4bea9253e4d1863c57ea4a66b3bef629f3a0e9b2ae62198bf291d2c4b",
@@ -155,12 +155,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:11a00f5ebacb2af4f3e94169d5e476245fc9364adde041968e17c9c81a7f1aa6",
         "packageStatus": "portable",
-        "releaseId": "release:1b0be894855f7bfb0362f1a3d46b3328af3e06e74331160a0ef6ff1e2fa28ba5",
+        "releaseId": "release:1496b6face196a4fe012b6c35ee0314e9b40a61cf61a575c87d383179385e4b4",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:1b0be894855f7bfb0362f1a3d46b3328af3e06e74331160a0ef6ff1e2fa28ba5",
+      "releaseId": "release:1496b6face196a4fe012b6c35ee0314e9b40a61cf61a575c87d383179385e4b4",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -200,7 +200,17 @@
       },
       "description": "Build apps, scripts, and automations with the TypeScript SDK.",
       "displayName": "Cursor SDK",
-      "icon": null,
+      "icon": {
+        "asset": "icon-a57fcff6994c83bd2acc0ea84d8b950b.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a57fcff6994c83bd2acc0ea84d8b950b.png",
+        "bytes": 6194,
+        "contentType": "image/png",
+        "digest": "sha256:a57fcff6994c83bd2acc0ea84d8b950b0ace6e00c1bf25d9abc7d15704de73db",
+        "homepage": "https://cursor.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://cursor.com/marketing-static/apple-touch-icon-light.png"
+      },
       "keywords": [
         "cursor",
         "developer-tools",
@@ -218,7 +228,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "cursor-sdk",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:0be74b4325362ba174f1ea044da829f83a85bb4b2a2b1a30be020ae677054404",
@@ -231,13 +241,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:4db2af962162a1cbcca2754a64d2767b19182059d8400e0470122acc4a4dc325",
         "packageStatus": "partial",
-        "releaseId": "release:c1ee996a87aac901d4d1c66a1b8fe29f8897db50fdb61d56305ad17d3d5ff745",
+        "releaseId": "release:86671291eb314a36a46fead1a4f2664a08d384d1efa229f6d24561e2c49b116f",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:c1ee996a87aac901d4d1c66a1b8fe29f8897db50fdb61d56305ad17d3d5ff745",
+      "releaseId": "release:86671291eb314a36a46fead1a4f2664a08d384d1efa229f6d24561e2c49b116f",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -274,7 +284,7 @@
         "pi": "partially-supported"
       },
       "description": "Development kit for working with the Claude Agent SDK",
-      "displayName": "agent-sdk-dev",
+      "displayName": "Agent SDK Dev",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/agent-sdk-dev",
       "icon": null,
       "keywords": [
@@ -295,7 +305,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/agent-sdk-dev",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:a6f37a1aa41c164cad0661e8c5d534451141100098f7ba12edd74937c5ced495",
@@ -312,12 +322,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:23adf47094dfdf00561c88d431adbb2abd19bfca6f587821480f16e1a8669e7c",
         "packageStatus": "partial",
-        "releaseId": "release:b167e8b3f451ff131b4119054e908fefd85160dcaa2d2dfea1ecf07111004236",
+        "releaseId": "release:253aecae97de2db24ed2bd86aef7ffe9aebe6532cf336134e5d039c3d4a61d90",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:b167e8b3f451ff131b4119054e908fefd85160dcaa2d2dfea1ecf07111004236",
+      "releaseId": "release:253aecae97de2db24ed2bd86aef7ffe9aebe6532cf336134e5d039c3d4a61d90",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -450,7 +460,7 @@
         "pi": "unknown"
       },
       "description": "Sentry error monitoring integration. Access error reports, analyze stack traces, search issues by fingerprint, and debug production errors directly from your development environment.",
-      "displayName": "sentry",
+      "displayName": "Sentry",
       "homepage": "https://github.com/getsentry/plugin-claude",
       "icon": {
         "asset": "icon-e5935afc31e5084860e5ddafae804b06.svg",
@@ -583,7 +593,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "agent-compatibility",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:1b112554d0c0cea410d4fefbf7c0f39a13c12377e47d4a1e8c806f8a94723291",
@@ -600,13 +610,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:42b1dc9e4ee345c2224e15ee38579b7ddc4e5cf2107095a4bbca72f487e0e18d",
         "packageStatus": "partial",
-        "releaseId": "release:de7168b370c46863097a8648622990e7c1cc9c8d2902783ade41a7343737e3f4",
+        "releaseId": "release:4f871cb1a975e6830573696b8e0a386d1be6b283b695cd12f4de314d6613efa0",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:de7168b370c46863097a8648622990e7c1cc9c8d2902783ade41a7343737e3f4",
+      "releaseId": "release:4f871cb1a975e6830573696b8e0a386d1be6b283b695cd12f4de314d6613efa0",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -647,9 +657,19 @@
         "pi": "partially-supported"
       },
       "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, and optimize .agent files",
-      "displayName": "agentforce-adlc",
+      "displayName": "Agentforce ADLC",
       "homepage": "https://github.com/SalesforceAIResearch/agentforce-adlc",
-      "icon": null,
+      "icon": {
+        "asset": "icon-92842fc6c2f66b46f69458c14621fc2e.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-92842fc6c2f66b46f69458c14621fc2e.ico",
+        "bytes": 5430,
+        "contentType": "image/x-icon",
+        "digest": "sha256:92842fc6c2f66b46f69458c14621fc2eca5d6c02d7937f9124fe8a3a9a55bc91",
+        "homepage": "https://www.salesforce.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.salesforce.com/c2/public/app/favicon.ico"
+      },
       "keywords": [
         "adlc",
         "agentforce",
@@ -863,7 +883,7 @@
         "pi": "partially-supported"
       },
       "description": "Build Airwallex payment integrations in your own codebase. Generates the checkout, card-element, onboarding, and subscription-billing code for an Airwallex integration and wires it into your project: Hosted Payment Page, Drop-in and Split Card elements, connected-account KYC onboarding, and Billing Hosted Checkout for subscriptions and card-saving. Also plans card-on-file merchant-initiated flows for AI providers such as top-ups and auto-recharge.",
-      "displayName": "airwallex-dev",
+      "displayName": "Airwallex Dev",
       "homepage": "https://www.airwallex.com/docs",
       "icon": {
         "asset": "icon-03276e1e0a355132331e7d1467dc070e.svg",
@@ -1062,9 +1082,19 @@
         "pi": "unknown"
       },
       "description": "Guide developers through adding maps, places search, geocoding, routing, and other geospatial features with Amazon Location Service, including authentication setup, SDK integration, and best practices.",
-      "displayName": "amazon-location-service",
+      "displayName": "Amazon Location Service",
       "homepage": "https://github.com/awslabs/agent-plugins",
-      "icon": null,
+      "icon": {
+        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "bytes": 3061,
+        "contentType": "image/png",
+        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
+        "homepage": "https://aws.amazon.com/location/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+      },
       "keywords": [
         "amazon",
         "developer-tools",
@@ -1146,7 +1176,7 @@
         "pi": "unknown"
       },
       "description": "AMD's verified Agent Skills in one plugin: route image/audio through local AI on Ryzen AI, serve LLMs on AMD Instinct GPUs with vLLM, optimize inference throughput with Hyperloom, and analyze GPU kernel and PyTorch trace performance.",
-      "displayName": "amd-skills",
+      "displayName": "AMD Skills",
       "homepage": "https://developer.amd.com/",
       "icon": {
         "asset": "icon-e36a100a09e5ea48e1e3b1eae097e4e7.png",
@@ -1242,7 +1272,7 @@
         "pi": "partially-supported"
       },
       "description": "Use Amplitude as an expert analyst — instrument Amplitude, discover product opportunities, analyze charts, create dashboards, manage experiments, and understand users and accounts.",
-      "displayName": "amplitude",
+      "displayName": "Amplitude",
       "homepage": "https://github.com/amplitude/mcp-marketplace",
       "icon": {
         "asset": "icon-baeef57da0019e2a25cfb8f033bc501d.png",
@@ -1339,7 +1369,7 @@
         "pi": "partially-supported"
       },
       "description": "Appwrite tools for Claude Code, including SDK skills, Appwrite MCP servers, and deployment commands.",
-      "displayName": "appwrite",
+      "displayName": "Appwrite",
       "homepage": "https://appwrite.io/",
       "icon": null,
       "keywords": [
@@ -1426,7 +1456,7 @@
         "pi": "partially-supported"
       },
       "description": "Comprehensive development workflow for building AI agents with the Atomic Agents framework. Includes specialized agents for schema design, architecture planning, code review, and tool development. Features guided workflows, progressive-disclosure skills, and best practice validation.",
-      "displayName": "atomic-agents",
+      "displayName": "Atomic Agents",
       "homepage": "https://github.com/BrainBlend-AI/atomic-agents",
       "icon": {
         "asset": "icon-216877657558f80885d1fec323dcfb58.png",
@@ -1528,7 +1558,7 @@
         "pi": "unknown"
       },
       "description": "Build, deploy, and operate AI agents on AWS. Skills for scaffolding agents with Amazon Bedrock AgentCore, connecting tools, memory, policies, evaluation, debugging, and production hardening.",
-      "displayName": "aws-agents",
+      "displayName": "AWS Agents",
       "homepage": "https://github.com/aws/agent-toolkit-for-aws",
       "icon": {
         "asset": "icon-5866636f18764cd66366ae6eb682e972.ico",
@@ -1633,7 +1663,7 @@
         "pi": "partially-supported"
       },
       "description": "Investigate incidents, review code and execute UAT for release readiness, scan code for vulnerabilities, and run penetration tests with AWS DevOps Agent and AWS Security Agent.",
-      "displayName": "aws-agents-for-devsecops",
+      "displayName": "AWS Agents for DevSecOps",
       "homepage": "https://github.com/aws/agent-toolkit-for-aws",
       "icon": {
         "asset": "icon-5866636f18764cd66366ae6eb682e972.ico",
@@ -1731,9 +1761,19 @@
         "pi": "unknown"
       },
       "description": "Build full-stack apps with AWS Amplify Gen 2 using guided workflows for authentication, data models, storage, GraphQL APIs, and Lambda functions.",
-      "displayName": "aws-amplify",
+      "displayName": "AWS Amplify",
       "homepage": "https://github.com/awslabs/agent-plugins",
-      "icon": null,
+      "icon": {
+        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "bytes": 3061,
+        "contentType": "image/png",
+        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
+        "homepage": "https://aws.amazon.com/amplify/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+      },
       "keywords": [
         "amplify",
         "aws",
@@ -1815,7 +1855,7 @@
         "pi": "partially-supported"
       },
       "description": "Build, deploy, and operate applications on AWS. Skills to author infrastructure-as-code, use core services, and complete common tasks.",
-      "displayName": "aws-core",
+      "displayName": "AWS Core",
       "homepage": "https://github.com/aws/agent-toolkit-for-aws",
       "icon": {
         "asset": "icon-5866636f18764cd66366ae6eb682e972.ico",
@@ -1919,7 +1959,7 @@
         "pi": "unknown"
       },
       "description": "Data lake, analytics, and ETL workflows with S3 Tables, AWS Glue, and Athena.",
-      "displayName": "aws-data-analytics",
+      "displayName": "AWS Data Analytics",
       "homepage": "https://github.com/aws/agent-toolkit-for-aws",
       "icon": {
         "asset": "icon-5866636f18764cd66366ae6eb682e972.ico",
@@ -2014,9 +2054,19 @@
         "pi": "partially-supported"
       },
       "description": "Design, build, deploy, test, and debug serverless applications with AWS Serverless services.",
-      "displayName": "aws-serverless",
+      "displayName": "AWS Serverless",
       "homepage": "https://github.com/awslabs/agent-plugins",
-      "icon": null,
+      "icon": {
+        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "bytes": 3061,
+        "contentType": "image/png",
+        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
+        "homepage": "https://aws.amazon.com/serverless/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+      },
       "keywords": [
         "aws",
         "developer-tools",
@@ -2113,7 +2163,17 @@
       "description": "Personalized architecture, cost, security, and migration guidance for startups. From day-one account setup and security baselines to production-ready infrastructure, cost optimization, and beyond. Includes AWS Activate Credits eligibility, 60+ exclusive startup offers, and multi-account multi-region support. Built on expertise from AWS Startup Solutions Architects and patterns from 350,000+ startups.",
       "displayName": "AWS Startup Advisor",
       "homepage": "https://github.com/awslabs/startups",
-      "icon": null,
+      "icon": {
+        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "bytes": 3061,
+        "contentType": "image/png",
+        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
+        "homepage": "https://aws.amazon.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+      },
       "keywords": [
         "advisor",
         "aws",
@@ -2212,9 +2272,19 @@
         "pi": "unknown"
       },
       "description": "Migrate, modernize, and upgrade codebases to AWS. Transforms .NET Framework to .NET 8/10, mainframe COBOL to Java, VMware VMs to EC2, SQL Server to Aurora, and upgrades Java/Python/Node.js versions and AWS SDKs. AWS Transform - continuous modernization analyzes codebases for tech debt, security issues, and upgrade opportunities, then remediates them.",
-      "displayName": "aws-transform",
+      "displayName": "AWS Transform",
       "homepage": "https://github.com/awslabs/agent-plugins",
-      "icon": null,
+      "icon": {
+        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "bytes": 3061,
+        "contentType": "image/png",
+        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
+        "homepage": "https://aws.amazon.com/transform/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+      },
       "keywords": [
         "aws",
         "developer-tools",
@@ -2307,7 +2377,7 @@
         "pi": "unknown"
       },
       "description": "Predict structures, screen molecules and proteins, and design binders with Boltz from Claude Code.",
-      "displayName": "boltz",
+      "displayName": "Boltz",
       "homepage": "https://boltz.bio/",
       "icon": {
         "asset": "icon-499a2436325cee27b3ba4db99914085b.png",
@@ -2404,7 +2474,7 @@
         "pi": "unknown"
       },
       "description": "Predict structures, screen molecules and proteins, and design binders.",
-      "displayName": "boltz-api-cli",
+      "displayName": "Boltz API CLI",
       "icon": {
         "asset": "icon-740df6167e01959f2b1cadbcabb6e3d6.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-740df6167e01959f2b1cadbcabb6e3d6.png",
@@ -2593,7 +2663,7 @@
         "pi": "partially-supported"
       },
       "description": "Build iOS apps with workflows for App Intents, SwiftUI UI work, Simulator mirroring in the Codex in-app browser, performance profiling, leak investigation, and simulator debugging.",
-      "displayName": "build-ios-apps",
+      "displayName": "Build iOS Apps",
       "icon": {
         "asset": "icon-d5389b5252eb373894508c6a8b1f65d8.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-d5389b5252eb373894508c6a8b1f65d8.png",
@@ -2704,7 +2774,7 @@
         "pi": "partially-supported"
       },
       "description": "Build, run, test, debug, instrument, and implement local macOS apps using Xcode, SwiftUI, AppKit interop, unified logging, and shell-first desktop workflows.",
-      "displayName": "build-macos-apps",
+      "displayName": "Build macOS Apps",
       "icon": {
         "asset": "icon-d5389b5252eb373894508c6a8b1f65d8.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-d5389b5252eb373894508c6a8b1f65d8.png",
@@ -2801,7 +2871,7 @@
         "pi": "partially-supported"
       },
       "description": "Build web apps with frontend asset design, browser testing, UI components, payments, and database guidance.",
-      "displayName": "build-web-apps",
+      "displayName": "Build Web Apps",
       "icon": {
         "asset": "icon-d83c4aebc93b4d894973ef6891e21357.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-d83c4aebc93b4d894973ef6891e21357.png",
@@ -2899,7 +2969,7 @@
         "pi": "partially-supported"
       },
       "description": "Design, critique, implement, test, and export web data visualizations in Codex, including charts, maps, dashboards, Gantt, UML, scrollytelling, reports, slides, mobile views, shareable state, and advanced WebGL concepts.",
-      "displayName": "build-web-data-visualization",
+      "displayName": "Build Web Data Visualization",
       "icon": {
         "asset": "icon-98cb142b8fcff83824dd96eb86b66796.svg",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-98cb142b8fcff83824dd96eb86b66796.svg",
@@ -3002,7 +3072,7 @@
         "pi": "partially-supported"
       },
       "description": "Official Claude Code plugin for Catalyst by Zoho — full-stack serverless cloud platform. With Skills that covers all services, SDKs, CLI, architecture patterns, pricing, migration guides, and Zoho MCP tool-based resource management.",
-      "displayName": "catalyst-by-zoho",
+      "displayName": "Catalyst by Zoho",
       "homepage": "https://catalyst.zoho.com/",
       "icon": {
         "asset": "icon-2bc0a6cca1d6889acba9864ace2ac1cd.ico",
@@ -3106,7 +3176,7 @@
         "pi": "unknown"
       },
       "description": "AI-assisted development of SAP Cloud Application Programming Model (CAP) projects. Search CDS models and CAP documentation.",
-      "displayName": "cds-mcp",
+      "displayName": "CDS MCP",
       "homepage": "https://cap.cloud.sap/",
       "icon": {
         "asset": "icon-e363278ee1b467ea26360bec8e818b85.png",
@@ -3201,7 +3271,7 @@
         "pi": "partially-supported"
       },
       "description": "Ship stablecoin apps faster. Best-practice skills for USDC payments, cross-chain transfers, wallets, and smart contracts — plus Circle's MCP server for real-time SDK and documentation guidance.",
-      "displayName": "circle",
+      "displayName": "Circle",
       "homepage": "https://www.circle.com/",
       "icon": {
         "asset": "icon-dfee34b6310559423ae4205b930feb09.svg",
@@ -3299,7 +3369,7 @@
         "pi": "partially-supported"
       },
       "description": "Build, test, and deploy any application",
-      "displayName": "circleci",
+      "displayName": "Circleci",
       "icon": {
         "asset": "icon-f6f1e503cc44ad969e50c1c0f762ebc9.svg",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f6f1e503cc44ad969e50c1c0f762ebc9.svg",
@@ -3389,7 +3459,7 @@
         "pi": "partially-supported"
       },
       "description": "Install, configure, and integrate CKEditor 5 (free and premium) in any JavaScript project.",
-      "displayName": "ckeditor",
+      "displayName": "CKEditor",
       "homepage": "https://ckeditor.com/",
       "icon": {
         "asset": "icon-558cc526a1d0c2ca849c6989f230b6b1.png",
@@ -3479,8 +3549,18 @@
         "pi": "unknown"
       },
       "description": "C/C++ language server (clangd) for code intelligence",
-      "displayName": "clangd-lsp",
-      "icon": null,
+      "displayName": "Clangd LSP",
+      "icon": {
+        "asset": "icon-b26135e322d05f31306986f1eafdfb85.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-b26135e322d05f31306986f1eafdfb85.svg",
+        "bytes": 5068,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:b26135e322d05f31306986f1eafdfb85432dc6a211a87270d07e2917e93051d6",
+        "homepage": "https://clangd.llvm.org/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://clangd.llvm.org/logo.svg"
+      },
       "keywords": [
         "clangd",
         "developer-tools",
@@ -3498,7 +3578,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/clangd-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:281dcd52afdf1e0d1d511ace604f968a56ba4a95810188fbc3566ee9e79552cf",
@@ -3511,13 +3591,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:c56872430fd2672590594245a2a75b1f4075b16303570bff19c10dd2a4ff4034",
         "packageStatus": "portable",
-        "releaseId": "release:88408319ff0eb5d1ad13163902ddd9cba0d0c4d4d7e11a09f7bd03fbb6be6398",
+        "releaseId": "release:248ddacb111f3447a98639f6f45bcae5d781b620f3fbed31c3800bf770669082",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:88408319ff0eb5d1ad13163902ddd9cba0d0c4d4d7e11a09f7bd03fbb6be6398",
+      "releaseId": "release:248ddacb111f3447a98639f6f45bcae5d781b620f3fbed31c3800bf770669082",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -3573,7 +3653,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "cli-for-agent",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:9170ba40394c32a14da98ed946d52a26988e0e5bcc066ffeb1d8201654dc6c5e",
@@ -3586,13 +3666,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:c0c97b4e9a7e33e2fd64f49d1d3c9496fc3a72045f5e7db683c1d9cc82b2a764",
         "packageStatus": "portable",
-        "releaseId": "release:490f6c3c039fc691c71ea4586e9c242e8eb989d1bca6cce5c9db2077ecea8526",
+        "releaseId": "release:c1b8a07629c8ee93dfb0e7be38f6463f783552fac4b15c9c167afc0d552caa5f",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:490f6c3c039fc691c71ea4586e9c242e8eb989d1bca6cce5c9db2077ecea8526",
+      "releaseId": "release:c1b8a07629c8ee93dfb0e7be38f6463f783552fac4b15c9c167afc0d552caa5f",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -3633,7 +3713,7 @@
         "pi": "partially-supported"
       },
       "description": "Skills for the Cloudflare developer platform: Workers, Durable Objects, Agents SDK, MCP servers, Wrangler CLI, and web performance.",
-      "displayName": "cloudflare",
+      "displayName": "Cloudflare",
       "homepage": "https://github.com/cloudflare/skills",
       "icon": {
         "asset": "icon-8536995b0c781c1bd4f1b3301a73abf3.svg",
@@ -3747,7 +3827,7 @@
         "pi": "partially-supported"
       },
       "description": "Modernize legacy codebases (COBOL, legacy Java/C++, monolith web apps) with a structured preflight / assess / map / extract-rules / brief / reimagine / transform / harden workflow, an interactive topology viewer, and specialist review agents",
-      "displayName": "code-modernization",
+      "displayName": "Code Modernization",
       "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-modernization",
       "icon": null,
       "keywords": [
@@ -3767,7 +3847,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/code-modernization",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:0a9878073d60fbe3914546f7244160703c3761998148615b1b81b1f4dc59a690",
@@ -3784,12 +3864,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:8db514add8391ba3664ee3926839e8c216d7949fbcb92c41b0bca71a98f6f2fe",
         "packageStatus": "partial",
-        "releaseId": "release:5f615d53a563fa1251efbeb2981be9a06c98d1d89e02499c3cec8a9c1da7c404",
+        "releaseId": "release:061c09e9e13a41771da5127a35fdd639f1e65aab360afca231b261b317fdcb7e",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:5f615d53a563fa1251efbeb2981be9a06c98d1d89e02499c3cec8a9c1da7c404",
+      "releaseId": "release:061c09e9e13a41771da5127a35fdd639f1e65aab360afca231b261b317fdcb7e",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -3828,7 +3908,7 @@
         "pi": "partially-supported"
       },
       "description": "Your code review partner. CodeRabbit provides external validation using a specialized AI architecture and 40+ integrated static analyzers—offering a different perspective that catches bugs, security vulnerabilities, logic errors, and edge cases. Context-aware analysis via AST parsing and codegraph relationships. Automatically incorporates CLAUDE.md and project coding guidelines into reviews. Useful after writing or modifying code, before commits, when implementing complex or security-sensitive logic, or when a second opinion would increase confidence in the changes. Returns specific findings with suggested fixes that can be applied immediately. Free to use.",
-      "displayName": "coderabbit",
+      "displayName": "CodeRabbit",
       "homepage": "https://github.com/coderabbitai/skills",
       "icon": {
         "asset": "icon-34aa366bf020df325b24b42a822714cb.svg",
@@ -3926,7 +4006,7 @@
         "pi": "partially-supported"
       },
       "description": "Access Confidence feature flags, experiments, and migration tools directly from Claude Code.",
-      "displayName": "confidence",
+      "displayName": "Confidence",
       "homepage": "https://confidence.spotify.com/",
       "icon": {
         "asset": "icon-b6d6425cb92db07c465273fc4617833f.svg",
@@ -4040,7 +4120,7 @@
         "pi": "partially-supported"
       },
       "description": "Upstash Context7 MCP server for up-to-date documentation lookup. Connects to Context7's hosted remote MCP server (https://mcp.context7.com/mcp) — no local Node.js or npx required — to pull version-specific documentation and code examples directly from source repositories into your LLM context. Works anonymously out of the box; set CONTEXT7_API_KEY for higher rate limits.",
-      "displayName": "context7",
+      "displayName": "Context7",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/context7",
       "icon": null,
       "keywords": [
@@ -4059,7 +4139,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/context7",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:ff9d33455f5cb6d3437f2164625f83c20aff35755bd790b42e65d00cdbc268f3",
@@ -4072,12 +4152,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:4ce0c48e0625be675610326caef44e10fb808abf68ad16e68eb9d6cf89307380",
         "packageStatus": "partial",
-        "releaseId": "release:8f17e320cf4e6e9b7adc5d2b5f4bca1b3ea4b9a83ec5bacb93de35afaf071078",
+        "releaseId": "release:c3d2c066fe76e6089c4cafe0f749f72319d0111fe518f0de913135d2b5e951e6",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:8f17e320cf4e6e9b7adc5d2b5f4bca1b3ea4b9a83ec5bacb93de35afaf071078",
+      "releaseId": "release:c3d2c066fe76e6089c4cafe0f749f72319d0111fe518f0de913135d2b5e951e6",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -4221,7 +4301,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "create-plugin",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:0d14c7691cda946b96a977f432de9680951800ad3881c7a970e22a432299a9c7",
@@ -4242,13 +4322,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:2d0bf88e7ef5ae04e298da6deac66580fe535f1cf8d1eec9c13ba54c81dca42b",
         "packageStatus": "partial",
-        "releaseId": "release:95deecb2a3951641135f9e2217a85e520aa3b8520700534446dbbb28a6d70376",
+        "releaseId": "release:6714e5cc6d84d985136143d50c50113d47fffd3b694e789e4e49042c8827196c",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:95deecb2a3951641135f9e2217a85e520aa3b8520700534446dbbb28a6d70376",
+      "releaseId": "release:6714e5cc6d84d985136143d50c50113d47fffd3b694e789e4e49042c8827196c",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -4288,7 +4368,7 @@
         "pi": "partially-supported"
       },
       "description": "CrowdStrike Falcon Foundry development skills for building cybersecurity applications on the Falcon platform. Includes UI development, collections, functions, workflows, API integration, security patterns, and debugging workflows.",
-      "displayName": "crowdstrike-falcon-foundry",
+      "displayName": "CrowdStrike Falcon Foundry",
       "homepage": "https://github.com/CrowdStrike/foundry-skills",
       "icon": {
         "asset": "icon-61f4d2f3d6ec66f6fc081e554339de24.png",
@@ -4395,7 +4475,7 @@
         "pi": "partially-supported"
       },
       "description": "CrowdStrike Falcon Fusion skills for authoring, deploying, and executing Fusion workflows. Includes live action discovery, YAML authoring with schema validation, workflow import and release, execution monitoring, and Falcon Next-Gen SIEM lookup files.",
-      "displayName": "crowdstrike-falcon-fusion",
+      "displayName": "CrowdStrike Falcon Fusion",
       "homepage": "https://github.com/CrowdStrike/fusion-skills",
       "icon": {
         "asset": "icon-5132bd5af60a22182bd531e1e9e3f0f1.png",
@@ -4498,8 +4578,18 @@
         "pi": "unknown"
       },
       "description": "C# language server for code intelligence",
-      "displayName": "csharp-lsp",
-      "icon": null,
+      "displayName": "Csharp LSP",
+      "icon": {
+        "asset": "icon-fc6c0e1a2c2c26e2c08fe422888674f7.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-fc6c0e1a2c2c26e2c08fe422888674f7.png",
+        "bytes": 7816,
+        "contentType": "image/png",
+        "digest": "sha256:fc6c0e1a2c2c26e2c08fe422888674f70ce1f03b58c2f4d8c4453fbd920dd61f",
+        "homepage": "https://dotnet.microsoft.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://dotnet.microsoft.com/apple-touch-icon.png"
+      },
       "keywords": [
         "csharp",
         "developer-tools",
@@ -4517,7 +4607,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/csharp-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:a075815ad08ce9698bbe0fd1211bb77439b35d8b856882d9938c355287ac1f30",
@@ -4530,13 +4620,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:613891dd1036c31bb2343d84abd6a6928220a6f8f3d1b498f57d8903212d8118",
         "packageStatus": "portable",
-        "releaseId": "release:94e3e47f68c24492a82f8b44b44427ae0801058bccb4e6cecc731a47bcc31952",
+        "releaseId": "release:e82ce5a1d0cf38e1298649629271e85f85d3f35a07657715ce8823c01cb17c40",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:94e3e47f68c24492a82f8b44b44427ae0801058bccb4e6cecc731a47bcc31952",
+      "releaseId": "release:e82ce5a1d0cf38e1298649629271e85f85d3f35a07657715ce8823c01cb17c40",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -4604,7 +4694,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "cursor-team-kit",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:8132d5be9365584f329567eebd0c084e80940b2f0e37e4fca60dfabc40695865",
@@ -4625,13 +4715,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:f2707f63d0aa7a20cacd3d107259f3b4a8d0b5960f2099504f67eaa854314e80",
         "packageStatus": "partial",
-        "releaseId": "release:dc719b9899a270096f13c2409c21938d5b59c164e4a3667bef21d3cf66c0e119",
+        "releaseId": "release:6f65e3372243980400fea9422d88ac0cccbfd68e69d43eb879fc93b33bd1262c",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.2.0"
       },
-      "releaseId": "release:dc719b9899a270096f13c2409c21938d5b59c164e4a3667bef21d3cf66c0e119",
+      "releaseId": "release:6f65e3372243980400fea9422d88ac0cccbfd68e69d43eb879fc93b33bd1262c",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -4672,7 +4762,7 @@
         "pi": "partially-supported"
       },
       "description": "OpenTelemetry observability for Claude Code sessions. Captures tool calls, LLM invocations, token usage, and errors as OTel traces. Send telemetry to Dash0 or any OpenTelemetry-compatible backend.",
-      "displayName": "dash0-agent-plugin",
+      "displayName": "Dash0 Agent Plugin",
       "homepage": "https://dash0.com/",
       "icon": {
         "asset": "icon-9f0a8595e55bee9c83e218eaf9fb43da.png",
@@ -4783,7 +4873,7 @@
         "pi": "partially-supported"
       },
       "description": "This plugin provides a specialized suite of skills for data engineers and database practitioners working on Google Cloud. It acts as an expert assistant, allowing you to use natural language prompts in your preferred coding agent to architect complex data pipelines, transform data with dbt, write Spark and BigQuery SQL notebooks, and orchestrate end-to-end workflows across GCP's data ecosystem.",
-      "displayName": "dak",
+      "displayName": "DAK",
       "homepage": "https://github.com/gemini-cli-extensions/data-agent-kit-starter-pack",
       "icon": null,
       "keywords": [
@@ -4989,9 +5079,19 @@
         "pi": "partially-supported"
       },
       "description": "Deploy applications to AWS with architecture recommendations, cost estimates, and IaC deployment.",
-      "displayName": "deploy-on-aws",
+      "displayName": "Deploy on AWS",
       "homepage": "https://github.com/awslabs/agent-plugins",
-      "icon": null,
+      "icon": {
+        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "bytes": 3061,
+        "contentType": "image/png",
+        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
+        "homepage": "https://aws.amazon.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+      },
       "keywords": [
         "aws",
         "deploy",
@@ -5088,7 +5188,7 @@
         "pi": "partially-supported"
       },
       "description": "Full Domino Data Lab platform support — workspaces, jobs, model deployment, experiment tracking, GenAI tracing, Spark/Ray/Dask, and app deployment for data science teams",
-      "displayName": "dominodatalab",
+      "displayName": "Domino Data Lab",
       "homepage": "https://www.domino.ai/",
       "icon": {
         "asset": "icon-1c82cef498d7507e6d7b765ec38a48c2.svg",
@@ -5108,7 +5208,7 @@
       "license": "MIT",
       "monogram": {
         "hue": 219,
-        "text": "DO"
+        "text": "DD"
       },
       "pluginId": "plugin:claude-official:dominodatalab",
       "primaryCategory": "developer-tools",
@@ -5391,7 +5491,7 @@
         "pi": "partially-supported"
       },
       "description": "Official Expo skills for building, deploying, upgrading, and debugging React Native apps with Expo. Covers UI development with Expo Router, SwiftUI and Jetpack Compose components, Tailwind CSS setup, API routes, data fetching, CI/CD workflows, App Store and Play Store deployment, SDK upgrades, DOM components, and dev client distribution.",
-      "displayName": "expo",
+      "displayName": "Expo",
       "homepage": "https://github.com/expo/skills/blob/main/plugins/expo/README.md",
       "icon": {
         "asset": "icon-8a0da01fdd368341cb7d5103c6435d7b.png",
@@ -5492,7 +5592,7 @@
         "pi": "unknown"
       },
       "description": "Localhost web chat for testing the channel notification flow. No tokens, no access control, no third-party service.",
-      "displayName": "fakechat",
+      "displayName": "Fakechat",
       "icon": null,
       "keywords": [
         "developer-tools",
@@ -5510,7 +5610,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/fakechat",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:5e128f9859d0f26562e831213f7db3cb831aef949e12365d4f848e4092c1645c",
@@ -5523,13 +5623,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:8410e6094d19f7191e8701569a856e0544ab9ff67f31d8cd62e66ccb62e37c22",
         "packageStatus": "portable",
-        "releaseId": "release:fe94643e22b3c0a3d6812f3bb204862052ccdbb5d07f957a3a0bb91b692f5bae",
+        "releaseId": "release:fa4ace69ce53bc01d3b880b880158483623b097e342445303cb8ec48618ca4d6",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "0.0.1"
       },
-      "releaseId": "release:fe94643e22b3c0a3d6812f3bb204862052ccdbb5d07f957a3a0bb91b692f5bae",
+      "releaseId": "release:fa4ace69ce53bc01d3b880b880158483623b097e342445303cb8ec48618ca4d6",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -5568,7 +5668,7 @@
         "pi": "partially-supported"
       },
       "description": "Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review",
-      "displayName": "feature-dev",
+      "displayName": "Feature Dev",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/feature-dev",
       "icon": null,
       "keywords": [
@@ -5588,7 +5688,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/feature-dev",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:ca695e29572b656b37991f0ae7f3c85d56b347bcddfa3095b778a722316b72ee",
@@ -5605,12 +5705,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:e9e5199d531d0b7a8642a9f1bd794f4d3d55c262a7a64ccdb1abda3c64826929",
         "packageStatus": "partial",
-        "releaseId": "release:382dfc0416f548810d9fbe42ba82e6223a1f2218151849380da5f2717a8163f5",
+        "releaseId": "release:030addd3001bc5a62ccf370a5a7eab918af4da6c18d511d9bdec91a8f6e9e287",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:382dfc0416f548810d9fbe42ba82e6223a1f2218151849380da5f2717a8163f5",
+      "releaseId": "release:030addd3001bc5a62ccf370a5a7eab918af4da6c18d511d9bdec91a8f6e9e287",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -5648,7 +5748,7 @@
         "pi": "partially-supported"
       },
       "description": "Web scraping and crawling powered by Firecrawl. Turn any website into clean, LLM-ready markdown or structured data. Scrape single pages, crawl entire sites, search the web, and extract structured information. Includes an AI agent for autonomous multi-source data gathering - just describe what you need and it finds, navigates, and extracts automatically.",
-      "displayName": "firecrawl",
+      "displayName": "Firecrawl",
       "homepage": "https://github.com/firecrawl/firecrawl-claude-plugin.git",
       "icon": {
         "asset": "icon-d171aa2c67070a3117d0de2b095bd74a.ico",
@@ -5743,7 +5843,7 @@
         "pi": "partially-supported"
       },
       "description": "Forge-focused skills and MCP configuration for Atlassian Forge: scaffold and deploy apps (forge create, templates, dev spaces), build Teamwork Graph connectors for Rovo Search/Rovo Chat, pre-deploy review, systematic debugging, plus Forge docs and Atlassian Design System lookups via MCP.",
-      "displayName": "forge-skills",
+      "displayName": "Forge Skills",
       "homepage": "https://developer.atlassian.com/platform/forge/",
       "icon": {
         "asset": "icon-4c7a2e66ba282a92981712dfb27e6bc0.png",
@@ -5844,7 +5944,7 @@
         "pi": "unknown"
       },
       "description": "Create distinctive, production-grade frontend interfaces with high design quality. Generates creative, polished code that avoids generic AI aesthetics.",
-      "displayName": "frontend-design",
+      "displayName": "Frontend Design",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/frontend-design",
       "icon": null,
       "keywords": [
@@ -5864,7 +5964,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/frontend-design",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:22e0f6ce39d78085714b1a74926563e3fc84919f8933339a0da5d13ca17417ff",
@@ -5877,12 +5977,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:989a2e86f7e012155ec8700dc8cbe64493ccc11cb21d89bf85825233b973b485",
         "packageStatus": "portable",
-        "releaseId": "release:5189fc5b4c79bef53533147f88604a3df08e8e385758bb195f205fbf0b1af877",
+        "releaseId": "release:5b875519f0d89269e2ab7434c5e87b4a4317dced600bfccf94ec0a3632611666",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:5189fc5b4c79bef53533147f88604a3df08e8e385758bb195f205fbf0b1af877",
+      "releaseId": "release:5b875519f0d89269e2ab7434c5e87b4a4317dced600bfccf94ec0a3632611666",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -5920,7 +6020,7 @@
         "pi": "partially-supported"
       },
       "description": "Connect Claude to Fullstory to query behavioral analytics, session replays, and customer experience insights.",
-      "displayName": "fullstory",
+      "displayName": "FullStory",
       "homepage": "https://www.fullstory.com/",
       "icon": {
         "asset": "icon-336c0b0d48174164a70293d0a7a53e17.svg",
@@ -6016,7 +6116,7 @@
         "pi": "unknown"
       },
       "description": "Design, prototype, and ship browser games with guided 2D and 3D workflows, asset pipelines, and playtesting support.",
-      "displayName": "game-studio",
+      "displayName": "Game Studio",
       "icon": {
         "asset": "icon-5b3b083e4acc72b2d905e08b99dff08b.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-5b3b083e4acc72b2d905e08b99dff08b.png",
@@ -6201,7 +6301,7 @@
         "pi": "partially-supported"
       },
       "description": "Official Google Cloud Storage (GCS) plugin. Manage buckets and objects, transfer data, and configure MCP, FUSE, IAM, security, lifecycle rules, signed URLs, Terraform, and the CLI.",
-      "displayName": "google-cloud-storage",
+      "displayName": "Google Cloud Storage",
       "homepage": "https://cloud.google.com/storage",
       "icon": {
         "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
@@ -6299,8 +6399,18 @@
         "pi": "unknown"
       },
       "description": "Go language server for code intelligence and refactoring",
-      "displayName": "gopls-lsp",
-      "icon": null,
+      "displayName": "Gopls LSP",
+      "icon": {
+        "asset": "icon-8bf938ca7a737e0478cd119c920e9394.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8bf938ca7a737e0478cd119c920e9394.png",
+        "bytes": 12840,
+        "contentType": "image/png",
+        "digest": "sha256:8bf938ca7a737e0478cd119c920e93943f6fb8562e21461aa5030cf0597fc107",
+        "homepage": "https://go.dev/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://go.dev/images/favicon-gopher-plain.png"
+      },
       "keywords": [
         "developer-tools",
         "gopls",
@@ -6318,7 +6428,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/gopls-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:d0f7a21197aec2bc1b258ee8ae85421828f92dffb3701662e5b430d633077656",
@@ -6331,13 +6441,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:7d6845f8ea541b82fec6e9e082d32610f7e614002ae7a66232e5ec6f31e82888",
         "packageStatus": "portable",
-        "releaseId": "release:1f1ddc4c51524323b27a3cb1d97ab1bde7c2b7f7903c6900d84dfaf6b4560e86",
+        "releaseId": "release:38b13059e9cf752129bfb2f1d9887a816344f78e7d0bd951fe49ba12c5798b65",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:1f1ddc4c51524323b27a3cb1d97ab1bde7c2b7f7903c6900d84dfaf6b4560e86",
+      "releaseId": "release:38b13059e9cf752129bfb2f1d9887a816344f78e7d0bd951fe49ba12c5798b65",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -6559,7 +6669,7 @@
         "pi": "partially-supported"
       },
       "description": "MCP server for AI-assisted Grafana dashboard, datasource, alerting, and incident management.",
-      "displayName": "grafana-mcp",
+      "displayName": "Grafana MCP",
       "homepage": "https://grafana.com/",
       "icon": {
         "asset": "icon-c7e6c3a1af641dc921fe92ccf31acb9c.svg",
@@ -6861,7 +6971,7 @@
         "pi": "unknown"
       },
       "description": "Build, train, evaluate, and use open source AI models, datasets, and spaces.",
-      "displayName": "huggingface-skills",
+      "displayName": "Hugging Face Skills",
       "homepage": "https://github.com/huggingface/skills.git",
       "icon": {
         "asset": "icon-7266292a5073388702cfca169d267664.ico",
@@ -6882,7 +6992,7 @@
       "license": "Apache-2.0",
       "monogram": {
         "hue": 111,
-        "text": "HS"
+        "text": "HF"
       },
       "pluginId": "plugin:claude-official:huggingface-skills",
       "primaryCategory": "developer-tools",
@@ -6962,7 +7072,7 @@
         "pi": "partially-supported"
       },
       "description": "TDengine IDMP plugin with packaged skills for discovery, schema inspection, and safe operational workflows.",
-      "displayName": "idmp-plugin",
+      "displayName": "IDMP Plugin",
       "homepage": "https://github.com/taosdata/agent-skills",
       "icon": {
         "asset": "icon-bb1178ee70df4a7c487736f1e92f91bb.ico",
@@ -7048,7 +7158,7 @@
         "pi": "partially-supported"
       },
       "description": "Work with incident.io from Claude: respond to and investigate incidents, check on-call schedules and escalations, and author the runbooks, skills and architecture docs that incident.io investigations draw on. Bundles the official incident.io MCP server (OAuth on first use).",
-      "displayName": "incident-io",
+      "displayName": "Incident.io",
       "homepage": "https://incident.io/",
       "icon": {
         "asset": "icon-1ecec40ec7a7189a69e52a54766e267d.png",
@@ -7140,8 +7250,18 @@
         "pi": "unknown"
       },
       "description": "Java language server (Eclipse JDT.LS) for code intelligence",
-      "displayName": "jdtls-lsp",
-      "icon": null,
+      "displayName": "Jdtls LSP",
+      "icon": {
+        "asset": "icon-5bd5c969515154eb92c3ad92586e9533.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-5bd5c969515154eb92c3ad92586e9533.ico",
+        "bytes": 15086,
+        "contentType": "image/x-icon",
+        "digest": "sha256:5bd5c969515154eb92c3ad92586e953371e952d154f6a3ab6710b901b3b6547b",
+        "homepage": "https://www.eclipse.org/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.eclipse.org/favicon.ico"
+      },
       "keywords": [
         "developer-tools",
         "jdtls",
@@ -7159,7 +7279,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/jdtls-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:9a3aed7b74071fea624ab0cf792c6cc26fa263834948c943dfc55b2585891529",
@@ -7172,13 +7292,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:36837fff70be5c6516bab55a6a457eca8f89b4a8575bb17eb8f147501452a760",
         "packageStatus": "portable",
-        "releaseId": "release:fc01ede2c2ab1bc22b4e2574b1969c691be11ffee998b18e67a1b6135f5fd89d",
+        "releaseId": "release:8a7c510f9adbc390f3b0691d80e4ee722cdae80e6243f264d6e1ef663778c522",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:fc01ede2c2ab1bc22b4e2574b1969c691be11ffee998b18e67a1b6135f5fd89d",
+      "releaseId": "release:8a7c510f9adbc390f3b0691d80e4ee722cdae80e6243f264d6e1ef663778c522",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -7214,8 +7334,18 @@
         "pi": "unknown"
       },
       "description": "Kotlin language server for code intelligence",
-      "displayName": "kotlin-lsp",
-      "icon": null,
+      "displayName": "Kotlin LSP",
+      "icon": {
+        "asset": "icon-cd685e9e08c07ab7ad1f03bae00c8014.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-cd685e9e08c07ab7ad1f03bae00c8014.png",
+        "bytes": 12252,
+        "contentType": "image/png",
+        "digest": "sha256:cd685e9e08c07ab7ad1f03bae00c80141f8e67af2733756e456df8d973ee6e16",
+        "homepage": "https://kotlinlang.org/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://kotlinlang.org/images/favicon/apple-touch-icon-144x144.png"
+      },
       "keywords": [
         "developer-tools",
         "kotlin",
@@ -7233,7 +7363,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/kotlin-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:d22bcbdb2c09247a46346a036cc41c84479c97ba56c1ac828db48fbaa0f17822",
@@ -7246,13 +7376,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:ee8ceb068bbea87ca6730b26d51d74a0f045b75207e5f8a17732a32ad936a06d",
         "packageStatus": "portable",
-        "releaseId": "release:58ae9963eb426e74b2e3214b77b80992892b2c5f02d839604d1bf5a2227eec87",
+        "releaseId": "release:4c83b197398845d772d9942442497609c7f8eb79ff12984d61c5260efbf186de",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:58ae9963eb426e74b2e3214b77b80992892b2c5f02d839604d1bf5a2227eec87",
+      "releaseId": "release:4c83b197398845d772d9942442497609c7f8eb79ff12984d61c5260efbf186de",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -7387,7 +7517,7 @@
         "pi": "partially-supported"
       },
       "description": "Langfuse observability plugin for Claude Code — captures and exports traces, spans, and session telemetry from Claude Code to Langfuse for LLM monitoring, debugging, and evaluation",
-      "displayName": "langfuse-observability",
+      "displayName": "Langfuse Observability",
       "homepage": "https://langfuse.com/integrations/other/claude-code",
       "icon": {
         "asset": "icon-3716a74d937c060454c2fb6ab4e6a33d.png",
@@ -7484,9 +7614,19 @@
         "pi": "unknown"
       },
       "description": "Laravel development toolkit MCP server. Provides intelligent assistance for Laravel applications including Artisan commands, Eloquent queries, routing, migrations, and framework-specific code generation.",
-      "displayName": "laravel-boost",
+      "displayName": "Laravel Boost",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/laravel-boost",
-      "icon": null,
+      "icon": {
+        "asset": "icon-b035379a2c00eee0093e935119677799.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-b035379a2c00eee0093e935119677799.png",
+        "bytes": 8682,
+        "contentType": "image/png",
+        "digest": "sha256:b035379a2c00eee0093e935119677799df0222fef41696cac60d137a302bcc7c",
+        "homepage": "https://laravel.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://laravel.com/img/favicon/apple-touch-icon.png"
+      },
       "keywords": [
         "boost",
         "developer-tools",
@@ -7504,7 +7644,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/laravel-boost",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:092903e534cc6ac1ef694ad010cc621a8a029a3bfdb84658c6e82d8c91f93ac3",
@@ -7517,12 +7657,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d0612e678bd9ed067ba274e0117959d63c4c9d7a52e7255afd6399ba30f173b6",
         "packageStatus": "portable",
-        "releaseId": "release:6ca1f98ccef908b23770d0d41f27057e8633505cac99c233e95124519f9d43ff",
+        "releaseId": "release:516f0f3033a95281bf3e5352f99fcb6dc4eb24fb899274237ec3e40d5bb38785",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:6ca1f98ccef908b23770d0d41f27057e8633505cac99c233e95124519f9d43ff",
+      "releaseId": "release:516f0f3033a95281bf3e5352f99fcb6dc4eb24fb899274237ec3e40d5bb38785",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -7563,7 +7703,7 @@
         "pi": "partially-supported"
       },
       "description": "Add Logfire observability to Python applications with auto-instrumentation for FastAPI, httpx, asyncpg, SQLAlchemy, and more",
-      "displayName": "logfire",
+      "displayName": "Logfire",
       "homepage": "https://github.com/pydantic/skills/tree/main/plugins/logfire",
       "icon": {
         "asset": "icon-fa1ea08c2cf370851a0dda31a8eb09c2.svg",
@@ -7664,7 +7804,7 @@
         "pi": "partially-supported"
       },
       "description": "Connect Claude Code to LogRocket to query session replays, metrics, issues, and user behavior using natural language.",
-      "displayName": "logrocket",
+      "displayName": "LogRocket",
       "homepage": "https://logrocket.com/",
       "icon": {
         "asset": "icon-84282b677d74f59787c88269e47512b2.png",
@@ -7755,9 +7895,19 @@
         "pi": "partially-supported"
       },
       "description": "Build, iterate on, deploy, and manage Lovable apps from Claude Code. Bundles the official Lovable MCP server (remote, OAuth 2.1) and adds focused commands for the common build/iterate/database workflows, with credit- and publish-safety prompts.",
-      "displayName": "lovable",
+      "displayName": "Lovable",
       "homepage": "https://lovable.dev/",
-      "icon": null,
+      "icon": {
+        "asset": "icon-70c786f33698827310bfb0996885a711.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-70c786f33698827310bfb0996885a711.png",
+        "bytes": 5876,
+        "contentType": "image/png",
+        "digest": "sha256:70c786f33698827310bfb0996885a711c26619a8b698ae9623c8d95d0b80db56",
+        "homepage": "https://docs.lovable.dev/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://docs.lovable.dev/mintlify-assets/_mintlify/favicons/lovable-f9060f1e/AU_uVgnksniw8mje/_generated/favicon/apple-touch-icon.png"
+      },
       "keywords": [
         "developer-tools",
         "lovable"
@@ -7840,8 +7990,18 @@
         "pi": "unknown"
       },
       "description": "Lua language server for code intelligence",
-      "displayName": "lua-lsp",
-      "icon": null,
+      "displayName": "Lua LSP",
+      "icon": {
+        "asset": "icon-0335e4a5a3b02c62cd4cf90d5fdf9105.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-0335e4a5a3b02c62cd4cf90d5fdf9105.png",
+        "bytes": 9338,
+        "contentType": "image/png",
+        "digest": "sha256:0335e4a5a3b02c62cd4cf90d5fdf9105158c878b24c1682527d50086c634b595",
+        "homepage": "https://www.lua.org/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.lua.org/favicon.ico"
+      },
       "keywords": [
         "developer-tools",
         "lsp",
@@ -7859,7 +8019,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/lua-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:870077078605c800855272f600a357c7c62e64e1e3a0b79062385031ac008d6e",
@@ -7872,13 +8032,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6e460274a2eb75d77886e1a3d9365cda9f4b41f5af9591fadda999e2acfbc598",
         "packageStatus": "portable",
-        "releaseId": "release:074704bd4319d46dae07cf22b9ae1beddfd8c62f57ee3b22ce08b71a2be19a19",
+        "releaseId": "release:369c40b54a7b800e1260b4ddcc3bf9569f8de37e670781adbade924ac745a8dd",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:074704bd4319d46dae07cf22b9ae1beddfd8c62f57ee3b22ce08b71a2be19a19",
+      "releaseId": "release:369c40b54a7b800e1260b4ddcc3bf9569f8de37e670781adbade924ac745a8dd",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -7919,7 +8079,7 @@
         "pi": "partially-supported"
       },
       "description": "Precise local semantic code search via MCP. Indexes your codebase with Go AST parsing, embeds with Ollama or LM Studio, and exposes vector search to Claude through an MCP server — no cloud, no npm.",
-      "displayName": "lumen",
+      "displayName": "Lumen",
       "homepage": "https://www.ory.sh/",
       "icon": {
         "asset": "icon-e1b148f3ba50ee687aebd2039aad30fa.svg",
@@ -8030,7 +8190,7 @@
         "pi": "partially-supported"
       },
       "description": "Use MagicPath to find, inspect, install, create, and edit UI components from Codex.",
-      "displayName": "magicpath",
+      "displayName": "Magicpath",
       "icon": {
         "asset": "icon-d3c261c132e56841924c7db046eb3958.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-d3c261c132e56841924c7db046eb3958.png",
@@ -8124,7 +8284,7 @@
         "pi": "partially-supported"
       },
       "description": "Mapbox skills and MCP servers for building location-aware applications with AI. Includes geospatial tools, style management, and patterns for web, iOS, Android, and AI agent frameworks.",
-      "displayName": "mapbox",
+      "displayName": "Mapbox",
       "homepage": "https://www.mapbox.com/",
       "icon": {
         "asset": "icon-fb10d06a71b932a52665423c9400f807.png",
@@ -8224,7 +8384,7 @@
         "pi": "unknown"
       },
       "description": "Skills for creating MCP Apps with the MCP Apps SDK",
-      "displayName": "mcp-apps",
+      "displayName": "MCP Apps",
       "homepage": "https://modelcontextprotocol.io/",
       "icon": {
         "asset": "icon-bf7a5a8d52fe292c6964ea4361018ecb.png",
@@ -8309,7 +8469,7 @@
         "pi": "partially-supported"
       },
       "description": "Skills for designing and building MCP servers that work seamlessly with Claude. Guides you through deployment models (remote HTTP, MCPB, local), tool design patterns, auth, and interactive MCP apps.",
-      "displayName": "mcp-server-dev",
+      "displayName": "MCP Server Dev",
       "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/mcp-server-dev",
       "icon": null,
       "keywords": [
@@ -8330,7 +8490,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/mcp-server-dev",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:15a9cffa7d0e85ac53a35957401c4b6e46f7c31528417fb31a13ad832c212fb0",
@@ -8343,12 +8503,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:08def705af2870496f13dc84e714bead183148dd6b724e60277e457e1bcb037c",
         "packageStatus": "partial",
-        "releaseId": "release:94f77e3a24f790704652fcf704a15e6b817b6f0310668ec5153fc4b6be7cc992",
+        "releaseId": "release:8d18a71465af95949a4a84d0dc2cbf2c75f6f9f0c747becdf1df6113bf667e72",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:94f77e3a24f790704652fcf704a15e6b817b6f0310668ec5153fc4b6be7cc992",
+      "releaseId": "release:8d18a71465af95949a4a84d0dc2cbf2c75f6f9f0c747becdf1df6113bf667e72",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -8384,7 +8544,7 @@
         "pi": "partially-supported"
       },
       "description": "Connect Claude to a private MCP server through an Anthropic MCP tunnel. The /create-docker-mcp-tunnel command drives the Docker Compose quickstart end to end: certificates, proxy config, cloudflared, and a verifiable sample server.",
-      "displayName": "mcp-tunnels",
+      "displayName": "MCP Tunnels",
       "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/mcp-tunnels",
       "icon": null,
       "keywords": [
@@ -8404,7 +8564,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/mcp-tunnels",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:59f9193a0aa0bff86cf0372acc6cc671d74fa5126a8b58becccf5eb5f7bd9c21",
@@ -8417,12 +8577,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d9b543e5366bbc74a7283cdbbda590af0516259e8a931a90581773b1634e6db6",
         "packageStatus": "partial",
-        "releaseId": "release:e02d46da8960dbb90cbd5304a8d689eb36714057469d742c4a2608765f428355",
+        "releaseId": "release:524ef06d40bea393b7fc3052468b44ed4cad9a65f176d4dbd05ef4c7508fc1d1",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:e02d46da8960dbb90cbd5304a8d689eb36714057469d742c4a2608765f428355",
+      "releaseId": "release:524ef06d40bea393b7fc3052468b44ed4cad9a65f176d4dbd05ef4c7508fc1d1",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -8462,7 +8622,7 @@
         "pi": "partially-supported"
       },
       "description": "Skills for the Mergify CLI: manage merge queues, stacked pull requests, Test Insights (flaky tests, quarantine), merge protections, and Mergify configuration directly from the terminal.",
-      "displayName": "mergify",
+      "displayName": "Mergify",
       "homepage": "https://mergify.com/",
       "icon": {
         "asset": "icon-1a593ba1b2745af27f443249843d6e8c.png",
@@ -8569,9 +8729,19 @@
         "pi": "partially-supported"
       },
       "description": "Access official Microsoft documentation, API references, and code samples for Azure, .NET, Windows, and more.",
-      "displayName": "microsoft-docs",
+      "displayName": "Microsoft Docs",
       "homepage": "https://github.com/microsoftdocs/mcp",
-      "icon": null,
+      "icon": {
+        "asset": "icon-90cdaf487716184e4034000935c605d1.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-90cdaf487716184e4034000935c605d1.ico",
+        "bytes": 17174,
+        "contentType": "image/x-icon",
+        "digest": "sha256:90cdaf487716184e4034000935c605d1633926d348116d198f355a98b8c6cd21",
+        "homepage": "https://learn.microsoft.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://learn.microsoft.com/favicon.ico"
+      },
       "keywords": [
         "developer-tools",
         "docs",
@@ -8668,9 +8838,19 @@
         "pi": "partially-supported"
       },
       "description": "Plan a migration from Google Cloud Platform (and OpenAI/Gemini AI workloads) to AWS. Analyzes your Infrastructure-as-Code files, app code, and GCP billing data to discover resources, design an AWS architecture, estimate costs, and generate migration artifacts — including AI-provider mapping to Amazon Bedrock. Processing is local; your data stays in your environment.",
-      "displayName": "migration-to-aws",
+      "displayName": "Migration to AWS",
       "homepage": "https://github.com/awslabs/startups",
-      "icon": null,
+      "icon": {
+        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "bytes": 3061,
+        "contentType": "image/png",
+        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
+        "homepage": "https://aws.amazon.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+      },
       "keywords": [
         "aws",
         "developer-tools",
@@ -9059,7 +9239,7 @@
         "pi": "partially-supported"
       },
       "description": "Netlify platform skills for Claude Code — functions, edge functions, blobs, database, image CDN, forms, config, CLI, frameworks, caching, AI gateway, and deployment.",
-      "displayName": "netlify-skills",
+      "displayName": "Netlify Skills",
       "homepage": "https://github.com/netlify/context-and-tools",
       "icon": {
         "asset": "icon-3e79c01aa9a888d576441a5bc28288d7.png",
@@ -9442,7 +9622,7 @@
         "pi": "partially-supported"
       },
       "description": "Skills for NVIDIAs ecosystem spans GPU acceleration, CUDA, AI agents, inference, robotics, Physical AI, Omniverse, and simulation. This plugin helps you understand the pieces, choose a path, validate your setup, and build practical NVIDIA-powered workflows.",
-      "displayName": "nvidia",
+      "displayName": "NVIDIA",
       "icon": {
         "asset": "icon-df380ee7463646f242f3da851f1754f3.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-df380ee7463646f242f3da851f1754f3.png",
@@ -9633,7 +9813,7 @@
         "pi": "unknown"
       },
       "description": "Set up OpenAI Ads Measurement Pixel and optional Conversions API instrumentation.",
-      "displayName": "openai-ads-conversions",
+      "displayName": "OpenAI Ads Conversions",
       "icon": {
         "asset": "icon-50a4d42fae4d94cce0112e31637d8857.svg",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-50a4d42fae4d94cce0112e31637d8857.svg",
@@ -9733,7 +9913,7 @@
         "pi": "partially-supported"
       },
       "description": "Build with OpenAI APIs, Agents SDK, and ChatGPT Apps, and create and save OpenAI API keys from Codex.",
-      "displayName": "openai-developers",
+      "displayName": "OpenAI Developers",
       "icon": {
         "asset": "icon-776310bcb0f0f191c616f31a13fcb8de.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-776310bcb0f0f191c616f31a13fcb8de.png",
@@ -9838,7 +10018,7 @@
         "pi": "partially-supported"
       },
       "description": "Drive the Oracle AI Data Platform (AIDP) Databricks Migration Toolkit in natural language. Plans and executes automated Databricks → AIDP migrations of notebooks, jobs, schedules, and catalog DDL — Pass-1 dependency rewrite + Pass-2 cell-by-cell execute/verify/fix on a live AIDP cluster with Claude.",
-      "displayName": "oracle-ai-data-platform-workbench-databricks-migrator",
+      "displayName": "Oracle AI Data Platform Workbench Databricks Migrator",
       "homepage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/index.html",
       "icon": {
         "asset": "icon-8041e8f11cec00b191e3aeb56179a03d.ico",
@@ -9944,7 +10124,7 @@
         "pi": "partially-supported"
       },
       "description": "Oracle AI Data Platform (AIDP) Workbench engineer agent for Claude Code — a 37-skill agent that operates the full Spark/Delta lakehouse in natural language. Discovers your catalog into a grounding cache, turns plain English into accurate Spark SQL, and runs the lifecycle (CREATE/INSERT/UPDATE/DELETE/MERGE, OPTIMIZE/VACUUM, time-travel). Ingests files, profiles data and sets quality rules, authors and repairs pipelines, provisions clusters, and debugs via the Spark UI. Governs the platform (roles, credential store, Delta Sharing, audit logs), plus native Git, bundles, and MLOps/MLflow. Runs via the official Oracle aidp CLI.",
-      "displayName": "oracle-ai-data-platform-workbench-engineer-agent",
+      "displayName": "Oracle AI Data Platform Workbench Engineer Agent",
       "homepage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/index.html",
       "icon": {
         "asset": "icon-8041e8f11cec00b191e3aeb56179a03d.ico",
@@ -10047,7 +10227,7 @@
         "pi": "unknown"
       },
       "description": "Oracle AI Data Platform Workbench Spark connectors for Claude Code. 18 connector skills covering every data source workbench customers commonly need: Oracle Autonomous DB family (ALH/ADW/ATP) via wallet/IAM-DB-Token/API-key, ExaCS, Fusion ERP REST, Fusion BICC, EPM Cloud Planning, Essbase 21c, OCI Streaming (Kafka), OCI Object Storage, Apache Iceberg, plus external systems (PostgreSQL, MySQL/HeatWave, SQL Server, Snowflake, Azure ADLS Gen2, AWS S3, generic REST, custom JDBC, Excel). Live-validated on the workbench `tpcds` cluster (Spark 3.5.0): 17 PASS / 4 ship-as-is out of 21 test rows.",
-      "displayName": "oracle-ai-data-platform-workbench-spark-connectors",
+      "displayName": "Oracle AI Data Platform Workbench Spark Connectors",
       "homepage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/index.html",
       "icon": {
         "asset": "icon-8041e8f11cec00b191e3aeb56179a03d.ico",
@@ -10145,7 +10325,7 @@
         "pi": "partially-supported"
       },
       "description": "Output.ai workflow development toolkit for Claude Code. Adds 5 specialist agents (planner, builder, debugger, prompt writer, quality reviewer), 40+ slash-command skills covering scaffolding, debugging, evaluation, and credential management, plus a SessionStart hook that auto-loads Output SDK conventions so Claude understands the framework before the first prompt.",
-      "displayName": "outputai",
+      "displayName": "Outputai",
       "homepage": "https://output.ai/",
       "icon": {
         "asset": "icon-62e06a98d49f2904b704793a838ad332.png",
@@ -10241,7 +10421,7 @@
         "pi": "partially-supported"
       },
       "description": "Enhance code quality and security through PagerDuty risk scoring and incident correlation. Score pre-commit diffs against historical incident data and surface deployment risk before you ship.",
-      "displayName": "pagerduty",
+      "displayName": "PagerDuty",
       "homepage": "https://github.com/PagerDuty/claude-code-plugins",
       "icon": {
         "asset": "icon-aff0c390029c4f5d9b6d560ab9b5944c.png",
@@ -10338,7 +10518,7 @@
         "pi": "partially-supported"
       },
       "description": "PayPal development plugin for Claude — integrate payments, subscriptions, invoices, disputes, and more using PayPal's APIs and MCP server",
-      "displayName": "paypal",
+      "displayName": "PayPal",
       "homepage": "https://developer.paypal.com/",
       "icon": {
         "asset": "icon-1690c4e20869c3763b7fc111e2f94035.ico",
@@ -10438,8 +10618,18 @@
         "pi": "unknown"
       },
       "description": "PHP language server (Intelephense) for code intelligence",
-      "displayName": "php-lsp",
-      "icon": null,
+      "displayName": "Php LSP",
+      "icon": {
+        "asset": "icon-64d6b84ed439cc4f8846487fee07a214.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-64d6b84ed439cc4f8846487fee07a214.png",
+        "bytes": 2112,
+        "contentType": "image/png",
+        "digest": "sha256:64d6b84ed439cc4f8846487fee07a214bb64ade59a8fdaa071089308ff4c92cd",
+        "homepage": "https://www.php.net/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.php.net/favicon-196x196.png?v=2"
+      },
       "keywords": [
         "developer-tools",
         "lsp",
@@ -10457,7 +10647,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/php-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:ebf2c243799bd68e6a552bb6bf546b999628fbfe1a7600f243ab2c5f3dc99903",
@@ -10470,13 +10660,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:a8c872dfd22c3732b0c2d9dcb172a8ed7f7cf968c2aca670fac560cd6f360942",
         "packageStatus": "portable",
-        "releaseId": "release:759a3c98b9dc444c22258e9235802c8d5c1937ce26490b0e2fcca0178e1d5a77",
+        "releaseId": "release:8e86db363bcbca4bce8ca3e72f05c3f179dc292e36c49ee7cac5145dcc8cd917",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:759a3c98b9dc444c22258e9235802c8d5c1937ce26490b0e2fcca0178e1d5a77",
+      "releaseId": "release:8e86db363bcbca4bce8ca3e72f05c3f179dc292e36c49ee7cac5145dcc8cd917",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -10626,7 +10816,7 @@
         "pi": "unknown"
       },
       "description": "Creates interactive HTML playgrounds — self-contained single-file explorers with visual controls, live preview, and prompt output with copy button. Includes templates for design playgrounds, data explorers, concept maps, and document critique.",
-      "displayName": "playground",
+      "displayName": "Playground",
       "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/playground",
       "icon": null,
       "keywords": [
@@ -10645,7 +10835,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/playground",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:738843b298b9fad27e99b2011b69440718c113d9aa143ee636857007ce95d69a",
@@ -10658,12 +10848,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:0b4a6158595917c0f90e7b33554cf8d1668f6f02fb9e3c8bb4b58735949661a8",
         "packageStatus": "portable",
-        "releaseId": "release:d5ce0a771800308fb049bee46bff9374ca3bf11c7dae76b033010a7ed5181a18",
+        "releaseId": "release:2b1ba283096ab81319b207759a84e15c31dcc39ea03f7bbab68f3e72f4eb9d24",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:d5ce0a771800308fb049bee46bff9374ca3bf11c7dae76b033010a7ed5181a18",
+      "releaseId": "release:2b1ba283096ab81319b207759a84e15c31dcc39ea03f7bbab68f3e72f4eb9d24",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -10702,7 +10892,7 @@
         "pi": "partially-supported"
       },
       "description": "Comprehensive toolkit for developing Claude Code plugins. Includes 7 expert skills covering hooks, MCP integration, commands, agents, and best practices. AI-assisted plugin creation and validation.",
-      "displayName": "plugin-dev",
+      "displayName": "Plugin Dev",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/plugin-dev",
       "icon": null,
       "keywords": [
@@ -10722,7 +10912,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/plugin-dev",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:c8552da58d1f25b6cb6bf17dbbcca2c44c7cde9804efdeccf877250f8d1fbad5",
@@ -10747,12 +10937,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:9858f2fb679c5b9679373a1bd6d7b2e67da2aa572b23db93767e2bb989dfcd85",
         "packageStatus": "partial",
-        "releaseId": "release:e76706333b0f7d0487794c804bb3dfe11efefc4a3195b83bbada64afb72fca7d",
+        "releaseId": "release:19750d94b54aaf6f9c9bbcccda8c898941cba9e16d06b55a79b565c3ba40edcc",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:e76706333b0f7d0487794c804bb3dfe11efefc4a3195b83bbada64afb72fca7d",
+      "releaseId": "release:19750d94b54aaf6f9c9bbcccda8c898941cba9e16d06b55a79b565c3ba40edcc",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -10792,7 +10982,7 @@
         "pi": "unknown"
       },
       "description": "Evaluate Codex skills and plugins from chat with a beginner-friendly start command, local-first reports, token budget explanations, and guided benchmarking.",
-      "displayName": "plugin-eval",
+      "displayName": "Plugin Eval",
       "icon": {
         "asset": "icon-380b1c2dfbc55538d7ea0ad1fa86a3aa.svg",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-380b1c2dfbc55538d7ea0ad1fa86a3aa.svg",
@@ -10894,7 +11084,7 @@
         "pi": "partially-supported"
       },
       "description": "Access PostHog analytics, feature flags, experiments, error tracking, and insights directly from Claude Code.",
-      "displayName": "posthog",
+      "displayName": "PostHog",
       "homepage": "https://posthog.com/docs/model-context-protocol",
       "icon": {
         "asset": "icon-a8963a893a3abfc498abe278d321649e.svg",
@@ -11010,7 +11200,7 @@
         "pi": "partially-supported"
       },
       "description": "Full API lifecycle management for Claude Code. Sync collections, generate client code, discover APIs, run tests, create mocks, publish docs, and audit security. Powered by the Postman MCP Server.",
-      "displayName": "postman",
+      "displayName": "Postman",
       "homepage": "https://learning.postman.com/docs/developer/postman-mcp-server/",
       "icon": {
         "asset": "icon-fb7f9b1022323bd87d3a784e6626f680.png",
@@ -11148,7 +11338,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "pr-review-canvas",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:1400f52bb9c8074fbdfbe3c91af9f931e39034fddeced37b88dea7d2942c3b38",
@@ -11161,13 +11351,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:5ce7b6aa1db06b4e8c755454c45083ded892e95e887674e97fff6879bb171799",
         "packageStatus": "portable",
-        "releaseId": "release:c11e8a53542a44828218de1e34b88286b9cb43036e22e29c3e57a598ddf808af",
+        "releaseId": "release:4bf93e1c3139a6264458645ceb54806c8d12738c9c625ccc45ed6934fe52196a",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "0.1.0"
       },
-      "releaseId": "release:c11e8a53542a44828218de1e34b88286b9cb43036e22e29c3e57a598ddf808af",
+      "releaseId": "release:4bf93e1c3139a6264458645ceb54806c8d12738c9c625ccc45ed6934fe52196a",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -11380,7 +11570,7 @@
         "pi": "unknown"
       },
       "description": "Write accurate Pydantic AI code from the start. Up-to-date patterns, decision trees, and common gotchas for agents, tools, structured output, streaming, and multi-agent apps.",
-      "displayName": "ai",
+      "displayName": "AI",
       "homepage": "https://github.com/pydantic/skills/tree/main/plugins/ai",
       "icon": {
         "asset": "icon-c7f95eb46fe6dee5988d423dfc9f87bb.png",
@@ -11465,8 +11655,18 @@
         "pi": "unknown"
       },
       "description": "Python language server (Pyright) for type checking and code intelligence",
-      "displayName": "pyright-lsp",
-      "icon": null,
+      "displayName": "Pyright LSP",
+      "icon": {
+        "asset": "icon-8e7226e8053992780b928eef5ee56331.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8e7226e8053992780b928eef5ee56331.png",
+        "bytes": 2463,
+        "contentType": "image/png",
+        "digest": "sha256:8e7226e8053992780b928eef5ee56331527dbc1caa3c99916ade88200945ebc6",
+        "homepage": "https://www.python.org/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.python.org/static/apple-touch-icon-precomposed.png"
+      },
       "keywords": [
         "developer-tools",
         "lsp",
@@ -11484,7 +11684,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/pyright-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:29053372d8c0e199099eba6f6094879ca9463c261a6bf9fd6fc4b27dc2a59af4",
@@ -11497,13 +11697,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:5baa3c1d97a764220859a26658e4280b3f7086c2add0c0efc8db441ef9a676f8",
         "packageStatus": "portable",
-        "releaseId": "release:892b26edafedfc3d920143a573bc0999ba2a192e1d1d60f238e910fd6a1b4b0e",
+        "releaseId": "release:86c9e1db17313601f6dd60e34c952e8847540fe1aa5480dc4756ed0e0b75b31e",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:892b26edafedfc3d920143a573bc0999ba2a192e1d1d60f238e910fd6a1b4b0e",
+      "releaseId": "release:86c9e1db17313601f6dd60e34c952e8847540fe1aa5480dc4756ed0e0b75b31e",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -11824,7 +12024,7 @@
         "pi": "unknown"
       },
       "description": "MCP server for AI coding agents to create, manage, and interact with Quarkus applications. Provides tools for project scaffolding, dev mode lifecycle, extension skills, Dev MCP proxy, and documentation search.",
-      "displayName": "quarkus-agent",
+      "displayName": "Quarkus Agent",
       "homepage": "https://quarkus.io/",
       "icon": {
         "asset": "icon-31b305da0887cc92f0aed49caafb76d2.png",
@@ -11926,7 +12126,7 @@
         "pi": "partially-supported"
       },
       "description": "Deploy and manage apps, databases, and infrastructure on Railway. Covers project setup, deploys, environment configuration, networking, troubleshooting, and monitoring.",
-      "displayName": "railway",
+      "displayName": "Railway",
       "homepage": "https://docs.railway.com/ai/claude-code-plugin",
       "icon": {
         "asset": "icon-4de6561f7a865f6d987ea828fdfd7b8d.svg",
@@ -12060,7 +12260,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/ralph-loop",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:eed3bd261a37dc267b6992414994706ead74a5a0507463a8c251eecfc09088e8",
@@ -12081,13 +12281,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:3aaeb3fb49934e352bb8ffb1201570e4db61f9f6076a02e25153c34ab82af75c",
         "packageStatus": "partial",
-        "releaseId": "release:5e08d29670225b95679eb7bb1d393eab817a9589fed100fd9aad4dbe2d98edc4",
+        "releaseId": "release:c8e08148b56f243d7c0d6439f42e609c302a5197a655abea57d49fb9e6ee6d7a",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:5e08d29670225b95679eb7bb1d393eab817a9589fed100fd9aad4dbe2d98edc4",
+      "releaseId": "release:c8e08148b56f243d7c0d6439f42e609c302a5197a655abea57d49fb9e6ee6d7a",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -12130,7 +12330,7 @@
         "pi": "partially-supported"
       },
       "description": "Configure RevenueCat projects, apps, products, entitlements, and offerings directly from Claude Code. Manage your in-app purchase backend without leaving your development workflow.",
-      "displayName": "revenuecat-play-billing",
+      "displayName": "Revenuecat Play Billing",
       "homepage": "https://www.revenuecat.com/",
       "icon": {
         "asset": "icon-d263f3c265621460040fb8d1074d8b52.png",
@@ -12351,7 +12551,7 @@
         "pi": "partially-supported"
       },
       "description": "Configure RevenueCat projects, apps, products, entitlements, and offerings directly from Claude Code. Manage your in-app purchase backend without leaving your development workflow.",
-      "displayName": "revenuecat-play-billing",
+      "displayName": "Revenuecat Play Billing",
       "homepage": "https://www.revenuecat.com/",
       "icon": {
         "asset": "icon-d263f3c265621460040fb8d1074d8b52.png",
@@ -12450,7 +12650,7 @@
         "pi": "partially-supported"
       },
       "description": "Skills for developing and querying projects in the Rill business intelligence platform",
-      "displayName": "rill",
+      "displayName": "Rill",
       "homepage": "https://docs.rilldata.com/developers/build/ai-configuration",
       "icon": {
         "asset": "icon-19f23b04752c438be532027459a1570a.png",
@@ -12554,7 +12754,7 @@
         "pi": "partially-supported"
       },
       "description": "Full-lifecycle incident management: deploy safety, incident response, on-call management, and retrospectives.",
-      "displayName": "rootly",
+      "displayName": "Rootly",
       "homepage": "https://rootly.com/",
       "icon": {
         "asset": "icon-5c683651ae6ebf90e799eefd3e79b089.png",
@@ -12660,8 +12860,18 @@
         "pi": "unknown"
       },
       "description": "Ruby language server for code intelligence and analysis",
-      "displayName": "ruby-lsp",
-      "icon": null,
+      "displayName": "Ruby LSP",
+      "icon": {
+        "asset": "icon-b14aaa419c6a8da7950211343ca36045.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-b14aaa419c6a8da7950211343ca36045.ico",
+        "bytes": 5430,
+        "contentType": "image/x-icon",
+        "digest": "sha256:b14aaa419c6a8da7950211343ca36045d3d78b250f1ab44ad46cd946aac2b873",
+        "homepage": "https://www.ruby-lang.org/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.ruby-lang.org/favicon.ico"
+      },
       "keywords": [
         "developer-tools",
         "lsp",
@@ -12679,7 +12889,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/ruby-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:0d0f94fc8afbfac30afbfc924553fe047b6c45f936f207275e1edc6cc63fa55d",
@@ -12692,13 +12902,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:ff7b55e1386e733c38bea3111dc046e89d89fedd35d008c82c312f9d05cdba8d",
         "packageStatus": "portable",
-        "releaseId": "release:cb2ad46a0c391c04a12fa1250e396413731a33fc82d91638cd99e6f7b070a4ed",
+        "releaseId": "release:23515c39e370ed5606908538140cbbae2304b1e53cf01c85a20f24378ce49737",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:cb2ad46a0c391c04a12fa1250e396413731a33fc82d91638cd99e6f7b070a4ed",
+      "releaseId": "release:23515c39e370ed5606908538140cbbae2304b1e53cf01c85a20f24378ce49737",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -12734,8 +12944,18 @@
         "pi": "unknown"
       },
       "description": "Rust language server for code intelligence and analysis",
-      "displayName": "rust-analyzer-lsp",
-      "icon": null,
+      "displayName": "Rust Analyzer LSP",
+      "icon": {
+        "asset": "icon-2c6257567a5a77975af9286e352c416f.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-2c6257567a5a77975af9286e352c416f.png",
+        "bytes": 2445,
+        "contentType": "image/png",
+        "digest": "sha256:2c6257567a5a77975af9286e352c416fb8da20709d02eb0dc7a2b524c0d858dc",
+        "homepage": "https://www.rust-lang.org/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.rust-lang.org/static/images/apple-touch-icon.png?v=ngJW8jGAmR"
+      },
       "keywords": [
         "analyzer",
         "developer-tools",
@@ -12754,7 +12974,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/rust-analyzer-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:d25354d5d1ad57b2bc3c4c8725a51433b9dcc71ce73051deb35bed3992c3e8af",
@@ -12767,13 +12987,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:60cfadf43396ef937947d4d0e9e42545c131a048c736386dcb0d3b37e13570a4",
         "packageStatus": "portable",
-        "releaseId": "release:6843863b87760afd764f9b8b51b985b86adc92f61f66089cb48cdae4f150a3a4",
+        "releaseId": "release:24460a2f715831317d34185cc4ce588e072769d225a991a94dfe35616b9a63a2",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:6843863b87760afd764f9b8b51b985b86adc92f61f66089cb48cdae4f150a3a4",
+      "releaseId": "release:24460a2f715831317d34185cc4ce588e072769d225a991a94dfe35616b9a63a2",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -12811,9 +13031,19 @@
         "pi": "partially-supported"
       },
       "description": "Build, train, and deploy AI models with deep AWS AI/ML expertise brought directly into your coding assistants, covering the surface area of Amazon SageMaker AI.",
-      "displayName": "sagemaker-ai",
+      "displayName": "Sagemaker AI",
       "homepage": "https://github.com/awslabs/agent-plugins",
-      "icon": null,
+      "icon": {
+        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "bytes": 3061,
+        "contentType": "image/png",
+        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
+        "homepage": "https://aws.amazon.com/sagemaker/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+      },
       "keywords": [
         "ai",
         "developer-tools",
@@ -12902,7 +13132,7 @@
         "pi": "partially-supported"
       },
       "description": "Sanity content platform integration with MCP server, agent skills, and slash commands. Query and author content, build and optimize GROQ queries, design schemas, and set up Visual Editing.",
-      "displayName": "sanity",
+      "displayName": "Sanity",
       "homepage": "https://www.sanity.io/",
       "icon": {
         "asset": "icon-6c906e695bfcf004f7fee0b1d7388967.svg",
@@ -13116,7 +13346,7 @@
         "pi": "unknown"
       },
       "description": "AI-assisted development of SAP Cloud Application Programming Model (CAP) projects. Search CDS models and CAP documentation.",
-      "displayName": "cds-mcp",
+      "displayName": "CDS MCP",
       "homepage": "https://cap.cloud.sap/",
       "icon": {
         "asset": "icon-e363278ee1b467ea26360bec8e818b85.png",
@@ -13213,7 +13443,7 @@
         "pi": "partially-supported"
       },
       "description": "MCP server for SAP Fiori development tools for Claude Code. Build and modify SAP Fiori applications with AI assistance.",
-      "displayName": "sap-fiori-mcp-server",
+      "displayName": "SAP Fiori MCP Server",
       "homepage": "https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server",
       "icon": {
         "asset": "icon-a771c202679a56266768ac0c63d0a5a2.svg",
@@ -13407,7 +13637,7 @@
         "pi": "partially-supported"
       },
       "description": "Skills for using the Sentry CLI to interact with Sentry from the command line",
-      "displayName": "sentry-cli",
+      "displayName": "Sentry CLI",
       "homepage": "https://sentry.io/",
       "icon": {
         "asset": "icon-49a1d2db07116397feff5454872ecec1.ico",
@@ -13492,9 +13722,19 @@
         "pi": "unknown"
       },
       "description": "Semantic code analysis MCP server providing intelligent code understanding, refactoring suggestions, and codebase navigation through language server protocol integration.",
-      "displayName": "serena",
+      "displayName": "Serena",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/serena",
-      "icon": null,
+      "icon": {
+        "asset": "icon-59b39f9f93449ede5e3ec36a7f8153b9.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-59b39f9f93449ede5e3ec36a7f8153b9.png",
+        "bytes": 3788,
+        "contentType": "image/png",
+        "digest": "sha256:59b39f9f93449ede5e3ec36a7f8153b955e5a794e3aae670dc850b169a0c47cb",
+        "homepage": "https://oraios.github.io/serena/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://oraios.github.io/serena/_static/serena-icon-32.png"
+      },
       "keywords": [
         "developer-tools",
         "serena"
@@ -13511,7 +13751,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/serena",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:266576971dd0e02e02cc9c05988c5b9a898bbb6caceeb29b58d27658a2d673b7",
@@ -13524,12 +13764,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:e352e6c50317b4a280eb56c102931b06d8159737412972d00ca9e83644d6b888",
         "packageStatus": "portable",
-        "releaseId": "release:9756f757e32301e54e53653923904a6b99738f75ef558370d6e99a363bed48f6",
+        "releaseId": "release:6a2fe1fd18c453f90976082051c826f14b78c89f9dd919b5919702d43e2bee63",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:9756f757e32301e54e53653923904a6b99738f75ef558370d6e99a363bed48f6",
+      "releaseId": "release:6a2fe1fd18c453f90976082051c826f14b78c89f9dd919b5919702d43e2bee63",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -13567,9 +13807,19 @@
         "pi": "partially-supported"
       },
       "description": "Create, edit, and deploy ServiceNow applications with the Fluent SDK effortlessly through Claude AI.",
-      "displayName": "servicenow-sdk",
+      "displayName": "ServiceNow SDK",
       "homepage": "https://servicenow.github.io/sdk/",
-      "icon": null,
+      "icon": {
+        "asset": "icon-5d8ad5f9badc5eda5a42df74a6d41334.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-5d8ad5f9badc5eda5a42df74a6d41334.png",
+        "bytes": 11033,
+        "contentType": "image/png",
+        "digest": "sha256:5d8ad5f9badc5eda5a42df74a6d4133425ed3144226249bdaf50d3e8732e6318",
+        "homepage": "https://developer.servicenow.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://developer.servicenow.com/favicon.ico"
+      },
       "keywords": [
         "developer-tools",
         "sdk",
@@ -13896,7 +14146,7 @@
         "pi": "unknown"
       },
       "description": "Create new skills, improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, update or optimize an existing skill, run evals to test a skill, or benchmark skill performance with variance analysis.",
-      "displayName": "skill-creator",
+      "displayName": "Skill Creator",
       "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/skill-creator",
       "icon": null,
       "keywords": [
@@ -13916,7 +14166,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/skill-creator",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:538287f5a5dc1c0bc226fc6d821e767f30d8d8e5940ed642556b71486771b9ba",
@@ -13937,12 +14187,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:232976a3a77ba539ba2efcb228a56a63e0ead5c32c3d4d3530c9d401d5a6546c",
         "packageStatus": "portable",
-        "releaseId": "release:c2888d32b6802b1d89efa6f4dce0e24c8e04bc4c06e190647e76a44126171c84",
+        "releaseId": "release:23657b2a93de8f0ab54a18c8c0c0db6b0002060169a169892619e0e4392ff3e0",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:c2888d32b6802b1d89efa6f4dce0e24c8e04bc4c06e190647e76a44126171c84",
+      "releaseId": "release:23657b2a93de8f0ab54a18c8c0c0db6b0002060169a169892619e0e4392ff3e0",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -13982,7 +14232,7 @@
         "pi": "partially-supported"
       },
       "description": "Automatically route Snowflake prompts from Claude Code to Cortex Code for execution. Provides slash commands for code review and task delegation, plus skills for routing, run, and setup.",
-      "displayName": "snowflake-cortex-code",
+      "displayName": "Snowflake Cortex Code",
       "homepage": "https://docs.snowflake.com/en/user-guide/cortex-code",
       "icon": {
         "asset": "icon-236c3a6b3771412e1c525781097f1d14.png",
@@ -14081,7 +14331,7 @@
         "pi": "partially-supported"
       },
       "description": "Code search and understanding across codebases. Search, read, and trace references across repositories; analyze refactor impact; investigate incidents via commit and diff search; run targeted security sweeps.",
-      "displayName": "sourcegraph",
+      "displayName": "Sourcegraph",
       "homepage": "https://sourcegraph.com/",
       "icon": {
         "asset": "icon-2d336b83e95c31ac9e726c97eed4cb65.svg",
@@ -14175,7 +14425,7 @@
         "pi": "partially-supported"
       },
       "description": "Stripe development plugin for Claude",
-      "displayName": "stripe",
+      "displayName": "Stripe",
       "homepage": "https://github.com/stripe/ai/tree/main/providers/claude/plugin",
       "icon": {
         "asset": "icon-8034d1975f2ff4408cb399089eb6c4b5.png",
@@ -14277,7 +14527,7 @@
         "pi": "partially-supported"
       },
       "description": "SumUp payment integrations across terminal and online checkout flows. Build Android and iOS POS apps with SumUp card readers, online checkout with server SDKs and the checkout widget, and control card readers remotely via Cloud API.",
-      "displayName": "sumup",
+      "displayName": "Sumup",
       "homepage": "https://www.sumup.com/",
       "icon": {
         "asset": "icon-6ff593c4ad552dac01a10b8ef460ff91.png",
@@ -14378,7 +14628,7 @@
         "pi": "unknown"
       },
       "description": "Manage Supabase projects directly through ChatGPT. Execute SQL queries on PostgreSQL databases, design and modify table schemas, deploy serverless edge functions, and configure user authentication. Access real-time logs for debugging, create and apply database migrations, and manage development branches through natural language.",
-      "displayName": "supabase",
+      "displayName": "Supabase",
       "icon": {
         "asset": "icon-eb9ffcd100ad26228a578100ba7cbfc5.svg",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-eb9ffcd100ad26228a578100ba7cbfc5.svg",
@@ -14472,7 +14722,7 @@
         "pi": "partially-supported"
       },
       "description": "An agentic skills framework & software development methodology that works: planning, TDD, debugging, and collaboration workflows.",
-      "displayName": "superpowers",
+      "displayName": "Superpowers",
       "icon": {
         "asset": "icon-54a632d9ee6197ccbc10d43d42217e23.svg",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-54a632d9ee6197ccbc10d43d42217e23.svg",
@@ -14573,8 +14823,18 @@
         "pi": "unknown"
       },
       "description": "Swift language server (SourceKit-LSP) for code intelligence",
-      "displayName": "swift-lsp",
-      "icon": null,
+      "displayName": "Swift LSP",
+      "icon": {
+        "asset": "icon-a9ee4cc8097fdbfd560130d1f26fac30.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a9ee4cc8097fdbfd560130d1f26fac30.png",
+        "bytes": 1865,
+        "contentType": "image/png",
+        "digest": "sha256:a9ee4cc8097fdbfd560130d1f26fac301c653015dfc6311b10facd9ccc00851b",
+        "homepage": "https://www.swift.org/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.swift.org/apple-touch-icon.png"
+      },
       "keywords": [
         "developer-tools",
         "lsp",
@@ -14592,7 +14852,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/swift-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:40bb72a8fe10b2aa72592eec837540c7d9daf3e7a73caf17d9abc2931520a3d6",
@@ -14605,13 +14865,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:a18e725079b4f9ceb2980a52f521cd157379fdf77a6e470642382863753a3563",
         "packageStatus": "portable",
-        "releaseId": "release:d9dbcbf36f0dc1ce2fe406b18323ae1b216915c06bc534aaf0554b4bd071f764",
+        "releaseId": "release:ec05e91994b131b940128875c1061725bceda1eee876e8ec260778b81d37adbc",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:d9dbcbf36f0dc1ce2fe406b18323ae1b216915c06bc534aaf0554b4bd071f764",
+      "releaseId": "release:ec05e91994b131b940128875c1061725bceda1eee876e8ec260778b81d37adbc",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -14827,7 +15087,7 @@
         "pi": "partially-supported"
       },
       "description": "Comprehensive skill for the entire Temporal lifecycle — developing applications, using the Temporal CLI, running and managing Temporal Server, and working with Temporal Cloud.",
-      "displayName": "temporal",
+      "displayName": "Temporal",
       "icon": {
         "asset": "icon-3327f51e319e1f3071d953887cfa9b86.svg",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3327f51e319e1f3071d953887cfa9b86.svg",
@@ -14928,7 +15188,7 @@
         "pi": "partially-supported"
       },
       "description": "The Terraform MCP Server provides seamless integration with Terraform ecosystem, enabling advanced automation and interaction capabilities for Infrastructure as Code (IaC) development.",
-      "displayName": "terraform",
+      "displayName": "Terraform",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/terraform",
       "icon": null,
       "keywords": [
@@ -14947,7 +15207,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/terraform",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:d0b15e23177e1d20fda1f4841a9cc25e3eb434cf9c3918e3b04fc63ac142da09",
@@ -14960,12 +15220,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:2076ed68ffc443a52be182e44b4832f37b1bac0e6e0bf1776b5a097d3074b370",
         "packageStatus": "partial",
-        "releaseId": "release:bad4f5caa97070febb01796daf31df50df79a27fe060a85eaee9ca76ec17f41e",
+        "releaseId": "release:09447f5e6a68f2ae89f1276ad888a4659ec15b878ca3210c554461c744c1807f",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:bad4f5caa97070febb01796daf31df50df79a27fe060a85eaee9ca76ec17f41e",
+      "releaseId": "release:09447f5e6a68f2ae89f1276ad888a4659ec15b878ca3210c554461c744c1807f",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -15005,7 +15265,7 @@
         "pi": "partially-supported"
       },
       "description": "Test Android apps with emulator workflows for reproduction, screenshots, UI inspection, log capture, and performance profiling.",
-      "displayName": "test-android-apps",
+      "displayName": "Test Android Apps",
       "icon": {
         "asset": "icon-3e9984bfb849473e25a31b2df5b03020.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3e9984bfb849473e25a31b2df5b03020.png",
@@ -15131,7 +15391,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "thermos",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:1327f77d3336ebc99941cf2dab0f8643490205f1655699ce34e88fa90f972887",
@@ -15148,13 +15408,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6374eddbf2a1dba5b94f93fc1d6894ee6b0fd15072e470b005a301d2363b68bf",
         "packageStatus": "partial",
-        "releaseId": "release:a9572788f2db69621d81cde68e9775abf30ab004be22bbe29ad49e2190666305",
+        "releaseId": "release:a2da152f3df8fc91bdb9253f25f977e66bb3a97b4c651d0b7efeafbafa91e946",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:a9572788f2db69621d81cde68e9775abf30ab004be22bbe29ad49e2190666305",
+      "releaseId": "release:a2da152f3df8fc91bdb9253f25f977e66bb3a97b4c651d0b7efeafbafa91e946",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -15179,7 +15439,8 @@
         "skill": 5
       },
       "categories": [
-        "developer-tools"
+        "developer-tools",
+        "other"
       ],
       "compatibility": {
         "claude-code": "partially-supported",
@@ -15257,7 +15518,8 @@
       "sourceId": "knowledge-work-official",
       "upstreamName": "tinyfish",
       "variantPluginIds": [
-        "plugin:knowledge-work-official:tinyfish"
+        "plugin:knowledge-work-official:tinyfish",
+        "plugin:cursor-official:tinyfish"
       ],
       "variantsIdentical": false
     },
@@ -15284,7 +15546,7 @@
         "pi": "partially-supported"
       },
       "description": "Agent Skills for Together AI platform — inference, training, embeddings, audio, video, images, function calling, and infrastructure. Covers serverless chat completions, image/video generation, fine-tuning, batch inference, evaluations, sandboxes, dedicated endpoints, and GPU clusters.",
-      "displayName": "togetherai-skills",
+      "displayName": "Togetherai Skills",
       "homepage": "https://www.together.ai/",
       "icon": {
         "asset": "icon-b4755d2c1d2ac7c67ff2002ae2d237db.png",
@@ -15385,7 +15647,7 @@
         "pi": "partially-supported"
       },
       "description": "Twilio Skills provide procedural knowledge for AI coding agents — which APIs to use, in what order, and what to avoid. Covers SMS, Voice, WhatsApp, Verify, SendGrid, Compliance, and 30+ products.",
-      "displayName": "twilio-developer-kit",
+      "displayName": "Twilio Developer Kit",
       "homepage": "https://www.twilio.com/",
       "icon": {
         "asset": "icon-0ba822e011727cfc40dfc7207e5d99fe.png",
@@ -15483,8 +15745,18 @@
         "pi": "unknown"
       },
       "description": "TypeScript/JavaScript language server for enhanced code intelligence",
-      "displayName": "typescript-lsp",
-      "icon": null,
+      "displayName": "TypeScript LSP",
+      "icon": {
+        "asset": "icon-7f1a15dce667115c1922522ab89cc36e.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-7f1a15dce667115c1922522ab89cc36e.png",
+        "bytes": 10681,
+        "contentType": "image/png",
+        "digest": "sha256:7f1a15dce667115c1922522ab89cc36e965999aeebb51f027dc01dc7d54ce6fb",
+        "homepage": "https://www.typescriptlang.org/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.typescriptlang.org/icons/icon-512x512.png?v=8944a05a8b601855de116c8a56d3b3ae"
+      },
       "keywords": [
         "developer-tools",
         "lsp",
@@ -15502,7 +15774,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/typescript-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:99b406b1508df7b70600402d4447a3ea00a02ed4d9686dd8e6dcd1122bdccde7",
@@ -15515,13 +15787,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:f8bb95e9c164bc31c5a51f390c881ceff051b29929bc038a559337467c213cfc",
         "packageStatus": "portable",
-        "releaseId": "release:fe00713b7a552311b73b59a807fbbd0db6839f552344cdaf6545019532d833c5",
+        "releaseId": "release:3de00721ad5329f52b3cfe871da6b4f9442797b450630fa92090725235d78de9",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:fe00713b7a552311b73b59a807fbbd0db6839f552344cdaf6545019532d833c5",
+      "releaseId": "release:3de00721ad5329f52b3cfe871da6b4f9442797b450630fa92090725235d78de9",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -15558,9 +15830,19 @@
         "pi": "unknown"
       },
       "description": "SAPUI5 / OpenUI5 plugin for coding agents. Create and validate UI5 projects, access API documentation, run UI5 linter, get development guidelines and best practices for UI5 development.",
-      "displayName": "ui5",
+      "displayName": "UI5",
       "homepage": "https://github.com/UI5/plugins-coding-agents",
-      "icon": null,
+      "icon": {
+        "asset": "icon-9d60da4fb2be36a16f9c5ce8bf30adc9.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-9d60da4fb2be36a16f9c5ce8bf30adc9.ico",
+        "bytes": 15086,
+        "contentType": "image/x-icon",
+        "digest": "sha256:9d60da4fb2be36a16f9c5ce8bf30adc9354f624456838adbfee2572f55328f64",
+        "homepage": "https://ui5.sap.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://ui5.sap.com/resources/sap/ui/core/mimes/logo/txtonly_16x16.ico"
+      },
       "keywords": [
         "developer-tools",
         "ui5"
@@ -15640,9 +15922,19 @@
         "pi": "unknown"
       },
       "description": "Complete UI5 modernization toolkit with workflow and specialized fix patterns for modernizing SAPUI5/OpenUI5 applications.",
-      "displayName": "ui5-modernization",
+      "displayName": "UI5 Modernization",
       "homepage": "https://github.com/UI5/plugins-coding-agents",
-      "icon": null,
+      "icon": {
+        "asset": "icon-9d60da4fb2be36a16f9c5ce8bf30adc9.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-9d60da4fb2be36a16f9c5ce8bf30adc9.ico",
+        "bytes": 15086,
+        "contentType": "image/x-icon",
+        "digest": "sha256:9d60da4fb2be36a16f9c5ce8bf30adc9354f624456838adbfee2572f55328f64",
+        "homepage": "https://ui5.sap.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://ui5.sap.com/resources/sap/ui/core/mimes/logo/txtonly_16x16.ico"
+      },
       "keywords": [
         "developer-tools",
         "modernization",
@@ -15728,9 +16020,19 @@
         "pi": "unknown"
       },
       "description": "SAPUI5 / OpenUI5 plugin for coding agents. Convert JavaScript based UI5 projects to TypeScript.",
-      "displayName": "ui5-typescript-conversion",
+      "displayName": "UI5 TypeScript Conversion",
       "homepage": "https://github.com/UI5/plugins-coding-agents",
-      "icon": null,
+      "icon": {
+        "asset": "icon-9d60da4fb2be36a16f9c5ce8bf30adc9.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-9d60da4fb2be36a16f9c5ce8bf30adc9.ico",
+        "bytes": 15086,
+        "contentType": "image/x-icon",
+        "digest": "sha256:9d60da4fb2be36a16f9c5ce8bf30adc9354f624456838adbfee2572f55328f64",
+        "homepage": "https://ui5.sap.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://ui5.sap.com/resources/sap/ui/core/mimes/logo/txtonly_16x16.ico"
+      },
       "keywords": [
         "conversion",
         "developer-tools",
@@ -15909,7 +16211,7 @@
         "pi": "partially-supported"
       },
       "description": "Control Unreal Editor directly from Claude Code via MCP. Hundreds of tools exposed via Unreal's ToolsetRegistry across 30+ toolsets: actors, blueprints, materials, Niagara, Control Rigs, Sequencer, State Trees, widgets, Gameplay Ability System, automation testing, and more.",
-      "displayName": "unreal-engine-skills-for-claude-code",
+      "displayName": "Unreal Engine Skills for Claude Code",
       "homepage": "https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor",
       "icon": {
         "asset": "icon-186925a9bc476daf5c73f3c1778e1c38.png",
@@ -16115,7 +16417,7 @@
         "pi": "partially-supported"
       },
       "description": "Vercel deployment platform integration. Manage deployments, check build status, access logs, configure domains, and control your frontend infrastructure directly from Claude Code.",
-      "displayName": "vercel",
+      "displayName": "Vercel",
       "homepage": "https://github.com/vercel/vercel-plugin",
       "icon": {
         "asset": "icon-a1e8945b324f235b0e5536d9b6a9241b.svg",
@@ -16238,7 +16540,7 @@
         "pi": "partially-supported"
       },
       "description": "Build, manage, and deploy Wix sites and apps. CLI development skills for dashboard extensions, backend APIs, site widgets, and service plugins with the Wix Design System, plus MCP server for site management.",
-      "displayName": "wix",
+      "displayName": "Wix",
       "homepage": "https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills",
       "icon": {
         "asset": "icon-cf9014d1762529a0fb53336e5d79c80b.svg",
@@ -16480,7 +16782,7 @@
         "pi": "partially-supported"
       },
       "description": "Web scraping skills for Claude Code powered by the Zyte API — scrape sites, generate and run Scrapy spiders, define extraction schemas, and ship to Scrapy Cloud.",
-      "displayName": "zyte-web-data",
+      "displayName": "Zyte Web Data",
       "homepage": "https://www.zyte.com/",
       "icon": {
         "asset": "icon-ec8d45e699974da7a894ec39256910bb.png",

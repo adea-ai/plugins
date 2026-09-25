@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:caad4379ad867c0d7cd395064656bdfbc4e49f592ca1ff3c4a6266d9fdd3ca89",
+  "catalogId": "catalog:6e7f499b1973aaaad55affa270c2b3970233ed9be837d3c635f6a492927b3e4e",
   "category": "developer-tools",
   "products": [
     {
@@ -53,7 +53,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/github",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:3a8aa90c77c19d4efaefe32703f8daf81020f7927f26f66feae7c66c9e991fc3",
@@ -66,12 +66,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:57c44f8d573dc9277263d5b767e56feff729bf954a5662e9e2b755d1a49aa5ac",
         "packageStatus": "partial",
-        "releaseId": "release:aaf4d4d2aa95c842821ce5355dd3873b613790f7fe95bed2f6f1fbdf66680620",
+        "releaseId": "release:7ec3e028020e3364a9939f4d01e32899dfa5d6e876f8c6f634f7f7563e407455",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:aaf4d4d2aa95c842821ce5355dd3873b613790f7fe95bed2f6f1fbdf66680620",
+      "releaseId": "release:7ec3e028020e3364a9939f4d01e32899dfa5d6e876f8c6f634f7f7563e407455",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -140,7 +140,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/playwright",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:09b920f4bea9253e4d1863c57ea4a66b3bef629f3a0e9b2ae62198bf291d2c4b",
@@ -153,12 +153,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:11a00f5ebacb2af4f3e94169d5e476245fc9364adde041968e17c9c81a7f1aa6",
         "packageStatus": "portable",
-        "releaseId": "release:1b0be894855f7bfb0362f1a3d46b3328af3e06e74331160a0ef6ff1e2fa28ba5",
+        "releaseId": "release:1496b6face196a4fe012b6c35ee0314e9b40a61cf61a575c87d383179385e4b4",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:1b0be894855f7bfb0362f1a3d46b3328af3e06e74331160a0ef6ff1e2fa28ba5",
+      "releaseId": "release:1496b6face196a4fe012b6c35ee0314e9b40a61cf61a575c87d383179385e4b4",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -198,7 +198,17 @@
       },
       "description": "Build apps, scripts, and automations with the TypeScript SDK.",
       "displayName": "Cursor SDK",
-      "icon": null,
+      "icon": {
+        "asset": "icon-a57fcff6994c83bd2acc0ea84d8b950b.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a57fcff6994c83bd2acc0ea84d8b950b.png",
+        "bytes": 6194,
+        "contentType": "image/png",
+        "digest": "sha256:a57fcff6994c83bd2acc0ea84d8b950b0ace6e00c1bf25d9abc7d15704de73db",
+        "homepage": "https://cursor.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://cursor.com/marketing-static/apple-touch-icon-light.png"
+      },
       "keywords": [
         "cursor",
         "developer-tools",
@@ -216,7 +226,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "cursor-sdk",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:0be74b4325362ba174f1ea044da829f83a85bb4b2a2b1a30be020ae677054404",
@@ -229,13 +239,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:4db2af962162a1cbcca2754a64d2767b19182059d8400e0470122acc4a4dc325",
         "packageStatus": "partial",
-        "releaseId": "release:c1ee996a87aac901d4d1c66a1b8fe29f8897db50fdb61d56305ad17d3d5ff745",
+        "releaseId": "release:86671291eb314a36a46fead1a4f2664a08d384d1efa229f6d24561e2c49b116f",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:c1ee996a87aac901d4d1c66a1b8fe29f8897db50fdb61d56305ad17d3d5ff745",
+      "releaseId": "release:86671291eb314a36a46fead1a4f2664a08d384d1efa229f6d24561e2c49b116f",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -272,7 +282,7 @@
         "pi": "partially-supported"
       },
       "description": "Development kit for working with the Claude Agent SDK",
-      "displayName": "agent-sdk-dev",
+      "displayName": "Agent SDK Dev",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/agent-sdk-dev",
       "icon": null,
       "keywords": [
@@ -293,7 +303,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/agent-sdk-dev",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:a6f37a1aa41c164cad0661e8c5d534451141100098f7ba12edd74937c5ced495",
@@ -310,12 +320,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:23adf47094dfdf00561c88d431adbb2abd19bfca6f587821480f16e1a8669e7c",
         "packageStatus": "partial",
-        "releaseId": "release:b167e8b3f451ff131b4119054e908fefd85160dcaa2d2dfea1ecf07111004236",
+        "releaseId": "release:253aecae97de2db24ed2bd86aef7ffe9aebe6532cf336134e5d039c3d4a61d90",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:b167e8b3f451ff131b4119054e908fefd85160dcaa2d2dfea1ecf07111004236",
+      "releaseId": "release:253aecae97de2db24ed2bd86aef7ffe9aebe6532cf336134e5d039c3d4a61d90",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -448,7 +458,7 @@
         "pi": "unknown"
       },
       "description": "Sentry error monitoring integration. Access error reports, analyze stack traces, search issues by fingerprint, and debug production errors directly from your development environment.",
-      "displayName": "sentry",
+      "displayName": "Sentry",
       "homepage": "https://github.com/getsentry/plugin-claude",
       "icon": {
         "asset": "icon-e5935afc31e5084860e5ddafae804b06.svg",

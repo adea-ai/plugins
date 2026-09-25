@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:caad4379ad867c0d7cd395064656bdfbc4e49f592ca1ff3c4a6266d9fdd3ca89",
+  "catalogId": "catalog:6e7f499b1973aaaad55affa270c2b3970233ed9be837d3c635f6a492927b3e4e",
   "category": "productivity",
   "pluginCount": 131,
   "productCount": 98,
@@ -53,7 +53,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/google-calendar",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:c126f9eaddf0e058b26e64a4d696cd293e71a999202ddcb3ac9aedb247ee84eb",
@@ -66,13 +66,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:5ac0b24b4a33fa769d4fd776900cd14015a68935799a57447a2d4ac75089893f",
         "packageStatus": "portable",
-        "releaseId": "release:ae3c3ac6d27c93774e568fefc8a698799b8a292b562dbdde9cdf7268ee49e622",
+        "releaseId": "release:4bc89451fe0d4c67180723ea47264e9ac261c5386052221f828aaa102430d8cc",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:ae3c3ac6d27c93774e568fefc8a698799b8a292b562dbdde9cdf7268ee49e622",
+      "releaseId": "release:4bc89451fe0d4c67180723ea47264e9ac261c5386052221f828aaa102430d8cc",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -140,7 +140,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/google-drive",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:1f8f5e7d4080c734ebe2e673d71b2d92c4c3441b06fdc36e777de1ec6ba0937f",
@@ -153,13 +153,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:ff674fef0e3e2ec4a88e464ba78a8c64839358f2717d391e411ff674e7880b88",
         "packageStatus": "portable",
-        "releaseId": "release:4a4cc0ac59ae03f0bd7064eeceadb64b5996bb0be0e201a2c2dbcc27d79caa13",
+        "releaseId": "release:42d5abfc698fc35858617613384d05bb64ea0e0983aebf2b618abe5984a87fe5",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:4a4cc0ac59ae03f0bd7064eeceadb64b5996bb0be0e201a2c2dbcc27d79caa13",
+      "releaseId": "release:42d5abfc698fc35858617613384d05bb64ea0e0983aebf2b618abe5984a87fe5",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -323,7 +323,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/todoist",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:a03b07bc5c2fef3961191970a288ac1287e22ccdc5c4fcb24a568b797868a18d",
@@ -336,13 +336,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:78ef4d2a237980cb32f2f6656bb098064a0fa699b6f36df75bcbb5fa719c0c58",
         "packageStatus": "portable",
-        "releaseId": "release:443f15ba77b49015c19c21f6d024e79e4030feee30a3a412a1d2fd12950b604e",
+        "releaseId": "release:d38f26dd5567dea18d60a4633383216205b8765a84f46d1478e2089d2055b4bc",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:443f15ba77b49015c19c21f6d024e79e4030feee30a3a412a1d2fd12950b604e",
+      "releaseId": "release:d38f26dd5567dea18d60a4633383216205b8765a84f46d1478e2089d2055b4bc",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -408,7 +408,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/readwise",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:770ed24488a5b61846d5b3242b22ac27e942fe1ef13abbe9273fc972173a9d93",
@@ -421,13 +421,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:df783223168ef6162756337ea53bcec049c54116d384c45ee11c014a17c0a5e9",
         "packageStatus": "portable",
-        "releaseId": "release:6ddfdf4a07ff524096f60d6b16c685ca85bb4c50e084d166bcaa2425faaf94d6",
+        "releaseId": "release:7b9cc91c55c726e49b8367c8fe2f23bcad9265e1177b571dd43e1f0430d23550",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:6ddfdf4a07ff524096f60d6b16c685ca85bb4c50e084d166bcaa2425faaf94d6",
+      "releaseId": "release:7b9cc91c55c726e49b8367c8fe2f23bcad9265e1177b571dd43e1f0430d23550",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -493,7 +493,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/smartsheet",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:90b23989ddf32fff6c3f15a80a55d9a03fc45738acf805aeea6346291335ec5a",
@@ -506,13 +506,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:37a642de3dfdd41160295d5dc9ef5c2835a7e0b39038d1af3404d45c0be707d7",
         "packageStatus": "partial",
-        "releaseId": "release:6135b0f1965ee1bb5fac221149c38f53f849f2bbcad6667ac8ddc581285e63fe",
+        "releaseId": "release:1f5cc7ae9c767d79e44a3036715af111f6178efd99b7dc80ae60a77e252b5f39",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:6135b0f1965ee1bb5fac221149c38f53f849f2bbcad6667ac8ddc581285e63fe",
+      "releaseId": "release:1f5cc7ae9c767d79e44a3036715af111f6178efd99b7dc80ae60a77e252b5f39",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -759,7 +759,7 @@
         "pi": "unknown"
       },
       "description": "Airtable is the database and operations layer for your agents — whether running product, marketing, sales, ops, HR, or a custom business app. It combines structured data with multiplayer visual surfaces (grid, kanban, calendar, gallery, timeline) humans and agents share — plus sync integrations to Jira, Salesforce, Zendesk, Google Drive, Databricks, and the rest of your stack, all backed by enterprise governance. This plugin makes Claude fluent in Airtable: creating bases and schema, working with records, and sharing UI for collaboration. Bundles the official Airtable MCP server.",
-      "displayName": "airtable",
+      "displayName": "Airtable",
       "homepage": "https://www.airtable.com/",
       "icon": {
         "asset": "icon-1875d18bf33291f53d2c78e9e9485551.svg",
@@ -1047,7 +1047,7 @@
         "pi": "partially-supported"
       },
       "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
-      "displayName": "Apollo.io",
+      "displayName": "Apollo",
       "homepage": "https://www.apollo.io/",
       "icon": {
         "asset": "icon-25ae17edffd848672eceaca705a64de7.png",
@@ -1068,7 +1068,7 @@
       "license": "MIT",
       "monogram": {
         "hue": 201,
-        "text": "AI"
+        "text": "AP"
       },
       "pluginId": "plugin:claude-official:apollo",
       "primaryCategory": "business-operations",
@@ -1139,7 +1139,7 @@
         "pi": "partially-supported"
       },
       "description": "Asana project management integration. Connects Claude Code to Asana's V2 MCP server to create and manage tasks, search projects, update assignments, and track progress. Requires a one-time Asana OAuth app setup — run /asana-setup after installing.",
-      "displayName": "asana",
+      "displayName": "Asana",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/asana",
       "icon": null,
       "keywords": [
@@ -1158,7 +1158,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/asana",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:1924a9cd5893ef284a66729688bc92c51184ba7682a84a3beafb6416d5eb2ae3",
@@ -1171,12 +1171,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:e4cc5a06c2cba387d72412c4bd1dcb42412fbd6316264f16b3dba4ebc838ab4c",
         "packageStatus": "partial",
-        "releaseId": "release:c4e7d651c97f37a1a388e685735aea9650ae90a30e0488b8b2bb1a251c439fe5",
+        "releaseId": "release:de2efbb6cb11e04a74133aae69b8b5c189a54caa6cb8c6c5e54965acf45a92e7",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:c4e7d651c97f37a1a388e685735aea9650ae90a30e0488b8b2bb1a251c439fe5",
+      "releaseId": "release:de2efbb6cb11e04a74133aae69b8b5c189a54caa6cb8c6c5e54965acf45a92e7",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -1214,7 +1214,7 @@
         "pi": "unknown"
       },
       "description": "Connect to Atlassian products including Jira and Confluence. Search and create issues, access documentation, manage sprints, and integrate your development workflow with Atlassian's collaboration tools.",
-      "displayName": "atlassian",
+      "displayName": "Atlassian",
       "homepage": "https://github.com/atlassian/atlassian-mcp-server",
       "icon": {
         "asset": "icon-0ab515fcad8b2a4104871a672211ac7b.svg",
@@ -1311,7 +1311,7 @@
         "pi": "partially-supported"
       },
       "description": "Manage Jira and Confluence fast",
-      "displayName": "atlassian-rovo",
+      "displayName": "Atlassian Rovo",
       "icon": {
         "asset": "icon-7205fb2631152725e0aedd16534a020a.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-7205fb2631152725e0aedd16534a020a.png",
@@ -1403,7 +1403,7 @@
         "pi": "partially-supported"
       },
       "description": "Teamwork Graph CLI is Atlassian's agent-first interface to your entire work context: Jira issues, Confluence pages, Bitbucket PRs, along with your connected third-party data sources. Purpose-built for coding agents like Claude Code (terminal or desktop), and powered by Atlassian's context graph. Try: \"draft a Jira issue from this PR and link it to the epic.\" Using Claude Code in the browser? Install the Atlassian Rovo MCP plugin instead. Run /twg-setup after install to connect Atlassian Teamwork Graph CLI to Claude Code.",
-      "displayName": "atlassian-twg-cli",
+      "displayName": "Atlassian TWG CLI",
       "homepage": "https://developer.atlassian.com/cloud/twg-cli/",
       "icon": {
         "asset": "icon-9fb7883c2f5e9d1c35140cea3d2cfa51.png",
@@ -1710,7 +1710,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/calendly",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:34c483a0a9466bde3f70df9c09ce267ac602c9d50b6159cf4e580270dc3f4e52",
@@ -1723,13 +1723,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:12d45416714a10bc223431ff546b7ee200ccd07110e1a0563299057f6133342b",
         "packageStatus": "portable",
-        "releaseId": "release:4f45286383326f98f370d91222cd29b97803cdaed979688caaa90dde692f9416",
+        "releaseId": "release:2393370f99909f13954708413406e3842cb1dee0edc184876a5a800f498773d6",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:4f45286383326f98f370d91222cd29b97803cdaed979688caaa90dde692f9416",
+      "releaseId": "release:2393370f99909f13954708413406e3842cb1dee0edc184876a5a800f498773d6",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -1862,7 +1862,7 @@
         "pi": "partially-supported"
       },
       "description": "Carta Cap Table plugin — skills and hooks for querying cap tables, grants, SAFEs, 409A valuations, waterfall scenarios, and more",
-      "displayName": "carta-cap-table",
+      "displayName": "Carta Cap Table",
       "homepage": "https://carta.com/",
       "icon": {
         "asset": "icon-162aefb6da8e2670b2d3a6797adced2e.png",
@@ -1969,7 +1969,7 @@
         "pi": "partially-supported"
       },
       "description": "Manage the Carta CRM conversationally — search, add, update, and enrich investors, companies, contacts, deals, notes, and fundraisings via the Carta CRM MCP Server.",
-      "displayName": "carta-crm",
+      "displayName": "Carta CRM",
       "homepage": "https://carta.com/",
       "icon": {
         "asset": "icon-6162f3f9e53710d73db087278ed1d81e.ico",
@@ -2074,7 +2074,7 @@
         "pi": "partially-supported"
       },
       "description": "Carta Investors plugin — skills for querying investor data, performance benchmarks, regulatory reporting, AGM deck generation, brand extraction, and more via the Carta MCP Server.",
-      "displayName": "carta-investors",
+      "displayName": "Carta Investors",
       "homepage": "https://carta.com/",
       "icon": {
         "asset": "icon-e753d59e2e1a4b471831d3bbf13387d9.svg",
@@ -2458,7 +2458,7 @@
         "pi": "partially-supported"
       },
       "description": "Analyze codebases and recommend tailored Claude Code automations such as hooks, skills, MCP servers, and subagents.",
-      "displayName": "claude-code-setup",
+      "displayName": "Claude Code Setup",
       "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup",
       "icon": null,
       "keywords": [
@@ -2479,7 +2479,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/claude-code-setup",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:73c405fffa94298961e07af6da46d3255238f79320f96e363d52bd3c3b0b66d5",
@@ -2492,13 +2492,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:bc3fb90c739fd1e2d9b6d14327663e437d0da1c31de70c703a2d81849c1321b1",
         "packageStatus": "partial",
-        "releaseId": "release:41e8fe6faa2450692531c2ff972d64107190b40ec4f7b4168d8312b62e248dc1",
+        "releaseId": "release:d12baf472a54e6de85246c66da5e7b270a98165e5433d3493d96ccb39e06a048",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:41e8fe6faa2450692531c2ff972d64107190b40ec4f7b4168d8312b62e248dc1",
+      "releaseId": "release:d12baf472a54e6de85246c66da5e7b270a98165e5433d3493d96ccb39e06a048",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -2535,7 +2535,7 @@
         "pi": "partially-supported"
       },
       "description": "Tools to maintain and improve CLAUDE.md files - audit quality, capture session learnings, and keep project memory current.",
-      "displayName": "claude-md-management",
+      "displayName": "Claude MD Management",
       "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-md-management",
       "icon": null,
       "keywords": [
@@ -2556,7 +2556,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/claude-md-management",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:97dc9c6b091a839bbe0da29008939c57e2679fc7a2351c2ca43e145afe85f72d",
@@ -2573,13 +2573,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:2a0c28120b83b798d48aad10d5bf60cc8420748b62a9ca6ad72e964db111ab0a",
         "packageStatus": "partial",
-        "releaseId": "release:c62eeba770741defd55d155cef083b5380a28593790e0a3207cd35dba24a947e",
+        "releaseId": "release:f74b8624d315060fef659868ad90de4039eb2ee43ea4c24155c13edf8451fb89",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:c62eeba770741defd55d155cef083b5380a28593790e0a3207cd35dba24a947e",
+      "releaseId": "release:f74b8624d315060fef659868ad90de4039eb2ee43ea4c24155c13edf8451fb89",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -2716,7 +2716,7 @@
         "pi": "unknown"
       },
       "description": "Turn Codex into your ClickUp command center.",
-      "displayName": "clickup",
+      "displayName": "Clickup",
       "icon": {
         "asset": "icon-218b96eecc8b8039227db1f6edbf6c64.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-218b96eecc8b8039227db1f6edbf6c64.png",
@@ -2831,7 +2831,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/coda",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:fded5a2fa278ce15210ff8289b8858ab9258a8518e71b9ec3675be43bea1fbac",
@@ -2844,13 +2844,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:dd52c1aa73dcbc01d1519022eec5caae317f89e75ec528231448953664a47706",
         "packageStatus": "portable",
-        "releaseId": "release:a84cd72340fdd97623429c4414459e6f43fd76ad651206a2750f602b4d581865",
+        "releaseId": "release:9469038d87a393cf36659a6ac77cae579e98d8173f18961cf08a149017f5ad03",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:a84cd72340fdd97623429c4414459e6f43fd76ad651206a2750f602b4d581865",
+      "releaseId": "release:9469038d87a393cf36659a6ac77cae579e98d8173f18961cf08a149017f5ad03",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -2888,7 +2888,7 @@
         "pi": "partially-supported"
       },
       "description": "Automated code review for pull requests using multiple specialized agents with confidence-based scoring to filter false positives",
-      "displayName": "code-review",
+      "displayName": "Code Review",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/code-review",
       "icon": null,
       "keywords": [
@@ -2908,7 +2908,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/code-review",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:fca67068adba8e55d88cfed5775f23796c0aa7c65af70a108b1c8d84973d13d6",
@@ -2921,12 +2921,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:8f85e7d4d0e9c69f298be4f5f7e08a78e4a99fa18bc9bc8de3c01aa6494ace4a",
         "packageStatus": "partial",
-        "releaseId": "release:b01b522055365c56c4f9c7fc68560c2361c5e4ccc251fb9d8579116c099ec7eb",
+        "releaseId": "release:c303ca270fff5ce69b2006278a4424f78cee1aec9be0e7b9da4f501f3b14980f",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:b01b522055365c56c4f9c7fc68560c2361c5e4ccc251fb9d8579116c099ec7eb",
+      "releaseId": "release:c303ca270fff5ce69b2006278a4424f78cee1aec9be0e7b9da4f501f3b14980f",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -2962,7 +2962,7 @@
         "pi": "partially-supported"
       },
       "description": "Agent that simplifies and refines code for clarity, consistency, and maintainability while preserving functionality. Focuses on recently modified code.",
-      "displayName": "code-simplifier",
+      "displayName": "Code Simplifier",
       "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier",
       "icon": null,
       "keywords": [
@@ -2982,7 +2982,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/code-simplifier",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:22fd3cc2ba860aab574a90d4f0ebaf6b8b951ea7284ad026425a79fe39ec3b8e",
@@ -2995,13 +2995,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:efa99fb7ced4499c21e8f1be019b08889e0a1fe6eb151facba9835942d29daf1",
         "packageStatus": "partial",
-        "releaseId": "release:507df68cebbb6f970dbe9a646da633a3053890e1997ceb6b8f9cffe681ff2b3f",
+        "releaseId": "release:dcf5ab1533d057cff486991a803fe53406ba9a1f00d2fcd0d97c53ea8cbfb2f5",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:507df68cebbb6f970dbe9a646da633a3053890e1997ceb6b8f9cffe681ff2b3f",
+      "releaseId": "release:dcf5ab1533d057cff486991a803fe53406ba9a1f00d2fcd0d97c53ea8cbfb2f5",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -3040,7 +3040,7 @@
         "pi": "partially-supported"
       },
       "description": "Your code review partner. CodeRabbit provides external validation using a specialized AI architecture and 40+ integrated static analyzers—offering a different perspective that catches bugs, security vulnerabilities, logic errors, and edge cases. Context-aware analysis via AST parsing and codegraph relationships. Automatically incorporates CLAUDE.md and project coding guidelines into reviews. Useful after writing or modifying code, before commits, when implementing complex or security-sensitive logic, or when a second opinion would increase confidence in the changes. Returns specific findings with suggested fixes that can be applied immediately. Free to use.",
-      "displayName": "coderabbit",
+      "displayName": "CodeRabbit",
       "homepage": "https://github.com/coderabbitai/skills",
       "icon": {
         "asset": "icon-34aa366bf020df325b24b42a822714cb.svg",
@@ -3132,7 +3132,7 @@
         "pi": "partially-supported"
       },
       "description": "Commands for git commit workflows including commit, push, and PR creation",
-      "displayName": "commit-commands",
+      "displayName": "Commit Commands",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/commit-commands",
       "icon": null,
       "keywords": [
@@ -3152,7 +3152,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/commit-commands",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:fbc2d42a483e9c754d7b9c469098638716cfee9bdaee4fd7e39bf019a0ea2883",
@@ -3165,12 +3165,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:9dba00e758aac645f1441b4710023a029658d0eeb8a4593e3b4a61cc2fd29e06",
         "packageStatus": "partial",
-        "releaseId": "release:f1975d9b7f99e5baf6bca962c1fc31c2481ce5348339781dbb31877077fab41f",
+        "releaseId": "release:fa3fdd4176e65fed22aa1905c0422d453764ccb2d7006def6bbd7f8859010431",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:f1975d9b7f99e5baf6bca962c1fc31c2481ce5348339781dbb31877077fab41f",
+      "releaseId": "release:fa3fdd4176e65fed22aa1905c0422d453764ccb2d7006def6bbd7f8859010431",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -3234,7 +3234,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/craft",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:cbccc710c30f7291cebf6099d7ef944d49259222178726bf30f60e7a3e276af9",
@@ -3247,13 +3247,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:f8c0b9ba5b85a60941936b190e77eb906b0830806ff1f78705df3738e96ffce2",
         "packageStatus": "portable",
-        "releaseId": "release:061709e08433f85d85da264c611c6177ba31350775ba026c6f9facec1910986c",
+        "releaseId": "release:d711da385012e7623cc99db22e1a07bd4f4e759bf2a4ca06365049c260101972",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:061709e08433f85d85da264c611c6177ba31350775ba026c6f9facec1910986c",
+      "releaseId": "release:d711da385012e7623cc99db22e1a07bd4f4e759bf2a4ca06365049c260101972",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -3292,7 +3292,7 @@
         "pi": "partially-supported"
       },
       "description": "Onboard a Code-with-Claude Makers Cardputer with one /maker-setup command — clones the build-with-claude repo, flashes UIFlow firmware, and installs the Claude Buddy app bundle.",
-      "displayName": "cwc-makers",
+      "displayName": "Cwc Makers",
       "homepage": "https://claude.com/cwc-makers",
       "icon": {
         "asset": "icon-4004381309500f25e49a1ae639912ce3.png",
@@ -3322,7 +3322,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/cwc-makers",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:9a399325b111dabef5487289a571cda037aaa4e02ad6d4a6e056b6ae4aa1eb5a",
@@ -3339,13 +3339,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:8552484125735d3c7e55550c20daa7fe0540e11ada16b081bdb1bbd02f99398a",
         "packageStatus": "partial",
-        "releaseId": "release:3df561ba63105e463f034e2937b4f3c21562973c1713f3ff808b17707b371a77",
+        "releaseId": "release:666053db23d12da20643a249ba399d02e710767863337662565c6d368902f305",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:3df561ba63105e463f034e2937b4f3c21562973c1713f3ff808b17707b371a77",
+      "releaseId": "release:666053db23d12da20643a249ba399d02e710767863337662565c6d368902f305",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -3475,7 +3475,7 @@
         "pi": "partially-supported"
       },
       "description": "Discord messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /discord:access.",
-      "displayName": "discord",
+      "displayName": "Discord",
       "icon": null,
       "keywords": [
         "discord",
@@ -3493,7 +3493,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/discord",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:5f1d950fa94fc223104bd6d79f9696ec12bf8565649a9219c002ee06a8e4cac7",
@@ -3510,13 +3510,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:56461e16176ad9863533b6c9f227bf1dc867f17ec9ad5b978106878f2d7d612a",
         "packageStatus": "partial",
-        "releaseId": "release:849aa00e376a7bcad125d5b07c2ca2a48016299b84fb7e9fa538583688c1a1c9",
+        "releaseId": "release:8fbf3b346d9df83cebdacd867a99f9fb156176bf9a3079dab3ee2cb30a93ff5a",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "0.0.4"
       },
-      "releaseId": "release:849aa00e376a7bcad125d5b07c2ca2a48016299b84fb7e9fa538583688c1a1c9",
+      "releaseId": "release:8fbf3b346d9df83cebdacd867a99f9fb156176bf9a3079dab3ee2cb30a93ff5a",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -3583,7 +3583,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "docs-canvas",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:4d4ad2c6d67cf67c2627501e2701c64ca90faaaf66a84cd189dc436652c9048e",
@@ -3596,13 +3596,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:5f13ed8ce3fa537c80cf492984c1344dc2f403c727953281fac683d53626c9c5",
         "packageStatus": "portable",
-        "releaseId": "release:e68c3da94a5fb800b43a5e4e290a40c4c951fc9aea597d49c9647785bb7ae9ab",
+        "releaseId": "release:5ce9096a382bd66f73ce39ae4b0800b49befa87daaf951d257a7329bb6991185",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "0.1.0"
       },
-      "releaseId": "release:e68c3da94a5fb800b43a5e4e290a40c4c951fc9aea597d49c9647785bb7ae9ab",
+      "releaseId": "release:5ce9096a382bd66f73ce39ae4b0800b49befa87daaf951d257a7329bb6991185",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -3932,7 +3932,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/fathom",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:3c25bfe469883e32a3538f540d6d30956d11662aa406a51ad555d57b8b6a1caa",
@@ -3945,13 +3945,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:e781ab5d92ce253f22fc5919ae37f7dd8265ad5a22c98e59f3b3705f6b500498",
         "packageStatus": "portable",
-        "releaseId": "release:c94c234bdd5afa9a63f5fb802a04af58fa211699b9f55fc0cc2b6af6c5ea1f5b",
+        "releaseId": "release:6241df372774ee0ca1d66a134a06083c24d9dfa08aa9e0dd51b8ecc9a64d4433",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:c94c234bdd5afa9a63f5fb802a04af58fa211699b9f55fc0cc2b6af6c5ea1f5b",
+      "releaseId": "release:6241df372774ee0ca1d66a134a06083c24d9dfa08aa9e0dd51b8ecc9a64d4433",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -4118,7 +4118,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/github",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:3a8aa90c77c19d4efaefe32703f8daf81020f7927f26f66feae7c66c9e991fc3",
@@ -4131,12 +4131,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:57c44f8d573dc9277263d5b767e56feff729bf954a5662e9e2b755d1a49aa5ac",
         "packageStatus": "partial",
-        "releaseId": "release:aaf4d4d2aa95c842821ce5355dd3873b613790f7fe95bed2f6f1fbdf66680620",
+        "releaseId": "release:7ec3e028020e3364a9939f4d01e32899dfa5d6e876f8c6f634f7f7563e407455",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:aaf4d4d2aa95c842821ce5355dd3873b613790f7fe95bed2f6f1fbdf66680620",
+      "releaseId": "release:7ec3e028020e3364a9939f4d01e32899dfa5d6e876f8c6f634f7f7563e407455",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -4176,7 +4176,7 @@
         "pi": "unknown"
       },
       "description": "GitLab DevOps platform integration. Manage repositories, merge requests, CI/CD pipelines, issues, and wikis. Full access to GitLab's comprehensive DevOps lifecycle tools.",
-      "displayName": "gitlab",
+      "displayName": "GitLab",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/gitlab",
       "icon": null,
       "keywords": [
@@ -4195,7 +4195,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/gitlab",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:c33170ae8b8befc66544b97da55f91cbf75384b9457387614702a60e9b2e6dc4",
@@ -4208,12 +4208,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:e0a75b634a43e0dec4f47262123c6d394b6e5d2ddf80fc311171899927cad5b6",
         "packageStatus": "portable",
-        "releaseId": "release:b1023689b1909e15c1639f7a7b965c0133f67e2d50ce4d5b9c61029227002180",
+        "releaseId": "release:2226286761634e9dc1188b6b585769348db782fcaf99aed43a6d1a19d7038915",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:b1023689b1909e15c1639f7a7b965c0133f67e2d50ce4d5b9c61029227002180",
+      "releaseId": "release:2226286761634e9dc1188b6b585769348db782fcaf99aed43a6d1a19d7038915",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -4349,7 +4349,7 @@
         "pi": "unknown"
       },
       "description": "Granola MCP connects your meeting history to ChatGPT so your assistant can pull real context from past conversations while you work.\n\nUse MCP when you're already working on something bigger:\n\n-   Writing PRDs or proposals: Pull customer feedback, stakeholder input, and decisions from relevant meetings directly into your draft\n    \n-   Building presentations or reports: Combine insights from multiple conversations with your other research and data\n    \n-   Coding with context: Give your AI the project background, requirements, and technical decisions discussed in planning meetings\n    \n-   Strategic analysis: Merge meeting insights with documents, data, and other sources for comprehensive analysis\n    \nHow it works:\n\nYour AI assistant can search your Granola meetings by topic, person, company, or timeframe - then cite specific conversations in its responses. No more switching tabs to find \"what the customer said\" or \"when we decided that.\"\n\nThe difference:\n\nInstead of copy-pasting meeting notes into prompts, your AI pulls exactly what it needs from your meeting history automatically. You stay focused on the work, not the research or context.",
-      "displayName": "granola",
+      "displayName": "Granola",
       "icon": {
         "asset": "icon-1360b28dec57099b071790a9d709cc9f.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-1360b28dec57099b071790a9d709cc9f.png",
@@ -4555,7 +4555,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/guru",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:8e5961c10ca2911341867fb9b182ef8db13c8d36763c21e4fc256dfbc8c12050",
@@ -4568,13 +4568,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:29a62aefb04133776934c35ed958819b1b6b481028ea8b3831a187e1ce0e4bd0",
         "packageStatus": "portable",
-        "releaseId": "release:8465ec201033afce3d236e90fac88c408559fa490eaff78cca18968384d54ac7",
+        "releaseId": "release:eda145836479346266b676eb7e8abae59abfc06e053e584a09ec272f4c938e51",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:8465ec201033afce3d236e90fac88c408559fa490eaff78cca18968384d54ac7",
+      "releaseId": "release:eda145836479346266b676eb7e8abae59abfc06e053e584a09ec272f4c938e51",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -4616,7 +4616,7 @@
         "pi": "partially-supported"
       },
       "description": "Easily create custom hooks to prevent unwanted behaviors by analyzing conversation patterns or from explicit instructions. Define rules via simple markdown files.",
-      "displayName": "hookify",
+      "displayName": "Hookify",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/hookify",
       "icon": null,
       "keywords": [
@@ -4635,7 +4635,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/hookify",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:53d056f3ca4219bc1e0497c26cb60e2566f59a168067ac7b6b1cb5f3fb6f4901",
@@ -4664,12 +4664,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:71e17907875da53e1c9715bc881883fc8e7717f4e183850b45a63546c82b1a08",
         "packageStatus": "partial",
-        "releaseId": "release:f35c0c25e1f9aa61832bc34d33a50453fd74357f1de0318cc25f081377baf692",
+        "releaseId": "release:29076e275f5aa0210399d606a32f1d282db5cd25516635ae14ece8783493719c",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:f35c0c25e1f9aa61832bc34d33a50453fd74357f1de0318cc25f081377baf692",
+      "releaseId": "release:29076e275f5aa0210399d606a32f1d282db5cd25516635ae14ece8783493719c",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -4902,7 +4902,7 @@
         "pi": "partially-supported"
       },
       "description": "iMessage messaging bridge with built-in access control. Reads chat.db directly, sends via AppleScript. Manage pairing, allowlists, and policy via /imessage:access.",
-      "displayName": "imessage",
+      "displayName": "iMessage",
       "icon": null,
       "keywords": [
         "imessage",
@@ -4920,7 +4920,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/imessage",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:1faa7685b06212a9d826f76b99d388f318d6b09fe48739d9cfdbe7ba01ba06df",
@@ -4937,13 +4937,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:148a3143e6acdf7f8f72932d860abcaf2fc2240d82f356b6a6ca90390c5fbbe0",
         "packageStatus": "partial",
-        "releaseId": "release:7e84feff98e128d335ff1558cea33538263eacca8fbba1c25c55f53a846205e6",
+        "releaseId": "release:cd5f74b14fd203593c3a408e58ab6fd4338d51f1e8b0c8e2ef591acc995b2e70",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "0.1.0"
       },
-      "releaseId": "release:7e84feff98e128d335ff1558cea33538263eacca8fbba1c25c55f53a846205e6",
+      "releaseId": "release:cd5f74b14fd203593c3a408e58ab6fd4338d51f1e8b0c8e2ef591acc995b2e70",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -5196,7 +5196,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/jotform",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:9e74c746c1881e10260a4ca8d6b317565d05d322c1f732aeaf8db3b9d336b50d",
@@ -5209,13 +5209,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:a3b725a670562196b48f2994b27d5c74562a3aaf9d7da25f388a12838b938774",
         "packageStatus": "portable",
-        "releaseId": "release:ee50911bbba85f39190a02f73bb550f61ce402b354bad5e08e9005953eebd94a",
+        "releaseId": "release:83fcfbe370fb85d56ba9eb520e30fd77336d0efd6a4dd18604299b4b5a9be1bf",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:ee50911bbba85f39190a02f73bb550f61ce402b354bad5e08e9005953eebd94a",
+      "releaseId": "release:83fcfbe370fb85d56ba9eb520e30fd77336d0efd6a4dd18604299b4b5a9be1bf",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -5345,7 +5345,7 @@
         "pi": "unknown"
       },
       "description": "Linear issue tracking integration. Create issues, manage projects, update statuses, search across workspaces, and streamline your software development workflow with Linear's modern issue tracker.",
-      "displayName": "linear",
+      "displayName": "Linear",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/linear",
       "icon": {
         "asset": "icon-6699a52fa24d4b802674d0178fd2c4ab.svg",
@@ -5374,7 +5374,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/linear",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:0527ca982e2d0998648e6d57ccee9b520b30d71376ac467566bf460c9765cae1",
@@ -5387,12 +5387,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:258547fe1371e5ce166c45a567b2bde44bfb2e82408277ef89fabb611cea7fd3",
         "packageStatus": "portable",
-        "releaseId": "release:b59fb2d36a1e26bd9c9cab98cbd4a87c453b48e8fd8c5ee3eaaae3efb8248006",
+        "releaseId": "release:05b5a82b52d9c8b6c1abffad4c868518b82d068eab29cd08e7c7e39394a7fedc",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:b59fb2d36a1e26bd9c9cab98cbd4a87c453b48e8fd8c5ee3eaaae3efb8248006",
+      "releaseId": "release:05b5a82b52d9c8b6c1abffad4c868518b82d068eab29cd08e7c7e39394a7fedc",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -5740,7 +5740,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/mem",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:bfde810f30c7c442a01dd0fecfd936266c00c5d88620b7b706840ce55c50ece6",
@@ -5753,13 +5753,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:ec8cc00ab8a86b5cd8e0e1372430f360a3508675cdf339b183009f1299a3494d",
         "packageStatus": "portable",
-        "releaseId": "release:b9bcf1dc7791b91436479c1199888e03b9d56d412d0b23e01198c274c65b0bad",
+        "releaseId": "release:bc67a52a3f98cfb432c0c4a008f9601e5f9cf56c58716bd2198818be5e3688ff",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:b9bcf1dc7791b91436479c1199888e03b9d56d412d0b23e01198c274c65b0bad",
+      "releaseId": "release:bc67a52a3f98cfb432c0c4a008f9601e5f9cf56c58716bd2198818be5e3688ff",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -5798,7 +5798,7 @@
         "pi": "unknown"
       },
       "description": "The official monday.com plugin for Claude Cowork. Manage boards, items, docs, and forms across work management, CRM, dev, service, and campaigns. Full read and write access via OAuth.",
-      "displayName": "monday.com",
+      "displayName": "Monday.com",
       "homepage": "https://monday.com/",
       "icon": {
         "asset": "icon-03c5839ffc8eaec1759f3ce99e329d1c.png",
@@ -5891,7 +5891,7 @@
         "pi": "partially-supported"
       },
       "description": "Run your monday CRM in plain language. Build a pipeline from scratch, start the day with a ranked deal briefing, spin up a forecast dashboard, audit board health, clean up messy data in bulk, and turn meeting notes into deal updates. Every skill writes back into monday as a real update, doc, or dashboard. Built on the official monday MCP connector.",
-      "displayName": "monday CRM",
+      "displayName": "Monday CRM",
       "homepage": "https://monday.com/",
       "icon": {
         "asset": "icon-03c5839ffc8eaec1759f3ce99e329d1c.png",
@@ -6185,7 +6185,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/onedrive",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:b84cddd92320fba6cd1a00c000011d5812ebfa8b591e8e9482ab074eeca4d2fe",
@@ -6198,13 +6198,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:1a3e0ff3ff78ac5139117a91b3ce476e7c2c5e14aaa8bfbf3c4c6dbccb58bdf4",
         "packageStatus": "portable",
-        "releaseId": "release:0a9bb86d196d88108c650fdaca237e3b6b28b56e9d6cfba3092589e1552ac9e7",
+        "releaseId": "release:00ea632dd4d576b0884ba8c36142e3e4d23357d67bf49c77b4ddb6220f197760",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:0a9bb86d196d88108c650fdaca237e3b6b28b56e9d6cfba3092589e1552ac9e7",
+      "releaseId": "release:00ea632dd4d576b0884ba8c36142e3e4d23357d67bf49c77b4ddb6220f197760",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -6270,7 +6270,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "orchestrate",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:22fe03dd823c7ed1fa7b51f6c5d7437224c0b0176e16b7ac270f439adc5a2187",
@@ -6283,13 +6283,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:0e6dd67370a2a95d60431cc31abcbea49f11dd11e09b05f605d8cb4320b60c8d",
         "packageStatus": "partial",
-        "releaseId": "release:367f655536c88ddae7ebaa38fee8ee04e235caf16766b421cca03256333dce1b",
+        "releaseId": "release:10f0e0e1137686fdc53ae24ad7687662c134cf9bcc31b5747678723f22f72a14",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.1.0"
       },
-      "releaseId": "release:367f655536c88ddae7ebaa38fee8ee04e235caf16766b421cca03256333dce1b",
+      "releaseId": "release:10f0e0e1137686fdc53ae24ad7687662c134cf9bcc31b5747678723f22f72a14",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -6355,7 +6355,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/outlook-calendar",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:5d23dd005d6e92c8cd425369c7290cb25441c8a31dcbd19cfa285e97c68e2705",
@@ -6368,13 +6368,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:2dc72ae07f967619ae1362ad1b378d33edfe473f61dd92d5261e1df22e2ba690",
         "packageStatus": "portable",
-        "releaseId": "release:ee643f1f3bb19c22fcedc341365ff6ada7c9c5050ba50dc0678086d036126f03",
+        "releaseId": "release:093eeee100e8ec24f27df4d5da89ed480615018559c93cea054fb63bd689bf0f",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:ee643f1f3bb19c22fcedc341365ff6ada7c9c5050ba50dc0678086d036126f03",
+      "releaseId": "release:093eeee100e8ec24f27df4d5da89ed480615018559c93cea054fb63bd689bf0f",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -6784,7 +6784,7 @@
         "pi": "partially-supported"
       },
       "description": "Analyze business data and build custom Pigment models, metrics, and boards through natural language.",
-      "displayName": "pigment",
+      "displayName": "Pigment",
       "homepage": "https://www.pigment.com/",
       "icon": {
         "asset": "icon-290288c59b0698367b53c9693562514d.svg",
@@ -6875,7 +6875,7 @@
         "pi": "partially-supported"
       },
       "description": "Comprehensive PR review agents specializing in comments, tests, error handling, type design, code quality, and code simplification",
-      "displayName": "pr-review-toolkit",
+      "displayName": "Pr Review Toolkit",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/pr-review-toolkit",
       "icon": null,
       "keywords": [
@@ -6896,7 +6896,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/pr-review-toolkit",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:ae099ff553860651006400f8454b620ad457fa317d5d6959b27b9d2cde2553b9",
@@ -6913,12 +6913,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:39959b1afd83e4554bd043e63236f83ee2878fc9490707895abc50b6c49bb8dd",
         "packageStatus": "partial",
-        "releaseId": "release:73319da446614c26cf17638b17296c05ee9b62d6021c5f1555b9f3894c9adfed",
+        "releaseId": "release:8d8c2de7d2c5c493498e525b94d76becfe8778ef024f55071c89de81d62ff0f2",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:73319da446614c26cf17638b17296c05ee9b62d6021c5f1555b9f3894c9adfed",
+      "releaseId": "release:8d8c2de7d2c5c493498e525b94d76becfe8778ef024f55071c89de81d62ff0f2",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -7033,7 +7033,7 @@
         "pi": "partially-supported"
       },
       "description": "Generate and publish a living project status page — overview & success criteria, the workstream sequence, and next steps — as a shareable claude.ai artifact backed by a per-project config, so refreshes re-gather live state, redeploy the same URL, and report only the delta.",
-      "displayName": "project-artifact",
+      "displayName": "Project Artifact",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/project-artifact",
       "icon": null,
       "keywords": [
@@ -7053,7 +7053,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/project-artifact",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:24292ca3567a36b79cc93a4657f650dd76370269a895fa65cd5cc77b998e385d",
@@ -7066,12 +7066,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:cc9c37e67b2df66e93f4c2d3cc5ad55a05c3a906624cd5c66eb1ddeaa3a01554",
         "packageStatus": "partial",
-        "releaseId": "release:97c7e21bd909bb250dfa397b8513406127f40d5b27a19a030aa702229a5ab0f5",
+        "releaseId": "release:29cc66f8487b1bda1b1e62ec94cf7ee135cd827241db0021a89b8a11b3025854",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:97c7e21bd909bb250dfa397b8513406127f40d5b27a19a030aa702229a5ab0f5",
+      "releaseId": "release:29cc66f8487b1bda1b1e62ec94cf7ee135cd827241db0021a89b8a11b3025854",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -7107,7 +7107,7 @@
         "pi": "unknown"
       },
       "description": "A personal Claude Code impact report for justifying your usage to a manager or a self-review: what you shipped, which projects it went to, and each project's share of your usage. Reads your ~/.claude/projects transcripts and runs read-only git locally; only counts and project names are sent to write it up, and the report stays on your machine.",
-      "displayName": "receipts",
+      "displayName": "Receipts",
       "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/receipts",
       "icon": null,
       "keywords": [
@@ -7126,7 +7126,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/receipts",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:00b493465a56b593f8e3e49dbd7b2c298f0351cf043b68139923ff5803aad6fd",
@@ -7139,12 +7139,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:a50bb75aade34726bece572efc15eedb9e2440acf1d9b55be495f0cd03246e4f",
         "packageStatus": "portable",
-        "releaseId": "release:a7473d19993f4471b437c9ab505063c0635eb8f55ad7bf5c0c131e51245f943c",
+        "releaseId": "release:1db14921e95d20d5dcefe81350f3446ec73cbd9735c22c7776d59e424fd70d31",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:a7473d19993f4471b437c9ab505063c0635eb8f55ad7bf5c0c131e51245f943c",
+      "releaseId": "release:1db14921e95d20d5dcefe81350f3446ec73cbd9735c22c7776d59e424fd70d31",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -7184,7 +7184,7 @@
         "pi": "partially-supported"
       },
       "description": "Continuous memory for Claude Code. Extracts, summarizes, and compresses conversations into tiered daily logs. Claude remembers what you did yesterday.",
-      "displayName": "remember",
+      "displayName": "Remember",
       "homepage": "https://github.com/Digital-Process-Tools/claude-remember",
       "icon": {
         "asset": "icon-94b749f645626f923a327188d1969394.png",
@@ -7288,7 +7288,7 @@
         "pi": "partially-supported"
       },
       "description": "Create polished audio episodes with TTS narration, rich timelines, cover images, and save them to Spotify via the save-to-spotify CLI.",
-      "displayName": "save-to-spotify",
+      "displayName": "Save to Spotify",
       "homepage": "https://github.com/spotify/save-to-spotify",
       "icon": {
         "asset": "icon-d2534e9fb333a6e277f1edf9b9843564.ico",
@@ -7374,7 +7374,7 @@
         "pi": "unknown"
       },
       "description": "Generate an explorable HTML report of Claude Code session usage — tokens, cache efficiency, subagents, skills, and the most expensive prompts — from local ~/.claude/projects transcripts.",
-      "displayName": "session-report",
+      "displayName": "Session Report",
       "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/session-report",
       "icon": null,
       "keywords": [
@@ -7394,7 +7394,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/session-report",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:3afdcb1e3f3865dceb39a68fdcd3272ec5fb9d217b81e696ba8acbdb51e00780",
@@ -7407,12 +7407,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:70b435393b8470bbdb2f97761040345118190903380ee9dc956ef1c4921cf9aa",
         "packageStatus": "portable",
-        "releaseId": "release:1de276382fb6d8e7c7848415fafc4ccc1ba3e6034630ce513edc0a25468f14fe",
+        "releaseId": "release:05e85fb75cfa3cac36bae34e0c4319b452241097739fca74b008fa7af0ded141",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
-      "releaseId": "release:1de276382fb6d8e7c7848415fafc4ccc1ba3e6034630ce513edc0a25468f14fe",
+      "releaseId": "release:05e85fb75cfa3cac36bae34e0c4319b452241097739fca74b008fa7af0ded141",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -7477,7 +7477,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/sharepoint",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:7093ced1dcd74c8aefad2317bdfaa0417de8c095b4c0ab609baaa7e96a461643",
@@ -7490,13 +7490,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:81718da5a38e012b1548b34e5f00f7f03041121d9d5a43b527e8337f2fdda3c9",
         "packageStatus": "portable",
-        "releaseId": "release:c1e475b878fd87b172c7e4c0117d0783b2613aef258d86d91e1e6bec5a0adcc0",
+        "releaseId": "release:549c6e8d1ded102ed60f1989e9057b74efff153c74bcc096b5cd5e95924351e9",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:c1e475b878fd87b172c7e4c0117d0783b2613aef258d86d91e1e6bec5a0adcc0",
+      "releaseId": "release:549c6e8d1ded102ed60f1989e9057b74efff153c74bcc096b5cd5e95924351e9",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -7536,7 +7536,7 @@
         "pi": "unknown"
       },
       "description": "Shippo connects you to USPS, UPS, FedEx, DHL, and 40+ carriers, so you can handle a shipment end to end right inside Claude. Compare live rates and pick the cheapest or best option, buy and print labels (domestic and international, with customs declarations), validate and standardize addresses, and track packages across carriers. Just ask in plain language: rate-shop a parcel, buy the right label, check a delivery status, or confirm an address before you ship. Whether you run a store or just need to send a package, Shippo turns a pile of carrier accounts into one simple conversation.",
-      "displayName": "shippo",
+      "displayName": "Shippo",
       "homepage": "https://docs.goshippo.com/",
       "icon": {
         "asset": "icon-2d5fd45996a8ebfe9ae321454bcafd84.png",
@@ -7631,7 +7631,7 @@
         "pi": "partially-supported"
       },
       "description": "Slack workspace integration. Search messages, access channels, read threads, and stay connected with your team's communications while coding. Find relevant discussions and context quickly.",
-      "displayName": "slack",
+      "displayName": "Slack",
       "homepage": "https://github.com/slackapi/slack-mcp-plugin/tree/main",
       "icon": {
         "asset": "icon-22860d9a3bdf29402f53345ae9bc8ee0.png",
@@ -7741,7 +7741,7 @@
         "pi": "partially-supported"
       },
       "description": "Manage Spotify ad campaigns with natural language. Create campaigns, ad sets, ads, pull reports, and handle OAuth — all through conversation.",
-      "displayName": "spotify-ads-api",
+      "displayName": "Spotify Ads API",
       "homepage": "https://github.com/spotify/ads-claude-plugin",
       "icon": {
         "asset": "icon-d2534e9fb333a6e277f1edf9b9843564.ico",
@@ -7852,7 +7852,7 @@
         "pi": "partially-supported"
       },
       "description": "Telegram messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /telegram:access.",
-      "displayName": "telegram",
+      "displayName": "Telegram",
       "icon": null,
       "keywords": [
         "productivity",
@@ -7870,7 +7870,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/telegram",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0"
+        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
       },
       "release": {
         "canonicalContentDigest": "sha256:3e46b0135b3c49de170dba053921d46dc34ae324a129f834485d70df2c290ea4",
@@ -7887,13 +7887,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:eb3b48a16549dbc654c09394f372723d45337dbb25c2e950fcc250a4b7ca12b5",
         "packageStatus": "partial",
-        "releaseId": "release:1ef9edda14d879d4b2f9605212610bf3d9fdaa4d726c0ab548a55e6e6274399b",
+        "releaseId": "release:d8e577f7f9aff957f2510970a3df2da7264a5c33f4a1cc894bbc90531160688d",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ad30d62cd52ad0d0af1beda1eab7f61c601045d0",
+        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a",
         "upstreamVersion": "0.0.7"
       },
-      "releaseId": "release:1ef9edda14d879d4b2f9605212610bf3d9fdaa4d726c0ab548a55e6e6274399b",
+      "releaseId": "release:d8e577f7f9aff957f2510970a3df2da7264a5c33f4a1cc894bbc90531160688d",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -7959,7 +7959,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/typeform",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:070f72ba6a205388b7433aab2f6b39b4691fdb870b4543c7b683484e76112a3b",
@@ -7972,13 +7972,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:f3da67fd93281968784a8b082fa2098ab59d7454106d7ed7051e5db1baa0a8c9",
         "packageStatus": "portable",
-        "releaseId": "release:3f89940ec282188ac14d06f178203b0e96f4f257b8f36d8ec331ea04c306fb8a",
+        "releaseId": "release:d7430a56bfbc1296d558f10828293f9d819912e29af5cdd64c8d6c95a53bb436",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:3f89940ec282188ac14d06f178203b0e96f4f257b8f36d8ec331ea04c306fb8a",
+      "releaseId": "release:d7430a56bfbc1296d558f10828293f9d819912e29af5cdd64c8d6c95a53bb436",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -8110,7 +8110,7 @@
         "pi": "partially-supported"
       },
       "description": "Vibe Prospecting connects Claude to live B2B company and contact data so users can search, match, enrich, filter, and export prospects at scale. It turns natural-language requests into structured GTM workflows for lead generation, CRM enrichment, company research, executive discovery, and multi-step prospecting automation inside Claude Cowork and Claude Code.",
-      "displayName": "vpai",
+      "displayName": "VPAI",
       "homepage": "https://www.vibeprospecting.ai/product/claude-plugin",
       "icon": {
         "asset": "icon-55e3ad1f27fc0dd0c4f01a6e2c77f93d.png",
@@ -8209,7 +8209,7 @@
         "pi": "partially-supported"
       },
       "description": "Connect Claude Code to 325+ business data sources via Windsor.ai. Query marketing, sales, CRM, ecommerce, finance, and analytics data from Google Ads, Meta, HubSpot, Salesforce, Shopify, Stripe, and hundreds more — directly from your terminal.",
-      "displayName": "windsor-ai",
+      "displayName": "Windsor AI",
       "homepage": "https://windsor.ai/",
       "icon": {
         "asset": "icon-0fd54d0fe1df834bbf86e1f738d7bdf1.png",
@@ -8312,7 +8312,17 @@
       "description": "Ask Claude about the contractors you pay through Wingspan, what you owe them, and what is holding up a payment, then onboard contractors and log payments as drafts, with a preview before anything is written. Requires a Wingspan account; bundles the Wingspan MCP server (OAuth on first use).",
       "displayName": "Wingspan",
       "homepage": "https://github.com/wingspanHQ/mcp-claude-plugin",
-      "icon": null,
+      "icon": {
+        "asset": "icon-49671eb764e3156854fc65a3c110c4ed.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-49671eb764e3156854fc65a3c110c4ed.png",
+        "bytes": 7183,
+        "contentType": "image/png",
+        "digest": "sha256:49671eb764e3156854fc65a3c110c4ed411fa75a97b5909a92d1deef433e5a24",
+        "homepage": "https://wingspan.app/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://wingspan.app/apple-touch-icon.png"
+      },
       "keywords": [
         "productivity",
         "wingspan"
@@ -8419,7 +8429,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/wrike",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+        "resolvedCommitSha": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b"
       },
       "release": {
         "canonicalContentDigest": "sha256:c26f9962eea0c16f38fc40860adc69d409c710fa92abfa12d083f29ecee24853",
@@ -8432,13 +8442,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:9ffd5cf4e8adfbdff07c77539f1df33b4ed7e1ab15198a23565edb55d050e1a4",
         "packageStatus": "partial",
-        "releaseId": "release:00ae0fdd49627fbcfe402b154e3b29053537df13dc0e5aadd64f5d0d788bb5c5",
+        "releaseId": "release:dbe987e1cae648033dd2401d1b57e07a8eb019935f7e245873be22f1e62e2476",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "sourceRevision": "78f46dacbafc71fd7d937bfc2c26da914f1bc09b",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:00ae0fdd49627fbcfe402b154e3b29053537df13dc0e5aadd64f5d0d788bb5c5",
+      "releaseId": "release:dbe987e1cae648033dd2401d1b57e07a8eb019935f7e245873be22f1e62e2476",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -8478,7 +8488,7 @@
         "pi": "partially-supported"
       },
       "description": "You.com agent skills for web search, research with citations, and content extraction. Guided integrations for Vercel AI SDK, Claude Agent SDK, OpenAI Agents SDK, crewAI, LangChain, Microsoft Teams.ai, direct REST API, and bash CLI.",
-      "displayName": "you",
+      "displayName": "You",
       "homepage": "https://you.com/",
       "icon": {
         "asset": "icon-bc108afac8491e981082ecbb84c1edc8.ico",
@@ -8680,7 +8690,17 @@
       "description": "Seven skills for financial advisors built on Zocks meeting intelligence: client behavioral profiles, attrition-risk ranking, held-away asset radar, client journey dossiers, household review packs, next-best-action analysis and a tax opportunity scan. Requires the Zocks connector and a Zocks account.",
       "displayName": "Zocks Advisor Intelligence",
       "homepage": "https://github.com/zocks-communications/zocks-agent-plugins",
-      "icon": null,
+      "icon": {
+        "asset": "icon-290c29dc43325277aea74f5632442bc5.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-290c29dc43325277aea74f5632442bc5.png",
+        "bytes": 2625,
+        "contentType": "image/png",
+        "digest": "sha256:290c29dc43325277aea74f5632442bc569d7c66abda9b5d341b51f707a8da3b7",
+        "homepage": "https://www.zocks.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://cdn.prod.website-files.com/67f74eda1b8c9b4c09dc5893/68e8aee2fb5a42ad37ccfb2f_Fav_%20256%20x%20256.png"
+      },
       "keywords": [
         "advisor",
         "productivity",
