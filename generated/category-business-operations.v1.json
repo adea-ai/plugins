@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:ae9047e0a1d48f6d7fb73f706f685d6421d735910d8b66833010784fbbe651f3",
+  "catalogId": "catalog:6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e",
   "category": "business-operations",
   "pluginCount": 56,
   "productCount": 48,
@@ -27,6 +27,7 @@
       "displayName": "Attio",
       "icon": {
         "asset": "icon-f461e472b139cae381f75eda075e0ec2.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-f461e472b139cae381f75eda075e0ec2.png",
         "bytes": 7527,
         "contentType": "image/png",
         "digest": "sha256:f461e472b139cae381f75eda075e0ec264a378bd1f5626ce1c496a368857738c",
@@ -111,6 +112,7 @@
       "displayName": "HubSpot",
       "icon": {
         "asset": "icon-465ab17ed899fcfa0ad4689ad6dddce8.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-465ab17ed899fcfa0ad4689ad6dddce8.png",
         "bytes": 8157,
         "contentType": "image/png",
         "digest": "sha256:465ab17ed899fcfa0ad4689ad6dddce88c17c56c3280f4fe6d292d35191b2c4a",
@@ -195,6 +197,7 @@
       "displayName": "Navan",
       "icon": {
         "asset": "icon-0b474314d9cc2937c0e503ec81d7048b.webp",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-0b474314d9cc2937c0e503ec81d7048b.webp",
         "bytes": 21730,
         "contentType": "image/webp",
         "digest": "sha256:0b474314d9cc2937c0e503ec81d7048b9b8229fda4b107320b034aa454e9bdf8",
@@ -279,6 +282,7 @@
       "displayName": "Docusign",
       "icon": {
         "asset": "icon-b4a3a7a955f29afb3698658c05a53e8f.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-b4a3a7a955f29afb3698658c05a53e8f.png",
         "bytes": 4216,
         "contentType": "image/png",
         "digest": "sha256:b4a3a7a955f29afb3698658c05a53e8f4acff80ca3f680662114829ddb9b2ed2",
@@ -363,6 +367,7 @@
       "displayName": "GoDaddy",
       "icon": {
         "asset": "icon-a96194d7ff679eb3bfb71f971e989cd1.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-a96194d7ff679eb3bfb71f971e989cd1.png",
         "bytes": 9273,
         "contentType": "image/png",
         "digest": "sha256:a96194d7ff679eb3bfb71f971e989cd1f16fc48e5231f275c286160df68cfcd7",
@@ -447,6 +452,7 @@
       "displayName": "Upwork",
       "icon": {
         "asset": "icon-6536c1d5e3d1a1381e1a594481e6633f.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-6536c1d5e3d1a1381e1a594481e6633f.png",
         "bytes": 14359,
         "contentType": "image/png",
         "digest": "sha256:6536c1d5e3d1a1381e1a594481e6633f146c55b3b3f403a1ab8d1a729af435aa",
@@ -536,6 +542,7 @@
       "homepage": "https://www.activecampaign.com/",
       "icon": {
         "asset": "icon-9d8e91f168b523510ff53affb08be505.webp",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-9d8e91f168b523510ff53affb08be505.webp",
         "bytes": 2440,
         "contentType": "image/webp",
         "digest": "sha256:9d8e91f168b523510ff53affb08be505ea78bebbd1fef9c55a227cf34c48ff62",
@@ -639,6 +646,7 @@
       "homepage": "https://www.adspirer.com/",
       "icon": {
         "asset": "icon-59e6bbd3120897d1566554a00769770a.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-59e6bbd3120897d1566554a00769770a.png",
         "bytes": 9414,
         "contentType": "image/png",
         "digest": "sha256:59e6bbd3120897d1566554a00769770a02f987088f46b22a61a1782fe6aea28e",
@@ -740,6 +748,7 @@
       "displayName": "Advisor",
       "icon": {
         "asset": "icon-587c717c31aa5b2cf3310822262890d5.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-587c717c31aa5b2cf3310822262890d5.png",
         "bytes": 7252,
         "contentType": "image/png",
         "digest": "sha256:587c717c31aa5b2cf3310822262890d56ef5716fdc5694cc3883e59455aeca10",
@@ -939,6 +948,7 @@
       "displayName": "Ahrefs",
       "icon": {
         "asset": "icon-3e2faca446df1dbad9b4a32f5f81942c.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-3e2faca446df1dbad9b4a32f5f81942c.png",
         "bytes": 4050,
         "contentType": "image/png",
         "digest": "sha256:3e2faca446df1dbad9b4a32f5f81942c01ad292ed5337fd8a7d8166de3ea02ce",
@@ -1026,6 +1036,7 @@
       "homepage": "https://ai-first.techwolf.ai/",
       "icon": {
         "asset": "icon-7637efc1d8dad442d2c87b9dd1b6dc89.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-7637efc1d8dad442d2c87b9dd1b6dc89.png",
         "bytes": 2525,
         "contentType": "image/png",
         "digest": "sha256:7637efc1d8dad442d2c87b9dd1b6dc89fe9c11751bca251a7c62c06d291b7f66",
@@ -1119,6 +1130,7 @@
       "displayName": "Amplemarket",
       "icon": {
         "asset": "icon-43ca09cc67d3f42fc950a47e3a5b8469.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-43ca09cc67d3f42fc950a47e3a5b8469.png",
         "bytes": 4733,
         "contentType": "image/png",
         "digest": "sha256:43ca09cc67d3f42fc950a47e3a5b846928ad09d805fe705c9e1e33ca1a4bc662",
@@ -1206,6 +1218,7 @@
       "homepage": "https://www.apollo.io/",
       "icon": {
         "asset": "icon-25ae17edffd848672eceaca705a64de7.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-25ae17edffd848672eceaca705a64de7.png",
         "bytes": 9841,
         "contentType": "image/png",
         "digest": "sha256:25ae17edffd848672eceaca705a64de7e7e5226db6d81a8a89208c8def07064f",
@@ -1296,6 +1309,7 @@
       "displayName": "Ashby",
       "icon": {
         "asset": "icon-9ea89ef38e7aa52f054fb3875297f40e.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-9ea89ef38e7aa52f054fb3875297f40e.png",
         "bytes": 11115,
         "contentType": "image/png",
         "digest": "sha256:9ea89ef38e7aa52f054fb3875297f40e51960036c1f2fc255cfc7e7a00a414cf",
@@ -1471,6 +1485,7 @@
       "displayName": "Brevo",
       "icon": {
         "asset": "icon-2a2244803facfdae776abf7f41baf1d8.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-2a2244803facfdae776abf7f41baf1d8.png",
         "bytes": 13917,
         "contentType": "image/png",
         "digest": "sha256:2a2244803facfdae776abf7f41baf1d85d7f47f948908d896fe8b23fa4f24c45",
@@ -1559,6 +1574,7 @@
       "homepage": "https://carta.com/",
       "icon": {
         "asset": "icon-6162f3f9e53710d73db087278ed1d81e.ico",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-6162f3f9e53710d73db087278ed1d81e.ico",
         "bytes": 15406,
         "contentType": "image/x-icon",
         "digest": "sha256:6162f3f9e53710d73db087278ed1d81e7b741dae598e80f7c54aadabd872172a",
@@ -1661,6 +1677,7 @@
       "homepage": "https://catalyst.zoho.com/",
       "icon": {
         "asset": "icon-2bc0a6cca1d6889acba9864ace2ac1cd.ico",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-2bc0a6cca1d6889acba9864ace2ac1cd.ico",
         "bytes": 4286,
         "contentType": "image/x-icon",
         "digest": "sha256:2bc0a6cca1d6889acba9864ace2ac1cdee05f5e8e8da07cc9d04aff1f4aa091e",
@@ -1766,6 +1783,7 @@
       "homepage": "https://github.com/clay-run/agent-plugins/tree/main/clay",
       "icon": {
         "asset": "icon-be4e9d359788e8917a61f6b7972721fb.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-be4e9d359788e8917a61f6b7972721fb.png",
         "bytes": 13118,
         "contentType": "image/png",
         "digest": "sha256:be4e9d359788e8917a61f6b7972721fbb13377a541772cca1960949bb7daa1ae",
@@ -1948,6 +1966,7 @@
       "displayName": "Gong",
       "icon": {
         "asset": "icon-32d8073ba96b112e5d131617298999e5.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-32d8073ba96b112e5d131617298999e5.png",
         "bytes": 8915,
         "contentType": "image/png",
         "digest": "sha256:32d8073ba96b112e5d131617298999e5cae0e1f70df5da54881f83aa8e0e1ae7",
@@ -2116,6 +2135,7 @@
       "homepage": "https://hunter.io/",
       "icon": {
         "asset": "icon-fd9330e31552eeaa12b177489943de99.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-fd9330e31552eeaa12b177489943de99.png",
         "bytes": 2851,
         "contentType": "image/png",
         "digest": "sha256:fd9330e31552eeaa12b177489943de997551bfd991c4c44e8c3d572e78aea5f3",
@@ -2206,6 +2226,7 @@
       "displayName": "Juicebox",
       "icon": {
         "asset": "icon-e1de5bb2c12f4fb98a0c7aad2614c448.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-e1de5bb2c12f4fb98a0c7aad2614c448.png",
         "bytes": 51485,
         "contentType": "image/png",
         "digest": "sha256:e1de5bb2c12f4fb98a0c7aad2614c4485e22b021ebfb123f3b0fd7ea90597741",
@@ -2290,6 +2311,7 @@
       "displayName": "Klaviyo",
       "icon": {
         "asset": "icon-15b7d1138830b2ecc644a0d0ae76502b.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-15b7d1138830b2ecc644a0d0ae76502b.png",
         "bytes": 2205,
         "contentType": "image/png",
         "digest": "sha256:15b7d1138830b2ecc644a0d0ae76502b8aaf557be9a6579ef6047a9c18c08259",
@@ -2454,6 +2476,7 @@
       "displayName": "MailerLite",
       "icon": {
         "asset": "icon-71b3d6c06a900989f0d791a3324bb7e7.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-71b3d6c06a900989f0d791a3324bb7e7.png",
         "bytes": 6779,
         "contentType": "image/png",
         "digest": "sha256:71b3d6c06a900989f0d791a3324bb7e7dfd0e9d4889514b8cedec00a2664a037",
@@ -2618,6 +2641,7 @@
       "displayName": "Meltwater",
       "icon": {
         "asset": "icon-3771cdf690509ff288aa6f57b34d458f.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-3771cdf690509ff288aa6f57b34d458f.png",
         "bytes": 18265,
         "contentType": "image/png",
         "digest": "sha256:3771cdf690509ff288aa6f57b34d458fce785029169c4378decb73cc1c6e481d",
@@ -2709,6 +2733,7 @@
       "homepage": "https://docs.nimbleway.com/integrations/agent-skills/plugin-installation",
       "icon": {
         "asset": "icon-0986ba639d9f45151f7f94b3182fe671.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-0986ba639d9f45151f7f94b3182fe671.png",
         "bytes": 25427,
         "contentType": "image/png",
         "digest": "sha256:0986ba639d9f45151f7f94b3182fe671ae21ea18c8628c91e0af1a62b9ad1751",
@@ -2902,6 +2927,7 @@
       "displayName": "Outreach",
       "icon": {
         "asset": "icon-cbb150ab10df6970a9757eff21538682.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-cbb150ab10df6970a9757eff21538682.png",
         "bytes": 8433,
         "contentType": "image/png",
         "digest": "sha256:cbb150ab10df6970a9757eff215386829b1c72b7086e98dee7b926da1b3f0ef2",
@@ -2989,6 +3015,7 @@
       "homepage": "https://postiz.com/agent",
       "icon": {
         "asset": "icon-0f49b14acb967866aba5f85c7728aa18.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-0f49b14acb967866aba5f85c7728aa18.svg",
         "bytes": 4299,
         "contentType": "image/svg+xml",
         "digest": "sha256:0f49b14acb967866aba5f85c7728aa18c61b03b85c512e0a6bdcef4903dbc66f",
@@ -3171,6 +3198,7 @@
       "homepage": "https://www.accoil.com/product-tracking",
       "icon": {
         "asset": "icon-f9afb1d72d08e139d33207548790bc14.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-f9afb1d72d08e139d33207548790bc14.png",
         "bytes": 19375,
         "contentType": "image/png",
         "digest": "sha256:f9afb1d72d08e139d33207548790bc14ed58365a3b01539fc8c0523c1252ba08",
@@ -3265,6 +3293,7 @@
       "displayName": "Profound",
       "icon": {
         "asset": "icon-1be856772a6e13e3e582115048629acc.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-1be856772a6e13e3e582115048629acc.png",
         "bytes": 4518,
         "contentType": "image/png",
         "digest": "sha256:1be856772a6e13e3e582115048629acc61df28806c3a6f43fbd482710996c31b",
@@ -3351,6 +3380,7 @@
       "displayName": "pstack",
       "icon": {
         "asset": "icon-672f6791589ef758b0ced2c4c477913f.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-672f6791589ef758b0ced2c4c477913f.png",
         "bytes": 361140,
         "contentType": "image/png",
         "digest": "sha256:672f6791589ef758b0ced2c4c477913fa2758623c438e265639a0d539ce90695",
@@ -3530,6 +3560,7 @@
       "displayName": "Salesforce",
       "icon": {
         "asset": "icon-7954504455a9ff816a10859d06dfe433.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-7954504455a9ff816a10859d06dfe433.svg",
         "bytes": 5991,
         "contentType": "image/svg+xml",
         "digest": "sha256:7954504455a9ff816a10859d06dfe43384791d654ed26d826c67dc48992d9cff",
@@ -3699,6 +3730,7 @@
       "displayName": "Semrush",
       "icon": {
         "asset": "icon-f39a44cf4ec7acf87f8d164cee77c6e9.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-f39a44cf4ec7acf87f8d164cee77c6e9.png",
         "bytes": 9111,
         "contentType": "image/png",
         "digest": "sha256:f39a44cf4ec7acf87f8d164cee77c6e927b2256a3e75b2970d817b69e20b4dbd",
@@ -3785,6 +3817,7 @@
       "displayName": "shopify",
       "icon": {
         "asset": "icon-a7993e5bd1c0550e179a273b20cd0879.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-a7993e5bd1c0550e179a273b20cd0879.svg",
         "bytes": 1571,
         "contentType": "image/svg+xml",
         "digest": "sha256:a7993e5bd1c0550e179a273b20cd0879326a0a03c74456b0fe309e462ea61cc0",
@@ -3879,6 +3912,7 @@
       "displayName": "Similarweb",
       "icon": {
         "asset": "icon-12cfc13f585f0bf27b406de1c18f8ac5.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-12cfc13f585f0bf27b406de1c18f8ac5.png",
         "bytes": 10386,
         "contentType": "image/png",
         "digest": "sha256:12cfc13f585f0bf27b406de1c18f8ac533ce3d1873e20481340c0e423a99c24e",
@@ -4044,6 +4078,7 @@
       "displayName": "Workable",
       "icon": {
         "asset": "icon-dde77d8adc5e25871e75ea196b4a57cc.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-dde77d8adc5e25871e75ea196b4a57cc.png",
         "bytes": 10287,
         "contentType": "image/png",
         "digest": "sha256:dde77d8adc5e25871e75ea196b4a57cc4f9251b4046d573b676bf6dca4e6c3f6",
@@ -4128,6 +4163,7 @@
       "displayName": "X Ads",
       "icon": {
         "asset": "icon-86e5270f994539a9919863c8877e2b4b.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-86e5270f994539a9919863c8877e2b4b.png",
         "bytes": 5379,
         "contentType": "image/png",
         "digest": "sha256:86e5270f994539a9919863c8877e2b4bff369a86009cdb93de6a0839f6e74844",
@@ -4217,6 +4253,7 @@
       "homepage": "https://www.zoominfo.com/",
       "icon": {
         "asset": "icon-43929ad3b61f391a9d9dc07f56eca859.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-43929ad3b61f391a9d9dc07f56eca859.svg",
         "bytes": 8146,
         "contentType": "image/svg+xml",
         "digest": "sha256:43929ad3b61f391a9d9dc07f56eca8593d0def6941328acb3d7db365467050b3",

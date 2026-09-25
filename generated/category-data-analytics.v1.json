@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:ae9047e0a1d48f6d7fb73f706f685d6421d735910d8b66833010784fbbe651f3",
+  "catalogId": "catalog:6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e",
   "category": "data-analytics",
   "pluginCount": 49,
   "productCount": 42,
@@ -30,6 +30,7 @@
       "homepage": "https://docs.atlan.com/",
       "icon": {
         "asset": "icon-a0ec1bdfe81f767f30fd5227402dcf73.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-a0ec1bdfe81f767f30fd5227402dcf73.png",
         "bytes": 42873,
         "contentType": "image/png",
         "digest": "sha256:a0ec1bdfe81f767f30fd5227402dcf73bd1b54f8b58bd0d3ac51100d684949b7",
@@ -218,6 +219,7 @@
       "homepage": "https://github.com/daloopa/plugin",
       "icon": {
         "asset": "icon-a5fce38fb9723e9e29081544a1bd20d0.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-a5fce38fb9723e9e29081544a1bd20d0.png",
         "bytes": 19473,
         "contentType": "image/png",
         "digest": "sha256:a5fce38fb9723e9e29081544a1bd20d00613dc3058660d7bd45e36b7f94df5ae",
@@ -393,6 +395,7 @@
       "homepage": "https://docs.brightdata.com/",
       "icon": {
         "asset": "icon-ca087eacbf7a30b3d1c3e79feecaa80a.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-ca087eacbf7a30b3d1c3e79feecaa80a.png",
         "bytes": 1634,
         "contentType": "image/png",
         "digest": "sha256:ca087eacbf7a30b3d1c3e79feecaa80a46cbdba169fa2ed300e3e95a5dace854",
@@ -596,6 +599,7 @@
       "homepage": "https://aiven.io/",
       "icon": {
         "asset": "icon-58109ffc55a61352f144b7f350e60bd0.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-58109ffc55a61352f144b7f350e60bd0.svg",
         "bytes": 4175,
         "contentType": "image/svg+xml",
         "digest": "sha256:58109ffc55a61352f144b7f350e60bd0aabf5c0d6c475daa9d07f2c4717d73ae",
@@ -686,6 +690,7 @@
       "homepage": "https://cloud.google.com/alloydb",
       "icon": {
         "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-a332b54b620a2fa04413561c01c925cd.png",
         "bytes": 9447,
         "contentType": "image/png",
         "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
@@ -781,6 +786,7 @@
       "homepage": "https://www.altimate.ai/",
       "icon": {
         "asset": "icon-f6d5538f2ed2ac405feba266a513725d.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-f6d5538f2ed2ac405feba266a513725d.png",
         "bytes": 22429,
         "contentType": "image/png",
         "digest": "sha256:f6d5538f2ed2ac405feba266a513725d86a6e57fcd39a716d9ecc88ba6703919",
@@ -885,6 +891,7 @@
       "homepage": "https://github.com/AzureCosmosDB/cosmosdb-claude-code-plugin",
       "icon": {
         "asset": "icon-e364d0c19c6d370a08b628540880548a.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-e364d0c19c6d370a08b628540880548a.svg",
         "bytes": 509,
         "contentType": "image/svg+xml",
         "digest": "sha256:e364d0c19c6d370a08b628540880548a8935c49365e02664e93dedaea96bb861",
@@ -986,6 +993,7 @@
       "homepage": "https://github.com/microsoft/azure-sql-database-container",
       "icon": {
         "asset": "icon-e3f4b7baefb22b89684c247a819e073b.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-e3f4b7baefb22b89684c247a819e073b.svg",
         "bytes": 2592,
         "contentType": "image/svg+xml",
         "digest": "sha256:e3f4b7baefb22b89684c247a819e073b85c79c99b72065e5ca15925c82cfd8ef",
@@ -1088,6 +1096,7 @@
       "homepage": "https://docs.bigdata.com/",
       "icon": {
         "asset": "icon-ff5f5c933aaaea83325fba4d01e0dd64.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-ff5f5c933aaaea83325fba4d01e0dd64.svg",
         "bytes": 3278,
         "contentType": "image/svg+xml",
         "digest": "sha256:ff5f5c933aaaea83325fba4d01e0dd64679df139b6ac3e2e5bef76c72ad7e162",
@@ -1191,6 +1200,7 @@
       "displayName": "build-web-data-visualization",
       "icon": {
         "asset": "icon-98cb142b8fcff83824dd96eb86b66796.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-98cb142b8fcff83824dd96eb86b66796.svg",
         "bytes": 969,
         "contentType": "image/svg+xml",
         "digest": "sha256:98cb142b8fcff83824dd96eb86b66796546b583099947a1dd85588e3ab586a72",
@@ -1292,6 +1302,7 @@
       "homepage": "https://clickhouse.com/",
       "icon": {
         "asset": "icon-e80d52cd3a4a3c908cb0ae8d67962667.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-e80d52cd3a4a3c908cb0ae8d67962667.png",
         "bytes": 1734,
         "contentType": "image/png",
         "digest": "sha256:e80d52cd3a4a3c908cb0ae8d67962667badce26e8574f4ab091fa050f6e13e18",
@@ -1473,6 +1484,7 @@
       "homepage": "https://cloud.google.com/sql",
       "icon": {
         "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-a332b54b620a2fa04413561c01c925cd.png",
         "bytes": 9447,
         "contentType": "image/png",
         "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
@@ -1861,6 +1873,7 @@
       "displayName": "data-analytics",
       "icon": {
         "asset": "icon-9705cd36b7eba1c63514ef9676c60ff3.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-9705cd36b7eba1c63514ef9676c60ff3.svg",
         "bytes": 724,
         "contentType": "image/svg+xml",
         "digest": "sha256:9705cd36b7eba1c63514ef9676c60ff3d125d25cbc380c3d6c3082f0c73051a4",
@@ -2148,6 +2161,7 @@
       "homepage": "https://github.com/microsoft/Dataverse-skills",
       "icon": {
         "asset": "icon-df71c0111148d116515a02c5cb07483c.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-df71c0111148d116515a02c5cb07483c.svg",
         "bytes": 5067,
         "contentType": "image/svg+xml",
         "digest": "sha256:df71c0111148d116515a02c5cb07483caad2bcb779664fa16fd837a4709504ab",
@@ -2242,6 +2256,7 @@
       "homepage": "https://duckdb.org/",
       "icon": {
         "asset": "icon-39395cbfe086812dc2584ecf763926c6.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-39395cbfe086812dc2584ecf763926c6.png",
         "bytes": 4623,
         "contentType": "image/png",
         "digest": "sha256:39395cbfe086812dc2584ecf763926c6da0497dd090fa4d4db886d7cbaa3d434",
@@ -2741,6 +2756,7 @@
       "displayName": "mixpanel-headless",
       "icon": {
         "asset": "icon-3ebcb85818875354ca119b5651b1eee0.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-3ebcb85818875354ca119b5651b1eee0.png",
         "bytes": 10093,
         "contentType": "image/png",
         "digest": "sha256:3ebcb85818875354ca119b5651b1eee0467fa50d3ddf4243104dada9381ed8c2",
@@ -2834,6 +2850,7 @@
       "homepage": "https://www.mongodb.com/docs/mcp-server/overview/",
       "icon": {
         "asset": "icon-e70217b2e33d57aad2d85c96a4fa73a1.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-e70217b2e33d57aad2d85c96a4fa73a1.png",
         "bytes": 18214,
         "contentType": "image/png",
         "digest": "sha256:e70217b2e33d57aad2d85c96a4fa73a1a97faa2aaf010e89c2b057cc08e78565",
@@ -2923,6 +2940,7 @@
       "homepage": "https://www.mongodb.com/docs/mcp-server/get-started/",
       "icon": {
         "asset": "icon-e70217b2e33d57aad2d85c96a4fa73a1.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-e70217b2e33d57aad2d85c96a4fa73a1.png",
         "bytes": 18214,
         "contentType": "image/png",
         "digest": "sha256:e70217b2e33d57aad2d85c96a4fa73a1a97faa2aaf010e89c2b057cc08e78565",
@@ -3197,6 +3215,7 @@
       "homepage": "https://planetscale.com/",
       "icon": {
         "asset": "icon-2bc73ee98cff43e3ab4d82aa2cc61f01.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-2bc73ee98cff43e3ab4d82aa2cc61f01.png",
         "bytes": 711,
         "contentType": "image/png",
         "digest": "sha256:2bc73ee98cff43e3ab4d82aa2cc61f01b220dc3647cd7032e0dba827b3d22908",
@@ -3299,6 +3318,7 @@
       "homepage": "https://posthog.com/docs/model-context-protocol",
       "icon": {
         "asset": "icon-a8963a893a3abfc498abe278d321649e.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-a8963a893a3abfc498abe278d321649e.svg",
         "bytes": 3010,
         "contentType": "image/svg+xml",
         "digest": "sha256:a8963a893a3abfc498abe278d321649ecf96c46fb89f28bb9120214a8544e0e8",
@@ -3411,6 +3431,7 @@
       "homepage": "https://skills.qdrant.tech/",
       "icon": {
         "asset": "icon-42d52b9abd4b903268aa5d6b143d4b6a.ico",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-42d52b9abd4b903268aa5d6b143d4b6a.ico",
         "bytes": 15086,
         "contentType": "image/x-icon",
         "digest": "sha256:42d52b9abd4b903268aa5d6b143d4b6a85eaee07d99133d4eec7433c99821cf0",
@@ -3506,6 +3527,7 @@
       "homepage": "https://redis.io/",
       "icon": {
         "asset": "icon-9b2be11cf01d51a73b612a40f952576e.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-9b2be11cf01d51a73b612a40f952576e.png",
         "bytes": 21458,
         "contentType": "image/png",
         "digest": "sha256:9b2be11cf01d51a73b612a40f952576e75b8cc3099f01608796bcf7e68a73de7",
@@ -3752,6 +3774,7 @@
       "homepage": "https://villagesql.com/",
       "icon": {
         "asset": "icon-776aec16beef775f56b9ad38b780cbac.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-776aec16beef775f56b9ad38b780cbac.svg",
         "bytes": 1417,
         "contentType": "image/svg+xml",
         "digest": "sha256:776aec16beef775f56b9ad38b780cbacb1d75ee8893112847765e6aa881b5001",
@@ -3841,6 +3864,7 @@
       "homepage": "https://docs.zilliz.com/",
       "icon": {
         "asset": "icon-8d7deb7f7224deaaf4129368695c8bac.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-8d7deb7f7224deaaf4129368695c8bac.svg",
         "bytes": 1276,
         "contentType": "image/svg+xml",
         "digest": "sha256:8d7deb7f7224deaaf4129368695c8bacb4e4edebfdc724aa66c852088b1d7ce8",
