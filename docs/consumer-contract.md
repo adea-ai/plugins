@@ -50,6 +50,11 @@ Adea is a read-only catalog consumer. It may use the summary, categories,
 search text, product grouping, icons, source badges, compatibility, and update
 state for browsing.
 
+Catalog JSON is served through Control Plane; brand-mark bytes are served from
+an immutable, content-addressed asset base, substituted per deployment. The
+[fetch patterns](consumer-fetch-patterns.md#who-serves-what) document which
+surface answers which request and why.
+
 `categories.v1.json` is the browsing index and is already deduplicated, ranked
 and sorted. It carries the category list, each category's display order and
 curated `topProductKeys` shelf, the shard artifact names to fetch for records,

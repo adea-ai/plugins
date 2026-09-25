@@ -103,6 +103,57 @@ on a monogram. That list is the curation worklist:
 An `https://` value names the vendor site to discover the mark from, a relative
 path forces a file inside the plugin content, and `null` keeps the monogram.
 
+## Who serves what
+
+Two different questions, two different answers — and the answer is a
+configuration value, not client code.
+
+**Catalog JSON (navigation, shards, index, catalog) is served by Control Plane.**
+It already fetches and verifies the release server-side, it is the surface that
+enforces policy before an install, and it keeps working unchanged if this
+repository becomes private. Adding the shards to that surface is additive: the
+same artifacts, the same digests, proxied.
+
+**Brand-mark bytes are served from an immutable asset base, not proxied per
+request.** Icons are numerous, small, binary and content-addressed, which is the
+shape a cache serves well and an API proxy serves badly: routing 274 binary files
+through the verified-JSON path would add latency and egress without adding a
+security decision the compile-time gate has not already made.
+
+To keep that a deployment decision rather than hardcoded client logic, product
+records carry an absolute, immutable URL in `icon.assetUrl`, composed at build
+time from `config/publication.json`:
+
+```
+https://github.com/<owner>/<repo>/releases/download/catalog/<catalogId-suffix>/<icon.asset>
+```
+
+A client renders `icon.assetUrl` and never composes a URL itself. A deployment
+that hosts assets elsewhere substitutes its base in that config, and every
+record then points at the substitute. `icon.asset` and `icon.digest` remain in
+the record, so a client can resolve a different base or verify what it stored.
+
+An unpublished build (`sync --offline`) advertises no `assetUrl` rather than a
+URL that would not resolve.
+
+### Private repository deployments
+
+The published assets are public today, so no signature is involved and the URLs
+are cacheable forever. If this repository becomes private, the contract's rule
+applies — browser clients must not fetch GitHub directly — and the deployment
+substitutes one of:
+
+- **Control Plane proxies the bytes**, with its own cache in front. Simplest, and
+  the client contract does not change at all.
+- **A signed read-only asset endpoint**, where signatures are **catalog-scoped,
+  not per-request** (the path already identifies immutable content). Signing each
+  request individually would make every icon uncacheable, which is worse than the
+  proxy for no gain.
+
+Both are substitutions of the `publication.json` base. Neither requires a client
+change, which is why the build publishes URLs instead of leaving them to be
+constructed.
+
 ## Caching
 
 Catalog releases are immutable and their tag is derived from `catalogId`

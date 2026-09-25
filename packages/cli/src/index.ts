@@ -113,6 +113,11 @@ async function syncCommand(flags: Flags): Promise<number> {
     // Marks are staged as the catalog is built, so publication never re-fetches
     // a brand source and a site icon cannot drift after it is resolved.
     iconAssetsDirectory: assetsDirectory(flags),
+    // An offline build replays fixtures that are never published, so it must not
+    // advertise release URLs for them.
+    ...(config.publicationRepositoryUrl && !flags.offline
+      ? { publicationRepositoryUrl: config.publicationRepositoryUrl }
+      : {}),
     policy: config.policy,
     mode: flags.offline ? 'offline' : 'live',
     fixtureRoot: flags.fixtureRoot
@@ -402,6 +407,7 @@ async function loadConfiguration(root: string): Promise<{
   topCount?: number
   productPreference?: ProductPreference
   productIconOverrides?: ProductIconOverrides
+  publicationRepositoryUrl?: string
   policy: CatalogPolicy
 }> {
   const configDirectory = join(root, 'config')
@@ -414,6 +420,7 @@ async function loadConfiguration(root: string): Promise<{
     leading,
     productPreference,
     productIconOverrides,
+    publication,
   ] = await Promise.all([
     readJson<{ sources: SourceConfig[] }>(join(configDirectory, 'sources.json')),
     readJson<CategoryMap>(join(configDirectory, 'category-map.json')),
@@ -428,6 +435,7 @@ async function loadConfiguration(root: string): Promise<{
     ),
     readOptionalJson<unknown>(join(configDirectory, 'product-preference.json')),
     readOptionalJson<unknown>(join(configDirectory, 'product-icons.json')),
+    readOptionalJson<{ repositoryUrl?: unknown }>(join(configDirectory, 'publication.json')),
   ])
   return {
     sources: sources.sources,
@@ -442,6 +450,9 @@ async function loadConfiguration(root: string): Promise<{
       : {}),
     ...(productIconOverrides !== undefined
       ? { productIconOverrides: parseProductIconOverrides(productIconOverrides) }
+      : {}),
+    ...(publication && typeof publication.repositoryUrl === 'string'
+      ? { publicationRepositoryUrl: publication.repositoryUrl }
       : {}),
     policy,
   }

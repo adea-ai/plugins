@@ -39,6 +39,26 @@ export function createPublicationPlan(input: {
   }
 }
 
+/**
+ * Immutable URL for one release asset of a catalog.
+ *
+ * The tag is derived from the catalog identity, so this URL never changes for a
+ * given catalog and can be cached forever. Deployments that cannot serve the
+ * release host directly publish the same asset names behind their own base and
+ * substitute it here.
+ */
+export function immutableAssetUrl(
+  repositoryUrl: string,
+  catalogId: string,
+  assetName: string
+): string {
+  const match = /^catalog:([a-f0-9]{64})$/.exec(catalogId)
+  if (!match) throw new Error(`CATALOG_ID_INVALID: ${catalogId}`)
+  if (!/^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$/.test(assetName))
+    throw new Error(`ASSET_NAME_INVALID: ${assetName}`)
+  return `https://github.com/${repositorySlug(repositoryUrl)}/releases/download/catalog/${match[1]}/${assetName}`
+}
+
 function repositorySlug(repositoryUrl: string): string {
   let parsed: URL
   try {
