@@ -158,4 +158,27 @@ describe('release asset audit', () => {
     expect(audit.blocked).toContain('immutable')
     expect(audit.blocked).toContain('new catalog identity')
   })
+
+  test('a declared asset this build cannot stage is never taken on its word', () => {
+    const audit = auditReleaseAssets({
+      catalogId,
+      releaseTag,
+      releaseIsDraft: true,
+      releaseAssets: [
+        { name: 'catalog.v1.json', digest: catalogAsset.digest, bytes: 10 },
+        { name: 'icon-unstaged.png', digest: `sha256:${'5'.repeat(64)}`, bytes: 5 },
+      ],
+      declared: [
+        catalogAsset,
+        { name: 'icon-unstaged.png', digest: `sha256:${'5'.repeat(64)}`, bytes: 5 },
+      ],
+      unstaged: ['icon-unstaged.png'],
+    })
+    expect(audit.unstaged).toEqual(['icon-unstaged.png'])
+    expect(audit.agrees).toBe(false)
+    // Nothing to re-upload: the bytes are not in this checkout.
+    expect(audit.upload).toEqual([])
+    expect(audit.blocked).toContain('no staged bytes')
+    expect(audit.blocked).toContain('mirror-icons')
+  })
 })

@@ -171,6 +171,14 @@ jobs:
           tag="$RELEASE_TAG"
           latest_asset="$RUNNER_TEMP/catalog-latest.v1.json"
           cp generated/catalog.v1.json "$latest_asset"
+          # Refuse before anything is created, edited or promoted: a published
+          # release cannot be repaired in place, and a checkout that cannot
+          # supply the declared bytes cannot build a release from them either.
+          blocked=$(audit_field blocked)
+          if [ -n "$blocked" ]; then
+            echo "$blocked" >&2
+            exit 1
+          fi
           if ! gh release view "$tag" >/dev/null 2>&1; then
             gh release create "$tag" \
               $(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); process.stdout.write([...Object.keys(i.files),'integrity.json'].map(n=>'generated/'+n).join(' '))") \
@@ -185,14 +193,6 @@ jobs:
             release_is_immutable=$(gh release view "$tag" --json isImmutable --jq '.isImmutable')
             if [ "$release_is_draft" != true ] && [ "$release_is_immutable" != true ]; then
               echo "Published release $tag is not immutable; refusing to mutate it. Remove the invalid release and rerun bootstrap." >&2
-              exit 1
-            fi
-            # A published release is immutable, so a disagreement the audit
-            # found there cannot be repaired in place. Stop instead of
-            # promoting a release that would advertise bytes it does not hold.
-            blocked=$(audit_field blocked)
-            if [ -n "$blocked" ]; then
-              echo "$blocked" >&2
               exit 1
             fi
             # A draft is editable, so every asset the audit found missing,

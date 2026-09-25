@@ -31,18 +31,28 @@ const integrity = JSON.parse(
   await fs.readFile(join(artifactsDirectory, 'integrity.json'), 'utf8')
 ) as { files?: Record<string, string>; assets?: PublishedAsset[] }
 
-async function declare(name: string, path: string): Promise<DeclaredAsset> {
+const declared: DeclaredAsset[] = []
+const unstaged: string[] = []
+// A declared asset this checkout cannot supply is reported, not thrown: the
+// release can never be called complete against a declaration alone, and the
+// remedy (staging the marks) is the operator's to run.
+const stage = async (name: string, path: string, kind: 'file' | 'asset'): Promise<void> => {
   const bytes = await fs.readFile(path).catch(() => undefined)
-  if (bytes === undefined) throw new Error(`DECLARED_ASSET_MISSING: ${path}`)
-  return { name, digest: byteDigest(bytes), bytes: bytes.byteLength }
+  if (bytes === undefined) {
+    if (kind === 'asset') {
+      unstaged.push(name)
+      return
+    }
+    throw new Error(`DECLARED_ASSET_MISSING: ${path}`)
+  }
+  declared.push({ name, digest: byteDigest(bytes), bytes: bytes.byteLength })
 }
 
-const declared: DeclaredAsset[] = []
 for (const name of Object.keys(integrity.files ?? {}))
-  declared.push(await declare(name, join(artifactsDirectory, name)))
-declared.push(await declare('integrity.json', join(artifactsDirectory, 'integrity.json')))
+  await stage(name, join(artifactsDirectory, name), 'file')
+await stage('integrity.json', join(artifactsDirectory, 'integrity.json'), 'file')
 for (const asset of integrity.assets ?? [])
-  declared.push(await declare(asset.name, join(assetsDirectory, asset.name)))
+  await stage(asset.name, join(assetsDirectory, asset.name), 'asset')
 // The latest pointer is published as a copy of the catalog, so the release can
 // only be consistent when that asset's bytes are the catalog's bytes.
 const catalog = declared.find((asset) => asset.name === 'catalog.v1.json')
@@ -75,6 +85,7 @@ const audit = auditReleaseAssets({
   ...(releaseState.isDraft === undefined ? {} : { releaseIsDraft: releaseState.isDraft === true }),
   ...(releaseAssets === undefined ? {} : { releaseAssets }),
   declared,
+  ...(unstaged.length === 0 ? {} : { unstaged }),
 })
 console.log(
   JSON.stringify({ ok: audit.blocked === undefined, catalogId, releaseTag, ...audit }, null, 2)
