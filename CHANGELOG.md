@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.19](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.18...plugins-marketplace-v1.10.19) (2026-09-25)
+
+
+### Maintenance
+
+* **deps:** bump actions/setup-node ([#64](https://github.com/adea-ai/plugins/issues/64)) ([3b56d39](https://github.com/adea-ai/plugins/commit/3b56d393216564a25e8aba2732f819053f4fdf09))
+
 ## [1.10.18](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.17...plugins-marketplace-v1.10.18) (2026-09-25)
 
 
