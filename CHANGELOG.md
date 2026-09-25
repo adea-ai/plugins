@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.17](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.16...plugins-marketplace-v1.10.17) (2026-09-25)
+
+
+### Bug Fixes
+
+* **catalog:** read domain-style names as domains ([#141](https://github.com/adea-ai/plugins/issues/141)) ([7c4e2f7](https://github.com/adea-ai/plugins/commit/7c4e2f771aea1e651657eb8ff882b425800a8368))
+
 ## [1.10.16](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.15...plugins-marketplace-v1.10.16) (2026-09-25)
 
 
