@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.8](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.7...plugins-marketplace-v1.10.8) (2026-09-25)
+
+
+### Bug Fixes
+
+* **catalog:** refuse to judge a release from an incomplete checkout ([#123](https://github.com/adea-ai/plugins/issues/123)) ([1c8c69e](https://github.com/adea-ai/plugins/commit/1c8c69e765c29fc6c0f48e60b9e283f9e76a8e03))
+
 ## [1.10.7](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.6...plugins-marketplace-v1.10.7) (2026-09-25)
 
 
