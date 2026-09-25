@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/adea-ai/plugins/compare/catalog-core-v1.8.0...catalog-core-v1.9.0) (2026-09-25)
+
+
+### Features
+
+* **catalog:** make the product index install-complete ([#104](https://github.com/adea-ai/plugins/issues/104)) ([740e718](https://github.com/adea-ai/plugins/commit/740e718414a714fb210fff76d274f7f679578a73))
+
 ## [1.8.0](https://github.com/adea-ai/plugins/compare/catalog-core-v1.7.0...catalog-core-v1.8.0) (2026-09-25)
 
 
