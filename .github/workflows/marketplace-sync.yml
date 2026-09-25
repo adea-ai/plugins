@@ -65,30 +65,6 @@ jobs:
           # published from a checkout that has no staged assets.
           bun packages/cli/src/index.ts verify-assets --json \
             | tee "$RUNNER_TEMP/catalog-icon-report.json"
-      - name: Publish browser assets
-        if: inputs['bootstrap-only'] != true
-        env:
-          SYNC_TOKEN: ${{ secrets.CATALOG_SYNC_TOKEN }}
-        run: |
-          set -euo pipefail
-          # A browser cannot read a release asset, so the marks and the index are
-          # pushed to a branch of their own and served from raw.githubusercontent,
-          # where they are CORS-enabled and cacheable. Pushing here, not through
-          # the snapshot pull request, keeps the URLs valid the moment a release
-          # advertises them instead of waiting on a merge.
-          test -d catalog-assets || { echo 'no staged assets to publish' >&2; exit 0; }
-          worktree="$(mktemp -d)"
-          git worktree add --detach "$worktree" >/dev/null
-          find "$worktree" -mindepth 1 -maxdepth 1 -not -name .git -exec rm -rf {} +
-          cp -R catalog-assets/. "$worktree/"
-          cd "$worktree"
-          git add -A
-          git -c user.name='github-actions[bot]' \
-              -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
-              commit -m "chore(catalog): publish browser assets" >/dev/null
-          git push --force \
-            "https://x-access-token:${SYNC_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
-            HEAD:refs/heads/catalog-assets
       - name: Determine publication
         id: publication
         env:
@@ -258,33 +234,100 @@ jobs:
           cmp "$release_dir/catalog.v1.json" "$release_dir/catalog-latest.v1.json"
           test "$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" --jq '.tag_name')" = "$tag"
           test "$(gh release view "$tag" --json isImmutable --jq '.isImmutable')" = true
+      - name: Publish browser assets
+        if: inputs['bootstrap-only'] != true
+        env:
+          SYNC_TOKEN: ${{ secrets.CATALOG_SYNC_TOKEN }}
+        run: |
+          set -euo pipefail
+          # A browser cannot read a release asset, so the marks and the index are
+          # pushed to a branch of their own and served from raw.githubusercontent,
+          # where they are CORS-enabled and cacheable. Pushing here, not through
+          # the snapshot pull request, keeps the URLs valid the moment a release
+          # advertises them instead of waiting on a merge.
+          #
+          # This runs after the publication gate on purpose: the branch is what a
+          # browser is told to fetch, so it must not advertise an artifact set
+          # whose release has not been verified. The bytes pushed are the same
+          # staged ones the gate just downloaded and re-hashed.
+          test -d catalog-assets || { echo 'no staged assets to publish' >&2; exit 0; }
+          worktree="$(mktemp -d)"
+          git worktree add --detach "$worktree" >/dev/null
+          find "$worktree" -mindepth 1 -maxdepth 1 -not -name .git -exec rm -rf {} +
+          cp -R catalog-assets/. "$worktree/"
+          cd "$worktree"
+          git add -A
+          git -c user.name='github-actions[bot]' \
+              -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+              commit -m "chore(catalog): publish browser assets" >/dev/null
+          git push --force \
+            "https://x-access-token:${SYNC_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            HEAD:refs/heads/catalog-assets
       - name: Open catalog snapshot pull request
         id: commit
         env:
           SYNC_TOKEN: ${{ secrets.CATALOG_SYNC_TOKEN }}
         run: |
+          set -euo pipefail
+          branch='chore/catalog-snapshot'
           changed=$(node -e "const fs=require('fs'); const r=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/catalog-change-report.json','utf8')); process.stdout.write(String(r.changed === true))")
-          if [ "$changed" != "true" ]; then
-            echo 'No source changed; generated catalog remains untouched.'
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
           if [ -z "$SYNC_TOKEN" ]; then
             echo 'CATALOG_SYNC_TOKEN is not configured. Create a fine-grained PAT'
             echo '(Contents: read/write, Pull requests: read/write on adea-ai/plugins)'
             echo 'and store it as the CATALOG_SYNC_TOKEN repository secret.' >&2
-            exit 1
+            if [ "$changed" = "true" ]; then exit 1; fi
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # NOTE: push, PR creation and the ready transition MUST use
+          # CATALOG_SYNC_TOKEN (a PAT), not GITHUB_TOKEN: events triggered by
+          # GITHUB_TOKEN do not start new workflow runs, so a GITHUB_TOKEN-authored
+          # pull request would never get its required checks, and a
+          # GITHUB_TOKEN-driven ready transition would never start Marketplace CI.
+          export GH_TOKEN="$SYNC_TOKEN"
+          # Main requires an up-to-date head before a pull request can merge, and
+          # this job commits the snapshot on top of the main it checked out at the
+          # start of a ~20 minute run. Anything that lands meanwhile -- a Release
+          # Please merge, another pull request -- leaves the branch BEHIND with
+          # every check green and auto-merge armed, so nothing reports an error
+          # and the snapshot simply never lands. Merging main in is the fix, and
+          # it moves the head, which invalidates the required `checks` context
+          # that only a ready_for_review transition produces.
+          converge() {
+            gh api --method PUT \
+              "repos/${GITHUB_REPOSITORY}/pulls/$1/update-branch" >/dev/null 2>&1
+          }
+          # Marketplace CI runs only on the ready_for_review transition, so a pull
+          # request created as ready -- or a fresh head on one that is already
+          # ready -- never reports the required `checks` context and the
+          # auto-merge waits forever. A draft->ready cycle fires exactly one
+          # transition for the current head. Auto-merge then lands it once the
+          # checks pass; a red snapshot stays open for inspection instead.
+          arm() {
+            if [ "$(gh pr view "$1" --json isDraft --jq '.isDraft')" != "true" ]; then
+              gh pr ready --undo "$1"
+            fi
+            gh pr ready "$1"
+            gh pr merge "$1" --squash --auto
+          }
+          existing=$(gh pr list --head "$branch" --base main --state open --json number --jq '.[0].number // empty')
+          if [ "$changed" != "true" ]; then
+            echo 'No source changed; generated catalog remains untouched.'
+            # An untouched catalog still leaves a stalled snapshot behind, so a
+            # pull request that main has moved past is brought up to date and
+            # re-armed rather than waiting for the next real refresh.
+            if [ -n "$existing" ] && converge "$existing"; then
+              echo "merged main into pull request #${existing}."
+              arm "$existing"
+            fi
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
           # Branch protection on main forbids direct pushes (code-foundry
           # direct workflow: every change lands via PR + required checks).
           # Publish the snapshot on a bot-owned branch and open or update a
           # pull request instead. Review Policy auto-passes bot authors and
           # Validation + Marketplace CI gate the merge, so nothing blocks.
-          # NOTE: push and PR creation MUST use CATALOG_SYNC_TOKEN (a PAT),
-          # not GITHUB_TOKEN: events triggered by GITHUB_TOKEN do not start
-          # new workflow runs, so a GITHUB_TOKEN-authored PR would never get
-          # its required checks and could never merge.
-          branch='chore/catalog-snapshot'
           catalog_id=$(node -e "const fs=require('fs'); const c=JSON.parse(fs.readFileSync('generated/catalog.v1.json','utf8')); process.stdout.write(c.catalogId)")
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -293,25 +336,14 @@ jobs:
           git commit -m "chore(catalog): refresh marketplace snapshot ${catalog_id}"
           git push --force origin "HEAD:${branch}"
           body="Automated marketplace snapshot refresh for ${catalog_id}. Merge with squash once Validation, Review Policy, and Marketplace CI pass."
-          export GH_TOKEN="$SYNC_TOKEN"
-          existing=$(gh pr list --head "$branch" --base main --state open --json number --jq '.[0].number // empty')
           if [ -z "$existing" ]; then
             gh pr create --draft --base main --head "$branch" --title "chore(catalog): refresh marketplace snapshot" --body "$body"
             existing=$(gh pr list --head "$branch" --base main --state open --json number --jq '.[0].number // empty')
           else
             echo "Updated existing pull request #${existing}."
           fi
-          # Marketplace CI runs only on the ready_for_review transition, so a
-          # pull request created as ready -- or a fresh push onto one that is
-          # already ready -- never reports the required `checks` context, and
-          # the auto-merge below waits forever. Toggling to draft and back
-          # guarantees exactly one ready_for_review per refresh, whether the
-          # pull request was just created, reopened, or force-pushed.
-          if [ "$(gh pr view "$existing" --json isDraft --jq '.isDraft')" != "true" ]; then
-            gh pr ready --undo "$existing"
+          if converge "$existing"; then
+            echo "merged main into pull request #${existing}."
           fi
-          gh pr ready "$existing"
-          # Land without human action once required checks pass; a red
-          # snapshot stays open for inspection instead.
-          gh pr merge "$existing" --squash --auto
+          arm "$existing"
           echo "changed=true" >> "$GITHUB_OUTPUT"
