@@ -60,7 +60,7 @@ import { immutableAssetUrl } from './publication.js'
  * the agent-package normalizer version, which describes package normalization
  * and would misreport a change here.
  */
-export const CATALOG_CONTRACT_VERSION = 'adea-catalog/1'
+export const CATALOG_CONTRACT_VERSION = 'adea-catalog/2'
 
 export interface CatalogPolicy {
   readonly allowedRepositoryProtocols: readonly string[]

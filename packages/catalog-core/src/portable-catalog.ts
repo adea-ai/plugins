@@ -134,6 +134,13 @@ export async function synchronizePortable(options: SyncInput): Promise<SyncResul
     ...(options.leading ? { leading: options.leading } : {}),
     ...(options.topCount !== undefined ? { topCount: options.topCount } : {}),
     ...(options.productPreference ? { productPreference: options.productPreference } : {}),
+    // Without this the shipped artifacts cannot advertise where they are
+    // published, so brand marks and the browsing index lose their URLs. This
+    // path replaces the artifacts the legacy compiler already produced, which is
+    // why it must repeat every option it needs.
+    ...(options.publicationRepositoryUrl
+      ? { publicationRepositoryUrl: options.publicationRepositoryUrl }
+      : {}),
     curationDiagnostics: (options.mode ?? 'live') !== 'offline',
   })
   verifyArtifacts(artifacts)
