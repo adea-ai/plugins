@@ -1,0 +1,892 @@
+{
+  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "category": "creativity",
+  "pluginCount": 23,
+  "productCount": 18,
+  "products": [
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Bring your Canva design workflow into Codex and create, refine, and review designs through natural conversation.\nAvailable skills:\nResize for social media: Adapt a design for Facebook, Instagram, and LinkedIn in one step.\nBulk create: Generate multiple designs from spreadsheet data using a brand template.\nEdit designs: Update text, media, and formatting, or reposition and resize elements.\nGet design feedback: Receive structured feedback on visual hierarchy, layout, readability, consistency, and accessibility.\nImplement feedback: Review comment threads and apply clear, actionable changes.\nBrand check: Check colors, fonts, logo usage, and copy against your Brand Kit.\nOnce installed, describe what you want in plain language or invoke Canva directly with @Canva.\nTry prompts like:\n- @Canva, resize this design for social media.\n- @Canva, create designs from this spreadsheet using my brand template.\n- @Canva, update the headline in this design.\n- @Canva, review this design’s visual hierarchy and readability.\n- @Canva, implement the feedback in the comment threads.\n- @Canva, check this design against my Brand Kit.\n\nRequirements: Connect your Canva account to use the plugin. Bulk Create requires an eligible Canva Enterprise plan.\n\nWant to take a more hands-on approach? Instantly open your design in Canva’s powerful editor for the final touches.",
+      "displayName": "canva",
+      "icon": {
+        "asset": "icon-afb54276bf45167125048872621a1415.png",
+        "bytes": 44919,
+        "contentType": "image/png",
+        "digest": "sha256:afb54276bf45167125048872621a14156c03034484519d81b5160cb73c2d7c20",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "canva",
+        "creativity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 45,
+        "text": "CA"
+      },
+      "pluginId": "plugin:openai-official:canva",
+      "primaryCategory": "creativity",
+      "productKey": "canva",
+      "releaseId": "release:3654229f7f82f7977cab4fb452dda5993cc20cd1832f13ee12f111af6eeb1123",
+      "sourceId": "openai-official",
+      "upstreamName": "canva",
+      "variantPluginIds": [
+        "plugin:openai-official:canva"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Secure access to Miro boards. Enables AI to read board context, create diagrams, and generate code with enterprise-grade security.",
+      "displayName": "Miro",
+      "homepage": "https://miro.com/",
+      "icon": {
+        "asset": "icon-6d1a97e6922fee40efab035b669d1feb.png",
+        "bytes": 1273,
+        "contentType": "image/png",
+        "digest": "sha256:6d1a97e6922fee40efab035b669d1feb74d54074721b968321183a715213b605",
+        "homepage": "https://miro.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://framerusercontent.com/images/6FBG66PBxjV2QFaDfIdUi5mi9A.png"
+      },
+      "keywords": [
+        "creativity",
+        "miro"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 306,
+        "text": "MI"
+      },
+      "pluginId": "plugin:claude-official:miro",
+      "primaryCategory": "creativity",
+      "productKey": "miro",
+      "releaseId": "release:1034a4f459b1e468b1f6d429bcbe9e63643e0760c6a68a6cf5fa35d2a0400454",
+      "sourceId": "claude-official",
+      "upstreamName": "miro",
+      "variantPluginIds": [
+        "plugin:claude-official:miro",
+        "plugin:knowledge-work-official:miro"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Draw and export hand-drawn diagrams from chat.",
+      "displayName": "Excalidraw",
+      "icon": {
+        "asset": "icon-b5eeb6a49ccb830198bb6668a331c265.png",
+        "bytes": 8049,
+        "contentType": "image/png",
+        "digest": "sha256:b5eeb6a49ccb830198bb6668a331c2659ed4b9698a67cab46dde257504d9cb57",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "creativity",
+        "excalidraw"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 147,
+        "text": "EX"
+      },
+      "pluginId": "plugin:cursor-official:excalidraw",
+      "primaryCategory": "creativity",
+      "productKey": "excalidraw",
+      "releaseId": "release:2bc0fd09d63d3e827dc98e90dfd0d14ca8da859b4ceb6b2f0a00a6ef42236438",
+      "sourceId": "cursor-official",
+      "upstreamName": "excalidraw",
+      "variantPluginIds": [
+        "plugin:cursor-official:excalidraw"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Generate presentations, documents, and webpages.",
+      "displayName": "Gamma",
+      "icon": {
+        "asset": "icon-efe7c0b3b1cec588bd074ea7cca68e28.png",
+        "bytes": 18847,
+        "contentType": "image/png",
+        "digest": "sha256:efe7c0b3b1cec588bd074ea7cca68e2812515d8dacfd0ce90e42d14ec183f484",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "creativity",
+        "gamma"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 9,
+        "text": "GA"
+      },
+      "pluginId": "plugin:cursor-official:gamma",
+      "primaryCategory": "creativity",
+      "productKey": "gamma",
+      "releaseId": "release:3838c044707fca972130cad1970bcfbf828d6da9f3d1b9da7fdcf3f46a627983",
+      "sourceId": "cursor-official",
+      "upstreamName": "gamma",
+      "variantPluginIds": [
+        "plugin:cursor-official:gamma"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 3
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Use Cloudinary directly in Claude. Manage assets, apply transformations, optimize media, and more through natural conversation.",
+      "displayName": "Cloudinary",
+      "homepage": "https://cloudinary.com/documentation",
+      "icon": {
+        "asset": "icon-c8883c41e2a4249e8ada891ee32b630e.svg",
+        "bytes": 2036,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:c8883c41e2a4249e8ada891ee32b630e357027ab92a26a2dba223a029403bc10",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "cloudinary",
+        "creativity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 216,
+        "text": "CL"
+      },
+      "pluginId": "plugin:claude-official:cloudinary",
+      "primaryCategory": "creativity",
+      "productKey": "cloudinary",
+      "releaseId": "release:ea6373293c731789598618668c9e13dc22e2feb72d8a2ff28ad7b1e468a2678b",
+      "sourceId": "claude-official",
+      "upstreamName": "cloudinary",
+      "variantPluginIds": [
+        "plugin:claude-official:cloudinary",
+        "plugin:knowledge-work-official:cloudinary"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "agent": 6,
+        "skill": 6
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Adobe unlocks more ways to create and get work done from the conversation. Previously available as Photoshop, the Adobe connector now brings creativity and productivity capabilities across Creative Cloud and Acrobat. Describe what you want to make or change, and Adobe can help turn ideas, images, videos, and documents into polished outputs — from editing photos and creating PDFs to designing social assets, resizing videos, searching Creative Cloud assets, and generating data-driven documents.\nKey capabilities:\n\n* Retouch portraits or edit photos in bulk: Drop in photos and describe the look you want — adjust color, lighting, and tone; remove distractions and generate new elements; apply Lightroom presets; remove backgrounds; blur, crop, resize, and expand images.\n* Design from template: Start from an Express template, update text and colors, and then animate for social media or convert to PDF.\n* Refine video for any platform: Upload a horizontal clip and ask to reformat it for YouTube Shorts, Instagram Reels, or any platform. You can also stitch clips into a single sequence.\n* Search and organize creative work: Describe what you're looking for and surface assets from your Creative Cloud library — by subject, style, mood, or content — without browsing folders.\n* Work with PDFs and documents: Create and convert polished PDFs and documents.\n* Create data-driven documents: Describe your output and provide your data — the connector turns raw data or content into formatted, shareable PDFs, including badges, cards, catalogs, and more.\n\nYou can get started as a guest, and sign in with your Adobe account for more capabilities and tools, Creative Cloud storage, and saved work across sessions.",
+      "displayName": "adobe",
+      "icon": {
+        "asset": "icon-1c585a9a56315edec99a2655c3b404fd.svg",
+        "bytes": 488,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:1c585a9a56315edec99a2655c3b404fd66d50e75f45d2d75b769b8119b3872fb",
+        "homepage": null,
+        "kind": "content",
+        "path": "skills/adobe-edit-quick-cut/assets/icon-large.svg",
+        "url": null
+      },
+      "keywords": [
+        "adobe",
+        "creativity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 327,
+        "text": "AD"
+      },
+      "pluginId": "plugin:openai-official:adobe",
+      "primaryCategory": "creativity",
+      "productKey": "adobe",
+      "releaseId": "release:48cb11697c76099504a2ceac8becfce2124fd6ae90c7d5a7a1e8c7c2edf7a3ff",
+      "sourceId": "openai-official",
+      "upstreamName": "adobe",
+      "variantPluginIds": [
+        "plugin:openai-official:adobe"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Harness Adobe's creative AI-powered tools to edit images, automate design workflows, and bring creative visions to life — from background removal to vectorization and professional retouching.",
+      "displayName": "Adobe",
+      "homepage": "https://github.com/adobe/skills/tree/main/plugins/creative-cloud/adobe-for-creativity",
+      "icon": null,
+      "keywords": [
+        "adobe",
+        "creativity",
+        "for"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 186,
+        "text": "AD"
+      },
+      "pluginId": "plugin:claude-official:adobe-for-creativity",
+      "primaryCategory": "creativity",
+      "productKey": "adobe-for-creativity",
+      "releaseId": "release:59a15c29650b8819225f9a9609f07b538e5a686cdce608a1d217d61f63c0e481",
+      "sourceId": "claude-official",
+      "upstreamName": "adobe-for-creativity",
+      "variantPluginIds": [
+        "plugin:claude-official:adobe-for-creativity",
+        "plugin:knowledge-work-official:adobe-for-creativity"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "agent": 7,
+        "skill": 16
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "B12 plugin with two skills: Website Generator (create a B12 website from a brief description) and B12 Website Editor (edit a live B12 website using Claude's browser access in Claude Cowork).",
+      "displayName": "B12",
+      "homepage": "https://github.com/b12io/b12-claude-plugin",
+      "icon": {
+        "asset": "icon-26dc944d922a6e1c272fb4b75b7a0a74.svg",
+        "bytes": 1247,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:26dc944d922a6e1c272fb4b75b7a0a747f6aadeabf72ad7666f00340a9b59988",
+        "homepage": null,
+        "kind": "content",
+        "path": "plugins/code/assets/icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "b12",
+        "claude",
+        "creativity",
+        "plugin"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 81,
+        "text": "B1"
+      },
+      "pluginId": "plugin:knowledge-work-official:b12-claude-plugin",
+      "primaryCategory": "creativity",
+      "productKey": "b12-claude-plugin",
+      "releaseId": "release:b90db83791bd9e7188340c139675166c08389cb4558a811197d157fcca5c8661",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "b12-claude-plugin",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:b12-claude-plugin"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 1,
+        "skill": 1
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Install, open, and connect the signed ChatCut Desktop app from Codex.",
+      "displayName": "chatcut",
+      "icon": {
+        "asset": "icon-521cc2088a18d6d38211e34dcf816a52.png",
+        "bytes": 57172,
+        "contentType": "image/png",
+        "digest": "sha256:521cc2088a18d6d38211e34dcf816a52ad8cfd06a0583ace65f6307d49f0b26e",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "chatcut",
+        "creativity"
+      ],
+      "license": "GPL-3.0-only",
+      "monogram": {
+        "hue": 315,
+        "text": "CH"
+      },
+      "pluginId": "plugin:openai-official:chatcut",
+      "primaryCategory": "creativity",
+      "productKey": "chatcut",
+      "releaseId": "release:7a7fa02545a273ee273b4459486dcdbea608a528ddcfd196bc0b382ce809558b",
+      "sourceId": "openai-official",
+      "upstreamName": "chatcut",
+      "variantPluginIds": [
+        "plugin:openai-official:chatcut"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 2,
+        "executable": 8,
+        "mcp-server": 2,
+        "skill": 2,
+        "ui-component": 23
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Explore campaign ideas, concept images, mood boards, product placements, ad directions, listing images, social posts, and launch assets.",
+      "displayName": "creative-production",
+      "icon": {
+        "asset": "icon-6307b50a890cd413a367a3df907803dc.svg",
+        "bytes": 304,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:6307b50a890cd413a367a3df907803dcaed8fec27ffb7dc5bb6a9d92682a834c",
+        "homepage": null,
+        "kind": "content",
+        "path": "skills/produce/helpers/moodboards/assets/mood-board-app/components/empty-state-grid/assets/bg-make-logo-from-scratch-01.svg",
+        "url": null
+      },
+      "keywords": [
+        "creative",
+        "creativity",
+        "production"
+      ],
+      "license": "Proprietary",
+      "monogram": {
+        "hue": 225,
+        "text": "CP"
+      },
+      "pluginId": "plugin:openai-official:creative-production",
+      "primaryCategory": "creativity",
+      "productKey": "creative-production",
+      "releaseId": "release:dce7bdaaec4318cb35c2006a77206d7e59241620d35775992e67b78bc8a6d987",
+      "sourceId": "openai-official",
+      "upstreamName": "creative-production",
+      "variantPluginIds": [
+        "plugin:openai-official:creative-production"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 7
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Accelerate design workflows — critique, design system management, UX writing, accessibility audits, research synthesis, and dev handoff. From exploration to pixel-perfect specs.",
+      "displayName": "Design",
+      "icon": null,
+      "keywords": [
+        "creativity",
+        "design"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 111,
+        "text": "DE"
+      },
+      "pluginId": "plugin:knowledge-work-official:design",
+      "primaryCategory": "creativity",
+      "productKey": "design",
+      "releaseId": "release:0585e283478468bfefbc97cc8f7db88db95ba0e24287774d824398fad038a04f",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "design",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:design"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 5,
+        "mcp-server": 2,
+        "skill": 16
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Figma design platform integration. Access design files, extract component information, read design tokens, and translate designs into code. Bridge the gap between design and development workflows.",
+      "displayName": "Figma",
+      "homepage": "https://github.com/figma/mcp-server-guide",
+      "icon": {
+        "asset": "icon-9798b710e015c7f3fa6101779e323568.svg",
+        "bytes": 646,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:9798b710e015c7f3fa6101779e323568d6a5a022651d427021262ce850467b07",
+        "homepage": null,
+        "kind": "content",
+        "path": "Figma Icon (Full-color).svg",
+        "url": null
+      },
+      "keywords": [
+        "creativity",
+        "figma"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 336,
+        "text": "FI"
+      },
+      "pluginId": "plugin:claude-official:figma",
+      "primaryCategory": "creativity",
+      "productKey": "figma",
+      "releaseId": "release:33cfebd1ee165b7cca65970154d8a7f0c686a2eb99b436e2ea115150271711f4",
+      "sourceId": "claude-official",
+      "upstreamName": "figma",
+      "variantPluginIds": [
+        "plugin:claude-official:figma",
+        "plugin:knowledge-work-official:figma",
+        "plugin:openai-official:figma"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 3,
+        "executable": 4,
+        "mcp-server": 1,
+        "skill": 3
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Generate images and videos from a text prompt or your own photo. Turn a product shot into a video ad, restyle a photo, animate a still, or build a two-minute narrated explainer. Every major image and video model in one place.",
+      "displayName": "higgsfield",
+      "icon": {
+        "asset": "icon-d80a4c3e0fd2efa7af88433a53b25a92.svg",
+        "bytes": 2094,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:d80a4c3e0fd2efa7af88433a53b25a92c78a644175c6669dd78fee50fb53acf6",
+        "homepage": null,
+        "kind": "content",
+        "path": "skills/narrator/assets/icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "creativity",
+        "higgsfield"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 90,
+        "text": "HI"
+      },
+      "pluginId": "plugin:openai-official:higgsfield",
+      "primaryCategory": "creativity",
+      "productKey": "higgsfield",
+      "releaseId": "release:665e160e8b8016e21101bc74d9c30a77bb3149fc4314383d29e9488f1a8f8519",
+      "sourceId": "openai-official",
+      "upstreamName": "higgsfield",
+      "variantPluginIds": [
+        "plugin:openai-official:higgsfield"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 5,
+        "browser": 1,
+        "executable": 1,
+        "skill": 5
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Write HTML, render video. Compositions, GSAP animations, captions, voiceovers, audio-reactive visuals, and website-to-video capture for HyperFrames.",
+      "displayName": "hyperframes",
+      "icon": {
+        "asset": "icon-cc97812c2f8b56feb96854141c609cdd.png",
+        "bytes": 25268,
+        "contentType": "image/png",
+        "digest": "sha256:cc97812c2f8b56feb96854141c609cdda17d64502d01da7ad7c0e5649bf8472e",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.png",
+        "url": null
+      },
+      "keywords": [
+        "creativity",
+        "hyperframes"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 324,
+        "text": "HY"
+      },
+      "pluginId": "plugin:openai-official:hyperframes",
+      "primaryCategory": "creativity",
+      "productKey": "hyperframes",
+      "releaseId": "release:71089e0c61b8d6c1065f3c5fec8409b449bf211334ced2ad2b3e5d394a26c884",
+      "sourceId": "openai-official",
+      "upstreamName": "hyperframes",
+      "variantPluginIds": [
+        "plugin:openai-official:hyperframes"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 11,
+        "browser": 1,
+        "executable": 4,
+        "rule": 2,
+        "skill": 10
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "The Product Design plugin is built for turning early ideas into prototypes teams can review. It starts design and build work by confirming the brief, then helps teams explore product directions, audit user flows, prototype from a live URL, and make static screenshots interactive.",
+      "displayName": "product-design",
+      "icon": {
+        "asset": "icon-a1f718f71e727e6573b5810fee5ea33c.png",
+        "bytes": 121628,
+        "contentType": "image/png",
+        "digest": "sha256:a1f718f71e727e6573b5810fee5ea33c887d1161203037746dfcdf856df2db3d",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "creativity",
+        "design",
+        "product"
+      ],
+      "license": "Proprietary",
+      "monogram": {
+        "hue": 102,
+        "text": "PD"
+      },
+      "pluginId": "plugin:openai-official:product-design",
+      "primaryCategory": "creativity",
+      "productKey": "product-design",
+      "releaseId": "release:9beaddc747b8f82a322eb875aab4bc96a0a0a9b7a5a8820ae905dc5b1f855260",
+      "sourceId": "openai-official",
+      "upstreamName": "product-design",
+      "variantPluginIds": [
+        "plugin:openai-official:product-design"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 25,
+        "skill": 12
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Remotion video creation skills — best practices, animations, audio, captions, 3D, and more for building programmatic videos with React.",
+      "displayName": "remotion",
+      "icon": {
+        "asset": "icon-c4acc0c249be250d94ce6c8d4413679b.svg",
+        "bytes": 1350,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:c4acc0c249be250d94ce6c8d4413679bd24f0104580f677f87aff97a6fb4bc4d",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/composer-icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "creativity",
+        "remotion"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 354,
+        "text": "RE"
+      },
+      "pluginId": "plugin:openai-official:remotion",
+      "primaryCategory": "creativity",
+      "productKey": "remotion",
+      "releaseId": "release:4a2789b5b54c2993b70e92f0db707e60beba4ec47e73633f52eebb39296d535b",
+      "sourceId": "openai-official",
+      "upstreamName": "remotion",
+      "variantPluginIds": [
+        "plugin:openai-official:remotion"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 6,
+        "skill": 11
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Video generation at scale. Generate videos, images, and audio with Runway's API — batch ad campaigns, product videos, multishot stories, and creative iteration. Supports seedance2, gen4.5, veo3, Nano, Banana Pro, and more.",
+      "displayName": "runway-api",
+      "homepage": "https://runwayml.com/",
+      "icon": {
+        "asset": "icon-f545e0e706d0c6be0e8602a8e8d685d4.png",
+        "bytes": 4846,
+        "contentType": "image/png",
+        "digest": "sha256:f545e0e706d0c6be0e8602a8e8d685d4f43ab72880bd5e6a234916e765ff2b70",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "api",
+        "creativity",
+        "runway"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 291,
+        "text": "RA"
+      },
+      "pluginId": "plugin:claude-official:runway-api",
+      "primaryCategory": "creativity",
+      "productKey": "runway-api",
+      "releaseId": "release:8fed7feca54a84efe5b9ef27de62133a92c88c0aa57e44460d9fae43a79c4990",
+      "sourceId": "claude-official",
+      "upstreamName": "runway-api",
+      "variantPluginIds": [
+        "plugin:claude-official:runway-api"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 2
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Plugin for coding agents working with UI theme designer. Bundles two skills: how-to and conceptual answers about UI theme designer on BTP, and questions about the SAP Design System and SAP Fiori design tokens — theme parameters and component-level parameter usage in UI5, UI5 Web Components, and Fundamental Styles.",
+      "displayName": "ui-theme-designer",
+      "homepage": "https://github.com/SAP/ui-theme-designer-plugins-for-coding-agents",
+      "icon": null,
+      "keywords": [
+        "creativity",
+        "designer",
+        "theme",
+        "ui"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 192,
+        "text": "UT"
+      },
+      "pluginId": "plugin:claude-official:ui-theme-designer",
+      "primaryCategory": "creativity",
+      "productKey": "ui-theme-designer",
+      "releaseId": "release:1b3e652dca3ef3c219adeafa9077b68fa5bf7e2a94dda474c0b929c3a37e894d",
+      "sourceId": "claude-official",
+      "upstreamName": "ui-theme-designer",
+      "variantPluginIds": [
+        "plugin:claude-official:ui-theme-designer"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1
+}

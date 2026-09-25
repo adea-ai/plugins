@@ -1,0 +1,552 @@
+{
+  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "category": "other",
+  "pluginCount": 11,
+  "productCount": 11,
+  "products": [
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Check balances, get quotes, and preview or place trades.",
+      "displayName": "Coinbase",
+      "icon": {
+        "asset": "icon-82e2d2f25ba840a8b9a30b128445d04c.png",
+        "bytes": 5300,
+        "contentType": "image/png",
+        "digest": "sha256:82e2d2f25ba840a8b9a30b128445d04c149c767f7ddda09ce449ff846cbd186a",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "coinbase",
+        "other"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 180,
+        "text": "CO"
+      },
+      "pluginId": "plugin:cursor-official:coinbase",
+      "primaryCategory": "other",
+      "productKey": "coinbase",
+      "releaseId": "release:645c4c6d472a80cba08dbe671900fd515be3f1d25e8f848bbec38add4860666d",
+      "sourceId": "cursor-official",
+      "upstreamName": "coinbase",
+      "variantPluginIds": [
+        "plugin:cursor-official:coinbase"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "View your eToro portfolio, balances, positions, and watchlists, research instruments and traders, and prepare and place trades.",
+      "displayName": "eToro Trading",
+      "icon": {
+        "asset": "icon-e826ea328fe21c34f6eb7140a550316c.png",
+        "bytes": 12763,
+        "contentType": "image/png",
+        "digest": "sha256:e826ea328fe21c34f6eb7140a550316c59c08d7e6a29f8bceb9410652ab533b6",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "etoro",
+        "other",
+        "trading"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 27,
+        "text": "ET"
+      },
+      "pluginId": "plugin:cursor-official:etoro-trading",
+      "primaryCategory": "other",
+      "productKey": "etoro-trading",
+      "releaseId": "release:0b9afb5ac51907ebbcc58e23dbbd39ae8e00f86384f9043e4fba4e8aa1ba3789",
+      "sourceId": "cursor-official",
+      "upstreamName": "etoro-trading",
+      "variantPluginIds": [
+        "plugin:cursor-official:etoro-trading"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Explore datasets and tables and run SQL queries.",
+      "displayName": "Google Cloud BigQuery",
+      "icon": {
+        "asset": "icon-fdb324b1fca409bcba27e831b4e06b33.png",
+        "bytes": 11020,
+        "contentType": "image/png",
+        "digest": "sha256:fdb324b1fca409bcba27e831b4e06b331150e670f5d0bfbe2cd596bbd4344cc4",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "bigquery",
+        "cloud",
+        "google",
+        "other"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 261,
+        "text": "GC"
+      },
+      "pluginId": "plugin:cursor-official:google-cloud-bigquery",
+      "primaryCategory": "other",
+      "productKey": "google-cloud-bigquery",
+      "releaseId": "release:6e416f0228e3ab2c147ca5e5cf6449aef6ef5668cb1790a594e189c1f4e4806f",
+      "sourceId": "cursor-official",
+      "upstreamName": "google-cloud-bigquery",
+      "variantPluginIds": [
+        "plugin:cursor-official:google-cloud-bigquery"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 1
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Read, create, and edit documents.",
+      "displayName": "Google Docs",
+      "icon": {
+        "asset": "icon-0bedee7732d81af2ddf0a20ba347ac83.svg",
+        "bytes": 3398,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:0bedee7732d81af2ddf0a20ba347ac8381cd2fde0182f2ae688c76a9b0f1ed18",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "docs",
+        "google",
+        "other"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 207,
+        "text": "GD"
+      },
+      "pluginId": "plugin:cursor-official:google-docs",
+      "primaryCategory": "other",
+      "productKey": "google-docs",
+      "releaseId": "release:d67cc1b6b45d6753a398e0ef041465660014a3d176394c4d7ec7f1e9eeeebe2c",
+      "sourceId": "cursor-official",
+      "upstreamName": "google-docs",
+      "variantPluginIds": [
+        "plugin:cursor-official:google-docs"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 1
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Read, write, and append spreadsheet data.",
+      "displayName": "Google Sheets",
+      "icon": {
+        "asset": "icon-2f9f850d9e8567a72b5b3d7da9b7c9fd.svg",
+        "bytes": 3784,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:2f9f850d9e8567a72b5b3d7da9b7c9fdaad3bb70769fd0c1caf94d44650d997e",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "google",
+        "other",
+        "sheets"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 258,
+        "text": "GS"
+      },
+      "pluginId": "plugin:cursor-official:google-sheets",
+      "primaryCategory": "other",
+      "productKey": "google-sheets",
+      "releaseId": "release:dae8b98fa1930a81ebe6f02bff5a2d0ff44b6366e461837204ee445c54db41a5",
+      "sourceId": "cursor-official",
+      "upstreamName": "google-sheets",
+      "variantPluginIds": [
+        "plugin:cursor-official:google-sheets"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 1
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Create, edit, and render presentations.",
+      "displayName": "Google Slides",
+      "icon": {
+        "asset": "icon-dd71a017db5a7ef05b2c334c4c0c3a8d.svg",
+        "bytes": 3348,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:dd71a017db5a7ef05b2c334c4c0c3a8dcf8f268ea6ca643efb11c22f646fbd44",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "google",
+        "other",
+        "slides"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 126,
+        "text": "GS"
+      },
+      "pluginId": "plugin:cursor-official:google-slides",
+      "primaryCategory": "other",
+      "productKey": "google-slides",
+      "releaseId": "release:5a6eed0ce15b7f66b65756d7e60bc29065d1953d1037bfad30c38a81d9b3be62",
+      "sourceId": "cursor-official",
+      "upstreamName": "google-slides",
+      "variantPluginIds": [
+        "plugin:cursor-official:google-slides"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "View portfolios, positions, orders, watchlists, and market data, and trade in a Robinhood Agentic account.",
+      "displayName": "Robinhood",
+      "icon": {
+        "asset": "icon-69d872c1227f095df9d2b6a1c254aeaf.png",
+        "bytes": 9690,
+        "contentType": "image/png",
+        "digest": "sha256:69d872c1227f095df9d2b6a1c254aeaf3557fe98bdfac2b7d957466653118bbd",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "other",
+        "robinhood"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 351,
+        "text": "RO"
+      },
+      "pluginId": "plugin:cursor-official:robinhood",
+      "primaryCategory": "other",
+      "productKey": "robinhood",
+      "releaseId": "release:60f5c1f19bcc6abe86d019a9da83ac698d158eb848fc0d85e74afcb5ea4813c7",
+      "sourceId": "cursor-official",
+      "upstreamName": "robinhood",
+      "variantPluginIds": [
+        "plugin:cursor-official:robinhood"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "other",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search and read Microsoft SharePoint sites, document libraries, files, and lists.",
+      "displayName": "SharePoint",
+      "icon": {
+        "asset": "icon-443fc6d5a3963757be94c5c601a40f09.svg",
+        "bytes": 2416,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:443fc6d5a3963757be94c5c601a40f09a4a2ebdfa642044f2269642907c76c60",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "other",
+        "sharepoint"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 99,
+        "text": "SH"
+      },
+      "pluginId": "plugin:cursor-official:sharepoint",
+      "primaryCategory": "other",
+      "productKey": "sharepoint",
+      "releaseId": "release:c1e475b878fd87b172c7e4c0117d0783b2613aef258d86d91e1e6bec5a0adcc0",
+      "sourceId": "cursor-official",
+      "upstreamName": "sharepoint",
+      "variantPluginIds": [
+        "plugin:cursor-official:sharepoint",
+        "plugin:openai-official:sharepoint"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "rule": 1
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect your Shopify store so Grok can answer questions about your products, orders, customers, inventory, and sales. You sign in with Shopify and approve the store access Grok requests; Grok keeps that authorization so the connector can work, and Grok Bot's privacy mode still controls whether your conversations are stored or used for training. xAI never sees or stores your Shopify password, and you can disconnect the store anytime from grok.com.",
+      "displayName": "Shopify",
+      "icon": {
+        "asset": "icon-210f59c3c06b340d63907bd30dc8dc41.png",
+        "bytes": 15909,
+        "contentType": "image/png",
+        "digest": "sha256:210f59c3c06b340d63907bd30dc8dc4162bfb4dd017bceb71c537c89609de3ad",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "other",
+        "shopify",
+        "store"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 219,
+        "text": "SH"
+      },
+      "pluginId": "plugin:cursor-official:shopify-store",
+      "primaryCategory": "other",
+      "productKey": "shopify-store",
+      "releaseId": "release:1288becf67a69e36bb14384b0fa2df69d953201af3938dbe88a39bc398412bd3",
+      "sourceId": "cursor-official",
+      "upstreamName": "shopify-store",
+      "variantPluginIds": [
+        "plugin:cursor-official:shopify-store"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Inspect and manage feature gates, experiments, dynamic configs, and metrics.",
+      "displayName": "Statsig",
+      "icon": {
+        "asset": "icon-0a329943a657e1d9279f93c696adbce2.png",
+        "bytes": 3891,
+        "contentType": "image/png",
+        "digest": "sha256:0a329943a657e1d9279f93c696adbce27259aefb97a30818745e12706ab1ae62",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "other",
+        "statsig"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 351,
+        "text": "ST"
+      },
+      "pluginId": "plugin:cursor-official:statsig",
+      "primaryCategory": "other",
+      "productKey": "statsig",
+      "releaseId": "release:cc18e6dda4b2eb6f8936e301cf15088373d5db75e4c8659c1ff8002e91db9ae5",
+      "sourceId": "cursor-official",
+      "upstreamName": "statsig",
+      "variantPluginIds": [
+        "plugin:cursor-official:statsig"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 1
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Use your X Money Card, send money to users on X, manage your finances, view your balance and browse through your transaction history.",
+      "displayName": "X Money",
+      "icon": {
+        "asset": "icon-ad103ac35e9bd800d96b4663ed1ca5d5.png",
+        "bytes": 27423,
+        "contentType": "image/png",
+        "digest": "sha256:ad103ac35e9bd800d96b4663ed1ca5d5bcdf21c71299a546d275759c5f78733a",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "money",
+        "other",
+        "x"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 27,
+        "text": "XM"
+      },
+      "pluginId": "plugin:cursor-official:x-money",
+      "primaryCategory": "other",
+      "productKey": "x-money",
+      "releaseId": "release:7057174126e944133f2576a39658dd1a5024cae69c3399736cba0d42cce478db",
+      "sourceId": "cursor-official",
+      "upstreamName": "x-money",
+      "variantPluginIds": [
+        "plugin:cursor-official:x-money"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1
+}

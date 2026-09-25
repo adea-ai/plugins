@@ -1,0 +1,304 @@
+{
+  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "category": "creativity",
+  "products": [
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Bring your Canva design workflow into Codex and create, refine, and review designs through natural conversation.\nAvailable skills:\nResize for social media: Adapt a design for Facebook, Instagram, and LinkedIn in one step.\nBulk create: Generate multiple designs from spreadsheet data using a brand template.\nEdit designs: Update text, media, and formatting, or reposition and resize elements.\nGet design feedback: Receive structured feedback on visual hierarchy, layout, readability, consistency, and accessibility.\nImplement feedback: Review comment threads and apply clear, actionable changes.\nBrand check: Check colors, fonts, logo usage, and copy against your Brand Kit.\nOnce installed, describe what you want in plain language or invoke Canva directly with @Canva.\nTry prompts like:\n- @Canva, resize this design for social media.\n- @Canva, create designs from this spreadsheet using my brand template.\n- @Canva, update the headline in this design.\n- @Canva, review this design’s visual hierarchy and readability.\n- @Canva, implement the feedback in the comment threads.\n- @Canva, check this design against my Brand Kit.\n\nRequirements: Connect your Canva account to use the plugin. Bulk Create requires an eligible Canva Enterprise plan.\n\nWant to take a more hands-on approach? Instantly open your design in Canva’s powerful editor for the final touches.",
+      "displayName": "canva",
+      "icon": {
+        "asset": "icon-afb54276bf45167125048872621a1415.png",
+        "bytes": 44919,
+        "contentType": "image/png",
+        "digest": "sha256:afb54276bf45167125048872621a14156c03034484519d81b5160cb73c2d7c20",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "canva",
+        "creativity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 45,
+        "text": "CA"
+      },
+      "pluginId": "plugin:openai-official:canva",
+      "primaryCategory": "creativity",
+      "productKey": "canva",
+      "releaseId": "release:3654229f7f82f7977cab4fb452dda5993cc20cd1832f13ee12f111af6eeb1123",
+      "sourceId": "openai-official",
+      "upstreamName": "canva",
+      "variantPluginIds": [
+        "plugin:openai-official:canva"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Secure access to Miro boards. Enables AI to read board context, create diagrams, and generate code with enterprise-grade security.",
+      "displayName": "Miro",
+      "homepage": "https://miro.com/",
+      "icon": {
+        "asset": "icon-6d1a97e6922fee40efab035b669d1feb.png",
+        "bytes": 1273,
+        "contentType": "image/png",
+        "digest": "sha256:6d1a97e6922fee40efab035b669d1feb74d54074721b968321183a715213b605",
+        "homepage": "https://miro.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://framerusercontent.com/images/6FBG66PBxjV2QFaDfIdUi5mi9A.png"
+      },
+      "keywords": [
+        "creativity",
+        "miro"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 306,
+        "text": "MI"
+      },
+      "pluginId": "plugin:claude-official:miro",
+      "primaryCategory": "creativity",
+      "productKey": "miro",
+      "releaseId": "release:1034a4f459b1e468b1f6d429bcbe9e63643e0760c6a68a6cf5fa35d2a0400454",
+      "sourceId": "claude-official",
+      "upstreamName": "miro",
+      "variantPluginIds": [
+        "plugin:claude-official:miro",
+        "plugin:knowledge-work-official:miro"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Draw and export hand-drawn diagrams from chat.",
+      "displayName": "Excalidraw",
+      "icon": {
+        "asset": "icon-b5eeb6a49ccb830198bb6668a331c265.png",
+        "bytes": 8049,
+        "contentType": "image/png",
+        "digest": "sha256:b5eeb6a49ccb830198bb6668a331c2659ed4b9698a67cab46dde257504d9cb57",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "creativity",
+        "excalidraw"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 147,
+        "text": "EX"
+      },
+      "pluginId": "plugin:cursor-official:excalidraw",
+      "primaryCategory": "creativity",
+      "productKey": "excalidraw",
+      "releaseId": "release:2bc0fd09d63d3e827dc98e90dfd0d14ca8da859b4ceb6b2f0a00a6ef42236438",
+      "sourceId": "cursor-official",
+      "upstreamName": "excalidraw",
+      "variantPluginIds": [
+        "plugin:cursor-official:excalidraw"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Generate presentations, documents, and webpages.",
+      "displayName": "Gamma",
+      "icon": {
+        "asset": "icon-efe7c0b3b1cec588bd074ea7cca68e28.png",
+        "bytes": 18847,
+        "contentType": "image/png",
+        "digest": "sha256:efe7c0b3b1cec588bd074ea7cca68e2812515d8dacfd0ce90e42d14ec183f484",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "creativity",
+        "gamma"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 9,
+        "text": "GA"
+      },
+      "pluginId": "plugin:cursor-official:gamma",
+      "primaryCategory": "creativity",
+      "productKey": "gamma",
+      "releaseId": "release:3838c044707fca972130cad1970bcfbf828d6da9f3d1b9da7fdcf3f46a627983",
+      "sourceId": "cursor-official",
+      "upstreamName": "gamma",
+      "variantPluginIds": [
+        "plugin:cursor-official:gamma"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 3
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Use Cloudinary directly in Claude. Manage assets, apply transformations, optimize media, and more through natural conversation.",
+      "displayName": "Cloudinary",
+      "homepage": "https://cloudinary.com/documentation",
+      "icon": {
+        "asset": "icon-c8883c41e2a4249e8ada891ee32b630e.svg",
+        "bytes": 2036,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:c8883c41e2a4249e8ada891ee32b630e357027ab92a26a2dba223a029403bc10",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "cloudinary",
+        "creativity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 216,
+        "text": "CL"
+      },
+      "pluginId": "plugin:claude-official:cloudinary",
+      "primaryCategory": "creativity",
+      "productKey": "cloudinary",
+      "releaseId": "release:ea6373293c731789598618668c9e13dc22e2feb72d8a2ff28ad7b1e468a2678b",
+      "sourceId": "claude-official",
+      "upstreamName": "cloudinary",
+      "variantPluginIds": [
+        "plugin:claude-official:cloudinary",
+        "plugin:knowledge-work-official:cloudinary"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "agent": 6,
+        "skill": 6
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Adobe unlocks more ways to create and get work done from the conversation. Previously available as Photoshop, the Adobe connector now brings creativity and productivity capabilities across Creative Cloud and Acrobat. Describe what you want to make or change, and Adobe can help turn ideas, images, videos, and documents into polished outputs — from editing photos and creating PDFs to designing social assets, resizing videos, searching Creative Cloud assets, and generating data-driven documents.\nKey capabilities:\n\n* Retouch portraits or edit photos in bulk: Drop in photos and describe the look you want — adjust color, lighting, and tone; remove distractions and generate new elements; apply Lightroom presets; remove backgrounds; blur, crop, resize, and expand images.\n* Design from template: Start from an Express template, update text and colors, and then animate for social media or convert to PDF.\n* Refine video for any platform: Upload a horizontal clip and ask to reformat it for YouTube Shorts, Instagram Reels, or any platform. You can also stitch clips into a single sequence.\n* Search and organize creative work: Describe what you're looking for and surface assets from your Creative Cloud library — by subject, style, mood, or content — without browsing folders.\n* Work with PDFs and documents: Create and convert polished PDFs and documents.\n* Create data-driven documents: Describe your output and provide your data — the connector turns raw data or content into formatted, shareable PDFs, including badges, cards, catalogs, and more.\n\nYou can get started as a guest, and sign in with your Adobe account for more capabilities and tools, Creative Cloud storage, and saved work across sessions.",
+      "displayName": "adobe",
+      "icon": {
+        "asset": "icon-1c585a9a56315edec99a2655c3b404fd.svg",
+        "bytes": 488,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:1c585a9a56315edec99a2655c3b404fd66d50e75f45d2d75b769b8119b3872fb",
+        "homepage": null,
+        "kind": "content",
+        "path": "skills/adobe-edit-quick-cut/assets/icon-large.svg",
+        "url": null
+      },
+      "keywords": [
+        "adobe",
+        "creativity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 327,
+        "text": "AD"
+      },
+      "pluginId": "plugin:openai-official:adobe",
+      "primaryCategory": "creativity",
+      "productKey": "adobe",
+      "releaseId": "release:48cb11697c76099504a2ceac8becfce2124fd6ae90c7d5a7a1e8c7c2edf7a3ff",
+      "sourceId": "openai-official",
+      "upstreamName": "adobe",
+      "variantPluginIds": [
+        "plugin:openai-official:adobe"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1,
+  "topCount": 6
+}

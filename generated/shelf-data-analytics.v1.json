@@ -1,0 +1,306 @@
+{
+  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "category": "data-analytics",
+  "products": [
+    {
+      "capabilitySummary": {
+        "executable": 20,
+        "mcp-server": 4,
+        "rule": 5
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Atlan data catalog plugin for Claude Code. Search, explore, govern, and manage your data assets through natural language. Powered by the Atlan MCP server with semantic search, lineage traversal, glossary management, data quality rules, and more.",
+      "displayName": "Atlan",
+      "homepage": "https://docs.atlan.com/",
+      "icon": {
+        "asset": "icon-a0ec1bdfe81f767f30fd5227402dcf73.png",
+        "bytes": 42873,
+        "contentType": "image/png",
+        "digest": "sha256:a0ec1bdfe81f767f30fd5227402dcf73bd1b54f8b58bd0d3ac51100d684949b7",
+        "homepage": null,
+        "kind": "content",
+        "path": "codex-plugin/assets/atlan-logo.png",
+        "url": null
+      },
+      "keywords": [
+        "atlan",
+        "data-analytics"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 318,
+        "text": "AT"
+      },
+      "pluginId": "plugin:claude-official:atlan",
+      "primaryCategory": "data-analytics",
+      "productKey": "atlan",
+      "releaseId": "release:8d27c4c58f2181c4afcec83b1487b931cf1592178a7108a2da04eb34d62dab94",
+      "sourceId": "claude-official",
+      "upstreamName": "atlan",
+      "variantPluginIds": [
+        "plugin:claude-official:atlan",
+        "plugin:knowledge-work-official:atlan"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2,
+        "skill": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect, query, and generate data insights for BigQuery datasets and data.",
+      "displayName": "bigquery-data-analytics",
+      "homepage": "https://github.com/gemini-cli-extensions/bigquery-data-analytics",
+      "icon": null,
+      "keywords": [
+        "analytics",
+        "bigquery",
+        "data",
+        "data-analytics"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 0,
+        "text": "BD"
+      },
+      "pluginId": "plugin:claude-official:bigquery-data-analytics",
+      "primaryCategory": "data-analytics",
+      "productKey": "bigquery-data-analytics",
+      "releaseId": "release:66dc5d1001b33e9a45833bd84cf5adaff3608fd2291e209e3a5b651f582fa194",
+      "sourceId": "claude-official",
+      "upstreamName": "bigquery-data-analytics",
+      "variantPluginIds": [
+        "plugin:claude-official:bigquery-data-analytics"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 21
+      },
+      "categories": [
+        "data-analytics",
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Financial analysis skills powered by Daloopa's institutional-grade data",
+      "displayName": "Daloopa",
+      "homepage": "https://github.com/daloopa/plugin",
+      "icon": {
+        "asset": "icon-a5fce38fb9723e9e29081544a1bd20d0.png",
+        "bytes": 19473,
+        "contentType": "image/png",
+        "digest": "sha256:a5fce38fb9723e9e29081544a1bd20d00613dc3058660d7bd45e36b7f94df5ae",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "daloopa",
+        "data-analytics",
+        "finance"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 153,
+        "text": "DA"
+      },
+      "pluginId": "plugin:knowledge-work-official:daloopa",
+      "primaryCategory": "data-analytics",
+      "productKey": "daloopa",
+      "releaseId": "release:29962241f909f7fd3054c7304e6ae7bef4285908f9294697215ab16ef54a4dbd",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "daloopa",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:daloopa",
+        "plugin:cursor-official:daloopa"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Create, connect, and interact with an AlloyDB Omni database and data.",
+      "displayName": "alloydb-omni",
+      "homepage": "https://github.com/gemini-cli-extensions/alloydb-omni",
+      "icon": null,
+      "keywords": [
+        "alloydb",
+        "data-analytics",
+        "omni"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 207,
+        "text": "AO"
+      },
+      "pluginId": "plugin:claude-official:alloydb-omni",
+      "primaryCategory": "data-analytics",
+      "productKey": "alloydb-omni",
+      "releaseId": "release:7903b34eb3453cbffabe18dcef49371c72ccc1e909dd89cc470e9fc699bf7f6f",
+      "sourceId": "claude-official",
+      "upstreamName": "alloydb-omni",
+      "variantPluginIds": [
+        "plugin:claude-official:alloydb-omni"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "browser": 2,
+        "executable": 4,
+        "skill": 21
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Web scraping, Google search, structured data extraction, and MCP server integration powered by Bright Data. Includes 7 skills: scrape any webpage as markdown (with bot detection/CAPTCHA bypass), search Google with structured JSON results, extract data from 40+ websites (Amazon, LinkedIn, Instagram, TikTok, YouTube, and more), orchestrate Bright Data's 60+ MCP tools, built-in best practices for Web Unlocker, SERP API, Web Scraper API, and Browser API, Python SDK best practices for the brightda...",
+      "displayName": "Bright Data",
+      "homepage": "https://docs.brightdata.com/",
+      "icon": {
+        "asset": "icon-ca087eacbf7a30b3d1c3e79feecaa80a.png",
+        "bytes": 1634,
+        "contentType": "image/png",
+        "digest": "sha256:ca087eacbf7a30b3d1c3e79feecaa80a46cbdba169fa2ed300e3e95a5dace854",
+        "homepage": "https://docs.brightdata.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://docs.brightdata.com/mintlify-assets/_mintlify/favicons/brightdata/uUUbPQlQGu6JyjN0/_generated/favicon/apple-touch-icon.png"
+      },
+      "keywords": [
+        "brightdata",
+        "data-analytics",
+        "plugin"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 237,
+        "text": "BD"
+      },
+      "pluginId": "plugin:claude-official:brightdata-plugin",
+      "primaryCategory": "data-analytics",
+      "productKey": "brightdata-plugin",
+      "releaseId": "release:5b5396049aa2663bc0d01038d0e62d9634475de871c75c733a1ab4c8e9af0a21",
+      "sourceId": "claude-official",
+      "upstreamName": "brightdata-plugin",
+      "variantPluginIds": [
+        "plugin:claude-official:brightdata-plugin",
+        "plugin:knowledge-work-official:brightdata-plugin"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "browser": 3,
+        "command": 2,
+        "executable": 4,
+        "mcp-server": 1,
+        "rule": 1,
+        "skill": 18
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Build high-quality datasets and computer vision models. Visualize datasets, analyze models, find duplicates, run inference, evaluate predictions, and develop custom plugins.",
+      "displayName": "fiftyone",
+      "homepage": "https://docs.voxel51.com/",
+      "icon": {
+        "asset": "icon-6b3d83d7ecd44edb1c2bf95c2cab40cc.png",
+        "bytes": 488,
+        "contentType": "image/png",
+        "digest": "sha256:6b3d83d7ecd44edb1c2bf95c2cab40cc716fc14a13eaf401d62b0216d4ee840a",
+        "homepage": "https://docs.voxel51.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://docs.voxel51.com/_static/favicon/favicon-32.png"
+      },
+      "keywords": [
+        "data-analytics",
+        "fiftyone"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 135,
+        "text": "FI"
+      },
+      "pluginId": "plugin:claude-official:fiftyone",
+      "primaryCategory": "data-analytics",
+      "productKey": "fiftyone",
+      "releaseId": "release:50b334f7179321ba4ca5059840a4e2b80259a63d360c33a90dae7bb5b230f1a8",
+      "sourceId": "claude-official",
+      "upstreamName": "fiftyone",
+      "variantPluginIds": [
+        "plugin:claude-official:fiftyone"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1,
+  "topCount": 6
+}

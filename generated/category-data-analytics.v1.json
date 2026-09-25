@@ -1,0 +1,2054 @@
+{
+  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "category": "data-analytics",
+  "pluginCount": 49,
+  "productCount": 42,
+  "products": [
+    {
+      "capabilitySummary": {
+        "executable": 20,
+        "mcp-server": 4,
+        "rule": 5
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Atlan data catalog plugin for Claude Code. Search, explore, govern, and manage your data assets through natural language. Powered by the Atlan MCP server with semantic search, lineage traversal, glossary management, data quality rules, and more.",
+      "displayName": "Atlan",
+      "homepage": "https://docs.atlan.com/",
+      "icon": {
+        "asset": "icon-a0ec1bdfe81f767f30fd5227402dcf73.png",
+        "bytes": 42873,
+        "contentType": "image/png",
+        "digest": "sha256:a0ec1bdfe81f767f30fd5227402dcf73bd1b54f8b58bd0d3ac51100d684949b7",
+        "homepage": null,
+        "kind": "content",
+        "path": "codex-plugin/assets/atlan-logo.png",
+        "url": null
+      },
+      "keywords": [
+        "atlan",
+        "data-analytics"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 318,
+        "text": "AT"
+      },
+      "pluginId": "plugin:claude-official:atlan",
+      "primaryCategory": "data-analytics",
+      "productKey": "atlan",
+      "releaseId": "release:8d27c4c58f2181c4afcec83b1487b931cf1592178a7108a2da04eb34d62dab94",
+      "sourceId": "claude-official",
+      "upstreamName": "atlan",
+      "variantPluginIds": [
+        "plugin:claude-official:atlan",
+        "plugin:knowledge-work-official:atlan"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2,
+        "skill": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect, query, and generate data insights for BigQuery datasets and data.",
+      "displayName": "bigquery-data-analytics",
+      "homepage": "https://github.com/gemini-cli-extensions/bigquery-data-analytics",
+      "icon": null,
+      "keywords": [
+        "analytics",
+        "bigquery",
+        "data",
+        "data-analytics"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 0,
+        "text": "BD"
+      },
+      "pluginId": "plugin:claude-official:bigquery-data-analytics",
+      "primaryCategory": "data-analytics",
+      "productKey": "bigquery-data-analytics",
+      "releaseId": "release:66dc5d1001b33e9a45833bd84cf5adaff3608fd2291e209e3a5b651f582fa194",
+      "sourceId": "claude-official",
+      "upstreamName": "bigquery-data-analytics",
+      "variantPluginIds": [
+        "plugin:claude-official:bigquery-data-analytics"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 21
+      },
+      "categories": [
+        "data-analytics",
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Financial analysis skills powered by Daloopa's institutional-grade data",
+      "displayName": "Daloopa",
+      "homepage": "https://github.com/daloopa/plugin",
+      "icon": {
+        "asset": "icon-a5fce38fb9723e9e29081544a1bd20d0.png",
+        "bytes": 19473,
+        "contentType": "image/png",
+        "digest": "sha256:a5fce38fb9723e9e29081544a1bd20d00613dc3058660d7bd45e36b7f94df5ae",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "daloopa",
+        "data-analytics",
+        "finance"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 153,
+        "text": "DA"
+      },
+      "pluginId": "plugin:knowledge-work-official:daloopa",
+      "primaryCategory": "data-analytics",
+      "productKey": "daloopa",
+      "releaseId": "release:29962241f909f7fd3054c7304e6ae7bef4285908f9294697215ab16ef54a4dbd",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "daloopa",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:daloopa",
+        "plugin:cursor-official:daloopa"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Create, connect, and interact with an AlloyDB Omni database and data.",
+      "displayName": "alloydb-omni",
+      "homepage": "https://github.com/gemini-cli-extensions/alloydb-omni",
+      "icon": null,
+      "keywords": [
+        "alloydb",
+        "data-analytics",
+        "omni"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 207,
+        "text": "AO"
+      },
+      "pluginId": "plugin:claude-official:alloydb-omni",
+      "primaryCategory": "data-analytics",
+      "productKey": "alloydb-omni",
+      "releaseId": "release:7903b34eb3453cbffabe18dcef49371c72ccc1e909dd89cc470e9fc699bf7f6f",
+      "sourceId": "claude-official",
+      "upstreamName": "alloydb-omni",
+      "variantPluginIds": [
+        "plugin:claude-official:alloydb-omni"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "browser": 2,
+        "executable": 4,
+        "skill": 21
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Web scraping, Google search, structured data extraction, and MCP server integration powered by Bright Data. Includes 7 skills: scrape any webpage as markdown (with bot detection/CAPTCHA bypass), search Google with structured JSON results, extract data from 40+ websites (Amazon, LinkedIn, Instagram, TikTok, YouTube, and more), orchestrate Bright Data's 60+ MCP tools, built-in best practices for Web Unlocker, SERP API, Web Scraper API, and Browser API, Python SDK best practices for the brightda...",
+      "displayName": "Bright Data",
+      "homepage": "https://docs.brightdata.com/",
+      "icon": {
+        "asset": "icon-ca087eacbf7a30b3d1c3e79feecaa80a.png",
+        "bytes": 1634,
+        "contentType": "image/png",
+        "digest": "sha256:ca087eacbf7a30b3d1c3e79feecaa80a46cbdba169fa2ed300e3e95a5dace854",
+        "homepage": "https://docs.brightdata.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://docs.brightdata.com/mintlify-assets/_mintlify/favicons/brightdata/uUUbPQlQGu6JyjN0/_generated/favicon/apple-touch-icon.png"
+      },
+      "keywords": [
+        "brightdata",
+        "data-analytics",
+        "plugin"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 237,
+        "text": "BD"
+      },
+      "pluginId": "plugin:claude-official:brightdata-plugin",
+      "primaryCategory": "data-analytics",
+      "productKey": "brightdata-plugin",
+      "releaseId": "release:5b5396049aa2663bc0d01038d0e62d9634475de871c75c733a1ab4c8e9af0a21",
+      "sourceId": "claude-official",
+      "upstreamName": "brightdata-plugin",
+      "variantPluginIds": [
+        "plugin:claude-official:brightdata-plugin",
+        "plugin:knowledge-work-official:brightdata-plugin"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "browser": 3,
+        "command": 2,
+        "executable": 4,
+        "mcp-server": 1,
+        "rule": 1,
+        "skill": 18
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Build high-quality datasets and computer vision models. Visualize datasets, analyze models, find duplicates, run inference, evaluate predictions, and develop custom plugins.",
+      "displayName": "fiftyone",
+      "homepage": "https://docs.voxel51.com/",
+      "icon": {
+        "asset": "icon-6b3d83d7ecd44edb1c2bf95c2cab40cc.png",
+        "bytes": 488,
+        "contentType": "image/png",
+        "digest": "sha256:6b3d83d7ecd44edb1c2bf95c2cab40cc716fc14a13eaf401d62b0216d4ee840a",
+        "homepage": "https://docs.voxel51.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://docs.voxel51.com/_static/favicon/favicon-32.png"
+      },
+      "keywords": [
+        "data-analytics",
+        "fiftyone"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 135,
+        "text": "FI"
+      },
+      "pluginId": "plugin:claude-official:fiftyone",
+      "primaryCategory": "data-analytics",
+      "productKey": "fiftyone",
+      "releaseId": "release:50b334f7179321ba4ca5059840a4e2b80259a63d360c33a90dae7bb5b230f1a8",
+      "sourceId": "claude-official",
+      "upstreamName": "fiftyone",
+      "variantPluginIds": [
+        "plugin:claude-official:fiftyone"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Easily deploy managed PostgreSQL (pg), Kafka, OpenSearch, Clickhouse and other databases, streaming and apps. Free tier available, up and running in minutes.",
+      "displayName": "aiven",
+      "homepage": "https://aiven.io/",
+      "icon": {
+        "asset": "icon-58109ffc55a61352f144b7f350e60bd0.svg",
+        "bytes": 4175,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:58109ffc55a61352f144b7f350e60bd0aabf5c0d6c475daa9d07f2c4717d73ae",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "aiven",
+        "data-analytics"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 231,
+        "text": "AI"
+      },
+      "pluginId": "plugin:claude-official:aiven",
+      "primaryCategory": "data-analytics",
+      "productKey": "aiven",
+      "releaseId": "release:d82b3d098ebbcb8c5c5a8bb3fa8b2b42e96f1ce2bcc356e297d1e87b4bf3dfd9",
+      "sourceId": "claude-official",
+      "upstreamName": "aiven",
+      "variantPluginIds": [
+        "plugin:claude-official:aiven"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
+      "displayName": "alloydb",
+      "homepage": "https://cloud.google.com/alloydb",
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/alloydb",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
+      "keywords": [
+        "alloydb",
+        "data-analytics"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 27,
+        "text": "AL"
+      },
+      "pluginId": "plugin:claude-official:alloydb",
+      "primaryCategory": "data-analytics",
+      "productKey": "alloydb",
+      "releaseId": "release:210897d21ac8fb9cf0447827c12f8f7d0e425234b538b92a58ce7bd964c0daa2",
+      "sourceId": "claude-official",
+      "upstreamName": "alloydb",
+      "variantPluginIds": [
+        "plugin:claude-official:alloydb"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "command": 2,
+        "executable": 1,
+        "hook": 1,
+        "skill": 2
+      },
+      "categories": [
+        "data-analytics",
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Delegates dbt and warehouse work to altimate-code, a specialized CLI agent with 100+ purpose-built data tools (SQL analysis, column-level lineage, dbt build/test/run, warehouse profiling, FinOps, connectivity to Snowflake, BigQuery, Redshift, Databricks, Postgres, MySQL, DuckDB).",
+      "displayName": "Altimate Code",
+      "homepage": "https://www.altimate.ai/",
+      "icon": {
+        "asset": "icon-f6d5538f2ed2ac405feba266a513725d.png",
+        "bytes": 22429,
+        "contentType": "image/png",
+        "digest": "sha256:f6d5538f2ed2ac405feba266a513725d86a6e57fcd39a716d9ecc88ba6703919",
+        "homepage": "https://www.altimate.ai/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.altimate.ai/logo192.png"
+      },
+      "keywords": [
+        "altimate",
+        "code",
+        "data-analytics",
+        "developer-tools"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 165,
+        "text": "AC"
+      },
+      "pluginId": "plugin:claude-official:altimate-code",
+      "primaryCategory": "data-analytics",
+      "productKey": "altimate-code",
+      "releaseId": "release:16597e77a8e963bd27725e1a11d748cfdcd8071e78fd47d6ebd12560d300b375",
+      "sourceId": "claude-official",
+      "upstreamName": "altimate-code",
+      "variantPluginIds": [
+        "plugin:claude-official:altimate-code"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 1,
+        "command": 3,
+        "rule": 75,
+        "skill": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Expert assistant for Azure Cosmos DB — data modeling, query optimization, performance tuning, and best practices.",
+      "displayName": "Azure Cosmos DB",
+      "homepage": "https://github.com/AzureCosmosDB/cosmosdb-claude-code-plugin",
+      "icon": {
+        "asset": "icon-e364d0c19c6d370a08b628540880548a.svg",
+        "bytes": 509,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:e364d0c19c6d370a08b628540880548a8935c49365e02664e93dedaea96bb861",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "assistant",
+        "azure",
+        "cosmos",
+        "data-analytics",
+        "db"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 357,
+        "text": "AC"
+      },
+      "pluginId": "plugin:claude-official:azure-cosmos-db-assistant",
+      "primaryCategory": "data-analytics",
+      "productKey": "azure-cosmos-db-assistant",
+      "releaseId": "release:9f620d63f8119d56269d71610a565579fa68d4f2a0909b4d1f0b9f2b7c7cd9d1",
+      "sourceId": "claude-official",
+      "upstreamName": "azure-cosmos-db-assistant",
+      "variantPluginIds": [
+        "plugin:claude-official:azure-cosmos-db-assistant"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 4,
+        "executable": 1,
+        "rule": 1,
+        "skill": 17
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Agent skills for Azure SQL Developer, the Azure SQL Database engine running locally in a container. Teaches your agent to run the engine, connect, migrate, scaffold, build RAG, wire CI, and go local-to-cloud, using the real Private Preview image instead of the SQL Server image.",
+      "displayName": "azure-sql-database-container",
+      "homepage": "https://github.com/microsoft/azure-sql-database-container",
+      "icon": {
+        "asset": "icon-e3f4b7baefb22b89684c247a819e073b.svg",
+        "bytes": 2592,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:e3f4b7baefb22b89684c247a819e073b85c79c99b72065e5ca15925c82cfd8ef",
+        "homepage": null,
+        "kind": "content",
+        "path": "docs/assets/img/plugin-logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "azure",
+        "data-analytics",
+        "developer",
+        "sql"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 327,
+        "text": "AS"
+      },
+      "pluginId": "plugin:claude-official:azure-sql-developer",
+      "primaryCategory": "data-analytics",
+      "productKey": "azure-sql-developer",
+      "releaseId": "release:6841a5caeecb0e289cb4449265997130f06bf675c5d069c2a494cb8a5be5bdad",
+      "sourceId": "claude-official",
+      "upstreamName": "azure-sql-developer",
+      "variantPluginIds": [
+        "plugin:claude-official:azure-sql-developer"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 27,
+        "executable": 18,
+        "mcp-server": 1,
+        "skill": 27
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Official Bigdata.com plugin providing financial research, analytics, and intelligence tools powered by Bigdata MCP.",
+      "displayName": "Bigdata.com",
+      "homepage": "https://docs.bigdata.com/",
+      "icon": {
+        "asset": "icon-ff5f5c933aaaea83325fba4d01e0dd64.svg",
+        "bytes": 3278,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:ff5f5c933aaaea83325fba4d01e0dd64679df139b6ac3e2e5bef76c72ad7e162",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/bigdata-icon-black.svg",
+        "url": null
+      },
+      "keywords": [
+        "bigdata",
+        "com",
+        "data-analytics"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 30,
+        "text": "BC"
+      },
+      "pluginId": "plugin:claude-official:bigdata-com",
+      "primaryCategory": "data-analytics",
+      "productKey": "bigdata-com",
+      "releaseId": "release:61d92305de27e3fd93d6aac9e2d4c1d4b92d920003f63991bf7f7cb307553b26",
+      "sourceId": "claude-official",
+      "upstreamName": "bigdata-com",
+      "variantPluginIds": [
+        "plugin:claude-official:bigdata-com",
+        "plugin:knowledge-work-official:bigdata-com"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "agent": 19,
+        "browser": 3,
+        "skill": 18
+      },
+      "categories": [
+        "data-analytics",
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Design, critique, implement, test, and export web data visualizations in Codex, including charts, maps, dashboards, Gantt, UML, scrollytelling, reports, slides, mobile views, shareable state, and advanced WebGL concepts.",
+      "displayName": "build-web-data-visualization",
+      "icon": {
+        "asset": "icon-98cb142b8fcff83824dd96eb86b66796.svg",
+        "bytes": 969,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:98cb142b8fcff83824dd96eb86b66796546b583099947a1dd85588e3ab586a72",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/app-icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "build",
+        "data",
+        "data-analytics",
+        "developer-tools",
+        "visualization",
+        "web"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 297,
+        "text": "BW"
+      },
+      "pluginId": "plugin:openai-official:build-web-data-visualization",
+      "primaryCategory": "data-analytics",
+      "productKey": "build-web-data-visualization",
+      "releaseId": "release:08c3f67ab7786c554b5fb4003e89f53958df5b0cf0b69bb2b197ee24e5e751df",
+      "sourceId": "openai-official",
+      "upstreamName": "build-web-data-visualization",
+      "variantPluginIds": [
+        "plugin:openai-official:build-web-data-visualization"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 2,
+        "rule": 52,
+        "skill": 11
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "28 best practice rules for ClickHouse schema design, query optimization, and data ingestion — prioritized by impact",
+      "displayName": "clickhouse-best-practices",
+      "homepage": "https://clickhouse.com/",
+      "icon": {
+        "asset": "icon-e80d52cd3a4a3c908cb0ae8d67962667.png",
+        "bytes": 1734,
+        "contentType": "image/png",
+        "digest": "sha256:e80d52cd3a4a3c908cb0ae8d67962667badce26e8574f4ab091fa050f6e13e18",
+        "homepage": "https://clickhouse.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://clickhouse.com/apple-icon.png?apple-icon.18ftzencg_4sl.png"
+      },
+      "keywords": [
+        "best",
+        "clickhouse",
+        "data-analytics",
+        "practices"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 324,
+        "text": "CB"
+      },
+      "pluginId": "plugin:claude-official:clickhouse-best-practices",
+      "primaryCategory": "data-analytics",
+      "productKey": "clickhouse-best-practices",
+      "releaseId": "release:9f3cd861697de5b69465e0b632d8c7d2505e50ecdcdc258bc3b15f2daf94a397",
+      "sourceId": "claude-official",
+      "upstreamName": "clickhouse-best-practices",
+      "variantPluginIds": [
+        "plugin:claude-official:clickhouse-best-practices"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect and interact with a Cloud SQL for MySQL database and data.",
+      "displayName": "cloud-sql-mysql",
+      "homepage": "https://github.com/gemini-cli-extensions/cloud-sql-mysql",
+      "icon": null,
+      "keywords": [
+        "cloud",
+        "data-analytics",
+        "mysql",
+        "sql"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 27,
+        "text": "CS"
+      },
+      "pluginId": "plugin:claude-official:cloud-sql-mysql",
+      "primaryCategory": "data-analytics",
+      "productKey": "cloud-sql-mysql",
+      "releaseId": "release:69666f537d51a64f0d30ff5d0ebd05020b9b058db509c705e00bfcdbaf21e15d",
+      "sourceId": "claude-official",
+      "upstreamName": "cloud-sql-mysql",
+      "variantPluginIds": [
+        "plugin:claude-official:cloud-sql-mysql"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 2,
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Create, connect, and interact with a Cloud SQL for PostgreSQL database and data.",
+      "displayName": "cloud-sql-postgresql",
+      "homepage": "https://cloud.google.com/sql",
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/sql",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
+      "keywords": [
+        "cloud",
+        "data-analytics",
+        "postgresql",
+        "sql"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 333,
+        "text": "CS"
+      },
+      "pluginId": "plugin:claude-official:cloud-sql-postgresql",
+      "primaryCategory": "data-analytics",
+      "productKey": "cloud-sql-postgresql",
+      "releaseId": "release:7f5443a605a10f85eaa61ead6e91a421748085f821ad21184f0ecc43707b3355",
+      "sourceId": "claude-official",
+      "upstreamName": "cloud-sql-postgresql",
+      "variantPluginIds": [
+        "plugin:claude-official:cloud-sql-postgresql"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect to Cloud SQL for SQL Server",
+      "displayName": "cloud-sql-sqlserver",
+      "homepage": "https://github.com/gemini-cli-extensions/cloud-sql-sqlserver",
+      "icon": null,
+      "keywords": [
+        "cloud",
+        "data-analytics",
+        "sql",
+        "sqlserver"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 27,
+        "text": "CS"
+      },
+      "pluginId": "plugin:claude-official:cloud-sql-sqlserver",
+      "primaryCategory": "data-analytics",
+      "productKey": "cloud-sql-sqlserver",
+      "releaseId": "release:20c4232959db0ff01f5bca5436cb96e39b072a7031fe72cde7b644143047b637",
+      "sourceId": "claude-official",
+      "upstreamName": "cloud-sql-sqlserver",
+      "variantPluginIds": [
+        "plugin:claude-official:cloud-sql-sqlserver"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 2,
+        "command": 1,
+        "hook": 9,
+        "mcp-server": 2,
+        "scheduled-task": 1,
+        "skill": 17
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Official Convex plugin for Claude Code with bundled Convex skills, the convex-expert subagent for code-writing, a runtime-error monitor, and MCP access for backend development, schema design, real-time features, auth, file storage, scheduled jobs, and AI agents.",
+      "displayName": "Convex",
+      "homepage": "https://github.com/get-convex/convex-backend-skill",
+      "icon": null,
+      "keywords": [
+        "agent",
+        "auth",
+        "backend",
+        "convex",
+        "cron",
+        "data-analytics",
+        "database",
+        "mcp",
+        "mobile",
+        "rag",
+        "reactive",
+        "realtime",
+        "scheduler",
+        "storage",
+        "typescript",
+        "websocket"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 153,
+        "text": "CO"
+      },
+      "pluginId": "plugin:claude-official:convex",
+      "primaryCategory": "data-analytics",
+      "productKey": "convex",
+      "releaseId": "release:a4dfac0da1d752c11349676e05090b0304e9d8775d1a37d3efaa1cde2bee0911",
+      "sourceId": "claude-official",
+      "upstreamName": "convex",
+      "variantPluginIds": [
+        "plugin:claude-official:convex"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 1,
+        "skill": 10
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Write SQL, explore datasets, and generate insights faster. Build visualizations and dashboards, and turn raw data into clear stories for stakeholders.",
+      "displayName": "Data",
+      "icon": null,
+      "keywords": [
+        "data",
+        "data-analytics"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 84,
+        "text": "DA"
+      },
+      "pluginId": "plugin:knowledge-work-official:data",
+      "primaryCategory": "data-analytics",
+      "productKey": "data",
+      "releaseId": "release:897000eb6f89d114666bc40783b88870b193a4ee8749ddf7f46403f3c34ce719",
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "data",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:data"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "agent": 17,
+        "browser": 3,
+        "executable": 25,
+        "mcp-server": 2,
+        "rule": 1,
+        "skill": 18
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Answer product and business questions with data",
+      "displayName": "data-analytics",
+      "icon": {
+        "asset": "icon-9705cd36b7eba1c63514ef9676c60ff3.svg",
+        "bytes": 724,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:9705cd36b7eba1c63514ef9676c60ff3d125d25cbc380c3d6c3082f0c73051a4",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/datascience.svg",
+        "url": null
+      },
+      "keywords": [
+        "analytics",
+        "data",
+        "data-analytics"
+      ],
+      "license": "Proprietary",
+      "monogram": {
+        "hue": 180,
+        "text": "DA"
+      },
+      "pluginId": "plugin:openai-official:data-analytics",
+      "primaryCategory": "data-analytics",
+      "productKey": "data-analytics",
+      "releaseId": "release:4bd6338197f3888aa7c2e87f927600a0e9ee38df3aa1a7f433005ca70dd4f3ca",
+      "sourceId": "openai-official",
+      "upstreamName": "data-analytics",
+      "variantPluginIds": [
+        "plugin:openai-official:data-analytics"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 8,
+        "hook": 1,
+        "mcp-server": 1,
+        "skill": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Expert database guidance for the AWS database portfolio. Design schemas, execute queries, handle migrations, and choose the right database for your workload.",
+      "displayName": "databases-on-aws",
+      "homepage": "https://github.com/awslabs/agent-plugins",
+      "icon": null,
+      "keywords": [
+        "aws",
+        "data-analytics",
+        "databases",
+        "on"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 108,
+        "text": "DO"
+      },
+      "pluginId": "plugin:claude-official:databases-on-aws",
+      "primaryCategory": "data-analytics",
+      "productKey": "databases-on-aws",
+      "releaseId": "release:2e751d9a1546da957f78fceefddfd2f35ff0bfc7fa76f026dac94849667b4837",
+      "sourceId": "claude-official",
+      "upstreamName": "databases-on-aws",
+      "variantPluginIds": [
+        "plugin:claude-official:databases-on-aws"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Manage Dataproc clusters and jobs.",
+      "displayName": "dataproc",
+      "homepage": "https://github.com/gemini-cli-extensions/dataproc",
+      "icon": null,
+      "keywords": [
+        "data-analytics",
+        "dataproc"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 216,
+        "text": "DA"
+      },
+      "pluginId": "plugin:claude-official:dataproc",
+      "primaryCategory": "data-analytics",
+      "productKey": "dataproc",
+      "releaseId": "release:e920fb7eeed27efacfe41bc8bc589df877080e92efd7b570b15adfb3161783f1",
+      "sourceId": "claude-official",
+      "upstreamName": "dataproc",
+      "variantPluginIds": [
+        "plugin:claude-official:dataproc"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 2,
+        "rule": 1,
+        "skill": 9
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Agent skills for building on, analyzing, and managing Microsoft Dataverse — with Dataverse MCP, PAC CLI, and Python SDK.",
+      "displayName": "dataverse",
+      "homepage": "https://github.com/microsoft/Dataverse-skills",
+      "icon": {
+        "asset": "icon-df71c0111148d116515a02c5cb07483c.svg",
+        "bytes": 5067,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:df71c0111148d116515a02c5cb07483caad2bcb779664fa16fd837a4709504ab",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/dataverse-logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "data-analytics",
+        "dataverse"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 93,
+        "text": "DA"
+      },
+      "pluginId": "plugin:claude-official:dataverse",
+      "primaryCategory": "data-analytics",
+      "productKey": "dataverse",
+      "releaseId": "release:05c4bd5473a6691fc391c48638b8749c82685edabbc492cc3e9bda73f926aefe",
+      "sourceId": "claude-official",
+      "upstreamName": "dataverse",
+      "variantPluginIds": [
+        "plugin:claude-official:dataverse"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 1,
+        "skill": 9
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "DuckDB-powered skills for Claude Code: read any data file, attach and query DuckDB databases, search DuckDB/DuckLake docs, search past session logs, and install/update DuckDB extensions.",
+      "displayName": "duckdb-skills",
+      "homepage": "https://duckdb.org/",
+      "icon": {
+        "asset": "icon-39395cbfe086812dc2584ecf763926c6.png",
+        "bytes": 4623,
+        "contentType": "image/png",
+        "digest": "sha256:39395cbfe086812dc2584ecf763926c6da0497dd090fa4d4db886d7cbaa3d434",
+        "homepage": "https://duckdb.org/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://duckdb.org/images/favicon/apple-touch-icon.png"
+      },
+      "keywords": [
+        "data-analytics",
+        "duckdb",
+        "skills"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 81,
+        "text": "DS"
+      },
+      "pluginId": "plugin:claude-official:duckdb-skills",
+      "primaryCategory": "data-analytics",
+      "productKey": "duckdb-skills",
+      "releaseId": "release:331305c4da28e7c1ce49dd7c26daf5e3ac8af6fb026b0189f1347dfe5b8cc3e3",
+      "sourceId": "claude-official",
+      "upstreamName": "duckdb-skills",
+      "variantPluginIds": [
+        "plugin:claude-official:duckdb-skills"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Google Firebase MCP integration. Manage Firestore databases, authentication, cloud functions, hosting, and storage. Build and manage your Firebase backend directly from your development workflow.",
+      "displayName": "firebase",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/firebase",
+      "icon": null,
+      "keywords": [
+        "data-analytics",
+        "firebase"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 177,
+        "text": "FI"
+      },
+      "pluginId": "plugin:claude-official:firebase",
+      "primaryCategory": "data-analytics",
+      "productKey": "firebase",
+      "releaseId": "release:253e69b390f35a3564170ca850d11ae56f0c04503005f32e86ff523c545a32fd",
+      "sourceId": "claude-official",
+      "upstreamName": "firebase",
+      "variantPluginIds": [
+        "plugin:claude-official:firebase"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect and interact with Firestore databases, collections, and documents.",
+      "displayName": "firestore-native",
+      "homepage": "https://github.com/gemini-cli-extensions/firestore-native",
+      "icon": null,
+      "keywords": [
+        "data-analytics",
+        "firestore",
+        "native"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 321,
+        "text": "FN"
+      },
+      "pluginId": "plugin:claude-official:firestore-native",
+      "primaryCategory": "data-analytics",
+      "productKey": "firestore-native",
+      "releaseId": "release:22cbeb4346838aab4e854b7bd305777dd66b169096f23f03816fb3389f1848d3",
+      "sourceId": "claude-official",
+      "upstreamName": "firestore-native",
+      "variantPluginIds": [
+        "plugin:claude-official:firestore-native"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "rule": 1,
+        "skill": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Governed catalog discovery for Informatica Intelligent Data Management Cloud (CDGC): find tables, columns, files, glossary terms and policies across the enterprise catalog, check ownership, certification, sensitivity and applicable policy, and get safe-usage guidance grounded in catalog metadata before querying any data. Requires an Informatica IDMC tenant and the Informatica Catalog Discovery connector.",
+      "displayName": "Informatica",
+      "homepage": "https://github.com/forcedotcom/informatica-claude-plugins/tree/main/informatica-for-claude-platform",
+      "icon": null,
+      "keywords": [
+        "claude",
+        "data-analytics",
+        "for",
+        "informatica",
+        "platform"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 165,
+        "text": "IN"
+      },
+      "pluginId": "plugin:claude-official:informatica-for-claude-platform",
+      "primaryCategory": "data-analytics",
+      "productKey": "informatica-for-claude-platform",
+      "releaseId": "release:bc97b3d598158147b2a3dddb545bd6611fa0474a1072bcee2f019ec644576d4d",
+      "sourceId": "claude-official",
+      "upstreamName": "informatica-for-claude-platform",
+      "variantPluginIds": [
+        "plugin:claude-official:informatica-for-claude-platform",
+        "plugin:knowledge-work-official:informatica-for-claude-platform"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect to Knowledge Catalog to discover, manage, monitor, and govern data and AI artifacts across your data platform",
+      "displayName": "knowledge-catalog",
+      "homepage": "https://github.com/gemini-cli-extensions/knowledge-catalog",
+      "icon": null,
+      "keywords": [
+        "catalog",
+        "data-analytics",
+        "knowledge"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 180,
+        "text": "KC"
+      },
+      "pluginId": "plugin:claude-official:knowledge-catalog",
+      "primaryCategory": "data-analytics",
+      "productKey": "knowledge-catalog",
+      "releaseId": "release:bcdeac93ce84a20342c2eac64f618dfbdf5abf36ad0b6601b25b2d435eb199da",
+      "sourceId": "claude-official",
+      "upstreamName": "knowledge-catalog",
+      "variantPluginIds": [
+        "plugin:claude-official:knowledge-catalog"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect to Looker and interact with your data using LookML.",
+      "displayName": "looker",
+      "homepage": "https://github.com/gemini-cli-extensions/looker",
+      "icon": null,
+      "keywords": [
+        "data-analytics",
+        "looker"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 69,
+        "text": "LO"
+      },
+      "pluginId": "plugin:claude-official:looker",
+      "primaryCategory": "data-analytics",
+      "productKey": "looker",
+      "releaseId": "release:74d2a6b3cfbae459ed7d75c460c0e1000b9fce607af06bf96a696c5c5446b024",
+      "sourceId": "claude-official",
+      "upstreamName": "looker",
+      "variantPluginIds": [
+        "plugin:claude-official:looker"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 3,
+        "skill": 4
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Analyze Mixpanel data with the mixpanel_headless Python SDK and Codex skills.",
+      "displayName": "mixpanel-headless",
+      "icon": {
+        "asset": "icon-3ebcb85818875354ca119b5651b1eee0.png",
+        "bytes": 10093,
+        "contentType": "image/png",
+        "digest": "sha256:3ebcb85818875354ca119b5651b1eee0467fa50d3ddf4243104dada9381ed8c2",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "data-analytics",
+        "headless",
+        "mixpanel"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 312,
+        "text": "MH"
+      },
+      "pluginId": "plugin:openai-official:mixpanel-headless",
+      "primaryCategory": "data-analytics",
+      "productKey": "mixpanel-headless",
+      "releaseId": "release:692b5215da802f4e4b04b76afb7549fb448c915f869dcb2b9caa57d5a3f30df1",
+      "sourceId": "openai-official",
+      "upstreamName": "mixpanel-headless",
+      "variantPluginIds": [
+        "plugin:openai-official:mixpanel-headless"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 50
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Official Claude plugin for MongoDB (MCP Server + Skills). Connect to databases, explore data, manage collections, optimize queries, generate reliable code, implement best practices, develop advanced features, and more.",
+      "displayName": "mongodb",
+      "homepage": "https://www.mongodb.com/docs/mcp-server/overview/",
+      "icon": {
+        "asset": "icon-e70217b2e33d57aad2d85c96a4fa73a1.png",
+        "bytes": 18214,
+        "contentType": "image/png",
+        "digest": "sha256:e70217b2e33d57aad2d85c96a4fa73a1a97faa2aaf010e89c2b057cc08e78565",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "data-analytics",
+        "mongodb"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 339,
+        "text": "MO"
+      },
+      "pluginId": "plugin:claude-official:mongodb",
+      "primaryCategory": "data-analytics",
+      "productKey": "mongodb",
+      "releaseId": "release:11b92c1daa9fa36511988111d6b5f72c0b91c056da496858c391ad4a34a4e0fa",
+      "sourceId": "claude-official",
+      "upstreamName": "mongodb",
+      "variantPluginIds": [
+        "plugin:claude-official:mongodb"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "skill": 48
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect to MongoDB Atlas clusters only through the Atlas Managed MCP Server. Sign in with your Atlas account to explore data, manage collections, optimize queries, generate reliable code with MongoDB best practices, and manage Atlas resources such as clusters, projects, database users, and network access. If you are running a different MongoDB deployment or want to run a local MongoDB MCP Server, install the MongoDB (Self-Managed MCP) plugin instead.",
+      "displayName": "mongodb-atlas",
+      "homepage": "https://www.mongodb.com/docs/mcp-server/get-started/",
+      "icon": {
+        "asset": "icon-e70217b2e33d57aad2d85c96a4fa73a1.png",
+        "bytes": 18214,
+        "contentType": "image/png",
+        "digest": "sha256:e70217b2e33d57aad2d85c96a4fa73a1a97faa2aaf010e89c2b057cc08e78565",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "atlas",
+        "data-analytics",
+        "mongodb"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 120,
+        "text": "MA"
+      },
+      "pluginId": "plugin:claude-official:mongodb-atlas",
+      "primaryCategory": "data-analytics",
+      "productKey": "mongodb-atlas",
+      "releaseId": "release:d37cf4f9092f0fab76952bb63d415a09af3a3fa4ed5ab1601e84f97f5e994bcc",
+      "sourceId": "claude-official",
+      "upstreamName": "mongodb-atlas",
+      "variantPluginIds": [
+        "plugin:claude-official:mongodb-atlas"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect, query, and interact with Oracle Databases and their data.",
+      "displayName": "oracledb",
+      "homepage": "https://github.com/gemini-cli-extensions/oracledb",
+      "icon": null,
+      "keywords": [
+        "data-analytics",
+        "oracledb"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 228,
+        "text": "OR"
+      },
+      "pluginId": "plugin:claude-official:oracledb",
+      "primaryCategory": "data-analytics",
+      "productKey": "oracledb",
+      "releaseId": "release:8c6863738f22a77df216a9481642b5a413c42cf9c116fe4f56a73af6756b57de",
+      "sourceId": "claude-official",
+      "upstreamName": "oracledb",
+      "variantPluginIds": [
+        "plugin:claude-official:oracledb"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "command": 1,
+        "executable": 10,
+        "hook": 2,
+        "mcp-server": 1,
+        "rule": 1,
+        "skill": 9
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Pinecone vector database integration. Streamline your Pinecone development with powerful tools for managing vector indexes, querying data, and rapid prototyping. Use slash commands like /quickstart to generate AGENTS.md files and initialize Python projects and /query to quickly explore indexes. Access the Pinecone MCP server for creating, describing, upserting and querying indexes with Claude. Perfect for developers building semantic search, RAG applications, recommendation systems, and other vector-based applications with Pinecone.",
+      "displayName": "pinecone",
+      "homepage": "https://github.com/pinecone-io/pinecone-claude-code-plugin",
+      "icon": null,
+      "keywords": [
+        "data-analytics",
+        "pinecone"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 219,
+        "text": "PI"
+      },
+      "pluginId": "plugin:claude-official:pinecone",
+      "primaryCategory": "data-analytics",
+      "productKey": "pinecone",
+      "releaseId": "release:9755188e003a0514fcb082b5d97ee78c96d1d6e1ac107f3daf3e822c977c6e4f",
+      "sourceId": "claude-official",
+      "upstreamName": "pinecone",
+      "variantPluginIds": [
+        "plugin:claude-official:pinecone"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2,
+        "skill": 65
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "An authenticated hosted MCP server that accesses your PlanetScale organizations, databases, branches, schema, and Insights data. Query against your data, surface slow queries, and get organizational and account information.",
+      "displayName": "PlanetScale",
+      "homepage": "https://planetscale.com/",
+      "icon": {
+        "asset": "icon-2bc73ee98cff43e3ab4d82aa2cc61f01.png",
+        "bytes": 711,
+        "contentType": "image/png",
+        "digest": "sha256:2bc73ee98cff43e3ab4d82aa2cc61f01b220dc3647cd7032e0dba827b3d22908",
+        "homepage": "https://planetscale.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://planetscale.com/apple-touch-icon.png"
+      },
+      "keywords": [
+        "data-analytics",
+        "planetscale"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 354,
+        "text": "PL"
+      },
+      "pluginId": "plugin:claude-official:planetscale",
+      "primaryCategory": "data-analytics",
+      "productKey": "planetscale",
+      "releaseId": "release:23c40678983677a6b9cb676c8298b04a4660d593beec19f9f659c766a90b92d3",
+      "sourceId": "claude-official",
+      "upstreamName": "planetscale",
+      "variantPluginIds": [
+        "plugin:claude-official:planetscale",
+        "plugin:knowledge-work-official:planetscale"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "agent": 1,
+        "command": 6,
+        "executable": 42,
+        "hook": 4,
+        "mcp-server": 2,
+        "skill": 164
+      },
+      "categories": [
+        "data-analytics",
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Access PostHog analytics, feature flags, experiments, error tracking, and insights directly from Claude Code.",
+      "displayName": "posthog",
+      "homepage": "https://posthog.com/docs/model-context-protocol",
+      "icon": {
+        "asset": "icon-a8963a893a3abfc498abe278d321649e.svg",
+        "bytes": 3010,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:a8963a893a3abfc498abe278d321649ecf96c46fb89f28bb9120214a8544e0e8",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "developer-tools",
+        "posthog"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 249,
+        "text": "PO"
+      },
+      "pluginId": "plugin:claude-official:posthog",
+      "primaryCategory": "data-analytics",
+      "productKey": "posthog",
+      "releaseId": "release:5ede2c5b249d2e5d9d5010f462b48d6d2e20d85ff4d02f190e69a5cf77276324",
+      "sourceId": "claude-official",
+      "upstreamName": "posthog",
+      "variantPluginIds": [
+        "plugin:claude-official:posthog",
+        "plugin:openai-official:posthog"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 24,
+        "rule": 1,
+        "skill": 31
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Agent skills for Qdrant vector search covering scaling, performance optimization, search quality, monitoring, deployment, model migration, version upgrades, and SDK usage across Python, TypeScript, Rust, Go, .NET, and Java.",
+      "displayName": "Qdrant",
+      "homepage": "https://skills.qdrant.tech/",
+      "icon": {
+        "asset": "icon-42d52b9abd4b903268aa5d6b143d4b6a.ico",
+        "bytes": 15086,
+        "contentType": "image/x-icon",
+        "digest": "sha256:42d52b9abd4b903268aa5d6b143d4b6a85eaee07d99133d4eec7433c99821cf0",
+        "homepage": "https://qdrant.tech/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://qdrant.tech/favicon.ico"
+      },
+      "keywords": [
+        "data-analytics",
+        "qdrant",
+        "skills"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 183,
+        "text": "QD"
+      },
+      "pluginId": "plugin:claude-official:qdrant-skills",
+      "primaryCategory": "data-analytics",
+      "productKey": "qdrant-skills",
+      "releaseId": "release:fd07a449718328df80d80ba4fe8d3383a2feed04a9dcfccccee7d1550998fc44",
+      "sourceId": "claude-official",
+      "upstreamName": "qdrant-skills",
+      "variantPluginIds": [
+        "plugin:claude-official:qdrant-skills",
+        "plugin:knowledge-work-official:qdrant-skills"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "capabilitySummary": {
+        "skill": 8
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Redis development best practices — data structures, query engine, vector search, caching, and performance optimization",
+      "displayName": "redis-development",
+      "homepage": "https://redis.io/",
+      "icon": {
+        "asset": "icon-9b2be11cf01d51a73b612a40f952576e.png",
+        "bytes": 21458,
+        "contentType": "image/png",
+        "digest": "sha256:9b2be11cf01d51a73b612a40f952576e75b8cc3099f01608796bcf7e68a73de7",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/redis-logo.png",
+        "url": null
+      },
+      "keywords": [
+        "data-analytics",
+        "development",
+        "redis"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 297,
+        "text": "RD"
+      },
+      "pluginId": "plugin:claude-official:redis-development",
+      "primaryCategory": "data-analytics",
+      "productKey": "redis-development",
+      "releaseId": "release:f902c77b81aa62cb1585ca2d3dd2a0ce468dc06b7d256b7e42b15d10d0267f19",
+      "sourceId": "claude-official",
+      "upstreamName": "redis-development",
+      "variantPluginIds": [
+        "plugin:claude-official:redis-development"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "mcp-server": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "150+ SAP HANA database tools for AI assistants. Query tables, import/export data, profile data quality, compare schemas, manage backups, monitor performance, and more. Connects to SAP HANA Cloud and on-premise databases.",
+      "displayName": "hana-cli",
+      "homepage": "https://github.com/SAP-samples/hana-cli-claude-plugin",
+      "icon": null,
+      "keywords": [
+        "cli",
+        "data-analytics",
+        "hana",
+        "sap"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 354,
+        "text": "HC"
+      },
+      "pluginId": "plugin:claude-official:sap-hana-cli",
+      "primaryCategory": "data-analytics",
+      "productKey": "sap-hana-cli",
+      "releaseId": "release:e084fb5331b2fd8e06327d922bbc63e4c45fd10a1c4d872725d7c70dc1fe61de",
+      "sourceId": "claude-official",
+      "upstreamName": "sap-hana-cli",
+      "variantPluginIds": [
+        "plugin:claude-official:sap-hana-cli"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect and interact with Spanner data using natural language.",
+      "displayName": "spanner",
+      "homepage": "https://github.com/gemini-cli-extensions/spanner",
+      "icon": null,
+      "keywords": [
+        "data-analytics",
+        "spanner"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 129,
+        "text": "SP"
+      },
+      "pluginId": "plugin:claude-official:spanner",
+      "primaryCategory": "data-analytics",
+      "productKey": "spanner",
+      "releaseId": "release:d6b8f3c54f3a97c9bcbafb3111e3bab5e398146afa05924793d32e483975e4bf",
+      "sourceId": "claude-official",
+      "upstreamName": "spanner",
+      "variantPluginIds": [
+        "plugin:claude-official:spanner"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "rule": 1,
+        "skill": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Builds a VillageSQL extension for MySQL end-to-end through a 7-phase persona-driven workflow. Commonly used to port PostgreSQL extensions to MySQL.",
+      "displayName": "villagesql",
+      "homepage": "https://villagesql.com/",
+      "icon": {
+        "asset": "icon-776aec16beef775f56b9ad38b780cbac.svg",
+        "bytes": 1417,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:776aec16beef775f56b9ad38b780cbacb1d75ee8893112847765e6aa881b5001",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "builder",
+        "data-analytics",
+        "extension",
+        "vsql"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 330,
+        "text": "VI"
+      },
+      "pluginId": "plugin:claude-official:vsql-extension-builder",
+      "primaryCategory": "data-analytics",
+      "productKey": "vsql-extension-builder",
+      "releaseId": "release:035090dda7a11822cab3f78d148aa4594d7c87dd443459a9ef08c4e53685b445",
+      "sourceId": "claude-official",
+      "upstreamName": "vsql-extension-builder",
+      "variantPluginIds": [
+        "plugin:claude-official:vsql-extension-builder"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "capabilitySummary": {
+        "command": 2,
+        "skill": 36
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Zilliz Cloud management plugin with 14 skills covering cluster lifecycle, collection schema, vector search, index tuning, bulk import, RBAC, backups, and monitoring.",
+      "displayName": "zilliz",
+      "homepage": "https://docs.zilliz.com/",
+      "icon": {
+        "asset": "icon-8d7deb7f7224deaaf4129368695c8bac.svg",
+        "bytes": 1276,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:8d7deb7f7224deaaf4129368695c8bacb4e4edebfdc724aa66c852088b1d7ce8",
+        "homepage": "https://zilliz.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://zilliz.com/favicon.svg"
+      },
+      "keywords": [
+        "data-analytics",
+        "zilliz"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 297,
+        "text": "ZI"
+      },
+      "pluginId": "plugin:claude-official:zilliz",
+      "primaryCategory": "data-analytics",
+      "productKey": "zilliz",
+      "releaseId": "release:acfb2fdcd70e1b379adf5f7829cdbfd55beebf5cd6a8fb8a3374ee6bc6a170df",
+      "sourceId": "claude-official",
+      "upstreamName": "zilliz",
+      "variantPluginIds": [
+        "plugin:claude-official:zilliz"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1
+}
