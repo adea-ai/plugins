@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:ae9047e0a1d48f6d7fb73f706f685d6421d735910d8b66833010784fbbe651f3",
+  "catalogId": "catalog:6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e",
   "category": "security",
   "products": [
     {
@@ -26,6 +26,7 @@
       "homepage": "https://github.com/nvsecurity/nightvision-skills",
       "icon": {
         "asset": "icon-cee14d54dd789fda5a542d3e19f38eaf.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-cee14d54dd789fda5a542d3e19f38eaf.png",
         "bytes": 3187,
         "contentType": "image/png",
         "digest": "sha256:cee14d54dd789fda5a542d3e19f38eafbf731e9cdc489dfd6ecc4a334de3020f",
@@ -113,6 +114,7 @@
       "homepage": "https://github.com/zscaler/zscaler-mcp-server",
       "icon": {
         "asset": "icon-fb71a91ef4937bdac04520d7e7b1852b.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-fb71a91ef4937bdac04520d7e7b1852b.svg",
         "bytes": 2489,
         "contentType": "image/svg+xml",
         "digest": "sha256:fb71a91ef4937bdac04520d7e7b1852bb28635ae850934d440360ccc8142c1a4",
@@ -216,6 +218,7 @@
       "homepage": "https://42crunch.com/",
       "icon": {
         "asset": "icon-5d4bbaf47f8d198da2ef59d8234d3885.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-5d4bbaf47f8d198da2ef59d8234d3885.png",
         "bytes": 1280,
         "contentType": "image/png",
         "digest": "sha256:5d4bbaf47f8d198da2ef59d8234d3885aa89ae7f4dadf584217cb6c69b197943",
@@ -303,6 +306,7 @@
       "homepage": "https://auth0.com/",
       "icon": {
         "asset": "icon-d07ba65f41b524aee6d51d7a9e1ec35d.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-d07ba65f41b524aee6d51d7a9e1ec35d.png",
         "bytes": 58940,
         "contentType": "image/png",
         "digest": "sha256:d07ba65f41b524aee6d51d7a9e1ec35d88b92ef2bca44f81aea9f9f9cfc7a075",
@@ -492,6 +496,7 @@
       "displayName": "codex-security",
       "icon": {
         "asset": "icon-9b9c2b09b2fa064611fb62307d321d5c.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-9b9c2b09b2fa064611fb62307d321d5c.png",
         "bytes": 99567,
         "contentType": "image/png",
         "digest": "sha256:9b9c2b09b2fa064611fb62307d321d5c2ea70cf0789f7ce34cdb0fc0d9190b3a",

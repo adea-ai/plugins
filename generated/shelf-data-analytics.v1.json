@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:ae9047e0a1d48f6d7fb73f706f685d6421d735910d8b66833010784fbbe651f3",
+  "catalogId": "catalog:6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e",
   "category": "data-analytics",
   "products": [
     {
@@ -28,6 +28,7 @@
       "homepage": "https://docs.atlan.com/",
       "icon": {
         "asset": "icon-a0ec1bdfe81f767f30fd5227402dcf73.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-a0ec1bdfe81f767f30fd5227402dcf73.png",
         "bytes": 42873,
         "contentType": "image/png",
         "digest": "sha256:a0ec1bdfe81f767f30fd5227402dcf73bd1b54f8b58bd0d3ac51100d684949b7",
@@ -216,6 +217,7 @@
       "homepage": "https://github.com/daloopa/plugin",
       "icon": {
         "asset": "icon-a5fce38fb9723e9e29081544a1bd20d0.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-a5fce38fb9723e9e29081544a1bd20d0.png",
         "bytes": 19473,
         "contentType": "image/png",
         "digest": "sha256:a5fce38fb9723e9e29081544a1bd20d00613dc3058660d7bd45e36b7f94df5ae",
@@ -391,6 +393,7 @@
       "homepage": "https://docs.brightdata.com/",
       "icon": {
         "asset": "icon-ca087eacbf7a30b3d1c3e79feecaa80a.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-ca087eacbf7a30b3d1c3e79feecaa80a.png",
         "bytes": 1634,
         "contentType": "image/png",
         "digest": "sha256:ca087eacbf7a30b3d1c3e79feecaa80a46cbdba169fa2ed300e3e95a5dace854",

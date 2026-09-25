@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:ae9047e0a1d48f6d7fb73f706f685d6421d735910d8b66833010784fbbe651f3",
+  "catalogId": "catalog:6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e",
   "category": "finance",
   "products": [
     {
@@ -25,6 +25,7 @@
       "displayName": "Mercury",
       "icon": {
         "asset": "icon-72e5d9eded3682cc2300db58d2bc3972.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-72e5d9eded3682cc2300db58d2bc3972.png",
         "bytes": 46482,
         "contentType": "image/png",
         "digest": "sha256:72e5d9eded3682cc2300db58d2bc3972f9f79c2a438f0cb087326610a6e6b87a",
@@ -109,6 +110,7 @@
       "displayName": "Interactive Brokers",
       "icon": {
         "asset": "icon-e2145b7694f27b37fb40d7671ba6eb5e.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-e2145b7694f27b37fb40d7671ba6eb5e.png",
         "bytes": 9057,
         "contentType": "image/png",
         "digest": "sha256:e2145b7694f27b37fb40d7671ba6eb5e870c256c1e147444187e7ef22cb5e4de",
@@ -194,6 +196,7 @@
       "displayName": "Brex",
       "icon": {
         "asset": "icon-3ef094b024795ba7426b1a7e42979e7f.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-3ef094b024795ba7426b1a7e42979e7f.png",
         "bytes": 3815,
         "contentType": "image/png",
         "digest": "sha256:3ef094b024795ba7426b1a7e42979e7f1e5e77b7fdfa0a255c5c48edcfef94ee",
@@ -278,6 +281,7 @@
       "displayName": "Webull",
       "icon": {
         "asset": "icon-a209946494b30cab9e53ceedba655adb.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-a209946494b30cab9e53ceedba655adb.png",
         "bytes": 6600,
         "contentType": "image/png",
         "digest": "sha256:a209946494b30cab9e53ceedba655adb9fc6e6b941a5d572796c6f2ae6709889",
@@ -362,6 +366,7 @@
       "displayName": "Xero",
       "icon": {
         "asset": "icon-1afeeff143a66b32e7038ec3bae9e758.png",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-1afeeff143a66b32e7038ec3bae9e758.png",
         "bytes": 14904,
         "contentType": "image/png",
         "digest": "sha256:1afeeff143a66b32e7038ec3bae9e758b95ebeb26001a0eca9953b8b2f8d6ba9",
@@ -449,6 +454,7 @@
       "homepage": "https://www.airwallex.com/docs",
       "icon": {
         "asset": "icon-03276e1e0a355132331e7d1467dc070e.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-03276e1e0a355132331e7d1467dc070e.svg",
         "bytes": 914,
         "contentType": "image/svg+xml",
         "digest": "sha256:03276e1e0a355132331e7d1467dc070ebc23d7261eeb4a4499d7497ef4c70f97",

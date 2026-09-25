@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:ae9047e0a1d48f6d7fb73f706f685d6421d735910d8b66833010784fbbe651f3",
+  "catalogId": "catalog:6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e",
   "category": "developer-tools",
   "products": [
     {
@@ -27,6 +27,7 @@
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/github",
       "icon": {
         "asset": "icon-5b02d8c41edb37734aa70362506d757f.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-5b02d8c41edb37734aa70362506d757f.svg",
         "bytes": 934,
         "contentType": "image/svg+xml",
         "digest": "sha256:5b02d8c41edb37734aa70362506d757f27af89a37ff0975baf3871244305976e",
@@ -114,6 +115,7 @@
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/playwright",
       "icon": {
         "asset": "icon-16ed6279a8e7ef91373a595a647eea40.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-16ed6279a8e7ef91373a595a647eea40.svg",
         "bytes": 5125,
         "contentType": "image/svg+xml",
         "digest": "sha256:16ed6279a8e7ef91373a595a647eea405ed9bcc7dee42111ebf8a9c5202fcaf5",
@@ -354,6 +356,7 @@
       "homepage": "https://github.com/fastly/fastly-agent-toolkit/blob/main/README.md",
       "icon": {
         "asset": "icon-1fa9b91552d947e9e6d0bb911aae5db8.ico",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-1fa9b91552d947e9e6d0bb911aae5db8.ico",
         "bytes": 15086,
         "contentType": "image/x-icon",
         "digest": "sha256:1fa9b91552d947e9e6d0bb911aae5db85840bad624723e604bb154c7d6794814",
@@ -449,6 +452,7 @@
       "homepage": "https://github.com/getsentry/plugin-claude",
       "icon": {
         "asset": "icon-e5935afc31e5084860e5ddafae804b06.svg",
+        "assetUrl": "https://github.com/adea-ai/plugins/releases/download/catalog/6837fb6c2a5736fdf7e60b844e635b31ad1659602ffeec96c419418fc248162e/icon-e5935afc31e5084860e5ddafae804b06.svg",
         "bytes": 763,
         "contentType": "image/svg+xml",
         "digest": "sha256:e5935afc31e5084860e5ddafae804b0620d38345bd09250c9ef081edae0ef733",
