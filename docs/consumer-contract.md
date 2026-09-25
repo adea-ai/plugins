@@ -39,6 +39,17 @@ and a verifier has to reproduce each exactly:
   bytes, because a client stores those bytes; `icon.digest` in a product record
   is the same value.
 
+The artifact convention is what every shipped consumer implements, so it cannot
+change on one side. Making the artifacts verifiable with a plain `sha256sum` too
+— the obvious reason to want byte digests — would mean publishing byte digests
+and teaching every consumer to accept them, which is a breaking change for
+already-installed clients: it needs a contract-version bump and a consumer
+release that understands the new value before this repository switches, not an
+edit here. Until then, compare bytes through the release API's own asset digests
+(what `bun run audit:release` does) when the question is "are these the same
+files", and use this convention when the question is "did the artifact I fetched
+match the manifest".
+
 The checked-in bootstrap/fixture snapshot is not a production freshness claim.
 Only a successful live synchronization, identified by current source SHAs and
 its generated timestamp, is a production catalog. A release change report may
