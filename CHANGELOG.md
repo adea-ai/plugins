@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.3](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.6.2...plugins-marketplace-v1.6.3) (2026-09-25)
+
+
+### Bug Fixes
+
+* **ci:** check out the repository before re-pointing the latest release ([#96](https://github.com/adea-ai/plugins/issues/96)) ([1090d30](https://github.com/adea-ai/plugins/commit/1090d30a7014b581d867940c36cc273a152adeed))
+
 ## [1.6.2](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.6.1...plugins-marketplace-v1.6.2) (2026-09-25)
 
 
