@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.16](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.15...plugins-marketplace-v1.10.16) (2026-09-25)
+
+
+### Bug Fixes
+
+* **catalog:** point the two stubborn brand marks at hosts a build can reach ([#139](https://github.com/adea-ai/plugins/issues/139)) ([a98d309](https://github.com/adea-ai/plugins/commit/a98d30961902ad69dd4f09075ecec49c76aee6f3))
+
 ## [1.10.15](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.14...plugins-marketplace-v1.10.15) (2026-09-25)
 
 
