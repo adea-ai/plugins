@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.3](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.2...plugins-marketplace-v1.10.3) (2026-09-25)
+
+
+### Bug Fixes
+
+* **catalog:** carry the publication through the default compiler ([#113](https://github.com/adea-ai/plugins/issues/113)) ([93b99e1](https://github.com/adea-ai/plugins/commit/93b99e15eb7867d068d0d7216a62530b476e9f79))
+
 ## [1.10.2](https://github.com/adea-ai/plugins/compare/plugins-marketplace-v1.10.1...plugins-marketplace-v1.10.2) (2026-09-25)
 
 
