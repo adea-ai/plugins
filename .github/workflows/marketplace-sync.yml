@@ -65,6 +65,30 @@ jobs:
           # published from a checkout that has no staged assets.
           bun packages/cli/src/index.ts verify-assets --json \
             | tee "$RUNNER_TEMP/catalog-icon-report.json"
+      - name: Publish browser assets
+        if: inputs['bootstrap-only'] != true
+        env:
+          SYNC_TOKEN: ${{ secrets.CATALOG_SYNC_TOKEN }}
+        run: |
+          set -euo pipefail
+          # A browser cannot read a release asset, so the marks and the index are
+          # pushed to a branch of their own and served from raw.githubusercontent,
+          # where they are CORS-enabled and cacheable. Pushing here, not through
+          # the snapshot pull request, keeps the URLs valid the moment a release
+          # advertises them instead of waiting on a merge.
+          test -d catalog-assets || { echo 'no staged assets to publish' >&2; exit 0; }
+          worktree="$(mktemp -d)"
+          git worktree add --detach "$worktree" >/dev/null
+          find "$worktree" -mindepth 1 -maxdepth 1 -not -name .git -exec rm -rf {} +
+          cp -R catalog-assets/. "$worktree/"
+          cd "$worktree"
+          git add -A
+          git -c user.name='github-actions[bot]' \
+              -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+              commit -m "chore(catalog): publish browser assets" >/dev/null
+          git push --force \
+            "https://x-access-token:${SYNC_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            HEAD:refs/heads/catalog-assets
       - name: Determine publication
         id: publication
         env:
