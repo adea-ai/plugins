@@ -17,7 +17,11 @@ updates:
       github-actions:
         applies-to: version-updates
         patterns: ['*']
-  - package-ecosystem: npm
+  # This repository is managed by Bun (`bun.lock`, no package-lock.json), and
+  # Dependabot's npm_and_yarn ecosystem cannot update a bun.lock: every run ends
+  # in `misconfigured_tooling` and no dependency pull request is ever produced.
+  # `bun` is the ecosystem that reads and updates bun.lock.
+  - package-ecosystem: bun
     directory: /
     target-branch: main
     schedule:
