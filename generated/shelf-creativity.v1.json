@@ -1,8 +1,11 @@
 {
-  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "catalogId": "catalog:ae9047e0a1d48f6d7fb73f706f685d6421d735910d8b66833010784fbbe651f3",
   "category": "creativity",
   "products": [
     {
+      "authors": [
+        "Unknown"
+      ],
       "capabilitySummary": {
         "mcp-server": 1,
         "skill": 8
@@ -43,7 +46,46 @@
       "pluginId": "plugin:openai-official:canva",
       "primaryCategory": "creativity",
       "productKey": "canva",
+      "provenance": {
+        "manifestPath": ".agents/plugins/marketplace.json",
+        "pluginSubdirectory": "plugins/canva",
+        "repositoryUrl": "https://github.com/openai/plugins",
+        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:6c969b5644a3a16a802ca2ff480da292692f6fc2fbdede8a9977914be96836c4",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:654ee7e72515a57530703ed53371c1bc2cc0b77083b349d816173d0add81de89",
+        "packageStatus": "portable",
+        "releaseId": "release:3654229f7f82f7977cab4fb452dda5993cc20cd1832f13ee12f111af6eeb1123",
+        "requiredConnectors": [],
+        "requiredCredentials": [
+          "authentication"
+        ],
+        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "upstreamVersion": "14.0.0"
+      },
       "releaseId": "release:3654229f7f82f7977cab4fb452dda5993cc20cd1832f13ee12f111af6eeb1123",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "openai-official",
       "upstreamName": "canva",
       "variantPluginIds": [
@@ -52,6 +94,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Miro"
+      ],
       "capabilitySummary": {
         "mcp-server": 1,
         "skill": 8
@@ -93,7 +138,44 @@
       "pluginId": "plugin:claude-official:miro",
       "primaryCategory": "creativity",
       "productKey": "miro",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "claude-plugins/miro",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "c2494b24510d01ec3e50fad94a0c5fc3ca40e339"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:899e2b619c393ec1e40d6a0b9e866ef3e4fdf66a2c1a768cc9a042ca3e923823",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:970889fb33a9d0dd243965901f8b455df15a97606d14ff7bbc94adf1882c5350",
+        "packageStatus": "portable",
+        "releaseId": "release:1034a4f459b1e468b1f6d429bcbe9e63643e0760c6a68a6cf5fa35d2a0400454",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "c2494b24510d01ec3e50fad94a0c5fc3ca40e339",
+        "upstreamVersion": "1.4.0"
+      },
       "releaseId": "release:1034a4f459b1e468b1f6d429bcbe9e63643e0760c6a68a6cf5fa35d2a0400454",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "miro",
       "variantPluginIds": [
@@ -103,6 +185,9 @@
       "variantsIdentical": true
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -142,7 +227,40 @@
       "pluginId": "plugin:cursor-official:excalidraw",
       "primaryCategory": "creativity",
       "productKey": "excalidraw",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/excalidraw",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:acf67cb9ec45e885a9bf3e790291ad37e24e6dc57bb10ef42e84cd4f5169eccd",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:6b930238faac690506d672bfb166b309d120fbd0b2086b0abeb2153459317129",
+        "packageStatus": "portable",
+        "releaseId": "release:2bc0fd09d63d3e827dc98e90dfd0d14ca8da859b4ceb6b2f0a00a6ef42236438",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.1"
+      },
       "releaseId": "release:2bc0fd09d63d3e827dc98e90dfd0d14ca8da859b4ceb6b2f0a00a6ef42236438",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "excalidraw",
       "variantPluginIds": [
@@ -151,6 +269,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -190,7 +311,40 @@
       "pluginId": "plugin:cursor-official:gamma",
       "primaryCategory": "creativity",
       "productKey": "gamma",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/gamma",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:855867dad26c1704aa7cd0ebd2119c2660b44de7784a02cf120583e39dde4d9d",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:1939f1c8b0e89c19379fddab562c7a110a61055221f523ef927918527e71c3f8",
+        "packageStatus": "portable",
+        "releaseId": "release:3838c044707fca972130cad1970bcfbf828d6da9f3d1b9da7fdcf3f46a627983",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:3838c044707fca972130cad1970bcfbf828d6da9f3d1b9da7fdcf3f46a627983",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "gamma",
       "variantPluginIds": [
@@ -199,6 +353,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "mcp-server": 1,
         "skill": 3
@@ -240,7 +397,44 @@
       "pluginId": "plugin:claude-official:cloudinary",
       "primaryCategory": "creativity",
       "productKey": "cloudinary",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "86be53409e3fb1c465cd5ff4d1dc937a2860f45c"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:b66edb358675d37614b476608678709e60c29cb299a15580e1b17752808a0e1d",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:044a066afd85f6ed04ef61d26379540ca837bcbb8ccf6c2065a28ba105ef4e17",
+        "packageStatus": "portable",
+        "releaseId": "release:ea6373293c731789598618668c9e13dc22e2feb72d8a2ff28ad7b1e468a2678b",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "86be53409e3fb1c465cd5ff4d1dc937a2860f45c",
+        "upstreamVersion": "1.2.0"
+      },
       "releaseId": "release:ea6373293c731789598618668c9e13dc22e2feb72d8a2ff28ad7b1e468a2678b",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "cloudinary",
       "variantPluginIds": [
@@ -250,6 +444,9 @@
       "variantsIdentical": true
     },
     {
+      "authors": [
+        "Unknown"
+      ],
       "capabilitySummary": {
         "agent": 6,
         "skill": 6
@@ -290,7 +487,44 @@
       "pluginId": "plugin:openai-official:adobe",
       "primaryCategory": "creativity",
       "productKey": "adobe",
+      "provenance": {
+        "manifestPath": ".agents/plugins/marketplace.json",
+        "pluginSubdirectory": "plugins/adobe",
+        "repositoryUrl": "https://github.com/openai/plugins",
+        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:71b84f21a649f2098e626096fefe258747244a672895a73c0412924232525d06",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:b7408cefecb33b86f9bf5457ffbb5f2b463ff27cb7d15bbbaefd197de81abf9c",
+        "packageStatus": "partial",
+        "releaseId": "release:48cb11697c76099504a2ceac8becfce2124fd6ae90c7d5a7a1e8c7c2edf7a3ff",
+        "requiredConnectors": [],
+        "requiredCredentials": [
+          "authentication"
+        ],
+        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "upstreamVersion": "8.0.0"
+      },
       "releaseId": "release:48cb11697c76099504a2ceac8becfce2124fd6ae90c7d5a7a1e8c7c2edf7a3ff",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
       "sourceId": "openai-official",
       "upstreamName": "adobe",
       "variantPluginIds": [

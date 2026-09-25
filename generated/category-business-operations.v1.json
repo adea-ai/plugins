@@ -1,10 +1,13 @@
 {
-  "catalogId": "catalog:fe9ed1612777853a3c7b7bb9891da6c856d52b0e08ef362dec8d1395cb6a3f49",
+  "catalogId": "catalog:ae9047e0a1d48f6d7fb73f706f685d6421d735910d8b66833010784fbbe651f3",
   "category": "business-operations",
   "pluginCount": 56,
   "productCount": 48,
   "products": [
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -44,7 +47,40 @@
       "pluginId": "plugin:cursor-official:attio",
       "primaryCategory": "business-operations",
       "productKey": "attio",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/attio",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:7d3ceb5e680f31d018b1dabf595c85e1c29c9f8848b22e571b7b9c036a203f0d",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:72f10e56fa38fed726d83921c926e6fae7c563344d6688375b39f11bf44740c1",
+        "packageStatus": "portable",
+        "releaseId": "release:efbc2dbb9ddbb33e829b0f9aa6a8022877b997eae0edaf6da1a0152450df2078",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:efbc2dbb9ddbb33e829b0f9aa6a8022877b997eae0edaf6da1a0152450df2078",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "attio",
       "variantPluginIds": [
@@ -53,6 +89,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -92,7 +131,40 @@
       "pluginId": "plugin:cursor-official:hubspot",
       "primaryCategory": "business-operations",
       "productKey": "hubspot",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/hubspot",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:09f1e96b051494d9e0641d7035fa9d704dfc3c5b60439b37a6608b43cb7bd2ae",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:3bbe6a275b632abfb374fb39890684ccaa58089b4c9c98e450ed65423813ace2",
+        "packageStatus": "partial",
+        "releaseId": "release:c0cf3e81146b69f3b0f148080cc5b59514cb78c4e4722fe37340ffbb8025368f",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:c0cf3e81146b69f3b0f148080cc5b59514cb78c4e4722fe37340ffbb8025368f",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "hubspot",
       "variantPluginIds": [
@@ -101,6 +173,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -140,7 +215,40 @@
       "pluginId": "plugin:cursor-official:navan",
       "primaryCategory": "business-operations",
       "productKey": "navan",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/navan",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:0a88f9bb85e8e092df9c9af73707cd65a0fda928652e5a7ac24f6c07acc9b292",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:738f47a73ae75ad38744ef2b863cfc4374c69c8cd8b7e399da11ee67cc0a301e",
+        "packageStatus": "portable",
+        "releaseId": "release:6b5c6d1296f7c6fbe1ac23f52fd05806d3d34bc7a37c3c39aeb50d142851cfbb",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:6b5c6d1296f7c6fbe1ac23f52fd05806d3d34bc7a37c3c39aeb50d142851cfbb",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "navan",
       "variantPluginIds": [
@@ -149,6 +257,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -188,7 +299,40 @@
       "pluginId": "plugin:cursor-official:docusign",
       "primaryCategory": "business-operations",
       "productKey": "docusign",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/docusign",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:e78a9360d4c85633aede2073c40a78a4c66ecac7527447e425eb656b39d27e2a",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:7ab95aa51adc1ec46eb00f81b0241883f73bb132b043d82a1d291e5adb680e9e",
+        "packageStatus": "partial",
+        "releaseId": "release:f37673c134ede9f9ffc852d9a00e6b357da419befd6423e94da85003a7117e17",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:f37673c134ede9f9ffc852d9a00e6b357da419befd6423e94da85003a7117e17",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "docusign",
       "variantPluginIds": [
@@ -197,6 +341,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -236,7 +383,40 @@
       "pluginId": "plugin:cursor-official:godaddy",
       "primaryCategory": "business-operations",
       "productKey": "godaddy",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/godaddy",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:bdf70c2b759c6405def244afe476246c15266224345fb3e7df0100bb50dbbc0f",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:ecfe20a28c47a4db7fb42c834b017a5ec8e685c08bcff13f9590cb74e8f37e3b",
+        "packageStatus": "portable",
+        "releaseId": "release:0cacd0d6da3557b2acf03eb8837684e6c956cc53c69d52da95cf53d2951cbc12",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:0cacd0d6da3557b2acf03eb8837684e6c956cc53c69d52da95cf53d2951cbc12",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "godaddy",
       "variantPluginIds": [
@@ -245,6 +425,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -284,7 +467,40 @@
       "pluginId": "plugin:cursor-official:upwork",
       "primaryCategory": "business-operations",
       "productKey": "upwork",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/upwork",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:81905aa21ba26561e378b784bb1a7c5436c053dd1d8776346a8901956e6aa227",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:c27e0948a2fe37d78f05922e4038526af3f0dcb5c359f10053350b50a2b754dd",
+        "packageStatus": "portable",
+        "releaseId": "release:8fa2f90c5023d2cdeaf9e64451d7b6306e21aa87194e9bba5bc12a95c56c318e",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:8fa2f90c5023d2cdeaf9e64451d7b6306e21aa87194e9bba5bc12a95c56c318e",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "upwork",
       "variantPluginIds": [
@@ -293,6 +509,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "ActiveCampaign"
+      ],
       "capabilitySummary": {
         "agent": 2,
         "command": 5,
@@ -338,7 +557,52 @@
       "pluginId": "plugin:claude-official:activecampaign",
       "primaryCategory": "business-operations",
       "productKey": "activecampaign",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "0ff858728bc52aee335d5475b0d4eb5f3a9589b0"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:ed21d129d559eb10b89137e92329f9d5d81063a5ba847ae2a0cc7fd339cbd30f",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:d611b5734b74408924c39d65113045929d0ba25c62814d29ef4bf9bdf4f31bb0",
+        "packageStatus": "partial",
+        "releaseId": "release:b9e23f828402c30db9397da8f1ac1844fb026880cf4218ebc53ae300dec82442",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "0ff858728bc52aee335d5475b0d4eb5f3a9589b0",
+        "upstreamVersion": "0.3.1"
+      },
       "releaseId": "release:b9e23f828402c30db9397da8f1ac1844fb026880cf4218ebc53ae300dec82442",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "activecampaign",
       "variantPluginIds": [
@@ -348,6 +612,9 @@
       "variantsIdentical": true
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "agent": 2,
         "command": 5,
@@ -395,7 +662,51 @@
       "pluginId": "plugin:knowledge-work-official:adspirer-ads-agent",
       "primaryCategory": "business-operations",
       "productKey": "adspirer-ads-agent",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "e3067cec8803e28da91834d0f38e0405ad23429b"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:84d90f21e275c4f8cfa6dad021f7cd69a9b2d1ca3ea6937f846acee33a10c79b",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:60e06443802aa90a41d30fdcebe5bf23d5b51c4730b31233faeb3cba8b302a33",
+        "packageStatus": "partial",
+        "releaseId": "release:e9357a0bca2420bf32ee7bf35b719b02879d11a3a314d75f2aae94bdd54135fb",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "e3067cec8803e28da91834d0f38e0405ad23429b"
+      },
       "releaseId": "release:e9357a0bca2420bf32ee7bf35b719b02879d11a3a314d75f2aae94bdd54135fb",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "knowledge-work-official",
       "upstreamName": "adspirer-ads-agent",
       "variantPluginIds": [
@@ -404,6 +715,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "agent": 1,
         "executable": 5,
@@ -446,7 +760,54 @@
       "pluginId": "plugin:cursor-official:advisor",
       "primaryCategory": "business-operations",
       "productKey": "advisor",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "advisor",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:6b63e1ee0729d49758fd21222dcda1200cbd3bba5e8439aeabb32468c6505211",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:313f84ae95420816fc0c7184adf4a35794da8c900d701422afb4140f871e6977",
+        "packageStatus": "partial",
+        "releaseId": "release:1c7783ead0ced9edc2121e2c4202b25c0b3dae591989fb50cc33d86e84558bab",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:1c7783ead0ced9edc2121e2c4202b25c0b3dae591989fb50cc33d86e84558bab",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "advisor",
       "variantPluginIds": [
@@ -455,6 +816,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "agent": 18,
         "executable": 34,
@@ -493,7 +857,58 @@
       "pluginId": "plugin:claude-official:agentforce-adlc",
       "primaryCategory": "business-operations",
       "productKey": "agentforce-adlc",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "b280f6346fa70aaf4fbd0e0bc5d18582c1fb039a"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:c634b0aaabffb076654e2805dd402f367163b3ec1fc5b848ce165d1f18c50930",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:1fc70f1127343a86d925fa8d675cad7bb2c617f74efbfcf8e2ed17521dcbea06",
+        "packageStatus": "partial",
+        "releaseId": "release:ef0eb8d5de32bb37d51269f983074d1108026322655e72cd1cc33e860d94429c",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "b280f6346fa70aaf4fbd0e0bc5d18582c1fb039a",
+        "upstreamVersion": "0.12.0"
+      },
       "releaseId": "release:ef0eb8d5de32bb37d51269f983074d1108026322655e72cd1cc33e860d94429c",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "agentforce-adlc",
       "variantPluginIds": [
@@ -502,6 +917,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -541,7 +959,40 @@
       "pluginId": "plugin:cursor-official:ahrefs",
       "primaryCategory": "business-operations",
       "productKey": "ahrefs",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/ahrefs",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:46c133d0f00a70a38066637455b9ae55fe61e8217db9933cb071351b324e1983",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:96a45480937462c6caa9c106f7d370ce65b6021c8902571f2558720160e6da4d",
+        "packageStatus": "portable",
+        "releaseId": "release:a5d56f850e697ce339370e933fb36cda3a24d641f27da149721c60f411bc2159",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:a5d56f850e697ce339370e933fb36cda3a24d641f27da149721c60f411bc2159",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "ahrefs",
       "variantPluginIds": [
@@ -550,6 +1001,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "executable": 1,
         "rule": 1,
@@ -593,7 +1047,48 @@
       "pluginId": "plugin:knowledge-work-official:ai-firstify",
       "primaryCategory": "business-operations",
       "productKey": "ai-firstify",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/ai-firstify",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "f6380c947b04ae0817c2723fbf589784d4501357"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:df3af625c937b9571102ad11972690c259e85be5dd558540d59bfce2afbdb5f4",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:a6d7fe31ee57085cb0f74692335acca431fd3fd61d94bccacc34f8e30c9e2dae",
+        "packageStatus": "portable",
+        "releaseId": "release:110de431f1da22785e65128a8852398740b08da8c2e15937e995b453bac78de6",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "f6380c947b04ae0817c2723fbf589784d4501357",
+        "upstreamVersion": "1.1.0"
+      },
       "releaseId": "release:110de431f1da22785e65128a8852398740b08da8c2e15937e995b453bac78de6",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
       "sourceId": "knowledge-work-official",
       "upstreamName": "ai-firstify",
       "variantPluginIds": [
@@ -602,6 +1097,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -641,7 +1139,40 @@
       "pluginId": "plugin:cursor-official:amplemarket",
       "primaryCategory": "business-operations",
       "productKey": "amplemarket",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/amplemarket",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:0c2e0ae4502b792f73f0f6ddb53e84ae00d6de53d67abd397ba12a57f921a8dd",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:e04cb423b13360a3278db296c561bf5951fc771f490ec1cfd5d0f5779fe55a81",
+        "packageStatus": "portable",
+        "releaseId": "release:c5b6e7a8baf72415125ae7af663b31da285c561ea60858aaf7df5f8df6809957",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:c5b6e7a8baf72415125ae7af663b31da285c561ea60858aaf7df5f8df6809957",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "amplemarket",
       "variantPluginIds": [
@@ -650,6 +1181,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Apollo.io"
+      ],
       "capabilitySummary": {
         "mcp-server": 1,
         "skill": 4
@@ -693,7 +1227,44 @@
       "pluginId": "plugin:claude-official:apollo",
       "primaryCategory": "business-operations",
       "productKey": "apollo",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "2adde980e45f421b7e9383d92870455627936bce"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:f4b6a61bd72f89738ed513e1b7d91413cc6f8bb223e1c0efaba1902afe520e61",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:501d6095695eb85277c495e7068f1a769031480aa3548f3f2818f6654094d315",
+        "packageStatus": "partial",
+        "releaseId": "release:9ebcd902611602641b83dfd386109d689494a217cdde1196f7dc303121e40b1e",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "2adde980e45f421b7e9383d92870455627936bce",
+        "upstreamVersion": "0.1.1"
+      },
       "releaseId": "release:9ebcd902611602641b83dfd386109d689494a217cdde1196f7dc303121e40b1e",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "apollo",
       "variantPluginIds": [
@@ -703,6 +1274,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -742,7 +1316,40 @@
       "pluginId": "plugin:cursor-official:ashby",
       "primaryCategory": "business-operations",
       "productKey": "ashby",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/ashby",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:058bcc269dc31f9d175a3f0386f9b38f004037e22ed708afcd35810e480fee7f",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:d8f9890640dc7e61515abfa2e678c63a2c14e6d6a9ddcb2e1774a5794ce15f6b",
+        "packageStatus": "portable",
+        "releaseId": "release:0848e3465da7e4fa9750f59597806d15b531a368b2b7477929eb47c980ebf3eb",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:0848e3465da7e4fa9750f59597806d15b531a368b2b7477929eb47c980ebf3eb",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "ashby",
       "variantPluginIds": [
@@ -751,6 +1358,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Tribe AI"
+      ],
       "capabilitySummary": {
         "agent": 5,
         "command": 3,
@@ -785,7 +1395,52 @@
       "pluginId": "plugin:knowledge-work-official:brand-voice",
       "primaryCategory": "business-operations",
       "productKey": "brand-voice",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "partner-built/brand-voice",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:efc2b164e535aed552f15e19e04e242dc08ada761e19c7e148f4f9344acae24e",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:784df080496540da811eacbdab2c14e3474346352d38266a1541c9a8e6f95af9",
+        "packageStatus": "partial",
+        "releaseId": "release:f619eaf5d8704594919aee2c47af8b6fa6eb2ce7bcc08a84b2fc91d54d0d97c5",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.1.0"
+      },
       "releaseId": "release:f619eaf5d8704594919aee2c47af8b6fa6eb2ce7bcc08a84b2fc91d54d0d97c5",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "knowledge-work-official",
       "upstreamName": "brand-voice",
       "variantPluginIds": [
@@ -794,6 +1449,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -833,7 +1491,40 @@
       "pluginId": "plugin:cursor-official:brevo",
       "primaryCategory": "business-operations",
       "productKey": "brevo",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/brevo",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d88172082b28f4e50023e0535c8f7b9de5e3541b8eafad550f1d5f1bb9781ac2",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:e7d5ccd7fbee2b19aa04d293f1271364b46c4ee437f9863fc971c8be78c2e67a",
+        "packageStatus": "partial",
+        "releaseId": "release:2397afa270ca9942b028a337a232d240679df053d7f8561fa806f78aeae695b8",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:2397afa270ca9942b028a337a232d240679df053d7f8561fa806f78aeae695b8",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "brevo",
       "variantPluginIds": [
@@ -842,6 +1533,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Carta Engineering"
+      ],
       "capabilitySummary": {
         "executable": 8,
         "hook": 47,
@@ -887,7 +1581,50 @@
       "pluginId": "plugin:claude-official:carta-crm",
       "primaryCategory": "business-operations",
       "productKey": "carta-crm",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/carta-crm",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "81b8f40844bd646842538a4583409f9aa54c42db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:6415221d27451c8f8c53061c32cc71540a6180237e5cf50c05aca9faadd489a3",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:d023fad067877bc49dd91e41c1608856f9ad0c6a3d9f2363d3af4b3a24bfb06b",
+        "packageStatus": "partial",
+        "releaseId": "release:1d7919c28b85968d2e84bb0853911a0cc942dca47b29cb6695bf6d44fc87fae7",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "81b8f40844bd646842538a4583409f9aa54c42db",
+        "upstreamVersion": "1.12.3"
+      },
       "releaseId": "release:1d7919c28b85968d2e84bb0853911a0cc942dca47b29cb6695bf6d44fc87fae7",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "carta-crm",
       "variantPluginIds": [
@@ -897,6 +1634,9 @@
       "variantsIdentical": true
     },
     {
+      "authors": [
+        "Catalyst by Zoho"
+      ],
       "capabilitySummary": {
         "command": 1,
         "hook": 2,
@@ -944,7 +1684,54 @@
       "pluginId": "plugin:claude-official:catalyst-by-zoho",
       "primaryCategory": "business-operations",
       "productKey": "catalyst-by-zoho",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "9670b79d72fe4923cc845ca0414d009ef3684ccb"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:b2c9a72b55ee2c954c4da0a2af34efaf631c1fb5a2f66287b6d95b0fd0abac5c",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:15eda39f20aa8d706b60c44bb1247cfc48aad3c08fce201663ab7daaf3a803b8",
+        "packageStatus": "partial",
+        "releaseId": "release:597bbd955b7d440fc795ddc91784983ba298f48c79f1103404ff6f3fd2f9ad57",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "9670b79d72fe4923cc845ca0414d009ef3684ccb",
+        "upstreamVersion": "0.0.2"
+      },
       "releaseId": "release:597bbd955b7d440fc795ddc91784983ba298f48c79f1103404ff6f3fd2f9ad57",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "hook",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains hook capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "catalyst-by-zoho",
       "variantPluginIds": [
@@ -953,6 +1740,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Clay"
+      ],
       "capabilitySummary": {
         "executable": 5,
         "hook": 5,
@@ -997,7 +1787,50 @@
       "pluginId": "plugin:claude-official:clay",
       "primaryCategory": "business-operations",
       "productKey": "clay",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "clay",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "769514a3a23683fcc7cbbf32067538d17e465381"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:b28ae44f75afee7b57bfd447a5f810c0d1d651e3b6544284fca74e6adf3b0f59",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:0b55e3b0418b76e0a51fd6416383611777dad81c279a3ead6eff960ea0a8b0c4",
+        "packageStatus": "partial",
+        "releaseId": "release:4200159347b1b4eac010d9c2d2234c5265beed68ddd52eaba42294a2a3497fc1",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "769514a3a23683fcc7cbbf32067538d17e465381",
+        "upstreamVersion": "2.26.0"
+      },
       "releaseId": "release:4200159347b1b4eac010d9c2d2234c5265beed68ddd52eaba42294a2a3497fc1",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "clay",
       "variantPluginIds": [
@@ -1007,6 +1840,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Common Room"
+      ],
       "capabilitySummary": {
         "command": 2,
         "mcp-server": 1,
@@ -1040,7 +1876,48 @@
       "pluginId": "plugin:knowledge-work-official:common-room",
       "primaryCategory": "business-operations",
       "productKey": "common-room",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "partner-built/common-room",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d968478f0af0e5eb473699f478494f08782061eafa0964f8e2ececb64416d653",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:d073411f98f3a43ddf2530cdf8755e582d73e2e0a580c32cc9c4a640f9be7a9d",
+        "packageStatus": "partial",
+        "releaseId": "release:2b770455a7e657195745f5b00b998bb460829e4e53cbfd65e736dba3a1674efc",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:2b770455a7e657195745f5b00b998bb460829e4e53cbfd65e736dba3a1674efc",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "knowledge-work-official",
       "upstreamName": "common-room",
       "variantPluginIds": [
@@ -1049,6 +1926,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -1088,7 +1968,40 @@
       "pluginId": "plugin:cursor-official:gong",
       "primaryCategory": "business-operations",
       "productKey": "gong",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/gong",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:378cc5dae290e5bdfa04035366d03305d8249540467f32e4d1e97f4c8bf8adac",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:886739e037088ed111f949d1f0fa49801b31e55893ddf32d089d3fc1c769998d",
+        "packageStatus": "partial",
+        "releaseId": "release:663001d2f42c40b801a8b1a58b5e1d65c66f0fb983da1cb7abf3056d304dd735",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:663001d2f42c40b801a8b1a58b5e1d65c66f0fb983da1cb7abf3056d304dd735",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "gong",
       "variantPluginIds": [
@@ -1097,6 +2010,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "mcp-server": 1,
         "skill": 9
@@ -1129,7 +2045,44 @@
       "pluginId": "plugin:knowledge-work-official:human-resources",
       "primaryCategory": "business-operations",
       "productKey": "human-resources",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "human-resources",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:8903c2708c055bb9f4d2b0e4ab1a07f763bdc8ed321f2942005c74c0264b4c90",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:0669576007ba1afbbdecbaab1eefdf3a5668d6e891e3969d9f818284dfa40e47",
+        "packageStatus": "partial",
+        "releaseId": "release:d90eaabb16be8da4d4bc3fca9866c70111b5ea77429ef83c90671918c80caaa2",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.3.0"
+      },
       "releaseId": "release:d90eaabb16be8da4d4bc3fca9866c70111b5ea77429ef83c90671918c80caaa2",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "knowledge-work-official",
       "upstreamName": "human-resources",
       "variantPluginIds": [
@@ -1138,6 +2091,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Hunter.io"
+      ],
       "capabilitySummary": {
         "mcp-server": 1,
         "skill": 13
@@ -1181,7 +2137,44 @@
       "pluginId": "plugin:claude-official:hunter",
       "primaryCategory": "business-operations",
       "productKey": "hunter",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "2a6de2a00f7f459a05c146c6f0712417b8d30db9"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:37ba7cb3985563388c21d80e574c202257d3ee12e172b48aa9ecab08822292e6",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:2cf674bfcce7c6897d2119de7467d26bae39fce93d98038d1ead4ebf2498646c",
+        "packageStatus": "partial",
+        "releaseId": "release:259df3b6a3a7503fc14672ee73dded1495a293bae312eab6736045408972d76c",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "2a6de2a00f7f459a05c146c6f0712417b8d30db9",
+        "upstreamVersion": "0.1.0"
+      },
       "releaseId": "release:259df3b6a3a7503fc14672ee73dded1495a293bae312eab6736045408972d76c",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "hunter",
       "variantPluginIds": [
@@ -1191,6 +2184,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -1230,7 +2226,40 @@
       "pluginId": "plugin:cursor-official:juicebox",
       "primaryCategory": "business-operations",
       "productKey": "juicebox",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/juicebox",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d6ab10d758e9015ed6e4b6e51ae4e0e396178b3fdca3a83190fc2d6682c0dc9d",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:01bbdaa662d828db88316f6b6929e1315b9b24cb0f2b2c7d5f5c563c4d9b60ea",
+        "packageStatus": "portable",
+        "releaseId": "release:264f60bc8c7fdb071c233034a90e9fe8e11d639dd8e8fec11c60715c0aad0fcd",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:264f60bc8c7fdb071c233034a90e9fe8e11d639dd8e8fec11c60715c0aad0fcd",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "juicebox",
       "variantPluginIds": [
@@ -1239,6 +2268,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -1278,7 +2310,40 @@
       "pluginId": "plugin:cursor-official:klaviyo",
       "primaryCategory": "business-operations",
       "productKey": "klaviyo",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/klaviyo",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:4612c4a38e62afea1e28471cb20e2cee30c974ca2b4d1096fc446c1e462e720b",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:7c7b4fe4bf67bf9054be1f238138abe64a1a066020595b1776a45d9597520478",
+        "packageStatus": "portable",
+        "releaseId": "release:bd352973985c8abb663cfbb848f8ad580cb010e8ae571d13fb37259df4de1a62",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:bd352973985c8abb663cfbb848f8ad580cb010e8ae571d13fb37259df4de1a62",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "klaviyo",
       "variantPluginIds": [
@@ -1287,6 +2352,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "mcp-server": 1,
         "skill": 9
@@ -1318,7 +2386,44 @@
       "pluginId": "plugin:knowledge-work-official:legal",
       "primaryCategory": "business-operations",
       "productKey": "legal",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "legal",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:f0ac2a7f4614086840b4a3d73abd9f119d1c3af4f064e4164855dc980d3982da",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:51021a7c955c0d694d7b3bec49aed3d9b860ed27a46decd511d0464a0553eab2",
+        "packageStatus": "partial",
+        "releaseId": "release:a999f6a68995bb392d4de720086dd099f5512042f2a44aadc6ec5758398a6192",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.3.0"
+      },
       "releaseId": "release:a999f6a68995bb392d4de720086dd099f5512042f2a44aadc6ec5758398a6192",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "knowledge-work-official",
       "upstreamName": "legal",
       "variantPluginIds": [
@@ -1327,6 +2432,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -1366,7 +2474,40 @@
       "pluginId": "plugin:cursor-official:mailerlite",
       "primaryCategory": "business-operations",
       "productKey": "mailerlite",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/mailerlite",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:c3da44fd17eea8230e534dd838b7a50dfd5e0a3df8b3cf9d8ca0730b706222a0",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:66f177eec0292b25b28d29a9aee005232476956f7145452d056fc984965cfc3e",
+        "packageStatus": "portable",
+        "releaseId": "release:62be2f7946fbbab39b4032742e3976091e183eb572ad6d49510542f6fabc60db",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:62be2f7946fbbab39b4032742e3976091e183eb572ad6d49510542f6fabc60db",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "mailerlite",
       "variantPluginIds": [
@@ -1375,6 +2516,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "mcp-server": 1,
         "skill": 8
@@ -1406,7 +2550,44 @@
       "pluginId": "plugin:knowledge-work-official:marketing",
       "primaryCategory": "business-operations",
       "productKey": "marketing",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "marketing",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:80d397b4500161aae969ddf36371c12e657937fc70398cd64b72494be4983fe3",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:f90ba6a25e0f7cf525ed0e78eb7763a60a46e16de338461b61d59136c54aa1ac",
+        "packageStatus": "partial",
+        "releaseId": "release:33fabcf86bb5b47ac774f23e4d268066f161a07a1ccb3ae36f789a2d8cf35c31",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.2.0"
+      },
       "releaseId": "release:33fabcf86bb5b47ac774f23e4d268066f161a07a1ccb3ae36f789a2d8cf35c31",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "knowledge-work-official",
       "upstreamName": "marketing",
       "variantPluginIds": [
@@ -1415,6 +2596,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -1454,7 +2638,40 @@
       "pluginId": "plugin:cursor-official:meltwater",
       "primaryCategory": "business-operations",
       "productKey": "meltwater",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/meltwater",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:5f41fdfe68a633cb85200fe0192d1f1c63692f063f156728861cc5a46a66f634",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:8def43bdf3d34616e53e2ee51b6a1f15bdcdb5ed5031b30a69ab688eef86cfe3",
+        "packageStatus": "portable",
+        "releaseId": "release:e7e31b72aa6bda90112ac5ef4ba648849542e6f528bd4e57b5c9293dd8b61ad6",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:e7e31b72aa6bda90112ac5ef4ba648849542e6f528bd4e57b5c9293dd8b61ad6",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "meltwater",
       "variantPluginIds": [
@@ -1463,6 +2680,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "agent": 2,
         "browser": 2,
@@ -1509,7 +2729,68 @@
       "pluginId": "plugin:claude-official:nimble",
       "primaryCategory": "business-operations",
       "productKey": "nimble",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "2890fdf94f0adfae79bf05b4de3c91667701bafb"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:2850fe3ee95239676bdf0b3416f686dc8966558211f200ad514edc904e9b0efe",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "browser",
+            "type": "browser"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:0deac46fd4c18b50f87c7d8648ffab71478638846502771ff430d047c55ac4e7",
+        "packageStatus": "partial",
+        "releaseId": "release:3a08ad4e7858e5b94ca1cf03755e9c46241b26038ddd08867a04e90005a08555",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "2890fdf94f0adfae79bf05b4de3c91667701bafb",
+        "upstreamVersion": "1.7.0"
+      },
       "releaseId": "release:3a08ad4e7858e5b94ca1cf03755e9c46241b26038ddd08867a04e90005a08555",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "browser",
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains browser capability metadata.",
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "nimble",
       "variantPluginIds": [
@@ -1519,6 +2800,9 @@
       "variantsIdentical": true
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "mcp-server": 1,
         "skill": 9
@@ -1550,7 +2834,44 @@
       "pluginId": "plugin:knowledge-work-official:operations",
       "primaryCategory": "business-operations",
       "productKey": "operations",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "operations",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:04bd1157c9ac11b809d4e5a83694f1e2c8d59d5de76f64351ef72dfc597cad8f",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:302dc414f64b829fcf90ce9ab2ee5b675d16a456f84c050fbd16a9852c7d1b1e",
+        "packageStatus": "partial",
+        "releaseId": "release:088539937c4b52972ca8ea36d4d3e35b364a8fda78ba3c78655642c84e32d478",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.3.0"
+      },
       "releaseId": "release:088539937c4b52972ca8ea36d4d3e35b364a8fda78ba3c78655642c84e32d478",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "knowledge-work-official",
       "upstreamName": "operations",
       "variantPluginIds": [
@@ -1559,6 +2880,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -1598,7 +2922,40 @@
       "pluginId": "plugin:cursor-official:outreach",
       "primaryCategory": "business-operations",
       "productKey": "outreach",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/outreach",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:51750a1e0656ce74a56bd757dba73057946c9017e85af5e35407c61fe48581af",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:578cbdfeb6da3222041c456cba42e82050468de8a9c85e0d98218add9f9651bd",
+        "packageStatus": "portable",
+        "releaseId": "release:46e69c1b14790a98098e8774a6520925d257a64ae3eef8f7b52ac68a2b8698db",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:46e69c1b14790a98098e8774a6520925d257a64ae3eef8f7b52ac68a2b8698db",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "outreach",
       "variantPluginIds": [
@@ -1607,6 +2964,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "command": 5,
         "executable": 2,
@@ -1649,7 +3009,48 @@
       "pluginId": "plugin:claude-official:postiz",
       "primaryCategory": "business-operations",
       "productKey": "postiz",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "51293500c1b1fb447205100cb09b2999085323ac"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d5aeadc9389f664262ba21f5cb39829725b0464fb8acc4981d25a83f0f10434f",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:a830fcc174e1204577752972014db2f91dd52fecfa4d0016ac36be6b2b076004",
+        "packageStatus": "partial",
+        "releaseId": "release:203e3ea004812532671a8ef6051dfd2052fbf97392842a405b71004e7b21b2a4",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "51293500c1b1fb447205100cb09b2999085323ac",
+        "upstreamVersion": "2.0.18"
+      },
       "releaseId": "release:203e3ea004812532671a8ef6051dfd2052fbf97392842a405b71004e7b21b2a4",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "postiz",
       "variantPluginIds": [
@@ -1659,6 +3060,9 @@
       "variantsIdentical": true
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "command": 1,
         "mcp-server": 1,
@@ -1692,7 +3096,48 @@
       "pluginId": "plugin:knowledge-work-official:product-management",
       "primaryCategory": "business-operations",
       "productKey": "product-management",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "product-management",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:af7717106a70fce3a544a2de7af98f2bb49053abbd1bce64d95bfe77845ca3f4",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:d88e3d177d27a923d22a516e5bf03b66643add8f9d65b9add899981cc9170fbf",
+        "packageStatus": "partial",
+        "releaseId": "release:a41743639712fde3bb96799191dbaed6e26e7e55ae79b80a18478a08455033bf",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.2.0"
+      },
       "releaseId": "release:a41743639712fde3bb96799191dbaed6e26e7e55ae79b80a18478a08455033bf",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "knowledge-work-official",
       "upstreamName": "product-management",
       "variantPluginIds": [
@@ -1701,6 +3146,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "agent": 1,
         "hook": 1,
@@ -1745,7 +3193,48 @@
       "pluginId": "plugin:knowledge-work-official:product-tracking-skills",
       "primaryCategory": "business-operations",
       "productKey": "product-tracking-skills",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "341f8cf47d8b5dda550222152377c50aee34c723"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:131fb4d0cd8633e47596af6215ff59569ec0fd41a4bad51529e86f07e716d1d3",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:5cfbb1b99835f955de202234f9035284e9ecd0038f6a3cd7d2beb6ca561a874e",
+        "packageStatus": "partial",
+        "releaseId": "release:3a9c5ba891a5ebbe70af15ca1b6bc9251b44812d7ab59679546e5d78066766a8",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "341f8cf47d8b5dda550222152377c50aee34c723",
+        "upstreamVersion": "1.1.0"
+      },
       "releaseId": "release:3a9c5ba891a5ebbe70af15ca1b6bc9251b44812d7ab59679546e5d78066766a8",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "hook"
+        ],
+        "reasons": [
+          "Contains hook capability metadata."
+        ]
+      },
       "sourceId": "knowledge-work-official",
       "upstreamName": "product-tracking-skills",
       "variantPluginIds": [
@@ -1754,6 +3243,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -1793,7 +3285,40 @@
       "pluginId": "plugin:cursor-official:profound",
       "primaryCategory": "business-operations",
       "productKey": "profound",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/profound",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:daae2b87f55fe906c756a4daa734c8fb5a3c57778269b1ca8af38381897e4fd8",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:64e21a1aab0c718db70f8a47ab9faeb71d8334a01a84b9fc22e16b3bc27d1068",
+        "packageStatus": "portable",
+        "releaseId": "release:a471523d99aa524e71ddedba553cc3e77bf0b0cb57ed5356596c3818ee4b92e9",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:a471523d99aa524e71ddedba553cc3e77bf0b0cb57ed5356596c3818ee4b92e9",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "profound",
       "variantPluginIds": [
@@ -1802,6 +3327,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "agent": 2,
         "executable": 2,
@@ -1843,7 +3371,48 @@
       "pluginId": "plugin:cursor-official:pstack",
       "primaryCategory": "business-operations",
       "productKey": "pstack",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "pstack",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:1ff29d5989ea2eacbf5358c76f5028f502d8ddbd4f54c0c83fbec8801eb1fdc0",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:2eef7dac71e8cd0ae685aefab442fe4ab0987ef474fdbfb79f26576186a500cf",
+        "packageStatus": "partial",
+        "releaseId": "release:45626566859ab642c7662fab680b4524057cd52c75225a92ee10bcfb3a1406fb",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "0.15.5"
+      },
       "releaseId": "release:45626566859ab642c7662fab680b4524057cd52c75225a92ee10bcfb3a1406fb",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "pstack",
       "variantPluginIds": [
@@ -1852,6 +3421,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "mcp-server": 1,
         "scheduled-task": 1,
@@ -1884,7 +3456,50 @@
       "pluginId": "plugin:knowledge-work-official:sales",
       "primaryCategory": "business-operations",
       "productKey": "sales",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "sales",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:bd3eeda9254ec490181d69236e5d69ac046af54277f5b8a26655d8144285c747",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "scheduled-task",
+            "type": "scheduled-task"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:efcfa610a532f33ef033231ff5b90b4e36d165f48d16ac02eca9424cc19c8895",
+        "packageStatus": "partial",
+        "releaseId": "release:a961620c93677ad560e5fadc8f354878d9939bee5d98e3c7aaf9ade33ef6f8f4",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "2.0.1"
+      },
       "releaseId": "release:a961620c93677ad560e5fadc8f354878d9939bee5d98e3c7aaf9ade33ef6f8f4",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server",
+          "scheduled-task"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata.",
+          "Contains scheduled-task capability metadata."
+        ]
+      },
       "sourceId": "knowledge-work-official",
       "upstreamName": "sales",
       "variantPluginIds": [
@@ -1893,6 +3508,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -1932,7 +3550,40 @@
       "pluginId": "plugin:cursor-official:salesforce",
       "primaryCategory": "business-operations",
       "productKey": "salesforce",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/salesforce",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:bf0abbb89967c829ed923a5b6ca877638f72dbe27a8861d055ad0d76bcd8af23",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:d058e3d1029556c817c9e069bd79ed85b222e19ecd96868b40dbc881ebcd3259",
+        "packageStatus": "partial",
+        "releaseId": "release:2f24361cfab4b00eadb125674d14db59e9778f8e44c8fbf5fb22bdd16aaaa16e",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:2f24361cfab4b00eadb125674d14db59e9778f8e44c8fbf5fb22bdd16aaaa16e",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "salesforce",
       "variantPluginIds": [
@@ -1941,6 +3592,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "agent": 3,
         "command": 6,
@@ -1975,7 +3629,46 @@
       "pluginId": "plugin:knowledge-work-official:searchfit-seo",
       "primaryCategory": "business-operations",
       "productKey": "searchfit-seo",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "c324a2e87c4dd84fe6bd6d55e45272acdd090afd"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:b510e1d437bf21783cefcaa9f1f7f7f55e75507bb5b8971ee13427d131845166",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:581c693b0657e64f540c2951a0d489696940400d576fd74c4fcf51532701cb64",
+        "packageStatus": "partial",
+        "releaseId": "release:fc1761d1c67f4ae099fb2f2ac2d355746d15880f22d4a4c3bc2a7e01974858ed",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "c324a2e87c4dd84fe6bd6d55e45272acdd090afd",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:fc1761d1c67f4ae099fb2f2ac2d355746d15880f22d4a4c3bc2a7e01974858ed",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
       "sourceId": "knowledge-work-official",
       "upstreamName": "searchfit-seo",
       "variantPluginIds": [
@@ -1984,6 +3677,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -2023,7 +3719,40 @@
       "pluginId": "plugin:cursor-official:semrush",
       "primaryCategory": "business-operations",
       "productKey": "semrush",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/semrush",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:226afdc5bc7b5d61e8de9b9b52eda2df8ad3e6dd33eb0ebf85c4ef94b4aaa472",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:39fb5ecf91e9e1ce0f4876739dd26e0ac118332c9aeac6dda3ab323b300ad066",
+        "packageStatus": "portable",
+        "releaseId": "release:9948b7e1404a98f75ad8ac2b9c02a589b09437fdc58042844eb5adcb48040d97",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:9948b7e1404a98f75ad8ac2b9c02a589b09437fdc58042844eb5adcb48040d97",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "semrush",
       "variantPluginIds": [
@@ -2032,6 +3761,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Unknown"
+      ],
       "capabilitySummary": {
         "agent": 20,
         "mcp-server": 1,
@@ -2073,7 +3805,50 @@
       "pluginId": "plugin:openai-official:shopify",
       "primaryCategory": "business-operations",
       "productKey": "shopify",
+      "provenance": {
+        "manifestPath": ".agents/plugins/marketplace.json",
+        "pluginSubdirectory": "plugins/shopify",
+        "repositoryUrl": "https://github.com/openai/plugins",
+        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:77a71871eccce357f4d5057a2f06de159fdfb5c32b0db5a50f0f29101c08d3ec",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:df01d8a2fe4654a2edd4a097ad911da17b55fbdbb6b938c8a2a288c7b18c8a88",
+        "packageStatus": "partial",
+        "releaseId": "release:b108540ba1223c97598d891e4ee90e96151f4a57e3dbd060ac2660fd2da46bd0",
+        "requiredConnectors": [],
+        "requiredCredentials": [
+          "authentication"
+        ],
+        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "upstreamVersion": "3.0.0"
+      },
       "releaseId": "release:b108540ba1223c97598d891e4ee90e96151f4a57e3dbd060ac2660fd2da46bd0",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "openai-official",
       "upstreamName": "shopify",
       "variantPluginIds": [
@@ -2082,6 +3857,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -2121,7 +3899,40 @@
       "pluginId": "plugin:cursor-official:similarweb",
       "primaryCategory": "business-operations",
       "productKey": "similarweb",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/similarweb",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:908c412b90e1c2a6712e5056a741a62c06380af69820065906b050a8c81df0b9",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:79a316993457320e81dbe8154b502cf746d7dc4d2c217c784a4ea65133bc0d75",
+        "packageStatus": "partial",
+        "releaseId": "release:7dd282ea9ae9fdfedb2edff1c69fa65226366fb47fb089011fa7cf9134e7d5df",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:7dd282ea9ae9fdfedb2edff1c69fa65226366fb47fb089011fa7cf9134e7d5df",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "similarweb",
       "variantPluginIds": [
@@ -2130,6 +3941,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Anthropic"
+      ],
       "capabilitySummary": {
         "mcp-server": 1,
         "skill": 44
@@ -2162,7 +3976,44 @@
       "pluginId": "plugin:knowledge-work-official:small-business",
       "primaryCategory": "business-operations",
       "productKey": "small-business",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "small-business",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:990d05ff1684beaf933a134e45cc988efc95bab7022368547539bd41a643b40b",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:860b909970d770b0428c9291116e9cea9849afc717fb74ab3540dcbf16adbfff",
+        "packageStatus": "partial",
+        "releaseId": "release:ab4a8bd456d285605ff4cdc3399e51977b6e6c997228abeaa49b66995ae76884",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.35.1"
+      },
       "releaseId": "release:ab4a8bd456d285605ff4cdc3399e51977b6e6c997228abeaa49b66995ae76884",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "knowledge-work-official",
       "upstreamName": "small-business",
       "variantPluginIds": [
@@ -2171,6 +4022,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -2210,7 +4064,40 @@
       "pluginId": "plugin:cursor-official:workable",
       "primaryCategory": "business-operations",
       "productKey": "workable",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/workable",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:25bcf4217f78ad79b02bbf61df152387245ea3eb073f6fd50723852efcde91e1",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:b7bc52e8368fa272523d4de6dbeb3e246134cd7be46b362360064c5c51383fcb",
+        "packageStatus": "portable",
+        "releaseId": "release:84003481245da4c097e77bcd0e0040c5ed799b121b9a866c510ae769acc607d8",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:84003481245da4c097e77bcd0e0040c5ed799b121b9a866c510ae769acc607d8",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "workable",
       "variantPluginIds": [
@@ -2219,6 +4106,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "Cursor"
+      ],
       "capabilitySummary": {
         "mcp-server": 2
       },
@@ -2259,7 +4149,40 @@
       "pluginId": "plugin:cursor-official:x-ads",
       "primaryCategory": "business-operations",
       "productKey": "x-ads",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/x-ads",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "fadd23794c0075468eb8964b0fd93e06e09486ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:c15d6c96b19486230223016abbc9057968735915c446e8e6e01cd8709a09e30a",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:6f71e66d0aac835db3bbd1a23404e76da62ff2c32cc0b8696106edef4268f79f",
+        "packageStatus": "partial",
+        "releaseId": "release:22dfb0b405d8b699e872591839e83d55e0b388df850aae6fd381a07035c610a9",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fadd23794c0075468eb8964b0fd93e06e09486ad",
+        "upstreamVersion": "1.0.0"
+      },
       "releaseId": "release:22dfb0b405d8b699e872591839e83d55e0b388df850aae6fd381a07035c610a9",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "cursor-official",
       "upstreamName": "x-ads",
       "variantPluginIds": [
@@ -2268,6 +4191,9 @@
       "variantsIdentical": false
     },
     {
+      "authors": [
+        "ZoomInfo"
+      ],
       "capabilitySummary": {
         "executable": 1,
         "mcp-server": 2,
@@ -2312,7 +4238,50 @@
       "pluginId": "plugin:claude-official:zoominfo",
       "primaryCategory": "business-operations",
       "productKey": "zoominfo",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "d07402feb2b9967ccc118f55bacd41a79c822d6a"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:b5eb3b6b529e0ead39f2b8997c7cb5111c9434c9adff98832981a71d31ae9dae",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:1688065dc6308f60953cf3da527873c7ff85f4fd799b3d6937c57f7c61a204e2",
+        "packageStatus": "partial",
+        "releaseId": "release:3db22bb6d71f193f8008aae36e4cabbd478ddc6a18514788d349327c3808add8",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "d07402feb2b9967ccc118f55bacd41a79c822d6a",
+        "upstreamVersion": "1.0.1"
+      },
       "releaseId": "release:3db22bb6d71f193f8008aae36e4cabbd478ddc6a18514788d349327c3808add8",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
       "sourceId": "claude-official",
       "upstreamName": "zoominfo",
       "variantPluginIds": [
