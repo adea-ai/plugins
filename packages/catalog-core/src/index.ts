@@ -1310,6 +1310,17 @@ export function createArtifacts(
     counts: index.counts,
     catalogIndexArtifact: CATALOG_INDEX_ARTIFACT,
     iconCoverage: iconCoverage(index),
+    // Marks ride in the navigation artifact so a client that already receives it
+    // renders compiled brand marks without fetching the browsing index. Keys are
+    // sorted for a stable artifact.
+    brandMarks: Object.fromEntries(
+      Object.keys(index.products)
+        .toSorted()
+        .flatMap((productKey) => {
+          const assetUrl = index.products[productKey]?.icon?.assetUrl
+          return assetUrl ? [[productKey, assetUrl] as const] : []
+        })
+    ),
     categories: index.categories,
     diagnostics: options.curationDiagnostics === false ? [] : index.diagnostics,
   }
