@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/adea-ai/plugins/compare/v2.0.0...v2.0.1) (2026-09-26)
+
+
+### Bug Fixes
+
+* **catalog:** decide "changed" from the diff, not from the change report ([#158](https://github.com/adea-ai/plugins/issues/158)) ([7a77b04](https://github.com/adea-ai/plugins/commit/7a77b04cd79f5e1455691533669c1138fda7a911))
+
 ## 2.0.0 (2026-09-26)
 
 ### Breaking changes
