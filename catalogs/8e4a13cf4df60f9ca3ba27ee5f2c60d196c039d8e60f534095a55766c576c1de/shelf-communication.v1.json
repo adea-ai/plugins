@@ -1,0 +1,560 @@
+{
+  "catalogId": "catalog:8e4a13cf4df60f9ca3ba27ee5f2c60d196c039d8e60f534095a55766c576c1de",
+  "category": "communication",
+  "products": [
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "command": 5,
+        "executable": 17,
+        "mcp-server": 1,
+        "rule": 2,
+        "skill": 8
+      },
+      "categories": [
+        "communication",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Slack workspace integration. Search messages, access channels, read threads, and stay connected with your team's communications while coding. Find relevant discussions and context quickly.",
+      "displayName": "Slack",
+      "homepage": "https://github.com/slackapi/slack-mcp-plugin/tree/main",
+      "icon": {
+        "asset": "icon-22860d9a3bdf29402f53345ae9bc8ee0.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-22860d9a3bdf29402f53345ae9bc8ee0.png",
+        "bytes": 23428,
+        "contentType": "image/png",
+        "digest": "sha256:22860d9a3bdf29402f53345ae9bc8ee0cd057c652eda418ef8433ff0c363fb02",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "productivity",
+        "slack"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 33,
+        "text": "SL"
+      },
+      "pluginId": "plugin:claude-official:slack",
+      "primaryCategory": "communication",
+      "productKey": "slack",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "1579a071323da95c9b4a59fb6d510f7336c021e3"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:96f6296ab1b9ec15deb37b586d450f393a21c4ba3710c4cb772ea18e63f64d89",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:f30678afaa250e5c8a3469f48c4d40b5ffd25d1ec06c5b0e50dc8eab8fdad288",
+        "packageStatus": "partial",
+        "releaseId": "release:48e09694217b103bda4d91a6f9ef83268bde8d269865249c3067d38be109f5cd",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "1579a071323da95c9b4a59fb6d510f7336c021e3",
+        "upstreamVersion": "1.3.0"
+      },
+      "releaseId": "release:48e09694217b103bda4d91a6f9ef83268bde8d269865249c3067d38be109f5cd",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "slack",
+      "variantPluginIds": [
+        "plugin:claude-official:slack",
+        "plugin:openai-official:slack"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "communication"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Search meetings, pull transcripts, and work with Zoom Docs.",
+      "displayName": "Zoom",
+      "icon": {
+        "asset": "icon-9082312993373e52b2bc5e5045acf641.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-9082312993373e52b2bc5e5045acf641.png",
+        "bytes": 16774,
+        "contentType": "image/png",
+        "digest": "sha256:9082312993373e52b2bc5e5045acf6412671e21cf0104178befb3417078b46cc",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "zoom"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 3,
+        "text": "ZO"
+      },
+      "pluginId": "plugin:cursor-official:zoom",
+      "primaryCategory": "communication",
+      "productKey": "zoom",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/zoom",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:39654d5ab8c3507221587065898171177cb6ff8bcd8d41b66a216073247e0f7a",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:b3b707cfb846c18965a7f35fe0bc6b925ea36b9a6b64026427bbe8c848f82627",
+        "packageStatus": "partial",
+        "releaseId": "release:e37b796c1b2c5f347f0d5282fdbe8587726473ce2b4da729ca22f58db11cf826",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:e37b796c1b2c5f347f0d5282fdbe8587726473ce2b4da729ca22f58db11cf826",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "zoom",
+      "variantPluginIds": [
+        "plugin:cursor-official:zoom",
+        "plugin:openai-official:zoom"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "rule": 1,
+        "skill": 4
+      },
+      "categories": [
+        "communication",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Intercom integration for Claude Code. Search conversations, analyze customer support patterns, look up contacts and companies, and install the Intercom Messenger. Connect your Intercom workspace to get real-time insights from customer data.",
+      "displayName": "Intercom",
+      "homepage": "https://github.com/intercom/claude-plugin-external",
+      "icon": {
+        "asset": "icon-45836f3ea3e572ef6430323feb98876b.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-45836f3ea3e572ef6430323feb98876b.svg",
+        "bytes": 1134,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:45836f3ea3e572ef6430323feb98876b5f8a893a6ce264d7bf2a83b7fb29fd43",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "intercom",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 102,
+        "text": "IN"
+      },
+      "pluginId": "plugin:claude-official:intercom",
+      "primaryCategory": "communication",
+      "productKey": "intercom",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "62773a7d4b8aac31545d6888fe6479be3bc53804"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:bccc3c3703e85b7b4a9215a15faac94215f651ef996ce318de879d0a1d3e3259",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:18ec4bbd698b36f8c68e9281258d0eb797aefbd540d74247b4d410c171920f1b",
+        "packageStatus": "partial",
+        "releaseId": "release:74eb163cf63a11804a1c2975f653ad7780aa10fc340e02c06508289ae1fd1414",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "62773a7d4b8aac31545d6888fe6479be3bc53804",
+        "upstreamVersion": "0.1.0"
+      },
+      "releaseId": "release:74eb163cf63a11804a1c2975f653ad7780aa10fc340e02c06508289ae1fd1414",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "intercom",
+      "variantPluginIds": [
+        "plugin:claude-official:intercom",
+        "plugin:cursor-official:intercom",
+        "plugin:knowledge-work-official:intercom"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "communication"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search meeting transcripts, summaries, and action items.",
+      "displayName": "Fireflies",
+      "icon": {
+        "asset": "icon-498fd1421656a6afba2d63f0ef4e308b.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-498fd1421656a6afba2d63f0ef4e308b.png",
+        "bytes": 9392,
+        "contentType": "image/png",
+        "digest": "sha256:498fd1421656a6afba2d63f0ef4e308b3c31f6acba08c13dbeb120ea3c404d83",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "fireflies"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 237,
+        "text": "FI"
+      },
+      "pluginId": "plugin:cursor-official:fireflies",
+      "primaryCategory": "communication",
+      "productKey": "fireflies",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/fireflies",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:ce9dc76e75c3f675258458760c344e75f7d89687dcf0d59c4046be31359aa8e4",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:ea94c633bb26d6dca648bf022fbb0705b1acc26f8e92ab32d719d68dea285856",
+        "packageStatus": "portable",
+        "releaseId": "release:ca553bba41983a1e7a1a40de5514c7778cf7339fa2cce1b0e7c996d593087f69",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:ca553bba41983a1e7a1a40de5514c7778cf7339fa2cce1b0e7c996d593087f69",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "fireflies",
+      "variantPluginIds": [
+        "plugin:cursor-official:fireflies"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "communication"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search meeting history and pull full transcripts.",
+      "displayName": "Otter.ai",
+      "icon": {
+        "asset": "icon-e1e012cdbcbae94ae151879d5f054681.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-e1e012cdbcbae94ae151879d5f054681.png",
+        "bytes": 5188,
+        "contentType": "image/png",
+        "digest": "sha256:e1e012cdbcbae94ae151879d5f05468127706701ff6dc23e142cc77693cbffa7",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "otter"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 108,
+        "text": "OA"
+      },
+      "pluginId": "plugin:cursor-official:otter",
+      "primaryCategory": "communication",
+      "productKey": "otter",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/otter",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:ddf468e1c2c31327802277841ab90b791f1cca60d9efd20ba2f9ad6ba23fd03a",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:c3dff0a15197b4d3154997a52280032005fa10b50fc2845bc4dace5ad8cd2f0c",
+        "packageStatus": "portable",
+        "releaseId": "release:3f9009b20551b065badc2d042c3e2bf927e72c1c9bbb96e0458a6cf1bad1624b",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:3f9009b20551b065badc2d042c3e2bf927e72c1c9bbb96e0458a6cf1bad1624b",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "otter",
+      "variantPluginIds": [
+        "plugin:cursor-official:otter"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "communication"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search, read, draft, and manage email.",
+      "displayName": "Gmail",
+      "icon": {
+        "asset": "icon-16b247249328458d1f22b1e6c9766dcc.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-16b247249328458d1f22b1e6c9766dcc.svg",
+        "bytes": 1392,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:16b247249328458d1f22b1e6c9766dcce8d75ac6316f4be8c999ca36d33f9d17",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "communication",
+        "gmail"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 342,
+        "text": "GM"
+      },
+      "pluginId": "plugin:cursor-official:gmail",
+      "primaryCategory": "communication",
+      "productKey": "gmail",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/gmail",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:2625750fe0d5acf3d74cafd646bfab2ba61684e577aa9dba508e8193850a6be0",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:34c2d23591026136b8d6118df1ac57464fdd20f2ad8c2b95fed7d0e95550e4df",
+        "packageStatus": "portable",
+        "releaseId": "release:38bd8fecffd1de27d27022e8e428b7e6b81b95470ecf210f89cd961be0e73310",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:38bd8fecffd1de27d27022e8e428b7e6b81b95470ecf210f89cd961be0e73310",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "gmail",
+      "variantPluginIds": [
+        "plugin:cursor-official:gmail",
+        "plugin:openai-official:gmail"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1,
+  "topCount": 6
+}

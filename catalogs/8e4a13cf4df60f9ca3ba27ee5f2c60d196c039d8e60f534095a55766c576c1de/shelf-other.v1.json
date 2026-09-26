@@ -1,0 +1,527 @@
+{
+  "catalogId": "catalog:8e4a13cf4df60f9ca3ba27ee5f2c60d196c039d8e60f534095a55766c576c1de",
+  "category": "other",
+  "products": [
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Run your beehiiv newsletter from chat: draft and edit posts, organize subscribers with tags, custom fields, and segments, build automations, and review publication, post, and website performance.",
+      "displayName": "Beehiiv",
+      "icon": {
+        "asset": "icon-79ec6818d014f1d874a2ab330d69ba2c.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-79ec6818d014f1d874a2ab330d69ba2c.png",
+        "bytes": 12484,
+        "contentType": "image/png",
+        "digest": "sha256:79ec6818d014f1d874a2ab330d69ba2c66807b22e836ea2b943b092f782cdb74",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "beehiiv",
+        "other"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 192,
+        "text": "BE"
+      },
+      "pluginId": "plugin:cursor-official:beehiiv",
+      "primaryCategory": "other",
+      "productKey": "beehiiv",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/beehiiv",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:62fbf61f2a231a6e186c6d885cf0d0f8ed279f3936b76a11f4893ba669acb8c5",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:ea573ddd242f6883438ac0388cbf633fd5dc6c532f393ae61b8cbab021879781",
+        "packageStatus": "partial",
+        "releaseId": "release:2fc5df919851f597e1a89cf6dc729622710dcb3973dbbb431ec4cb9ebc66741e",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.1"
+      },
+      "releaseId": "release:2fc5df919851f597e1a89cf6dc729622710dcb3973dbbb431ec4cb9ebc66741e",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "beehiiv",
+      "variantPluginIds": [
+        "plugin:cursor-official:beehiiv"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Manage social media with Buffer: draft, schedule, and publish posts across connected channels, manage the queue and ideas, and review post performance.",
+      "displayName": "Buffer",
+      "icon": {
+        "asset": "icon-6b5f07dc9838754404804567d1df05f9.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-6b5f07dc9838754404804567d1df05f9.png",
+        "bytes": 3551,
+        "contentType": "image/png",
+        "digest": "sha256:6b5f07dc9838754404804567d1df05f977ae80b86d05ec12fb81fa8ec8cd403a",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "buffer",
+        "other"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 321,
+        "text": "BU"
+      },
+      "pluginId": "plugin:cursor-official:buffer",
+      "primaryCategory": "other",
+      "productKey": "buffer",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/buffer",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d36868514d6fc8ca0013ef009bf382f736648f96a9a23ff8ccbe9d987e9dad67",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:b0c6b8180ccb32be75ec97bd8a07d3261aeef06bd6f27112a13a9fdec4847441",
+        "packageStatus": "partial",
+        "releaseId": "release:b62f4e0450112cfe53fd917a204dc4b500769f7be013855bd283341e0a171ec9",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.1"
+      },
+      "releaseId": "release:b62f4e0450112cfe53fd917a204dc4b500769f7be013855bd283341e0a171ec9",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "buffer",
+      "variantPluginIds": [
+        "plugin:cursor-official:buffer"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Check balances, get quotes, and preview or place trades.",
+      "displayName": "Coinbase",
+      "icon": {
+        "asset": "icon-82e2d2f25ba840a8b9a30b128445d04c.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-82e2d2f25ba840a8b9a30b128445d04c.png",
+        "bytes": 5300,
+        "contentType": "image/png",
+        "digest": "sha256:82e2d2f25ba840a8b9a30b128445d04c149c767f7ddda09ce449ff846cbd186a",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "coinbase",
+        "other"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 180,
+        "text": "CO"
+      },
+      "pluginId": "plugin:cursor-official:coinbase",
+      "primaryCategory": "other",
+      "productKey": "coinbase",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/coinbase",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d7e495e1b02fe39db6168846525aa7a00f0ea7d7b5b41bb08ee3ef1ab237bfa2",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:c29e3c438b88e38a9ea0207e58375e374a4736a4a8f822c78b1ee411b177b181",
+        "packageStatus": "portable",
+        "releaseId": "release:691ed0b61e475c1b7cbd1395bce2456893abb9407a8378470c285817f8c7e2d2",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:691ed0b61e475c1b7cbd1395bce2456893abb9407a8378470c285817f8c7e2d2",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "coinbase",
+      "variantPluginIds": [
+        "plugin:cursor-official:coinbase"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "View your eToro portfolio, balances, positions, and watchlists, research instruments and traders, and prepare and place trades.",
+      "displayName": "eToro Trading",
+      "icon": {
+        "asset": "icon-e826ea328fe21c34f6eb7140a550316c.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-e826ea328fe21c34f6eb7140a550316c.png",
+        "bytes": 12763,
+        "contentType": "image/png",
+        "digest": "sha256:e826ea328fe21c34f6eb7140a550316c59c08d7e6a29f8bceb9410652ab533b6",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "etoro",
+        "other",
+        "trading"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 27,
+        "text": "ET"
+      },
+      "pluginId": "plugin:cursor-official:etoro-trading",
+      "primaryCategory": "other",
+      "productKey": "etoro-trading",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/etoro-trading",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:4f84cc2a0932864a304e05b150e686eb7121f6267202f4fbf4dfbbfde5e57a5a",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:6bb980981f66d3828f9821f499890b8c2027f088793675ec756d83195d918996",
+        "packageStatus": "portable",
+        "releaseId": "release:586c2c2852a2f2a7f4de3303113c5e5cfa63aff1fce9ba460ac4ba6f44fab165",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:586c2c2852a2f2a7f4de3303113c5e5cfa63aff1fce9ba460ac4ba6f44fab165",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "etoro-trading",
+      "variantPluginIds": [
+        "plugin:cursor-official:etoro-trading"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Explore datasets and tables and run SQL queries.",
+      "displayName": "Google Cloud BigQuery",
+      "icon": {
+        "asset": "icon-fdb324b1fca409bcba27e831b4e06b33.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-fdb324b1fca409bcba27e831b4e06b33.png",
+        "bytes": 11020,
+        "contentType": "image/png",
+        "digest": "sha256:fdb324b1fca409bcba27e831b4e06b331150e670f5d0bfbe2cd596bbd4344cc4",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "bigquery",
+        "cloud",
+        "google",
+        "other"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 261,
+        "text": "GC"
+      },
+      "pluginId": "plugin:cursor-official:google-cloud-bigquery",
+      "primaryCategory": "other",
+      "productKey": "google-cloud-bigquery",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/google-cloud-bigquery",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:5f052babd1634356eb9ab4ad16b524833b8269eb235f744267bb5ef6892666ef",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:5926c3e14bbee70a51dedea3d6d5b941d8a0f27fb3bc9320d0b8e489d55c4ac3",
+        "packageStatus": "portable",
+        "releaseId": "release:33a4ad6b26392156d0d159c0bc535fe636f2a8e154545b5ace50e7cccdf98d26",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:33a4ad6b26392156d0d159c0bc535fe636f2a8e154545b5ace50e7cccdf98d26",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "google-cloud-bigquery",
+      "variantPluginIds": [
+        "plugin:cursor-official:google-cloud-bigquery"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 1
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Read, create, and edit documents.",
+      "displayName": "Google Docs",
+      "icon": {
+        "asset": "icon-0bedee7732d81af2ddf0a20ba347ac83.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-0bedee7732d81af2ddf0a20ba347ac83.svg",
+        "bytes": 3398,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:0bedee7732d81af2ddf0a20ba347ac8381cd2fde0182f2ae688c76a9b0f1ed18",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "docs",
+        "google",
+        "other"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 207,
+        "text": "GD"
+      },
+      "pluginId": "plugin:cursor-official:google-docs",
+      "primaryCategory": "other",
+      "productKey": "google-docs",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/google-docs",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:9029b9b8c1c07fcbf3fc796c994fe1c2f729ca608b8a1c2b312a92bbdd4e8d22",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:d1bc50e5072a2316711ec5bec5d0998d695a486845daf01316fef7462d70945f",
+        "packageStatus": "portable",
+        "releaseId": "release:00670fadf3d9de275b06b2bbfdb4a3932ff488c635150451c24172337086de52",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.1.0"
+      },
+      "releaseId": "release:00670fadf3d9de275b06b2bbfdb4a3932ff488c635150451c24172337086de52",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "google-docs",
+      "variantPluginIds": [
+        "plugin:cursor-official:google-docs"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1,
+  "topCount": 6
+}

@@ -1,0 +1,3966 @@
+{
+  "catalogId": "catalog:8e4a13cf4df60f9ca3ba27ee5f2c60d196c039d8e60f534095a55766c576c1de",
+  "category": "data-analytics",
+  "pluginCount": 48,
+  "productCount": 41,
+  "products": [
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "executable": 20,
+        "mcp-server": 4,
+        "rule": 5
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Atlan data catalog plugin for Claude Code. Search, explore, govern, and manage your data assets through natural language. Powered by the Atlan MCP server with semantic search, lineage traversal, glossary management, data quality rules, and more.",
+      "displayName": "Atlan",
+      "homepage": "https://docs.atlan.com/",
+      "icon": {
+        "asset": "icon-a0ec1bdfe81f767f30fd5227402dcf73.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a0ec1bdfe81f767f30fd5227402dcf73.png",
+        "bytes": 42873,
+        "contentType": "image/png",
+        "digest": "sha256:a0ec1bdfe81f767f30fd5227402dcf73bd1b54f8b58bd0d3ac51100d684949b7",
+        "homepage": null,
+        "kind": "content",
+        "path": "codex-plugin/assets/atlan-logo.png",
+        "url": null
+      },
+      "keywords": [
+        "atlan",
+        "data-analytics"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 318,
+        "text": "AT"
+      },
+      "pluginId": "plugin:claude-official:atlan",
+      "primaryCategory": "data-analytics",
+      "productKey": "atlan",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "86bb1ad27f80e189b328333d2271b360ae579f2b"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:0ae513ab809ea244f1a412089f8ba4d74443336684bee6890a705c7e8c2eb01e",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:816ee38e2f4e8b726bf8e50cfaf65d48e4047cb6568fb23b7dbfaf1c4c427ec4",
+        "packageStatus": "partial",
+        "releaseId": "release:8d27c4c58f2181c4afcec83b1487b931cf1592178a7108a2da04eb34d62dab94",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "86bb1ad27f80e189b328333d2271b360ae579f2b",
+        "upstreamVersion": "0.1.0"
+      },
+      "releaseId": "release:8d27c4c58f2181c4afcec83b1487b931cf1592178a7108a2da04eb34d62dab94",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "atlan",
+      "variantPluginIds": [
+        "plugin:claude-official:atlan",
+        "plugin:knowledge-work-official:atlan"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Google LLC"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2,
+        "skill": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect, query, and generate data insights for BigQuery datasets and data.",
+      "displayName": "BigQuery Data Analytics",
+      "homepage": "https://github.com/gemini-cli-extensions/bigquery-data-analytics",
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/bigquery",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
+      "keywords": [
+        "analytics",
+        "bigquery",
+        "data",
+        "data-analytics"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 0,
+        "text": "BD"
+      },
+      "pluginId": "plugin:claude-official:bigquery-data-analytics",
+      "primaryCategory": "data-analytics",
+      "productKey": "bigquery-data-analytics",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "9870fce2723360135948b039bab03bc81ed814c8"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:02892105c58d5bc1d5b663d8a33fef187b2dd37816260165297de2c8ff3559c4",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:47ef1d6725ce28a7742e99bb59bb8c202a6a0498004b982610d54582ddb4169e",
+        "packageStatus": "partial",
+        "releaseId": "release:66dc5d1001b33e9a45833bd84cf5adaff3608fd2291e209e3a5b651f582fa194",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "9870fce2723360135948b039bab03bc81ed814c8",
+        "upstreamVersion": "0.2.4"
+      },
+      "releaseId": "release:66dc5d1001b33e9a45833bd84cf5adaff3608fd2291e209e3a5b651f582fa194",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "bigquery-data-analytics",
+      "variantPluginIds": [
+        "plugin:claude-official:bigquery-data-analytics"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 21
+      },
+      "categories": [
+        "data-analytics",
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Financial analysis skills powered by Daloopa's institutional-grade data",
+      "displayName": "Daloopa",
+      "homepage": "https://github.com/daloopa/plugin",
+      "icon": {
+        "asset": "icon-a5fce38fb9723e9e29081544a1bd20d0.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a5fce38fb9723e9e29081544a1bd20d0.png",
+        "bytes": 19473,
+        "contentType": "image/png",
+        "digest": "sha256:a5fce38fb9723e9e29081544a1bd20d00613dc3058660d7bd45e36b7f94df5ae",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "daloopa",
+        "data-analytics",
+        "finance"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 153,
+        "text": "DA"
+      },
+      "pluginId": "plugin:knowledge-work-official:daloopa",
+      "primaryCategory": "data-analytics",
+      "productKey": "daloopa",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "fb1ed7a6e0fd2c430e8f89b952cdd0f34137cde9"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:70299c4eac4bbe619857de1fa194eda0a53830c111d41e18d607919f7f3722cf",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:65f44eac7e5209668d3492a41443304e052ca54b97f9bf96f819bff9f162b81a",
+        "packageStatus": "partial",
+        "releaseId": "release:29962241f909f7fd3054c7304e6ae7bef4285908f9294697215ab16ef54a4dbd",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fb1ed7a6e0fd2c430e8f89b952cdd0f34137cde9",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:29962241f909f7fd3054c7304e6ae7bef4285908f9294697215ab16ef54a4dbd",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "daloopa",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:daloopa",
+        "plugin:cursor-official:daloopa"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Google LLC"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Create, connect, and interact with an AlloyDB Omni database and data.",
+      "displayName": "AlloyDB Omni",
+      "homepage": "https://github.com/gemini-cli-extensions/alloydb-omni",
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/alloydb",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
+      "keywords": [
+        "alloydb",
+        "data-analytics",
+        "omni"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 207,
+        "text": "AO"
+      },
+      "pluginId": "plugin:claude-official:alloydb-omni",
+      "primaryCategory": "data-analytics",
+      "productKey": "alloydb-omni",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "ae7e42c4e428e303adcc96942f4fc35cb6b27d61"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:fe9c88d5de9e8482d4a7bb19e94b72a295911c99952dbc43888436efa451194b",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:556dde21116f476e7900ed7ae1c5f59e361d1788f034879ff9a06c2506bed1ff",
+        "packageStatus": "partial",
+        "releaseId": "release:7903b34eb3453cbffabe18dcef49371c72ccc1e909dd89cc470e9fc699bf7f6f",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ae7e42c4e428e303adcc96942f4fc35cb6b27d61",
+        "upstreamVersion": "0.2.1"
+      },
+      "releaseId": "release:7903b34eb3453cbffabe18dcef49371c72ccc1e909dd89cc470e9fc699bf7f6f",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "alloydb-omni",
+      "variantPluginIds": [
+        "plugin:claude-official:alloydb-omni"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "browser": 2,
+        "executable": 4,
+        "skill": 21
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Web scraping, Google search, structured data extraction, and MCP server integration powered by Bright Data. Includes 7 skills: scrape any webpage as markdown (with bot detection/CAPTCHA bypass), search Google with structured JSON results, extract data from 40+ websites (Amazon, LinkedIn, Instagram, TikTok, YouTube, and more), orchestrate Bright Data's 60+ MCP tools, built-in best practices for Web Unlocker, SERP API, Web Scraper API, and Browser API, Python SDK best practices for the brightda...",
+      "displayName": "Bright Data",
+      "homepage": "https://docs.brightdata.com/",
+      "icon": {
+        "asset": "icon-ca087eacbf7a30b3d1c3e79feecaa80a.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-ca087eacbf7a30b3d1c3e79feecaa80a.png",
+        "bytes": 1634,
+        "contentType": "image/png",
+        "digest": "sha256:ca087eacbf7a30b3d1c3e79feecaa80a46cbdba169fa2ed300e3e95a5dace854",
+        "homepage": "https://docs.brightdata.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://docs.brightdata.com/mintlify-assets/_mintlify/favicons/brightdata/uUUbPQlQGu6JyjN0/_generated/favicon/apple-touch-icon.png"
+      },
+      "keywords": [
+        "brightdata",
+        "data-analytics",
+        "plugin"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 237,
+        "text": "BD"
+      },
+      "pluginId": "plugin:claude-official:brightdata-plugin",
+      "primaryCategory": "data-analytics",
+      "productKey": "brightdata-plugin",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "e825f02fbcd7a89087fd1053a57ddcd45113370f"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:9190695567e9da185c7db2963dc14bb6c495fabc5cbbe62238583bddeba0b0ab",
+        "capabilities": [
+          {
+            "name": "browser",
+            "type": "browser"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:c82b9020a0050bfc6c5469bd539d457a7bede481cf395cdfa6369f2807eacc51",
+        "packageStatus": "partial",
+        "releaseId": "release:5b5396049aa2663bc0d01038d0e62d9634475de871c75c733a1ab4c8e9af0a21",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "e825f02fbcd7a89087fd1053a57ddcd45113370f",
+        "upstreamVersion": "1.8.0"
+      },
+      "releaseId": "release:5b5396049aa2663bc0d01038d0e62d9634475de871c75c733a1ab4c8e9af0a21",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "browser",
+          "executable"
+        ],
+        "reasons": [
+          "Contains browser capability metadata.",
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "brightdata-plugin",
+      "variantPluginIds": [
+        "plugin:claude-official:brightdata-plugin",
+        "plugin:knowledge-work-official:brightdata-plugin"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "browser": 3,
+        "command": 2,
+        "executable": 4,
+        "mcp-server": 1,
+        "rule": 1,
+        "skill": 18
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Build high-quality datasets and computer vision models. Visualize datasets, analyze models, find duplicates, run inference, evaluate predictions, and develop custom plugins.",
+      "displayName": "Fiftyone",
+      "homepage": "https://docs.voxel51.com/",
+      "icon": {
+        "asset": "icon-def46a4525d67c2cecbc3b4156173c76.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-def46a4525d67c2cecbc3b4156173c76.png",
+        "bytes": 5070,
+        "contentType": "image/png",
+        "digest": "sha256:def46a4525d67c2cecbc3b4156173c7681dc0776dc8bbbdf0cb4c8254096726e",
+        "homepage": "https://voxel51.com/fiftyone/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://cdn.sanity.io/images/h6toihm1/production/ac5eeac7c3e7c21e4b66f7e04b9841b876d0fb6e-250x248.png?rect=1,0,248,248&amp;w=512&amp;h=512&amp;fit=max&amp;auto=format"
+      },
+      "keywords": [
+        "data-analytics",
+        "fiftyone"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 135,
+        "text": "FI"
+      },
+      "pluginId": "plugin:claude-official:fiftyone",
+      "primaryCategory": "data-analytics",
+      "productKey": "fiftyone",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "b2c75525c0db13f8c5dca0648a27840661f5525c"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:c45ef33d72fb253030a191b24ba995bdd0ee6fcadcb5d4b59abd71639d6f636f",
+        "capabilities": [
+          {
+            "name": "browser",
+            "type": "browser"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:deb210a09b5f011ccca6c8c4536dbee5c8a14c5eb196cde21fb3832aeb33018f",
+        "packageStatus": "partial",
+        "releaseId": "release:50b334f7179321ba4ca5059840a4e2b80259a63d360c33a90dae7bb5b230f1a8",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "b2c75525c0db13f8c5dca0648a27840661f5525c",
+        "upstreamVersion": "1.0.3"
+      },
+      "releaseId": "release:50b334f7179321ba4ca5059840a4e2b80259a63d360c33a90dae7bb5b230f1a8",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "browser",
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains browser capability metadata.",
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "fiftyone",
+      "variantPluginIds": [
+        "plugin:claude-official:fiftyone"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Aiven"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Easily deploy managed PostgreSQL (pg), Kafka, OpenSearch, Clickhouse and other databases, streaming and apps. Free tier available, up and running in minutes.",
+      "displayName": "Aiven",
+      "homepage": "https://aiven.io/",
+      "icon": {
+        "asset": "icon-58109ffc55a61352f144b7f350e60bd0.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-58109ffc55a61352f144b7f350e60bd0.svg",
+        "bytes": 4175,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:58109ffc55a61352f144b7f350e60bd0aabf5c0d6c475daa9d07f2c4717d73ae",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "aiven",
+        "data-analytics"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 231,
+        "text": "AI"
+      },
+      "pluginId": "plugin:claude-official:aiven",
+      "primaryCategory": "data-analytics",
+      "productKey": "aiven",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "634f41d6852957cb9280e9245f2ea6f74645b4f1"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:3ed5ed60b703f71b7f9d092508403571f5f6b0688d11dd9f0a5a869a65adfedc",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:8cb554f6587d7ab62a2dd8104e725aab4061a6676bade06383b3e5e61d1e2fb2",
+        "packageStatus": "partial",
+        "releaseId": "release:d82b3d098ebbcb8c5c5a8bb3fa8b2b42e96f1ce2bcc356e297d1e87b4bf3dfd9",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "634f41d6852957cb9280e9245f2ea6f74645b4f1",
+        "upstreamVersion": "1.0.6"
+      },
+      "releaseId": "release:d82b3d098ebbcb8c5c5a8bb3fa8b2b42e96f1ce2bcc356e297d1e87b4bf3dfd9",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "aiven",
+      "variantPluginIds": [
+        "plugin:claude-official:aiven"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Google LLC"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
+      "displayName": "AlloyDB",
+      "homepage": "https://cloud.google.com/alloydb",
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/alloydb",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
+      "keywords": [
+        "alloydb",
+        "data-analytics"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 27,
+        "text": "AL"
+      },
+      "pluginId": "plugin:claude-official:alloydb",
+      "primaryCategory": "data-analytics",
+      "productKey": "alloydb",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "00ee6ce2bcf88b46da4bf298a3ad8c0ad85877c8"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:ca8ec9ab87197740e6d64250e537de3cf193dd23d309fffc9f809a84a010bf44",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:f813bff639cbb4ded8a7444f18c69478976f9e29b7b2f2ea8a7c4212d67dece5",
+        "packageStatus": "partial",
+        "releaseId": "release:210897d21ac8fb9cf0447827c12f8f7d0e425234b538b92a58ce7bd964c0daa2",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "00ee6ce2bcf88b46da4bf298a3ad8c0ad85877c8",
+        "upstreamVersion": "0.2.0"
+      },
+      "releaseId": "release:210897d21ac8fb9cf0447827c12f8f7d0e425234b538b92a58ce7bd964c0daa2",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "alloydb",
+      "variantPluginIds": [
+        "plugin:claude-official:alloydb"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "AltimateAI"
+      ],
+      "capabilitySummary": {
+        "command": 2,
+        "executable": 1,
+        "hook": 1,
+        "skill": 2
+      },
+      "categories": [
+        "data-analytics",
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Delegates dbt and warehouse work to altimate-code, a specialized CLI agent with 100+ purpose-built data tools (SQL analysis, column-level lineage, dbt build/test/run, warehouse profiling, FinOps, connectivity to Snowflake, BigQuery, Redshift, Databricks, Postgres, MySQL, DuckDB).",
+      "displayName": "Altimate Code",
+      "homepage": "https://www.altimate.ai/",
+      "icon": {
+        "asset": "icon-f6d5538f2ed2ac405feba266a513725d.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f6d5538f2ed2ac405feba266a513725d.png",
+        "bytes": 22429,
+        "contentType": "image/png",
+        "digest": "sha256:f6d5538f2ed2ac405feba266a513725d86a6e57fcd39a716d9ecc88ba6703919",
+        "homepage": "https://www.altimate.ai/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.altimate.ai/logo192.png"
+      },
+      "keywords": [
+        "altimate",
+        "code",
+        "data-analytics",
+        "developer-tools"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 165,
+        "text": "AC"
+      },
+      "pluginId": "plugin:claude-official:altimate-code",
+      "primaryCategory": "data-analytics",
+      "productKey": "altimate-code",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/altimate-code",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "b7c8f68b3dfd303ab3ccf2f43934098811dfe2aa"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:f64990faadee3c2b3676b43f541ec9ad537a3c0af32f65d5266c0682a66b4d08",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:ab77dcf3bbeac1b502d89d0065e476aef39b8a8d970055e6fa89faa177279f56",
+        "packageStatus": "partial",
+        "releaseId": "release:16597e77a8e963bd27725e1a11d748cfdcd8071e78fd47d6ebd12560d300b375",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "b7c8f68b3dfd303ab3ccf2f43934098811dfe2aa",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:16597e77a8e963bd27725e1a11d748cfdcd8071e78fd47d6ebd12560d300b375",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "altimate-code",
+      "variantPluginIds": [
+        "plugin:claude-official:altimate-code"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "agent": 1,
+        "command": 3,
+        "rule": 75,
+        "skill": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Expert assistant for Azure Cosmos DB — data modeling, query optimization, performance tuning, and best practices.",
+      "displayName": "Azure Cosmos DB",
+      "homepage": "https://github.com/AzureCosmosDB/cosmosdb-claude-code-plugin",
+      "icon": {
+        "asset": "icon-e364d0c19c6d370a08b628540880548a.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-e364d0c19c6d370a08b628540880548a.svg",
+        "bytes": 509,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:e364d0c19c6d370a08b628540880548a8935c49365e02664e93dedaea96bb861",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "assistant",
+        "azure",
+        "cosmos",
+        "data-analytics",
+        "db"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 357,
+        "text": "AC"
+      },
+      "pluginId": "plugin:claude-official:azure-cosmos-db-assistant",
+      "primaryCategory": "data-analytics",
+      "productKey": "azure-cosmos-db-assistant",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "f1e0498579a9251e5f3179b92d25d6ce3409bae5"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:76d8161d0e6dcb652494078462712fc780665e82dc666ca7becffc002ecfbef8",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:7ffcbae4c42068d9c2e18c2b21ad224ca8b42bdec331f504cb42a495b1245c30",
+        "packageStatus": "partial",
+        "releaseId": "release:9f620d63f8119d56269d71610a565579fa68d4f2a0909b4d1f0b9f2b7c7cd9d1",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "f1e0498579a9251e5f3179b92d25d6ce3409bae5",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:9f620d63f8119d56269d71610a565579fa68d4f2a0909b4d1f0b9f2b7c7cd9d1",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "azure-cosmos-db-assistant",
+      "variantPluginIds": [
+        "plugin:claude-official:azure-cosmos-db-assistant"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Microsoft"
+      ],
+      "capabilitySummary": {
+        "agent": 4,
+        "executable": 1,
+        "rule": 1,
+        "skill": 17
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Agent skills for Azure SQL Developer, the Azure SQL Database engine running locally in a container. Teaches your agent to run the engine, connect, migrate, scaffold, build RAG, wire CI, and go local-to-cloud, using the real Private Preview image instead of the SQL Server image.",
+      "displayName": "Azure SQL Database Container",
+      "homepage": "https://github.com/microsoft/azure-sql-database-container",
+      "icon": {
+        "asset": "icon-e3f4b7baefb22b89684c247a819e073b.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-e3f4b7baefb22b89684c247a819e073b.svg",
+        "bytes": 2592,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:e3f4b7baefb22b89684c247a819e073b85c79c99b72065e5ca15925c82cfd8ef",
+        "homepage": null,
+        "kind": "content",
+        "path": "docs/assets/img/plugin-logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "azure",
+        "data-analytics",
+        "developer",
+        "sql"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 327,
+        "text": "AS"
+      },
+      "pluginId": "plugin:claude-official:azure-sql-developer",
+      "primaryCategory": "data-analytics",
+      "productKey": "azure-sql-developer",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "8a82f442df5bb7bbf65f1eb774e32d1f55a07e04"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:13e39fea020c9ad1bb8c499e00622db8b95e08257a93bdc316dee8f334f22400",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:afc3d5116305b836599c4f455be30a7e26e67479bd4a824a69de3aed358bd2ba",
+        "packageStatus": "partial",
+        "releaseId": "release:6841a5caeecb0e289cb4449265997130f06bf675c5d069c2a494cb8a5be5bdad",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "8a82f442df5bb7bbf65f1eb774e32d1f55a07e04",
+        "upstreamVersion": "1.1.0"
+      },
+      "releaseId": "release:6841a5caeecb0e289cb4449265997130f06bf675c5d069c2a494cb8a5be5bdad",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "azure-sql-developer",
+      "variantPluginIds": [
+        "plugin:claude-official:azure-sql-developer"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "RavenPack"
+      ],
+      "capabilitySummary": {
+        "agent": 27,
+        "executable": 18,
+        "mcp-server": 1,
+        "skill": 27
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Official Bigdata.com plugin providing financial research, analytics, and intelligence tools powered by Bigdata MCP.",
+      "displayName": "BigData.com",
+      "homepage": "https://docs.bigdata.com/",
+      "icon": {
+        "asset": "icon-ff5f5c933aaaea83325fba4d01e0dd64.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-ff5f5c933aaaea83325fba4d01e0dd64.svg",
+        "bytes": 3278,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:ff5f5c933aaaea83325fba4d01e0dd64679df139b6ac3e2e5bef76c72ad7e162",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/bigdata-icon-black.svg",
+        "url": null
+      },
+      "keywords": [
+        "bigdata",
+        "com",
+        "data-analytics"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 30,
+        "text": "BC"
+      },
+      "pluginId": "plugin:claude-official:bigdata-com",
+      "primaryCategory": "data-analytics",
+      "productKey": "bigdata-com",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/bigdata-com",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "2a52a001366227e205cfa7565d78e8198dc42fa8"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:c8e06e3e42084b0c82d76fb02e426d92244e32ed8c67a9adf3074ebf4566496a",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:f33c177d1a23c3672f27f223d6413c5e91dcc0eb290498b2e20e1da577f44eaf",
+        "packageStatus": "portable",
+        "releaseId": "release:61d92305de27e3fd93d6aac9e2d4c1d4b92d920003f63991bf7f7cb307553b26",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "2a52a001366227e205cfa7565d78e8198dc42fa8",
+        "upstreamVersion": "1.2.0"
+      },
+      "releaseId": "release:61d92305de27e3fd93d6aac9e2d4c1d4b92d920003f63991bf7f7cb307553b26",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "bigdata-com",
+      "variantPluginIds": [
+        "plugin:claude-official:bigdata-com",
+        "plugin:knowledge-work-official:bigdata-com"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Unknown"
+      ],
+      "capabilitySummary": {
+        "agent": 19,
+        "browser": 3,
+        "skill": 18
+      },
+      "categories": [
+        "data-analytics",
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Design, critique, implement, test, and export web data visualizations in Codex, including charts, maps, dashboards, Gantt, UML, scrollytelling, reports, slides, mobile views, shareable state, and advanced WebGL concepts.",
+      "displayName": "Build Web Data Visualization",
+      "icon": {
+        "asset": "icon-98cb142b8fcff83824dd96eb86b66796.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-98cb142b8fcff83824dd96eb86b66796.svg",
+        "bytes": 969,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:98cb142b8fcff83824dd96eb86b66796546b583099947a1dd85588e3ab586a72",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/app-icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "build",
+        "data",
+        "data-analytics",
+        "developer-tools",
+        "visualization",
+        "web"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 297,
+        "text": "BW"
+      },
+      "pluginId": "plugin:openai-official:build-web-data-visualization",
+      "primaryCategory": "data-analytics",
+      "productKey": "build-web-data-visualization",
+      "provenance": {
+        "manifestPath": ".agents/plugins/marketplace.json",
+        "pluginSubdirectory": "plugins/build-web-data-visualization",
+        "repositoryUrl": "https://github.com/openai/plugins",
+        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:1a8cd21095b12cf563f1e1187edefa4603b19174cbd7191813fc07961efd5029",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "browser",
+            "type": "browser"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:67182b82d90664374ac414d24c0613b65cff666dc859dc6f5dd6b31fad1690f2",
+        "packageStatus": "partial",
+        "releaseId": "release:08c3f67ab7786c554b5fb4003e89f53958df5b0cf0b69bb2b197ee24e5e751df",
+        "requiredConnectors": [],
+        "requiredCredentials": [
+          "authentication"
+        ],
+        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "upstreamVersion": "0.1.21"
+      },
+      "releaseId": "release:08c3f67ab7786c554b5fb4003e89f53958df5b0cf0b69bb2b197ee24e5e751df",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "browser"
+        ],
+        "reasons": [
+          "Contains browser capability metadata."
+        ]
+      },
+      "sourceId": "openai-official",
+      "upstreamName": "build-web-data-visualization",
+      "variantPluginIds": [
+        "plugin:openai-official:build-web-data-visualization"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "ClickHouse Inc"
+      ],
+      "capabilitySummary": {
+        "executable": 2,
+        "rule": 52,
+        "skill": 11
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "28 best practice rules for ClickHouse schema design, query optimization, and data ingestion — prioritized by impact",
+      "displayName": "ClickHouse Best Practices",
+      "homepage": "https://clickhouse.com/",
+      "icon": {
+        "asset": "icon-e80d52cd3a4a3c908cb0ae8d67962667.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-e80d52cd3a4a3c908cb0ae8d67962667.png",
+        "bytes": 1734,
+        "contentType": "image/png",
+        "digest": "sha256:e80d52cd3a4a3c908cb0ae8d67962667badce26e8574f4ab091fa050f6e13e18",
+        "homepage": "https://clickhouse.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://clickhouse.com/apple-icon.png?apple-icon.18ftzencg_4sl.png"
+      },
+      "keywords": [
+        "best",
+        "clickhouse",
+        "data-analytics",
+        "practices"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 324,
+        "text": "CB"
+      },
+      "pluginId": "plugin:claude-official:clickhouse-best-practices",
+      "primaryCategory": "data-analytics",
+      "productKey": "clickhouse-best-practices",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "2f6ec4b17a81a435dd116f9ac19d7b45d44dbd61"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:2a848f69ce087d109c93a40d198179f4b191e307480b9887056ea97bd6685430",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:69c0a59d95e5f02ce851ea1f436be79dbddab994d43006e3171c845a81a951bc",
+        "packageStatus": "partial",
+        "releaseId": "release:9f3cd861697de5b69465e0b632d8c7d2505e50ecdcdc258bc3b15f2daf94a397",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "2f6ec4b17a81a435dd116f9ac19d7b45d44dbd61",
+        "upstreamVersion": "0.3.0"
+      },
+      "releaseId": "release:9f3cd861697de5b69465e0b632d8c7d2505e50ecdcdc258bc3b15f2daf94a397",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "clickhouse-best-practices",
+      "variantPluginIds": [
+        "plugin:claude-official:clickhouse-best-practices"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Google LLC"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect and interact with a Cloud SQL for MySQL database and data.",
+      "displayName": "Cloud SQL MySQL",
+      "homepage": "https://github.com/gemini-cli-extensions/cloud-sql-mysql",
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/sql",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
+      "keywords": [
+        "cloud",
+        "data-analytics",
+        "mysql",
+        "sql"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 27,
+        "text": "CS"
+      },
+      "pluginId": "plugin:claude-official:cloud-sql-mysql",
+      "primaryCategory": "data-analytics",
+      "productKey": "cloud-sql-mysql",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "ed4fbfe3e0cb6770b15b2a66bd1192a684547678"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:f0e702629981dd0657c44f6d6e592738423c0b4dad80f3fd631cb61a158529e6",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:fdd9bee9a80cb6382defe4c6a421e5c8e77bff72986a22e86f937d93fa8e4920",
+        "packageStatus": "partial",
+        "releaseId": "release:69666f537d51a64f0d30ff5d0ebd05020b9b058db509c705e00bfcdbaf21e15d",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ed4fbfe3e0cb6770b15b2a66bd1192a684547678",
+        "upstreamVersion": "0.2.0"
+      },
+      "releaseId": "release:69666f537d51a64f0d30ff5d0ebd05020b9b058db509c705e00bfcdbaf21e15d",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "cloud-sql-mysql",
+      "variantPluginIds": [
+        "plugin:claude-official:cloud-sql-mysql"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Google LLC"
+      ],
+      "capabilitySummary": {
+        "executable": 2,
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Create, connect, and interact with a Cloud SQL for PostgreSQL database and data.",
+      "displayName": "Cloud SQL PostgreSQL",
+      "homepage": "https://cloud.google.com/sql",
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/sql",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
+      "keywords": [
+        "cloud",
+        "data-analytics",
+        "postgresql",
+        "sql"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 333,
+        "text": "CS"
+      },
+      "pluginId": "plugin:claude-official:cloud-sql-postgresql",
+      "primaryCategory": "data-analytics",
+      "productKey": "cloud-sql-postgresql",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "6191fb93757355204a5f909d41ad6c9fa2900a83"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:4f9e0cf25b618a1b983a5db64fef2d01ba2852dd19b93dd58db38239536f3344",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:6fd4222380db3e3982496f2125fd619cc583caedfe454620d1f7fcdc9b7cfbd2",
+        "packageStatus": "partial",
+        "releaseId": "release:7f5443a605a10f85eaa61ead6e91a421748085f821ad21184f0ecc43707b3355",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "6191fb93757355204a5f909d41ad6c9fa2900a83",
+        "upstreamVersion": "0.4.0"
+      },
+      "releaseId": "release:7f5443a605a10f85eaa61ead6e91a421748085f821ad21184f0ecc43707b3355",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "cloud-sql-postgresql",
+      "variantPluginIds": [
+        "plugin:claude-official:cloud-sql-postgresql"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Google LLC"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect to Cloud SQL for SQL Server",
+      "displayName": "Cloud SQL Sqlserver",
+      "homepage": "https://github.com/gemini-cli-extensions/cloud-sql-sqlserver",
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/sql",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
+      "keywords": [
+        "cloud",
+        "data-analytics",
+        "sql",
+        "sqlserver"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 27,
+        "text": "CS"
+      },
+      "pluginId": "plugin:claude-official:cloud-sql-sqlserver",
+      "primaryCategory": "data-analytics",
+      "productKey": "cloud-sql-sqlserver",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "8858b0fd066f1590ab7dad70ceacb1366af86a1f"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:fffffb5dfe637b9231081eb63dd186c4bc4c0e20004d7f9d457f2ba3ab3a4205",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:9ceea9dc91c1f5805bd8bf28a653bdee98eb3185584d978c885bbc72cb1d9e4d",
+        "packageStatus": "partial",
+        "releaseId": "release:20c4232959db0ff01f5bca5436cb96e39b072a7031fe72cde7b644143047b637",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "8858b0fd066f1590ab7dad70ceacb1366af86a1f",
+        "upstreamVersion": "0.2.0"
+      },
+      "releaseId": "release:20c4232959db0ff01f5bca5436cb96e39b072a7031fe72cde7b644143047b637",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "cloud-sql-sqlserver",
+      "variantPluginIds": [
+        "plugin:claude-official:cloud-sql-sqlserver"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Convex"
+      ],
+      "capabilitySummary": {
+        "agent": 2,
+        "command": 1,
+        "hook": 9,
+        "mcp-server": 2,
+        "scheduled-task": 1,
+        "skill": 17
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Official Convex plugin for Claude Code with bundled Convex skills, the convex-expert subagent for code-writing, a runtime-error monitor, and MCP access for backend development, schema design, real-time features, auth, file storage, scheduled jobs, and AI agents.",
+      "displayName": "Convex",
+      "homepage": "https://github.com/get-convex/convex-backend-skill",
+      "icon": null,
+      "keywords": [
+        "agent",
+        "auth",
+        "backend",
+        "convex",
+        "cron",
+        "data-analytics",
+        "database",
+        "mcp",
+        "mobile",
+        "rag",
+        "reactive",
+        "realtime",
+        "scheduler",
+        "storage",
+        "typescript",
+        "websocket"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 153,
+        "text": "CO"
+      },
+      "pluginId": "plugin:claude-official:convex",
+      "primaryCategory": "data-analytics",
+      "productKey": "convex",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "6ca54f6e2e7582812187b8a5a4783fb4dff52692"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:72982c585315fefed3088dd56d93325ccb450e9d24e2aa6bbf65689fb6d45053",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "scheduled-task",
+            "type": "scheduled-task"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:a3eb6c667620a5678b4d175f22e2d1b6b25ca8669dcff138e24123a35c1194fc",
+        "packageStatus": "partial",
+        "releaseId": "release:a4dfac0da1d752c11349676e05090b0304e9d8775d1a37d3efaa1cde2bee0911",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "6ca54f6e2e7582812187b8a5a4783fb4dff52692",
+        "upstreamVersion": "1.14.0"
+      },
+      "releaseId": "release:a4dfac0da1d752c11349676e05090b0304e9d8775d1a37d3efaa1cde2bee0911",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "hook",
+          "mcp-server",
+          "scheduled-task"
+        ],
+        "reasons": [
+          "Contains hook capability metadata.",
+          "Contains mcp-server capability metadata.",
+          "Contains scheduled-task capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "convex",
+      "variantPluginIds": [
+        "plugin:claude-official:convex"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 1,
+        "skill": 10
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Write SQL, explore datasets, and generate insights faster. Build visualizations and dashboards, and turn raw data into clear stories for stakeholders.",
+      "displayName": "Data",
+      "icon": null,
+      "keywords": [
+        "data",
+        "data-analytics"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 84,
+        "text": "DA"
+      },
+      "pluginId": "plugin:knowledge-work-official:data",
+      "primaryCategory": "data-analytics",
+      "productKey": "data",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "data",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:8ddb591117199bcee20648dfc20631ec0c0626aeaed655a9db1f57a78489e474",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:0399268acc41e240ec3ddf7a4c261fcdfc87c379ece403d0761b8a3123b77954",
+        "packageStatus": "partial",
+        "releaseId": "release:897000eb6f89d114666bc40783b88870b193a4ee8749ddf7f46403f3c34ce719",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.1.0"
+      },
+      "releaseId": "release:897000eb6f89d114666bc40783b88870b193a4ee8749ddf7f46403f3c34ce719",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "data",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:data"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Unknown"
+      ],
+      "capabilitySummary": {
+        "agent": 17,
+        "browser": 3,
+        "executable": 25,
+        "mcp-server": 2,
+        "rule": 1,
+        "skill": 18
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Answer product and business questions with data",
+      "displayName": "Data Analytics",
+      "icon": {
+        "asset": "icon-9705cd36b7eba1c63514ef9676c60ff3.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-9705cd36b7eba1c63514ef9676c60ff3.svg",
+        "bytes": 724,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:9705cd36b7eba1c63514ef9676c60ff3d125d25cbc380c3d6c3082f0c73051a4",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/datascience.svg",
+        "url": null
+      },
+      "keywords": [
+        "analytics",
+        "data",
+        "data-analytics"
+      ],
+      "license": "Proprietary",
+      "monogram": {
+        "hue": 180,
+        "text": "DA"
+      },
+      "pluginId": "plugin:openai-official:data-analytics",
+      "primaryCategory": "data-analytics",
+      "productKey": "data-analytics",
+      "provenance": {
+        "manifestPath": ".agents/plugins/marketplace.json",
+        "pluginSubdirectory": "plugins/data-analytics",
+        "repositoryUrl": "https://github.com/openai/plugins",
+        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:048efe9e4be4cb2c5aa216eb8cda67d92defe17a611a0c8e994ae91d454f5f4e",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "browser",
+            "type": "browser"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:d9f4d9f58e4683e12f276b776362ee210890e90ce274261a1e2578e9378b9528",
+        "packageStatus": "partial",
+        "releaseId": "release:4bd6338197f3888aa7c2e87f927600a0e9ee38df3aa1a7f433005ca70dd4f3ca",
+        "requiredConnectors": [],
+        "requiredCredentials": [
+          "authentication"
+        ],
+        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "upstreamVersion": "0.2.8"
+      },
+      "releaseId": "release:4bd6338197f3888aa7c2e87f927600a0e9ee38df3aa1a7f433005ca70dd4f3ca",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "browser",
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains browser capability metadata.",
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "openai-official",
+      "upstreamName": "data-analytics",
+      "variantPluginIds": [
+        "plugin:openai-official:data-analytics"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Google LLC"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Manage Dataproc clusters and jobs.",
+      "displayName": "Dataproc",
+      "homepage": "https://github.com/gemini-cli-extensions/dataproc",
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/dataproc",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
+      "keywords": [
+        "data-analytics",
+        "dataproc"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 216,
+        "text": "DA"
+      },
+      "pluginId": "plugin:claude-official:dataproc",
+      "primaryCategory": "data-analytics",
+      "productKey": "dataproc",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "afbd516845a34fcf460ec447b81868bc48962b0f"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:1b7a48c0ce83a69e746ceb393d0c20df6eb6b247ad26c456ea3dcc32cd33e58f",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:ad07bcc18ba0766d290960ddf1cd46e218428234d67540491f6251c120201776",
+        "packageStatus": "partial",
+        "releaseId": "release:e920fb7eeed27efacfe41bc8bc589df877080e92efd7b570b15adfb3161783f1",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "afbd516845a34fcf460ec447b81868bc48962b0f",
+        "upstreamVersion": "0.1.0"
+      },
+      "releaseId": "release:e920fb7eeed27efacfe41bc8bc589df877080e92efd7b570b15adfb3161783f1",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "dataproc",
+      "variantPluginIds": [
+        "plugin:claude-official:dataproc"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "executable": 2,
+        "rule": 1,
+        "skill": 9
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Agent skills for building on, analyzing, and managing Microsoft Dataverse — with Dataverse MCP, PAC CLI, and Python SDK.",
+      "displayName": "Dataverse",
+      "homepage": "https://github.com/microsoft/Dataverse-skills",
+      "icon": {
+        "asset": "icon-df71c0111148d116515a02c5cb07483c.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-df71c0111148d116515a02c5cb07483c.svg",
+        "bytes": 5067,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:df71c0111148d116515a02c5cb07483caad2bcb779664fa16fd837a4709504ab",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/dataverse-logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "data-analytics",
+        "dataverse"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 93,
+        "text": "DA"
+      },
+      "pluginId": "plugin:claude-official:dataverse",
+      "primaryCategory": "data-analytics",
+      "productKey": "dataverse",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".github/plugins/dataverse",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "001b31e0c78e63a0675078ad599e44c16078cd7f"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:95af9b455eb22adde57fed533402fde643e2b99ddac7497e2202c3623755d919",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:0aff507d50847f11c35485bb7d9e60d8b6734f0b0bb3754e28d0f62bfee7da86",
+        "packageStatus": "portable",
+        "releaseId": "release:05c4bd5473a6691fc391c48638b8749c82685edabbc492cc3e9bda73f926aefe",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "001b31e0c78e63a0675078ad599e44c16078cd7f",
+        "upstreamVersion": "1.12.1"
+      },
+      "releaseId": "release:05c4bd5473a6691fc391c48638b8749c82685edabbc492cc3e9bda73f926aefe",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "dataverse",
+      "variantPluginIds": [
+        "plugin:claude-official:dataverse"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "DuckDB Foundation"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "skill": 9
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "DuckDB-powered skills for Claude Code: read any data file, attach and query DuckDB databases, search DuckDB/DuckLake docs, search past session logs, and install/update DuckDB extensions.",
+      "displayName": "Duckdb Skills",
+      "homepage": "https://duckdb.org/",
+      "icon": {
+        "asset": "icon-39395cbfe086812dc2584ecf763926c6.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-39395cbfe086812dc2584ecf763926c6.png",
+        "bytes": 4623,
+        "contentType": "image/png",
+        "digest": "sha256:39395cbfe086812dc2584ecf763926c6da0497dd090fa4d4db886d7cbaa3d434",
+        "homepage": "https://duckdb.org/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://duckdb.org/images/favicon/apple-touch-icon.png"
+      },
+      "keywords": [
+        "data-analytics",
+        "duckdb",
+        "skills"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 81,
+        "text": "DS"
+      },
+      "pluginId": "plugin:claude-official:duckdb-skills",
+      "primaryCategory": "data-analytics",
+      "productKey": "duckdb-skills",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "7feda8e01e22bc0886c86123f3884947e36d8c69"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:7595ea37c87864a019a294201f72f22379a9fec35234964bfb759fcdc9db65a8",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:fdded60e6b3232b58d1ecb384d5b1a0ba7b8e0c5fcba414ef2e425e65a5d5685",
+        "packageStatus": "partial",
+        "releaseId": "release:331305c4da28e7c1ce49dd7c26daf5e3ac8af6fb026b0189f1347dfe5b8cc3e3",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "7feda8e01e22bc0886c86123f3884947e36d8c69",
+        "upstreamVersion": "0.2.4"
+      },
+      "releaseId": "release:331305c4da28e7c1ce49dd7c26daf5e3ac8af6fb026b0189f1347dfe5b8cc3e3",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "duckdb-skills",
+      "variantPluginIds": [
+        "plugin:claude-official:duckdb-skills"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Google Firebase MCP integration. Manage Firestore databases, authentication, cloud functions, hosting, and storage. Build and manage your Firebase backend directly from your development workflow.",
+      "displayName": "Firebase",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/firebase",
+      "icon": null,
+      "keywords": [
+        "data-analytics",
+        "firebase"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 177,
+        "text": "FI"
+      },
+      "pluginId": "plugin:claude-official:firebase",
+      "primaryCategory": "data-analytics",
+      "productKey": "firebase",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "external_plugins/firebase",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:60af04352ae238ec8d87b22936c237ba33fd4a44e908d6fdd51cf81034224fd9",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:d3981670b791b2c9c58847c292c7204bedc35df79e3876c10ec6f681d650c0d9",
+        "packageStatus": "portable",
+        "releaseId": "release:218b70d46dea217dd1aec06fd14e0a9e6244b7c27a5c9eefb39d4cd94a0a30ae",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fa59bc9037741ecfa131aa27938272605710d7b2"
+      },
+      "releaseId": "release:218b70d46dea217dd1aec06fd14e0a9e6244b7c27a5c9eefb39d4cd94a0a30ae",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "firebase",
+      "variantPluginIds": [
+        "plugin:claude-official:firebase"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Google LLC"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect and interact with Firestore databases, collections, and documents.",
+      "displayName": "Firestore Native",
+      "homepage": "https://github.com/gemini-cli-extensions/firestore-native",
+      "icon": {
+        "asset": "icon-f7d596ba99b42959b41076af51a73eda.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f7d596ba99b42959b41076af51a73eda.png",
+        "bytes": 2763,
+        "contentType": "image/png",
+        "digest": "sha256:f7d596ba99b42959b41076af51a73edae82cb366d8199ae465d42fcad144a70b",
+        "homepage": "https://firebase.google.com/products/firestore",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/devrel-devsite/prod/v5be16d8c9f9402e54c2da2ff24cb75c148f5d2bc84c6f8dfc8b9e16ae456160b/firebase/images/touchicon-180.png"
+      },
+      "keywords": [
+        "data-analytics",
+        "firestore",
+        "native"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 321,
+        "text": "FN"
+      },
+      "pluginId": "plugin:claude-official:firestore-native",
+      "primaryCategory": "data-analytics",
+      "productKey": "firestore-native",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "502ff19b853e760539717d3c640300af3400bba3"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:708b131de645ebd1b2b4e8a41cf3af2ead3614976def9737849748b85d3e291a",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:87386afffb7c42ff6133fa558fbb9c6d92539899e5aca95153ef36703142e70b",
+        "packageStatus": "partial",
+        "releaseId": "release:22cbeb4346838aab4e854b7bd305777dd66b169096f23f03816fb3389f1848d3",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "502ff19b853e760539717d3c640300af3400bba3",
+        "upstreamVersion": "0.3.4"
+      },
+      "releaseId": "release:22cbeb4346838aab4e854b7bd305777dd66b169096f23f03816fb3389f1848d3",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "firestore-native",
+      "variantPluginIds": [
+        "plugin:claude-official:firestore-native"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Informatica"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "rule": 1,
+        "skill": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Governed catalog discovery for Informatica Intelligent Data Management Cloud (CDGC): find tables, columns, files, glossary terms and policies across the enterprise catalog, check ownership, certification, sensitivity and applicable policy, and get safe-usage guidance grounded in catalog metadata before querying any data. Requires an Informatica IDMC tenant and the Informatica Catalog Discovery connector.",
+      "displayName": "Informatica",
+      "homepage": "https://github.com/forcedotcom/informatica-claude-plugins/tree/main/informatica-for-claude-platform",
+      "icon": {
+        "asset": "icon-64b56ace0e5b7fc36f1ebf3e46c31d86.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-64b56ace0e5b7fc36f1ebf3e46c31d86.png",
+        "bytes": 1660,
+        "contentType": "image/png",
+        "digest": "sha256:64b56ace0e5b7fc36f1ebf3e46c31d86d98a26d56873a7272f28092b0b4cb21f",
+        "homepage": "https://www.informatica.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.informatica.com/etc.clientlibs/informatica-commons/clientlibs/clientlib-base/resources/images/favicon.png"
+      },
+      "keywords": [
+        "claude",
+        "data-analytics",
+        "for",
+        "informatica",
+        "platform"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 165,
+        "text": "IN"
+      },
+      "pluginId": "plugin:claude-official:informatica-for-claude-platform",
+      "primaryCategory": "data-analytics",
+      "productKey": "informatica-for-claude-platform",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "informatica-for-claude-platform",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "554d02e0f7f2adafeaeeedbde04435b7bd310a47"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d181b6d8a7e78f1ea4ac5de0401eeafb955bc73e456af9f45c487e161d6280d2",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:f01d44d36033f3182077b4266c41f5eac4a1e5ac96d300df1064b0a7f65608a1",
+        "packageStatus": "partial",
+        "releaseId": "release:bc97b3d598158147b2a3dddb545bd6611fa0474a1072bcee2f019ec644576d4d",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "554d02e0f7f2adafeaeeedbde04435b7bd310a47",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:bc97b3d598158147b2a3dddb545bd6611fa0474a1072bcee2f019ec644576d4d",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "informatica-for-claude-platform",
+      "variantPluginIds": [
+        "plugin:claude-official:informatica-for-claude-platform",
+        "plugin:knowledge-work-official:informatica-for-claude-platform"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Google LLC"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect to Knowledge Catalog to discover, manage, monitor, and govern data and AI artifacts across your data platform",
+      "displayName": "Knowledge Catalog",
+      "homepage": "https://github.com/gemini-cli-extensions/knowledge-catalog",
+      "icon": {
+        "asset": "icon-46dea242a643a5e1d36b969f369c64f6.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-46dea242a643a5e1d36b969f369c64f6.png",
+        "bytes": 6289,
+        "contentType": "image/png",
+        "digest": "sha256:46dea242a643a5e1d36b969f369c64f68134586de60a5bd5a5e1ce64808cd159",
+        "homepage": "https://ai.google.dev/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/devrel-devsite/prod/v5be16d8c9f9402e54c2da2ff24cb75c148f5d2bc84c6f8dfc8b9e16ae456160b/googledevai/images/touchicon-180-new.png"
+      },
+      "keywords": [
+        "catalog",
+        "data-analytics",
+        "knowledge"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 180,
+        "text": "KC"
+      },
+      "pluginId": "plugin:claude-official:knowledge-catalog",
+      "primaryCategory": "data-analytics",
+      "productKey": "knowledge-catalog",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "930d73cfbb8e0637d79cb335ff0b8d80af383bd8"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:b1b8d4501223eecff2377581023c22121d541c611dd36407e85c18ed0e1270fc",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:7bdb79c3bb94494acafa1a0cdb7c13bf4dea36f0c379b3ec61f568707e84aa67",
+        "packageStatus": "partial",
+        "releaseId": "release:bcdeac93ce84a20342c2eac64f618dfbdf5abf36ad0b6601b25b2d435eb199da",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "930d73cfbb8e0637d79cb335ff0b8d80af383bd8",
+        "upstreamVersion": "0.5.3"
+      },
+      "releaseId": "release:bcdeac93ce84a20342c2eac64f618dfbdf5abf36ad0b6601b25b2d435eb199da",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "knowledge-catalog",
+      "variantPluginIds": [
+        "plugin:claude-official:knowledge-catalog"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Google LLC"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect to Looker and interact with your data using LookML.",
+      "displayName": "Looker",
+      "homepage": "https://github.com/gemini-cli-extensions/looker",
+      "icon": null,
+      "keywords": [
+        "data-analytics",
+        "looker"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 69,
+        "text": "LO"
+      },
+      "pluginId": "plugin:claude-official:looker",
+      "primaryCategory": "data-analytics",
+      "productKey": "looker",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "4a8edc0912897a3bc9e9edfb85e9ec4914f38182"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:bfdb86740f5ccee4646a03594f2843b19f215f4e89d3eb30c9dc29a61300e73f",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:16636d9824c5939df5f60ca95e8d4c55037b2c7ce061db80b8621c56da9ece62",
+        "packageStatus": "partial",
+        "releaseId": "release:74d2a6b3cfbae459ed7d75c460c0e1000b9fce607af06bf96a696c5c5446b024",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "4a8edc0912897a3bc9e9edfb85e9ec4914f38182",
+        "upstreamVersion": "0.3.10"
+      },
+      "releaseId": "release:74d2a6b3cfbae459ed7d75c460c0e1000b9fce607af06bf96a696c5c5446b024",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "looker",
+      "variantPluginIds": [
+        "plugin:claude-official:looker"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Unknown"
+      ],
+      "capabilitySummary": {
+        "executable": 3,
+        "skill": 4
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Analyze Mixpanel data with the mixpanel_headless Python SDK and Codex skills.",
+      "displayName": "Mixpanel Headless",
+      "icon": {
+        "asset": "icon-3ebcb85818875354ca119b5651b1eee0.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3ebcb85818875354ca119b5651b1eee0.png",
+        "bytes": 10093,
+        "contentType": "image/png",
+        "digest": "sha256:3ebcb85818875354ca119b5651b1eee0467fa50d3ddf4243104dada9381ed8c2",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "data-analytics",
+        "headless",
+        "mixpanel"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 312,
+        "text": "MH"
+      },
+      "pluginId": "plugin:openai-official:mixpanel-headless",
+      "primaryCategory": "data-analytics",
+      "productKey": "mixpanel-headless",
+      "provenance": {
+        "manifestPath": ".agents/plugins/marketplace.json",
+        "pluginSubdirectory": "plugins/mixpanel-headless",
+        "repositoryUrl": "https://github.com/openai/plugins",
+        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:ae0b483b515cb4014f04ea95abb3c0278ab1d3f4d8606912670d8f2a68c51bc0",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:8721b36223ec3189538d29e0beba8c9f05dbf557228df3d8cd012b55393d392e",
+        "packageStatus": "partial",
+        "releaseId": "release:692b5215da802f4e4b04b76afb7549fb448c915f869dcb2b9caa57d5a3f30df1",
+        "requiredConnectors": [],
+        "requiredCredentials": [
+          "authentication"
+        ],
+        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "upstreamVersion": "0.1.2"
+      },
+      "releaseId": "release:692b5215da802f4e4b04b76afb7549fb448c915f869dcb2b9caa57d5a3f30df1",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "openai-official",
+      "upstreamName": "mixpanel-headless",
+      "variantPluginIds": [
+        "plugin:openai-official:mixpanel-headless"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 50
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Official Claude plugin for MongoDB (MCP Server + Skills). Connect to databases, explore data, manage collections, optimize queries, generate reliable code, implement best practices, develop advanced features, and more.",
+      "displayName": "MongoDB",
+      "homepage": "https://www.mongodb.com/docs/mcp-server/overview/",
+      "icon": {
+        "asset": "icon-e70217b2e33d57aad2d85c96a4fa73a1.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-e70217b2e33d57aad2d85c96a4fa73a1.png",
+        "bytes": 18214,
+        "contentType": "image/png",
+        "digest": "sha256:e70217b2e33d57aad2d85c96a4fa73a1a97faa2aaf010e89c2b057cc08e78565",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "data-analytics",
+        "mongodb"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 339,
+        "text": "MO"
+      },
+      "pluginId": "plugin:claude-official:mongodb",
+      "primaryCategory": "data-analytics",
+      "productKey": "mongodb",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/mongodb",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "1e72df255e54e81eff078054c2cfb2b5d8c13503"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:b2fdd4b360b735b822af9cfd2d9aa8f5f469a60b8d212ce185f2ae120a841075",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:855edf874c6181c072b05b74aa161999f16995db674efab22ce500a16865993b",
+        "packageStatus": "portable",
+        "releaseId": "release:11b92c1daa9fa36511988111d6b5f72c0b91c056da496858c391ad4a34a4e0fa",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "1e72df255e54e81eff078054c2cfb2b5d8c13503",
+        "upstreamVersion": "1.2.1"
+      },
+      "releaseId": "release:11b92c1daa9fa36511988111d6b5f72c0b91c056da496858c391ad4a34a4e0fa",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "mongodb",
+      "variantPluginIds": [
+        "plugin:claude-official:mongodb"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "MongoDB"
+      ],
+      "capabilitySummary": {
+        "skill": 48
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect to MongoDB Atlas clusters only through the Atlas Managed MCP Server. Sign in with your Atlas account to explore data, manage collections, optimize queries, generate reliable code with MongoDB best practices, and manage Atlas resources such as clusters, projects, database users, and network access. If you are running a different MongoDB deployment or want to run a local MongoDB MCP Server, install the MongoDB (Self-Managed MCP) plugin instead.",
+      "displayName": "MongoDB Atlas",
+      "homepage": "https://www.mongodb.com/docs/mcp-server/get-started/",
+      "icon": {
+        "asset": "icon-e70217b2e33d57aad2d85c96a4fa73a1.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-e70217b2e33d57aad2d85c96a4fa73a1.png",
+        "bytes": 18214,
+        "contentType": "image/png",
+        "digest": "sha256:e70217b2e33d57aad2d85c96a4fa73a1a97faa2aaf010e89c2b057cc08e78565",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "atlas",
+        "data-analytics",
+        "mongodb"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 120,
+        "text": "MA"
+      },
+      "pluginId": "plugin:claude-official:mongodb-atlas",
+      "primaryCategory": "data-analytics",
+      "productKey": "mongodb-atlas",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/mongodb-atlas",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "1e72df255e54e81eff078054c2cfb2b5d8c13503"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:53d7919ba1589179a5211f4e5a69189a901347e3d2bada02adaebf5f9949f5ac",
+        "capabilities": [
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:67ee4cef921dd08248fcba58b10e5135858d97a466ef1bb5a2b6a99052cdf654",
+        "packageStatus": "partial",
+        "releaseId": "release:d37cf4f9092f0fab76952bb63d415a09af3a3fa4ed5ab1601e84f97f5e994bcc",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "1e72df255e54e81eff078054c2cfb2b5d8c13503",
+        "upstreamVersion": "1.2.1"
+      },
+      "releaseId": "release:d37cf4f9092f0fab76952bb63d415a09af3a3fa4ed5ab1601e84f97f5e994bcc",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "mongodb-atlas",
+      "variantPluginIds": [
+        "plugin:claude-official:mongodb-atlas"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Google LLC"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect, query, and interact with Oracle Databases and their data.",
+      "displayName": "Oracle Database",
+      "homepage": "https://github.com/gemini-cli-extensions/oracledb",
+      "icon": {
+        "asset": "icon-f0cec8c17444fdfd24b2d78874f969dd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f0cec8c17444fdfd24b2d78874f969dd.png",
+        "bytes": 8052,
+        "contentType": "image/png",
+        "digest": "sha256:f0cec8c17444fdfd24b2d78874f969dd18bfa00698a7942ea0538ff041d1e952",
+        "homepage": "https://www.oracle.com/database/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.oracle.com/asset/web/favicons/favicon-180.png"
+      },
+      "keywords": [
+        "data-analytics",
+        "oracledb"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 228,
+        "text": "OD"
+      },
+      "pluginId": "plugin:claude-official:oracledb",
+      "primaryCategory": "data-analytics",
+      "productKey": "oracledb",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "f8606fea23c9e7cc5ff80470964c604e04db4cc9"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:8105b4ebc8ad79dc1fb70623693985d4963f107356b5f8b37e38217ad4dcb618",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:dcf1e478ba92f88dee251b037c1bf972a3467f8aaf843ea19f9ec73c7c22b29e",
+        "packageStatus": "partial",
+        "releaseId": "release:8c6863738f22a77df216a9481642b5a413c42cf9c116fe4f56a73af6756b57de",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "f8606fea23c9e7cc5ff80470964c604e04db4cc9",
+        "upstreamVersion": "0.2.7"
+      },
+      "releaseId": "release:8c6863738f22a77df216a9481642b5a413c42cf9c116fe4f56a73af6756b57de",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "oracledb",
+      "variantPluginIds": [
+        "plugin:claude-official:oracledb"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "command": 1,
+        "executable": 10,
+        "hook": 2,
+        "mcp-server": 1,
+        "rule": 1,
+        "skill": 9
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Pinecone vector database integration. Streamline your Pinecone development with powerful tools for managing vector indexes, querying data, and rapid prototyping. Use slash commands like /quickstart to generate AGENTS.md files and initialize Python projects and /query to quickly explore indexes. Access the Pinecone MCP server for creating, describing, upserting and querying indexes with Claude. Perfect for developers building semantic search, RAG applications, recommendation systems, and other vector-based applications with Pinecone.",
+      "displayName": "Pinecone",
+      "homepage": "https://github.com/pinecone-io/pinecone-claude-code-plugin",
+      "icon": {
+        "asset": "icon-faa9c834fac8e86cd94f446ece9689ed.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-faa9c834fac8e86cd94f446ece9689ed.ico",
+        "bytes": 15086,
+        "contentType": "image/x-icon",
+        "digest": "sha256:faa9c834fac8e86cd94f446ece9689edd0dd3203ff261453ffda1764879f5c68",
+        "homepage": "https://www.pinecone.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.pinecone.io/favicon.ico?favicon.16aah0kd0o17q.ico"
+      },
+      "keywords": [
+        "data-analytics",
+        "pinecone"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 219,
+        "text": "PI"
+      },
+      "pluginId": "plugin:claude-official:pinecone",
+      "primaryCategory": "data-analytics",
+      "productKey": "pinecone",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "c383d38b5cc3c5ec219f2e68026e47ffbf46524a"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:49be14792da10f44324282056dbff951f65055343223eef38a87c009134318b7",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:b84ebbd299f0df754c44d64f561eb874d126c07658dcdb6e8f10a58196412c47",
+        "packageStatus": "partial",
+        "releaseId": "release:9755188e003a0514fcb082b5d97ee78c96d1d6e1ac107f3daf3e822c977c6e4f",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "c383d38b5cc3c5ec219f2e68026e47ffbf46524a",
+        "upstreamVersion": "1.7.1"
+      },
+      "releaseId": "release:9755188e003a0514fcb082b5d97ee78c96d1d6e1ac107f3daf3e822c977c6e4f",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "pinecone",
+      "variantPluginIds": [
+        "plugin:claude-official:pinecone"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2,
+        "skill": 65
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "An authenticated hosted MCP server that accesses your PlanetScale organizations, databases, branches, schema, and Insights data. Query against your data, surface slow queries, and get organizational and account information.",
+      "displayName": "PlanetScale",
+      "homepage": "https://planetscale.com/",
+      "icon": {
+        "asset": "icon-2bc73ee98cff43e3ab4d82aa2cc61f01.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-2bc73ee98cff43e3ab4d82aa2cc61f01.png",
+        "bytes": 711,
+        "contentType": "image/png",
+        "digest": "sha256:2bc73ee98cff43e3ab4d82aa2cc61f01b220dc3647cd7032e0dba827b3d22908",
+        "homepage": "https://planetscale.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://planetscale.com/apple-touch-icon.png"
+      },
+      "keywords": [
+        "data-analytics",
+        "planetscale"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 354,
+        "text": "PL"
+      },
+      "pluginId": "plugin:claude-official:planetscale",
+      "primaryCategory": "data-analytics",
+      "productKey": "planetscale",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "95c80f9f391be9b1b6172bf82d4191e1ec11b637"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:8c84b273b17d4c58756d5f92b58c831293e7620be266409db55c8cdb1970ba4d",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:964867ffac7aed5b90028c3fdbe93e7d0303e520369296fa24d1c07c149166a9",
+        "packageStatus": "partial",
+        "releaseId": "release:23c40678983677a6b9cb676c8298b04a4660d593beec19f9f659c766a90b92d3",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "95c80f9f391be9b1b6172bf82d4191e1ec11b637",
+        "upstreamVersion": "1.1.1"
+      },
+      "releaseId": "release:23c40678983677a6b9cb676c8298b04a4660d593beec19f9f659c766a90b92d3",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "planetscale",
+      "variantPluginIds": [
+        "plugin:claude-official:planetscale",
+        "plugin:knowledge-work-official:planetscale"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "agent": 1,
+        "command": 6,
+        "executable": 42,
+        "hook": 4,
+        "mcp-server": 2,
+        "skill": 164
+      },
+      "categories": [
+        "data-analytics",
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Access PostHog analytics, feature flags, experiments, error tracking, and insights directly from Claude Code.",
+      "displayName": "PostHog",
+      "homepage": "https://posthog.com/docs/model-context-protocol",
+      "icon": {
+        "asset": "icon-a8963a893a3abfc498abe278d321649e.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a8963a893a3abfc498abe278d321649e.svg",
+        "bytes": 3010,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:a8963a893a3abfc498abe278d321649ecf96c46fb89f28bb9120214a8544e0e8",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "developer-tools",
+        "posthog"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 249,
+        "text": "PO"
+      },
+      "pluginId": "plugin:claude-official:posthog",
+      "primaryCategory": "data-analytics",
+      "productKey": "posthog",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "33c066c80776a962a4233d76b20a3317733070b4"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:81e967b405ee387023fa811f387ee6a97c2988434d7aa831a8f2a2b874898f95",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:34509b60df9892908923c96e746d68b0ab041e94e58a58b775402d9ab629aac4",
+        "packageStatus": "partial",
+        "releaseId": "release:5ede2c5b249d2e5d9d5010f462b48d6d2e20d85ff4d02f190e69a5cf77276324",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "33c066c80776a962a4233d76b20a3317733070b4",
+        "upstreamVersion": "1.1.63"
+      },
+      "releaseId": "release:5ede2c5b249d2e5d9d5010f462b48d6d2e20d85ff4d02f190e69a5cf77276324",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "posthog",
+      "variantPluginIds": [
+        "plugin:claude-official:posthog",
+        "plugin:openai-official:posthog"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Qdrant"
+      ],
+      "capabilitySummary": {
+        "executable": 24,
+        "rule": 1,
+        "skill": 31
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Agent skills for Qdrant vector search covering scaling, performance optimization, search quality, monitoring, deployment, model migration, version upgrades, and SDK usage across Python, TypeScript, Rust, Go, .NET, and Java.",
+      "displayName": "Qdrant",
+      "homepage": "https://skills.qdrant.tech/",
+      "icon": {
+        "asset": "icon-42d52b9abd4b903268aa5d6b143d4b6a.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-42d52b9abd4b903268aa5d6b143d4b6a.ico",
+        "bytes": 15086,
+        "contentType": "image/x-icon",
+        "digest": "sha256:42d52b9abd4b903268aa5d6b143d4b6a85eaee07d99133d4eec7433c99821cf0",
+        "homepage": "https://qdrant.tech/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://qdrant.tech/favicon.ico"
+      },
+      "keywords": [
+        "data-analytics",
+        "qdrant",
+        "skills"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 183,
+        "text": "QD"
+      },
+      "pluginId": "plugin:claude-official:qdrant-skills",
+      "primaryCategory": "data-analytics",
+      "productKey": "qdrant-skills",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "fcfb9f1fbc6a7c91de6a2f065436e4c051a6c772"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:3e8fad6bb80854b5769f4514fb70ae6da45f89bfa2869fd89fd222a5ca659e18",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:dd558b9e2dd1509743b1051936422db6668775e7f4eec645ee9b25e57027f03e",
+        "packageStatus": "partial",
+        "releaseId": "release:fd07a449718328df80d80ba4fe8d3383a2feed04a9dcfccccee7d1550998fc44",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fcfb9f1fbc6a7c91de6a2f065436e4c051a6c772",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:fd07a449718328df80d80ba4fe8d3383a2feed04a9dcfccccee7d1550998fc44",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "qdrant-skills",
+      "variantPluginIds": [
+        "plugin:claude-official:qdrant-skills",
+        "plugin:knowledge-work-official:qdrant-skills"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Redis"
+      ],
+      "capabilitySummary": {
+        "skill": 8
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Redis development best practices — data structures, query engine, vector search, caching, and performance optimization",
+      "displayName": "Redis Development",
+      "homepage": "https://redis.io/",
+      "icon": {
+        "asset": "icon-9b2be11cf01d51a73b612a40f952576e.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-9b2be11cf01d51a73b612a40f952576e.png",
+        "bytes": 21458,
+        "contentType": "image/png",
+        "digest": "sha256:9b2be11cf01d51a73b612a40f952576e75b8cc3099f01608796bcf7e68a73de7",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/redis-logo.png",
+        "url": null
+      },
+      "keywords": [
+        "data-analytics",
+        "development",
+        "redis"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 297,
+        "text": "RD"
+      },
+      "pluginId": "plugin:claude-official:redis-development",
+      "primaryCategory": "data-analytics",
+      "productKey": "redis-development",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/redis-development",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "172fb9effa139cd7432ac29a9ee81c45943e5a28"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:7a04a431a855192ee93a3c7f2f9147cee6c8d5ff2ce9cec1968314249b7215f9",
+        "capabilities": [
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:09d4a5c5864ccf2109cbb3e8f1573f65cca9e64354437ab552675b454c8a7573",
+        "packageStatus": "portable",
+        "releaseId": "release:f902c77b81aa62cb1585ca2d3dd2a0ce468dc06b7d256b7e42b15d10d0267f19",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "172fb9effa139cd7432ac29a9ee81c45943e5a28",
+        "upstreamVersion": "1.4.0"
+      },
+      "releaseId": "release:f902c77b81aa62cb1585ca2d3dd2a0ce468dc06b7d256b7e42b15d10d0267f19",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "redis-development",
+      "variantPluginIds": [
+        "plugin:claude-official:redis-development"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "SAP SE"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "150+ SAP HANA database tools for AI assistants. Query tables, import/export data, profile data quality, compare schemas, manage backups, monitor performance, and more. Connects to SAP HANA Cloud and on-premise databases.",
+      "displayName": "Hana CLI",
+      "homepage": "https://github.com/SAP-samples/hana-cli-claude-plugin",
+      "icon": {
+        "asset": "icon-3f109a1d8dfce9f2c6b514f8222219d4.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3f109a1d8dfce9f2c6b514f8222219d4.ico",
+        "bytes": 9662,
+        "contentType": "image/x-icon",
+        "digest": "sha256:3f109a1d8dfce9f2c6b514f8222219d47810a8afb54f60ccf15d6f75e7b03bb2",
+        "homepage": "https://developers.sap.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://developers.sap.com/favicon.ico"
+      },
+      "keywords": [
+        "cli",
+        "data-analytics",
+        "hana",
+        "sap"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 354,
+        "text": "HC"
+      },
+      "pluginId": "plugin:claude-official:sap-hana-cli",
+      "primaryCategory": "data-analytics",
+      "productKey": "sap-hana-cli",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "abadd0aba32792b6378ed784e9f6d3e5b25dfc2a"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:b0e3b1efeb5cf04e7c5fe0a6b851718267328882d9ed9663f518c67a1198c392",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:9048f7b26724d7ae9c44ee67f306de6b6a0eb8578bdd536d34595f93bc04f15e",
+        "packageStatus": "portable",
+        "releaseId": "release:e084fb5331b2fd8e06327d922bbc63e4c45fd10a1c4d872725d7c70dc1fe61de",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "abadd0aba32792b6378ed784e9f6d3e5b25dfc2a",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:e084fb5331b2fd8e06327d922bbc63e4c45fd10a1c4d872725d7c70dc1fe61de",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "sap-hana-cli",
+      "variantPluginIds": [
+        "plugin:claude-official:sap-hana-cli"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Google LLC"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect and interact with Spanner data using natural language.",
+      "displayName": "Spanner",
+      "homepage": "https://github.com/gemini-cli-extensions/spanner",
+      "icon": {
+        "asset": "icon-a332b54b620a2fa04413561c01c925cd.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
+        "bytes": 9447,
+        "contentType": "image/png",
+        "digest": "sha256:a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
+        "homepage": "https://cloud.google.com/spanner",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+      },
+      "keywords": [
+        "data-analytics",
+        "spanner"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 129,
+        "text": "SP"
+      },
+      "pluginId": "plugin:claude-official:spanner",
+      "primaryCategory": "data-analytics",
+      "productKey": "spanner",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "a69b5f3449387a851648f8bd9be58d0b27e0411c"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:313665fe2ad1714bcb601f1039ec62018defebf0a1358b92b89fd0fa9aa04726",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:62ec775d051411bb491d20404219ae63c8cd4c5d90d3facbe263b0daa4fc57c3",
+        "packageStatus": "partial",
+        "releaseId": "release:d6b8f3c54f3a97c9bcbafb3111e3bab5e398146afa05924793d32e483975e4bf",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "a69b5f3449387a851648f8bd9be58d0b27e0411c",
+        "upstreamVersion": "0.3.5"
+      },
+      "releaseId": "release:d6b8f3c54f3a97c9bcbafb3111e3bab5e398146afa05924793d32e483975e4bf",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "spanner",
+      "variantPluginIds": [
+        "plugin:claude-official:spanner"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "VillageSQL"
+      ],
+      "capabilitySummary": {
+        "rule": 1,
+        "skill": 2
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Builds a VillageSQL extension for MySQL end-to-end through a 7-phase persona-driven workflow. Commonly used to port PostgreSQL extensions to MySQL.",
+      "displayName": "Villagesql",
+      "homepage": "https://villagesql.com/",
+      "icon": {
+        "asset": "icon-776aec16beef775f56b9ad38b780cbac.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-776aec16beef775f56b9ad38b780cbac.svg",
+        "bytes": 1417,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:776aec16beef775f56b9ad38b780cbacb1d75ee8893112847765e6aa881b5001",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "builder",
+        "data-analytics",
+        "extension",
+        "vsql"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 330,
+        "text": "VI"
+      },
+      "pluginId": "plugin:claude-official:vsql-extension-builder",
+      "primaryCategory": "data-analytics",
+      "productKey": "vsql-extension-builder",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "450139a684771365b7fa9558d28b920dfaf356f9"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:571aea9b40660e95f72bda597320ff86533880b8c324780652c31a9a669e148b",
+        "capabilities": [
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:5501b25490f59e608f264d6599655c9ec34afd23225cccdfb3678bcbeb2db384",
+        "packageStatus": "partial",
+        "releaseId": "release:035090dda7a11822cab3f78d148aa4594d7c87dd443459a9ef08c4e53685b445",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "450139a684771365b7fa9558d28b920dfaf356f9"
+      },
+      "releaseId": "release:035090dda7a11822cab3f78d148aa4594d7c87dd443459a9ef08c4e53685b445",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "vsql-extension-builder",
+      "variantPluginIds": [
+        "plugin:claude-official:vsql-extension-builder"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Zilliz"
+      ],
+      "capabilitySummary": {
+        "command": 2,
+        "skill": 36
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Zilliz Cloud management plugin with 14 skills covering cluster lifecycle, collection schema, vector search, index tuning, bulk import, RBAC, backups, and monitoring.",
+      "displayName": "Zilliz",
+      "homepage": "https://docs.zilliz.com/",
+      "icon": {
+        "asset": "icon-8d7deb7f7224deaaf4129368695c8bac.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8d7deb7f7224deaaf4129368695c8bac.svg",
+        "bytes": 1276,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:8d7deb7f7224deaaf4129368695c8bacb4e4edebfdc724aa66c852088b1d7ce8",
+        "homepage": "https://zilliz.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://zilliz.com/favicon.svg"
+      },
+      "keywords": [
+        "data-analytics",
+        "zilliz"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 297,
+        "text": "ZI"
+      },
+      "pluginId": "plugin:claude-official:zilliz",
+      "primaryCategory": "data-analytics",
+      "productKey": "zilliz",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "35c86c000c91abb35f3eeed5cca15ebd69cba4d5"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:e5421583b8d693d62934e3b957c6a97e6308e2cd96860acd6c3eaec17c7c4875",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:6e1476105c708c9f8eff6a7381f6a0d1db61c11f1b1bc52fed3be23d905267f8",
+        "packageStatus": "partial",
+        "releaseId": "release:acfb2fdcd70e1b379adf5f7829cdbfd55beebf5cd6a8fb8a3374ee6bc6a170df",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "35c86c000c91abb35f3eeed5cca15ebd69cba4d5",
+        "upstreamVersion": "1.5.0"
+      },
+      "releaseId": "release:acfb2fdcd70e1b379adf5f7829cdbfd55beebf5cd6a8fb8a3374ee6bc6a170df",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "zilliz",
+      "variantPluginIds": [
+        "plugin:claude-official:zilliz"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1
+}
