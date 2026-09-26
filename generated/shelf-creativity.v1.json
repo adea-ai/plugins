@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:46d35646d0c825e0b3caa3d97b4bf786ce6cadd8bc16eaa416461d28db04f483",
+  "catalogId": "catalog:46639457dd9268f619932be85e31428e3c494186547ca029c6262fb2c90df647",
   "category": "creativity",
   "products": [
     {
@@ -96,98 +96,6 @@
     },
     {
       "authors": [
-        "Miro"
-      ],
-      "capabilitySummary": {
-        "mcp-server": 1,
-        "skill": 8
-      },
-      "categories": [
-        "creativity"
-      ],
-      "compatibility": {
-        "claude-code": "unknown",
-        "codex": "unknown",
-        "cursor": "unknown",
-        "generic-skill-mcp": "unknown",
-        "hermes": "unknown",
-        "opencode": "unknown",
-        "pi": "unknown"
-      },
-      "description": "Secure access to Miro boards. Enables AI to read board context, create diagrams, and generate code with enterprise-grade security.",
-      "displayName": "Miro",
-      "homepage": "https://miro.com/",
-      "icon": {
-        "asset": "icon-6d1a97e6922fee40efab035b669d1feb.png",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-6d1a97e6922fee40efab035b669d1feb.png",
-        "bytes": 1273,
-        "contentType": "image/png",
-        "digest": "sha256:6d1a97e6922fee40efab035b669d1feb74d54074721b968321183a715213b605",
-        "homepage": "https://miro.com/",
-        "kind": "favicon",
-        "path": null,
-        "url": "https://framerusercontent.com/images/6FBG66PBxjV2QFaDfIdUi5mi9A.png"
-      },
-      "keywords": [
-        "creativity",
-        "miro"
-      ],
-      "license": "MIT",
-      "monogram": {
-        "hue": 306,
-        "text": "MI"
-      },
-      "pluginId": "plugin:claude-official:miro",
-      "primaryCategory": "creativity",
-      "productKey": "miro",
-      "provenance": {
-        "manifestPath": ".claude-plugin/marketplace.json",
-        "pluginSubdirectory": "claude-plugins/miro",
-        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "c2494b24510d01ec3e50fad94a0c5fc3ca40e339"
-      },
-      "release": {
-        "canonicalContentDigest": "sha256:899e2b619c393ec1e40d6a0b9e866ef3e4fdf66a2c1a768cc9a042ca3e923823",
-        "capabilities": [
-          {
-            "name": "mcp-server",
-            "type": "mcp-server"
-          },
-          {
-            "name": "skill",
-            "type": "skill"
-          }
-        ],
-        "contentResolution": "complete",
-        "packageDigest": "sha256:970889fb33a9d0dd243965901f8b455df15a97606d14ff7bbc94adf1882c5350",
-        "packageStatus": "portable",
-        "releaseId": "release:1034a4f459b1e468b1f6d429bcbe9e63643e0760c6a68a6cf5fa35d2a0400454",
-        "requiredConnectors": [],
-        "requiredCredentials": [],
-        "sourceRevision": "c2494b24510d01ec3e50fad94a0c5fc3ca40e339",
-        "upstreamVersion": "1.4.0"
-      },
-      "releaseId": "release:1034a4f459b1e468b1f6d429bcbe9e63643e0760c6a68a6cf5fa35d2a0400454",
-      "securityClassification": {
-        "contentResolution": "complete",
-        "level": "sensitive",
-        "permissionSensitiveChanges": [
-          "mcp-server"
-        ],
-        "reasons": [
-          "Contains mcp-server capability metadata."
-        ]
-      },
-      "sourceId": "claude-official",
-      "upstreamName": "miro",
-      "variantPluginIds": [
-        "plugin:claude-official:miro",
-        "plugin:knowledge-work-official:miro"
-      ],
-      "variantsIdentical": true
-    },
-    {
-      "authors": [
         "Cursor"
       ],
       "capabilitySummary": {
@@ -234,7 +142,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/excalidraw",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
       },
       "release": {
         "canonicalContentDigest": "sha256:acf67cb9ec45e885a9bf3e790291ad37e24e6dc57bb10ef42e84cd4f5169eccd",
@@ -247,13 +155,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6b930238faac690506d672bfb166b309d120fbd0b2086b0abeb2153459317129",
         "packageStatus": "portable",
-        "releaseId": "release:bead2e7177bfb19d8417f244f6284e775b032d4b033f1476edd837f5131147fb",
+        "releaseId": "release:a4eed56db4e947aaa1dca92ac18f9b832c410dbb7178fa3d6f71aaacc472cec0",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
         "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:bead2e7177bfb19d8417f244f6284e775b032d4b033f1476edd837f5131147fb",
+      "releaseId": "release:a4eed56db4e947aaa1dca92ac18f9b832c410dbb7178fa3d6f71aaacc472cec0",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -319,7 +227,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/gamma",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
       },
       "release": {
         "canonicalContentDigest": "sha256:855867dad26c1704aa7cd0ebd2119c2660b44de7784a02cf120583e39dde4d9d",
@@ -332,13 +240,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:1939f1c8b0e89c19379fddab562c7a110a61055221f523ef927918527e71c3f8",
         "packageStatus": "portable",
-        "releaseId": "release:10d6e3e2773350780fe5bb897ed4d73ccb59b84f597f0b6c23806ed93d562e9b",
+        "releaseId": "release:5218f2658fc13d232d8167abefcab8f3caf060e39b0677ca2bce221bd3ab09a8",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:10d6e3e2773350780fe5bb897ed4d73ccb59b84f597f0b6c23806ed93d562e9b",
+      "releaseId": "release:5218f2658fc13d232d8167abefcab8f3caf060e39b0677ca2bce221bd3ab09a8",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -537,6 +445,89 @@
         "plugin:openai-official:adobe"
       ],
       "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Adobe"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Harness Adobe's creative AI-powered tools to edit images, automate design workflows, and bring creative visions to life — from background removal to vectorization and professional retouching.",
+      "displayName": "Adobe",
+      "homepage": "https://github.com/adobe/skills/tree/main/plugins/creative-cloud/adobe-for-creativity",
+      "icon": null,
+      "keywords": [
+        "adobe",
+        "creativity",
+        "for"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 186,
+        "text": "AD"
+      },
+      "pluginId": "plugin:claude-official:adobe-for-creativity",
+      "primaryCategory": "creativity",
+      "productKey": "adobe-for-creativity",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/creative-cloud/adobe-for-creativity",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "1307e2c03b9cd20c49872be8cbdfda7ee9aa8c7e"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:bb9161542bd086c449d067447001746349e5fb3fb6046e32c87d9b7e0a19d772",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:681f6eaacba86ebdf48cb5d682ebdf978407187c98dc623ab2fec2ef6d9cf99b",
+        "packageStatus": "partial",
+        "releaseId": "release:59a15c29650b8819225f9a9609f07b538e5a686cdce608a1d217d61f63c0e481",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "1307e2c03b9cd20c49872be8cbdfda7ee9aa8c7e",
+        "upstreamVersion": "2.1.0"
+      },
+      "releaseId": "release:59a15c29650b8819225f9a9609f07b538e5a686cdce608a1d217d61f63c0e481",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "adobe-for-creativity",
+      "variantPluginIds": [
+        "plugin:claude-official:adobe-for-creativity",
+        "plugin:knowledge-work-official:adobe-for-creativity"
+      ],
+      "variantsIdentical": true
     }
   ],
   "schemaVersion": 1,

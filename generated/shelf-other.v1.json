@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:46d35646d0c825e0b3caa3d97b4bf786ce6cadd8bc16eaa416461d28db04f483",
+  "catalogId": "catalog:46639457dd9268f619932be85e31428e3c494186547ca029c6262fb2c90df647",
   "category": "other",
   "products": [
     {
@@ -13,13 +13,13 @@
         "other"
       ],
       "compatibility": {
-        "claude-code": "unknown",
-        "codex": "unknown",
-        "cursor": "unknown",
-        "generic-skill-mcp": "unknown",
-        "hermes": "unknown",
-        "opencode": "unknown",
-        "pi": "unknown"
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
       },
       "description": "Run your beehiiv newsletter from chat: draft and edit posts, organize subscribers with tags, custom fields, and segments, build automations, and review publication, post, and website performance.",
       "displayName": "Beehiiv",
@@ -50,10 +50,10 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/beehiiv",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
       },
       "release": {
-        "canonicalContentDigest": "sha256:541a63734a1f91d8132157e9f504b4d00b2e5a9cb6d6e1fbe45472d1405be705",
+        "canonicalContentDigest": "sha256:62fbf61f2a231a6e186c6d885cf0d0f8ed279f3936b76a11f4893ba669acb8c5",
         "capabilities": [
           {
             "name": "mcp-server",
@@ -61,15 +61,15 @@
           }
         ],
         "contentResolution": "complete",
-        "packageDigest": "sha256:3c60c6872c41f2940227ca0f83accec340f21dce6952b2e4544ade4564d579b3",
-        "packageStatus": "portable",
-        "releaseId": "release:e2ae24e728a9dc5fddd24e09e2613c109fd8ee176a774bf4044cf082821d11f1",
+        "packageDigest": "sha256:ea573ddd242f6883438ac0388cbf633fd5dc6c532f393ae61b8cbab021879781",
+        "packageStatus": "partial",
+        "releaseId": "release:2fc5df919851f597e1a89cf6dc729622710dcb3973dbbb431ec4cb9ebc66741e",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
-        "upstreamVersion": "1.0.0"
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:e2ae24e728a9dc5fddd24e09e2613c109fd8ee176a774bf4044cf082821d11f1",
+      "releaseId": "release:2fc5df919851f597e1a89cf6dc729622710dcb3973dbbb431ec4cb9ebc66741e",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -84,6 +84,91 @@
       "upstreamName": "beehiiv",
       "variantPluginIds": [
         "plugin:cursor-official:beehiiv"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "other"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Manage social media with Buffer: draft, schedule, and publish posts across connected channels, manage the queue and ideas, and review post performance.",
+      "displayName": "Buffer",
+      "icon": {
+        "asset": "icon-6b5f07dc9838754404804567d1df05f9.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-6b5f07dc9838754404804567d1df05f9.png",
+        "bytes": 3551,
+        "contentType": "image/png",
+        "digest": "sha256:6b5f07dc9838754404804567d1df05f977ae80b86d05ec12fb81fa8ec8cd403a",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "buffer",
+        "other"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 321,
+        "text": "BU"
+      },
+      "pluginId": "plugin:cursor-official:buffer",
+      "primaryCategory": "other",
+      "productKey": "buffer",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/buffer",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d36868514d6fc8ca0013ef009bf382f736648f96a9a23ff8ccbe9d987e9dad67",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:b0c6b8180ccb32be75ec97bd8a07d3261aeef06bd6f27112a13a9fdec4847441",
+        "packageStatus": "partial",
+        "releaseId": "release:b62f4e0450112cfe53fd917a204dc4b500769f7be013855bd283341e0a171ec9",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.1"
+      },
+      "releaseId": "release:b62f4e0450112cfe53fd917a204dc4b500769f7be013855bd283341e0a171ec9",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "buffer",
+      "variantPluginIds": [
+        "plugin:cursor-official:buffer"
       ],
       "variantsIdentical": false
     },
@@ -135,7 +220,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/coinbase",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
       },
       "release": {
         "canonicalContentDigest": "sha256:d7e495e1b02fe39db6168846525aa7a00f0ea7d7b5b41bb08ee3ef1ab237bfa2",
@@ -148,13 +233,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:c29e3c438b88e38a9ea0207e58375e374a4736a4a8f822c78b1ee411b177b181",
         "packageStatus": "portable",
-        "releaseId": "release:dd952af2f97ba80eb2835d386a089d6ef78dc18ca7119869dbb0cb16eb3fc3de",
+        "releaseId": "release:691ed0b61e475c1b7cbd1395bce2456893abb9407a8378470c285817f8c7e2d2",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:dd952af2f97ba80eb2835d386a089d6ef78dc18ca7119869dbb0cb16eb3fc3de",
+      "releaseId": "release:691ed0b61e475c1b7cbd1395bce2456893abb9407a8378470c285817f8c7e2d2",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -221,7 +306,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/etoro-trading",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
       },
       "release": {
         "canonicalContentDigest": "sha256:4f84cc2a0932864a304e05b150e686eb7121f6267202f4fbf4dfbbfde5e57a5a",
@@ -234,13 +319,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6bb980981f66d3828f9821f499890b8c2027f088793675ec756d83195d918996",
         "packageStatus": "portable",
-        "releaseId": "release:cbd15014b6b5820107815915311a88bd4d387a805d3bc72e2bfa64c2ebd74679",
+        "releaseId": "release:586c2c2852a2f2a7f4de3303113c5e5cfa63aff1fce9ba460ac4ba6f44fab165",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:cbd15014b6b5820107815915311a88bd4d387a805d3bc72e2bfa64c2ebd74679",
+      "releaseId": "release:586c2c2852a2f2a7f4de3303113c5e5cfa63aff1fce9ba460ac4ba6f44fab165",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -308,7 +393,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/google-cloud-bigquery",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
       },
       "release": {
         "canonicalContentDigest": "sha256:5f052babd1634356eb9ab4ad16b524833b8269eb235f744267bb5ef6892666ef",
@@ -321,13 +406,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:5926c3e14bbee70a51dedea3d6d5b941d8a0f27fb3bc9320d0b8e489d55c4ac3",
         "packageStatus": "portable",
-        "releaseId": "release:b4cf8fcce646b021debd12c898e62e718e6662146b792e6e8d65a9d0a27bffcc",
+        "releaseId": "release:33a4ad6b26392156d0d159c0bc535fe636f2a8e154545b5ace50e7cccdf98d26",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:b4cf8fcce646b021debd12c898e62e718e6662146b792e6e8d65a9d0a27bffcc",
+      "releaseId": "release:33a4ad6b26392156d0d159c0bc535fe636f2a8e154545b5ace50e7cccdf98d26",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -395,7 +480,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/google-docs",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
       },
       "release": {
         "canonicalContentDigest": "sha256:9029b9b8c1c07fcbf3fc796c994fe1c2f729ca608b8a1c2b312a92bbdd4e8d22",
@@ -412,13 +497,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d1bc50e5072a2316711ec5bec5d0998d695a486845daf01316fef7462d70945f",
         "packageStatus": "portable",
-        "releaseId": "release:1c74a88e65d7e6b790ffa774167be81a1b41905e2af93908181eeb13001dbd70",
+        "releaseId": "release:00670fadf3d9de275b06b2bbfdb4a3932ff488c635150451c24172337086de52",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
         "upstreamVersion": "1.1.0"
       },
-      "releaseId": "release:1c74a88e65d7e6b790ffa774167be81a1b41905e2af93908181eeb13001dbd70",
+      "releaseId": "release:00670fadf3d9de275b06b2bbfdb4a3932ff488c635150451c24172337086de52",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -433,97 +518,6 @@
       "upstreamName": "google-docs",
       "variantPluginIds": [
         "plugin:cursor-official:google-docs"
-      ],
-      "variantsIdentical": false
-    },
-    {
-      "authors": [
-        "Cursor"
-      ],
-      "capabilitySummary": {
-        "mcp-server": 2,
-        "skill": 1
-      },
-      "categories": [
-        "other"
-      ],
-      "compatibility": {
-        "claude-code": "unknown",
-        "codex": "unknown",
-        "cursor": "unknown",
-        "generic-skill-mcp": "unknown",
-        "hermes": "unknown",
-        "opencode": "unknown",
-        "pi": "unknown"
-      },
-      "description": "Read, write, and append spreadsheet data.",
-      "displayName": "Google Sheets",
-      "icon": {
-        "asset": "icon-2f9f850d9e8567a72b5b3d7da9b7c9fd.svg",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-2f9f850d9e8567a72b5b3d7da9b7c9fd.svg",
-        "bytes": 3784,
-        "contentType": "image/svg+xml",
-        "digest": "sha256:2f9f850d9e8567a72b5b3d7da9b7c9fdaad3bb70769fd0c1caf94d44650d997e",
-        "homepage": null,
-        "kind": "content",
-        "path": "assets/logo.svg",
-        "url": null
-      },
-      "keywords": [
-        "google",
-        "other",
-        "sheets"
-      ],
-      "license": "MIT",
-      "monogram": {
-        "hue": 258,
-        "text": "GS"
-      },
-      "pluginId": "plugin:cursor-official:google-sheets",
-      "primaryCategory": "other",
-      "productKey": "google-sheets",
-      "provenance": {
-        "manifestPath": ".cursor-plugin/marketplace.json",
-        "pluginSubdirectory": "third_party/google-sheets",
-        "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
-      },
-      "release": {
-        "canonicalContentDigest": "sha256:71fae1902683ab00e05265c771eb3f6213d34893bfe1c53ac141ba9042024dd8",
-        "capabilities": [
-          {
-            "name": "mcp-server",
-            "type": "mcp-server"
-          },
-          {
-            "name": "skill",
-            "type": "skill"
-          }
-        ],
-        "contentResolution": "complete",
-        "packageDigest": "sha256:63bd081c899e1dbf908deb5a96331c7e7a3ad0da161746067af7ec0f7ad59879",
-        "packageStatus": "portable",
-        "releaseId": "release:964a7c5954054d752c5db803abd794300f9d0f8ed1ea924b149856339bd1c154",
-        "requiredConnectors": [],
-        "requiredCredentials": [],
-        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
-        "upstreamVersion": "1.1.0"
-      },
-      "releaseId": "release:964a7c5954054d752c5db803abd794300f9d0f8ed1ea924b149856339bd1c154",
-      "securityClassification": {
-        "contentResolution": "complete",
-        "level": "sensitive",
-        "permissionSensitiveChanges": [
-          "mcp-server"
-        ],
-        "reasons": [
-          "Contains mcp-server capability metadata."
-        ]
-      },
-      "sourceId": "cursor-official",
-      "upstreamName": "google-sheets",
-      "variantPluginIds": [
-        "plugin:cursor-official:google-sheets"
       ],
       "variantsIdentical": false
     }

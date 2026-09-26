@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:46d35646d0c825e0b3caa3d97b4bf786ce6cadd8bc16eaa416461d28db04f483",
+  "catalogId": "catalog:46639457dd9268f619932be85e31428e3c494186547ca029c6262fb2c90df647",
   "category": "finance",
   "pluginCount": 27,
   "productCount": 22,
@@ -52,7 +52,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/mercury",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
       },
       "release": {
         "canonicalContentDigest": "sha256:36faa35d0023e5d9968bf409ba6bd4461fd3e7c883e0f15a720ef2be05fd29b1",
@@ -65,13 +65,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:ac814d3dc4af2920b06e421ea3666a6d484630bedbbde058546279e6dcf81c5b",
         "packageStatus": "portable",
-        "releaseId": "release:ba0cd6e547dce35f631c1a4fd7b5f1aa96187af8e858453230a1cd73f2cb1686",
+        "releaseId": "release:457369f60e812e439c9a40b68325eb890703cad0ea77fadfa540939577fe0b1a",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:ba0cd6e547dce35f631c1a4fd7b5f1aa96187af8e858453230a1cd73f2cb1686",
+      "releaseId": "release:457369f60e812e439c9a40b68325eb890703cad0ea77fadfa540939577fe0b1a",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -138,7 +138,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/interactive-brokers",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
       },
       "release": {
         "canonicalContentDigest": "sha256:38209b0efb4ac69309a56428e9579874c9d66406b2332353e6abe477ee197ffd",
@@ -151,13 +151,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:762338d405d666aefcd3a0d24c4aeebef7eda889f51f5861e5a01c8c29e1df9d",
         "packageStatus": "portable",
-        "releaseId": "release:ec37db339e12160daaebec0d5b567357df273ab45978845af9bd1e9739424c19",
+        "releaseId": "release:f0ad6654f8ed7639161587343b6e0173f0439f68b5d9e18077d48c7cba77662e",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:ec37db339e12160daaebec0d5b567357df273ab45978845af9bd1e9739424c19",
+      "releaseId": "release:f0ad6654f8ed7639161587343b6e0173f0439f68b5d9e18077d48c7cba77662e",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -223,7 +223,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/brex",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
       },
       "release": {
         "canonicalContentDigest": "sha256:b74401fa7006b1ce1723b09733231a9cc622f860a65319ed3c82f5c0c298a3d6",
@@ -236,13 +236,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:703095f5ab5c61c07f4e16a8e3c43ba83433da7f086d3fbc849849e7123e5d00",
         "packageStatus": "portable",
-        "releaseId": "release:3b18f980d92771ce7c6c488309327c576c93da8bf72ab35513d29fbbe1051364",
+        "releaseId": "release:caf0b90f68b6fdde3af8aa6bc5709ad0176a16128dfcbfbf4a35f5857747f2be",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:3b18f980d92771ce7c6c488309327c576c93da8bf72ab35513d29fbbe1051364",
+      "releaseId": "release:caf0b90f68b6fdde3af8aa6bc5709ad0176a16128dfcbfbf4a35f5857747f2be",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -308,7 +308,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/webull",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
       },
       "release": {
         "canonicalContentDigest": "sha256:9bca46575d3570cdfc036cc8eb90b77af7cdc2e8f97c7d4ca31a6db6cec40ede",
@@ -321,13 +321,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:e8637ea2ac0fcbcc939d326f0fe9329bdf1aab3af35423e0e36e1bdafef86c2f",
         "packageStatus": "portable",
-        "releaseId": "release:e205a8ac29411d560bb78d45532659447e71efd4a96817024f583d102ff8d984",
+        "releaseId": "release:1fdc945e58e953ba8aa882359bea5af2edaa8fd2cb63bd689530bb45c0bbe036",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
         "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:e205a8ac29411d560bb78d45532659447e71efd4a96817024f583d102ff8d984",
+      "releaseId": "release:1fdc945e58e953ba8aa882359bea5af2edaa8fd2cb63bd689530bb45c0bbe036",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -393,7 +393,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/xero",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
       },
       "release": {
         "canonicalContentDigest": "sha256:e37546538d5a3527dd1b71b9ebc2cb121e9eb877657da26eb8c9d011ab55772e",
@@ -406,13 +406,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:039deaa155d117c277130fbc4866fd313c7e6166d4d8506eb9793ec290ef600b",
         "packageStatus": "partial",
-        "releaseId": "release:98de0a5b0ae40f6caad6ce85a12ca3b0bac475212bbf9681aea3ec92fac16d1d",
+        "releaseId": "release:019a722680e6df1940c6d0b0bf38917907bc2eabc8a8a62b7e064df325daed67",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:98de0a5b0ae40f6caad6ce85a12ca3b0bac475212bbf9681aea3ec92fac16d1d",
+      "releaseId": "release:019a722680e6df1940c6d0b0bf38917907bc2eabc8a8a62b7e064df325daed67",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -1356,7 +1356,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/finance",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "5a9134c186b8e640949e4fb3d021361972725b67"
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
       },
       "release": {
         "canonicalContentDigest": "sha256:8eced4707fee49a659046e3713a476964ecbd4fafdb8818f2006fa9e5bc142e9",
@@ -1369,13 +1369,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:59371cdb17a25646b2ae25eb2990ade1f6fc4f96f8c3fda972c6234a5d69390a",
         "packageStatus": "portable",
-        "releaseId": "release:8da20f02dffeb441cba97e632be13589be69b62a4bf7f45e1e55dd71bda45c9e",
+        "releaseId": "release:2d793600f9c0f4febb12231a8b45dd500d9ea3840d3e5a8c1e49c21f0b29d37d",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "5a9134c186b8e640949e4fb3d021361972725b67",
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
         "upstreamVersion": "1.1.2"
       },
-      "releaseId": "release:8da20f02dffeb441cba97e632be13589be69b62a4bf7f45e1e55dd71bda45c9e",
+      "releaseId": "release:2d793600f9c0f4febb12231a8b45dd500d9ea3840d3e5a8c1e49c21f0b29d37d",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -1771,16 +1771,13 @@
     },
     {
       "authors": [
-        "Anthropic"
+        "Unknown"
       ],
       "capabilitySummary": {
-        "agent": 1,
-        "command": 2,
         "mcp-server": 1,
-        "skill": 8
+        "skill": 7
       },
       "categories": [
-        "developer-tools",
         "finance"
       ],
       "compatibility": {
@@ -1792,9 +1789,8 @@
         "opencode": "partially-supported",
         "pi": "partially-supported"
       },
-      "description": "Stripe development plugin for Claude",
+      "description": "Develop your payments integration faster with the ability to create products, prices, and payment links directly in ChatGPT. Run your business from ChatGPT with the ability to retrieve and manage payments, subscriptions, invoices, refunds, disputes, and customers. Build and debug your payment integration quicker than ever by searching the Stripe documentation and getting integration recommendations without needing to leave ChatGPT.",
       "displayName": "Stripe",
-      "homepage": "https://github.com/stripe/ai/tree/main/providers/claude/plugin",
       "icon": {
         "asset": "icon-8034d1975f2ff4408cb399089eb6c4b5.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8034d1975f2ff4408cb399089eb6c4b5.png",
@@ -1807,34 +1803,26 @@
         "url": null
       },
       "keywords": [
-        "developer-tools",
+        "finance",
         "stripe"
       ],
-      "license": "MIT",
+      "license": "Unknown",
       "monogram": {
         "hue": 93,
         "text": "ST"
       },
-      "pluginId": "plugin:claude-official:stripe",
-      "primaryCategory": "developer-tools",
+      "pluginId": "plugin:openai-official:stripe",
+      "primaryCategory": "finance",
       "productKey": "stripe",
       "provenance": {
-        "manifestPath": ".claude-plugin/marketplace.json",
-        "pluginSubdirectory": "providers/claude/plugin",
-        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "68382523846ea5bfad75ba1ef58dc5db031d0a5a"
+        "manifestPath": ".agents/plugins/marketplace.json",
+        "pluginSubdirectory": "plugins/stripe",
+        "repositoryUrl": "https://github.com/openai/plugins",
+        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
       },
       "release": {
-        "canonicalContentDigest": "sha256:9b9ffce0b98807f1e8edceac78c9640207908c205c812955959fc7d4197b56e1",
+        "canonicalContentDigest": "sha256:0447f9dba6e44bd422ba5cc2fa7e1c89074e054910c2d29ac5bea7d84514b0a4",
         "capabilities": [
-          {
-            "name": "agent",
-            "type": "agent"
-          },
-          {
-            "name": "command",
-            "type": "command"
-          },
           {
             "name": "mcp-server",
             "type": "mcp-server"
@@ -1845,15 +1833,17 @@
           }
         ],
         "contentResolution": "complete",
-        "packageDigest": "sha256:e778a97400a0026e730262fb88f051ebe90df79ed106d669e1f0ed476e743a44",
+        "packageDigest": "sha256:ff6844bc613c110fcb2ab97b0218a589be929844c47737212a8497be7e3bf17e",
         "packageStatus": "partial",
-        "releaseId": "release:1750bf590bbb616cc4ae96def6c5ed45822559b2dce21ef27d8996c414fe1c5d",
+        "releaseId": "release:ae03c35346b337ef7eb34714e1241207d88015d42cc502e6ca3c93ea35738679",
         "requiredConnectors": [],
-        "requiredCredentials": [],
-        "sourceRevision": "68382523846ea5bfad75ba1ef58dc5db031d0a5a",
-        "upstreamVersion": "0.7.4"
+        "requiredCredentials": [
+          "authentication"
+        ],
+        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "upstreamVersion": "7.0.0"
       },
-      "releaseId": "release:1750bf590bbb616cc4ae96def6c5ed45822559b2dce21ef27d8996c414fe1c5d",
+      "releaseId": "release:ae03c35346b337ef7eb34714e1241207d88015d42cc502e6ca3c93ea35738679",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -1864,10 +1854,9 @@
           "Contains mcp-server capability metadata."
         ]
       },
-      "sourceId": "claude-official",
+      "sourceId": "openai-official",
       "upstreamName": "stripe",
       "variantPluginIds": [
-        "plugin:claude-official:stripe",
         "plugin:openai-official:stripe"
       ],
       "variantsIdentical": false
