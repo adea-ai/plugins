@@ -1,0 +1,4362 @@
+{
+  "catalogId": "catalog:46639457dd9268f619932be85e31428e3c494186547ca029c6262fb2c90df647",
+  "category": "business-operations",
+  "pluginCount": 56,
+  "productCount": 48,
+  "products": [
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search and update CRM records, lists, notes, and tasks.",
+      "displayName": "Attio",
+      "icon": {
+        "asset": "icon-f461e472b139cae381f75eda075e0ec2.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f461e472b139cae381f75eda075e0ec2.png",
+        "bytes": 7527,
+        "contentType": "image/png",
+        "digest": "sha256:f461e472b139cae381f75eda075e0ec264a378bd1f5626ce1c496a368857738c",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "attio",
+        "business-operations"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 249,
+        "text": "AT"
+      },
+      "pluginId": "plugin:cursor-official:attio",
+      "primaryCategory": "business-operations",
+      "productKey": "attio",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/attio",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:7d3ceb5e680f31d018b1dabf595c85e1c29c9f8848b22e571b7b9c036a203f0d",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:72f10e56fa38fed726d83921c926e6fae7c563344d6688375b39f11bf44740c1",
+        "packageStatus": "portable",
+        "releaseId": "release:ba3ea360ffb93833e6dce2e2dc965995d366b29255732e57aa7e81f5717b71ef",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:ba3ea360ffb93833e6dce2e2dc965995d366b29255732e57aa7e81f5717b71ef",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "attio",
+      "variantPluginIds": [
+        "plugin:cursor-official:attio"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Search and update contacts, companies, deals, and tickets.",
+      "displayName": "HubSpot",
+      "icon": {
+        "asset": "icon-465ab17ed899fcfa0ad4689ad6dddce8.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-465ab17ed899fcfa0ad4689ad6dddce8.png",
+        "bytes": 8157,
+        "contentType": "image/png",
+        "digest": "sha256:465ab17ed899fcfa0ad4689ad6dddce88c17c56c3280f4fe6d292d35191b2c4a",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "hubspot"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 177,
+        "text": "HU"
+      },
+      "pluginId": "plugin:cursor-official:hubspot",
+      "primaryCategory": "business-operations",
+      "productKey": "hubspot",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/hubspot",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:09f1e96b051494d9e0641d7035fa9d704dfc3c5b60439b37a6608b43cb7bd2ae",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:3bbe6a275b632abfb374fb39890684ccaa58089b4c9c98e450ed65423813ace2",
+        "packageStatus": "partial",
+        "releaseId": "release:c0cc7082c4800aceffd69cb43119bd362a06ff28fa94a2b126dacb290de4f5c1",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:c0cc7082c4800aceffd69cb43119bd362a06ff28fa94a2b126dacb290de4f5c1",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "hubspot",
+      "variantPluginIds": [
+        "plugin:cursor-official:hubspot"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Query expenses, travel bookings, policies, and cards.",
+      "displayName": "Navan",
+      "icon": {
+        "asset": "icon-0b474314d9cc2937c0e503ec81d7048b.webp",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-0b474314d9cc2937c0e503ec81d7048b.webp",
+        "bytes": 21730,
+        "contentType": "image/webp",
+        "digest": "sha256:0b474314d9cc2937c0e503ec81d7048b9b8229fda4b107320b034aa454e9bdf8",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "navan"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 9,
+        "text": "NA"
+      },
+      "pluginId": "plugin:cursor-official:navan",
+      "primaryCategory": "business-operations",
+      "productKey": "navan",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/navan",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:0a88f9bb85e8e092df9c9af73707cd65a0fda928652e5a7ac24f6c07acc9b292",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:738f47a73ae75ad38744ef2b863cfc4374c69c8cd8b7e399da11ee67cc0a301e",
+        "packageStatus": "portable",
+        "releaseId": "release:adf3f26f83fe35658ec1ce642305c87e80b2fd82388d4e439133f351f2c6ec94",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:adf3f26f83fe35658ec1ce642305c87e80b2fd82388d4e439133f351f2c6ec94",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "navan",
+      "variantPluginIds": [
+        "plugin:cursor-official:navan"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Manage envelopes, templates, workflows, and agreements.",
+      "displayName": "Docusign",
+      "icon": {
+        "asset": "icon-b4a3a7a955f29afb3698658c05a53e8f.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-b4a3a7a955f29afb3698658c05a53e8f.png",
+        "bytes": 4216,
+        "contentType": "image/png",
+        "digest": "sha256:b4a3a7a955f29afb3698658c05a53e8f4acff80ca3f680662114829ddb9b2ed2",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "docusign"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 204,
+        "text": "DO"
+      },
+      "pluginId": "plugin:cursor-official:docusign",
+      "primaryCategory": "business-operations",
+      "productKey": "docusign",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/docusign",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:e78a9360d4c85633aede2073c40a78a4c66ecac7527447e425eb656b39d27e2a",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:7ab95aa51adc1ec46eb00f81b0241883f73bb132b043d82a1d291e5adb680e9e",
+        "packageStatus": "partial",
+        "releaseId": "release:09b8c35416ab050ce1827cee009bbea0a279f3e143c6ce746cca941bcfae0389",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:09b8c35416ab050ce1827cee009bbea0a279f3e143c6ce746cca941bcfae0389",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "docusign",
+      "variantPluginIds": [
+        "plugin:cursor-official:docusign"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Brainstorm domain names and check availability.",
+      "displayName": "GoDaddy",
+      "icon": {
+        "asset": "icon-a96194d7ff679eb3bfb71f971e989cd1.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a96194d7ff679eb3bfb71f971e989cd1.png",
+        "bytes": 9273,
+        "contentType": "image/png",
+        "digest": "sha256:a96194d7ff679eb3bfb71f971e989cd1f16fc48e5231f275c286160df68cfcd7",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "godaddy"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 132,
+        "text": "GO"
+      },
+      "pluginId": "plugin:cursor-official:godaddy",
+      "primaryCategory": "business-operations",
+      "productKey": "godaddy",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/godaddy",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:bdf70c2b759c6405def244afe476246c15266224345fb3e7df0100bb50dbbc0f",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:ecfe20a28c47a4db7fb42c834b017a5ec8e685c08bcff13f9590cb74e8f37e3b",
+        "packageStatus": "portable",
+        "releaseId": "release:aadc35c6bbf6dfcb1c36470e52712dc03529f6df9de36385af9e790c3da83f51",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:aadc35c6bbf6dfcb1c36470e52712dc03529f6df9de36385af9e790c3da83f51",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "godaddy",
+      "variantPluginIds": [
+        "plugin:cursor-official:godaddy"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search talent, post jobs, and manage contracts.",
+      "displayName": "Upwork",
+      "icon": {
+        "asset": "icon-6536c1d5e3d1a1381e1a594481e6633f.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-6536c1d5e3d1a1381e1a594481e6633f.png",
+        "bytes": 14359,
+        "contentType": "image/png",
+        "digest": "sha256:6536c1d5e3d1a1381e1a594481e6633f146c55b3b3f403a1ab8d1a729af435aa",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "upwork"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 174,
+        "text": "UP"
+      },
+      "pluginId": "plugin:cursor-official:upwork",
+      "primaryCategory": "business-operations",
+      "productKey": "upwork",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/upwork",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:81905aa21ba26561e378b784bb1a7c5436c053dd1d8776346a8901956e6aa227",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:c27e0948a2fe37d78f05922e4038526af3f0dcb5c359f10053350b50a2b754dd",
+        "packageStatus": "portable",
+        "releaseId": "release:bd97ee230c5bf0ab1dacdac59073f6bdfd2e2467e1ef18ee797794379db615e5",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:bd97ee230c5bf0ab1dacdac59073f6bdfd2e2467e1ef18ee797794379db615e5",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "upwork",
+      "variantPluginIds": [
+        "plugin:cursor-official:upwork"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "ActiveCampaign"
+      ],
+      "capabilitySummary": {
+        "agent": 2,
+        "command": 5,
+        "mcp-server": 2,
+        "skill": 6
+      },
+      "categories": [
+        "business-operations",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Marketing automation, CRM, and email marketing powered by ActiveCampaign. Manage contacts, campaigns, automations, deals, and get AI-powered marketing insights — all from Claude.",
+      "displayName": "ActiveCampaign",
+      "homepage": "https://www.activecampaign.com/",
+      "icon": {
+        "asset": "icon-9d8e91f168b523510ff53affb08be505.webp",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-9d8e91f168b523510ff53affb08be505.webp",
+        "bytes": 2440,
+        "contentType": "image/webp",
+        "digest": "sha256:9d8e91f168b523510ff53affb08be505ea78bebbd1fef9c55a227cf34c48ff62",
+        "homepage": "https://www.activecampaign.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.activecampaign.com/dist/favicon-180x180.png"
+      },
+      "keywords": [
+        "activecampaign",
+        "business-operations",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 15,
+        "text": "AC"
+      },
+      "pluginId": "plugin:claude-official:activecampaign",
+      "primaryCategory": "business-operations",
+      "productKey": "activecampaign",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "0ff858728bc52aee335d5475b0d4eb5f3a9589b0"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:ed21d129d559eb10b89137e92329f9d5d81063a5ba847ae2a0cc7fd339cbd30f",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:d611b5734b74408924c39d65113045929d0ba25c62814d29ef4bf9bdf4f31bb0",
+        "packageStatus": "partial",
+        "releaseId": "release:b9e23f828402c30db9397da8f1ac1844fb026880cf4218ebc53ae300dec82442",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "0ff858728bc52aee335d5475b0d4eb5f3a9589b0",
+        "upstreamVersion": "0.3.1"
+      },
+      "releaseId": "release:b9e23f828402c30db9397da8f1ac1844fb026880cf4218ebc53ae300dec82442",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "activecampaign",
+      "variantPluginIds": [
+        "plugin:claude-official:activecampaign",
+        "plugin:knowledge-work-official:activecampaign"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "agent": 2,
+        "command": 5,
+        "mcp-server": 1,
+        "skill": 15
+      },
+      "categories": [
+        "business-operations",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Cross-platform ad management for Google Ads, Meta Ads, TikTok Ads, and LinkedIn Ads. 91 tools for keyword research, campaign creation, performance analysis, and budget optimization.",
+      "displayName": "Adspirer",
+      "homepage": "https://www.adspirer.com/",
+      "icon": {
+        "asset": "icon-59e6bbd3120897d1566554a00769770a.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-59e6bbd3120897d1566554a00769770a.png",
+        "bytes": 9414,
+        "contentType": "image/png",
+        "digest": "sha256:59e6bbd3120897d1566554a00769770a02f987088f46b22a61a1782fe6aea28e",
+        "homepage": "https://www.adspirer.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.adspirer.com/apple-icon.png"
+      },
+      "keywords": [
+        "ads",
+        "adspirer",
+        "agent",
+        "business-operations",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 291,
+        "text": "AD"
+      },
+      "pluginId": "plugin:knowledge-work-official:adspirer-ads-agent",
+      "primaryCategory": "business-operations",
+      "productKey": "adspirer-ads-agent",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "e3067cec8803e28da91834d0f38e0405ad23429b"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:84d90f21e275c4f8cfa6dad021f7cd69a9b2d1ca3ea6937f846acee33a10c79b",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:60e06443802aa90a41d30fdcebe5bf23d5b51c4730b31233faeb3cba8b302a33",
+        "packageStatus": "partial",
+        "releaseId": "release:e9357a0bca2420bf32ee7bf35b719b02879d11a3a314d75f2aae94bdd54135fb",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "e3067cec8803e28da91834d0f38e0405ad23429b"
+      },
+      "releaseId": "release:e9357a0bca2420bf32ee7bf35b719b02879d11a3a314d75f2aae94bdd54135fb",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "adspirer-ads-agent",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:adspirer-ads-agent"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "agent": 1,
+        "executable": 5,
+        "hook": 7,
+        "skill": 1
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Consult a stronger model before major decisions, when stuck, and before declaring done.",
+      "displayName": "Advisor",
+      "icon": {
+        "asset": "icon-587c717c31aa5b2cf3310822262890d5.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-587c717c31aa5b2cf3310822262890d5.png",
+        "bytes": 7252,
+        "contentType": "image/png",
+        "digest": "sha256:587c717c31aa5b2cf3310822262890d56ef5716fdc5694cc3883e59455aeca10",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/avatar.png",
+        "url": null
+      },
+      "keywords": [
+        "advisor",
+        "business-operations"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 57,
+        "text": "AD"
+      },
+      "pluginId": "plugin:cursor-official:advisor",
+      "primaryCategory": "business-operations",
+      "productKey": "advisor",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "advisor",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:6b63e1ee0729d49758fd21222dcda1200cbd3bba5e8439aeabb32468c6505211",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:313f84ae95420816fc0c7184adf4a35794da8c900d701422afb4140f871e6977",
+        "packageStatus": "partial",
+        "releaseId": "release:d7d70ab1be946d9f21483b00afdb390b514aab0a4ce4c134859a80083f56329d",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:d7d70ab1be946d9f21483b00afdb390b514aab0a4ce4c134859a80083f56329d",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "advisor",
+      "variantPluginIds": [
+        "plugin:cursor-official:advisor"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "agent": 18,
+        "executable": 34,
+        "hook": 6,
+        "rule": 1,
+        "skill": 3
+      },
+      "categories": [
+        "business-operations",
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, and optimize .agent files",
+      "displayName": "Agentforce ADLC",
+      "homepage": "https://github.com/SalesforceAIResearch/agentforce-adlc",
+      "icon": {
+        "asset": "icon-92842fc6c2f66b46f69458c14621fc2e.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-92842fc6c2f66b46f69458c14621fc2e.ico",
+        "bytes": 5430,
+        "contentType": "image/x-icon",
+        "digest": "sha256:92842fc6c2f66b46f69458c14621fc2eca5d6c02d7937f9124fe8a3a9a55bc91",
+        "homepage": "https://www.salesforce.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.salesforce.com/c2/public/app/favicon.ico"
+      },
+      "keywords": [
+        "adlc",
+        "agentforce",
+        "business-operations",
+        "developer-tools"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 153,
+        "text": "AA"
+      },
+      "pluginId": "plugin:claude-official:agentforce-adlc",
+      "primaryCategory": "business-operations",
+      "productKey": "agentforce-adlc",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "b280f6346fa70aaf4fbd0e0bc5d18582c1fb039a"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:c634b0aaabffb076654e2805dd402f367163b3ec1fc5b848ce165d1f18c50930",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:1fc70f1127343a86d925fa8d675cad7bb2c617f74efbfcf8e2ed17521dcbea06",
+        "packageStatus": "partial",
+        "releaseId": "release:ef0eb8d5de32bb37d51269f983074d1108026322655e72cd1cc33e860d94429c",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "b280f6346fa70aaf4fbd0e0bc5d18582c1fb039a",
+        "upstreamVersion": "0.12.0"
+      },
+      "releaseId": "release:ef0eb8d5de32bb37d51269f983074d1108026322655e72cd1cc33e860d94429c",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "agentforce-adlc",
+      "variantPluginIds": [
+        "plugin:claude-official:agentforce-adlc"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Research keywords, backlinks, rankings, and site health.",
+      "displayName": "Ahrefs",
+      "icon": {
+        "asset": "icon-3e2faca446df1dbad9b4a32f5f81942c.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3e2faca446df1dbad9b4a32f5f81942c.png",
+        "bytes": 4050,
+        "contentType": "image/png",
+        "digest": "sha256:3e2faca446df1dbad9b4a32f5f81942c01ad292ed5337fd8a7d8166de3ea02ce",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "ahrefs",
+        "business-operations"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 63,
+        "text": "AH"
+      },
+      "pluginId": "plugin:cursor-official:ahrefs",
+      "primaryCategory": "business-operations",
+      "productKey": "ahrefs",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/ahrefs",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:46c133d0f00a70a38066637455b9ae55fe61e8217db9933cb071351b324e1983",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:96a45480937462c6caa9c106f7d370ce65b6021c8902571f2558720160e6da4d",
+        "packageStatus": "portable",
+        "releaseId": "release:a6abe3e81bbb556f34494675ffcf47fc3807d3cf853d28feab9dce76d405c8d9",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:a6abe3e81bbb556f34494675ffcf47fc3807d3cf853d28feab9dce76d405c8d9",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "ahrefs",
+      "variantPluginIds": [
+        "plugin:cursor-official:ahrefs"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "rule": 1,
+        "skill": 1
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "AI-first project auditor and re-engineer based on the 9 design principles and 7 design patterns from the TechWolf AI-First Bootcamp",
+      "displayName": "AI Firstify",
+      "homepage": "https://ai-first.techwolf.ai/",
+      "icon": {
+        "asset": "icon-7637efc1d8dad442d2c87b9dd1b6dc89.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-7637efc1d8dad442d2c87b9dd1b6dc89.png",
+        "bytes": 2525,
+        "contentType": "image/png",
+        "digest": "sha256:7637efc1d8dad442d2c87b9dd1b6dc89fe9c11751bca251a7c62c06d291b7f66",
+        "homepage": "https://ai-first.techwolf.ai/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://ai-first.techwolf.ai/favicon.png"
+      },
+      "keywords": [
+        "ai",
+        "business-operations",
+        "firstify"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 291,
+        "text": "AF"
+      },
+      "pluginId": "plugin:knowledge-work-official:ai-firstify",
+      "primaryCategory": "business-operations",
+      "productKey": "ai-firstify",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/ai-firstify",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "f6380c947b04ae0817c2723fbf589784d4501357"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:df3af625c937b9571102ad11972690c259e85be5dd558540d59bfce2afbdb5f4",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:a6d7fe31ee57085cb0f74692335acca431fd3fd61d94bccacc34f8e30c9e2dae",
+        "packageStatus": "portable",
+        "releaseId": "release:110de431f1da22785e65128a8852398740b08da8c2e15937e995b453bac78de6",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "f6380c947b04ae0817c2723fbf589784d4501357",
+        "upstreamVersion": "1.1.0"
+      },
+      "releaseId": "release:110de431f1da22785e65128a8852398740b08da8c2e15937e995b453bac78de6",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "ai-firstify",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:ai-firstify"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search people and companies, enrich leads, run sequences.",
+      "displayName": "Amplemarket",
+      "icon": {
+        "asset": "icon-43ca09cc67d3f42fc950a47e3a5b8469.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-43ca09cc67d3f42fc950a47e3a5b8469.png",
+        "bytes": 4733,
+        "contentType": "image/png",
+        "digest": "sha256:43ca09cc67d3f42fc950a47e3a5b846928ad09d805fe705c9e1e33ca1a4bc662",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "amplemarket",
+        "business-operations"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 138,
+        "text": "AM"
+      },
+      "pluginId": "plugin:cursor-official:amplemarket",
+      "primaryCategory": "business-operations",
+      "productKey": "amplemarket",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/amplemarket",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:0c2e0ae4502b792f73f0f6ddb53e84ae00d6de53d67abd397ba12a57f921a8dd",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:e04cb423b13360a3278db296c561bf5951fc771f490ec1cfd5d0f5779fe55a81",
+        "packageStatus": "portable",
+        "releaseId": "release:68324a3da2f5a2591bd4b599cd75c010cdc15f412468436ee4f9b5427bde92a6",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:68324a3da2f5a2591bd4b599cd75c010cdc15f412468436ee4f9b5427bde92a6",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "amplemarket",
+      "variantPluginIds": [
+        "plugin:cursor-official:amplemarket"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Apollo.io"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 4
+      },
+      "categories": [
+        "business-operations",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
+      "displayName": "Apollo",
+      "homepage": "https://www.apollo.io/",
+      "icon": {
+        "asset": "icon-25ae17edffd848672eceaca705a64de7.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-25ae17edffd848672eceaca705a64de7.png",
+        "bytes": 9841,
+        "contentType": "image/png",
+        "digest": "sha256:25ae17edffd848672eceaca705a64de7e7e5226db6d81a8a89208c8def07064f",
+        "homepage": "https://www.apollo.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.apollo.io/apple-icon.png?apple-icon.0-gy.9xjm.kcw.png"
+      },
+      "keywords": [
+        "apollo",
+        "business-operations",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 201,
+        "text": "AP"
+      },
+      "pluginId": "plugin:claude-official:apollo",
+      "primaryCategory": "business-operations",
+      "productKey": "apollo",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "2adde980e45f421b7e9383d92870455627936bce"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:f4b6a61bd72f89738ed513e1b7d91413cc6f8bb223e1c0efaba1902afe520e61",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:501d6095695eb85277c495e7068f1a769031480aa3548f3f2818f6654094d315",
+        "packageStatus": "partial",
+        "releaseId": "release:9ebcd902611602641b83dfd386109d689494a217cdde1196f7dc303121e40b1e",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "2adde980e45f421b7e9383d92870455627936bce",
+        "upstreamVersion": "0.1.1"
+      },
+      "releaseId": "release:9ebcd902611602641b83dfd386109d689494a217cdde1196f7dc303121e40b1e",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "apollo",
+      "variantPluginIds": [
+        "plugin:claude-official:apollo",
+        "plugin:knowledge-work-official:apollo"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search candidates, prep interviews, and manage pipeline tasks.",
+      "displayName": "Ashby",
+      "icon": {
+        "asset": "icon-9ea89ef38e7aa52f054fb3875297f40e.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-9ea89ef38e7aa52f054fb3875297f40e.png",
+        "bytes": 11115,
+        "contentType": "image/png",
+        "digest": "sha256:9ea89ef38e7aa52f054fb3875297f40e51960036c1f2fc255cfc7e7a00a414cf",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "ashby",
+        "business-operations"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 342,
+        "text": "AS"
+      },
+      "pluginId": "plugin:cursor-official:ashby",
+      "primaryCategory": "business-operations",
+      "productKey": "ashby",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/ashby",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:058bcc269dc31f9d175a3f0386f9b38f004037e22ed708afcd35810e480fee7f",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:d8f9890640dc7e61515abfa2e678c63a2c14e6d6a9ddcb2e1774a5794ce15f6b",
+        "packageStatus": "portable",
+        "releaseId": "release:0d72b75fbb14b1d29f98a9c317ed765dd859391d30a0fa9dc9ea2085bddc8b69",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:0d72b75fbb14b1d29f98a9c317ed765dd859391d30a0fa9dc9ea2085bddc8b69",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "ashby",
+      "variantPluginIds": [
+        "plugin:cursor-official:ashby"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Tribe AI"
+      ],
+      "capabilitySummary": {
+        "agent": 5,
+        "command": 3,
+        "mcp-server": 1,
+        "skill": 3
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Discover your brand voice from existing documents and conversations, generate enforceable guidelines, and validate AI-generated content against your established tone and positioning.",
+      "displayName": "Brand Voice",
+      "icon": null,
+      "keywords": [
+        "brand",
+        "business-operations",
+        "voice"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 228,
+        "text": "BV"
+      },
+      "pluginId": "plugin:knowledge-work-official:brand-voice",
+      "primaryCategory": "business-operations",
+      "productKey": "brand-voice",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "partner-built/brand-voice",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:efc2b164e535aed552f15e19e04e242dc08ada761e19c7e148f4f9344acae24e",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:784df080496540da811eacbdab2c14e3474346352d38266a1541c9a8e6f95af9",
+        "packageStatus": "partial",
+        "releaseId": "release:f619eaf5d8704594919aee2c47af8b6fa6eb2ce7bcc08a84b2fc91d54d0d97c5",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.1.0"
+      },
+      "releaseId": "release:f619eaf5d8704594919aee2c47af8b6fa6eb2ce7bcc08a84b2fc91d54d0d97c5",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "brand-voice",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:brand-voice"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Manage contacts, email and SMS campaigns, and CRM deals.",
+      "displayName": "Brevo",
+      "icon": {
+        "asset": "icon-2a2244803facfdae776abf7f41baf1d8.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-2a2244803facfdae776abf7f41baf1d8.png",
+        "bytes": 13917,
+        "contentType": "image/png",
+        "digest": "sha256:2a2244803facfdae776abf7f41baf1d85d7f47f948908d896fe8b23fa4f24c45",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "brevo",
+        "business-operations"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 216,
+        "text": "BR"
+      },
+      "pluginId": "plugin:cursor-official:brevo",
+      "primaryCategory": "business-operations",
+      "productKey": "brevo",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/brevo",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d88172082b28f4e50023e0535c8f7b9de5e3541b8eafad550f1d5f1bb9781ac2",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:e7d5ccd7fbee2b19aa04d293f1271364b46c4ee437f9863fc971c8be78c2e67a",
+        "packageStatus": "partial",
+        "releaseId": "release:57bb606713966f3e8f03c43752c134365d353ab8b26c1722773b681a0c9a3cdf",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:57bb606713966f3e8f03c43752c134365d353ab8b26c1722773b681a0c9a3cdf",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "brevo",
+      "variantPluginIds": [
+        "plugin:cursor-official:brevo"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Carta Engineering"
+      ],
+      "capabilitySummary": {
+        "executable": 8,
+        "hook": 47,
+        "skill": 26
+      },
+      "categories": [
+        "business-operations",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Manage the Carta CRM conversationally — search, add, update, and enrich investors, companies, contacts, deals, notes, and fundraisings via the Carta CRM MCP Server.",
+      "displayName": "Carta CRM",
+      "homepage": "https://carta.com/",
+      "icon": {
+        "asset": "icon-6162f3f9e53710d73db087278ed1d81e.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-6162f3f9e53710d73db087278ed1d81e.ico",
+        "bytes": 15406,
+        "contentType": "image/x-icon",
+        "digest": "sha256:6162f3f9e53710d73db087278ed1d81e7b741dae598e80f7c54aadabd872172a",
+        "homepage": "https://carta.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://carta.com/favicon.ico?f698f762107ca70d"
+      },
+      "keywords": [
+        "business-operations",
+        "carta",
+        "crm",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 84,
+        "text": "CC"
+      },
+      "pluginId": "plugin:claude-official:carta-crm",
+      "primaryCategory": "business-operations",
+      "productKey": "carta-crm",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/carta-crm",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "81b8f40844bd646842538a4583409f9aa54c42db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:6415221d27451c8f8c53061c32cc71540a6180237e5cf50c05aca9faadd489a3",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:d023fad067877bc49dd91e41c1608856f9ad0c6a3d9f2363d3af4b3a24bfb06b",
+        "packageStatus": "partial",
+        "releaseId": "release:1d7919c28b85968d2e84bb0853911a0cc942dca47b29cb6695bf6d44fc87fae7",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "81b8f40844bd646842538a4583409f9aa54c42db",
+        "upstreamVersion": "1.12.3"
+      },
+      "releaseId": "release:1d7919c28b85968d2e84bb0853911a0cc942dca47b29cb6695bf6d44fc87fae7",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "carta-crm",
+      "variantPluginIds": [
+        "plugin:claude-official:carta-crm",
+        "plugin:knowledge-work-official:carta-crm"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Catalyst by Zoho"
+      ],
+      "capabilitySummary": {
+        "command": 1,
+        "hook": 2,
+        "mcp-server": 1,
+        "skill": 16
+      },
+      "categories": [
+        "business-operations",
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Official Claude Code plugin for Catalyst by Zoho — full-stack serverless cloud platform. With Skills that covers all services, SDKs, CLI, architecture patterns, pricing, migration guides, and Zoho MCP tool-based resource management.",
+      "displayName": "Catalyst by Zoho",
+      "homepage": "https://catalyst.zoho.com/",
+      "icon": {
+        "asset": "icon-2bc0a6cca1d6889acba9864ace2ac1cd.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-2bc0a6cca1d6889acba9864ace2ac1cd.ico",
+        "bytes": 4286,
+        "contentType": "image/x-icon",
+        "digest": "sha256:2bc0a6cca1d6889acba9864ace2ac1cdee05f5e8e8da07cc9d04aff1f4aa091e",
+        "homepage": "https://catalyst.zoho.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.zohowebstatic.com/sites/zweb/images/catalyst/favicon.ico"
+      },
+      "keywords": [
+        "business-operations",
+        "by",
+        "catalyst",
+        "developer-tools",
+        "zoho"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 126,
+        "text": "CB"
+      },
+      "pluginId": "plugin:claude-official:catalyst-by-zoho",
+      "primaryCategory": "business-operations",
+      "productKey": "catalyst-by-zoho",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "9670b79d72fe4923cc845ca0414d009ef3684ccb"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:b2c9a72b55ee2c954c4da0a2af34efaf631c1fb5a2f66287b6d95b0fd0abac5c",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:15eda39f20aa8d706b60c44bb1247cfc48aad3c08fce201663ab7daaf3a803b8",
+        "packageStatus": "partial",
+        "releaseId": "release:597bbd955b7d440fc795ddc91784983ba298f48c79f1103404ff6f3fd2f9ad57",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "9670b79d72fe4923cc845ca0414d009ef3684ccb",
+        "upstreamVersion": "0.0.2"
+      },
+      "releaseId": "release:597bbd955b7d440fc795ddc91784983ba298f48c79f1103404ff6f3fd2f9ad57",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "hook",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains hook capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "catalyst-by-zoho",
+      "variantPluginIds": [
+        "plugin:claude-official:catalyst-by-zoho"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Clay"
+      ],
+      "capabilitySummary": {
+        "executable": 5,
+        "hook": 5,
+        "skill": 31
+      },
+      "categories": [
+        "business-operations",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Work with Clay from Claude Code: set up and sign in to the clay CLI, query and analyze Clay tables, search Clay's GTM database for people and companies, manage audiences, signals, routines and workflows, and draft and review Sequencer campaigns. Includes hooks that auto-approve the plugin's own clay CLI calls and Clay skills; requires a Clay account.",
+      "displayName": "Clay",
+      "homepage": "https://github.com/clay-run/agent-plugins/tree/main/clay",
+      "icon": {
+        "asset": "icon-be4e9d359788e8917a61f6b7972721fb.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-be4e9d359788e8917a61f6b7972721fb.png",
+        "bytes": 13118,
+        "contentType": "image/png",
+        "digest": "sha256:be4e9d359788e8917a61f6b7972721fbb13377a541772cca1960949bb7daa1ae",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "clay",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 99,
+        "text": "CL"
+      },
+      "pluginId": "plugin:claude-official:clay",
+      "primaryCategory": "business-operations",
+      "productKey": "clay",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "clay",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "769514a3a23683fcc7cbbf32067538d17e465381"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:b28ae44f75afee7b57bfd447a5f810c0d1d651e3b6544284fca74e6adf3b0f59",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:0b55e3b0418b76e0a51fd6416383611777dad81c279a3ead6eff960ea0a8b0c4",
+        "packageStatus": "partial",
+        "releaseId": "release:4200159347b1b4eac010d9c2d2234c5265beed68ddd52eaba42294a2a3497fc1",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "769514a3a23683fcc7cbbf32067538d17e465381",
+        "upstreamVersion": "2.26.0"
+      },
+      "releaseId": "release:4200159347b1b4eac010d9c2d2234c5265beed68ddd52eaba42294a2a3497fc1",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "clay",
+      "variantPluginIds": [
+        "plugin:claude-official:clay",
+        "plugin:cursor-official:clay"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Common Room"
+      ],
+      "capabilitySummary": {
+        "command": 2,
+        "mcp-server": 1,
+        "skill": 6
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Turn Common Room into your GTM copilot. Research accounts and contacts, prep for calls with attendee profiles and talking points, and draft personalized outreach across email, LinkedIn, and phone.",
+      "displayName": "Common Room",
+      "icon": {
+        "asset": "icon-3270d1cd2a2ed22d55b9609e4e71dd1a.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3270d1cd2a2ed22d55b9609e4e71dd1a.png",
+        "bytes": 1899,
+        "contentType": "image/png",
+        "digest": "sha256:3270d1cd2a2ed22d55b9609e4e71dd1a1fdde8ba3660dd5400bb0ea60e686f4c",
+        "homepage": "https://www.commonroom.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.commonroom.io/static/meta/apple-touch-icon.png"
+      },
+      "keywords": [
+        "business-operations",
+        "common",
+        "room"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 183,
+        "text": "CR"
+      },
+      "pluginId": "plugin:knowledge-work-official:common-room",
+      "primaryCategory": "business-operations",
+      "productKey": "common-room",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "partner-built/common-room",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d968478f0af0e5eb473699f478494f08782061eafa0964f8e2ececb64416d653",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:d073411f98f3a43ddf2530cdf8755e582d73e2e0a580c32cc9c4a640f9be7a9d",
+        "packageStatus": "partial",
+        "releaseId": "release:2b770455a7e657195745f5b00b998bb460829e4e53cbfd65e736dba3a1674efc",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:2b770455a7e657195745f5b00b998bb460829e4e53cbfd65e736dba3a1674efc",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "common-room",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:common-room"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Pull account summaries, deal insights, and call briefs.",
+      "displayName": "Gong",
+      "icon": {
+        "asset": "icon-32d8073ba96b112e5d131617298999e5.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-32d8073ba96b112e5d131617298999e5.png",
+        "bytes": 8915,
+        "contentType": "image/png",
+        "digest": "sha256:32d8073ba96b112e5d131617298999e5cae0e1f70df5da54881f83aa8e0e1ae7",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "gong"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 354,
+        "text": "GO"
+      },
+      "pluginId": "plugin:cursor-official:gong",
+      "primaryCategory": "business-operations",
+      "productKey": "gong",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/gong",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:378cc5dae290e5bdfa04035366d03305d8249540467f32e4d1e97f4c8bf8adac",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:886739e037088ed111f949d1f0fa49801b31e55893ddf32d089d3fc1c769998d",
+        "packageStatus": "partial",
+        "releaseId": "release:3a4fec3ff230906c3de450d3e991f14edc3193885b21587c207aedfc8b64fc04",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:3a4fec3ff230906c3de450d3e991f14edc3193885b21587c207aedfc8b64fc04",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "gong",
+      "variantPluginIds": [
+        "plugin:cursor-official:gong"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 9
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Streamline people operations — recruiting, onboarding, performance reviews, compensation analysis, and policy guidance. Maintain compliance and keep your team running smoothly.",
+      "displayName": "Human Resources",
+      "icon": null,
+      "keywords": [
+        "business-operations",
+        "human",
+        "resources"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 309,
+        "text": "HR"
+      },
+      "pluginId": "plugin:knowledge-work-official:human-resources",
+      "primaryCategory": "business-operations",
+      "productKey": "human-resources",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "human-resources",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:8903c2708c055bb9f4d2b0e4ab1a07f763bdc8ed321f2942005c74c0264b4c90",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:0669576007ba1afbbdecbaab1eefdf3a5668d6e891e3969d9f818284dfa40e47",
+        "packageStatus": "partial",
+        "releaseId": "release:d90eaabb16be8da4d4bc3fca9866c70111b5ea77429ef83c90671918c80caaa2",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.3.0"
+      },
+      "releaseId": "release:d90eaabb16be8da4d4bc3fca9866c70111b5ea77429ef83c90671918c80caaa2",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "human-resources",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:human-resources"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Hunter.io"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 13
+      },
+      "categories": [
+        "business-operations",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Find and verify professional email addresses, search contacts by domain, and enrich company data -- directly in Claude.",
+      "displayName": "Hunter",
+      "homepage": "https://hunter.io/",
+      "icon": {
+        "asset": "icon-fd9330e31552eeaa12b177489943de99.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-fd9330e31552eeaa12b177489943de99.png",
+        "bytes": 2851,
+        "contentType": "image/png",
+        "digest": "sha256:fd9330e31552eeaa12b177489943de997551bfd991c4c44e8c3d572e78aea5f3",
+        "homepage": "https://hunter.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://hunter.io/assets/touch-icon-iphone-BHR1wsDV.png"
+      },
+      "keywords": [
+        "business-operations",
+        "hunter",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 66,
+        "text": "HU"
+      },
+      "pluginId": "plugin:claude-official:hunter",
+      "primaryCategory": "business-operations",
+      "productKey": "hunter",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "2a6de2a00f7f459a05c146c6f0712417b8d30db9"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:37ba7cb3985563388c21d80e574c202257d3ee12e172b48aa9ecab08822292e6",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:2cf674bfcce7c6897d2119de7467d26bae39fce93d98038d1ead4ebf2498646c",
+        "packageStatus": "partial",
+        "releaseId": "release:259df3b6a3a7503fc14672ee73dded1495a293bae312eab6736045408972d76c",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "2a6de2a00f7f459a05c146c6f0712417b8d30db9",
+        "upstreamVersion": "0.1.0"
+      },
+      "releaseId": "release:259df3b6a3a7503fc14672ee73dded1495a293bae312eab6736045408972d76c",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "hunter",
+      "variantPluginIds": [
+        "plugin:claude-official:hunter",
+        "plugin:cursor-official:hunter"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Query recruiting analytics, shortlists, and sourcing agents.",
+      "displayName": "Juicebox",
+      "icon": {
+        "asset": "icon-e1de5bb2c12f4fb98a0c7aad2614c448.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-e1de5bb2c12f4fb98a0c7aad2614c448.png",
+        "bytes": 51485,
+        "contentType": "image/png",
+        "digest": "sha256:e1de5bb2c12f4fb98a0c7aad2614c4485e22b021ebfb123f3b0fd7ea90597741",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "juicebox"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 21,
+        "text": "JU"
+      },
+      "pluginId": "plugin:cursor-official:juicebox",
+      "primaryCategory": "business-operations",
+      "productKey": "juicebox",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/juicebox",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d6ab10d758e9015ed6e4b6e51ae4e0e396178b3fdca3a83190fc2d6682c0dc9d",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:01bbdaa662d828db88316f6b6929e1315b9b24cb0f2b2c7d5f5c563c4d9b60ea",
+        "packageStatus": "portable",
+        "releaseId": "release:1b35d5dfad91ef5d6ddac1d25b435ee2043cc74c9b16197e31c107fac4e438f6",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:1b35d5dfad91ef5d6ddac1d25b435ee2043cc74c9b16197e31c107fac4e438f6",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "juicebox",
+      "variantPluginIds": [
+        "plugin:cursor-official:juicebox"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Manage profiles, segments, campaigns, and flows.",
+      "displayName": "Klaviyo",
+      "icon": {
+        "asset": "icon-15b7d1138830b2ecc644a0d0ae76502b.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-15b7d1138830b2ecc644a0d0ae76502b.png",
+        "bytes": 2205,
+        "contentType": "image/png",
+        "digest": "sha256:15b7d1138830b2ecc644a0d0ae76502b8aaf557be9a6579ef6047a9c18c08259",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "klaviyo"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 291,
+        "text": "KL"
+      },
+      "pluginId": "plugin:cursor-official:klaviyo",
+      "primaryCategory": "business-operations",
+      "productKey": "klaviyo",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/klaviyo",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:4612c4a38e62afea1e28471cb20e2cee30c974ca2b4d1096fc446c1e462e720b",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:7c7b4fe4bf67bf9054be1f238138abe64a1a066020595b1776a45d9597520478",
+        "packageStatus": "portable",
+        "releaseId": "release:d8cbea0430c6f62a151bbaa9f116aeeaa355e95e5ab9b90251237d4bd6a5c77c",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:d8cbea0430c6f62a151bbaa9f116aeeaa355e95e5ab9b90251237d4bd6a5c77c",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "klaviyo",
+      "variantPluginIds": [
+        "plugin:cursor-official:klaviyo"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 9
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Speed up contract review, NDA triage, and compliance workflows for in-house legal teams. Draft legal briefs, organize precedent research, and manage institutional knowledge.",
+      "displayName": "Legal",
+      "icon": null,
+      "keywords": [
+        "business-operations",
+        "legal"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 114,
+        "text": "LE"
+      },
+      "pluginId": "plugin:knowledge-work-official:legal",
+      "primaryCategory": "business-operations",
+      "productKey": "legal",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "legal",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:f0ac2a7f4614086840b4a3d73abd9f119d1c3af4f064e4164855dc980d3982da",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:51021a7c955c0d694d7b3bec49aed3d9b860ed27a46decd511d0464a0553eab2",
+        "packageStatus": "partial",
+        "releaseId": "release:a999f6a68995bb392d4de720086dd099f5512042f2a44aadc6ec5758398a6192",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.3.0"
+      },
+      "releaseId": "release:a999f6a68995bb392d4de720086dd099f5512042f2a44aadc6ec5758398a6192",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "legal",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:legal"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Manage subscribers, groups, campaigns, and automations.",
+      "displayName": "MailerLite",
+      "icon": {
+        "asset": "icon-71b3d6c06a900989f0d791a3324bb7e7.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-71b3d6c06a900989f0d791a3324bb7e7.png",
+        "bytes": 6779,
+        "contentType": "image/png",
+        "digest": "sha256:71b3d6c06a900989f0d791a3324bb7e7dfd0e9d4889514b8cedec00a2664a037",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "mailerlite"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 228,
+        "text": "MA"
+      },
+      "pluginId": "plugin:cursor-official:mailerlite",
+      "primaryCategory": "business-operations",
+      "productKey": "mailerlite",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/mailerlite",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:c3da44fd17eea8230e534dd838b7a50dfd5e0a3df8b3cf9d8ca0730b706222a0",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:66f177eec0292b25b28d29a9aee005232476956f7145452d056fc984965cfc3e",
+        "packageStatus": "portable",
+        "releaseId": "release:fbf4ca66f267f8ba876bacee3dde7d6e759c75d2ee0f9202d49d97c56ca5981b",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:fbf4ca66f267f8ba876bacee3dde7d6e759c75d2ee0f9202d49d97c56ca5981b",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "mailerlite",
+      "variantPluginIds": [
+        "plugin:cursor-official:mailerlite"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Create content, plan campaigns, and analyze performance across marketing channels. Maintain brand voice consistency, track competitors, and report on what's working.",
+      "displayName": "Marketing",
+      "icon": null,
+      "keywords": [
+        "business-operations",
+        "marketing"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 216,
+        "text": "MA"
+      },
+      "pluginId": "plugin:knowledge-work-official:marketing",
+      "primaryCategory": "business-operations",
+      "productKey": "marketing",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "marketing",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:80d397b4500161aae969ddf36371c12e657937fc70398cd64b72494be4983fe3",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:f90ba6a25e0f7cf525ed0e78eb7763a60a46e16de338461b61d59136c54aa1ac",
+        "packageStatus": "partial",
+        "releaseId": "release:33fabcf86bb5b47ac774f23e4d268066f161a07a1ccb3ae36f789a2d8cf35c31",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.2.0"
+      },
+      "releaseId": "release:33fabcf86bb5b47ac774f23e4d268066f161a07a1ccb3ae36f789a2d8cf35c31",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "marketing",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:marketing"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search media and social mentions and pull analytics.",
+      "displayName": "Meltwater",
+      "icon": {
+        "asset": "icon-3771cdf690509ff288aa6f57b34d458f.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3771cdf690509ff288aa6f57b34d458f.png",
+        "bytes": 18265,
+        "contentType": "image/png",
+        "digest": "sha256:3771cdf690509ff288aa6f57b34d458fce785029169c4378decb73cc1c6e481d",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "meltwater"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 111,
+        "text": "ME"
+      },
+      "pluginId": "plugin:cursor-official:meltwater",
+      "primaryCategory": "business-operations",
+      "productKey": "meltwater",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/meltwater",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:5f41fdfe68a633cb85200fe0192d1f1c63692f063f156728861cc5a46a66f634",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:8def43bdf3d34616e53e2ee51b6a1f15bdcdb5ed5031b30a69ab688eef86cfe3",
+        "packageStatus": "portable",
+        "releaseId": "release:65dfa303ec6f77c37502c70f1fdc06b1d5435651359bbbc153a961c8e481dbb6",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:65dfa303ec6f77c37502c70f1fdc06b1d5435651359bbbc153a961c8e481dbb6",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "meltwater",
+      "variantPluginIds": [
+        "plugin:cursor-official:meltwater"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "agent": 2,
+        "browser": 2,
+        "command": 1,
+        "executable": 34,
+        "mcp-server": 2,
+        "rule": 4,
+        "skill": 15
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Nimble web data toolkit — search, extract, map, crawl the web and work with structured data agents",
+      "displayName": "Nimble",
+      "homepage": "https://docs.nimbleway.com/integrations/agent-skills/plugin-installation",
+      "icon": {
+        "asset": "icon-0986ba639d9f45151f7f94b3182fe671.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-0986ba639d9f45151f7f94b3182fe671.png",
+        "bytes": 25427,
+        "contentType": "image/png",
+        "digest": "sha256:0986ba639d9f45151f7f94b3182fe671ae21ea18c8628c91e0af1a62b9ad1751",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/nimble-logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "nimble"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 18,
+        "text": "NI"
+      },
+      "pluginId": "plugin:claude-official:nimble",
+      "primaryCategory": "business-operations",
+      "productKey": "nimble",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "2890fdf94f0adfae79bf05b4de3c91667701bafb"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:2850fe3ee95239676bdf0b3416f686dc8966558211f200ad514edc904e9b0efe",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "browser",
+            "type": "browser"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:0deac46fd4c18b50f87c7d8648ffab71478638846502771ff430d047c55ac4e7",
+        "packageStatus": "partial",
+        "releaseId": "release:3a08ad4e7858e5b94ca1cf03755e9c46241b26038ddd08867a04e90005a08555",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "2890fdf94f0adfae79bf05b4de3c91667701bafb",
+        "upstreamVersion": "1.7.0"
+      },
+      "releaseId": "release:3a08ad4e7858e5b94ca1cf03755e9c46241b26038ddd08867a04e90005a08555",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "browser",
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains browser capability metadata.",
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "nimble",
+      "variantPluginIds": [
+        "plugin:claude-official:nimble",
+        "plugin:knowledge-work-official:nimble"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 9
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Optimize business operations — vendor management, process documentation, change management, capacity planning, and compliance tracking. Keep your organization running efficiently.",
+      "displayName": "Operations",
+      "icon": null,
+      "keywords": [
+        "business-operations",
+        "operations"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 132,
+        "text": "OP"
+      },
+      "pluginId": "plugin:knowledge-work-official:operations",
+      "primaryCategory": "business-operations",
+      "productKey": "operations",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "operations",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:04bd1157c9ac11b809d4e5a83694f1e2c8d59d5de76f64351ef72dfc597cad8f",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:302dc414f64b829fcf90ce9ab2ee5b675d16a456f84c050fbd16a9852c7d1b1e",
+        "packageStatus": "partial",
+        "releaseId": "release:088539937c4b52972ca8ea36d4d3e35b364a8fda78ba3c78655642c84e32d478",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.3.0"
+      },
+      "releaseId": "release:088539937c4b52972ca8ea36d4d3e35b364a8fda78ba3c78655642c84e32d478",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "operations",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:operations"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search sequences, prospects, and Kaia meetings.",
+      "displayName": "Outreach",
+      "icon": {
+        "asset": "icon-cbb150ab10df6970a9757eff21538682.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-cbb150ab10df6970a9757eff21538682.png",
+        "bytes": 8433,
+        "contentType": "image/png",
+        "digest": "sha256:cbb150ab10df6970a9757eff215386829b1c72b7086e98dee7b926da1b3f0ef2",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "outreach"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 6,
+        "text": "OU"
+      },
+      "pluginId": "plugin:cursor-official:outreach",
+      "primaryCategory": "business-operations",
+      "productKey": "outreach",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/outreach",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:51750a1e0656ce74a56bd757dba73057946c9017e85af5e35407c61fe48581af",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:578cbdfeb6da3222041c456cba42e82050468de8a9c85e0d98218add9f9651bd",
+        "packageStatus": "portable",
+        "releaseId": "release:fa711095b86358702c018f8f4d8e8f1f97a7bc4dd015a7391df3973ae8a4f71f",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:fa711095b86358702c018f8f4d8e8f1f97a7bc4dd015a7391df3973ae8a4f71f",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "outreach",
+      "variantPluginIds": [
+        "plugin:cursor-official:outreach"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "command": 5,
+        "executable": 2,
+        "skill": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Social media automation CLI for scheduling posts, managing integrations, uploading media, and tracking analytics across 28+ platforms including X, LinkedIn, Reddit, YouTube, TikTok, Instagram, and more",
+      "displayName": "Postiz",
+      "homepage": "https://postiz.com/agent",
+      "icon": {
+        "asset": "icon-0f49b14acb967866aba5f85c7728aa18.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-0f49b14acb967866aba5f85c7728aa18.svg",
+        "bytes": 4299,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:0f49b14acb967866aba5f85c7728aa18c61b03b85c512e0a6bdcef4903dbc66f",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "postiz"
+      ],
+      "license": "AGPL-3.0",
+      "monogram": {
+        "hue": 321,
+        "text": "PO"
+      },
+      "pluginId": "plugin:claude-official:postiz",
+      "primaryCategory": "business-operations",
+      "productKey": "postiz",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "51293500c1b1fb447205100cb09b2999085323ac"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d5aeadc9389f664262ba21f5cb39829725b0464fb8acc4981d25a83f0f10434f",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:a830fcc174e1204577752972014db2f91dd52fecfa4d0016ac36be6b2b076004",
+        "packageStatus": "partial",
+        "releaseId": "release:203e3ea004812532671a8ef6051dfd2052fbf97392842a405b71004e7b21b2a4",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "51293500c1b1fb447205100cb09b2999085323ac",
+        "upstreamVersion": "2.0.18"
+      },
+      "releaseId": "release:203e3ea004812532671a8ef6051dfd2052fbf97392842a405b71004e7b21b2a4",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "postiz",
+      "variantPluginIds": [
+        "plugin:claude-official:postiz",
+        "plugin:knowledge-work-official:postiz"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "command": 1,
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Write feature specs, plan roadmaps, and synthesize user research faster. Keep stakeholders updated and stay ahead of the competitive landscape.",
+      "displayName": "Product Management",
+      "icon": null,
+      "keywords": [
+        "business-operations",
+        "management",
+        "product"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 234,
+        "text": "PM"
+      },
+      "pluginId": "plugin:knowledge-work-official:product-management",
+      "primaryCategory": "business-operations",
+      "productKey": "product-management",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "product-management",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:af7717106a70fce3a544a2de7af98f2bb49053abbd1bce64d95bfe77845ca3f4",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:d88e3d177d27a923d22a516e5bf03b66643add8f9d65b9add899981cc9170fbf",
+        "packageStatus": "partial",
+        "releaseId": "release:a41743639712fde3bb96799191dbaed6e26e7e55ae79b80a18478a08455033bf",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.2.0"
+      },
+      "releaseId": "release:a41743639712fde3bb96799191dbaed6e26e7e55ae79b80a18478a08455033bf",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "product-management",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:product-management"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "agent": 1,
+        "hook": 1,
+        "skill": 7
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "AI agent skills that make SaaS products data-ready for product analytics — from codebase scan to tracking plan to working instrumentation code.",
+      "displayName": "Product Tracking",
+      "homepage": "https://www.accoil.com/product-tracking",
+      "icon": {
+        "asset": "icon-f9afb1d72d08e139d33207548790bc14.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f9afb1d72d08e139d33207548790bc14.png",
+        "bytes": 19375,
+        "contentType": "image/png",
+        "digest": "sha256:f9afb1d72d08e139d33207548790bc14ed58365a3b01539fc8c0523c1252ba08",
+        "homepage": "https://www.accoil.com/product-tracking",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.accoil.com/favicon/apple-touch-icon.png"
+      },
+      "keywords": [
+        "business-operations",
+        "product",
+        "skills",
+        "tracking"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 195,
+        "text": "PT"
+      },
+      "pluginId": "plugin:knowledge-work-official:product-tracking-skills",
+      "primaryCategory": "business-operations",
+      "productKey": "product-tracking-skills",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "341f8cf47d8b5dda550222152377c50aee34c723"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:131fb4d0cd8633e47596af6215ff59569ec0fd41a4bad51529e86f07e716d1d3",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:5cfbb1b99835f955de202234f9035284e9ecd0038f6a3cd7d2beb6ca561a874e",
+        "packageStatus": "partial",
+        "releaseId": "release:3a9c5ba891a5ebbe70af15ca1b6bc9251b44812d7ab59679546e5d78066766a8",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "341f8cf47d8b5dda550222152377c50aee34c723",
+        "upstreamVersion": "1.1.0"
+      },
+      "releaseId": "release:3a9c5ba891a5ebbe70af15ca1b6bc9251b44812d7ab59679546e5d78066766a8",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "hook"
+        ],
+        "reasons": [
+          "Contains hook capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "product-tracking-skills",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:product-tracking-skills"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Track AI visibility, sentiment, and citations.",
+      "displayName": "Profound",
+      "icon": {
+        "asset": "icon-1be856772a6e13e3e582115048629acc.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-1be856772a6e13e3e582115048629acc.png",
+        "bytes": 4518,
+        "contentType": "image/png",
+        "digest": "sha256:1be856772a6e13e3e582115048629acc61df28806c3a6f43fbd482710996c31b",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "profound"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 294,
+        "text": "PR"
+      },
+      "pluginId": "plugin:cursor-official:profound",
+      "primaryCategory": "business-operations",
+      "productKey": "profound",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/profound",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:daae2b87f55fe906c756a4daa734c8fb5a3c57778269b1ca8af38381897e4fd8",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:64e21a1aab0c718db70f8a47ab9faeb71d8334a01a84b9fc22e16b3bc27d1068",
+        "packageStatus": "portable",
+        "releaseId": "release:9535474b597026785379488ea03d3551d25fe0736f13be60d91ead28f2dcb466",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:9535474b597026785379488ea03d3551d25fe0736f13be60d91ead28f2dcb466",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "profound",
+      "variantPluginIds": [
+        "plugin:cursor-official:profound"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "agent": 2,
+        "executable": 2,
+        "skill": 54
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "displayName": "Pstack",
+      "icon": {
+        "asset": "icon-672f6791589ef758b0ced2c4c477913f.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-672f6791589ef758b0ced2c4c477913f.png",
+        "bytes": 361140,
+        "contentType": "image/png",
+        "digest": "sha256:672f6791589ef758b0ced2c4c477913fa2758623c438e265639a0d539ce90695",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "pstack"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 33,
+        "text": "PS"
+      },
+      "pluginId": "plugin:cursor-official:pstack",
+      "primaryCategory": "business-operations",
+      "productKey": "pstack",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "pstack",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:1ff29d5989ea2eacbf5358c76f5028f502d8ddbd4f54c0c83fbec8801eb1fdc0",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:2eef7dac71e8cd0ae685aefab442fe4ab0987ef474fdbfb79f26576186a500cf",
+        "packageStatus": "partial",
+        "releaseId": "release:a6b5245cee9bc7d9e7f3861c1916638294d16a545c462616e316301f1920fbd1",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "0.15.5"
+      },
+      "releaseId": "release:a6b5245cee9bc7d9e7f3861c1916638294d16a545c462616e316301f1920fbd1",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "pstack",
+      "variantPluginIds": [
+        "plugin:cursor-official:pstack"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "scheduled-task": 1,
+        "skill": 36
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Prep calls, summarize and follow up, research accounts, review deals and pipeline, and write the forecast, using the CRM, email, calendar and chat tools your team already uses, or uploaded files. Updates records, drafts or sends email, posts to chat and books meetings when you ask.",
+      "displayName": "Sales",
+      "icon": null,
+      "keywords": [
+        "business-operations",
+        "sales"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 270,
+        "text": "SA"
+      },
+      "pluginId": "plugin:knowledge-work-official:sales",
+      "primaryCategory": "business-operations",
+      "productKey": "sales",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "sales",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:bd3eeda9254ec490181d69236e5d69ac046af54277f5b8a26655d8144285c747",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "scheduled-task",
+            "type": "scheduled-task"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:efcfa610a532f33ef033231ff5b90b4e36d165f48d16ac02eca9424cc19c8895",
+        "packageStatus": "partial",
+        "releaseId": "release:a961620c93677ad560e5fadc8f354878d9939bee5d98e3c7aaf9ade33ef6f8f4",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "2.0.1"
+      },
+      "releaseId": "release:a961620c93677ad560e5fadc8f354878d9939bee5d98e3c7aaf9ade33ef6f8f4",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server",
+          "scheduled-task"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata.",
+          "Contains scheduled-task capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "sales",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:sales"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Query, create, and update records in your org.",
+      "displayName": "Salesforce",
+      "icon": {
+        "asset": "icon-7954504455a9ff816a10859d06dfe433.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-7954504455a9ff816a10859d06dfe433.svg",
+        "bytes": 5991,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:7954504455a9ff816a10859d06dfe43384791d654ed26d826c67dc48992d9cff",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "salesforce"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 240,
+        "text": "SA"
+      },
+      "pluginId": "plugin:cursor-official:salesforce",
+      "primaryCategory": "business-operations",
+      "productKey": "salesforce",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/salesforce",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:bf0abbb89967c829ed923a5b6ca877638f72dbe27a8861d055ad0d76bcd8af23",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:d058e3d1029556c817c9e069bd79ed85b222e19ecd96868b40dbc881ebcd3259",
+        "packageStatus": "partial",
+        "releaseId": "release:4f2b69d8b3287b87bcea70f69766ced604c2057b792e78f8b513c3090f351a61",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:4f2b69d8b3287b87bcea70f69766ced604c2057b792e78f8b513c3090f351a61",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "salesforce",
+      "variantPluginIds": [
+        "plugin:cursor-official:salesforce"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "agent": 3,
+        "command": 6,
+        "skill": 11
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Free AI-powered SEO toolkit — audit websites, plan content strategy, optimize pages, generate schema markup, cluster keywords, and track AI visibility. Works with any website or codebase.",
+      "displayName": "SearchFit SEO",
+      "homepage": "https://searchfit.ai/",
+      "icon": {
+        "asset": "icon-53becb337dfafaf6395e06777a38c631.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-53becb337dfafaf6395e06777a38c631.ico",
+        "bytes": 15406,
+        "contentType": "image/x-icon",
+        "digest": "sha256:53becb337dfafaf6395e06777a38c6318dba17eae1db26ca0c05b35b859e5187",
+        "homepage": "https://searchfit.ai/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://searchfit.ai/favicon.ico?favicon.a7215145.ico"
+      },
+      "keywords": [
+        "business-operations",
+        "searchfit",
+        "seo"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 99,
+        "text": "SS"
+      },
+      "pluginId": "plugin:knowledge-work-official:searchfit-seo",
+      "primaryCategory": "business-operations",
+      "productKey": "searchfit-seo",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "c324a2e87c4dd84fe6bd6d55e45272acdd090afd"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:b510e1d437bf21783cefcaa9f1f7f7f55e75507bb5b8971ee13427d131845166",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:581c693b0657e64f540c2951a0d489696940400d576fd74c4fcf51532701cb64",
+        "packageStatus": "partial",
+        "releaseId": "release:fc1761d1c67f4ae099fb2f2ac2d355746d15880f22d4a4c3bc2a7e01974858ed",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "c324a2e87c4dd84fe6bd6d55e45272acdd090afd",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:fc1761d1c67f4ae099fb2f2ac2d355746d15880f22d4a4c3bc2a7e01974858ed",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "searchfit-seo",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:searchfit-seo"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Research keywords, backlinks, traffic, and competitors.",
+      "displayName": "Semrush",
+      "icon": {
+        "asset": "icon-f39a44cf4ec7acf87f8d164cee77c6e9.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f39a44cf4ec7acf87f8d164cee77c6e9.png",
+        "bytes": 9111,
+        "contentType": "image/png",
+        "digest": "sha256:f39a44cf4ec7acf87f8d164cee77c6e927b2256a3e75b2970d817b69e20b4dbd",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "semrush"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 12,
+        "text": "SE"
+      },
+      "pluginId": "plugin:cursor-official:semrush",
+      "primaryCategory": "business-operations",
+      "productKey": "semrush",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/semrush",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:226afdc5bc7b5d61e8de9b9b52eda2df8ad3e6dd33eb0ebf85c4ef94b4aaa472",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:39fb5ecf91e9e1ce0f4876739dd26e0ac118332c9aeac6dda3ab323b300ad066",
+        "packageStatus": "portable",
+        "releaseId": "release:9b2fb13bfd9e1c41370243ec21f61a64fd8bcce9c8ca26ae05a60b62e9eeb70f",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:9b2fb13bfd9e1c41370243ec21f61a64fd8bcce9c8ca26ae05a60b62e9eeb70f",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "semrush",
+      "variantPluginIds": [
+        "plugin:cursor-official:semrush"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Unknown"
+      ],
+      "capabilitySummary": {
+        "agent": 20,
+        "mcp-server": 1,
+        "skill": 20
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Shopify for ChatGPT makes store building and management as easy as having a conversation. Effortlessly connect your existing store or create a new online store by describing your business. Simply chat to add products, adjust inventory across locations, create discount codes, browse recent orders, view customer details, or pull analytics on your store’s performance.",
+      "displayName": "Shopify",
+      "icon": {
+        "asset": "icon-a7993e5bd1c0550e179a273b20cd0879.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a7993e5bd1c0550e179a273b20cd0879.svg",
+        "bytes": 1571,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:a7993e5bd1c0550e179a273b20cd0879326a0a03c74456b0fe309e462ea61cc0",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/composer-icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "shopify"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 264,
+        "text": "SH"
+      },
+      "pluginId": "plugin:openai-official:shopify",
+      "primaryCategory": "business-operations",
+      "productKey": "shopify",
+      "provenance": {
+        "manifestPath": ".agents/plugins/marketplace.json",
+        "pluginSubdirectory": "plugins/shopify",
+        "repositoryUrl": "https://github.com/openai/plugins",
+        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:77a71871eccce357f4d5057a2f06de159fdfb5c32b0db5a50f0f29101c08d3ec",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:df01d8a2fe4654a2edd4a097ad911da17b55fbdbb6b938c8a2a288c7b18c8a88",
+        "packageStatus": "partial",
+        "releaseId": "release:b108540ba1223c97598d891e4ee90e96151f4a57e3dbd060ac2660fd2da46bd0",
+        "requiredConnectors": [],
+        "requiredCredentials": [
+          "authentication"
+        ],
+        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "upstreamVersion": "3.0.0"
+      },
+      "releaseId": "release:b108540ba1223c97598d891e4ee90e96151f4a57e3dbd060ac2660fd2da46bd0",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "openai-official",
+      "upstreamName": "shopify",
+      "variantPluginIds": [
+        "plugin:openai-official:shopify"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Analyze website traffic, audiences, and competitors.",
+      "displayName": "Similarweb",
+      "icon": {
+        "asset": "icon-12cfc13f585f0bf27b406de1c18f8ac5.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-12cfc13f585f0bf27b406de1c18f8ac5.png",
+        "bytes": 10386,
+        "contentType": "image/png",
+        "digest": "sha256:12cfc13f585f0bf27b406de1c18f8ac533ce3d1873e20481340c0e423a99c24e",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "similarweb"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 321,
+        "text": "SI"
+      },
+      "pluginId": "plugin:cursor-official:similarweb",
+      "primaryCategory": "business-operations",
+      "productKey": "similarweb",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/similarweb",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:908c412b90e1c2a6712e5056a741a62c06380af69820065906b050a8c81df0b9",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:79a316993457320e81dbe8154b502cf746d7dc4d2c217c784a4ea65133bc0d75",
+        "packageStatus": "partial",
+        "releaseId": "release:26f243b1775cc4e71101aec56845e97cb804164063d65186a6171e416dd74568",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:26f243b1775cc4e71101aec56845e97cb804164063d65186a6171e416dd74568",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "similarweb",
+      "variantPluginIds": [
+        "plugin:cursor-official:similarweb"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 44
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Pre-built small business workflows to help you run and grow your business. Supports a majority of the tools you already use. You approve every step that touches money or customers. Install and then ask Claude to help you get onboarded.",
+      "displayName": "Small Business",
+      "icon": null,
+      "keywords": [
+        "business",
+        "business-operations",
+        "small"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 198,
+        "text": "SB"
+      },
+      "pluginId": "plugin:knowledge-work-official:small-business",
+      "primaryCategory": "business-operations",
+      "productKey": "small-business",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "small-business",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:990d05ff1684beaf933a134e45cc988efc95bab7022368547539bd41a643b40b",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:860b909970d770b0428c9291116e9cea9849afc717fb74ab3540dcbf16adbfff",
+        "packageStatus": "partial",
+        "releaseId": "release:ab4a8bd456d285605ff4cdc3399e51977b6e6c997228abeaa49b66995ae76884",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.35.1"
+      },
+      "releaseId": "release:ab4a8bd456d285605ff4cdc3399e51977b6e6c997228abeaa49b66995ae76884",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "small-business",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:small-business"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search candidates, move pipelines, and manage HR records.",
+      "displayName": "Workable",
+      "icon": {
+        "asset": "icon-dde77d8adc5e25871e75ea196b4a57cc.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-dde77d8adc5e25871e75ea196b4a57cc.png",
+        "bytes": 10287,
+        "contentType": "image/png",
+        "digest": "sha256:dde77d8adc5e25871e75ea196b4a57cc4f9251b4046d573b676bf6dca4e6c3f6",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "workable"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 195,
+        "text": "WO"
+      },
+      "pluginId": "plugin:cursor-official:workable",
+      "primaryCategory": "business-operations",
+      "productKey": "workable",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/workable",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:25bcf4217f78ad79b02bbf61df152387245ea3eb073f6fd50723852efcde91e1",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:b7bc52e8368fa272523d4de6dbeb3e246134cd7be46b362360064c5c51383fcb",
+        "packageStatus": "portable",
+        "releaseId": "release:b20e7ff64209f151d071c5ae88f1ed089f96e4d80091d237a9c8f3efded11d5c",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:b20e7ff64209f151d071c5ae88f1ed089f96e4d80091d237a9c8f3efded11d5c",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "workable",
+      "variantPluginIds": [
+        "plugin:cursor-official:workable"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Manage ad campaigns, create ads, track conversions, and pull performance stats.",
+      "displayName": "X Ads",
+      "icon": {
+        "asset": "icon-86e5270f994539a9919863c8877e2b4b.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-86e5270f994539a9919863c8877e2b4b.png",
+        "bytes": 5379,
+        "contentType": "image/png",
+        "digest": "sha256:86e5270f994539a9919863c8877e2b4bff369a86009cdb93de6a0839f6e74844",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "ads",
+        "business-operations",
+        "x"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 27,
+        "text": "XA"
+      },
+      "pluginId": "plugin:cursor-official:x-ads",
+      "primaryCategory": "business-operations",
+      "productKey": "x-ads",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/x-ads",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:c15d6c96b19486230223016abbc9057968735915c446e8e6e01cd8709a09e30a",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:6f71e66d0aac835db3bbd1a23404e76da62ff2c32cc0b8696106edef4268f79f",
+        "packageStatus": "partial",
+        "releaseId": "release:2cd6e06b266c866282693dd69bd94254bf00d4e6a9748ec6f39464e779071a5e",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:2cd6e06b266c866282693dd69bd94254bf00d4e6a9748ec6f39464e779071a5e",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "x-ads",
+      "variantPluginIds": [
+        "plugin:cursor-official:x-ads"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "ZoomInfo"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 2,
+        "skill": 35
+      },
+      "categories": [
+        "business-operations",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Search companies and contacts, enrich leads, find lookalikes, and get AI-ranked contact recommendations. Pre-built skills chain multiple ZoomInfo tools into complete B2B sales workflows.",
+      "displayName": "ZoomInfo",
+      "homepage": "https://www.zoominfo.com/",
+      "icon": {
+        "asset": "icon-43929ad3b61f391a9d9dc07f56eca859.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-43929ad3b61f391a9d9dc07f56eca859.svg",
+        "bytes": 8146,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:43929ad3b61f391a9d9dc07f56eca8593d0def6941328acb3d7db365467050b3",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/zoominfo-logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "productivity",
+        "zoominfo"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 195,
+        "text": "ZO"
+      },
+      "pluginId": "plugin:claude-official:zoominfo",
+      "primaryCategory": "business-operations",
+      "productKey": "zoominfo",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "d07402feb2b9967ccc118f55bacd41a79c822d6a"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:b5eb3b6b529e0ead39f2b8997c7cb5111c9434c9adff98832981a71d31ae9dae",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:1688065dc6308f60953cf3da527873c7ff85f4fd799b3d6937c57f7c61a204e2",
+        "packageStatus": "partial",
+        "releaseId": "release:3db22bb6d71f193f8008aae36e4cabbd478ddc6a18514788d349327c3808add8",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "d07402feb2b9967ccc118f55bacd41a79c822d6a",
+        "upstreamVersion": "1.0.1"
+      },
+      "releaseId": "release:3db22bb6d71f193f8008aae36e4cabbd478ddc6a18514788d349327c3808add8",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "zoominfo",
+      "variantPluginIds": [
+        "plugin:claude-official:zoominfo",
+        "plugin:knowledge-work-official:zoominfo"
+      ],
+      "variantsIdentical": true
+    }
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,518 @@
+{
+  "catalogId": "catalog:46639457dd9268f619932be85e31428e3c494186547ca029c6262fb2c90df647",
+  "category": "business-operations",
+  "products": [
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search and update CRM records, lists, notes, and tasks.",
+      "displayName": "Attio",
+      "icon": {
+        "asset": "icon-f461e472b139cae381f75eda075e0ec2.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f461e472b139cae381f75eda075e0ec2.png",
+        "bytes": 7527,
+        "contentType": "image/png",
+        "digest": "sha256:f461e472b139cae381f75eda075e0ec264a378bd1f5626ce1c496a368857738c",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "attio",
+        "business-operations"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 249,
+        "text": "AT"
+      },
+      "pluginId": "plugin:cursor-official:attio",
+      "primaryCategory": "business-operations",
+      "productKey": "attio",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/attio",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:7d3ceb5e680f31d018b1dabf595c85e1c29c9f8848b22e571b7b9c036a203f0d",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:72f10e56fa38fed726d83921c926e6fae7c563344d6688375b39f11bf44740c1",
+        "packageStatus": "portable",
+        "releaseId": "release:ba3ea360ffb93833e6dce2e2dc965995d366b29255732e57aa7e81f5717b71ef",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:ba3ea360ffb93833e6dce2e2dc965995d366b29255732e57aa7e81f5717b71ef",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "attio",
+      "variantPluginIds": [
+        "plugin:cursor-official:attio"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Search and update contacts, companies, deals, and tickets.",
+      "displayName": "HubSpot",
+      "icon": {
+        "asset": "icon-465ab17ed899fcfa0ad4689ad6dddce8.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-465ab17ed899fcfa0ad4689ad6dddce8.png",
+        "bytes": 8157,
+        "contentType": "image/png",
+        "digest": "sha256:465ab17ed899fcfa0ad4689ad6dddce88c17c56c3280f4fe6d292d35191b2c4a",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "hubspot"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 177,
+        "text": "HU"
+      },
+      "pluginId": "plugin:cursor-official:hubspot",
+      "primaryCategory": "business-operations",
+      "productKey": "hubspot",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/hubspot",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:09f1e96b051494d9e0641d7035fa9d704dfc3c5b60439b37a6608b43cb7bd2ae",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:3bbe6a275b632abfb374fb39890684ccaa58089b4c9c98e450ed65423813ace2",
+        "packageStatus": "partial",
+        "releaseId": "release:c0cc7082c4800aceffd69cb43119bd362a06ff28fa94a2b126dacb290de4f5c1",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:c0cc7082c4800aceffd69cb43119bd362a06ff28fa94a2b126dacb290de4f5c1",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "hubspot",
+      "variantPluginIds": [
+        "plugin:cursor-official:hubspot"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Query expenses, travel bookings, policies, and cards.",
+      "displayName": "Navan",
+      "icon": {
+        "asset": "icon-0b474314d9cc2937c0e503ec81d7048b.webp",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-0b474314d9cc2937c0e503ec81d7048b.webp",
+        "bytes": 21730,
+        "contentType": "image/webp",
+        "digest": "sha256:0b474314d9cc2937c0e503ec81d7048b9b8229fda4b107320b034aa454e9bdf8",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "navan"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 9,
+        "text": "NA"
+      },
+      "pluginId": "plugin:cursor-official:navan",
+      "primaryCategory": "business-operations",
+      "productKey": "navan",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/navan",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:0a88f9bb85e8e092df9c9af73707cd65a0fda928652e5a7ac24f6c07acc9b292",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:738f47a73ae75ad38744ef2b863cfc4374c69c8cd8b7e399da11ee67cc0a301e",
+        "packageStatus": "portable",
+        "releaseId": "release:adf3f26f83fe35658ec1ce642305c87e80b2fd82388d4e439133f351f2c6ec94",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:adf3f26f83fe35658ec1ce642305c87e80b2fd82388d4e439133f351f2c6ec94",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "navan",
+      "variantPluginIds": [
+        "plugin:cursor-official:navan"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Manage envelopes, templates, workflows, and agreements.",
+      "displayName": "Docusign",
+      "icon": {
+        "asset": "icon-b4a3a7a955f29afb3698658c05a53e8f.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-b4a3a7a955f29afb3698658c05a53e8f.png",
+        "bytes": 4216,
+        "contentType": "image/png",
+        "digest": "sha256:b4a3a7a955f29afb3698658c05a53e8f4acff80ca3f680662114829ddb9b2ed2",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "docusign"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 204,
+        "text": "DO"
+      },
+      "pluginId": "plugin:cursor-official:docusign",
+      "primaryCategory": "business-operations",
+      "productKey": "docusign",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/docusign",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:e78a9360d4c85633aede2073c40a78a4c66ecac7527447e425eb656b39d27e2a",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:7ab95aa51adc1ec46eb00f81b0241883f73bb132b043d82a1d291e5adb680e9e",
+        "packageStatus": "partial",
+        "releaseId": "release:09b8c35416ab050ce1827cee009bbea0a279f3e143c6ce746cca941bcfae0389",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:09b8c35416ab050ce1827cee009bbea0a279f3e143c6ce746cca941bcfae0389",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "docusign",
+      "variantPluginIds": [
+        "plugin:cursor-official:docusign"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Brainstorm domain names and check availability.",
+      "displayName": "GoDaddy",
+      "icon": {
+        "asset": "icon-a96194d7ff679eb3bfb71f971e989cd1.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a96194d7ff679eb3bfb71f971e989cd1.png",
+        "bytes": 9273,
+        "contentType": "image/png",
+        "digest": "sha256:a96194d7ff679eb3bfb71f971e989cd1f16fc48e5231f275c286160df68cfcd7",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "godaddy"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 132,
+        "text": "GO"
+      },
+      "pluginId": "plugin:cursor-official:godaddy",
+      "primaryCategory": "business-operations",
+      "productKey": "godaddy",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/godaddy",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:bdf70c2b759c6405def244afe476246c15266224345fb3e7df0100bb50dbbc0f",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:ecfe20a28c47a4db7fb42c834b017a5ec8e685c08bcff13f9590cb74e8f37e3b",
+        "packageStatus": "portable",
+        "releaseId": "release:aadc35c6bbf6dfcb1c36470e52712dc03529f6df9de36385af9e790c3da83f51",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:aadc35c6bbf6dfcb1c36470e52712dc03529f6df9de36385af9e790c3da83f51",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "godaddy",
+      "variantPluginIds": [
+        "plugin:cursor-official:godaddy"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "business-operations"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Search talent, post jobs, and manage contracts.",
+      "displayName": "Upwork",
+      "icon": {
+        "asset": "icon-6536c1d5e3d1a1381e1a594481e6633f.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-6536c1d5e3d1a1381e1a594481e6633f.png",
+        "bytes": 14359,
+        "contentType": "image/png",
+        "digest": "sha256:6536c1d5e3d1a1381e1a594481e6633f146c55b3b3f403a1ab8d1a729af435aa",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "business-operations",
+        "upwork"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 174,
+        "text": "UP"
+      },
+      "pluginId": "plugin:cursor-official:upwork",
+      "primaryCategory": "business-operations",
+      "productKey": "upwork",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/upwork",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:81905aa21ba26561e378b784bb1a7c5436c053dd1d8776346a8901956e6aa227",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:c27e0948a2fe37d78f05922e4038526af3f0dcb5c359f10053350b50a2b754dd",
+        "packageStatus": "portable",
+        "releaseId": "release:bd97ee230c5bf0ab1dacdac59073f6bdfd2e2467e1ef18ee797794379db615e5",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:bd97ee230c5bf0ab1dacdac59073f6bdfd2e2467e1ef18ee797794379db615e5",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "upwork",
+      "variantPluginIds": [
+        "plugin:cursor-official:upwork"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1,
+  "topCount": 6
+}

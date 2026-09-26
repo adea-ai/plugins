@@ -1,0 +1,545 @@
+{
+  "catalogId": "catalog:46639457dd9268f619932be85e31428e3c494186547ca029c6262fb2c90df647",
+  "category": "education-research",
+  "products": [
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "skill": 2
+      },
+      "categories": [
+        "education-research"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Skill mapping, practice plans, and learning retrospectives.",
+      "displayName": "Teaching",
+      "icon": {
+        "asset": "icon-003bdda2cc2575e3f5c702fae65b0615.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-003bdda2cc2575e3f5c702fae65b0615.png",
+        "bytes": 56807,
+        "contentType": "image/png",
+        "digest": "sha256:003bdda2cc2575e3f5c702fae65b061528faaa151b920c0e6f35891dae9dafbc",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/avatar.png",
+        "url": null
+      },
+      "keywords": [
+        "education-research",
+        "teaching"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 342,
+        "text": "TE"
+      },
+      "pluginId": "plugin:cursor-official:teaching",
+      "primaryCategory": "education-research",
+      "productKey": "teaching",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "teaching",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:80446f7306ec88594f42a8bb09bbade4601754c5db8b082fbaaf0e4b319770ab",
+        "capabilities": [
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:c8564cd60fb82a2b7f64985d2bf350746b671dc7566c0865d928ced9eadd6f1f",
+        "packageStatus": "portable",
+        "releaseId": "release:0ca9483d5c9918f86ac7ed51b4f1204f5e91253bb60398e5d0617388ae39d42d",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:0ca9483d5c9918f86ac7ed51b4f1204f5e91253bb60398e5d0617388ae39d42d",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "teaching",
+      "variantPluginIds": [
+        "plugin:cursor-official:teaching"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "agent": 1,
+        "hook": 3,
+        "skill": 1
+      },
+      "categories": [
+        "education-research"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Incremental transcript-driven memory updates for AGENTS.md using high-signal bullet points only.",
+      "displayName": "Continual Learning",
+      "icon": {
+        "asset": "icon-7fcbec269ec57b3f9c227c964907692d.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-7fcbec269ec57b3f9c227c964907692d.png",
+        "bytes": 64347,
+        "contentType": "image/png",
+        "digest": "sha256:7fcbec269ec57b3f9c227c964907692d044dbe4e8495fc42cd72a5794d7c11fb",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/avatar.png",
+        "url": null
+      },
+      "keywords": [
+        "continual",
+        "education-research",
+        "learning"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 66,
+        "text": "CL"
+      },
+      "pluginId": "plugin:cursor-official:continual-learning",
+      "primaryCategory": "education-research",
+      "productKey": "continual-learning",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "continual-learning",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:9388a810088ad9c2f4aff68c27c0f40c9addeac3f12b9d20c367ad530f764dfd",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:6504719a147b348d83a1244767f28dc4f78fd31d90064124fd9d327b3d6dd3e4",
+        "packageStatus": "partial",
+        "releaseId": "release:98be0503560ea7011db62dc76a929ea51b62b7a4e5721a4449c31ff63250847f",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:98be0503560ea7011db62dc76a929ea51b62b7a4e5721a4449c31ff63250847f",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "hook"
+        ],
+        "reasons": [
+          "Contains hook capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "continual-learning",
+      "variantPluginIds": [
+        "plugin:cursor-official:continual-learning"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Coursera"
+      ],
+      "capabilitySummary": {
+        "skill": 1
+      },
+      "categories": [
+        "education-research"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Turn any learning intent into a personalized Coursera experience. Asks three quick questions (topic, familiarity, preferred format), searches Coursera's catalog, and delivers the right next step — a course, hands-on project, short video, or live roleplay — then maps a path forward. Requires the Coursera connector for catalog tools.",
+      "displayName": "Learn with Coursera",
+      "homepage": "https://github.com/coursera/skills",
+      "icon": {
+        "asset": "icon-18dcaf9572c721b7ea9f22d75ab5ae8f.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-18dcaf9572c721b7ea9f22d75ab5ae8f.png",
+        "bytes": 9194,
+        "contentType": "image/png",
+        "digest": "sha256:18dcaf9572c721b7ea9f22d75ab5ae8fa38a273d87e32118e682e7966f3b076d",
+        "homepage": "https://www.coursera.org/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/apple-touch-icon-v2-180x180.png"
+      },
+      "keywords": [
+        "coursera",
+        "education-research",
+        "learn",
+        "with"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 312,
+        "text": "LW"
+      },
+      "pluginId": "plugin:claude-official:learn-with-coursera",
+      "primaryCategory": "education-research",
+      "productKey": "learn-with-coursera",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "skills",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "ac28fd6ebf8584e3ee196159bd6d4514fa07de0f"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:bc55b6d2081e5153d7cfcf67ca408a87462fc0358a6ceeef9b2263ccc75ec95f",
+        "capabilities": [
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:b979bd1399972f0b88bcee288d339affaee1f8a4ea4314756d581adda505c86c",
+        "packageStatus": "portable",
+        "releaseId": "release:3fd0add87e2b576f8a2bdeffce06f38f56d4af99718e8269544e498a9d05b8d7",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ac28fd6ebf8584e3ee196159bd6d4514fa07de0f"
+      },
+      "releaseId": "release:3fd0add87e2b576f8a2bdeffce06f38f56d4af99718e8269544e498a9d05b8d7",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "learn-with-coursera",
+      "variantPluginIds": [
+        "plugin:claude-official:learn-with-coursera",
+        "plugin:knowledge-work-official:learn-with-coursera"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Unknown"
+      ],
+      "capabilitySummary": {
+        "agent": 1,
+        "executable": 1,
+        "skill": 1
+      },
+      "categories": [
+        "education-research"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Work with Zotero from Codex: search your library, export BibTeX, insert citations, and import references through the Zotero desktop app.",
+      "displayName": "Zotero",
+      "icon": {
+        "asset": "icon-7ac4579b4a075173126862ebf70243ff.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-7ac4579b4a075173126862ebf70243ff.png",
+        "bytes": 9908,
+        "contentType": "image/png",
+        "digest": "sha256:7ac4579b4a075173126862ebf70243ff0a447ffe843e7fbdf16ea2681f4fff13",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.png",
+        "url": null
+      },
+      "keywords": [
+        "education-research",
+        "zotero"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 195,
+        "text": "ZO"
+      },
+      "pluginId": "plugin:openai-official:zotero",
+      "primaryCategory": "education-research",
+      "productKey": "zotero",
+      "provenance": {
+        "manifestPath": ".agents/plugins/marketplace.json",
+        "pluginSubdirectory": "plugins/zotero",
+        "repositoryUrl": "https://github.com/openai/plugins",
+        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:2b4671f0a0ec3d39f4a38329cbffd3ee2cf0f4ca122ee581e108d0d38b436f2d",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:4f86bc40059445acaec7f066d7b1f92eafc0930eb4fb54e8ddfb7fce67154139",
+        "packageStatus": "partial",
+        "releaseId": "release:d847bc3a9a237ef3c9fcfcfc754b81a077d0a1d516a8f5497e74ae2c0c1f4787",
+        "requiredConnectors": [],
+        "requiredCredentials": [
+          "authentication"
+        ],
+        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "upstreamVersion": "0.1.2"
+      },
+      "releaseId": "release:d847bc3a9a237ef3c9fcfcfc754b81a077d0a1d516a8f5497e74ae2c0c1f4787",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "openai-official",
+      "upstreamName": "zotero",
+      "variantPluginIds": [
+        "plugin:openai-official:zotero"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Unknown"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1
+      },
+      "categories": [
+        "education-research"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Consensus is the go-to MCP for academic research. Connect directly to 220M+ peer-reviewed papers to search, synthesize, and build structured research outputs from within your conversation.\n\nRun literature reviews, build boolean search strategies, generate bibliographies, identify research gaps, and draft cited content — grounded in studies from PubMed, Semantic Scholar, and ArXiv. Pre-built workflows handle complex tasks in minutes: systematic reviews, curriculum reading lists, grant research with novelty analysis, and clinical evidence synthesis.\n\nBuilt for researchers, students, faculty, and clinicians across biomedical, social science, STEM, and all academic disciplines.",
+      "displayName": "Consensus",
+      "icon": {
+        "asset": "icon-035702ad5f998033f1ab621b62832784.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-035702ad5f998033f1ab621b62832784.png",
+        "bytes": 4091,
+        "contentType": "image/png",
+        "digest": "sha256:035702ad5f998033f1ab621b62832784be3e901b68e5992bd27593c903d09c4f",
+        "homepage": "https://consensus.app/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://consensus.app/images/icon-384.png"
+      },
+      "keywords": [
+        "consensus",
+        "education-research"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 183,
+        "text": "CO"
+      },
+      "pluginId": "plugin:openai-official:consensus",
+      "primaryCategory": "education-research",
+      "productKey": "consensus",
+      "provenance": {
+        "manifestPath": ".agents/plugins/marketplace.json",
+        "pluginSubdirectory": "plugins/consensus",
+        "repositoryUrl": "https://github.com/openai/plugins",
+        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:baa712ea19b03b3d0024a0c3db869a1c0f17d28cddc1b0c1110b0f26b8276683",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:1d3081164e741eab7c232b0e98b4209ba005206283ace0fea1d4bc16cc2e4dae",
+        "packageStatus": "portable",
+        "releaseId": "release:ca068c400edf826dc2a8abe8243d9a380cbed1f1f419776ccc791f0ad1d1b273",
+        "requiredConnectors": [],
+        "requiredCredentials": [
+          "authentication"
+        ],
+        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "upstreamVersion": "4.0.0"
+      },
+      "releaseId": "release:ca068c400edf826dc2a8abe8243d9a380cbed1f1f419776ccc791f0ad1d1b273",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "openai-official",
+      "upstreamName": "consensus",
+      "variantPluginIds": [
+        "plugin:openai-official:consensus"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "executable": 25,
+        "mcp-server": 1,
+        "skill": 6
+      },
+      "categories": [
+        "education-research"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Connect to preclinical research tools and databases (literature search, genomics analysis, target prioritization) to accelerate early-stage life sciences R&D",
+      "displayName": "Bio Research",
+      "icon": null,
+      "keywords": [
+        "bio",
+        "education-research",
+        "research"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 321,
+        "text": "BR"
+      },
+      "pluginId": "plugin:knowledge-work-official:bio-research",
+      "primaryCategory": "education-research",
+      "productKey": "bio-research",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "bio-research",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:03bf352372fd82634db1e7a87afa99236cb69b88eb955454966772d33a4367b3",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:cae8bfb6acf774f67022de9843fcffab102eee8149350afaee539b0da7013ac9",
+        "packageStatus": "partial",
+        "releaseId": "release:e055f605d0c17b1d0a8c6fba558fe70cba2b724e2d46ab778ecaea8491dc4fdd",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "upstreamVersion": "1.2.0"
+      },
+      "releaseId": "release:e055f605d0c17b1d0a8c6fba558fe70cba2b724e2d46ab778ecaea8491dc4fdd",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "bio-research",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:bio-research"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1,
+  "topCount": 6
+}

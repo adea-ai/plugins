@@ -1,0 +1,2053 @@
+{
+  "catalogId": "catalog:46639457dd9268f619932be85e31428e3c494186547ca029c6262fb2c90df647",
+  "category": "finance",
+  "pluginCount": 27,
+  "productCount": 22,
+  "products": [
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Read balances, transactions, statements, and cards.",
+      "displayName": "Mercury",
+      "icon": {
+        "asset": "icon-72e5d9eded3682cc2300db58d2bc3972.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-72e5d9eded3682cc2300db58d2bc3972.png",
+        "bytes": 46482,
+        "contentType": "image/png",
+        "digest": "sha256:72e5d9eded3682cc2300db58d2bc3972f9f79c2a438f0cb087326610a6e6b87a",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "finance",
+        "mercury"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 132,
+        "text": "ME"
+      },
+      "pluginId": "plugin:cursor-official:mercury",
+      "primaryCategory": "finance",
+      "productKey": "mercury",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/mercury",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:36faa35d0023e5d9968bf409ba6bd4461fd3e7c883e0f15a720ef2be05fd29b1",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:ac814d3dc4af2920b06e421ea3666a6d484630bedbbde058546279e6dcf81c5b",
+        "packageStatus": "portable",
+        "releaseId": "release:457369f60e812e439c9a40b68325eb890703cad0ea77fadfa540939577fe0b1a",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:457369f60e812e439c9a40b68325eb890703cad0ea77fadfa540939577fe0b1a",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "mercury",
+      "variantPluginIds": [
+        "plugin:cursor-official:mercury"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Review positions, balances, P&L, and draft trade instructions.",
+      "displayName": "Interactive Brokers",
+      "icon": {
+        "asset": "icon-e2145b7694f27b37fb40d7671ba6eb5e.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-e2145b7694f27b37fb40d7671ba6eb5e.png",
+        "bytes": 9057,
+        "contentType": "image/png",
+        "digest": "sha256:e2145b7694f27b37fb40d7671ba6eb5e870c256c1e147444187e7ef22cb5e4de",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "brokers",
+        "finance",
+        "interactive"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 264,
+        "text": "IB"
+      },
+      "pluginId": "plugin:cursor-official:interactive-brokers",
+      "primaryCategory": "finance",
+      "productKey": "interactive-brokers",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/interactive-brokers",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:38209b0efb4ac69309a56428e9579874c9d66406b2332353e6abe477ee197ffd",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:762338d405d666aefcd3a0d24c4aeebef7eda889f51f5861e5a01c8c29e1df9d",
+        "packageStatus": "portable",
+        "releaseId": "release:f0ad6654f8ed7639161587343b6e0173f0439f68b5d9e18077d48c7cba77662e",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:f0ad6654f8ed7639161587343b6e0173f0439f68b5d9e18077d48c7cba77662e",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "interactive-brokers",
+      "variantPluginIds": [
+        "plugin:cursor-official:interactive-brokers"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Query expenses, receipts, bills, cards, and travel.",
+      "displayName": "Brex",
+      "icon": {
+        "asset": "icon-3ef094b024795ba7426b1a7e42979e7f.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3ef094b024795ba7426b1a7e42979e7f.png",
+        "bytes": 3815,
+        "contentType": "image/png",
+        "digest": "sha256:3ef094b024795ba7426b1a7e42979e7f1e5e77b7fdfa0a255c5c48edcfef94ee",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "brex",
+        "finance"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 180,
+        "text": "BR"
+      },
+      "pluginId": "plugin:cursor-official:brex",
+      "primaryCategory": "finance",
+      "productKey": "brex",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/brex",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:b74401fa7006b1ce1723b09733231a9cc622f860a65319ed3c82f5c0c298a3d6",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:703095f5ab5c61c07f4e16a8e3c43ba83433da7f086d3fbc849849e7123e5d00",
+        "packageStatus": "portable",
+        "releaseId": "release:caf0b90f68b6fdde3af8aa6bc5709ad0176a16128dfcbfbf4a35f5857747f2be",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:caf0b90f68b6fdde3af8aa6bc5709ad0176a16128dfcbfbf4a35f5857747f2be",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "brex",
+      "variantPluginIds": [
+        "plugin:cursor-official:brex"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "View accounts, positions, orders, watchlists, and market data.",
+      "displayName": "Webull",
+      "icon": {
+        "asset": "icon-a209946494b30cab9e53ceedba655adb.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a209946494b30cab9e53ceedba655adb.png",
+        "bytes": 6600,
+        "contentType": "image/png",
+        "digest": "sha256:a209946494b30cab9e53ceedba655adb9fc6e6b941a5d572796c6f2ae6709889",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "finance",
+        "webull"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 201,
+        "text": "WE"
+      },
+      "pluginId": "plugin:cursor-official:webull",
+      "primaryCategory": "finance",
+      "productKey": "webull",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/webull",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:9bca46575d3570cdfc036cc8eb90b77af7cdc2e8f97c7d4ca31a6db6cec40ede",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:e8637ea2ac0fcbcc939d326f0fe9329bdf1aab3af35423e0e36e1bdafef86c2f",
+        "packageStatus": "portable",
+        "releaseId": "release:1fdc945e58e953ba8aa882359bea5af2edaa8fd2cb63bd689530bb45c0bbe036",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.1"
+      },
+      "releaseId": "release:1fdc945e58e953ba8aa882359bea5af2edaa8fd2cb63bd689530bb45c0bbe036",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "webull",
+      "variantPluginIds": [
+        "plugin:cursor-official:webull"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Read and write invoices, contacts, reports, and payroll.",
+      "displayName": "Xero",
+      "icon": {
+        "asset": "icon-1afeeff143a66b32e7038ec3bae9e758.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-1afeeff143a66b32e7038ec3bae9e758.png",
+        "bytes": 14904,
+        "contentType": "image/png",
+        "digest": "sha256:1afeeff143a66b32e7038ec3bae9e758b95ebeb26001a0eca9953b8b2f8d6ba9",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "finance",
+        "xero"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 300,
+        "text": "XE"
+      },
+      "pluginId": "plugin:cursor-official:xero",
+      "primaryCategory": "finance",
+      "productKey": "xero",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/xero",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:e37546538d5a3527dd1b71b9ebc2cb121e9eb877657da26eb8c9d011ab55772e",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:039deaa155d117c277130fbc4866fd313c7e6166d4d8506eb9793ec290ef600b",
+        "packageStatus": "partial",
+        "releaseId": "release:019a722680e6df1940c6d0b0bf38917907bc2eabc8a8a62b7e064df325daed67",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:019a722680e6df1940c6d0b0bf38917907bc2eabc8a8a62b7e064df325daed67",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "xero",
+      "variantPluginIds": [
+        "plugin:cursor-official:xero"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Airwallex"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 5
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities.",
+      "displayName": "Airwallex",
+      "homepage": "https://www.airwallex.com/docs",
+      "icon": {
+        "asset": "icon-03276e1e0a355132331e7d1467dc070e.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-03276e1e0a355132331e7d1467dc070e.svg",
+        "bytes": 914,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:03276e1e0a355132331e7d1467dc070ebc23d7261eeb4a4499d7497ef4c70f97",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "agentos",
+        "airwallex",
+        "finance",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 27,
+        "text": "AI"
+      },
+      "pluginId": "plugin:claude-official:airwallex-agentos",
+      "primaryCategory": "finance",
+      "productKey": "airwallex-agentos",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/airwallex-agentos",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "d323dd68c85874f6311a1bd20184f803a96e09a9"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:8a333845ad317fbeeb0e3cb2d73e5dab9b616769cb85c7c070b3d51d641edcc3",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:232008bb3ebbd4be30d91b6dbb00ab2c9b156c754f0267b55ab6b2b7bf1b96b8",
+        "packageStatus": "portable",
+        "releaseId": "release:c20a1421154a3aeb61df8ba31821fac7de4cdb36923ded07f745c1d17d3f1f95",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "d323dd68c85874f6311a1bd20184f803a96e09a9",
+        "upstreamVersion": "0.2.5"
+      },
+      "releaseId": "release:c20a1421154a3aeb61df8ba31821fac7de4cdb36923ded07f745c1d17d3f1f95",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "airwallex-agentos",
+      "variantPluginIds": [
+        "plugin:claude-official:airwallex-agentos",
+        "plugin:knowledge-work-official:airwallex-agentos"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Airwallex"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 6
+      },
+      "categories": [
+        "developer-tools",
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Build Airwallex payment integrations in your own codebase. Generates the checkout, card-element, onboarding, and subscription-billing code for an Airwallex integration and wires it into your project: Hosted Payment Page, Drop-in and Split Card elements, connected-account KYC onboarding, and Billing Hosted Checkout for subscriptions and card-saving. Also plans card-on-file merchant-initiated flows for AI providers such as top-ups and auto-recharge.",
+      "displayName": "Airwallex Dev",
+      "homepage": "https://www.airwallex.com/docs",
+      "icon": {
+        "asset": "icon-03276e1e0a355132331e7d1467dc070e.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-03276e1e0a355132331e7d1467dc070e.svg",
+        "bytes": 914,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:03276e1e0a355132331e7d1467dc070ebc23d7261eeb4a4499d7497ef4c70f97",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "airwallex",
+        "dev",
+        "developer-tools",
+        "finance"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 240,
+        "text": "AD"
+      },
+      "pluginId": "plugin:claude-official:airwallex-dev",
+      "primaryCategory": "developer-tools",
+      "productKey": "airwallex-dev",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/airwallex-dev",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "d4593e33a9e1177a44b895ca0a1d6e015215736f"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:aedd2323ea4da78f57952dca200d0ec25b096e2b9385ded01f02ec8daf1d45c1",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:91ff3a7039c66e9269dbb330d4fb2c92dd41b2af68a91929db1d1357fdce83e7",
+        "packageStatus": "partial",
+        "releaseId": "release:f0f03e756bdf8e4d26a39f58699793124e3e26ab89c0aa7d97ae4b373ce138d4",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "d4593e33a9e1177a44b895ca0a1d6e015215736f",
+        "upstreamVersion": "0.1.0"
+      },
+      "releaseId": "release:f0f03e756bdf8e4d26a39f58699793124e3e26ab89c0aa7d97ae4b373ce138d4",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "airwallex-dev",
+      "variantPluginIds": [
+        "plugin:claude-official:airwallex-dev"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "BlackRock Advisor Center"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 6
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "BlackRock Advisor Center 360° skills for financial advisors: portfolio review, opportunity and fund-health checks, guided benchmark selection, guided portfolio building, wealth projections, and routing to Advisor Center web workflows. Requires the BlackRock Advisor Center connector and an Advisor Center account.",
+      "displayName": "BlackRock Advisor Center",
+      "homepage": "https://github.com/blackrock/advisor-center-agent-skills",
+      "icon": {
+        "asset": "icon-b3bc6c6810d7ddf58a413a1323523dd1.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-b3bc6c6810d7ddf58a413a1323523dd1.ico",
+        "bytes": 894,
+        "contentType": "image/x-icon",
+        "digest": "sha256:b3bc6c6810d7ddf58a413a1323523dd1b405cfdfa4a1d89eea7d9dc184e33541",
+        "homepage": "https://blackrock.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://blackrock.com/favicon.ico"
+      },
+      "keywords": [
+        "advisor",
+        "blackrock",
+        "center",
+        "plugin",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 15,
+        "text": "BA"
+      },
+      "pluginId": "plugin:claude-official:blackrock-advisor-center-plugin",
+      "primaryCategory": "finance",
+      "productKey": "blackrock-advisor-center-plugin",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "591c758960c18c26fe8342ddb8ad3ba4dcfac6fe"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:ea6b0a216ccaa0314ad9dd6e997d91fbe5ada25ecf84bd2f4fb86de0b600fc28",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:3dbd93a3823c8242103b8fc31d936d1a7a04a759c1b88e5936343028883e2f30",
+        "packageStatus": "portable",
+        "releaseId": "release:2941cbf218baf77052d5a28ba0add4552d63cebad18ef72f5f5b89019e4ef2cf",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "591c758960c18c26fe8342ddb8ad3ba4dcfac6fe",
+        "upstreamVersion": "0.1.0"
+      },
+      "releaseId": "release:2941cbf218baf77052d5a28ba0add4552d63cebad18ef72f5f5b89019e4ef2cf",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "blackrock-advisor-center-plugin",
+      "variantPluginIds": [
+        "plugin:claude-official:blackrock-advisor-center-plugin",
+        "plugin:knowledge-work-official:blackrock-advisor-center-plugin"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Carta Engineering"
+      ],
+      "capabilitySummary": {
+        "executable": 28,
+        "hook": 47,
+        "skill": 22,
+        "ui-component": 4
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Carta Cap Table plugin — skills and hooks for querying cap tables, grants, SAFEs, 409A valuations, waterfall scenarios, and more",
+      "displayName": "Carta Cap Table",
+      "homepage": "https://carta.com/",
+      "icon": {
+        "asset": "icon-162aefb6da8e2670b2d3a6797adced2e.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-162aefb6da8e2670b2d3a6797adced2e.png",
+        "bytes": 5341,
+        "contentType": "image/png",
+        "digest": "sha256:162aefb6da8e2670b2d3a6797adced2edecd960120d66f89845d882f303c171f",
+        "homepage": null,
+        "kind": "content",
+        "path": "skills/carta-reporting-excel/assets/Carta_Logo.png",
+        "url": null
+      },
+      "keywords": [
+        "cap",
+        "carta",
+        "finance",
+        "productivity",
+        "table"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 168,
+        "text": "CC"
+      },
+      "pluginId": "plugin:claude-official:carta-cap-table",
+      "primaryCategory": "finance",
+      "productKey": "carta-cap-table",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/carta-cap-table",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "81b8f40844bd646842538a4583409f9aa54c42db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:cf00622216a40d2a558593b766c1497c08f7929f50e63c123aa1afd960ddb79c",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          },
+          {
+            "name": "ui-component",
+            "type": "ui-component"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:cff141abeaf44ac58129128a73c75f45863a4b75b581c03b79ae3b4068d5ba24",
+        "packageStatus": "partial",
+        "releaseId": "release:63fc0cf589c46b2ac1f9b7a4d4f03f31e4e82b0af146260f067a098f6b92e316",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "81b8f40844bd646842538a4583409f9aa54c42db",
+        "upstreamVersion": "6.73.0"
+      },
+      "releaseId": "release:63fc0cf589c46b2ac1f9b7a4d4f03f31e4e82b0af146260f067a098f6b92e316",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "carta-cap-table",
+      "variantPluginIds": [
+        "plugin:claude-official:carta-cap-table",
+        "plugin:knowledge-work-official:carta-cap-table"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Carta Engineering"
+      ],
+      "capabilitySummary": {
+        "command": 2,
+        "executable": 49,
+        "hook": 48,
+        "scheduled-task": 1,
+        "skill": 16,
+        "ui-component": 27
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Carta Investors plugin — skills for querying investor data, performance benchmarks, regulatory reporting, AGM deck generation, brand extraction, and more via the Carta MCP Server.",
+      "displayName": "Carta Investors",
+      "homepage": "https://carta.com/",
+      "icon": {
+        "asset": "icon-e753d59e2e1a4b471831d3bbf13387d9.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-e753d59e2e1a4b471831d3bbf13387d9.svg",
+        "bytes": 1479,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:e753d59e2e1a4b471831d3bbf13387d9604ec0316a83668923a8e662f502513e",
+        "homepage": null,
+        "kind": "content",
+        "path": "skills/carta-agm-deck-builder/references/assets/logo-dark.svg",
+        "url": null
+      },
+      "keywords": [
+        "carta",
+        "finance",
+        "investors",
+        "productivity"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 120,
+        "text": "CI"
+      },
+      "pluginId": "plugin:claude-official:carta-investors",
+      "primaryCategory": "finance",
+      "productKey": "carta-investors",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/carta-investors",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "81b8f40844bd646842538a4583409f9aa54c42db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:507b4740eab7d1323e644971d944c7e33fa212a54b2767f19355594481dd243b",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "scheduled-task",
+            "type": "scheduled-task"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          },
+          {
+            "name": "ui-component",
+            "type": "ui-component"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:f723ffad86acb73968f8d4d3da4149c421f35b169f797368994b525f5af6db43",
+        "packageStatus": "partial",
+        "releaseId": "release:78ea9e074aeeb832a29dcefbdc1466d0e913399819b5377942030699bbf2c7ed",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "81b8f40844bd646842538a4583409f9aa54c42db",
+        "upstreamVersion": "6.9.2"
+      },
+      "releaseId": "release:78ea9e074aeeb832a29dcefbdc1466d0e913399819b5377942030699bbf2c7ed",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook",
+          "scheduled-task"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata.",
+          "Contains scheduled-task capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "carta-investors",
+      "variantPluginIds": [
+        "plugin:claude-official:carta-investors",
+        "plugin:knowledge-work-official:carta-investors"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Chronograph"
+      ],
+      "capabilitySummary": {
+        "agent": 6,
+        "skill": 5
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Portfolio monitoring, valuations and analytics for private-capital GP teams using the Chronograph connector: portfolio-company one-pagers, fund quarterly review packs, markup/markdown briefs, TVPI attribution and budget-vs-actuals. Requires a Chronograph account and the Chronograph connector.",
+      "displayName": "Chronograph GP",
+      "homepage": "https://www.chronograph.pe/",
+      "icon": {
+        "asset": "icon-d3cae2ef925520f68fc4f1896d39da43.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-d3cae2ef925520f68fc4f1896d39da43.png",
+        "bytes": 277,
+        "contentType": "image/png",
+        "digest": "sha256:d3cae2ef925520f68fc4f1896d39da43e620d4e2d79859507114dddfaaf54a41",
+        "homepage": "https://www.chronograph.pe/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.chronograph.pe/wp-content/themes/chronograph/assets/images/favicon/apple-touch-icon.png"
+      },
+      "keywords": [
+        "chronograph",
+        "gp",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 333,
+        "text": "CG"
+      },
+      "pluginId": "plugin:claude-official:chronograph-gp",
+      "primaryCategory": "finance",
+      "productKey": "chronograph-gp",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "35cb3d12cf4e24823c0efca4abe6f13c2fd0e5f5"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:842bbe5aad0291ce31d0a4cb7620debb2780a32cafe07f1e79808f810a35cfd1",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:495a887eba0d676ccff98c3c946b40a8dab598a35de60d7962386b0d3ae697c0",
+        "packageStatus": "partial",
+        "releaseId": "release:d2e417c2aeac9670963adab1f664040ff5a6ddf741701235c498e382e43f0417",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "35cb3d12cf4e24823c0efca4abe6f13c2fd0e5f5",
+        "upstreamVersion": "0.2.4"
+      },
+      "releaseId": "release:d2e417c2aeac9670963adab1f664040ff5a6ddf741701235c498e382e43f0417",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "chronograph-gp",
+      "variantPluginIds": [
+        "plugin:claude-official:chronograph-gp",
+        "plugin:knowledge-work-official:chronograph-gp"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Chronograph"
+      ],
+      "capabilitySummary": {
+        "agent": 5,
+        "skill": 4
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Portfolio monitoring and analytics for private-capital LP teams using the Chronograph connector: cashflow forecasting, commitment pacing, look-through exposure scans and GP-meeting prep. Requires a Chronograph account and the Chronograph connector.",
+      "displayName": "Chronograph LP",
+      "homepage": "https://www.chronograph.pe/",
+      "icon": {
+        "asset": "icon-d3cae2ef925520f68fc4f1896d39da43.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-d3cae2ef925520f68fc4f1896d39da43.png",
+        "bytes": 277,
+        "contentType": "image/png",
+        "digest": "sha256:d3cae2ef925520f68fc4f1896d39da43e620d4e2d79859507114dddfaaf54a41",
+        "homepage": "https://www.chronograph.pe/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.chronograph.pe/wp-content/themes/chronograph/assets/images/favicon/apple-touch-icon.png"
+      },
+      "keywords": [
+        "chronograph",
+        "lp",
+        "productivity"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 351,
+        "text": "CL"
+      },
+      "pluginId": "plugin:claude-official:chronograph-lp",
+      "primaryCategory": "finance",
+      "productKey": "chronograph-lp",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "322b2d3fbd4db0a2eeed117e3b3c31522408ae6f"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:a40f9d1aa550e06b8a9a79ae3892f6554b22a8e8eaebbb615733146cb05f59e3",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:1a14882246254bc4c47b07eea5717d61ee1b3986a5d300462ce9e5bb0de1cd53",
+        "packageStatus": "partial",
+        "releaseId": "release:5011164cf05e3110f6293fcfd425999a873e76448682a6373ed8627297ded1e7",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "322b2d3fbd4db0a2eeed117e3b3c31522408ae6f",
+        "upstreamVersion": "0.2.4"
+      },
+      "releaseId": "release:5011164cf05e3110f6293fcfd425999a873e76448682a6373ed8627297ded1e7",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "chronograph-lp",
+      "variantPluginIds": [
+        "plugin:claude-official:chronograph-lp",
+        "plugin:knowledge-work-official:chronograph-lp"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "agent": 6,
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Ready-to-run workflows for financial advisors in Claude Cowork, drawing live data from the tools their firm already uses through third-party connectors. The plugin holds no client data, and the advisor approves any write back to an external system. Claude gathers, organizes, summarizes, compares and presents information, while the advisor exercises judgment, makes the recommendation and gives the advice. For financial professional use only; not investment, legal, or tax advice.",
+      "displayName": "Claude for Financial Advisors",
+      "homepage": "https://github.com/anthropics/claude-for-financial-advisors",
+      "icon": null,
+      "keywords": [
+        "advisors",
+        "claude",
+        "finance",
+        "financial",
+        "for"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 162,
+        "text": "CF"
+      },
+      "pluginId": "plugin:knowledge-work-official:claude-for-financial-advisors",
+      "primaryCategory": "finance",
+      "productKey": "claude-for-financial-advisors",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "96fbcb4797758186786c50dd1a09ce2feac6e18c"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:21c1062203a21fbae7090ed275236dff4ea1fcd0adca07dbd76d27577ae14c0b",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:3531861aeb2a33acb3cbdab090ce13f2ff1ffa01beb11678c81e645b9a2aad48",
+        "packageStatus": "partial",
+        "releaseId": "release:859a7a5c93b13c0cf5b7b19a8c642dac7b6ba2f14f82f0b5106f1f9b63af060b",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "96fbcb4797758186786c50dd1a09ce2feac6e18c",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:859a7a5c93b13c0cf5b7b19a8c642dac7b6ba2f14f82f0b5106f1f9b63af060b",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "claude-for-financial-advisors",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:claude-for-financial-advisors"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 21
+      },
+      "categories": [
+        "data-analytics",
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Financial analysis skills powered by Daloopa's institutional-grade data",
+      "displayName": "Daloopa",
+      "homepage": "https://github.com/daloopa/plugin",
+      "icon": {
+        "asset": "icon-a5fce38fb9723e9e29081544a1bd20d0.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a5fce38fb9723e9e29081544a1bd20d0.png",
+        "bytes": 19473,
+        "contentType": "image/png",
+        "digest": "sha256:a5fce38fb9723e9e29081544a1bd20d00613dc3058660d7bd45e36b7f94df5ae",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "daloopa",
+        "data-analytics",
+        "finance"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 153,
+        "text": "DA"
+      },
+      "pluginId": "plugin:knowledge-work-official:daloopa",
+      "primaryCategory": "data-analytics",
+      "productKey": "daloopa",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "fb1ed7a6e0fd2c430e8f89b952cdd0f34137cde9"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:70299c4eac4bbe619857de1fa194eda0a53830c111d41e18d607919f7f3722cf",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:65f44eac7e5209668d3492a41443304e052ca54b97f9bf96f819bff9f162b81a",
+        "packageStatus": "partial",
+        "releaseId": "release:29962241f909f7fd3054c7304e6ae7bef4285908f9294697215ab16ef54a4dbd",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fb1ed7a6e0fd2c430e8f89b952cdd0f34137cde9",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:29962241f909f7fd3054c7304e6ae7bef4285908f9294697215ab16ef54a4dbd",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "daloopa",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:daloopa",
+        "plugin:cursor-official:daloopa"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Cursor"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Link your bank, card, and investment accounts through Plaid so Grok can answer questions about balances, spending, subscriptions, and investments. You'll share contact details, account and balance info, transactions, credit and loans, and investments. Grok syncs and stores your linked account data so the connector can work, and Grok Bot's privacy mode still controls whether your conversations are stored or used for training. Access is read-only, xAI never sees or stores your bank login, and you can unlink accounts anytime from cursor.com.",
+      "displayName": "Finance",
+      "icon": {
+        "asset": "icon-64cc327564fc9077cb80564bbf12190b.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-64cc327564fc9077cb80564bbf12190b.svg",
+        "bytes": 959,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:64cc327564fc9077cb80564bbf12190ba6c6f19093f3db2ef0f82d25f8584e23",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "finance"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 51,
+        "text": "FI"
+      },
+      "pluginId": "plugin:cursor-official:finance",
+      "primaryCategory": "finance",
+      "productKey": "finance",
+      "provenance": {
+        "manifestPath": ".cursor-plugin/marketplace.json",
+        "pluginSubdirectory": "third_party/finance",
+        "repositoryUrl": "https://github.com/cursor/plugins",
+        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:8eced4707fee49a659046e3713a476964ecbd4fafdb8818f2006fa9e5bc142e9",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:59371cdb17a25646b2ae25eb2990ade1f6fc4f96f8c3fda972c6234a5d69390a",
+        "packageStatus": "portable",
+        "releaseId": "release:2d793600f9c0f4febb12231a8b45dd500d9ea3840d3e5a8c1e49c21f0b29d37d",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "upstreamVersion": "1.1.2"
+      },
+      "releaseId": "release:2d793600f9c0f4febb12231a8b45dd500d9ea3840d3e5a8c1e49c21f0b29d37d",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "cursor-official",
+      "upstreamName": "finance",
+      "variantPluginIds": [
+        "plugin:cursor-official:finance",
+        "plugin:knowledge-work-official:finance"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Intuit QuickBooks"
+      ],
+      "capabilitySummary": {
+        "skill": 10
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "QuickBooks business insights and actions: financial health briefings across P&L, cash flow, balance sheet and A/R, industry benchmarking, payroll cost analysis, overdue-invoice reminders, estimate/invoice drafting from email, payroll onboarding and base-pay changes (with confirmation), and QuickBooks Capital lending guidance. Requires the Intuit QuickBooks connector.",
+      "displayName": "Intuit QuickBooks",
+      "homepage": "https://github.com/intuit/quickbooks-claude-plugin",
+      "icon": {
+        "asset": "icon-e7cfeb0977bcceec6e993302f32442e6.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-e7cfeb0977bcceec6e993302f32442e6.ico",
+        "bytes": 18686,
+        "contentType": "image/x-icon",
+        "digest": "sha256:e7cfeb0977bcceec6e993302f32442e6c913764f8ce56341969879386f95a306",
+        "homepage": "https://opensource.intuit.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://opensource.intuit.com/favicon.ico"
+      },
+      "keywords": [
+        "intuit",
+        "productivity",
+        "quickbooks"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 297,
+        "text": "IQ"
+      },
+      "pluginId": "plugin:claude-official:intuit-quickbooks",
+      "primaryCategory": "finance",
+      "productKey": "intuit-quickbooks",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "c8daa17a64d4d0fdeabdf0516524f72549b6ad19"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:bea407bca688ed7a6f97c1fb8a353ed54ba27c2de8f66dfd23ae733859fc9b37",
+        "capabilities": [
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:3f4bab39e86635c6b21f0c6837ca3a8fb368a564a42b2c42c1feb33c2a897bfe",
+        "packageStatus": "portable",
+        "releaseId": "release:0abcad214edeb5e29a1aa90ef244b13822f542b98a8a811d1b3bb6319bc5fe20",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "c8daa17a64d4d0fdeabdf0516524f72549b6ad19",
+        "upstreamVersion": "0.1.0"
+      },
+      "releaseId": "release:0abcad214edeb5e29a1aa90ef244b13822f542b98a8a811d1b3bb6319bc5fe20",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "intuit-quickbooks",
+      "variantPluginIds": [
+        "plugin:claude-official:intuit-quickbooks",
+        "plugin:knowledge-work-official:intuit-quickbooks"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "command": 8,
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Price bonds, analyze yield curves, evaluate FX carry trades, value options, and build macro dashboards using LSEG financial data and analytics.",
+      "displayName": "LSEG",
+      "homepage": "https://github.com/LSEG-API-Samples/lseg-claude-plugin",
+      "icon": {
+        "asset": "icon-439bfd39ab5f3067ed64e8c64c9cd483.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-439bfd39ab5f3067ed64e8c64c9cd483.ico",
+        "bytes": 15406,
+        "contentType": "image/x-icon",
+        "digest": "sha256:439bfd39ab5f3067ed64e8c64c9cd4835896494e27e5cf2fd47568e3f11418d2",
+        "homepage": "https://www.lseg.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.lseg.com/favicon.ico"
+      },
+      "keywords": [
+        "finance",
+        "lseg"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 234,
+        "text": "LS"
+      },
+      "pluginId": "plugin:knowledge-work-official:lseg",
+      "primaryCategory": "finance",
+      "productKey": "lseg",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "44422c8ad8366d27d872363981b459912b0db2f4"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:3d2bafc5bbd1b8102f3ce91f3a563541cb50bd17a40f42c3ec8dd593b0246faa",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:ad40c2b415b8714e0c21b0e114e20d5f39b2051afeb5756ed48432f139e93a58",
+        "packageStatus": "partial",
+        "releaseId": "release:89825506fc954c1048ffb3fb4f30dc1004cf8263c2434562656e67c97c6e7e39",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "44422c8ad8366d27d872363981b459912b0db2f4",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:89825506fc954c1048ffb3fb4f30dc1004cf8263c2434562656e67c97c6e7e39",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "lseg",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:lseg"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Unknown"
+      ],
+      "capabilitySummary": {
+        "agent": 23,
+        "executable": 135,
+        "skill": 23
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Public equity investing workflows for listed-company research, earnings analysis, valuation, model updates, long/short pitches, catalysts, thesis tracking, ETF/index and constituent diligence, sell-side research notes, risk sizing, hedging, dashboards, and investment memos.",
+      "displayName": "Public Equity Investing",
+      "icon": {
+        "asset": "icon-0fb0504afd09933dd2a2c8f94e18475d.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-0fb0504afd09933dd2a2c8f94e18475d.svg",
+        "bytes": 513,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:0fb0504afd09933dd2a2c8f94e18475da84094c7f84be36945efcd3847c9fa4f",
+        "homepage": null,
+        "kind": "content",
+        "path": "skills/meeting-prep/assets/icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "equity",
+        "finance",
+        "investing",
+        "public"
+      ],
+      "license": "Proprietary",
+      "monogram": {
+        "hue": 105,
+        "text": "PE"
+      },
+      "pluginId": "plugin:openai-official:public-equity-investing",
+      "primaryCategory": "finance",
+      "productKey": "public-equity-investing",
+      "provenance": {
+        "manifestPath": ".agents/plugins/marketplace.json",
+        "pluginSubdirectory": "plugins/public-equity-investing",
+        "repositoryUrl": "https://github.com/openai/plugins",
+        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:bad7f52213e9c30a393be9cb1e1df3545296d537bf17db5f7c0549761c638977",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:cf4113711ce3fb40f10006e5ce7943042cc326d178cec9855ce322defd7a9daa",
+        "packageStatus": "portable",
+        "releaseId": "release:90687dbe944097ee6565cac71c4e25ffc5ca41947dfc0ad8267f6950b75f5f27",
+        "requiredConnectors": [],
+        "requiredCredentials": [
+          "authentication"
+        ],
+        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "upstreamVersion": "0.1.31"
+      },
+      "releaseId": "release:90687dbe944097ee6565cac71c4e25ffc5ca41947dfc0ad8267f6950b75f5f27",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "openai-official",
+      "upstreamName": "public-equity-investing",
+      "variantPluginIds": [
+        "plugin:openai-official:public-equity-investing"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 3
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "S&P Global - Financial data and analytics skills including company tearsheets, earnings previews, and transaction summaries",
+      "displayName": "S&P Global",
+      "homepage": "https://kensho.com/",
+      "icon": {
+        "asset": "icon-4c4c3f44acf96a54267911f088006307.webp",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-4c4c3f44acf96a54267911f088006307.webp",
+        "bytes": 4284,
+        "contentType": "image/webp",
+        "digest": "sha256:4c4c3f44acf96a54267911f08800630714dc4a953c170aecf0772f56934117bd",
+        "homepage": "https://kensho.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://images.squarespace-cdn.com/content/v1/6970e57a847a982ccab43554/a2fbb6b0-b249-49c4-a6e8-b4a348c748a7/favicon.ico?format=300w"
+      },
+      "keywords": [
+        "finance",
+        "global",
+        "sp"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 27,
+        "text": "SP"
+      },
+      "pluginId": "plugin:knowledge-work-official:sp-global",
+      "primaryCategory": "finance",
+      "productKey": "sp-global",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/spglobal-plugin",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "1d7d364a07d755d401b6f66d41affe71bc62a9b9"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:2edcc02a432d736a6bf8d7136a15a992609cf1ffcdc231266d5bf72642cd5107",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:b70c9ddf20cf964d1239b15f27aba6b7ba9defd30ffcc834508f865841491bdf",
+        "packageStatus": "partial",
+        "releaseId": "release:9cd3c4298a32ba297ef3641f94042a3fdc3b5d9788c3f64d3977e636056a3b24",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "1d7d364a07d755d401b6f66d41affe71bc62a9b9",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:9cd3c4298a32ba297ef3641f94042a3fdc3b5d9788c3f64d3977e636056a3b24",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "sp-global",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:sp-global",
+        "plugin:cursor-official:sp-global"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Unknown"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 7
+      },
+      "categories": [
+        "finance"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Develop your payments integration faster with the ability to create products, prices, and payment links directly in ChatGPT. Run your business from ChatGPT with the ability to retrieve and manage payments, subscriptions, invoices, refunds, disputes, and customers. Build and debug your payment integration quicker than ever by searching the Stripe documentation and getting integration recommendations without needing to leave ChatGPT.",
+      "displayName": "Stripe",
+      "icon": {
+        "asset": "icon-8034d1975f2ff4408cb399089eb6c4b5.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8034d1975f2ff4408cb399089eb6c4b5.png",
+        "bytes": 2370,
+        "contentType": "image/png",
+        "digest": "sha256:8034d1975f2ff4408cb399089eb6c4b575a7ebe267063c2074327e64a710732c",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "finance",
+        "stripe"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 93,
+        "text": "ST"
+      },
+      "pluginId": "plugin:openai-official:stripe",
+      "primaryCategory": "finance",
+      "productKey": "stripe",
+      "provenance": {
+        "manifestPath": ".agents/plugins/marketplace.json",
+        "pluginSubdirectory": "plugins/stripe",
+        "repositoryUrl": "https://github.com/openai/plugins",
+        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:0447f9dba6e44bd422ba5cc2fa7e1c89074e054910c2d29ac5bea7d84514b0a4",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:ff6844bc613c110fcb2ab97b0218a589be929844c47737212a8497be7e3bf17e",
+        "packageStatus": "partial",
+        "releaseId": "release:ae03c35346b337ef7eb34714e1241207d88015d42cc502e6ca3c93ea35738679",
+        "requiredConnectors": [],
+        "requiredCredentials": [
+          "authentication"
+        ],
+        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "upstreamVersion": "7.0.0"
+      },
+      "releaseId": "release:ae03c35346b337ef7eb34714e1241207d88015d42cc502e6ca3c93ea35738679",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "openai-official",
+      "upstreamName": "stripe",
+      "variantPluginIds": [
+        "plugin:openai-official:stripe"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Wingspan"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Ask Claude about the contractors you pay through Wingspan, what you owe them, and what is holding up a payment, then onboard contractors and log payments as drafts, with a preview before anything is written. Requires a Wingspan account; bundles the Wingspan MCP server (OAuth on first use).",
+      "displayName": "Wingspan",
+      "homepage": "https://github.com/wingspanHQ/mcp-claude-plugin",
+      "icon": {
+        "asset": "icon-49671eb764e3156854fc65a3c110c4ed.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-49671eb764e3156854fc65a3c110c4ed.png",
+        "bytes": 7183,
+        "contentType": "image/png",
+        "digest": "sha256:49671eb764e3156854fc65a3c110c4ed411fa75a97b5909a92d1deef433e5a24",
+        "homepage": "https://wingspan.app/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://wingspan.app/apple-touch-icon.png"
+      },
+      "keywords": [
+        "productivity",
+        "wingspan"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 318,
+        "text": "WI"
+      },
+      "pluginId": "plugin:claude-official:wingspan",
+      "primaryCategory": "finance",
+      "productKey": "wingspan",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "01f2b0806fc91d0550859a7f840db353d1edd4e9"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:f7bd68ef21ba17daeff894a39a7ff2b340c8c830fd0b7b877738adaf6ab6c79f",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:fd0184a50dff1232b81c645570cbb3d2094ae91b0a4f10ca6fd3858be083914e",
+        "packageStatus": "partial",
+        "releaseId": "release:7d931c6ddf8ad6fac6098e9dbfab858160ed47ee485769f6501c165bd2f74411",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "01f2b0806fc91d0550859a7f840db353d1edd4e9",
+        "upstreamVersion": "0.1.0"
+      },
+      "releaseId": "release:7d931c6ddf8ad6fac6098e9dbfab858160ed47ee485769f6501c165bd2f74411",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "wingspan",
+      "variantPluginIds": [
+        "plugin:claude-official:wingspan",
+        "plugin:knowledge-work-official:wingspan"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Zocks"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 7
+      },
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Seven skills for financial advisors built on Zocks meeting intelligence: client behavioral profiles, attrition-risk ranking, held-away asset radar, client journey dossiers, household review packs, next-best-action analysis and a tax opportunity scan. Requires the Zocks connector and a Zocks account.",
+      "displayName": "Zocks Advisor Intelligence",
+      "homepage": "https://github.com/zocks-communications/zocks-agent-plugins",
+      "icon": {
+        "asset": "icon-290c29dc43325277aea74f5632442bc5.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-290c29dc43325277aea74f5632442bc5.png",
+        "bytes": 2625,
+        "contentType": "image/png",
+        "digest": "sha256:290c29dc43325277aea74f5632442bc569d7c66abda9b5d341b51f707a8da3b7",
+        "homepage": "https://www.zocks.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://cdn.prod.website-files.com/67f74eda1b8c9b4c09dc5893/68e8aee2fb5a42ad37ccfb2f_Fav_%20256%20x%20256.png"
+      },
+      "keywords": [
+        "advisor",
+        "productivity",
+        "zocks"
+      ],
+      "license": "LicenseRef-Zocks-Modified-Apache-2.0",
+      "monogram": {
+        "hue": 129,
+        "text": "ZA"
+      },
+      "pluginId": "plugin:claude-official:zocks-advisor",
+      "primaryCategory": "finance",
+      "productKey": "zocks-advisor",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "a3e445c139665055c2f22f25c9a9f8721a7c6355"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:a7c7d2f9c4a7c20a70a76afd4b3057a01d865229378b3a078e096c113ffb0ef0",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:e380e395ace13305a56f51328edeafd363a4bfbd48b34905ee7b26d0b6220f09",
+        "packageStatus": "portable",
+        "releaseId": "release:3f890a7f39aa07b36f3ee35a2cd000a50eeef969eb15dc1e7ec6ef0d5a6c5832",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "a3e445c139665055c2f22f25c9a9f8721a7c6355",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:3f890a7f39aa07b36f3ee35a2cd000a50eeef969eb15dc1e7ec6ef0d5a6c5832",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "zocks-advisor",
+      "variantPluginIds": [
+        "plugin:claude-official:zocks-advisor",
+        "plugin:knowledge-work-official:zocks-advisor"
+      ],
+      "variantsIdentical": true
+    }
+  ],
+  "schemaVersion": 1
+}

@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:8e4a13cf4df60f9ca3ba27ee5f2c60d196c039d8e60f534095a55766c576c1de",
+  "catalogId": "catalog:46639457dd9268f619932be85e31428e3c494186547ca029c6262fb2c90df647",
   "categories": [
     {
       "category": "business-operations",
@@ -523,7 +523,7 @@
     "products": 422,
     "redundantPlugins": 114
   },
-  "generatedAt": "2026-09-26T17:57:34.367Z",
+  "generatedAt": "2026-09-26T20:45:12.068Z",
   "products": {
     "42crunch-api-security-testing": {
       "authors": [
@@ -28995,11 +28995,11 @@
       "displayName": "Qodo",
       "homepage": "https://github.com/qodo-ai/qodo-skills.git",
       "icon": {
-        "asset": "icon-8a338496614f7dac92f3f044f4e81447.png",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
-        "bytes": 15908,
-        "contentType": "image/png",
-        "digest": "sha256:8a338496614f7dac92f3f044f4e814472757cfe1056d3130ea66edd0f4645a78",
+        "asset": "icon-505d7841292488b3d76c2c3135253a6b.webp",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-505d7841292488b3d76c2c3135253a6b.webp",
+        "bytes": 10022,
+        "contentType": "image/webp",
+        "digest": "sha256:505d7841292488b3d76c2c3135253a6bdd804d771829cbba1f02c75287041cff",
         "homepage": "https://qodo.ai/",
         "kind": "favicon",
         "path": null,
@@ -29086,11 +29086,11 @@
       "displayName": "Qodo Standards",
       "homepage": "https://github.com/qodo-ai/qodo-skills.git",
       "icon": {
-        "asset": "icon-8a338496614f7dac92f3f044f4e81447.png",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
-        "bytes": 15908,
-        "contentType": "image/png",
-        "digest": "sha256:8a338496614f7dac92f3f044f4e814472757cfe1056d3130ea66edd0f4645a78",
+        "asset": "icon-505d7841292488b3d76c2c3135253a6b.webp",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-505d7841292488b3d76c2c3135253a6b.webp",
+        "bytes": 10022,
+        "contentType": "image/webp",
+        "digest": "sha256:505d7841292488b3d76c2c3135253a6bdd804d771829cbba1f02c75287041cff",
         "homepage": "https://qodo.ai/",
         "kind": "favicon",
         "path": null,

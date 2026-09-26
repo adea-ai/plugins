@@ -1,0 +1,1861 @@
+{
+  "catalogId": "catalog:46639457dd9268f619932be85e31428e3c494186547ca029c6262fb2c90df647",
+  "category": "security",
+  "pluginCount": 24,
+  "productCount": 19,
+  "products": [
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "skill": 5
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Skills for working with NightVision, a DAST and API Discovery platform that finds exploitable vulnerabilities in web applications and REST APIs",
+      "displayName": "Nightvision",
+      "homepage": "https://github.com/nvsecurity/nightvision-skills",
+      "icon": {
+        "asset": "icon-cee14d54dd789fda5a542d3e19f38eaf.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-cee14d54dd789fda5a542d3e19f38eaf.png",
+        "bytes": 3187,
+        "contentType": "image/png",
+        "digest": "sha256:cee14d54dd789fda5a542d3e19f38eafbf731e9cdc489dfd6ecc4a334de3020f",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/nv-icon.png",
+        "url": null
+      },
+      "keywords": [
+        "nightvision",
+        "security"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 186,
+        "text": "NI"
+      },
+      "pluginId": "plugin:claude-official:nightvision",
+      "primaryCategory": "security",
+      "productKey": "nightvision",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "957db6bb934839275c0f643042101bbb675ddbf7"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:773059e0bec8ee104a09636d99eb823bc606377d4f4737d3b0317193e3376cf0",
+        "capabilities": [
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:bd6966e637906e4dae3f2db9020017ae9031abd444dfdcc4fd7732bb52233df9",
+        "packageStatus": "portable",
+        "releaseId": "release:28eb421af30fd80f794ba2f7cedc52681f5731c00b78ec6061c28f10ea6049df",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "957db6bb934839275c0f643042101bbb675ddbf7",
+        "upstreamVersion": "1.1.0"
+      },
+      "releaseId": "release:28eb421af30fd80f794ba2f7cedc52681f5731c00b78ec6061c28f10ea6049df",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "nightvision",
+      "variantPluginIds": [
+        "plugin:claude-official:nightvision"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Zscaler"
+      ],
+      "capabilitySummary": {
+        "command": 20,
+        "executable": 267,
+        "mcp-server": 4,
+        "rule": 8,
+        "skill": 43
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Manage Zscaler cloud security platform including ZPA (private access), ZIA (internet access), ZDX (digital experience), ZCC (client connector), EASM (attack surface), and Z-Insights (analytics). Create and manage policies, troubleshoot connectivity, audit security configurations, and investigate incidents across the full Zscaler ecosystem.",
+      "displayName": "Zscaler",
+      "homepage": "https://github.com/zscaler/zscaler-mcp-server",
+      "icon": {
+        "asset": "icon-fb71a91ef4937bdac04520d7e7b1852b.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-fb71a91ef4937bdac04520d7e7b1852b.svg",
+        "bytes": 2489,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:fb71a91ef4937bdac04520d7e7b1852bb28635ae850934d440360ccc8142c1a4",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "security",
+        "zscaler"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 66,
+        "text": "ZS"
+      },
+      "pluginId": "plugin:claude-official:zscaler",
+      "primaryCategory": "security",
+      "productKey": "zscaler",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "809f68d6c921e0829fb2e07e9b797e7e70cf720b"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:33a777f5f7e1946c09e9fe304c4c3db3f48f5d83b95685b9fd3b359e06697f01",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:34af2ba26b8be320e6f55bcc06f0e26e4404eed9d0df5504ee5136a434772449",
+        "packageStatus": "partial",
+        "releaseId": "release:100f390c6836dcf44cb6afe39d5ecd3b853344bf40d40de5a0a6a61c9f361113",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "809f68d6c921e0829fb2e07e9b797e7e70cf720b",
+        "upstreamVersion": "0.15.4"
+      },
+      "releaseId": "release:100f390c6836dcf44cb6afe39d5ecd3b853344bf40d40de5a0a6a61c9f361113",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "zscaler",
+      "variantPluginIds": [
+        "plugin:claude-official:zscaler"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "42Crunch"
+      ],
+      "capabilitySummary": {
+        "skill": 5
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Automate API security directly in Claude Code with 42Crunch - automatically audit OpenAPI specs, detect vulnerabilities aligned with OWASP API Security risks (including BOLA/BFLA), and apply AI-powered fixes. Designed for AI-assisted development workflows, it provides continuous guardrails through an audit->scan->remediate->validate loop, ensuring APIs meet enterprise security standards before deployment.",
+      "displayName": "42Crunch API Security Testing",
+      "homepage": "https://42crunch.com/",
+      "icon": {
+        "asset": "icon-5d4bbaf47f8d198da2ef59d8234d3885.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-5d4bbaf47f8d198da2ef59d8234d3885.png",
+        "bytes": 1280,
+        "contentType": "image/png",
+        "digest": "sha256:5d4bbaf47f8d198da2ef59d8234d3885aa89ae7f4dadf584217cb6c69b197943",
+        "homepage": "https://42crunch.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://42crunch.com/img/42crunch-symbol-32.png"
+      },
+      "keywords": [
+        "42crunch",
+        "api",
+        "security",
+        "testing"
+      ],
+      "license": "Apache 2.0",
+      "monogram": {
+        "hue": 225,
+        "text": "4A"
+      },
+      "pluginId": "plugin:claude-official:42crunch-api-security-testing",
+      "primaryCategory": "security",
+      "productKey": "42crunch-api-security-testing",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/api-security-testing",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "30287f5e3f122a646d1ac5ca3ab96e130c52a3ad"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:06f9347a25e46759fddb24ac9ba90a794ef663af1afdeeae2155c25a560ac8dc",
+        "capabilities": [
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:e55c42c2ae2d79c832747b2a65c60f243c01d5f2188bbd921b5e7ea796855a28",
+        "packageStatus": "portable",
+        "releaseId": "release:1764971ed2634dfa69002e5c1f35b75c1907053f6a12ae41771e214c1cdc6b61",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "30287f5e3f122a646d1ac5ca3ab96e130c52a3ad",
+        "upstreamVersion": "1.15.0"
+      },
+      "releaseId": "release:1764971ed2634dfa69002e5c1f35b75c1907053f6a12ae41771e214c1cdc6b61",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "42crunch-api-security-testing",
+      "variantPluginIds": [
+        "plugin:claude-official:42crunch-api-security-testing"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Auth0"
+      ],
+      "capabilitySummary": {
+        "agent": 1,
+        "executable": 2,
+        "skill": 1
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Enterprise-grade auth, easy to implement. Add login, SSO, MFA, and access control to any app with framework-aware guidance.",
+      "displayName": "Auth0",
+      "homepage": "https://auth0.com/",
+      "icon": {
+        "asset": "icon-d07ba65f41b524aee6d51d7a9e1ec35d.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-d07ba65f41b524aee6d51d7a9e1ec35d.png",
+        "bytes": 58940,
+        "contentType": "image/png",
+        "digest": "sha256:d07ba65f41b524aee6d51d7a9e1ec35d88b92ef2bca44f81aea9f9f9cfc7a075",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.png",
+        "url": null
+      },
+      "keywords": [
+        "auth0",
+        "security"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 66,
+        "text": "AU"
+      },
+      "pluginId": "plugin:claude-official:auth0",
+      "primaryCategory": "security",
+      "productKey": "auth0",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/auth0",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "df772d3950fbe7259237a373eaa2665d7e946830"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:2cd30c3bafd0a482efd3b5044c9c18be9404646930d25658e1e3afb2e875e60b",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:4ffd8e618ef7892b3b8009c8a6e5b70fbf90a5bfc247da88d88fad88631e1f4f",
+        "packageStatus": "partial",
+        "releaseId": "release:64dc19e36d786e0628d3087f13a1c836ab03cbfc9c9508411185247d415b47c7",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "df772d3950fbe7259237a373eaa2665d7e946830",
+        "upstreamVersion": "2.1.1"
+      },
+      "releaseId": "release:64dc19e36d786e0628d3087f13a1c836ab03cbfc9c9508411185247d415b47c7",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "auth0",
+      "variantPluginIds": [
+        "plugin:claude-official:auth0",
+        "plugin:knowledge-work-official:auth0"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "agent": 9,
+        "executable": 22,
+        "hook": 3,
+        "skill": 1
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Deep vulnerability scanning of your own code, run entirely inside your Claude Code session at a chosen effort tier, with every finding challenged before it is reported and the verification tally computed in code. Turns surviving findings into targeted patches, each verified by a panel of agents, that you apply when you choose.",
+      "displayName": "Claude Security",
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-security",
+      "icon": null,
+      "keywords": [
+        "claude",
+        "security"
+      ],
+      "license": "SEE LICENSE IN LICENSE",
+      "monogram": {
+        "hue": 192,
+        "text": "CS"
+      },
+      "pluginId": "plugin:claude-official:claude-security",
+      "primaryCategory": "security",
+      "productKey": "claude-security",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/claude-security",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:9a181fad2ad1673e05007fffbe259ddffa70149f8f2aa6c14309a848027487fe",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:a642243f4885444f7f37cc514a7d1d23e33caee7dab1be904ba8d72d2519172c",
+        "packageStatus": "partial",
+        "releaseId": "release:baef07253a3f8a5cdb55c7de7af1355681d48d9250290007d739add272a7a824",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fa59bc9037741ecfa131aa27938272605710d7b2",
+        "upstreamVersion": "0.12.0"
+      },
+      "releaseId": "release:baef07253a3f8a5cdb55c7de7af1355681d48d9250290007d739add272a7a824",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "claude-security",
+      "variantPluginIds": [
+        "plugin:claude-official:claude-security"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Unknown"
+      ],
+      "capabilitySummary": {
+        "agent": 15,
+        "executable": 43,
+        "mcp-server": 2,
+        "skill": 15
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Codex Security workflows for security scans, analysis, and investigation.",
+      "displayName": "Codex Security",
+      "icon": {
+        "asset": "icon-9b9c2b09b2fa064611fb62307d321d5c.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-9b9c2b09b2fa064611fb62307d321d5c.png",
+        "bytes": 99567,
+        "contentType": "image/png",
+        "digest": "sha256:9b9c2b09b2fa064611fb62307d321d5c2ea70cf0789f7ce34cdb0fc0d9190b3a",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.png",
+        "url": null
+      },
+      "keywords": [
+        "codex",
+        "security"
+      ],
+      "license": "Proprietary",
+      "monogram": {
+        "hue": 234,
+        "text": "CS"
+      },
+      "pluginId": "plugin:openai-official:codex-security",
+      "primaryCategory": "security",
+      "productKey": "codex-security",
+      "provenance": {
+        "manifestPath": ".agents/plugins/marketplace.json",
+        "pluginSubdirectory": "plugins/codex-security",
+        "repositoryUrl": "https://github.com/openai/plugins",
+        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:af19890f0d14251412a14b7d3d1146e4569bb3f2825f93944e414e00a64c3e24",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:7e5ca016f78e7d406f88787f8d241f6158c85a930e5744a3bfd9dc47822a65a3",
+        "packageStatus": "partial",
+        "releaseId": "release:666dadae53ec6ab15e72e294cec313193d5de1ea56f33b1083c4dd288709f08e",
+        "requiredConnectors": [],
+        "requiredCredentials": [
+          "authentication"
+        ],
+        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "upstreamVersion": "0.1.24"
+      },
+      "releaseId": "release:666dadae53ec6ab15e72e294cec313193d5de1ea56f33b1083c4dd288709f08e",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "openai-official",
+      "upstreamName": "codex-security",
+      "variantPluginIds": [
+        "plugin:openai-official:codex-security"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "CrowdSec"
+      ],
+      "capabilitySummary": {
+        "executable": 2,
+        "rule": 1,
+        "skill": 2
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Operational skill for installing, configuring, operating, and debugging CrowdSec (cscli, LAPI/CAPI, hub, bouncers, WAF/AppSec) across bare-metal, Docker, and Kubernetes.",
+      "displayName": "CrowdSec",
+      "homepage": "https://www.crowdsec.net/",
+      "icon": {
+        "asset": "icon-74e50edb9b2aef28e6c4020c23590a29.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-74e50edb9b2aef28e6c4020c23590a29.ico",
+        "bytes": 15406,
+        "contentType": "image/x-icon",
+        "digest": "sha256:74e50edb9b2aef28e6c4020c23590a294310bc9ba643580b1086242937792ce5",
+        "homepage": "https://www.crowdsec.net/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.crowdsec.net/favicon.ico"
+      },
+      "keywords": [
+        "crowdsec",
+        "security"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 228,
+        "text": "CR"
+      },
+      "pluginId": "plugin:claude-official:crowdsec",
+      "primaryCategory": "security",
+      "productKey": "crowdsec",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "517173c3899b165934f06042e3737aae94685b07"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:9300ca8703e58711e484b5accde8a4276d0a13951c42abd9b891910c5b02f4ff",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:573ca985e963c1357318ca913d445b9e40412dd677dc02f8899bf37eb05fcc78",
+        "packageStatus": "partial",
+        "releaseId": "release:e3e7e792d4c60fb5e2cde85750a6a898b8c120353922c7c889194071f40f30bc",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "517173c3899b165934f06042e3737aae94685b07",
+        "upstreamVersion": "0.3.0"
+      },
+      "releaseId": "release:e3e7e792d4c60fb5e2cde85750a6a898b8c120353922c7c889194071f40f30bc",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "crowdsec",
+      "variantPluginIds": [
+        "plugin:claude-official:crowdsec"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "CrowdStrike"
+      ],
+      "capabilitySummary": {
+        "executable": 21,
+        "hook": 5,
+        "rule": 2,
+        "skill": 11
+      },
+      "categories": [
+        "developer-tools",
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "CrowdStrike Falcon Foundry development skills for building cybersecurity applications on the Falcon platform. Includes UI development, collections, functions, workflows, API integration, security patterns, and debugging workflows.",
+      "displayName": "CrowdStrike Falcon Foundry",
+      "homepage": "https://github.com/CrowdStrike/foundry-skills",
+      "icon": {
+        "asset": "icon-61f4d2f3d6ec66f6fc081e554339de24.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-61f4d2f3d6ec66f6fc081e554339de24.png",
+        "bytes": 29441,
+        "contentType": "image/png",
+        "digest": "sha256:61f4d2f3d6ec66f6fc081e554339de247cf2cda4f7192cb26fe24e2ef3bce45b",
+        "homepage": null,
+        "kind": "content",
+        "path": "images/cs-logo.png",
+        "url": null
+      },
+      "keywords": [
+        "crowdstrike",
+        "falcon",
+        "foundry",
+        "security"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 237,
+        "text": "CF"
+      },
+      "pluginId": "plugin:claude-official:crowdstrike-falcon-foundry",
+      "primaryCategory": "developer-tools",
+      "productKey": "crowdstrike-falcon-foundry",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "7f7d46687c16a9a37c9b08ad58ad58999aabe497"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d1d0e67cbe3b9a86638f12a30cc0620b0f98d1c5f37fd33ab78c08bb1b401364",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:7df0ed47c4b78bbf02c7026e2b1f22779cb6b2195e33316a0ff14ce17471d181",
+        "packageStatus": "partial",
+        "releaseId": "release:43c693e424862ad2e222313ce46f376d04d0d8da22787ee477fd8564663a07c4",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "7f7d46687c16a9a37c9b08ad58ad58999aabe497",
+        "upstreamVersion": "1.5.0"
+      },
+      "releaseId": "release:43c693e424862ad2e222313ce46f376d04d0d8da22787ee477fd8564663a07c4",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "crowdstrike-falcon-foundry",
+      "variantPluginIds": [
+        "plugin:claude-official:crowdstrike-falcon-foundry",
+        "plugin:openai-official:crowdstrike-falcon-foundry"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "CrowdStrike"
+      ],
+      "capabilitySummary": {
+        "executable": 64,
+        "hook": 4,
+        "rule": 2,
+        "skill": 7
+      },
+      "categories": [
+        "developer-tools",
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "CrowdStrike Falcon Fusion skills for authoring, deploying, and executing Fusion workflows. Includes live action discovery, YAML authoring with schema validation, workflow import and release, execution monitoring, and Falcon Next-Gen SIEM lookup files.",
+      "displayName": "CrowdStrike Falcon Fusion",
+      "homepage": "https://github.com/CrowdStrike/fusion-skills",
+      "icon": {
+        "asset": "icon-5132bd5af60a22182bd531e1e9e3f0f1.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-5132bd5af60a22182bd531e1e9e3f0f1.png",
+        "bytes": 10229,
+        "contentType": "image/png",
+        "digest": "sha256:5132bd5af60a22182bd531e1e9e3f0f11784038b0ef2ef611459af7b80cb6ff9",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/crowdstrike-logo.png",
+        "url": null
+      },
+      "keywords": [
+        "crowdstrike",
+        "falcon",
+        "fusion",
+        "security"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 75,
+        "text": "CF"
+      },
+      "pluginId": "plugin:claude-official:crowdstrike-falcon-fusion",
+      "primaryCategory": "developer-tools",
+      "productKey": "crowdstrike-falcon-fusion",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "3e15710a94b712473e87ce7cd7c43d026156a3f3"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:bc12b42ab69e26df4d80c9430f4422f559659938b9cea6dc61b80ebf2c65f5d9",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:06a109de49f8825f1c7c5c7c4cf56b2e757b99a2ec08896614a73b9d4f8e78e6",
+        "packageStatus": "partial",
+        "releaseId": "release:e45c189031d7df04b4d7cb1cfe03ce294f0584b56fd9dd81f59be5a0abcfd86d",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "3e15710a94b712473e87ce7cd7c43d026156a3f3",
+        "upstreamVersion": "1.2.0"
+      },
+      "releaseId": "release:e45c189031d7df04b4d7cb1cfe03ce294f0584b56fd9dd81f59be5a0abcfd86d",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "crowdstrike-falcon-fusion",
+      "variantPluginIds": [
+        "plugin:claude-official:crowdstrike-falcon-fusion",
+        "plugin:openai-official:crowdstrike-falcon-fusion"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Duende Software"
+      ],
+      "capabilitySummary": {
+        "agent": 2,
+        "executable": 7,
+        "rule": 2,
+        "skill": 24
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Duende development skills and agents for Claude Code — covering OAuth/OIDC protocols, IdentityServer, token management, ASP.NET Core authentication/authorization, BFF patterns, and secure identity architecture",
+      "displayName": "Duende Skills",
+      "homepage": "https://duendesoftware.com/",
+      "icon": {
+        "asset": "icon-68052225ea383474318b1db3abc88be5.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-68052225ea383474318b1db3abc88be5.svg",
+        "bytes": 1202,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:68052225ea383474318b1db3abc88be5b62248dc35b61448afa2e0a455443df1",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/icon.svg",
+        "url": null
+      },
+      "keywords": [
+        "duende",
+        "security",
+        "skills"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 12,
+        "text": "DS"
+      },
+      "pluginId": "plugin:claude-official:duende-skills",
+      "primaryCategory": "security",
+      "productKey": "duende-skills",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "fb32edc51982bf1c600e21ba91df32c903098a9c"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:71f6862e757ab0658783960cc514087cd184c92bb8525ac73b21d736453a0331",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:a93870c527c99dfa0160030213e5f41d4d528e2b2f0c9454db048d0a0588ba03",
+        "packageStatus": "partial",
+        "releaseId": "release:15943ecca853ef8ba964157b44f9a008a98ea0dccc6a2ad025ccd5d5a8bfccb9",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "fb32edc51982bf1c600e21ba91df32c903098a9c",
+        "upstreamVersion": "0.3.0"
+      },
+      "releaseId": "release:15943ecca853ef8ba964157b44f9a008a98ea0dccc6a2ad025ccd5d5a8bfccb9",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "duende-skills",
+      "variantPluginIds": [
+        "plugin:claude-official:duende-skills"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "JFrog Ltd."
+      ],
+      "capabilitySummary": {
+        "executable": 16,
+        "hook": 1,
+        "mcp-server": 1,
+        "skill": 7
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Use the JFrog Platform from Claude Code: Artifactory repos and artifacts, security findings and exposures, Catalog package safety and downloads, workflows across the SDLC, and platform administration.",
+      "displayName": "JFrog",
+      "homepage": "https://jfrog.com/",
+      "icon": {
+        "asset": "icon-724bac4c30d54be6676a4cce2abf01b2.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-724bac4c30d54be6676a4cce2abf01b2.svg",
+        "bytes": 6971,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:724bac4c30d54be6676a4cce2abf01b2977e4c13fa7ba700a00b54ce0d91ae7d",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "jfrog",
+        "security"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 120,
+        "text": "JF"
+      },
+      "pluginId": "plugin:claude-official:jfrog",
+      "primaryCategory": "security",
+      "productKey": "jfrog",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "5f587f0bd40b0359ab6ee57291da95b40d15c605"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d93965ff704d8ffea5cd1c8b2250d5c5feaa1d3ad8914d1c2376bf8676b35cab",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:79ed0b316fdb3d475c0f6417f702178fb4e7d55e33ad592618dce91055cf223d",
+        "packageStatus": "partial",
+        "releaseId": "release:72badd2dcc49250e7f0397061bb7a4fdbba7d87929cf7597ad27102e88242b28",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "5f587f0bd40b0359ab6ee57291da95b40d15c605",
+        "upstreamVersion": "0.3.6"
+      },
+      "releaseId": "release:72badd2dcc49250e7f0397061bb7a4fdbba7d87929cf7597ad27102e88242b28",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "jfrog",
+      "variantPluginIds": [
+        "plugin:claude-official:jfrog"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "executable": 14,
+        "hook": 13
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Security review for Claude-generated code. Pattern-based warnings on edits, LLM-powered diff review on Stop, and an agentic commit reviewer that catches injection, XSS, SSRF, hardcoded secrets, and 25+ other vulnerability classes.",
+      "displayName": "Security Guidance",
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/security-guidance",
+      "icon": null,
+      "keywords": [
+        "guidance",
+        "security"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 102,
+        "text": "SG"
+      },
+      "pluginId": "plugin:knowledge-work-official:security-guidance",
+      "primaryCategory": "security",
+      "productKey": "security-guidance",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/security-guidance",
+        "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
+        "resolvedCommitSha": "3ea32df27be71d78775e627df2382fc26203577f"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:71f67bc061a66068eae56faee9435fb8a4fe1593c1a67f7634e3c2be9c7c273f",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:b4cc08d88c8e82d9b38c6ee1365ed34b59845f0a951c0a51d83749f84189c7bc",
+        "packageStatus": "partial",
+        "releaseId": "release:5121332975f506fcd5378650ebfd953cdd8d90436112f2d76835d3399683cfc8",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "3ea32df27be71d78775e627df2382fc26203577f",
+        "upstreamVersion": "2.0.8"
+      },
+      "releaseId": "release:5121332975f506fcd5378650ebfd953cdd8d90436112f2d76835d3399683cfc8",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata."
+        ]
+      },
+      "sourceId": "knowledge-work-official",
+      "upstreamName": "security-guidance",
+      "variantPluginIds": [
+        "plugin:knowledge-work-official:security-guidance",
+        "plugin:claude-official:security-guidance"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "SonarSource"
+      ],
+      "capabilitySummary": {
+        "agent": 1,
+        "executable": 1,
+        "hook": 1,
+        "mcp-server": 2,
+        "rule": 1,
+        "skill": 9
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Automatically enforce SonarQube code quality and security in the agent coding loop — 7,000+ rules, secrets scanning, agentic analysis, and quality gates across 40+ languages. PostToolUse hooks run analysis after every file edit. Pre-tool secrets scanning prevents 450+ patterns from reaching the LLM. Slash commands give on-demand access to quality gate status, coverage, duplication, and dependency risks. Includes SonarQube CLI, MCP Server, skills, hooks, and slash commands.",
+      "displayName": "Sonarqube",
+      "homepage": "https://www.sonarsource.com/",
+      "icon": {
+        "asset": "icon-f229ce40967152b9f6ec6bab2b4989cf.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f229ce40967152b9f6ec6bab2b4989cf.svg",
+        "bytes": 19688,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:f229ce40967152b9f6ec6bab2b4989cf65bb3d723c044fd3a9945db58a686028",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "security",
+        "sonarqube"
+      ],
+      "license": "SSAL-1.0",
+      "monogram": {
+        "hue": 123,
+        "text": "SO"
+      },
+      "pluginId": "plugin:claude-official:sonarqube",
+      "primaryCategory": "security",
+      "productKey": "sonarqube",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "81be40697feeb73aff37260d3c0896ccbb200fbd"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:c4f46f6d661bc68ce9ce21c0d62ee0ff02d50cb7e9a36dd514d76b0c9431fb9e",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:2bfb2a02862c91794e15aa36485df49663297e4899ad1e1bcb4bb24159a7d2d0",
+        "packageStatus": "partial",
+        "releaseId": "release:8aa7fd7a72f0dea6400c3be778d23b9ef7e72bc603a2d6f6e3c9ff4fb1c487f1",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "81be40697feeb73aff37260d3c0896ccbb200fbd",
+        "upstreamVersion": "2.5.0"
+      },
+      "releaseId": "release:8aa7fd7a72f0dea6400c3be778d23b9ef7e72bc603a2d6f6e3c9ff4fb1c487f1",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "sonarqube",
+      "variantPluginIds": [
+        "plugin:claude-official:sonarqube"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 1
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Sonatype Guide MCP server for software supply chain intelligence and dependency security. Analyze dependencies for vulnerabilities, get secure version recommendations, and check component quality metrics.",
+      "displayName": "Sonatype Guide",
+      "homepage": "https://github.com/sonatype/sonatype-guide-claude-plugin.git",
+      "icon": {
+        "asset": "icon-06f40b59a2ac5955ad1f9363a4ac36b2.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-06f40b59a2ac5955ad1f9363a4ac36b2.svg",
+        "bytes": 406,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:06f40b59a2ac5955ad1f9363a4ac36b2486262c64071a2bd1a6550ed43fffd01",
+        "homepage": "https://www.sonatype.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.sonatype.com/hubfs/1-2025_Website-Assets/logos/favicon-2025.svg"
+      },
+      "keywords": [
+        "guide",
+        "security",
+        "sonatype"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 258,
+        "text": "SG"
+      },
+      "pluginId": "plugin:claude-official:sonatype-guide",
+      "primaryCategory": "security",
+      "productKey": "sonatype-guide",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "1dae73980f591d3196f5532ac72186513563d028"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:a662ee7ce860cc4d207523f2f489db43c4d4404409e4fa7b84b639952f8ceb4d",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:e2932ec52c2a0ba0bfa792fbc30fd6c60e297d118b7c16d87e9454a543815d4a",
+        "packageStatus": "partial",
+        "releaseId": "release:3698aaef74082b616cc70976f99c37e3e0dcd6f8812aa7bcbe42f85b3cdf78dd",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "1dae73980f591d3196f5532ac72186513563d028",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:3698aaef74082b616cc70976f99c37e3e0dcd6f8812aa7bcbe42f85b3cdf78dd",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "sonatype-guide",
+      "variantPluginIds": [
+        "plugin:claude-official:sonatype-guide"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "StackHawk"
+      ],
+      "capabilitySummary": {
+        "skill": 1
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Query the StackHawk platform API for security posture reporting, findings analysis, and app management. Guides agents through authentication, data retrieval, and result presentation.",
+      "displayName": "StackHawk API",
+      "homepage": "https://docs.stackhawk.com/ai-security/",
+      "icon": {
+        "asset": "icon-4bf4e1993874a9b467d2719b5d836b21.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-4bf4e1993874a9b467d2719b5d836b21.ico",
+        "bytes": 15406,
+        "contentType": "image/x-icon",
+        "digest": "sha256:4bf4e1993874a9b467d2719b5d836b21cf6b3f7c45af2d739bdfecf77c894833",
+        "homepage": "https://docs.stackhawk.com/ai-security/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://docs.stackhawk.com/favicon.ico"
+      },
+      "keywords": [
+        "api",
+        "security",
+        "stackhawk"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 210,
+        "text": "SA"
+      },
+      "pluginId": "plugin:claude-official:stackhawk-api",
+      "primaryCategory": "security",
+      "productKey": "stackhawk-api",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/api",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "d9b265ff67a4feaa579d37504009dd4292966460"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:93353312ac858d18fbcbc50372d7a1815b27075e42df2ec6ddafa03d0e8588d5",
+        "capabilities": [
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:1a54b7942f412fa254206e5269d8dccd68d39dd4909a709387f2cdfbf1305145",
+        "packageStatus": "partial",
+        "releaseId": "release:ff3ecb8b1e37d46891e3c6373239e408370c51ca0859413f97d69c1b092baf3e",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "d9b265ff67a4feaa579d37504009dd4292966460",
+        "upstreamVersion": "2.5.1"
+      },
+      "releaseId": "release:ff3ecb8b1e37d46891e3c6373239e408370c51ca0859413f97d69c1b092baf3e",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "stackhawk-api",
+      "variantPluginIds": [
+        "plugin:claude-official:stackhawk-api",
+        "plugin:knowledge-work-official:stackhawk-api"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "StackHawk"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "hook": 8,
+        "skill": 1
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Configure, run, and interpret HawkScan DAST results inside Claude Code. Generates stackhawk.yml configs, runs scans via CLI or Docker, and transforms security findings into prioritized fix tasks for your coding agent.",
+      "displayName": "Hawkscan",
+      "homepage": "https://docs.stackhawk.com/ai-security/",
+      "icon": {
+        "asset": "icon-4bf4e1993874a9b467d2719b5d836b21.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-4bf4e1993874a9b467d2719b5d836b21.ico",
+        "bytes": 15406,
+        "contentType": "image/x-icon",
+        "digest": "sha256:4bf4e1993874a9b467d2719b5d836b21cf6b3f7c45af2d739bdfecf77c894833",
+        "homepage": "https://docs.stackhawk.com/ai-security/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://docs.stackhawk.com/favicon.ico"
+      },
+      "keywords": [
+        "hawkscan",
+        "security",
+        "stackhawk"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 354,
+        "text": "HA"
+      },
+      "pluginId": "plugin:claude-official:stackhawk-hawkscan",
+      "primaryCategory": "security",
+      "productKey": "stackhawk-hawkscan",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/hawkscan",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "d9b265ff67a4feaa579d37504009dd4292966460"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:13a87da5e2ef8c90977dd9fcdc8f2524a1bd474f4ff3905a7cf8349b24f28c40",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:a82f035cefde453517056d59b758f743e47bc22edc38d65c821c893fa2c67f9e",
+        "packageStatus": "partial",
+        "releaseId": "release:d9caf236c1aeb90d4b22db9ca4ebfcb30f45281165ea125a792cd5f778d685dc",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "d9b265ff67a4feaa579d37504009dd4292966460",
+        "upstreamVersion": "2.5.1"
+      },
+      "releaseId": "release:d9caf236c1aeb90d4b22db9ca4ebfcb30f45281165ea125a792cd5f778d685dc",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "stackhawk-hawkscan",
+      "variantPluginIds": [
+        "plugin:claude-official:stackhawk-hawkscan",
+        "plugin:knowledge-work-official:stackhawk-hawkscan"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Vanta"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "rule": 1,
+        "skill": 3
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "The Vanta plugin connects Claude Code to Vanta's security and compliance platform through the Vanta MCP server. It combines Vanta's test-specific remediation intelligence with your local repository context to help you fix compliance failures faster.",
+      "displayName": "Vanta",
+      "homepage": "https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337",
+      "icon": {
+        "asset": "icon-509143a9a1fda5d7777e81b44ca172ae.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-509143a9a1fda5d7777e81b44ca172ae.png",
+        "bytes": 20514,
+        "contentType": "image/png",
+        "digest": "sha256:509143a9a1fda5d7777e81b44ca172aeb6b296de12ae9e9377293d01703a99e8",
+        "homepage": "https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://intercom.help/vanta-ceb3b688ec0b/assets/favicon"
+      },
+      "keywords": [
+        "security",
+        "vanta"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 345,
+        "text": "VA"
+      },
+      "pluginId": "plugin:claude-official:vanta",
+      "primaryCategory": "security",
+      "productKey": "vanta",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "345d86b55faa649e955b7ea5569cf52d8425c2d5"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:6c209e4140135f4cdbc16c99432ce0fc1cc6561903e3d33a97c08b4fdb8a0a27",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:51094c318c971682dd21574395d39585be04fe7670b0ffca8044690a5156ff25",
+        "packageStatus": "partial",
+        "releaseId": "release:495aef22b54bee5b2668cea33c98c9949ecc3b9272c9a6f96bf0b3bc142b8359",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "345d86b55faa649e955b7ea5569cf52d8425c2d5",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:495aef22b54bee5b2668cea33c98c9949ecc3b9272c9a6f96bf0b3bc142b8359",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "vanta",
+      "variantPluginIds": [
+        "plugin:claude-official:vanta"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Vanta"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "rule": 1,
+        "skill": 3
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "The Vanta plugin connects Claude Code to Vanta's security and compliance platform through the Vanta MCP server. It combines Vanta's test-specific remediation intelligence with your local repository context to help you fix compliance failures faster.",
+      "displayName": "Vanta",
+      "homepage": "https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337",
+      "icon": {
+        "asset": "icon-509143a9a1fda5d7777e81b44ca172ae.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-509143a9a1fda5d7777e81b44ca172ae.png",
+        "bytes": 20514,
+        "contentType": "image/png",
+        "digest": "sha256:509143a9a1fda5d7777e81b44ca172aeb6b296de12ae9e9377293d01703a99e8",
+        "homepage": "https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://intercom.help/vanta-ceb3b688ec0b/assets/favicon"
+      },
+      "keywords": [
+        "mcp",
+        "plugin",
+        "security",
+        "vanta"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 180,
+        "text": "VA"
+      },
+      "pluginId": "plugin:claude-official:vanta-mcp-plugin",
+      "primaryCategory": "security",
+      "productKey": "vanta-mcp-plugin",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "345d86b55faa649e955b7ea5569cf52d8425c2d5"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:6c209e4140135f4cdbc16c99432ce0fc1cc6561903e3d33a97c08b4fdb8a0a27",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:4a769b8384a1706bf819dc36efbdee330b4ada0b049cc6fe195862f2c8435150",
+        "packageStatus": "partial",
+        "releaseId": "release:495aef22b54bee5b2668cea33c98c9949ecc3b9272c9a6f96bf0b3bc142b8359",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "345d86b55faa649e955b7ea5569cf52d8425c2d5",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:495aef22b54bee5b2668cea33c98c9949ecc3b9272c9a6f96bf0b3bc142b8359",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "vanta-mcp-plugin",
+      "variantPluginIds": [
+        "plugin:claude-official:vanta-mcp-plugin",
+        "plugin:knowledge-work-official:vanta-mcp-plugin"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "WorkOS"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 2
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "WorkOS integration skills for AuthKit, SSO, Directory Sync, RBAC, Vault, Audit Logs, migrations, and API references.",
+      "displayName": "Workos",
+      "homepage": "https://workos.com/",
+      "icon": {
+        "asset": "icon-d4fc17cf0d25ad88fb1e0ac80432f1e0.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-d4fc17cf0d25ad88fb1e0ac80432f1e0.png",
+        "bytes": 5415,
+        "contentType": "image/png",
+        "digest": "sha256:d4fc17cf0d25ad88fb1e0ac80432f1e03d1944e8b91a068b56cf46c4e9d41aeb",
+        "homepage": "https://workos.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://cdn.prod.website-files.com/621f54116cab10f6e9215d8b/621f549024eb2947f6f2f7f7_Favicon%20256x256.png"
+      },
+      "keywords": [
+        "security",
+        "workos"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 111,
+        "text": "WO"
+      },
+      "pluginId": "plugin:claude-official:workos",
+      "primaryCategory": "security",
+      "productKey": "workos",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/workos",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "6b7d596ae28fb0bf2ecc01a8737e4bdcc70f7ab8"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:601123a2b508ab69384b2baad05db2ca6b69adcea3a874fa3eaa1bf4960b7ae5",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:ff2295373d52090bcbf7ed108a3a933f5a4e11575683e36add64ab21d22274be",
+        "packageStatus": "partial",
+        "releaseId": "release:1809678539e5dfe8d0a5b1084a037ed12214f1c3569c7aa4825347c8e9d6b568",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "6b7d596ae28fb0bf2ecc01a8737e4bdcc70f7ab8",
+        "upstreamVersion": "0.7.2"
+      },
+      "releaseId": "release:1809678539e5dfe8d0a5b1084a037ed12214f1c3569c7aa4825347c8e9d6b568",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "workos",
+      "variantPluginIds": [
+        "plugin:claude-official:workos"
+      ],
+      "variantsIdentical": false
+    }
+  ],
+  "schemaVersion": 1
+}
