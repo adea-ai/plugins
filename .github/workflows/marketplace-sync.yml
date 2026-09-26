@@ -174,7 +174,20 @@ jobs:
         run: |
           set -euo pipefail
           branch='chore/catalog-snapshot'
-          changed=$(node -e "const fs=require('fs'); const r=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/catalog-change-report.json','utf8')); process.stdout.write(String(r.changed === true))")
+          # "Did the catalog change" is answered by the working tree against the
+          # commit this job checked out, not by a field inside the change report.
+          # The report is a large single-line JSON document the CLI tees to disk,
+          # and parsing it to learn one boolean made the whole snapshot refresh
+          # depend on that document parsing: a report that did not parse failed
+          # the run with nothing but a Node stack frame naming an anonymous
+          # script. The diff is what the commit below actually contains, so it
+          # cannot disagree with that commit.
+          git add generated catalog-assets
+          if git diff --cached --quiet; then
+            changed=false
+          else
+            changed=true
+          fi
           if [ -z "$SYNC_TOKEN" ]; then
             echo 'CATALOG_SYNC_TOKEN is not configured. Create a fine-grained PAT'
             echo '(Contents: read/write, Pull requests: read/write on adea-ai/plugins)'
@@ -236,9 +249,8 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git remote set-url origin "https://x-access-token:${SYNC_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git add generated catalog-assets
-          git commit -m "chore(catalog): refresh marketplace snapshot ${catalog_id}"
-          git push --force origin "HEAD:${branch}"
+          git commit -q -m "chore(catalog): refresh marketplace snapshot ${catalog_id}"
+          git push -q --force origin "HEAD:${branch}"
           body="Automated marketplace snapshot refresh for ${catalog_id}. Merge with squash once Validation, Review Policy, and Marketplace CI pass."
           if [ -z "$existing" ]; then
             gh pr create --draft --base main --head "$branch" --title "chore(catalog): refresh marketplace snapshot" --body "$body"
