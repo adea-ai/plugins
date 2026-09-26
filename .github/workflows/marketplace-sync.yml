@@ -103,12 +103,12 @@ jobs:
           export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
           catalog_id=$(node -e "const fs=require('fs'); const c=JSON.parse(fs.readFileSync('generated/catalog.v1.json','utf8')); process.stdout.write(c.catalogId)")
           export CATALOG_ID="$catalog_id"
-          export WORKTREE="$worktree"
           remote="https://x-access-token:${SYNC_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           # A force-push replaces the whole tree, so previously published
           # snapshots are fetched first: a pinned `catalogs/<olderId>/…` URL has
           # to keep resolving, which is the one property the release tag gave.
           worktree="$RUNNER_TEMP/catalog-assets"
+          export WORKTREE="$worktree"
           rm -rf "$worktree"
           git init -q "$worktree"
           git -C "$worktree" remote add origin "$remote"
