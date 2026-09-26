@@ -157,6 +157,12 @@ and determinism. Applying a source patch does not itself regenerate or publish
 catalog data. Review the [staged migration procedure](docs/agent-plugins.md#cli-and-migration)
 before switching consumers to v2 plans.
 
+The separate `.github/workflows/publish-packages.yml` workflow publishes
+`@adea-ai/plugins` when a release reaches `main`. It uses npm trusted
+publishing; configure a trusted publisher for repository `adea-ai/plugins`,
+workflow `publish-packages.yml`, and direct `npm publish` permission. No
+long-lived npm token is used.
+
 For first publication, `workflow_dispatch` supports `bootstrap-only`, which
 validates and publishes the checked-in last-known-good catalog without live
 upstream retrieval.

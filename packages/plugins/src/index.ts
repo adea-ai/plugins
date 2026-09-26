@@ -2263,7 +2263,11 @@ function concatChunks(chunks: readonly Uint8Array[], length: number): Uint8Array
  * the `pax_global_header` record are skipped, so a link can never be
  * materialized as content. Every remaining path goes through
  * `safeRelativePath`, so an archive that tries to escape the repository is
- * rejected rather than partially trusted.
+ * rejected rather than partially trusted. This is a whole-repository archive
+ * shared across plugins, so an oversized unrelated file is drained and
+ * counted against the archive budget but not retained. The selected plugin's
+ * files are checked against the tree before the archive is fetched and again
+ * when its snapshot is validated.
  */
 export async function readArchiveFiles(
   archive: Uint8Array,
@@ -2298,17 +2302,18 @@ export async function readArchiveFiles(
       stream.on('data', (chunk: unknown) => {
         const bytes = chunk as Uint8Array
         length += bytes.byteLength
-        chunks.push(bytes)
+        if (totalBytes + length > MAX_ARCHIVE_BYTES) {
+          fail(new Error('PLUGIN_SIZE_POLICY: archive'))
+          return
+        }
+        if (length <= policy.maxFileBytes) chunks.push(bytes)
+        else chunks.length = 0
       })
       stream.on('error', fail)
       stream.on('end', () => {
         try {
-          const bytes = concatChunks(chunks, length)
-          if (bytes.byteLength > policy.maxFileBytes)
-            throw new Error(`PLUGIN_FILE_TOO_LARGE: ${path}`)
-          totalBytes += bytes.byteLength
-          if (totalBytes > MAX_ARCHIVE_BYTES) throw new Error('PLUGIN_SIZE_POLICY: archive')
-          files.set(path, bytes)
+          totalBytes += length
+          if (length <= policy.maxFileBytes) files.set(path, concatChunks(chunks, length))
           next()
         } catch (error) {
           fail(error)

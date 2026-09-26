@@ -791,6 +791,59 @@ describe('upstream fetch quarantine', () => {
     }
   })
 
+  test('applies the file-size policy to the selected plugin, not unrelated repository files', async () => {
+    const oversizedUnrelatedFile = 'x'.repeat(policy.maxFileBytes + 1)
+    const stub = stubFetch(async (url) => {
+      if (url === treeUrl)
+        return jsonResponse(treePayload(['plugins/demo/plugin.json', 'assets/miro-mcp-demo.gif']))
+      if (isArchive(url))
+        return tarballResponse([
+          { path: 'plugins/demo/plugin.json', body: manifestBytes },
+          { path: 'assets/miro-mcp-demo.gif', body: oversizedUnrelatedFile },
+        ])
+      return new Response('unexpected', { status: 500 })
+    })
+    try {
+      const loader = new NetworkSnapshotLoader(policy)
+      const snapshot = await loader.load(repo, sha, 'plugins/demo')
+      expect([...snapshot.files.keys()]).toEqual(['plugin.json'])
+      expect(new TextDecoder().decode(snapshot.files.get('plugin.json'))).toBe(manifestBytes)
+    } finally {
+      stub.restore()
+    }
+  })
+
+  test('rejects an oversized file in the selected plugin before downloading the archive', async () => {
+    const oversizedPath = 'plugins/demo/assets/oversized.gif'
+    const stub = stubFetch(async (url) => {
+      if (url === treeUrl)
+        return jsonResponse({
+          tree: [
+            ...treePayload(['plugins/demo/plugin.json']).tree,
+            {
+              path: oversizedPath,
+              type: 'blob',
+              sha: 'b'.repeat(40),
+              size: policy.maxFileBytes + 1,
+              mode: '100644',
+            },
+          ],
+        })
+      return new Response('unexpected', { status: 500 })
+    })
+    try {
+      const loader = new NetworkSnapshotLoader(policy)
+      const error = await loader.load(repo, sha, 'plugins/demo').then(
+        () => undefined,
+        (caught: unknown) => caught as Error
+      )
+      expect(error?.message).toBe(`PLUGIN_SIZE_POLICY: ${oversizedPath}`)
+      expect(stub.calls.filter(isArchive)).toHaveLength(0)
+    } finally {
+      stub.restore()
+    }
+  })
+
   test('rejects an archive entry that escapes the repository', async () => {
     const stub = stubFetch(async (url) => {
       if (url === treeUrl) return jsonResponse(treePayload(['plugins/demo/plugin.json']))

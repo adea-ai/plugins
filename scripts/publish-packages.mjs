@@ -18,8 +18,9 @@ import { fileURLToPath } from 'node:url'
 // data change and churn every consumer's lockfile. The catalog is published to
 // the content-addressed `catalog-assets` branch instead; see docs/consumer-contract.md.
 //
-// The npm `adea` org must exist and NPM_TOKEN must be an automation token
-// with publish rights on it. The version comes from the package manifest
+// Configure npm trusted publishing for @adea-ai/plugins from
+// adea-ai/plugins/.github/workflows/publish-packages.yml. The version comes
+// from the package manifest
 // (release-please bumps it in lockstep with the repository root); an
 // already-published version is skipped, so the script is safe to re-run and
 // runs on every main push touching these paths.

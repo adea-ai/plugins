@@ -66,6 +66,11 @@ jobs:
           bun packages/cli/src/index.ts sync "${args[@]}" | tee "$RUNNER_TEMP/catalog-change-report.json"
       - name: Validate catalog
         run: bun run catalog validate --json
+      - name: Validate curated shelf resolution
+        # Catalog validation checks schemas and integrity. This test also
+        # requires each configured leading product to resolve before the
+        # mutable catalog-assets pointer is updated.
+        run: bun test packages/cli/src/config.test.ts
       - name: Verify brand marks
         if: inputs['bootstrap-only'] != true
         run: |
