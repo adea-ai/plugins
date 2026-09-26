@@ -1,8 +1,8 @@
 {
-  "catalogId": "catalog:46d35646d0c825e0b3caa3d97b4bf786ce6cadd8bc16eaa416461d28db04f483",
+  "catalogId": "catalog:46639457dd9268f619932be85e31428e3c494186547ca029c6262fb2c90df647",
   "category": "data-analytics",
-  "pluginCount": 49,
-  "productCount": 42,
+  "pluginCount": 48,
+  "productCount": 41,
   "products": [
     {
       "authors": [
@@ -2014,113 +2014,6 @@
     },
     {
       "authors": [
-        "Anthropic"
-      ],
-      "capabilitySummary": {
-        "executable": 8,
-        "hook": 1,
-        "mcp-server": 1,
-        "skill": 1
-      },
-      "categories": [
-        "data-analytics"
-      ],
-      "compatibility": {
-        "claude-code": "partially-supported",
-        "codex": "partially-supported",
-        "cursor": "partially-supported",
-        "generic-skill-mcp": "partially-supported",
-        "hermes": "partially-supported",
-        "opencode": "partially-supported",
-        "pi": "partially-supported"
-      },
-      "description": "Expert database guidance for the AWS database portfolio. Design schemas, execute queries, handle migrations, and choose the right database for your workload.",
-      "displayName": "Databases on AWS",
-      "homepage": "https://github.com/awslabs/agent-plugins",
-      "icon": {
-        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
-        "bytes": 3061,
-        "contentType": "image/png",
-        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
-        "homepage": "https://aws.amazon.com/products/databases/",
-        "kind": "favicon",
-        "path": null,
-        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
-      },
-      "keywords": [
-        "aws",
-        "data-analytics",
-        "databases",
-        "on"
-      ],
-      "license": "Apache-2.0",
-      "monogram": {
-        "hue": 108,
-        "text": "DO"
-      },
-      "pluginId": "plugin:claude-official:databases-on-aws",
-      "primaryCategory": "data-analytics",
-      "productKey": "databases-on-aws",
-      "provenance": {
-        "manifestPath": ".claude-plugin/marketplace.json",
-        "pluginSubdirectory": "plugins/databases-on-aws",
-        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "026f03dc9a2f217ab96aa61f87f10fe8c09e067d"
-      },
-      "release": {
-        "canonicalContentDigest": "sha256:e9a950ce6c62d9416ca53f2bb7731ff65c5c3082fa61288f591e53a6c5648fed",
-        "capabilities": [
-          {
-            "name": "executable",
-            "type": "executable"
-          },
-          {
-            "name": "hook",
-            "type": "hook"
-          },
-          {
-            "name": "mcp-server",
-            "type": "mcp-server"
-          },
-          {
-            "name": "skill",
-            "type": "skill"
-          }
-        ],
-        "contentResolution": "complete",
-        "packageDigest": "sha256:0b6b2686fd81d2b7388332bf2e167ea237b9a5372c9e9d6c4cc7d8d824c78cfe",
-        "packageStatus": "partial",
-        "releaseId": "release:2e751d9a1546da957f78fceefddfd2f35ff0bfc7fa76f026dac94849667b4837",
-        "requiredConnectors": [],
-        "requiredCredentials": [],
-        "sourceRevision": "026f03dc9a2f217ab96aa61f87f10fe8c09e067d",
-        "upstreamVersion": "1.8.1"
-      },
-      "releaseId": "release:2e751d9a1546da957f78fceefddfd2f35ff0bfc7fa76f026dac94849667b4837",
-      "securityClassification": {
-        "contentResolution": "complete",
-        "level": "sensitive",
-        "permissionSensitiveChanges": [
-          "executable",
-          "hook",
-          "mcp-server"
-        ],
-        "reasons": [
-          "Contains executable capability metadata.",
-          "Contains hook capability metadata.",
-          "Contains mcp-server capability metadata."
-        ]
-      },
-      "sourceId": "claude-official",
-      "upstreamName": "databases-on-aws",
-      "variantPluginIds": [
-        "plugin:claude-official:databases-on-aws"
-      ],
-      "variantsIdentical": false
-    },
-    {
-      "authors": [
         "Google LLC"
       ],
       "capabilitySummary": {
@@ -2432,7 +2325,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/firebase",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
+        "resolvedCommitSha": "fa59bc9037741ecfa131aa27938272605710d7b2"
       },
       "release": {
         "canonicalContentDigest": "sha256:60af04352ae238ec8d87b22936c237ba33fd4a44e908d6fdd51cf81034224fd9",
@@ -2445,12 +2338,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d3981670b791b2c9c58847c292c7204bedc35df79e3876c10ec6f681d650c0d9",
         "packageStatus": "portable",
-        "releaseId": "release:0d77dd186eb0ae81fe2d3c76752aba933c119970cc8734630257caa738ff8cbf",
+        "releaseId": "release:218b70d46dea217dd1aec06fd14e0a9e6244b7c27a5c9eefb39d4cd94a0a30ae",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ca08d5e47d6402db586d37780c559a0c4c7ded9a"
+        "sourceRevision": "fa59bc9037741ecfa131aa27938272605710d7b2"
       },
-      "releaseId": "release:0d77dd186eb0ae81fe2d3c76752aba933c119970cc8734630257caa738ff8cbf",
+      "releaseId": "release:218b70d46dea217dd1aec06fd14e0a9e6244b7c27a5c9eefb39d4cd94a0a30ae",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
