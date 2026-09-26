@@ -20,17 +20,23 @@ same source bytes must produce byte-identical JSON.
 The scheduled workflow compares source heads first. If all four heads equal the
 lock, it exits successfully without touching generated files. When any head
 changes, it builds a temporary catalog, validates schemas and integrity, writes
-a JSON change report, commits the replacement to `main`, and creates a release
-tag whose name is derived from the catalog digest. The workflow attaches the
-six required versioned artifacts plus the byte-identical
-`catalog-latest.v1.json` pointer to a draft, then publishes it. GitHub immutable
-releases are enabled for this repository, so a published catalog tag and its
-assets cannot be replaced in place.
+a JSON change report, commits the replacement to `main`, and publishes the
+snapshot to the `catalog-assets` branch under `catalogs/<catalogId-suffix>/`,
+where `<catalogId-suffix>` is the catalog's own digest. The six required
+versioned artifacts and `integrity.json` go into that directory, the mirrored
+brand marks go to the branch root where their digests address them, and the
+byte-identical `catalog-latest.v1.json` pointer is written at the root. Because
+the path is derived from the content, no build that produced different bytes can
+write over an existing snapshot, and previously published snapshots are fetched
+and preserved so pinned URLs keep resolving. A force-push carries no immutability
+guarantee, so the workflow reads the published bytes back from the URLs a
+consumer will use and compares them against what it staged before reporting
+success.
 
 If parsing, source resolution, policy, classification, integrity, or artifact
-publication fails, the workflow fails and the previous generated snapshot and
-release remain available. Recovery is to fix the source or policy issue and
-rerun `workflow_dispatch`; no human approval queue is created.
+publication fails, the workflow fails and the previously published snapshot
+remains available. Recovery is to fix the source or policy issue and rerun
+`workflow_dispatch`; no human approval queue is created.
 
 The published set has a fixed core and two derived families:
 

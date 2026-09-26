@@ -2,8 +2,8 @@ import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { describe, expect, test } from 'bun:test'
-import { parseProductPreference } from '../../catalog-core/src/consumer-index.js'
-import { parseProductIconOverrides } from '../../catalog-core/src/icons.js'
+import { parseProductPreference } from '../../plugins/src/consumer-index.js'
+import { parseProductIconOverrides } from '../../plugins/src/icons.js'
 
 const root = fileURLToPath(new URL('../../../', import.meta.url))
 const read = <T>(name: string): T =>
@@ -77,12 +77,22 @@ describe('placement configuration', () => {
 })
 
 describe('publication configuration', () => {
-  test('names a repository the release URLs can be composed from', () => {
+  test('names a repository the snapshot URLs can be composed from', () => {
     const publication = read<{ schemaVersion: number; repositoryUrl: string }>('publication.json')
     expect(publication.schemaVersion).toBe(1)
     expect(publication.repositoryUrl).toMatch(
       /^https:\/\/github\.com\/[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/
     )
+  })
+
+  test('serves both the pointer and the snapshots from the one asset branch', () => {
+    const publication = read<{ assetsBaseUrl: string; catalogsBaseUrl: string }>('publication.json')
+    const branch = 'https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets'
+    // A release asset answers a cross-origin fetch with no CORS header, so the
+    // publication has to name a host a browser can actually read.
+    expect(publication.assetsBaseUrl).toBe(branch)
+    // Snapshots are content-addressed one level below the digest-addressed marks.
+    expect(publication.catalogsBaseUrl).toBe(`${branch}/catalogs`)
   })
 })
 

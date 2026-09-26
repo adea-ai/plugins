@@ -51,8 +51,8 @@ harness to Control Plane.
 
 Every product carries an `icon` and a `monogram`; one of them always renders.
 
-An `icon` is a mirrored asset inside the same catalog release, so there is
-nothing to search, sniff or fall back to:
+An `icon` is a mirrored asset at the root of the publication branch, so there
+is nothing to search, sniff or fall back to:
 
 ```
 https://raw.githubusercontent.com/<owner>/<repo>/<ref>/catalog-assets/<icon.asset>
@@ -124,11 +124,12 @@ which is the shape a cache serves well and an API proxy serves badly: routing
 them through the verified-JSON path would add latency and egress without adding a
 security decision the compile-time gate has not already made.
 
-They are served from `raw.githubusercontent.com` under `catalog-assets/`, not from
-release assets, because a browser cannot use the latter: a cross-origin fetch of a
-release asset returns no `access-control-allow-origin` header, so a client cannot
-read the index at all, and every image request redirects through a signed URL
-marked `no-cache`, so images are re-downloaded on every render.
+They are served from `raw.githubusercontent.com` under `catalog-assets/`, which
+is also where the catalog artifacts live. A GitHub release asset would not work
+for either: a cross-origin fetch of one returns no
+`access-control-allow-origin` header, so a client cannot read the index at all,
+and every asset request redirects through a signed URL marked `no-cache`, so
+images are re-downloaded on every render.
 
 To keep that a deployment decision rather than hardcoded client logic, product
 records carry an absolute, immutable URL in `icon.assetUrl`, composed at build
@@ -170,21 +171,22 @@ constructed.
 
 ## Caching
 
-Catalog releases are immutable and their tag is derived from `catalogId`
-(`catalog/<catalogId-suffix>`), so **every artifact URL above is immutable**:
+Catalog snapshots are immutable and their directory is derived from `catalogId`
+(`catalogs/<catalogId-suffix>`), so **every artifact URL above is immutable**:
 
 - Cache artifact and icon responses against the full URL, indefinitely. A new
   snapshot publishes new URLs; old ones never change bytes.
-- Treat `releases/latest/download/*` as a mutable pointer with a short TTL.
+- Treat `catalog-latest.v1.json` as a mutable pointer with a short TTL.
   Resolve it to a `catalogId`, then switch to the immutable URLs. Do not cache a
-  `latest` response beyond the refresh interval you are willing to serve stale
+  pointer response beyond the refresh interval you are willing to serve stale
   data for.
 - Because icon names are content addressed, the same mark is byte-identical in
   every catalog that resolves it to the same digest: an icon cache never needs
   invalidation, and two products that share artwork share one asset.
 - Verify `integrity.json` before trusting a snapshot, and verify a mirrored
   icon against its `digest` before storing it. `bun run verify:published`
-  performs both checks on a downloaded release.
+  performs both checks on a downloaded snapshot, and
+  `bun run verify:catalog-branch` performs them against the live publication.
 
 ## Offline and partially cached clients
 

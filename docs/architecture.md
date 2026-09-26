@@ -1,7 +1,7 @@
 # Architecture
 
 The marketplace is a stateless compiler. GitHub Actions supplies the periodic
-trigger; Git commits, release assets, and static JSON are the persistence layer.
+trigger; Git commits, the asset branch, and static JSON are the persistence layer.
 
 ```text
 official marketplace manifests

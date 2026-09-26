@@ -3,7 +3,7 @@
 The exact artifact URLs and field contract are maintained in
 [`consumer-contract.md`](consumer-contract.md).
 
-Adea should consume static JSON over a pinned catalog release or the stable
+Adea should consume static JSON over a pinned catalog snapshot or the stable
 latest artifact. The fetch pattern per screen, with sizes and cache lifetimes,
 is defined in [consumer fetch patterns](consumer-fetch-patterns.md): navigation
 and one shelf per visible category for the default view, one category artifact

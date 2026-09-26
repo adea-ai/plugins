@@ -26,10 +26,10 @@ concurrency:
 jobs:
   synchronize:
     name: Synchronize marketplace catalog
-    # Publishing releases and updating the bot-owned snapshot branch require
-    # these write scopes; all other workflow jobs are denied by default.
+    # Publishing the asset branch and updating the bot-owned snapshot branch
+    # require these write scopes; all other workflow jobs are denied by default.
     permissions:
-      contents: write # Publish immutable releases and the snapshot branch.
+      contents: write # Publish the catalog snapshot and mirrored brand marks.
       pull-requests: write # Open and merge the validated snapshot PR.
     runs-on: ubuntu-latest
     timeout-minutes: 45
@@ -76,204 +76,97 @@ jobs:
           # published from a checkout that has no staged assets.
           bun packages/cli/src/index.ts verify-assets --json \
             | tee "$RUNNER_TEMP/catalog-icon-report.json"
-      - name: Determine publication
-        id: publication
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          set -euo pipefail
-          # Reads one reviewable field out of the audit written below; list
-          # fields print one entry per line so shell loops can consume them.
-          audit_field() {
-            node -e "const fs=require('fs'); const a=JSON.parse(fs.readFileSync(process.env.AUDIT_FILE,'utf8')); const v=a[process.argv[1]]; process.stdout.write(Array.isArray(v)?v.join('\n'):v===undefined||v===null?'':String(v))" "$1"
-          }
-          export AUDIT_FILE="$RUNNER_TEMP/catalog-release-audit.json"
-          catalog_id=$(node -e "const fs=require('fs'); const c=JSON.parse(fs.readFileSync('generated/catalog.v1.json','utf8')); process.stdout.write(c.catalogId)")
-          tag="catalog/${catalog_id#catalog:}"
-          changed=$(node -e "const fs=require('fs'); const r=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/catalog-change-report.json','utf8')); process.stdout.write(String(r.changed === true))")
-          release_state="$RUNNER_TEMP/catalog-release-state.json"
-          release_exists=true
-          if ! gh release view "$tag" --json assets,isDraft,isImmutable > "$release_state" 2>/dev/null; then
-            release_exists=false
-            printf '{}' > "$release_state"
-          fi
-          release_is_immutable=false
-          release_is_draft=false
-          if [ "$release_exists" = true ]; then
-            release_is_immutable=$(gh release view "$tag" --json isImmutable --jq '.isImmutable')
-            release_is_draft=$(gh release view "$tag" --json isDraft --jq '.isDraft')
-          fi
-          # "Already uploaded" is not evidence of correctness, so a release is
-          # never trusted because an asset of that name is attached: every
-          # declared artifact and mirrored mark is compared against the bytes
-          # this build staged. An asset left by another build under the same tag
-          # therefore surfaces here, while a draft can still be repaired and
-          # before a published release is promoted. integrity.json enumerates
-          # the required set, so it follows the catalog itself.
-          bun run audit:release -- \
-            --artifacts generated \
-            --assets catalog-assets \
-            --catalog-id "$catalog_id" \
-            --release-tag "$tag" \
-            --release-state "$release_state" \
-            | tee "$AUDIT_FILE"
-          audit=$(audit_field agrees)
-          bootstrap=false
-          if [ "$audit" != true ]; then
-            bootstrap=true
-          fi
-          latest_tag=$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" --jq '.tag_name' 2>/dev/null || true)
-          is_latest=false
-          if [ "$latest_tag" = "$tag" ]; then
-            is_latest=true
-          fi
-          publish=false
-          if [ "$changed" = true ] || [ "$bootstrap" = true ] || [ "$is_latest" != true ] || [ "$release_is_immutable" != true ]; then
-            publish=true
-          fi
-          {
-            echo "catalog_id=$catalog_id"
-            echo "release_tag=$tag"
-            echo "release_exists=$release_exists"
-            echo "release_is_draft=$release_is_draft"
-            echo "release_is_immutable=$release_is_immutable"
-            echo "assets_agree=$audit"
-            echo "bootstrap=$bootstrap"
-            echo "audit_file=$AUDIT_FILE"
-            echo "publish=$publish"
-          } >> "$GITHUB_OUTPUT"
-      - name: Publish immutable catalog release
-        if: steps.publication.outputs.publish == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-          RELEASE_TAG: ${{ steps.publication.outputs.release_tag }}
-        run: |
-          set -euo pipefail
-          # Reads one reviewable field out of the audit written above; list
-          # fields print one entry per line so shell loops can consume them.
-          audit_field() {
-            node -e "const fs=require('fs'); const a=JSON.parse(fs.readFileSync(process.env.AUDIT_FILE,'utf8')); const v=a[process.argv[1]]; process.stdout.write(Array.isArray(v)?v.join('\n'):v===undefined||v===null?'':String(v))" "$1"
-          }
-          export AUDIT_FILE="$RUNNER_TEMP/catalog-release-audit.json"
-          tag="$RELEASE_TAG"
-          latest_asset="$RUNNER_TEMP/catalog-latest.v1.json"
-          cp generated/catalog.v1.json "$latest_asset"
-          # Refuse before anything is created, edited or promoted: a published
-          # release cannot be repaired in place, and a checkout that cannot
-          # supply the declared bytes cannot build a release from them either.
-          blocked=$(audit_field blocked)
-          if [ -n "$blocked" ]; then
-            echo "$blocked" >&2
-            exit 1
-          fi
-          if ! gh release view "$tag" >/dev/null 2>&1; then
-            gh release create "$tag" \
-              $(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); process.stdout.write([...Object.keys(i.files),'integrity.json'].map(n=>'generated/'+n).join(' '))") \
-              $(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); process.stdout.write((i.assets??[]).map(a=>'catalog-assets/'+a.name).join(' '))") \
-              "$latest_asset" \
-              --target "$(git rev-parse HEAD)" \
-              --draft \
-              --title "Marketplace catalog $tag" \
-              --notes-file "$RUNNER_TEMP/catalog-change-report.json"
-          else
-            release_is_draft=$(gh release view "$tag" --json isDraft --jq '.isDraft')
-            release_is_immutable=$(gh release view "$tag" --json isImmutable --jq '.isImmutable')
-            if [ "$release_is_draft" != true ] && [ "$release_is_immutable" != true ]; then
-              echo "Published release $tag is not immutable; refusing to mutate it. Remove the invalid release and rerun bootstrap." >&2
-              exit 1
-            fi
-            # A draft is editable, so every asset the audit found missing,
-            # carrying other bytes, or unverifiable is re-uploaded from this
-            # build, and assets this build does not declare are dropped.
-            while IFS= read -r asset; do
-              test -n "$asset" || continue
-              gh release delete-asset "$tag" "$asset" --yes
-            done <<< "$(audit_field remove)"
-            while IFS= read -r asset; do
-              test -n "$asset" || continue
-              path="generated/$asset"
-              if [ ! -f "$path" ]; then path="catalog-assets/$asset"; fi
-              if [ ! -f "$path" ]; then
-                if [ "$asset" = "catalog-latest.v1.json" ]; then
-                  path="$latest_asset"
-                else
-                  echo "no staged bytes for declared asset $asset; refusing to publish a release the catalog cannot fill" >&2
-                  exit 1
-                fi
-              fi
-              echo "uploading $asset from $path"
-              gh release upload "$tag" "$path" --clobber
-            done <<< "$(audit_field upload)"
-          fi
-          # Publishing a draft is the only edit this step may make: a release
-          # that is already published is immutable, and GitHub rejects any edit
-          # of it. Re-running a build that produced an identical catalog (the
-          # same source pins yield the same tag) therefore finds the release
-          # already published and latest, and needs no edit at all.
-          if [ "$(gh release view "$tag" --json isDraft --jq '.isDraft' 2>/dev/null)" = "true" ]; then
-            gh release edit "$tag" --draft=false --latest
-          else
-            test "$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" --jq '.tag_name')" = "$tag" \
-              || { echo "existing release $tag is not latest; refusing to rewrite an immutable release" >&2; exit 1; }
-            echo "release $tag is already published and latest; no edit needed."
-          fi
-      - name: Verify published catalog assets
-        if: steps.publication.outputs.publish == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-          RELEASE_TAG: ${{ steps.publication.outputs.release_tag }}
-        run: |
-          set -euo pipefail
-          release_dir="$RUNNER_TEMP/catalog-release"
-          mkdir -p "$release_dir"
-          tag="$RELEASE_TAG"
-          actual_assets=$(gh release view "$tag" --json assets --jq '.assets[].name' | sort)
-          expected_assets=$(node -e "const fs=require('fs'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); const names=[...Object.keys(i.files),(i.assets??[]).map(a=>a.name),'integrity.json','catalog-latest.v1.json'].flat().sort(); process.stdout.write(names.join('\n')+'\n')")
-          test "$actual_assets" = "$expected_assets"
-          # A release with hundreds of assets is downloaded one request at a
-          # time, and a single transient API error would otherwise fail the gate
-          # and skip the snapshot refresh. Retry the whole download instead.
-          for attempt in 1 2 3; do
-            if gh release download "$tag" --dir "$release_dir" --clobber; then
-              break
-            fi
-            echo "release download attempt ${attempt} failed" >&2
-            test "$attempt" -lt 3 || exit 1
-            sleep 10
-          done
-          bun run verify:published -- "$release_dir" "$release_dir"
-          cmp "$release_dir/catalog.v1.json" "$release_dir/catalog-latest.v1.json"
-          test "$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" --jq '.tag_name')" = "$tag"
-          test "$(gh release view "$tag" --json isImmutable --jq '.isImmutable')" = true
-      - name: Publish browser assets
-        if: inputs['bootstrap-only'] != true
+      - name: Publish catalog snapshot to the asset branch
         env:
           SYNC_TOKEN: ${{ secrets.CATALOG_SYNC_TOKEN }}
         run: |
           set -euo pipefail
-          # A browser cannot read a release asset, so the marks and the index are
-          # pushed to a branch of their own and served from raw.githubusercontent,
-          # where they are CORS-enabled and cacheable. Pushing here, not through
-          # the snapshot pull request, keeps the URLs valid the moment a release
-          # advertises them instead of waiting on a merge.
+          # The catalog is published to the `catalog-assets` branch rather than
+          # to a GitHub Release. GitHub marks exactly one release "latest", and
+          # a snapshot reached through `releases/latest/download/…` outbids
+          # every versioned release for that slot forever, which is why the
+          # repository used to publish a "keep the catalog latest" workflow to
+          # win it back and why no `vX.Y.Z` was ever the release a visitor
+          # saw first. A content-addressed path gives the same immutability a
+          # release tag did — `catalogs/<catalogId>/` cannot be written by any
+          # build that produced different bytes — and leaves Releases to mean
+          # one thing: a version.
+          if [ -z "$SYNC_TOKEN" ]; then
+            echo 'CATALOG_SYNC_TOKEN is not configured. Create a fine-grained PAT' >&2
+            echo '(Contents: read/write on adea-ai/plugins)' >&2
+            echo 'and store it as the CATALOG_SYNC_TOKEN repository secret.' >&2
+            exit 1
+          fi
+          export GIT_AUTHOR_NAME='github-actions[bot]'
+          export GIT_AUTHOR_EMAIL='41898282+github-actions[bot]@users.noreply.github.com'
+          export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+          export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+          catalog_id=$(node -e "const fs=require('fs'); const c=JSON.parse(fs.readFileSync('generated/catalog.v1.json','utf8')); process.stdout.write(c.catalogId)")
+          export CATALOG_ID="$catalog_id"
+          export WORKTREE="$worktree"
+          remote="https://x-access-token:${SYNC_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          # A force-push replaces the whole tree, so previously published
+          # snapshots are fetched first: a pinned `catalogs/<olderId>/…` URL has
+          # to keep resolving, which is the one property the release tag gave.
+          worktree="$RUNNER_TEMP/catalog-assets"
+          rm -rf "$worktree"
+          git init -q "$worktree"
+          git -C "$worktree" remote add origin "$remote"
+          if git -C "$worktree" fetch -q --depth 1 origin catalog-assets; then
+            git -C "$worktree" checkout -q -B catalog-assets FETCH_HEAD
+          else
+            # First publication: the branch does not exist yet.
+            git -C "$worktree" checkout -q --orphan catalog-assets
+            git -C "$worktree" rm -rq --cached . 2>/dev/null || true
+          fi
+          # Drop the current snapshot so a re-run replaces it rather than
+          # merging into it, then write this build's bytes over the top.
+          rm -rf "$worktree/catalogs/${catalog_id#catalog:}"
+          mkdir -p "$worktree/catalogs/${catalog_id#catalog:}"
+          # integrity.json enumerates the artifact set, so the snapshot follows
+          # the catalog rather than a list maintained beside it.
+          node -e "const fs=require('fs'); const path=require('path'); const i=JSON.parse(fs.readFileSync('generated/integrity.json','utf8')); const dir=path.join(process.env.WORKTREE,'catalogs',process.env.CATALOG_ID.replace(/^catalog:/,'')); for (const n of Object.keys(i.files)) fs.copyFileSync(path.join('generated',n), path.join(dir,n)); fs.copyFileSync('generated/integrity.json', path.join(dir,'integrity.json'));"
+          # Brand marks are digest-addressed, so they are shared across
+          # snapshots and live at the branch root where a browser reads them
+          # with no catalog identity in hand.
+          cp catalog-assets/* "$worktree/" 2>/dev/null || true
+          # The one mutable path: byte-identical to this snapshot's catalog, and
+          # the only file a consumer may have cached by name rather than digest.
+          cp generated/catalog.v1.json "$worktree/catalog-latest.v1.json"
+          git -C "$worktree" add -A
+          if git -C "$worktree" diff --cached --quiet; then
+            echo 'The asset branch already carries exactly these bytes; nothing to publish.'
+            exit 0
+          fi
+          git -C "$worktree" commit -q -m "chore(catalog): publish ${catalog_id}"
+          git -C "$worktree" push -q --force origin HEAD:refs/heads/catalog-assets
+          echo "published ${catalog_id}"
+          echo "snapshots retained: $(git -C "$worktree" ls-tree --name-only HEAD catalogs/ | wc -l | tr -d ' ')"
+      - name: Verify published catalog by reading it back
+        env:
+          SYNC_TOKEN: ${{ secrets.CATALOG_SYNC_TOKEN }}
+        run: |
+          set -euo pipefail
+          # A force-push has no immutability guarantee to fall back on, so the
+          # published bytes are fetched from the URLs a consumer will use and
+          # compared against what this build staged. This gate is what an
+          # immutable release used to provide for free.
           #
-          # This runs after the publication gate on purpose: the branch is what a
-          # browser is told to fetch, so it must not advertise an artifact set
-          # whose release has not been verified. The bytes pushed are the same
-          # staged ones the gate just downloaded and re-hashed.
-          test -d catalog-assets || { echo 'no staged assets to publish' >&2; exit 0; }
-          worktree="$(mktemp -d)"
-          git worktree add --detach "$worktree" >/dev/null
-          find "$worktree" -mindepth 1 -maxdepth 1 -not -name .git -exec rm -rf {} +
-          cp -R catalog-assets/. "$worktree/"
-          cd "$worktree"
-          git add -A
-          git -c user.name='github-actions[bot]' \
-              -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
-              commit -m "chore(catalog): publish browser assets" >/dev/null
-          git push --force \
-            "https://x-access-token:${SYNC_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
-            HEAD:refs/heads/catalog-assets
+          # raw.githubusercontent is cached per commit, and the pointer is
+          # mutable, so a stale read is retried rather than reported as a
+          # divergence: a disagreement that survives three attempts is real.
+          for attempt in 1 2 3; do
+            if bun run verify:catalog-branch -- \
+              --artifacts generated \
+              --assets catalog-assets; then
+              echo 'published catalog verified'
+              exit 0
+            fi
+            echo "read-back attempt ${attempt} disagreed; retrying" >&2
+            test "$attempt" -lt 3 || exit 1
+            sleep 15
+          done
+
       - name: Open catalog snapshot pull request
         id: commit
         env:

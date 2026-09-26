@@ -6,7 +6,7 @@ import {
   AgentPackageSchema,
   HarnessProfileSchema,
   InstallationPlanSchema,
-} from '../packages/catalog-schema/src/agent-plugins.js'
+} from '../packages/plugins/src/agent-plugins-schema.js'
 
 function formatSchema(path: string, schema: unknown): string {
   const result = spawnSync('bunx', ['oxfmt', '--stdin-filepath', path], {

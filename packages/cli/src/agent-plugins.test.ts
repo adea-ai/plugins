@@ -3,7 +3,7 @@ import assert from 'node:assert/strict'
 import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises'
 import { join } from 'node:path'
 import { main } from './index.js'
-import { withPortableFixture } from '../../catalog-core/test-support/portable-fixture.js'
+import { withPortableFixture } from '../../plugins/test-support/portable-fixture.js'
 
 async function invoke(root: string, argv: string[]) {
   const output: string[] = []

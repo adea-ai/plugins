@@ -1,6 +1,6 @@
 {
-  "name": "@agent-hq/plugins-marketplace",
-  "version": "1.10.23",
+  "name": "@adea-ai/plugins-marketplace",
+  "version": "1.0.0",
   "private": true,
   "license": "Apache-2.0",
   "workspaces": [
@@ -22,8 +22,8 @@
     "materialize-plan": "bun run catalog materialize-plan",
     "build-catalog": "bun run catalog build-catalog",
     "verify:published": "bun run scripts/verify-published-artifacts.ts",
-    "audit:release": "bun run scripts/audit-release-assets.ts",
-    "schema:check": "bun run schema:plugins && bun run packages/cli/src/index.ts validate --schema-only",
+    "verify:catalog-branch": "bun run scripts/verify-catalog-branch.ts",
+    "schema:check": "bun run scripts/agent-plugin-schemas.ts --check && bun run packages/cli/src/index.ts validate --schema-only",
     "sync:fixtures": "bun run packages/cli/src/index.ts sync --offline --fixture-root fixtures",
     "sync:live": "bun run packages/cli/src/index.ts sync",
     "verify:integrity": "bun run packages/cli/src/index.ts verify-integrity",

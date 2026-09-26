@@ -1,14 +1,11 @@
 import { promises as fs } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { createMaterializationPlan } from '../../harness-adapters/src/index.js'
-import { createCatalogInstallationPlan } from '../../harness-adapters/src/agent-plugins.js'
-import { parsePluginJson } from '../../catalog-core/src/agent-plugins.js'
-import {
-  synchronizePortable,
-  verifyPortableCatalog,
-} from '../../catalog-core/src/portable-catalog.js'
-import { HarnessProfileSchema } from '../../catalog-schema/src/agent-plugins.js'
+import { createMaterializationPlan } from '../../plugins/src/harness.js'
+import { createCatalogInstallationPlan } from '../../plugins/src/agent-plugins-harness.js'
+import { parsePluginJson } from '../../plugins/src/agent-plugins-catalog.js'
+import { synchronizePortable, verifyPortableCatalog } from '../../plugins/src/portable-catalog.js'
+import { HarnessProfileSchema } from '../../plugins/src/agent-plugins-schema.js'
 import {
   byteDigest,
   digest,
@@ -24,30 +21,27 @@ import {
   type CategoryMap,
   type GeneratedArtifacts,
   type ProductAliases,
-} from '../../catalog-core/src/index.js'
+} from '../../plugins/src/index.js'
 import {
   parseProductPreference,
   type ConsumerIndex,
   type ProductPreference,
-} from '../../catalog-core/src/consumer-index.js'
-import {
-  parseProductIconOverrides,
-  type ProductIconOverrides,
-} from '../../catalog-core/src/icons.js'
-import { isPublicHostname } from '../../catalog-core/src/site-icons.js'
+} from '../../plugins/src/consumer-index.js'
+import { parseProductIconOverrides, type ProductIconOverrides } from '../../plugins/src/icons.js'
+import { isPublicHostname } from '../../plugins/src/site-icons.js'
 import {
   resolveIconSources,
   stageIconAssets,
   type IconSource,
-} from '../../catalog-core/src/icon-mirror.js'
+} from '../../plugins/src/icon-mirror.js'
 import {
   HarnessSchema,
   parseCatalog,
   parseSourcesLock,
   type Catalog,
   type SourcesLock,
-} from '../../catalog-schema/src/index.js'
-import type { SourceConfig } from '../../source-adapters/src/index.js'
+} from '../../plugins/src/schema.js'
+import type { SourceConfig } from '../../plugins/src/sources.js'
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..')
 
@@ -447,9 +441,11 @@ async function loadConfiguration(root: string): Promise<{
     ),
     readOptionalJson<unknown>(join(configDirectory, 'product-preference.json')),
     readOptionalJson<unknown>(join(configDirectory, 'product-icons.json')),
-    readOptionalJson<{ repositoryUrl?: unknown; assetsBaseUrl?: unknown }>(
-      join(configDirectory, 'publication.json')
-    ),
+    readOptionalJson<{
+      repositoryUrl?: unknown
+      assetsBaseUrl?: unknown
+      catalogsBaseUrl?: unknown
+    }>(join(configDirectory, 'publication.json')),
   ])
   return {
     sources: sources.sources,
@@ -470,6 +466,9 @@ async function loadConfiguration(root: string): Promise<{
       : {}),
     ...(publication && typeof publication.assetsBaseUrl === 'string'
       ? { publicationAssetsBaseUrl: publication.assetsBaseUrl }
+      : {}),
+    ...(publication && typeof publication.catalogsBaseUrl === 'string'
+      ? { publicationCatalogsBaseUrl: publication.catalogsBaseUrl }
       : {}),
     policy,
   }
