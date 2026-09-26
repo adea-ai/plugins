@@ -15,17 +15,15 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "@adea-ai/catalog-schema": ["./packages/catalog-schema/src/index.ts"],
-      "@adea-ai/source-adapters": ["./packages/source-adapters/src/index.ts"],
-      "@adea-ai/harness-adapters": ["./packages/harness-adapters/src/index.ts"],
-      "@adea-ai/catalog-core": ["./packages/catalog-core/src/index.ts"],
-      "@adea-ai/catalog-core/publication": ["./packages/catalog-core/src/publication.ts"],
-      "@adea-ai/catalog-schema/agent-plugins": ["./packages/catalog-schema/src/agent-plugins.ts"],
-      "@adea-ai/catalog-core/agent-plugins": ["./packages/catalog-core/src/agent-plugins.ts"],
-      "@adea-ai/catalog-core/portable-catalog": ["./packages/catalog-core/src/portable-catalog.ts"],
-      "@adea-ai/harness-adapters/agent-plugins": [
-        "./packages/harness-adapters/src/agent-plugins.ts"
-      ]
+      "@adea-ai/plugins": ["./packages/plugins/src/index.ts"],
+      "@adea-ai/plugins/schema": ["./packages/plugins/src/schema.ts"],
+      "@adea-ai/plugins/sources": ["./packages/plugins/src/sources.ts"],
+      "@adea-ai/plugins/harness": ["./packages/plugins/src/harness.ts"],
+      "@adea-ai/plugins/publication": ["./packages/plugins/src/publication.ts"],
+      "@adea-ai/plugins/portable-catalog": ["./packages/plugins/src/portable-catalog.ts"],
+      "@adea-ai/plugins/agent-plugins": ["./packages/plugins/src/agent-plugins-catalog.ts"],
+      "@adea-ai/plugins/agent-plugins/schema": ["./packages/plugins/src/agent-plugins-schema.ts"],
+      "@adea-ai/plugins/agent-plugins/harness": ["./packages/plugins/src/agent-plugins-harness.ts"]
     }
   },
   "include": ["packages/**/*.ts", "scripts/**/*.ts"],

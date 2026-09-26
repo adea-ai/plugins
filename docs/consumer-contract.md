@@ -2,27 +2,44 @@
 
 The repository is currently public. The stable browser-readable catalog URL is:
 
-`https://github.com/adea-ai/plugins/releases/latest/download/catalog-latest.v1.json`
+`https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/catalog-latest.v1.json`
 
-The immutable release URL for the current catalog is derived from `catalogId`:
+The immutable URL for a catalog is derived from `catalogId`:
 
-`https://github.com/adea-ai/plugins/releases/download/catalog/<catalogId-suffix>/catalog.v1.json`
+`https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/catalogs/<catalogId-suffix>/catalog.v1.json`
 
-For example, `catalog:abc...` is published under the immutable tag
-`catalog/abc...`. Each catalog release contains six core artifacts —
+For example, `catalog:abc...` is published under the immutable directory
+`catalogs/abc...`. Each catalog snapshot contains six core artifacts —
 `catalog.v1.json`, `catalog-summary.v1.json`, `categories.v1.json`,
 `compatibility.v1.json`, `integrity.json`, and `sources.lock.json` — plus the
 consumer shards `catalog-index.v1.json`, `shelf-<category>.v1.json` and
-`category-<category>.v1.json`, and one asset per mirrored brand mark.
-`integrity.json` enumerates every artifact and asset in the release with its
-digest, so the release inventory is self-describing rather than fixed. The
-`catalog-latest.v1.json` pointer asset is byte-identical to `catalog.v1.json`
-in that release. Fetch patterns and cache lifetimes are defined in
-[consumer fetch patterns](consumer-fetch-patterns.md). The repository’s GitHub immutable-release
-setting is enabled; this seven-file asset set is attached before the release is
-published.
+`category-<category>.v1.json`. Mirrored brand marks are addressed by their own
+digest and sit at the branch root rather than inside a snapshot, so every
+snapshot shares them. `integrity.json` enumerates every artifact and asset in
+the snapshot with its digest, so the inventory is self-describing rather than
+fixed. The `catalog-latest.v1.json` pointer is byte-identical to
+`catalog.v1.json` in the current snapshot. Fetch patterns and cache lifetimes
+are defined in [consumer fetch patterns](consumer-fetch-patterns.md).
+
+## Why the catalog is not published as a release
+
+The catalog used to be published as a GitHub Release tagged
+`catalog/<catalogId-suffix>`, and consumers read it through
+`releases/latest/download/…`. GitHub marks exactly one release "latest", so a
+content-addressed catalog reached that way outbid every versioned release for
+that slot permanently. The repository carried a workflow whose only job was to
+win the slot back after each release, which meant the Releases page led with a
+64-character digest and no `vX.Y.Z` was ever the release a visitor saw first.
+
+A branch removes the conflict instead of arbitrating it. `catalogs/<catalogId>/`
+is content-addressed exactly as the release tag was: a build that produced
+different bytes has a different `catalogId` and therefore a different path, so a
+pinned URL is immutable by construction. `raw.githubusercontent.com` serves it
+with `access-control-allow-origin: *`, so a browser can read it directly, which a
+GitHub release asset cannot do. Releases are left to mean one thing — a version.
+
 Consumers should use the stable latest URL for discovery, then pin the
-digest-derived release URL and exact `catalogId` for caching and audit records.
+digest-derived URL and exact `catalogId` for caching and audit records.
 
 The two kinds of digest in `integrity.json` are taken over different things,
 and a verifier has to reproduce each exactly:
@@ -31,9 +48,9 @@ and a verifier has to reproduce each exactly:
   _text_: read the fetched artifact as a string, canonicalize that string as a
   JSON value (a string canonicalizes to its own quoted JSON form), then hash the
   UTF-8 bytes of the result. It is deliberately not `sha256` of the file bytes,
-  so a checker hashing the raw file disagrees with every published release even
-  though the release is consistent. `canonicalDigest` in Adea's
-  `@adea/workspace-ui` and `digest` in this repository's `catalog-core`
+  so a checker hashing the raw file disagrees with every published snapshot even
+  though the snapshot is consistent. `canonicalDigest` in Adea's
+  `@adea/workspace-ui` and `digest` in this repository's `@adea-ai/plugins`
   implement the convention on either side.
 - an **asset** digest (`assets[i].digest`) is `sha256` over the mirrored mark's
   bytes, because a client stores those bytes; `icon.digest` in a product record
@@ -46,7 +63,7 @@ and teaching every consumer to accept them, which is a breaking change for
 already-installed clients: it needs a contract-version bump and a consumer
 release that understands the new value before this repository switches, not an
 edit here. Until then, compare bytes through the release API's own asset digests
-(what `bun run audit:release` does) when the question is "are these the same
+(what `bun run verify:published` does) when the question is "are these the same
 files", and use this convention when the question is "did the artifact I fetched
 match the manifest".
 
@@ -94,7 +111,7 @@ compatibility statuses. Consumers must not re-group, re-sort or slice
 `releaseId`, `canonicalContentDigest`, and the requested harness to Control
 Plane. Adea never downloads or executes upstream plugin content.
 
-Control Plane fetches the immutable release server-side, verifies the catalog
+Control Plane fetches the immutable snapshot server-side, verifies the catalog
 and content digests, checks revocation/supersession and policy, resolves
 connectors and credentials through its own authorities, and preserves the
 release ID and digest in installation and execution records. Catalog metadata

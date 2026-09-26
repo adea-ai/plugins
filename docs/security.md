@@ -22,7 +22,7 @@ Controls include:
 
 ## Mirrored brand marks
 
-A product's brand mark is mirrored into the catalog release, because
+A product's brand mark is mirrored into the publication branch, because
 marketplaces declare no icon field and consumers would otherwise have to fetch
 vendor repositories directly. Mirroring is the only path by which upstream bytes
 are republished, and it is constrained:
@@ -58,10 +58,10 @@ are republished, and it is constrained:
   with the browsing index. A site icon is therefore never re-fetched after
   resolution: its URL is not content addressed, so a vendor could otherwise
   change the file between the build and the release.
-- they are committed rather than published only as release assets because a
-  browser cannot use the latter: GitHub answers a cross-origin fetch with no
-  `access-control-allow-origin` header, and every asset request redirects through
-  a signed URL marked `no-cache`, which defeats image caching. From the repository
+- they are published to the repository branch rather than as release assets
+  because a browser cannot use the latter: GitHub answers a cross-origin fetch
+  with no `access-control-allow-origin` header, and every asset request redirects
+  through a signed URL marked `no-cache`, which defeats image caching. From the repository
   the same bytes are CORS-enabled, direct and cacheable, and content-addressed
   names keep that cache correct. Every release declares each asset's digest and byte length in
   `integrity.json`, and the publish step compares the bytes it is about to
@@ -82,5 +82,5 @@ the release workflow to publish no marks at all.
 
 The classifier is static and conservative. It is not malware detection, sandboxing,
 or runtime authorization. Control Plane must re-check policy and credentials when
-it turns a catalog release into an execution plan. Credentials are never stored
+it turns a catalog snapshot into an execution plan. Credentials are never stored
 in marketplace artifacts.

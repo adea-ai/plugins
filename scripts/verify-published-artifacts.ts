@@ -5,7 +5,7 @@ import {
   verifyArtifacts,
   type GeneratedArtifacts,
   type PublishedAsset,
-} from '../packages/catalog-core/src/index.js'
+} from '../packages/plugins/src/index.js'
 
 /**
  * Verifies a downloaded catalog release.

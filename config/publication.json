@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
   "repositoryUrl": "https://github.com/adea-ai/plugins",
-  "assetsBaseUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets"
+  "assetsBaseUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets",
+  "catalogsBaseUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/catalogs"
 }

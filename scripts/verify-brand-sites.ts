@@ -1,8 +1,8 @@
 import { promises as fs } from 'node:fs'
 import { join } from 'node:path'
-import { createSiteIconFetcher, SITE_FETCH_TIMEOUT_MS } from '../packages/catalog-core/src/index.js'
-import { parseProductIconOverrides } from '../packages/catalog-core/src/icons.js'
-import { resolveSiteIcon } from '../packages/catalog-core/src/site-icons.js'
+import { createSiteIconFetcher, SITE_FETCH_TIMEOUT_MS } from '../packages/plugins/src/index.js'
+import { parseProductIconOverrides } from '../packages/plugins/src/icons.js'
+import { resolveSiteIcon } from '../packages/plugins/src/site-icons.js'
 
 /**
  * Re-resolves every curated site override against the policy a live build uses.

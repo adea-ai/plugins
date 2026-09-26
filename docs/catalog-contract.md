@@ -1,7 +1,7 @@
 # Catalog contract
 
 The contract is versioned independently from the marketplace dialects. Zod
-schemas in `packages/catalog-schema` are the runtime source of truth; the JSON
+schemas in `packages/plugins/src/schema.ts` are the runtime source of truth; the JSON
 schemas in `schemas/` are language-neutral validation references.
 
 Stable identities have two levels:

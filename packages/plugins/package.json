@@ -1,0 +1,100 @@
+{
+  "name": "@adea-ai/plugins",
+  "version": "1.0.0",
+  "description": "Deterministic compiler for AI agent plugin marketplaces: schemas, source parsing, provenance verification, per-harness materialization, and provenance-checked static artifacts.",
+  "keywords": [
+    "agents",
+    "catalog",
+    "compiler",
+    "deterministic",
+    "harness",
+    "marketplace",
+    "mcp",
+    "plugins",
+    "provenance",
+    "schema",
+    "skills"
+  ],
+  "homepage": "https://github.com/adea-ai/plugins#readme",
+  "bugs": "https://github.com/adea-ai/plugins/issues",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adea-ai/plugins.git",
+    "directory": "packages/plugins"
+  },
+  "files": [
+    "dist",
+    "src",
+    "schemas",
+    "README.md"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "bun": "./src/index.ts",
+      "import": "./dist/index.js"
+    },
+    "./schema": {
+      "types": "./dist/schema.d.ts",
+      "bun": "./src/schema.ts",
+      "import": "./dist/schema.js"
+    },
+    "./sources": {
+      "types": "./dist/sources.d.ts",
+      "bun": "./src/sources.ts",
+      "import": "./dist/sources.js"
+    },
+    "./harness": {
+      "types": "./dist/harness.d.ts",
+      "bun": "./src/harness.ts",
+      "import": "./dist/harness.js"
+    },
+    "./publication": {
+      "types": "./dist/publication.d.ts",
+      "bun": "./src/publication.ts",
+      "import": "./dist/publication.js"
+    },
+    "./portable-catalog": {
+      "types": "./dist/portable-catalog.d.ts",
+      "bun": "./src/portable-catalog.ts",
+      "import": "./dist/portable-catalog.js"
+    },
+    "./agent-plugins": {
+      "types": "./dist/agent-plugins-catalog.d.ts",
+      "bun": "./src/agent-plugins-catalog.ts",
+      "import": "./dist/agent-plugins-catalog.js"
+    },
+    "./agent-plugins/schema": {
+      "types": "./dist/agent-plugins-schema.d.ts",
+      "bun": "./src/agent-plugins-schema.ts",
+      "import": "./dist/agent-plugins-schema.js"
+    },
+    "./agent-plugins/harness": {
+      "types": "./dist/agent-plugins-harness.d.ts",
+      "bun": "./src/agent-plugins-harness.ts",
+      "import": "./dist/agent-plugins-harness.js"
+    },
+    "./schema/*": "./schemas/*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "tar-stream": "^3.2.1",
+    "yaml": "2.9.1",
+    "zod": "^4.6.5"
+  },
+  "engines": {
+    "bun": ">=1.4.0 <2",
+    "node": ">=24 <25"
+  }
+}

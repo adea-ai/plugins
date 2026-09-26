@@ -4,34 +4,31 @@ import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-// Publishes the marketplace toolkit packages to the public npm registry:
-// @adea-ai/catalog-schema (with the versioned JSON Schema artifacts),
-// @adea-ai/source-adapters, @adea-ai/harness-adapters, and @adea-ai/catalog-core.
-// All four are metadata-only — pure schemas, parsing, planning, and
-// compilation with no marketplace data, network installs, or lifecycle
-// scripts; that is what makes public publishing safe. The marketplace CLI
-// stays repository-internal: it wires the toolkit to the configured
-// official marketplace sources.
+// Publishes the marketplace toolkit to the public npm registry as the single
+// package @adea-ai/plugins. It is metadata-only — schemas, source parsing,
+// provenance verification, per-harness materialization, and the deterministic
+// catalog compiler, with no marketplace data, network installs, or lifecycle
+// scripts; that is what makes public publishing safe. The marketplace CLI stays
+// repository-internal: it wires the toolkit to the configured official
+// marketplace sources.
+//
+// The catalog itself is deliberately NOT carried here. A snapshot is ~38 MB and
+// changes whenever an upstream marketplace moves, several times a day, so
+// shipping it inside a semver package would force a toolkit release on every
+// data change and churn every consumer's lockfile. The catalog is published to
+// the content-addressed `catalog-assets` branch instead; see docs/consumer-contract.md.
 //
 // The npm `adea` org must exist and NPM_TOKEN must be an automation token
-// with publish rights on it. Versions come from each package manifest
-// (release-please lockstep with the repository root); already-published
-// versions are skipped, so the script is safe to re-run and runs on every
-// main push touching these paths. Packages are built in dependency order
-// because each build resolves sibling types from their freshly built dist.
+// with publish rights on it. The version comes from the package manifest
+// (release-please bumps it in lockstep with the repository root); an
+// already-published version is skipped, so the script is safe to re-run and
+// runs on every main push touching these paths.
 
 const repoRoot = resolve(fileURLToPath(new URL('..', import.meta.url)))
 
 const SCHEMA_DIR = 'schemas'
 
-// In dependency order: each package's build resolves sibling types from
-// their dist output.
-const PUBLISH_PACKAGES = [
-  { dir: 'packages/catalog-schema', schemas: true },
-  { dir: 'packages/source-adapters', schemas: false },
-  { dir: 'packages/catalog-core', schemas: false },
-  { dir: 'packages/harness-adapters', schemas: false },
-]
+const PUBLISH_PACKAGES = [{ dir: 'packages/plugins', schemas: true }]
 
 function sh(args, cwd, extraEnv) {
   const result = spawnSync(args[0], args.slice(1), {

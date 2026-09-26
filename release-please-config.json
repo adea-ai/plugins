@@ -45,27 +45,18 @@
   ],
   "pull-request-title-pattern": "chore(main): release ${version}",
   "group-pull-request-title-pattern": "chore(main): release ${version}",
-  "extra-files": [],
+  "extra-files": [
+    {
+      "type": "json",
+      "path": "packages/plugins/package.json",
+      "jsonpath": "$.version"
+    }
+  ],
+  "include-component-in-tag": false,
   "packages": {
     ".": {
       "release-type": "node",
-      "package-name": "@agent-hq/plugins-marketplace"
-    },
-    "packages/catalog-core": {
-      "release-type": "node",
-      "package-name": "@adea-ai/catalog-core"
-    },
-    "packages/catalog-schema": {
-      "release-type": "node",
-      "package-name": "@adea-ai/catalog-schema"
-    },
-    "packages/harness-adapters": {
-      "release-type": "node",
-      "package-name": "@adea-ai/harness-adapters"
-    },
-    "packages/source-adapters": {
-      "release-type": "node",
-      "package-name": "@adea-ai/source-adapters"
+      "package-name": "@adea-ai/plugins"
     }
   }
 }

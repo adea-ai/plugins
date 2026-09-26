@@ -65,16 +65,20 @@ silently accepted.
 
 ## Architecture
 
-- `packages/catalog-schema` — Zod-backed versioned contracts and runtime parsing.
-- `packages/source-adapters` — OpenAI, Cursor, and Claude marketplace dialects,
+The toolkit ships as one npm package, `@adea-ai/plugins`, so that a consumer
+installs a single version and a release means one thing. Its internals stay
+separately addressable through subpath exports.
+
+- `@adea-ai/plugins/schema` — Zod-backed versioned contracts and runtime parsing.
+- `@adea-ai/plugins/sources` — OpenAI, Cursor, and Claude marketplace dialects,
   source-reference normalization, duplicate-key JSON parsing, and path/URL gates.
-- `packages/catalog-core` — immutable ref resolution, safe snapshots,
+- `@adea-ai/plugins` — immutable ref resolution, safe snapshots,
   canonical package recipes, component diagnostics, deterministic artifacts,
   integrity, and atomic last-known-good publication.
-- `packages/harness-adapters` — capability-negotiated v2 installation plans,
+- `@adea-ai/plugins/harness` — capability-negotiated v2 installation plans,
   stable instance data keys, and MCP launch/connect descriptors; original v1
   materialization APIs remain available for migration.
-- `packages/cli` — the `plugins` command surface.
+- `packages/cli` — the `plugins` command surface, kept repository-internal.
 
 The full boundary and data flow are in [`docs/architecture.md`](docs/architecture.md).
 Existing catalog URL/field contracts remain in
@@ -122,7 +126,7 @@ The published artifact set contains:
 - `catalog-index.v1.json`, `shelf-<category>.v1.json`,
   `category-<category>.v1.json` — the consumer shards: deduplicated product
   records, pre-sorted and ready to render.
-- `icon-<digest>.<ext>` release assets — brand marks mirrored at publish time
+- `icon-<digest>.<ext>` assets — brand marks mirrored at publish time
   from the plugin's own content, or from the product site's icon when the plugin
   ships none, so consumers never fetch a vendor repository or a favicon service.
 - `integrity.json` — SHA-256 digests for every artifact except itself.
@@ -139,11 +143,13 @@ readers can continue parsing the existing extensible metadata field.
 dispatch. The canonical compiler also detects old catalogs without package metadata and
 replays verified source pins once, even when source heads are unchanged. After
 migration, unchanged sources remain no-ops. The workflow builds and validates
-changed artifacts, commits generated artifacts to `main`, and publishes
-an immutable catalog release plus a latest catalog asset. All required assets
-are attached before publication, and CI verifies that the published release is
-actually immutable. It also bootstraps the release when the current catalog is
-unchanged but has never been published. CI runs formatting,
+changed artifacts, commits generated artifacts to `main`, and publishes the
+snapshot to the content-addressed `catalog-assets` branch, where each catalog
+lives at `catalogs/<catalogId-suffix>/` and a byte-identical
+`catalog-latest.v1.json` pointer sits at the root. CI reads the published bytes
+back from the URLs consumers use and compares them against what it staged, since
+a force-push gives no immutability guarantee of its own. Releases are reserved
+for versions, so the repository publishes one `vX.Y.Z` per release. CI runs formatting,
 lint, type checking, tests, build, schema/integrity, determinism, and generated
 artifact consistency checks. Original fixture goldens are preserved with
 `--legacy-catalog`; a separate canonical fixture pass validates package metadata

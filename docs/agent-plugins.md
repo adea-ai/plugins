@@ -110,7 +110,7 @@ because it contains matching checksums.
 Control Plane supplies a profile for the actual runtime and adapter version:
 
 ```ts
-import type { HarnessProfile } from '@adea-ai/catalog-schema/agent-plugins'
+import type { HarnessProfile } from '@adea-ai/plugins/agent-plugins/schema'
 
 // Obtain this from the selected, tested adapter. Do not infer it from a brand name.
 const profile: HarnessProfile = adapter.capabilities()
@@ -135,9 +135,9 @@ sets `allowedToActivate` to true; every plan requires a separate approval.
 ## Control Plane API
 
 ```ts
-import { createCatalogInstallationPlan } from '@adea-ai/harness-adapters/agent-plugins'
-import { materializeAgentPackage } from '@adea-ai/catalog-core/agent-plugins'
-import { resolveMcpBinding, verifyBindingPaths } from '@adea-ai/harness-adapters/agent-plugins'
+import { createCatalogInstallationPlan } from '@adea-ai/plugins/agent-plugins/harness'
+import { materializeAgentPackage } from '@adea-ai/plugins/agent-plugins'
+import { resolveMcpBinding, verifyBindingPaths } from '@adea-ai/plugins/agent-plugins/harness'
 
 const plan = createCatalogInstallationPlan({
   catalog: verifiedCatalog,
@@ -180,9 +180,9 @@ between preflight and launch. A separate realpath check alone does not eliminate
 
 For non-catalog integrations, `createInstallationPlan` accepts an already verified package and
 immutable source identity directly. `compileAgentPackage`, `verifyAgentPackage` and
-`materializeAgentPackage` are exported from `@adea-ai/catalog-core/agent-plugins`.
+`materializeAgentPackage` are exported from `@adea-ai/plugins/agent-plugins`.
 `synchronizePortable` and `verifyPortableCatalog` are exported from
-`@adea-ai/catalog-core/portable-catalog`. Original root APIs remain available.
+`@adea-ai/plugins/portable-catalog`. Original root APIs remain available.
 
 ## Persistent data and MCP execution descriptors
 
