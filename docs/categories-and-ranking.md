@@ -124,10 +124,10 @@ Two rules keep shelves clean:
   curates or has already shelved. A fill can never take a curated product away
   from the category that curated it.
 
-### Curation drift is published
+### Curation drift is diagnosed, but blocks publication
 
 A curated name that no longer resolves is **skipped, never invented**, and
-reported in `categories.v1.json` → `diagnostics` with a reason:
+reported in the generated `categories.v1.json` → `diagnostics` with a reason:
 
 | Reason                    | Meaning                                                |
 | ------------------------- | ------------------------------------------------------ |
@@ -135,13 +135,17 @@ reported in `categories.v1.json` → `diagnostics` with a reason:
 | `PRODUCT_NOT_IN_CATEGORY` | the product exists, but not in the curated category    |
 | `UNKNOWN_CATEGORY`        | the curated category itself is absent from the catalog |
 
-Diagnostics are computed for live builds only: an offline fixture build replays
-synthetic content that no curation targets, so it publishes an empty list.
-`bun run catalog validate` prints the same list, and
-`bun run verify-integrity` rejects any published index whose shelves, counts or
-membership contradict `catalog.v1.json`. A unit test (`config.test.ts`) checks
-the shipped configuration, and once the checked-in snapshot carries an index it
-also asserts the published `diagnostics` list is empty.
+Diagnostics are computed for live builds only: offline fixture builds replay
+synthetic content that no curation targets and omit curation diagnostics, so
+their generated list is empty. `bun run catalog validate` reports live
+diagnostics for inspection. The synchronization workflow then runs
+`bun test packages/cli/src/config.test.ts` before publishing; that test requires
+the generated snapshot's diagnostics to be empty, so curation drift cannot
+update `catalog-assets` until the curated names are corrected.
+`bun run verify-integrity` separately rejects any published index whose shelves,
+counts or membership contradict `catalog.v1.json`. The same unit test checks the
+shipped configuration and asserts that the checked-in snapshot has no curation
+diagnostics when it carries the index.
 
 ## Consumer quick path
 

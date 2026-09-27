@@ -19,8 +19,9 @@ same source bytes must produce byte-identical JSON.
 
 The scheduled workflow compares source heads first. If all four heads equal the
 lock, it exits successfully without touching generated files. When any head
-changes, it builds a temporary catalog, validates schemas and integrity, writes
-a JSON change report, commits the replacement to `main`, and publishes the
+changes, it builds a temporary catalog, validates schemas, integrity, and every
+configured curated shelf name, writes a JSON change report, commits the
+replacement to `main`, and publishes the
 snapshot to the `catalog-assets` branch under `catalogs/<catalogId-suffix>/`,
 where `<catalogId-suffix>` is the catalog's own digest. The six required
 versioned artifacts and `integrity.json` go into that directory, the mirrored
@@ -32,6 +33,10 @@ and preserved so pinned URLs keep resolving. A force-push carries no immutabilit
 guarantee, so the workflow reads the published bytes back from the URLs a
 consumer will use and compares them against what it staged before reporting
 success.
+
+The curated-shelf check runs before the workflow writes the asset branch. A
+missing curated product therefore fails the sync while the existing mutable
+pointer and immutable snapshots remain intact.
 
 If parsing, source resolution, policy, classification, integrity, or artifact
 publication fails, the workflow fails and the previously published snapshot
