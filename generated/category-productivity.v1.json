@@ -1,8 +1,8 @@
 {
-  "catalogId": "catalog:46639457dd9268f619932be85e31428e3c494186547ca029c6262fb2c90df647",
+  "catalogId": "catalog:b73e0478c43f74f95ffa1f86a2474798bc28b05208b7f89153028b27ccfaad9a",
   "category": "productivity",
-  "pluginCount": 129,
-  "productCount": 97,
+  "pluginCount": 133,
+  "productCount": 100,
   "products": [
     {
       "authors": [
@@ -3363,6 +3363,99 @@
     },
     {
       "authors": [
+        "Desktop Commander"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 6
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "MCP server for terminal commands, process management, and file operations across text, code, PDF, DOCX, Excel, images, and structured data.",
+      "displayName": "Desktop Commander",
+      "homepage": "https://desktopcommander.app/",
+      "icon": {
+        "asset": "icon-61895f8af06635267b842e0bb0e223a6.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-61895f8af06635267b842e0bb0e223a6.png",
+        "bytes": 19721,
+        "contentType": "image/png",
+        "digest": "sha256:61895f8af06635267b842e0bb0e223a609feed2e0036e5038c2e2b127da87a70",
+        "homepage": "https://desktopcommander.app/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://desktopcommander.app/apple-touch-icon.png"
+      },
+      "keywords": [
+        "commander",
+        "desktop",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 81,
+        "text": "DC"
+      },
+      "pluginId": "plugin:claude-official:desktop-commander",
+      "primaryCategory": "productivity",
+      "productKey": "desktop-commander",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/claude",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "1eccc8b09cc09805202a1737fd20d605356c3671"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:0852668c5f1de4b0ce60fa8dae9b0a8a09c9583871c6283520541bff595a806b",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:2aa0380be30033fd9c74c131f00d4da840124f08dd2d883c25da67d75799dfaf",
+        "packageStatus": "partial",
+        "releaseId": "release:97548f03cf3dc938f705f1b5a76e4b5c57bc2761d916c86e89c1705db38c2ba8",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "1eccc8b09cc09805202a1737fd20d605356c3671",
+        "upstreamVersion": "0.2.0"
+      },
+      "releaseId": "release:97548f03cf3dc938f705f1b5a76e4b5c57bc2761d916c86e89c1705db38c2ba8",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "desktop-commander",
+      "variantPluginIds": [
+        "plugin:claude-official:desktop-commander",
+        "plugin:knowledge-work-official:desktop-commander"
+      ],
+      "variantsIdentical": true
+    },
+    {
+      "authors": [
         "Anthropic"
       ],
       "capabilitySummary": {
@@ -5231,6 +5324,102 @@
         "plugin:knowledge-work-official:leadfeeder"
       ],
       "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "command": 1,
+        "mcp-server": 1,
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Attorney guidance and legal tools for business and personal needs. AI-powered document review identifies critical risks and important clauses, advises when to engage an attorney, and routes to LegalZoom's network when professional expertise is needed.",
+      "displayName": "Legalzoom",
+      "homepage": "https://www.legalzoom.com/",
+      "icon": {
+        "asset": "icon-e31cae17fb0c44aa36afc8feb7542fa9.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-e31cae17fb0c44aa36afc8feb7542fa9.ico",
+        "bytes": 15406,
+        "contentType": "image/x-icon",
+        "digest": "sha256:e31cae17fb0c44aa36afc8feb7542fa950a787a02048d08fcfe90d8bc103b85f",
+        "homepage": "https://www.legalzoom.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://legalzoomcdn.net/growth/favicon.ico"
+      },
+      "keywords": [
+        "legalzoom",
+        "productivity"
+      ],
+      "license": "PROPRIETARY",
+      "monogram": {
+        "hue": 237,
+        "text": "LE"
+      },
+      "pluginId": "plugin:claude-official:legalzoom",
+      "primaryCategory": "productivity",
+      "productKey": "legalzoom",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/legalzoom",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "f9fd8a0ca6e1421bc1aacb113a109663a7a6f6d8"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:9fca560c1d1bdbc90df77c1e60bd17b5e23cd068e33a949cbaf9069d013688ea",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:cb4514c0d2cd05dab1e656361365c41810d07a31b714335735dd043be351595b",
+        "packageStatus": "partial",
+        "releaseId": "release:11587270a2a10dbe4d42dbb9df0dc0b90819491497a6e7c104bdd86f0a37a780",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "f9fd8a0ca6e1421bc1aacb113a109663a7a6f6d8",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:11587270a2a10dbe4d42dbb9df0dc0b90819491497a6e7c104bdd86f0a37a780",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "legalzoom",
+      "variantPluginIds": [
+        "plugin:claude-official:legalzoom"
+      ],
+      "variantsIdentical": false
     },
     {
       "authors": [
@@ -7992,6 +8181,106 @@
       "upstreamName": "unstructured-foundation",
       "variantPluginIds": [
         "plugin:knowledge-work-official:unstructured-foundation"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Vanguard"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 1,
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Vanguard Advisor Tools for financial professionals: research and compare funds and ETFs across the industry and prepare for client conversations, using Vanguard's advisor connector in Claude.",
+      "displayName": "Vanguard Advisor Tools",
+      "homepage": "https://advisors.vanguard.com/",
+      "icon": {
+        "asset": "icon-5cffa84be6843f729fc633bfea97fc0e.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-5cffa84be6843f729fc633bfea97fc0e.ico",
+        "bytes": 3638,
+        "contentType": "image/x-icon",
+        "digest": "sha256:5cffa84be6843f729fc633bfea97fc0e55b0fcefd4d04187524768e3c3dccd4b",
+        "homepage": "https://advisors.vanguard.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://advisors.vanguard.com/favicon.ico"
+      },
+      "keywords": [
+        "advisor",
+        "productivity",
+        "tools",
+        "vanguard"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 261,
+        "text": "VA"
+      },
+      "pluginId": "plugin:claude-official:vanguard-advisor-tools",
+      "primaryCategory": "productivity",
+      "productKey": "vanguard-advisor-tools",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "328fe9f61fe7a375b87a6492e265b4a5a955b0ce"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:4157f72c355a434ba2d2bd01b548fa83674cb509be7f0626be0f026f598cfeec",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:a5b77460309b0ae348382404870d7b0fb55a8ae0ca2ba9ea91f095eb8077bfbb",
+        "packageStatus": "portable",
+        "releaseId": "release:a748b31ebff34b3dd3bf6586ca519ba69affcdf45abfde347cc80a5cc5942e4a",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "328fe9f61fe7a375b87a6492e265b4a5a955b0ce",
+        "upstreamVersion": "1.3.0"
+      },
+      "releaseId": "release:a748b31ebff34b3dd3bf6586ca519ba69affcdf45abfde347cc80a5cc5942e4a",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "vanguard-advisor-tools",
+      "variantPluginIds": [
+        "plugin:claude-official:vanguard-advisor-tools"
       ],
       "variantsIdentical": false
     },

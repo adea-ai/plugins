@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:46639457dd9268f619932be85e31428e3c494186547ca029c6262fb2c90df647",
+  "catalogId": "catalog:b73e0478c43f74f95ffa1f86a2474798bc28b05208b7f89153028b27ccfaad9a",
   "category": "finance",
   "pluginCount": 27,
   "productCount": 22,
@@ -1771,13 +1771,16 @@
     },
     {
       "authors": [
-        "Unknown"
+        "Anthropic"
       ],
       "capabilitySummary": {
+        "agent": 1,
+        "command": 2,
         "mcp-server": 1,
-        "skill": 7
+        "skill": 8
       },
       "categories": [
+        "developer-tools",
         "finance"
       ],
       "compatibility": {
@@ -1789,8 +1792,9 @@
         "opencode": "partially-supported",
         "pi": "partially-supported"
       },
-      "description": "Develop your payments integration faster with the ability to create products, prices, and payment links directly in ChatGPT. Run your business from ChatGPT with the ability to retrieve and manage payments, subscriptions, invoices, refunds, disputes, and customers. Build and debug your payment integration quicker than ever by searching the Stripe documentation and getting integration recommendations without needing to leave ChatGPT.",
+      "description": "Stripe development plugin for Claude",
       "displayName": "Stripe",
+      "homepage": "https://github.com/stripe/ai/tree/main/providers/claude/plugin",
       "icon": {
         "asset": "icon-8034d1975f2ff4408cb399089eb6c4b5.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8034d1975f2ff4408cb399089eb6c4b5.png",
@@ -1803,26 +1807,34 @@
         "url": null
       },
       "keywords": [
-        "finance",
+        "developer-tools",
         "stripe"
       ],
-      "license": "Unknown",
+      "license": "MIT",
       "monogram": {
         "hue": 93,
         "text": "ST"
       },
-      "pluginId": "plugin:openai-official:stripe",
-      "primaryCategory": "finance",
+      "pluginId": "plugin:claude-official:stripe",
+      "primaryCategory": "developer-tools",
       "productKey": "stripe",
       "provenance": {
-        "manifestPath": ".agents/plugins/marketplace.json",
-        "pluginSubdirectory": "plugins/stripe",
-        "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "providers/claude/plugin",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "68382523846ea5bfad75ba1ef58dc5db031d0a5a"
       },
       "release": {
-        "canonicalContentDigest": "sha256:0447f9dba6e44bd422ba5cc2fa7e1c89074e054910c2d29ac5bea7d84514b0a4",
+        "canonicalContentDigest": "sha256:9b9ffce0b98807f1e8edceac78c9640207908c205c812955959fc7d4197b56e1",
         "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
           {
             "name": "mcp-server",
             "type": "mcp-server"
@@ -1833,17 +1845,15 @@
           }
         ],
         "contentResolution": "complete",
-        "packageDigest": "sha256:ff6844bc613c110fcb2ab97b0218a589be929844c47737212a8497be7e3bf17e",
+        "packageDigest": "sha256:e778a97400a0026e730262fb88f051ebe90df79ed106d669e1f0ed476e743a44",
         "packageStatus": "partial",
-        "releaseId": "release:ae03c35346b337ef7eb34714e1241207d88015d42cc502e6ca3c93ea35738679",
+        "releaseId": "release:1750bf590bbb616cc4ae96def6c5ed45822559b2dce21ef27d8996c414fe1c5d",
         "requiredConnectors": [],
-        "requiredCredentials": [
-          "authentication"
-        ],
-        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
-        "upstreamVersion": "7.0.0"
+        "requiredCredentials": [],
+        "sourceRevision": "68382523846ea5bfad75ba1ef58dc5db031d0a5a",
+        "upstreamVersion": "0.7.4"
       },
-      "releaseId": "release:ae03c35346b337ef7eb34714e1241207d88015d42cc502e6ca3c93ea35738679",
+      "releaseId": "release:1750bf590bbb616cc4ae96def6c5ed45822559b2dce21ef27d8996c414fe1c5d",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -1854,9 +1864,10 @@
           "Contains mcp-server capability metadata."
         ]
       },
-      "sourceId": "openai-official",
+      "sourceId": "claude-official",
       "upstreamName": "stripe",
       "variantPluginIds": [
+        "plugin:claude-official:stripe",
         "plugin:openai-official:stripe"
       ],
       "variantsIdentical": false

@@ -1,8 +1,8 @@
 {
-  "catalogId": "catalog:46639457dd9268f619932be85e31428e3c494186547ca029c6262fb2c90df647",
+  "catalogId": "catalog:b73e0478c43f74f95ffa1f86a2474798bc28b05208b7f89153028b27ccfaad9a",
   "category": "security",
-  "pluginCount": 24,
-  "productCount": 19,
+  "pluginCount": 25,
+  "productCount": 20,
   "products": [
     {
       "authors": [
@@ -378,6 +378,87 @@
         "plugin:knowledge-work-official:auth0"
       ],
       "variantsIdentical": true
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 3
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Aikido Security scanning for Claude Code — SAST, secrets, and IaC vulnerability detection powered by the Aikido MCP server.",
+      "displayName": "Aikido",
+      "homepage": "https://github.com/AikidoSec/aikido-claude-plugin",
+      "icon": null,
+      "keywords": [
+        "aikido",
+        "security"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 42,
+        "text": "AI"
+      },
+      "pluginId": "plugin:claude-official:aikido",
+      "primaryCategory": "security",
+      "productKey": "aikido",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "5db259bac62bf0c3a37bfd0fee6e22cc25bdb704"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d21ebcd3251ce1609c1ea1ea76724c29a919b280750a286c2f8c6c25507769cb",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:097f24ac7a7ac6ce5755c1633185dda3e44eb5e1f33265f9cf84795b71bc8dae",
+        "packageStatus": "partial",
+        "releaseId": "release:fa91c290784756e80ec9cb999affb297ebf8918cdc48d45810e4fa59d3091249",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "5db259bac62bf0c3a37bfd0fee6e22cc25bdb704",
+        "upstreamVersion": "1.2.8"
+      },
+      "releaseId": "release:fa91c290784756e80ec9cb999affb297ebf8918cdc48d45810e4fa59d3091249",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "aikido",
+      "variantPluginIds": [
+        "plugin:claude-official:aikido"
+      ],
+      "variantsIdentical": false
     },
     {
       "authors": [

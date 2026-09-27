@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:46639457dd9268f619932be85e31428e3c494186547ca029c6262fb2c90df647",
+  "catalogId": "catalog:b73e0478c43f74f95ffa1f86a2474798bc28b05208b7f89153028b27ccfaad9a",
   "categories": [
     "business-operations",
     "communication",
@@ -13,7 +13,7 @@
     "security"
   ],
   "generatedAt": "2026-09-26T20:45:12.068Z",
-  "pluginCount": 536,
+  "pluginCount": 559,
   "productGroups": [
     "42crunch-api-security-testing",
     "activecampaign",
@@ -27,6 +27,7 @@
     "ahrefs",
     "ai-firstify",
     "ai-plugins",
+    "aikido",
     "airtable",
     "airwallex-agentos",
     "airwallex-dev",
@@ -34,6 +35,7 @@
     "alloydb",
     "alloydb-omni",
     "altimate-code",
+    "amazon-location-service",
     "amazon-selling-partner",
     "amd-skills",
     "amplemarket",
@@ -54,7 +56,9 @@
     "aws-amplify",
     "aws-core",
     "aws-data-analytics",
+    "aws-serverless",
     "aws-startup-advisor",
+    "aws-transform",
     "azure-cosmos-db-assistant",
     "azure-sql-developer",
     "b12-claude-plugin",
@@ -63,6 +67,7 @@
     "bigquery-data-analytics",
     "bio-research",
     "blackrock-advisor-center-plugin",
+    "boltz",
     "boltz-api-cli",
     "box",
     "brand-voice",
@@ -136,10 +141,14 @@
     "data",
     "data-agent-kit-starter-pack",
     "data-analytics",
+    "databases-on-aws",
+    "databricks",
     "datadog",
     "dataproc",
     "dataverse",
+    "deploy-on-aws",
     "design",
+    "desktop-commander",
     "discord",
     "docs-canvas",
     "docusign",
@@ -225,9 +234,12 @@
     "learn-with-coursera",
     "learning-output-style",
     "legal",
+    "legalzoom",
     "life-science-research",
     "linear",
     "linq-alpha",
+    "liquid-lsp",
+    "liquid-skills",
     "logfire",
     "logrocket",
     "looker",
@@ -242,15 +254,18 @@
     "marketing",
     "math-olympiad",
     "maven-bio",
+    "mcp-apps",
     "mcp-server-dev",
     "mcp-tunnels",
     "meltwater",
     "mem",
+    "mercadopago",
     "mercury",
     "mergify",
     "microsoft-docs",
     "migration-to-aws",
     "mintlify",
+    "miro",
     "mixpanel-headless",
     "mlflow",
     "modern-web-guidance",
@@ -259,6 +274,7 @@
     "mongodb",
     "mongodb-atlas",
     "navan",
+    "neon",
     "netlify-skills",
     "netsuite-ai-companion",
     "netsuite-finance-analyst",
@@ -341,6 +357,7 @@
     "ruby-lsp",
     "runway-api",
     "rust-analyzer-lsp",
+    "sagemaker-ai",
     "sales",
     "salesforce",
     "sanity",
@@ -363,6 +380,7 @@
     "sharepoint",
     "shippo",
     "shopify",
+    "shopify-ai-toolkit",
     "shopify-store",
     "signoz",
     "similarweb",
@@ -381,6 +399,7 @@
     "stackhawk-api",
     "stackhawk-hawkscan",
     "statsig",
+    "streaming-skills-plugin",
     "stripe",
     "sumup",
     "supabase",
@@ -411,6 +430,7 @@
     "unstructured-foundation",
     "upwork",
     "valtown",
+    "vanguard-advisor-tools",
     "vanta",
     "vanta-mcp-plugin",
     "vercel",
@@ -465,6 +485,10 @@
       "text": "Endor Labs AI Plugins (Legacy) Set up endorctl and use Endor Labs to scan, prioritize, and fix security risks across your software supply chain ai developer-tools plugins"
     },
     {
+      "pluginId": "plugin:claude-official:aikido",
+      "text": "Aikido Aikido Security scanning for Claude Code — SAST, secrets, and IaC vulnerability detection powered by the Aikido MCP server. aikido security"
+    },
+    {
       "pluginId": "plugin:claude-official:airtable",
       "text": "Airtable Airtable is the database and operations layer for your agents — whether running product, marketing, sales, ops, HR, or a custom business app. It combines structured data with multiplayer visual surfaces (grid, kanban, calendar, gallery, timeline) humans and agents share — plus sync integrations to Jira, Salesforce, Zendesk, Google Drive, Databricks, and the rest of your stack, all backed by enterprise governance. This plugin makes Claude fluent in Airtable: creating bases and schema, working with records, and sharing UI for collaboration. Bundles the official Airtable MCP server. airtable productivity"
     },
@@ -491,6 +515,10 @@
     {
       "pluginId": "plugin:claude-official:altimate-code",
       "text": "Altimate Code Delegates dbt and warehouse work to altimate-code, a specialized CLI agent with 100+ purpose-built data tools (SQL analysis, column-level lineage, dbt build/test/run, warehouse profiling, FinOps, connectivity to Snowflake, BigQuery, Redshift, Databricks, Postgres, MySQL, DuckDB). altimate code data-analytics developer-tools"
+    },
+    {
+      "pluginId": "plugin:claude-official:amazon-location-service",
+      "text": "Amazon Location Service Guide developers through adding maps, places search, geocoding, routing, and other geospatial features with Amazon Location Service, including authentication setup, SDK integration, and best practices. amazon developer-tools location service"
     },
     {
       "pluginId": "plugin:claude-official:amazon-selling-partner",
@@ -557,8 +585,16 @@
       "text": "AWS Data Analytics Data lake, analytics, and ETL workflows with S3 Tables, AWS Glue, and Athena. analytics aws data developer-tools"
     },
     {
+      "pluginId": "plugin:claude-official:aws-serverless",
+      "text": "AWS Serverless Design, build, deploy, test, and debug serverless applications with AWS Serverless services. aws developer-tools serverless"
+    },
+    {
       "pluginId": "plugin:claude-official:aws-startup-advisor",
       "text": "AWS Startup Advisor Personalized architecture, cost, security, and migration guidance for startups. From day-one account setup and security baselines to production-ready infrastructure, cost optimization, and beyond. Includes AWS Activate Credits eligibility, 60+ exclusive startup offers, and multi-account multi-region support. Built on expertise from AWS Startup Solutions Architects and patterns from 350,000+ startups. advisor aws developer-tools startup"
+    },
+    {
+      "pluginId": "plugin:claude-official:aws-transform",
+      "text": "AWS Transform Migrate, modernize, and upgrade codebases to AWS. Transforms .NET Framework to .NET 8/10, mainframe COBOL to Java, VMware VMs to EC2, SQL Server to Aurora, and upgrades Java/Python/Node.js versions and AWS SDKs. AWS Transform - continuous modernization analyzes codebases for tech debt, security issues, and upgrade opportunities, then remediates them. aws developer-tools transform"
     },
     {
       "pluginId": "plugin:claude-official:azure-cosmos-db-assistant",
@@ -579,6 +615,10 @@
     {
       "pluginId": "plugin:claude-official:blackrock-advisor-center-plugin",
       "text": "Blackrock Advisor Center Plugin BlackRock Advisor Center 360° skills for financial advisors: portfolio review, opportunity and fund-health checks, guided benchmark selection, guided portfolio building, wealth projections, and routing to Advisor Center web workflows. Requires the BlackRock Advisor Center connector and an Advisor Center account. advisor blackrock center plugin productivity"
+    },
+    {
+      "pluginId": "plugin:claude-official:boltz",
+      "text": "Boltz Predict structures, screen molecules and proteins, and design binders with Boltz from Claude Code. boltz developer-tools"
     },
     {
       "pluginId": "plugin:claude-official:box",
@@ -741,6 +781,14 @@
       "text": "DAK This plugin provides a specialized suite of skills for data engineers and database practitioners working on Google Cloud. It acts as an expert assistant, allowing you to use natural language prompts in your preferred coding agent to architect complex data pipelines, transform data with dbt, write Spark and BigQuery SQL notebooks, and orchestrate end-to-end workflows across GCP's data ecosystem. agent data developer-tools kit pack starter"
     },
     {
+      "pluginId": "plugin:claude-official:databases-on-aws",
+      "text": "Databases on AWS Expert database guidance for the AWS database portfolio. Design schemas, execute queries, handle migrations, and choose the right database for your workload. aws data-analytics databases on"
+    },
+    {
+      "pluginId": "plugin:claude-official:databricks",
+      "text": "Databricks Databricks skills for the CLI, Apps, Lakebase, Model Serving, Lakeflow Jobs, Spark Declarative Pipelines, Declarative Automation Bundles (DABs), and classic-to-serverless migration. data-analytics databricks"
+    },
+    {
       "pluginId": "plugin:claude-official:datadog",
       "text": "Datadog Use Datadog directly in Claude Code through a preconfigured Datadog MCP server. Query logs, metrics, traces, dashboards, and more through natural conversation. This plugin is in preview. datadog developer-tools"
     },
@@ -751,6 +799,14 @@
     {
       "pluginId": "plugin:claude-official:dataverse",
       "text": "Dataverse Agent skills for building on, analyzing, and managing Microsoft Dataverse — with Dataverse MCP, PAC CLI, and Python SDK. data-analytics dataverse"
+    },
+    {
+      "pluginId": "plugin:claude-official:deploy-on-aws",
+      "text": "Deploy on AWS Deploy applications to AWS with architecture recommendations, cost estimates, and IaC deployment. aws deploy developer-tools on"
+    },
+    {
+      "pluginId": "plugin:claude-official:desktop-commander",
+      "text": "Desktop Commander MCP server for terminal commands, process management, and file operations across text, code, PDF, DOCX, Excel, images, and structured data. commander desktop productivity"
     },
     {
       "pluginId": "plugin:claude-official:discord",
@@ -961,12 +1017,24 @@
       "text": "Learning Output Style Interactive learning mode that requests meaningful code contributions at decision points (mimics the unshipped Learning output style) education-research learning output style"
     },
     {
+      "pluginId": "plugin:claude-official:legalzoom",
+      "text": "Legalzoom Attorney guidance and legal tools for business and personal needs. AI-powered document review identifies critical risks and important clauses, advises when to engage an attorney, and routes to LegalZoom's network when professional expertise is needed. legalzoom productivity"
+    },
+    {
       "pluginId": "plugin:claude-official:linear",
       "text": "Linear Linear issue tracking integration. Create issues, manage projects, update statuses, search across workspaces, and streamline your software development workflow with Linear's modern issue tracker. linear productivity"
     },
     {
       "pluginId": "plugin:claude-official:linq-alpha",
       "text": "LinqAlpha LinqAlpha financial research in Claude: guided setup for the LinqAlpha connector, capability-based source selection for fundamentals, estimates, transcripts, filings and market data, and an optional, opt-in default-source preference you can remove at any time. Requires a LinqAlpha account. alpha linq productivity"
+    },
+    {
+      "pluginId": "plugin:claude-official:liquid-lsp",
+      "text": "Liquid LSP LSP integration for Shopify Liquid templates via the Shopify CLI theme language server. developer-tools liquid lsp"
+    },
+    {
+      "pluginId": "plugin:claude-official:liquid-skills",
+      "text": "Liquid Skills Liquid language fundamentals, CSS/JS/HTML coding standards, and WCAG accessibility patterns for Shopify themes developer-tools liquid skills"
     },
     {
       "pluginId": "plugin:claude-official:logfire",
@@ -1005,12 +1073,20 @@
       "text": "Math Olympiad Solve competition math (IMO, Putnam, USAMO) with adversarial verification that catches what self-verification misses. Fresh-context verifiers attack proofs with specific failure patterns. Calibrated abstention over bluffing. education-research math olympiad"
     },
     {
+      "pluginId": "plugin:claude-official:mcp-apps",
+      "text": "MCP Apps Skills for creating MCP Apps with the MCP Apps SDK apps developer-tools mcp"
+    },
+    {
       "pluginId": "plugin:claude-official:mcp-server-dev",
       "text": "MCP Server Dev Skills for designing and building MCP servers that work seamlessly with Claude. Guides you through deployment models (remote HTTP, MCPB, local), tool design patterns, auth, and interactive MCP apps. dev developer-tools mcp server"
     },
     {
       "pluginId": "plugin:claude-official:mcp-tunnels",
       "text": "MCP Tunnels Connect Claude to a private MCP server through an Anthropic MCP tunnel. The /create-docker-mcp-tunnel command drives the Docker Compose quickstart end to end: certificates, proxy config, cloudflared, and a verifiable sample server. developer-tools mcp tunnels"
+    },
+    {
+      "pluginId": "plugin:claude-official:mercadopago",
+      "text": "Mercado Pago Mercado Pago full-product integration toolkit. One agent routes to four orchestration skills (mp-integrate wizard, mp-webhooks, mp-test-setup, mp-review) that pull every endpoint, payload, and snippet live from the official Mercado Pago MCP server. The MCP must always be connected — there is no offline mode. developer-tools mercadopago"
     },
     {
       "pluginId": "plugin:claude-official:mergify",
@@ -1027,6 +1103,10 @@
     {
       "pluginId": "plugin:claude-official:mintlify",
       "text": "Mintlify Build beautiful documentation sites with Mintlify. Convert non-markdown files into properly formatted MDX pages, add and modify content with correct component use, and automate documentation updates. developer-tools mintlify"
+    },
+    {
+      "pluginId": "plugin:claude-official:miro",
+      "text": "Miro Secure access to Miro boards. Enables AI to read board context, create diagrams, and generate code with enterprise-grade security. creativity miro"
     },
     {
       "pluginId": "plugin:claude-official:mlflow",
@@ -1047,6 +1127,10 @@
     {
       "pluginId": "plugin:claude-official:mongodb-atlas",
       "text": "MongoDB Atlas Connect to MongoDB Atlas clusters only through the Atlas Managed MCP Server. Sign in with your Atlas account to explore data, manage collections, optimize queries, generate reliable code with MongoDB best practices, and manage Atlas resources such as clusters, projects, database users, and network access. If you are running a different MongoDB deployment or want to run a local MongoDB MCP Server, install the MongoDB (Self-Managed MCP) plugin instead. atlas data-analytics mongodb"
+    },
+    {
+      "pluginId": "plugin:claude-official:neon",
+      "text": "Neon Manage your Neon projects and databases with the neon-postgres agent skill and the Neon MCP Server. data-analytics neon"
     },
     {
       "pluginId": "plugin:claude-official:netlify-skills",
@@ -1269,6 +1353,10 @@
       "text": "Rust Analyzer LSP Rust language server for code intelligence and analysis analyzer developer-tools lsp rust"
     },
     {
+      "pluginId": "plugin:claude-official:sagemaker-ai",
+      "text": "Sagemaker AI Build, train, and deploy AI models with deep AWS AI/ML expertise brought directly into your coding assistants, covering the surface area of Amazon SageMaker AI. ai developer-tools sagemaker"
+    },
+    {
       "pluginId": "plugin:claude-official:sanity",
       "text": "Sanity Sanity content platform integration with MCP server, agent skills, and slash commands. Query and author content, build and optimize GROQ queries, design schemas, and set up Visual Editing. developer-tools sanity"
     },
@@ -1329,6 +1417,10 @@
       "text": "Shippo Shippo connects you to USPS, UPS, FedEx, DHL, and 40+ carriers, so you can handle a shipment end to end right inside Claude. Compare live rates and pick the cheapest or best option, buy and print labels (domestic and international, with customs declarations), validate and standardize addresses, and track packages across carriers. Just ask in plain language: rate-shop a parcel, buy the right label, check a delivery status, or confirm an address before you ship. Whether you run a store or just need to send a package, Shippo turns a pile of carrier accounts into one simple conversation. productivity shippo"
     },
     {
+      "pluginId": "plugin:claude-official:shopify-ai-toolkit",
+      "text": "Shopify Plugin Shopify's AI Toolkit provides 18 development skills for building on the Shopify platform, covering documentation search, API schema access, GraphQL and Liquid code validation, Hydrogen storefronts, Polaris UI extensions, store management via CLI, and onboarding guidance for both developers and merchants. ai developer-tools shopify toolkit"
+    },
+    {
       "pluginId": "plugin:claude-official:skill-creator",
       "text": "Skill Creator Create new skills, improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, update or optimize an existing skill, run evals to test a skill, or benchmark skill performance with variance analysis. creator developer-tools skill"
     },
@@ -1367,6 +1459,14 @@
     {
       "pluginId": "plugin:claude-official:stackhawk-hawkscan",
       "text": "Hawkscan Configure, run, and interpret HawkScan DAST results inside Claude Code. Generates stackhawk.yml configs, runs scans via CLI or Docker, and transforms security findings into prioritized fix tasks for your coding agent. hawkscan security stackhawk"
+    },
+    {
+      "pluginId": "plugin:claude-official:streaming-skills-plugin",
+      "text": "Streaming Skills Plugin Skills for streaming application developers, covering Kafka and Flink client libraries and Schema Registry developer-tools plugin skills streaming"
+    },
+    {
+      "pluginId": "plugin:claude-official:stripe",
+      "text": "Stripe Stripe development plugin for Claude developer-tools stripe"
     },
     {
       "pluginId": "plugin:claude-official:sumup",
@@ -1431,6 +1531,10 @@
     {
       "pluginId": "plugin:claude-official:valtown",
       "text": "Val Town Build and deploy on Val Town. Bundles the Val Town MCP server and platform skills (HTTP vals, cron/intervals, SQLite, email, OAuth, React UI, third-party integrations, templates). developer-tools valtown"
+    },
+    {
+      "pluginId": "plugin:claude-official:vanguard-advisor-tools",
+      "text": "Vanguard Advisor Tools Vanguard Advisor Tools for financial professionals: research and compare funds and ETFs across the industry and prepare for client conversations, using Vanguard's advisor connector in Claude. advisor productivity tools vanguard"
     },
     {
       "pluginId": "plugin:claude-official:vanta",
@@ -2009,6 +2113,10 @@
       "text": "Design Accelerate design workflows — critique, design system management, UX writing, accessibility audits, research synthesis, and dev handoff. From exploration to pixel-perfect specs. creativity design"
     },
     {
+      "pluginId": "plugin:knowledge-work-official:desktop-commander",
+      "text": "Desktop Commander MCP server for terminal commands, process management, and file operations across text, code, PDF, DOCX, Excel, images, and structured data. commander desktop productivity"
+    },
+    {
       "pluginId": "plugin:knowledge-work-official:dropbox",
       "text": "Dropbox The Dropbox plugin for Claude connects your Dropbox files directly to Claude, so you can search, organize, save generated content, and create sharing links without switching tools. It respects your existing Dropbox permissions, and Claude only works with files you already have access to. dropbox productivity"
     },
@@ -2123,6 +2231,10 @@
     {
       "pluginId": "plugin:knowledge-work-official:mintlify",
       "text": "Mintlify Build beautiful documentation sites with Mintlify. Convert non-markdown files into properly formatted MDX pages, add and modify content with correct component use, and automate documentation updates. developer-tools mintlify"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:miro",
+      "text": "Miro Secure access to Miro boards. Enables AI to read board context, create diagrams, and generate code with enterprise-grade security. creativity miro"
     },
     {
       "pluginId": "plugin:knowledge-work-official:modern-web-guidance",

@@ -1,8 +1,8 @@
 {
-  "catalogId": "catalog:46639457dd9268f619932be85e31428e3c494186547ca029c6262fb2c90df647",
+  "catalogId": "catalog:b73e0478c43f74f95ffa1f86a2474798bc28b05208b7f89153028b27ccfaad9a",
   "category": "data-analytics",
-  "pluginCount": 48,
-  "productCount": 41,
+  "pluginCount": 51,
+  "productCount": 44,
   "products": [
     {
       "authors": [
@@ -2014,6 +2014,228 @@
     },
     {
       "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "executable": 8,
+        "hook": 1,
+        "mcp-server": 1,
+        "skill": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Expert database guidance for the AWS database portfolio. Design schemas, execute queries, handle migrations, and choose the right database for your workload.",
+      "displayName": "Databases on AWS",
+      "homepage": "https://github.com/awslabs/agent-plugins",
+      "icon": {
+        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "bytes": 3061,
+        "contentType": "image/png",
+        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
+        "homepage": "https://aws.amazon.com/products/databases/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+      },
+      "keywords": [
+        "aws",
+        "data-analytics",
+        "databases",
+        "on"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 108,
+        "text": "DO"
+      },
+      "pluginId": "plugin:claude-official:databases-on-aws",
+      "primaryCategory": "data-analytics",
+      "productKey": "databases-on-aws",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/databases-on-aws",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "026f03dc9a2f217ab96aa61f87f10fe8c09e067d"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:e9a950ce6c62d9416ca53f2bb7731ff65c5c3082fa61288f591e53a6c5648fed",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:0b6b2686fd81d2b7388332bf2e167ea237b9a5372c9e9d6c4cc7d8d824c78cfe",
+        "packageStatus": "partial",
+        "releaseId": "release:2e751d9a1546da957f78fceefddfd2f35ff0bfc7fa76f026dac94849667b4837",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "026f03dc9a2f217ab96aa61f87f10fe8c09e067d",
+        "upstreamVersion": "1.8.1"
+      },
+      "releaseId": "release:2e751d9a1546da957f78fceefddfd2f35ff0bfc7fa76f026dac94849667b4837",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "databases-on-aws",
+      "variantPluginIds": [
+        "plugin:claude-official:databases-on-aws"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Databricks"
+      ],
+      "capabilitySummary": {
+        "agent": 31,
+        "command": 2,
+        "executable": 14,
+        "hook": 5,
+        "scheduled-task": 1,
+        "skill": 31
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Databricks skills for the CLI, Apps, Lakebase, Model Serving, Lakeflow Jobs, Spark Declarative Pipelines, Declarative Automation Bundles (DABs), and classic-to-serverless migration.",
+      "displayName": "Databricks",
+      "homepage": "https://developers.databricks.com/",
+      "icon": {
+        "asset": "icon-00e528e4d5e665dbb5784e3d028b74ec.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-00e528e4d5e665dbb5784e3d028b74ec.svg",
+        "bytes": 582,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:00e528e4d5e665dbb5784e3d028b74ecf74405e5ff5a9c75a4d8661f05bda91c",
+        "homepage": null,
+        "kind": "content",
+        "path": "skills/databricks-apps/assets/databricks.svg",
+        "url": null
+      },
+      "keywords": [
+        "data-analytics",
+        "databricks"
+      ],
+      "license": "LicenseRef-Databricks",
+      "monogram": {
+        "hue": 45,
+        "text": "DA"
+      },
+      "pluginId": "plugin:claude-official:databricks",
+      "primaryCategory": "data-analytics",
+      "productKey": "databricks",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/databricks/claude",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "4d17885b0115718b5fb6a7540e908cb4201d4f2d"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:68b55cc7e2c2fca846b660a2dc659f92daa138655fc1114a74491df7230363e9",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "scheduled-task",
+            "type": "scheduled-task"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:1f6c42ff519b4befd04c2f846170789ca32db69186c2934e5b3aa1cde3c2f72f",
+        "packageStatus": "partial",
+        "releaseId": "release:a59d297a7f3a157a3488f86b2e1d230bdb38ab9754a4319636b973ec8c31ade9",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "4d17885b0115718b5fb6a7540e908cb4201d4f2d",
+        "upstreamVersion": "0.2.15"
+      },
+      "releaseId": "release:a59d297a7f3a157a3488f86b2e1d230bdb38ab9754a4319636b973ec8c31ade9",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook",
+          "scheduled-task"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata.",
+          "Contains scheduled-task capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "databricks",
+      "variantPluginIds": [
+        "plugin:claude-official:databricks"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
         "Google LLC"
       ],
       "capabilitySummary": {
@@ -2991,6 +3213,97 @@
       "upstreamName": "mongodb-atlas",
       "variantPluginIds": [
         "plugin:claude-official:mongodb-atlas"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 7
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Manage your Neon projects and databases with the neon-postgres agent skill and the Neon MCP Server.",
+      "displayName": "Neon",
+      "homepage": "https://github.com/neondatabase/agent-skills/tree/main/plugins/neon-postgres",
+      "icon": {
+        "asset": "icon-2b1aaef0b2de5d30b9a00778a0a9b9df.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-2b1aaef0b2de5d30b9a00778a0a9b9df.svg",
+        "bytes": 275,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:2b1aaef0b2de5d30b9a00778a0a9b9df2255be08a939a9521f3c93a46de521cf",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "data-analytics",
+        "neon"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 102,
+        "text": "NE"
+      },
+      "pluginId": "plugin:claude-official:neon",
+      "primaryCategory": "data-analytics",
+      "productKey": "neon",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/neon-postgres",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "2e0da3a1653bcdd227565ac14bb3e9e453a8b854"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d9d12b7da0494e660a3d6e0ee4834148a377acb588f85559f3f50e3e2eb02636",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:4456dbbb3bbc79321f271810886f79119b49896565ee434bb761bf8b24f67174",
+        "packageStatus": "portable",
+        "releaseId": "release:3a3ae3aaa8511eeb4471502ee71e45bdaf3c5a2624e8177bc5a63f113e22a68e",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "2e0da3a1653bcdd227565ac14bb3e9e453a8b854",
+        "upstreamVersion": "1.2.0"
+      },
+      "releaseId": "release:3a3ae3aaa8511eeb4471502ee71e45bdaf3c5a2624e8177bc5a63f113e22a68e",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "neon",
+      "variantPluginIds": [
+        "plugin:claude-official:neon"
       ],
       "variantsIdentical": false
     },
