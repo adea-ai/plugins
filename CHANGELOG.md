@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/adea-ai/plugins/compare/v2.0.1...v2.0.2) (2026-09-27)
+
+
+### Bug Fixes
+
+* **catalog:** archive limits and restore pinned marketplace plugins ([#163](https://github.com/adea-ai/plugins/issues/163)) ([4014516](https://github.com/adea-ai/plugins/commit/4014516baeb9cdf641a39fc1a506806fb485ad95))
+
 ## [2.0.1](https://github.com/adea-ai/plugins/compare/v2.0.0...v2.0.1) (2026-09-26)
 
 
