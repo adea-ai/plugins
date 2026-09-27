@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:46639457dd9268f619932be85e31428e3c494186547ca029c6262fb2c90df647",
+  "catalogId": "catalog:b73e0478c43f74f95ffa1f86a2474798bc28b05208b7f89153028b27ccfaad9a",
   "categories": [
     {
       "category": "business-operations",
@@ -79,9 +79,10 @@
     },
     {
       "category": "creativity",
-      "productCount": 17,
+      "productCount": 18,
       "productKeys": [
         "canva",
+        "miro",
         "excalidraw",
         "gamma",
         "cloudinary",
@@ -102,7 +103,7 @@
     },
     {
       "category": "data-analytics",
-      "productCount": 41,
+      "productCount": 44,
       "productKeys": [
         "atlan",
         "bigquery-data-analytics",
@@ -124,6 +125,8 @@
         "convex",
         "data",
         "data-analytics",
+        "databases-on-aws",
+        "databricks",
         "dataproc",
         "dataverse",
         "duckdb-skills",
@@ -135,6 +138,7 @@
         "mixpanel-headless",
         "mongodb",
         "mongodb-atlas",
+        "neon",
         "oracledb",
         "pinecone",
         "planetscale",
@@ -149,7 +153,7 @@
     },
     {
       "category": "developer-tools",
-      "productCount": 167,
+      "productCount": 180,
       "productKeys": [
         "github",
         "playwright",
@@ -162,6 +166,7 @@
         "ai-plugins",
         "airwallex-dev",
         "altimate-code",
+        "amazon-location-service",
         "amd-skills",
         "amplitude",
         "appwrite",
@@ -171,7 +176,10 @@
         "aws-amplify",
         "aws-core",
         "aws-data-analytics",
+        "aws-serverless",
         "aws-startup-advisor",
+        "aws-transform",
+        "boltz",
         "boltz-api-cli",
         "browser-use",
         "build-ios-apps",
@@ -199,6 +207,7 @@
         "dash0",
         "data-agent-kit-starter-pack",
         "datadog",
+        "deploy-on-aws",
         "dominodatalab",
         "dynatrace",
         "engineering",
@@ -226,6 +235,8 @@
         "langfuse",
         "langfuse-observability",
         "laravel-boost",
+        "liquid-lsp",
+        "liquid-skills",
         "logfire",
         "logrocket",
         "lovable",
@@ -233,8 +244,10 @@
         "lumen",
         "magicpath",
         "mapbox",
+        "mcp-apps",
         "mcp-server-dev",
         "mcp-tunnels",
+        "mercadopago",
         "mergify",
         "microsoft-docs",
         "migration-to-aws",
@@ -280,6 +293,7 @@
         "rootly",
         "ruby-lsp",
         "rust-analyzer-lsp",
+        "sagemaker-ai",
         "sanity",
         "sanity-plugin",
         "sap-cds-mcp",
@@ -290,10 +304,13 @@
         "servicenow-sdk",
         "setup-agent-analytics",
         "setup-mcp-agent-analytics",
+        "shopify-ai-toolkit",
         "signoz",
         "skill-creator",
         "snowflake-cortex-code",
         "sourcegraph",
+        "streaming-skills-plugin",
+        "stripe",
         "sumup",
         "supabase",
         "superpowers",
@@ -391,7 +408,7 @@
     },
     {
       "category": "productivity",
-      "productCount": 97,
+      "productCount": 100,
       "productKeys": [
         "google-calendar",
         "google-drive",
@@ -430,6 +447,7 @@
         "commit-commands",
         "craft",
         "cwc-makers",
+        "desktop-commander",
         "discord",
         "docs-canvas",
         "dropbox",
@@ -451,6 +469,7 @@
         "intuit-quickbooks",
         "jotform",
         "leadfeeder",
+        "legalzoom",
         "linear",
         "linq-alpha",
         "lusha",
@@ -482,6 +501,7 @@
         "telegram",
         "typeform",
         "unstructured-foundation",
+        "vanguard-advisor-tools",
         "vibe-prospecting",
         "windsor-ai",
         "wingspan",
@@ -494,12 +514,13 @@
     },
     {
       "category": "security",
-      "productCount": 19,
+      "productCount": 20,
       "productKeys": [
         "nightvision",
         "zscaler",
         "42crunch-api-security-testing",
         "auth0",
+        "aikido",
         "claude-security",
         "codex-security",
         "crowdsec",
@@ -519,9 +540,9 @@
     }
   ],
   "counts": {
-    "plugins": 536,
-    "products": 422,
-    "redundantPlugins": 114
+    "plugins": 559,
+    "products": 442,
+    "redundantPlugins": 117
   },
   "generatedAt": "2026-09-26T20:45:12.068Z",
   "products": {
@@ -1674,6 +1695,87 @@
       ],
       "variantsIdentical": false
     },
+    "aikido": {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 3
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Aikido Security scanning for Claude Code — SAST, secrets, and IaC vulnerability detection powered by the Aikido MCP server.",
+      "displayName": "Aikido",
+      "homepage": "https://github.com/AikidoSec/aikido-claude-plugin",
+      "icon": null,
+      "keywords": [
+        "aikido",
+        "security"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 42,
+        "text": "AI"
+      },
+      "pluginId": "plugin:claude-official:aikido",
+      "primaryCategory": "security",
+      "productKey": "aikido",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "5db259bac62bf0c3a37bfd0fee6e22cc25bdb704"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d21ebcd3251ce1609c1ea1ea76724c29a919b280750a286c2f8c6c25507769cb",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:097f24ac7a7ac6ce5755c1633185dda3e44eb5e1f33265f9cf84795b71bc8dae",
+        "packageStatus": "partial",
+        "releaseId": "release:fa91c290784756e80ec9cb999affb297ebf8918cdc48d45810e4fa59d3091249",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "5db259bac62bf0c3a37bfd0fee6e22cc25bdb704",
+        "upstreamVersion": "1.2.8"
+      },
+      "releaseId": "release:fa91c290784756e80ec9cb999affb297ebf8918cdc48d45810e4fa59d3091249",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "aikido",
+      "variantPluginIds": [
+        "plugin:claude-official:aikido"
+      ],
+      "variantsIdentical": false
+    },
     "airtable": {
       "authors": [
         "Airtable"
@@ -2335,6 +2437,99 @@
       "upstreamName": "altimate-code",
       "variantPluginIds": [
         "plugin:claude-official:altimate-code"
+      ],
+      "variantsIdentical": false
+    },
+    "amazon-location-service": {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 1
+      },
+      "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Guide developers through adding maps, places search, geocoding, routing, and other geospatial features with Amazon Location Service, including authentication setup, SDK integration, and best practices.",
+      "displayName": "Amazon Location Service",
+      "homepage": "https://github.com/awslabs/agent-plugins",
+      "icon": {
+        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "bytes": 3061,
+        "contentType": "image/png",
+        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
+        "homepage": "https://aws.amazon.com/location/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+      },
+      "keywords": [
+        "amazon",
+        "developer-tools",
+        "location",
+        "service"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 6,
+        "text": "AL"
+      },
+      "pluginId": "plugin:claude-official:amazon-location-service",
+      "primaryCategory": "developer-tools",
+      "productKey": "amazon-location-service",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/amazon-location-service",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "9898ddc4dcf7dd23ddb939cec1b905311dc7381d"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:4d014840f9991bc55ef4cd39ba345e64e025b5a1d00206c56834280289268fd6",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:464c08aaedd0a508eea63dbd232181970487a1e90752dbf463e6700f5032355b",
+        "packageStatus": "portable",
+        "releaseId": "release:f516869cc9d316a799ce44086f3e1668a9aa986a8acee85ca35e9ebedfd81a83",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "9898ddc4dcf7dd23ddb939cec1b905311dc7381d",
+        "upstreamVersion": "1.1.0"
+      },
+      "releaseId": "release:f516869cc9d316a799ce44086f3e1668a9aa986a8acee85ca35e9ebedfd81a83",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "amazon-location-service",
+      "variantPluginIds": [
+        "plugin:claude-official:amazon-location-service"
       ],
       "variantsIdentical": false
     },
@@ -4219,6 +4414,112 @@
       ],
       "variantsIdentical": false
     },
+    "aws-serverless": {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "executable": 2,
+        "hook": 1,
+        "mcp-server": 1,
+        "skill": 7
+      },
+      "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Design, build, deploy, test, and debug serverless applications with AWS Serverless services.",
+      "displayName": "AWS Serverless",
+      "homepage": "https://github.com/awslabs/agent-plugins",
+      "icon": {
+        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "bytes": 3061,
+        "contentType": "image/png",
+        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
+        "homepage": "https://aws.amazon.com/serverless/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+      },
+      "keywords": [
+        "aws",
+        "developer-tools",
+        "serverless"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 342,
+        "text": "AS"
+      },
+      "pluginId": "plugin:claude-official:aws-serverless",
+      "primaryCategory": "developer-tools",
+      "productKey": "aws-serverless",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/aws-serverless",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "34afdf5005325f17d5da2d1443b87f27a53b0a20"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:6df6b91ce91d6dccffe7f4f4738398f3d56779fa67da00084272908677694e24",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:c47a4b23b5807cc7ab5337685d42944049034878892ab4cb1fabb1ce700d2740",
+        "packageStatus": "partial",
+        "releaseId": "release:cf9169427ff2c878a9a64bcbf5eb0eea9d014f98ca6a2375503e6e343d213913",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "34afdf5005325f17d5da2d1443b87f27a53b0a20",
+        "upstreamVersion": "1.3.0"
+      },
+      "releaseId": "release:cf9169427ff2c878a9a64bcbf5eb0eea9d014f98ca6a2375503e6e343d213913",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "aws-serverless",
+      "variantPluginIds": [
+        "plugin:claude-official:aws-serverless"
+      ],
+      "variantsIdentical": false
+    },
     "aws-startup-advisor": {
       "authors": [
         "Amazon Web Services"
@@ -4328,6 +4629,112 @@
       "upstreamName": "aws-startup-advisor",
       "variantPluginIds": [
         "plugin:claude-official:aws-startup-advisor"
+      ],
+      "variantsIdentical": false
+    },
+    "aws-transform": {
+      "authors": [
+        "Amazon Web Services"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 1,
+        "scheduled-task": 1,
+        "skill": 1
+      },
+      "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Migrate, modernize, and upgrade codebases to AWS. Transforms .NET Framework to .NET 8/10, mainframe COBOL to Java, VMware VMs to EC2, SQL Server to Aurora, and upgrades Java/Python/Node.js versions and AWS SDKs. AWS Transform - continuous modernization analyzes codebases for tech debt, security issues, and upgrade opportunities, then remediates them.",
+      "displayName": "AWS Transform",
+      "homepage": "https://github.com/awslabs/agent-plugins",
+      "icon": {
+        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "bytes": 3061,
+        "contentType": "image/png",
+        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
+        "homepage": "https://aws.amazon.com/transform/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+      },
+      "keywords": [
+        "aws",
+        "developer-tools",
+        "transform"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 78,
+        "text": "AT"
+      },
+      "pluginId": "plugin:claude-official:aws-transform",
+      "primaryCategory": "developer-tools",
+      "productKey": "aws-transform",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/aws-transform",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "adc01133bbd01433dcb2c0f98641f2b85694f92f"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:02c95feacf4eaa510900148629e1042f3b01cb17ceba52526b706b39c2e6e135",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "scheduled-task",
+            "type": "scheduled-task"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:640af36697d22b7a79642f05f011aaf54a10e172476b7a41545bcd45fcc8bbf9",
+        "packageStatus": "portable",
+        "releaseId": "release:25905628af80d53ba5b8b9834dbb2b31fe14be8f52404ed2c43fa4754e6f1c78",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "adc01133bbd01433dcb2c0f98641f2b85694f92f",
+        "upstreamVersion": "1.9.0"
+      },
+      "releaseId": "release:25905628af80d53ba5b8b9834dbb2b31fe14be8f52404ed2c43fa4754e6f1c78",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server",
+          "scheduled-task"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata.",
+          "Contains scheduled-task capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "aws-transform",
+      "variantPluginIds": [
+        "plugin:claude-official:aws-transform"
       ],
       "variantsIdentical": false
     },
@@ -5100,6 +5507,102 @@
         "plugin:knowledge-work-official:blackrock-advisor-center-plugin"
       ],
       "variantsIdentical": true
+    },
+    "boltz": {
+      "authors": [
+        "Boltz"
+      ],
+      "capabilitySummary": {
+        "agent": 8,
+        "executable": 6,
+        "skill": 8
+      },
+      "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Predict structures, screen molecules and proteins, and design binders with Boltz from Claude Code.",
+      "displayName": "Boltz",
+      "homepage": "https://boltz.bio/",
+      "icon": {
+        "asset": "icon-499a2436325cee27b3ba4db99914085b.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-499a2436325cee27b3ba4db99914085b.png",
+        "bytes": 4956,
+        "contentType": "image/png",
+        "digest": "sha256:499a2436325cee27b3ba4db99914085b3a544a4238374f5e9cb9c741d218cf01",
+        "homepage": "https://boltz.bio/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://boltz.bio/apple-touch-icon.png"
+      },
+      "keywords": [
+        "boltz",
+        "developer-tools"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 45,
+        "text": "BO"
+      },
+      "pluginId": "plugin:claude-official:boltz",
+      "primaryCategory": "developer-tools",
+      "productKey": "boltz",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/boltz",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "beafb3c16236347ab10fb54f78a5da49cbf7c7bb"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:661b31535333338be96d5fa5ea55dd7a2886ac69c6918db38399ac54895503a8",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:1edd731d345cf50b47ce65fb0c8cf726056269be64df1f0edaa24f19c41f19a4",
+        "packageStatus": "portable",
+        "releaseId": "release:4a69459cec4c4fea88271f7791b4aac605cf1c537d11c2f774648664fa7a9a87",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "beafb3c16236347ab10fb54f78a5da49cbf7c7bb",
+        "upstreamVersion": "0.1.1"
+      },
+      "releaseId": "release:4a69459cec4c4fea88271f7791b4aac605cf1c537d11c2f774648664fa7a9a87",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "boltz",
+      "variantPluginIds": [
+        "plugin:claude-official:boltz"
+      ],
+      "variantsIdentical": false
     },
     "boltz-api-cli": {
       "authors": [
@@ -11982,6 +12485,228 @@
       ],
       "variantsIdentical": false
     },
+    "databases-on-aws": {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "executable": 8,
+        "hook": 1,
+        "mcp-server": 1,
+        "skill": 1
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Expert database guidance for the AWS database portfolio. Design schemas, execute queries, handle migrations, and choose the right database for your workload.",
+      "displayName": "Databases on AWS",
+      "homepage": "https://github.com/awslabs/agent-plugins",
+      "icon": {
+        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "bytes": 3061,
+        "contentType": "image/png",
+        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
+        "homepage": "https://aws.amazon.com/products/databases/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+      },
+      "keywords": [
+        "aws",
+        "data-analytics",
+        "databases",
+        "on"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 108,
+        "text": "DO"
+      },
+      "pluginId": "plugin:claude-official:databases-on-aws",
+      "primaryCategory": "data-analytics",
+      "productKey": "databases-on-aws",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/databases-on-aws",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "026f03dc9a2f217ab96aa61f87f10fe8c09e067d"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:e9a950ce6c62d9416ca53f2bb7731ff65c5c3082fa61288f591e53a6c5648fed",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:0b6b2686fd81d2b7388332bf2e167ea237b9a5372c9e9d6c4cc7d8d824c78cfe",
+        "packageStatus": "partial",
+        "releaseId": "release:2e751d9a1546da957f78fceefddfd2f35ff0bfc7fa76f026dac94849667b4837",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "026f03dc9a2f217ab96aa61f87f10fe8c09e067d",
+        "upstreamVersion": "1.8.1"
+      },
+      "releaseId": "release:2e751d9a1546da957f78fceefddfd2f35ff0bfc7fa76f026dac94849667b4837",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "databases-on-aws",
+      "variantPluginIds": [
+        "plugin:claude-official:databases-on-aws"
+      ],
+      "variantsIdentical": false
+    },
+    "databricks": {
+      "authors": [
+        "Databricks"
+      ],
+      "capabilitySummary": {
+        "agent": 31,
+        "command": 2,
+        "executable": 14,
+        "hook": 5,
+        "scheduled-task": 1,
+        "skill": 31
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Databricks skills for the CLI, Apps, Lakebase, Model Serving, Lakeflow Jobs, Spark Declarative Pipelines, Declarative Automation Bundles (DABs), and classic-to-serverless migration.",
+      "displayName": "Databricks",
+      "homepage": "https://developers.databricks.com/",
+      "icon": {
+        "asset": "icon-00e528e4d5e665dbb5784e3d028b74ec.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-00e528e4d5e665dbb5784e3d028b74ec.svg",
+        "bytes": 582,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:00e528e4d5e665dbb5784e3d028b74ecf74405e5ff5a9c75a4d8661f05bda91c",
+        "homepage": null,
+        "kind": "content",
+        "path": "skills/databricks-apps/assets/databricks.svg",
+        "url": null
+      },
+      "keywords": [
+        "data-analytics",
+        "databricks"
+      ],
+      "license": "LicenseRef-Databricks",
+      "monogram": {
+        "hue": 45,
+        "text": "DA"
+      },
+      "pluginId": "plugin:claude-official:databricks",
+      "primaryCategory": "data-analytics",
+      "productKey": "databricks",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/databricks/claude",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "4d17885b0115718b5fb6a7540e908cb4201d4f2d"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:68b55cc7e2c2fca846b660a2dc659f92daa138655fc1114a74491df7230363e9",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "scheduled-task",
+            "type": "scheduled-task"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:1f6c42ff519b4befd04c2f846170789ca32db69186c2934e5b3aa1cde3c2f72f",
+        "packageStatus": "partial",
+        "releaseId": "release:a59d297a7f3a157a3488f86b2e1d230bdb38ab9754a4319636b973ec8c31ade9",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "4d17885b0115718b5fb6a7540e908cb4201d4f2d",
+        "upstreamVersion": "0.2.15"
+      },
+      "releaseId": "release:a59d297a7f3a157a3488f86b2e1d230bdb38ab9754a4319636b973ec8c31ade9",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook",
+          "scheduled-task"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata.",
+          "Contains scheduled-task capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "databricks",
+      "variantPluginIds": [
+        "plugin:claude-official:databricks"
+      ],
+      "variantsIdentical": false
+    },
     "datadog": {
       "authors": [
         "Datadog"
@@ -12271,6 +12996,113 @@
       ],
       "variantsIdentical": false
     },
+    "deploy-on-aws": {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "executable": 9,
+        "hook": 1,
+        "mcp-server": 1,
+        "skill": 3
+      },
+      "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Deploy applications to AWS with architecture recommendations, cost estimates, and IaC deployment.",
+      "displayName": "Deploy on AWS",
+      "homepage": "https://github.com/awslabs/agent-plugins",
+      "icon": {
+        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "bytes": 3061,
+        "contentType": "image/png",
+        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
+        "homepage": "https://aws.amazon.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+      },
+      "keywords": [
+        "aws",
+        "deploy",
+        "developer-tools",
+        "on"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 39,
+        "text": "DO"
+      },
+      "pluginId": "plugin:claude-official:deploy-on-aws",
+      "primaryCategory": "developer-tools",
+      "productKey": "deploy-on-aws",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/deploy-on-aws",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "efe040ab66ed7eb4bccc0a94133181da5bc57567"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:af976715940ec3a133c6983b55960db3ac6614827234554b89dae21392511829",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:49ccdd5ef67153a0b466866d23ccbba4c15ab50e2ba7731617e73fde0d6bceed",
+        "packageStatus": "partial",
+        "releaseId": "release:1e58ed026fc11e1f69e5178184dea21098e2b8a81fe0a56599bc50f049b0c00a",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "efe040ab66ed7eb4bccc0a94133181da5bc57567",
+        "upstreamVersion": "1.3.0"
+      },
+      "releaseId": "release:1e58ed026fc11e1f69e5178184dea21098e2b8a81fe0a56599bc50f049b0c00a",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "deploy-on-aws",
+      "variantPluginIds": [
+        "plugin:claude-official:deploy-on-aws"
+      ],
+      "variantsIdentical": false
+    },
     "design": {
       "authors": [
         "Anthropic"
@@ -12350,6 +13182,99 @@
         "plugin:knowledge-work-official:design"
       ],
       "variantsIdentical": false
+    },
+    "desktop-commander": {
+      "authors": [
+        "Desktop Commander"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 6
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "MCP server for terminal commands, process management, and file operations across text, code, PDF, DOCX, Excel, images, and structured data.",
+      "displayName": "Desktop Commander",
+      "homepage": "https://desktopcommander.app/",
+      "icon": {
+        "asset": "icon-61895f8af06635267b842e0bb0e223a6.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-61895f8af06635267b842e0bb0e223a6.png",
+        "bytes": 19721,
+        "contentType": "image/png",
+        "digest": "sha256:61895f8af06635267b842e0bb0e223a609feed2e0036e5038c2e2b127da87a70",
+        "homepage": "https://desktopcommander.app/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://desktopcommander.app/apple-touch-icon.png"
+      },
+      "keywords": [
+        "commander",
+        "desktop",
+        "productivity"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 81,
+        "text": "DC"
+      },
+      "pluginId": "plugin:claude-official:desktop-commander",
+      "primaryCategory": "productivity",
+      "productKey": "desktop-commander",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/claude",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "1eccc8b09cc09805202a1737fd20d605356c3671"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:0852668c5f1de4b0ce60fa8dae9b0a8a09c9583871c6283520541bff595a806b",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:2aa0380be30033fd9c74c131f00d4da840124f08dd2d883c25da67d75799dfaf",
+        "packageStatus": "partial",
+        "releaseId": "release:97548f03cf3dc938f705f1b5a76e4b5c57bc2761d916c86e89c1705db38c2ba8",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "1eccc8b09cc09805202a1737fd20d605356c3671",
+        "upstreamVersion": "0.2.0"
+      },
+      "releaseId": "release:97548f03cf3dc938f705f1b5a76e4b5c57bc2761d916c86e89c1705db38c2ba8",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "desktop-commander",
+      "variantPluginIds": [
+        "plugin:claude-official:desktop-commander",
+        "plugin:knowledge-work-official:desktop-commander"
+      ],
+      "variantsIdentical": true
     },
     "discord": {
       "authors": [
@@ -20054,6 +20979,102 @@
       ],
       "variantsIdentical": false
     },
+    "legalzoom": {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "command": 1,
+        "mcp-server": 1,
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Attorney guidance and legal tools for business and personal needs. AI-powered document review identifies critical risks and important clauses, advises when to engage an attorney, and routes to LegalZoom's network when professional expertise is needed.",
+      "displayName": "Legalzoom",
+      "homepage": "https://www.legalzoom.com/",
+      "icon": {
+        "asset": "icon-e31cae17fb0c44aa36afc8feb7542fa9.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-e31cae17fb0c44aa36afc8feb7542fa9.ico",
+        "bytes": 15406,
+        "contentType": "image/x-icon",
+        "digest": "sha256:e31cae17fb0c44aa36afc8feb7542fa950a787a02048d08fcfe90d8bc103b85f",
+        "homepage": "https://www.legalzoom.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://legalzoomcdn.net/growth/favicon.ico"
+      },
+      "keywords": [
+        "legalzoom",
+        "productivity"
+      ],
+      "license": "PROPRIETARY",
+      "monogram": {
+        "hue": 237,
+        "text": "LE"
+      },
+      "pluginId": "plugin:claude-official:legalzoom",
+      "primaryCategory": "productivity",
+      "productKey": "legalzoom",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/legalzoom",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "f9fd8a0ca6e1421bc1aacb113a109663a7a6f6d8"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:9fca560c1d1bdbc90df77c1e60bd17b5e23cd068e33a949cbaf9069d013688ea",
+        "capabilities": [
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:cb4514c0d2cd05dab1e656361365c41810d07a31b714335735dd043be351595b",
+        "packageStatus": "partial",
+        "releaseId": "release:11587270a2a10dbe4d42dbb9df0dc0b90819491497a6e7c104bdd86f0a37a780",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "f9fd8a0ca6e1421bc1aacb113a109663a7a6f6d8",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:11587270a2a10dbe4d42dbb9df0dc0b90819491497a6e7c104bdd86f0a37a780",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "legalzoom",
+      "variantPluginIds": [
+        "plugin:claude-official:legalzoom"
+      ],
+      "variantsIdentical": false
+    },
     "life-science-research": {
       "authors": [
         "Unknown"
@@ -20328,6 +21349,156 @@
       "upstreamName": "linq-alpha",
       "variantPluginIds": [
         "plugin:claude-official:linq-alpha"
+      ],
+      "variantsIdentical": false
+    },
+    "liquid-lsp": {
+      "authors": [
+        "Shopify"
+      ],
+      "capabilitySummary": {
+        "unknown": 1
+      },
+      "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "LSP integration for Shopify Liquid templates via the Shopify CLI theme language server.",
+      "displayName": "Liquid LSP",
+      "homepage": "https://github.com/Shopify/liquid-skills/tree/main/plugins/liquid-lsp",
+      "icon": null,
+      "keywords": [
+        "developer-tools",
+        "liquid",
+        "lsp"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 162,
+        "text": "LL"
+      },
+      "pluginId": "plugin:claude-official:liquid-lsp",
+      "primaryCategory": "developer-tools",
+      "productKey": "liquid-lsp",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/liquid-lsp",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "ae3e4cc3f454923e388bbd841fd931f0c7bf5be4"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:98adacdf3a5bbfc33cce768e48ae074e76cd3c1e1e3857d49a77c1b8b380c66d",
+        "capabilities": [
+          {
+            "name": "unknown",
+            "type": "unknown"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:ffee572cc8f4c6c90532fcc1d0798bc398be22e618416b7da8609443fcd3b906",
+        "packageStatus": "portable",
+        "releaseId": "release:006d4e22dc10ee60cb236e776900e9393ea89411174a0262e1425ea7019bc382",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ae3e4cc3f454923e388bbd841fd931f0c7bf5be4",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:006d4e22dc10ee60cb236e776900e9393ea89411174a0262e1425ea7019bc382",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "liquid-lsp",
+      "variantPluginIds": [
+        "plugin:claude-official:liquid-lsp"
+      ],
+      "variantsIdentical": false
+    },
+    "liquid-skills": {
+      "authors": [
+        "Shopify"
+      ],
+      "capabilitySummary": {
+        "skill": 3
+      },
+      "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Liquid language fundamentals, CSS/JS/HTML coding standards, and WCAG accessibility patterns for Shopify themes",
+      "displayName": "Liquid Skills",
+      "homepage": "https://github.com/Shopify/liquid-skills/tree/main/plugins/liquid-skills",
+      "icon": null,
+      "keywords": [
+        "developer-tools",
+        "liquid",
+        "skills"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 348,
+        "text": "LS"
+      },
+      "pluginId": "plugin:claude-official:liquid-skills",
+      "primaryCategory": "developer-tools",
+      "productKey": "liquid-skills",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/liquid-skills",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "ae3e4cc3f454923e388bbd841fd931f0c7bf5be4"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:b080c5c019404a21b642e47973e4e6d0c2b85d51c482cdc410b7442c7d03d725",
+        "capabilities": [
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:d4da6e048cba7cf00fb3ce71de15aa2aa2df4ef20805d9a53059860d8aaf21c0",
+        "packageStatus": "portable",
+        "releaseId": "release:439f08d45ec02a151b223d68f98d2b885b8ffb913c7e01afc0d98ad8ae02ee15",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "ae3e4cc3f454923e388bbd841fd931f0c7bf5be4",
+        "upstreamVersion": "1.0.0"
+      },
+      "releaseId": "release:439f08d45ec02a151b223d68f98d2b885b8ffb913c7e01afc0d98ad8ae02ee15",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "liquid-skills",
+      "variantPluginIds": [
+        "plugin:claude-official:liquid-skills"
       ],
       "variantsIdentical": false
     },
@@ -21629,6 +22800,91 @@
       ],
       "variantsIdentical": false
     },
+    "mcp-apps": {
+      "authors": [
+        "Anthropic / Model Context Protocol"
+      ],
+      "capabilitySummary": {
+        "skill": 4
+      },
+      "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Skills for creating MCP Apps with the MCP Apps SDK",
+      "displayName": "MCP Apps",
+      "homepage": "https://modelcontextprotocol.io/",
+      "icon": {
+        "asset": "icon-bf7a5a8d52fe292c6964ea4361018ecb.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-bf7a5a8d52fe292c6964ea4361018ecb.png",
+        "bytes": 2869,
+        "contentType": "image/png",
+        "digest": "sha256:bf7a5a8d52fe292c6964ea4361018ecb346a065d8a374d0e1ea6fe56170fb566",
+        "homepage": "https://modelcontextprotocol.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://modelcontextprotocol.io/mintlify-assets/_mintlify/favicons/mcp/ebiVJzri-bsiCfVZ/_generated/favicon/apple-touch-icon.png"
+      },
+      "keywords": [
+        "apps",
+        "developer-tools",
+        "mcp"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 261,
+        "text": "MA"
+      },
+      "pluginId": "plugin:claude-official:mcp-apps",
+      "primaryCategory": "developer-tools",
+      "productKey": "mcp-apps",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/mcp-apps",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "352f6ced4d80772e92b4e7a311854481a8d65b04"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:a2076d4a44f86345b856e5b75a25f17a04325d24c18f0a1fbb5ebf7e6e134b59",
+        "capabilities": [
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:92910758a001ba470b85b31f824efb5028d8d34588c43e9d19b2a396a189a2a4",
+        "packageStatus": "portable",
+        "releaseId": "release:a2eba6ffe81b1767b32bcaad8f20fac52a7fcc75981f1335c93f6f5489cf6909",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "352f6ced4d80772e92b4e7a311854481a8d65b04",
+        "upstreamVersion": "0.1.0"
+      },
+      "releaseId": "release:a2eba6ffe81b1767b32bcaad8f20fac52a7fcc75981f1335c93f6f5489cf6909",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "low",
+        "permissionSensitiveChanges": [],
+        "reasons": [
+          "No permission-sensitive executable capability was detected."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "mcp-apps",
+      "variantPluginIds": [
+        "plugin:claude-official:mcp-apps"
+      ],
+      "variantsIdentical": false
+    },
     "mcp-server-dev": {
       "authors": [
         "Anthropic"
@@ -21945,6 +23201,111 @@
       "upstreamName": "mem",
       "variantPluginIds": [
         "plugin:cursor-official:mem"
+      ],
+      "variantsIdentical": false
+    },
+    "mercadopago": {
+      "authors": [
+        "Mercado Pago Developer Experience"
+      ],
+      "capabilitySummary": {
+        "agent": 1,
+        "command": 4,
+        "executable": 27,
+        "hook": 4,
+        "mcp-server": 2,
+        "skill": 4
+      },
+      "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Mercado Pago full-product integration toolkit. One agent routes to four orchestration skills (mp-integrate wizard, mp-webhooks, mp-test-setup, mp-review) that pull every endpoint, payload, and snippet live from the official Mercado Pago MCP server. The MCP must always be connected — there is no offline mode.",
+      "displayName": "Mercado Pago",
+      "homepage": "https://github.com/mercadopago/mercadopago-claude-marketplace/tree/main/plugins/mercadopago",
+      "icon": null,
+      "keywords": [
+        "developer-tools",
+        "mercadopago"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 78,
+        "text": "MP"
+      },
+      "pluginId": "plugin:claude-official:mercadopago",
+      "primaryCategory": "developer-tools",
+      "productKey": "mercadopago",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/mercadopago",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "c0d06959afc90b2f3d637c35eeb51c36f512c005"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:b44b29ac874f0bb1a47e334dd324ff760752d9e7788f8ab016c83fb4a2119bae",
+        "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:1b18458c757757807dc2f0829fb9cde3c52c6858ac881de77759cd4e23e98575",
+        "packageStatus": "partial",
+        "releaseId": "release:f614b743b237bed668340ec5e2c8bd6617f4a0edab99626d1b61bab68b25ff94",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "c0d06959afc90b2f3d637c35eeb51c36f512c005",
+        "upstreamVersion": "4.3.2"
+      },
+      "releaseId": "release:f614b743b237bed668340ec5e2c8bd6617f4a0edab99626d1b61bab68b25ff94",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "mercadopago",
+      "variantPluginIds": [
+        "plugin:claude-official:mercadopago"
       ],
       "variantsIdentical": false
     },
@@ -22447,6 +23808,98 @@
       "variantPluginIds": [
         "plugin:claude-official:mintlify",
         "plugin:knowledge-work-official:mintlify"
+      ],
+      "variantsIdentical": true
+    },
+    "miro": {
+      "authors": [
+        "Miro"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "creativity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Secure access to Miro boards. Enables AI to read board context, create diagrams, and generate code with enterprise-grade security.",
+      "displayName": "Miro",
+      "homepage": "https://miro.com/",
+      "icon": {
+        "asset": "icon-6d1a97e6922fee40efab035b669d1feb.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-6d1a97e6922fee40efab035b669d1feb.png",
+        "bytes": 1273,
+        "contentType": "image/png",
+        "digest": "sha256:6d1a97e6922fee40efab035b669d1feb74d54074721b968321183a715213b605",
+        "homepage": "https://miro.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://framerusercontent.com/images/6FBG66PBxjV2QFaDfIdUi5mi9A.png"
+      },
+      "keywords": [
+        "creativity",
+        "miro"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 306,
+        "text": "MI"
+      },
+      "pluginId": "plugin:claude-official:miro",
+      "primaryCategory": "creativity",
+      "productKey": "miro",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "claude-plugins/miro",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "c2494b24510d01ec3e50fad94a0c5fc3ca40e339"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:899e2b619c393ec1e40d6a0b9e866ef3e4fdf66a2c1a768cc9a042ca3e923823",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:970889fb33a9d0dd243965901f8b455df15a97606d14ff7bbc94adf1882c5350",
+        "packageStatus": "portable",
+        "releaseId": "release:1034a4f459b1e468b1f6d429bcbe9e63643e0760c6a68a6cf5fa35d2a0400454",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "c2494b24510d01ec3e50fad94a0c5fc3ca40e339",
+        "upstreamVersion": "1.4.0"
+      },
+      "releaseId": "release:1034a4f459b1e468b1f6d429bcbe9e63643e0760c6a68a6cf5fa35d2a0400454",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "miro",
+      "variantPluginIds": [
+        "plugin:claude-official:miro",
+        "plugin:knowledge-work-official:miro"
       ],
       "variantsIdentical": true
     },
@@ -23186,6 +24639,97 @@
       "upstreamName": "navan",
       "variantPluginIds": [
         "plugin:cursor-official:navan"
+      ],
+      "variantsIdentical": false
+    },
+    "neon": {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 7
+      },
+      "categories": [
+        "data-analytics"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Manage your Neon projects and databases with the neon-postgres agent skill and the Neon MCP Server.",
+      "displayName": "Neon",
+      "homepage": "https://github.com/neondatabase/agent-skills/tree/main/plugins/neon-postgres",
+      "icon": {
+        "asset": "icon-2b1aaef0b2de5d30b9a00778a0a9b9df.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-2b1aaef0b2de5d30b9a00778a0a9b9df.svg",
+        "bytes": 275,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:2b1aaef0b2de5d30b9a00778a0a9b9df2255be08a939a9521f3c93a46de521cf",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/logo.svg",
+        "url": null
+      },
+      "keywords": [
+        "data-analytics",
+        "neon"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 102,
+        "text": "NE"
+      },
+      "pluginId": "plugin:claude-official:neon",
+      "primaryCategory": "data-analytics",
+      "productKey": "neon",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/neon-postgres",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "2e0da3a1653bcdd227565ac14bb3e9e453a8b854"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d9d12b7da0494e660a3d6e0ee4834148a377acb588f85559f3f50e3e2eb02636",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:4456dbbb3bbc79321f271810886f79119b49896565ee434bb761bf8b24f67174",
+        "packageStatus": "portable",
+        "releaseId": "release:3a3ae3aaa8511eeb4471502ee71e45bdaf3c5a2624e8177bc5a63f113e22a68e",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "2e0da3a1653bcdd227565ac14bb3e9e453a8b854",
+        "upstreamVersion": "1.2.0"
+      },
+      "releaseId": "release:3a3ae3aaa8511eeb4471502ee71e45bdaf3c5a2624e8177bc5a63f113e22a68e",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "neon",
+      "variantPluginIds": [
+        "plugin:claude-official:neon"
       ],
       "variantsIdentical": false
     },
@@ -28995,11 +30539,11 @@
       "displayName": "Qodo",
       "homepage": "https://github.com/qodo-ai/qodo-skills.git",
       "icon": {
-        "asset": "icon-505d7841292488b3d76c2c3135253a6b.webp",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-505d7841292488b3d76c2c3135253a6b.webp",
-        "bytes": 10022,
-        "contentType": "image/webp",
-        "digest": "sha256:505d7841292488b3d76c2c3135253a6bdd804d771829cbba1f02c75287041cff",
+        "asset": "icon-8a338496614f7dac92f3f044f4e81447.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
+        "bytes": 15908,
+        "contentType": "image/png",
+        "digest": "sha256:8a338496614f7dac92f3f044f4e814472757cfe1056d3130ea66edd0f4645a78",
         "homepage": "https://qodo.ai/",
         "kind": "favicon",
         "path": null,
@@ -29086,11 +30630,11 @@
       "displayName": "Qodo Standards",
       "homepage": "https://github.com/qodo-ai/qodo-skills.git",
       "icon": {
-        "asset": "icon-505d7841292488b3d76c2c3135253a6b.webp",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-505d7841292488b3d76c2c3135253a6b.webp",
-        "bytes": 10022,
-        "contentType": "image/webp",
-        "digest": "sha256:505d7841292488b3d76c2c3135253a6bdd804d771829cbba1f02c75287041cff",
+        "asset": "icon-8a338496614f7dac92f3f044f4e81447.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
+        "bytes": 15908,
+        "contentType": "image/png",
+        "digest": "sha256:8a338496614f7dac92f3f044f4e814472757cfe1056d3130ea66edd0f4645a78",
         "homepage": "https://qodo.ai/",
         "kind": "favicon",
         "path": null,
@@ -30876,6 +32420,105 @@
       "upstreamName": "rust-analyzer-lsp",
       "variantPluginIds": [
         "plugin:claude-official:rust-analyzer-lsp"
+      ],
+      "variantsIdentical": false
+    },
+    "sagemaker-ai": {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "executable": 35,
+        "mcp-server": 1,
+        "skill": 19
+      },
+      "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Build, train, and deploy AI models with deep AWS AI/ML expertise brought directly into your coding assistants, covering the surface area of Amazon SageMaker AI.",
+      "displayName": "Sagemaker AI",
+      "homepage": "https://github.com/awslabs/agent-plugins",
+      "icon": {
+        "asset": "icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f80d3ec6c5b2adee55267ecfcf2fc413.png",
+        "bytes": 3061,
+        "contentType": "image/png",
+        "digest": "sha256:f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403",
+        "homepage": "https://aws.amazon.com/sagemaker/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+      },
+      "keywords": [
+        "ai",
+        "developer-tools",
+        "sagemaker"
+      ],
+      "license": "Apache-2.0",
+      "monogram": {
+        "hue": 21,
+        "text": "SA"
+      },
+      "pluginId": "plugin:claude-official:sagemaker-ai",
+      "primaryCategory": "developer-tools",
+      "productKey": "sagemaker-ai",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "plugins/sagemaker-ai",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "bab56a3b9991aa0c6857b05198a61ba14a60bce4"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:2c7bf407f756b033d6eb6efd63e5ee93645b59a720b1f9748992a3b7991b950e",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:432ca743de9e6d1937c45f197f58dee271e4bfa71bcd7d059738f74d0e5a4453",
+        "packageStatus": "partial",
+        "releaseId": "release:25743799ff849197dd37dc2533310ea6559124ef22b411480c858456df69d550",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "bab56a3b9991aa0c6857b05198a61ba14a60bce4",
+        "upstreamVersion": "1.3.0"
+      },
+      "releaseId": "release:25743799ff849197dd37dc2533310ea6559124ef22b411480c858456df69d550",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "sagemaker-ai",
+      "variantPluginIds": [
+        "plugin:claude-official:sagemaker-ai"
       ],
       "variantsIdentical": false
     },
@@ -32882,6 +34525,113 @@
       ],
       "variantsIdentical": false
     },
+    "shopify-ai-toolkit": {
+      "authors": [
+        "Shopify"
+      ],
+      "capabilitySummary": {
+        "executable": 25,
+        "hook": 6,
+        "mcp-server": 1,
+        "skill": 22
+      },
+      "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Shopify's AI Toolkit provides 18 development skills for building on the Shopify platform, covering documentation search, API schema access, GraphQL and Liquid code validation, Hydrogen storefronts, Polaris UI extensions, store management via CLI, and onboarding guidance for both developers and merchants.",
+      "displayName": "Shopify Plugin",
+      "homepage": "https://shopify.dev/",
+      "icon": {
+        "asset": "icon-4db7a16ed5734680c24ed2cee13f132f.svg",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-4db7a16ed5734680c24ed2cee13f132f.svg",
+        "bytes": 1758,
+        "contentType": "image/svg+xml",
+        "digest": "sha256:4db7a16ed5734680c24ed2cee13f132f4c9592727014c2e21b1bdc21bf14faee",
+        "homepage": null,
+        "kind": "content",
+        "path": "assets/shopify_glyph.svg",
+        "url": null
+      },
+      "keywords": [
+        "ai",
+        "developer-tools",
+        "shopify",
+        "toolkit"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 216,
+        "text": "SP"
+      },
+      "pluginId": "plugin:claude-official:shopify-ai-toolkit",
+      "primaryCategory": "developer-tools",
+      "productKey": "shopify-ai-toolkit",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "2619755e4f4e908fb205e889bac769de1767d40f"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:ea7b99a23e8a26e2b94c96cf3fcde4a257bc5bddb80e1847f61ab6459a0ebb5e",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "hook",
+            "type": "hook"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:3b75aa6d7d41f68c7e97f62bf9952820f07052b83bd34c830c1476c8f4c4bb2a",
+        "packageStatus": "partial",
+        "releaseId": "release:e6a3252acc30a599910ca782b257ca5a7d085e857eb67bd86558fc2c9e1ae0b5",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "2619755e4f4e908fb205e889bac769de1767d40f",
+        "upstreamVersion": "1.8.0"
+      },
+      "releaseId": "release:e6a3252acc30a599910ca782b257ca5a7d085e857eb67bd86558fc2c9e1ae0b5",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "hook",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains hook capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "shopify-ai-toolkit",
+      "variantPluginIds": [
+        "plugin:claude-official:shopify-ai-toolkit"
+      ],
+      "variantsIdentical": false
+    },
     "shopify-store": {
       "authors": [
         "Cursor"
@@ -34590,15 +36340,116 @@
       ],
       "variantsIdentical": false
     },
-    "stripe": {
+    "streaming-skills-plugin": {
       "authors": [
-        "Unknown"
+        "Confluent"
       ],
       "capabilitySummary": {
-        "mcp-server": 1,
-        "skill": 7
+        "executable": 36,
+        "rule": 1,
+        "skill": 16
       },
       "categories": [
+        "developer-tools"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Skills for streaming application developers, covering Kafka and Flink client libraries and Schema Registry",
+      "displayName": "Streaming Skills Plugin",
+      "homepage": "https://www.confluent.io/",
+      "icon": {
+        "asset": "icon-985ddb03c30e60dcf20c9996ac745b52.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-985ddb03c30e60dcf20c9996ac745b52.png",
+        "bytes": 8490,
+        "contentType": "image/png",
+        "digest": "sha256:985ddb03c30e60dcf20c9996ac745b52eb91e9e9c95e44ab994c3e177f854364",
+        "homepage": "https://www.confluent.io/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://www.confluent.io/icons/apple-touch-icon.png"
+      },
+      "keywords": [
+        "developer-tools",
+        "plugin",
+        "skills",
+        "streaming"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 243,
+        "text": "SS"
+      },
+      "pluginId": "plugin:claude-official:streaming-skills-plugin",
+      "primaryCategory": "developer-tools",
+      "productKey": "streaming-skills-plugin",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "914d95eff7ff50513b34bfb9ac97eda7c7fce899"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:7215150c4799584e893997fd0a053186dfe2499da0f1cdf3ff4d7caedabe8a1b",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "rule",
+            "type": "rule"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:0bfae2d59a2083b919e2457702f13d36b40e0c68d9a2f43c18e972bb1dff0b2e",
+        "packageStatus": "partial",
+        "releaseId": "release:f9b4d4f67391c7784e65004a6f1a4f37e6e3a8c09c1a727c8969dbc5c4797252",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "914d95eff7ff50513b34bfb9ac97eda7c7fce899",
+        "upstreamVersion": "1.3.0"
+      },
+      "releaseId": "release:f9b4d4f67391c7784e65004a6f1a4f37e6e3a8c09c1a727c8969dbc5c4797252",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable"
+        ],
+        "reasons": [
+          "Contains executable capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "streaming-skills-plugin",
+      "variantPluginIds": [
+        "plugin:claude-official:streaming-skills-plugin"
+      ],
+      "variantsIdentical": false
+    },
+    "stripe": {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
+        "agent": 1,
+        "command": 2,
+        "mcp-server": 1,
+        "skill": 8
+      },
+      "categories": [
+        "developer-tools",
         "finance"
       ],
       "compatibility": {
@@ -34610,8 +36461,9 @@
         "opencode": "partially-supported",
         "pi": "partially-supported"
       },
-      "description": "Develop your payments integration faster with the ability to create products, prices, and payment links directly in ChatGPT. Run your business from ChatGPT with the ability to retrieve and manage payments, subscriptions, invoices, refunds, disputes, and customers. Build and debug your payment integration quicker than ever by searching the Stripe documentation and getting integration recommendations without needing to leave ChatGPT.",
+      "description": "Stripe development plugin for Claude",
       "displayName": "Stripe",
+      "homepage": "https://github.com/stripe/ai/tree/main/providers/claude/plugin",
       "icon": {
         "asset": "icon-8034d1975f2ff4408cb399089eb6c4b5.png",
         "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8034d1975f2ff4408cb399089eb6c4b5.png",
@@ -34624,26 +36476,34 @@
         "url": null
       },
       "keywords": [
-        "finance",
+        "developer-tools",
         "stripe"
       ],
-      "license": "Unknown",
+      "license": "MIT",
       "monogram": {
         "hue": 93,
         "text": "ST"
       },
-      "pluginId": "plugin:openai-official:stripe",
-      "primaryCategory": "finance",
+      "pluginId": "plugin:claude-official:stripe",
+      "primaryCategory": "developer-tools",
       "productKey": "stripe",
       "provenance": {
-        "manifestPath": ".agents/plugins/marketplace.json",
-        "pluginSubdirectory": "plugins/stripe",
-        "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": "providers/claude/plugin",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "68382523846ea5bfad75ba1ef58dc5db031d0a5a"
       },
       "release": {
-        "canonicalContentDigest": "sha256:0447f9dba6e44bd422ba5cc2fa7e1c89074e054910c2d29ac5bea7d84514b0a4",
+        "canonicalContentDigest": "sha256:9b9ffce0b98807f1e8edceac78c9640207908c205c812955959fc7d4197b56e1",
         "capabilities": [
+          {
+            "name": "agent",
+            "type": "agent"
+          },
+          {
+            "name": "command",
+            "type": "command"
+          },
           {
             "name": "mcp-server",
             "type": "mcp-server"
@@ -34654,17 +36514,15 @@
           }
         ],
         "contentResolution": "complete",
-        "packageDigest": "sha256:ff6844bc613c110fcb2ab97b0218a589be929844c47737212a8497be7e3bf17e",
+        "packageDigest": "sha256:e778a97400a0026e730262fb88f051ebe90df79ed106d669e1f0ed476e743a44",
         "packageStatus": "partial",
-        "releaseId": "release:ae03c35346b337ef7eb34714e1241207d88015d42cc502e6ca3c93ea35738679",
+        "releaseId": "release:1750bf590bbb616cc4ae96def6c5ed45822559b2dce21ef27d8996c414fe1c5d",
         "requiredConnectors": [],
-        "requiredCredentials": [
-          "authentication"
-        ],
-        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
-        "upstreamVersion": "7.0.0"
+        "requiredCredentials": [],
+        "sourceRevision": "68382523846ea5bfad75ba1ef58dc5db031d0a5a",
+        "upstreamVersion": "0.7.4"
       },
-      "releaseId": "release:ae03c35346b337ef7eb34714e1241207d88015d42cc502e6ca3c93ea35738679",
+      "releaseId": "release:1750bf590bbb616cc4ae96def6c5ed45822559b2dce21ef27d8996c414fe1c5d",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -34675,9 +36533,10 @@
           "Contains mcp-server capability metadata."
         ]
       },
-      "sourceId": "openai-official",
+      "sourceId": "claude-official",
       "upstreamName": "stripe",
       "variantPluginIds": [
+        "plugin:claude-official:stripe",
         "plugin:openai-official:stripe"
       ],
       "variantsIdentical": false
@@ -37335,6 +39194,106 @@
         "plugin:knowledge-work-official:valtown"
       ],
       "variantsIdentical": true
+    },
+    "vanguard-advisor-tools": {
+      "authors": [
+        "Vanguard"
+      ],
+      "capabilitySummary": {
+        "executable": 1,
+        "mcp-server": 1,
+        "skill": 1
+      },
+      "categories": [
+        "productivity"
+      ],
+      "compatibility": {
+        "claude-code": "unknown",
+        "codex": "unknown",
+        "cursor": "unknown",
+        "generic-skill-mcp": "unknown",
+        "hermes": "unknown",
+        "opencode": "unknown",
+        "pi": "unknown"
+      },
+      "description": "Vanguard Advisor Tools for financial professionals: research and compare funds and ETFs across the industry and prepare for client conversations, using Vanguard's advisor connector in Claude.",
+      "displayName": "Vanguard Advisor Tools",
+      "homepage": "https://advisors.vanguard.com/",
+      "icon": {
+        "asset": "icon-5cffa84be6843f729fc633bfea97fc0e.ico",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-5cffa84be6843f729fc633bfea97fc0e.ico",
+        "bytes": 3638,
+        "contentType": "image/x-icon",
+        "digest": "sha256:5cffa84be6843f729fc633bfea97fc0e55b0fcefd4d04187524768e3c3dccd4b",
+        "homepage": "https://advisors.vanguard.com/",
+        "kind": "favicon",
+        "path": null,
+        "url": "https://advisors.vanguard.com/favicon.ico"
+      },
+      "keywords": [
+        "advisor",
+        "productivity",
+        "tools",
+        "vanguard"
+      ],
+      "license": "Unknown",
+      "monogram": {
+        "hue": 261,
+        "text": "VA"
+      },
+      "pluginId": "plugin:claude-official:vanguard-advisor-tools",
+      "primaryCategory": "productivity",
+      "productKey": "vanguard-advisor-tools",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "328fe9f61fe7a375b87a6492e265b4a5a955b0ce"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:4157f72c355a434ba2d2bd01b548fa83674cb509be7f0626be0f026f598cfeec",
+        "capabilities": [
+          {
+            "name": "executable",
+            "type": "executable"
+          },
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:a5b77460309b0ae348382404870d7b0fb55a8ae0ca2ba9ea91f095eb8077bfbb",
+        "packageStatus": "portable",
+        "releaseId": "release:a748b31ebff34b3dd3bf6586ca519ba69affcdf45abfde347cc80a5cc5942e4a",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "328fe9f61fe7a375b87a6492e265b4a5a955b0ce",
+        "upstreamVersion": "1.3.0"
+      },
+      "releaseId": "release:a748b31ebff34b3dd3bf6586ca519ba69affcdf45abfde347cc80a5cc5942e4a",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "executable",
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains executable capability metadata.",
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "vanguard-advisor-tools",
+      "variantPluginIds": [
+        "plugin:claude-official:vanguard-advisor-tools"
+      ],
+      "variantsIdentical": false
     },
     "vanta": {
       "authors": [
