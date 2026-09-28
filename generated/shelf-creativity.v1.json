@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:b73e0478c43f74f95ffa1f86a2474798bc28b05208b7f89153028b27ccfaad9a",
+  "catalogId": "catalog:bb1045cfda90abc57a7ac7e2355be54926192e2a42f0ea590a730d807d3addc0",
   "category": "creativity",
   "products": [
     {
@@ -51,7 +51,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/canva",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
       },
       "release": {
         "canonicalContentDigest": "sha256:6c969b5644a3a16a802ca2ff480da292692f6fc2fbdede8a9977914be96836c4",
@@ -68,15 +68,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:654ee7e72515a57530703ed53371c1bc2cc0b77083b349d816173d0add81de89",
         "packageStatus": "portable",
-        "releaseId": "release:3654229f7f82f7977cab4fb452dda5993cc20cd1832f13ee12f111af6eeb1123",
+        "releaseId": "release:d721f59798128a7564a35d7f10a36325d04e53df39b627cd7e639abfeb7d9bb3",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
         "upstreamVersion": "14.0.0"
       },
-      "releaseId": "release:3654229f7f82f7977cab4fb452dda5993cc20cd1832f13ee12f111af6eeb1123",
+      "releaseId": "release:d721f59798128a7564a35d7f10a36325d04e53df39b627cd7e639abfeb7d9bb3",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -234,7 +234,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/excalidraw",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+        "resolvedCommitSha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
       },
       "release": {
         "canonicalContentDigest": "sha256:acf67cb9ec45e885a9bf3e790291ad37e24e6dc57bb10ef42e84cd4f5169eccd",
@@ -247,13 +247,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6b930238faac690506d672bfb166b309d120fbd0b2086b0abeb2153459317129",
         "packageStatus": "portable",
-        "releaseId": "release:a4eed56db4e947aaa1dca92ac18f9b832c410dbb7178fa3d6f71aaacc472cec0",
+        "releaseId": "release:3de63b614dce25bb9fc17c60d510f948a3349286824f7e93e5ab598b4977ef97",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "sourceRevision": "adf3218ca2f5b9971eedc07a76bef22df7701539",
         "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:a4eed56db4e947aaa1dca92ac18f9b832c410dbb7178fa3d6f71aaacc472cec0",
+      "releaseId": "release:3de63b614dce25bb9fc17c60d510f948a3349286824f7e93e5ab598b4977ef97",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -319,7 +319,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/gamma",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+        "resolvedCommitSha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
       },
       "release": {
         "canonicalContentDigest": "sha256:855867dad26c1704aa7cd0ebd2119c2660b44de7784a02cf120583e39dde4d9d",
@@ -332,13 +332,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:1939f1c8b0e89c19379fddab562c7a110a61055221f523ef927918527e71c3f8",
         "packageStatus": "portable",
-        "releaseId": "release:5218f2658fc13d232d8167abefcab8f3caf060e39b0677ca2bce221bd3ab09a8",
+        "releaseId": "release:a79fc5b25772ba489efd9bd897ff68975e0b4685ca28c344b2b2a21dfa3290f0",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "sourceRevision": "adf3218ca2f5b9971eedc07a76bef22df7701539",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:5218f2658fc13d232d8167abefcab8f3caf060e39b0677ca2bce221bd3ab09a8",
+      "releaseId": "release:a79fc5b25772ba489efd9bd897ff68975e0b4685ca28c344b2b2a21dfa3290f0",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -497,7 +497,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/adobe",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
       },
       "release": {
         "canonicalContentDigest": "sha256:71b84f21a649f2098e626096fefe258747244a672895a73c0412924232525d06",
@@ -514,15 +514,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:b7408cefecb33b86f9bf5457ffbb5f2b463ff27cb7d15bbbaefd197de81abf9c",
         "packageStatus": "partial",
-        "releaseId": "release:48cb11697c76099504a2ceac8becfce2124fd6ae90c7d5a7a1e8c7c2edf7a3ff",
+        "releaseId": "release:2bee683e99f6de6af0fced0dda68d19608d3840959a351455e99e0d55ed43b12",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
         "upstreamVersion": "8.0.0"
       },
-      "releaseId": "release:48cb11697c76099504a2ceac8becfce2124fd6ae90c7d5a7a1e8c7c2edf7a3ff",
+      "releaseId": "release:2bee683e99f6de6af0fced0dda68d19608d3840959a351455e99e0d55ed43b12",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
