@@ -1,8 +1,8 @@
 {
-  "catalogId": "catalog:b73e0478c43f74f95ffa1f86a2474798bc28b05208b7f89153028b27ccfaad9a",
+  "catalogId": "catalog:bb1045cfda90abc57a7ac7e2355be54926192e2a42f0ea590a730d807d3addc0",
   "category": "data-analytics",
-  "pluginCount": 51,
-  "productCount": 44,
+  "pluginCount": 49,
+  "productCount": 42,
   "products": [
     {
       "authors": [
@@ -1259,7 +1259,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/build-web-data-visualization",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
       },
       "release": {
         "canonicalContentDigest": "sha256:1a8cd21095b12cf563f1e1187edefa4603b19174cbd7191813fc07961efd5029",
@@ -1280,15 +1280,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:67182b82d90664374ac414d24c0613b65cff666dc859dc6f5dd6b31fad1690f2",
         "packageStatus": "partial",
-        "releaseId": "release:08c3f67ab7786c554b5fb4003e89f53958df5b0cf0b69bb2b197ee24e5e751df",
+        "releaseId": "release:81bc8eaa8b9126b30c4ccd3d50aa08b9031033024464dd4958de8cee97ddc11c",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
         "upstreamVersion": "0.1.21"
       },
-      "releaseId": "release:08c3f67ab7786c554b5fb4003e89f53958df5b0cf0b69bb2b197ee24e5e751df",
+      "releaseId": "release:81bc8eaa8b9126b30c4ccd3d50aa08b9031033024464dd4958de8cee97ddc11c",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -1949,7 +1949,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/data-analytics",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
       },
       "release": {
         "canonicalContentDigest": "sha256:048efe9e4be4cb2c5aa216eb8cda67d92defe17a611a0c8e994ae91d454f5f4e",
@@ -1982,15 +1982,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d9f4d9f58e4683e12f276b776362ee210890e90ce274261a1e2578e9378b9528",
         "packageStatus": "partial",
-        "releaseId": "release:4bd6338197f3888aa7c2e87f927600a0e9ee38df3aa1a7f433005ca70dd4f3ca",
+        "releaseId": "release:7acc0586337e4f9af70065cc2a9344659ac7c880b97ae15517bede2bdba0464e",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
         "upstreamVersion": "0.2.8"
       },
-      "releaseId": "release:4bd6338197f3888aa7c2e87f927600a0e9ee38df3aa1a7f433005ca70dd4f3ca",
+      "releaseId": "release:7acc0586337e4f9af70065cc2a9344659ac7c880b97ae15517bede2bdba0464e",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -2116,121 +2116,6 @@
       "upstreamName": "databases-on-aws",
       "variantPluginIds": [
         "plugin:claude-official:databases-on-aws"
-      ],
-      "variantsIdentical": false
-    },
-    {
-      "authors": [
-        "Databricks"
-      ],
-      "capabilitySummary": {
-        "agent": 31,
-        "command": 2,
-        "executable": 14,
-        "hook": 5,
-        "scheduled-task": 1,
-        "skill": 31
-      },
-      "categories": [
-        "data-analytics"
-      ],
-      "compatibility": {
-        "claude-code": "partially-supported",
-        "codex": "partially-supported",
-        "cursor": "partially-supported",
-        "generic-skill-mcp": "partially-supported",
-        "hermes": "partially-supported",
-        "opencode": "partially-supported",
-        "pi": "partially-supported"
-      },
-      "description": "Databricks skills for the CLI, Apps, Lakebase, Model Serving, Lakeflow Jobs, Spark Declarative Pipelines, Declarative Automation Bundles (DABs), and classic-to-serverless migration.",
-      "displayName": "Databricks",
-      "homepage": "https://developers.databricks.com/",
-      "icon": {
-        "asset": "icon-00e528e4d5e665dbb5784e3d028b74ec.svg",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-00e528e4d5e665dbb5784e3d028b74ec.svg",
-        "bytes": 582,
-        "contentType": "image/svg+xml",
-        "digest": "sha256:00e528e4d5e665dbb5784e3d028b74ecf74405e5ff5a9c75a4d8661f05bda91c",
-        "homepage": null,
-        "kind": "content",
-        "path": "skills/databricks-apps/assets/databricks.svg",
-        "url": null
-      },
-      "keywords": [
-        "data-analytics",
-        "databricks"
-      ],
-      "license": "LicenseRef-Databricks",
-      "monogram": {
-        "hue": 45,
-        "text": "DA"
-      },
-      "pluginId": "plugin:claude-official:databricks",
-      "primaryCategory": "data-analytics",
-      "productKey": "databricks",
-      "provenance": {
-        "manifestPath": ".claude-plugin/marketplace.json",
-        "pluginSubdirectory": "plugins/databricks/claude",
-        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "4d17885b0115718b5fb6a7540e908cb4201d4f2d"
-      },
-      "release": {
-        "canonicalContentDigest": "sha256:68b55cc7e2c2fca846b660a2dc659f92daa138655fc1114a74491df7230363e9",
-        "capabilities": [
-          {
-            "name": "agent",
-            "type": "agent"
-          },
-          {
-            "name": "command",
-            "type": "command"
-          },
-          {
-            "name": "executable",
-            "type": "executable"
-          },
-          {
-            "name": "hook",
-            "type": "hook"
-          },
-          {
-            "name": "scheduled-task",
-            "type": "scheduled-task"
-          },
-          {
-            "name": "skill",
-            "type": "skill"
-          }
-        ],
-        "contentResolution": "complete",
-        "packageDigest": "sha256:1f6c42ff519b4befd04c2f846170789ca32db69186c2934e5b3aa1cde3c2f72f",
-        "packageStatus": "partial",
-        "releaseId": "release:a59d297a7f3a157a3488f86b2e1d230bdb38ab9754a4319636b973ec8c31ade9",
-        "requiredConnectors": [],
-        "requiredCredentials": [],
-        "sourceRevision": "4d17885b0115718b5fb6a7540e908cb4201d4f2d",
-        "upstreamVersion": "0.2.15"
-      },
-      "releaseId": "release:a59d297a7f3a157a3488f86b2e1d230bdb38ab9754a4319636b973ec8c31ade9",
-      "securityClassification": {
-        "contentResolution": "complete",
-        "level": "sensitive",
-        "permissionSensitiveChanges": [
-          "executable",
-          "hook",
-          "scheduled-task"
-        ],
-        "reasons": [
-          "Contains executable capability metadata.",
-          "Contains hook capability metadata.",
-          "Contains scheduled-task capability metadata."
-        ]
-      },
-      "sourceId": "claude-official",
-      "upstreamName": "databricks",
-      "variantPluginIds": [
-        "plugin:claude-official:databricks"
       ],
       "variantsIdentical": false
     },
@@ -2547,7 +2432,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/firebase",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+        "resolvedCommitSha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
       },
       "release": {
         "canonicalContentDigest": "sha256:60af04352ae238ec8d87b22936c237ba33fd4a44e908d6fdd51cf81034224fd9",
@@ -2560,12 +2445,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d3981670b791b2c9c58847c292c7204bedc35df79e3876c10ec6f681d650c0d9",
         "packageStatus": "portable",
-        "releaseId": "release:218b70d46dea217dd1aec06fd14e0a9e6244b7c27a5c9eefb39d4cd94a0a30ae",
+        "releaseId": "release:1bc2b7a607415547591dbaccc25926b616ae9d101178837bbec9bbb19a04f2a1",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fa59bc9037741ecfa131aa27938272605710d7b2"
+        "sourceRevision": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
       },
-      "releaseId": "release:218b70d46dea217dd1aec06fd14e0a9e6244b7c27a5c9eefb39d4cd94a0a30ae",
+      "releaseId": "release:1bc2b7a607415547591dbaccc25926b616ae9d101178837bbec9bbb19a04f2a1",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -2997,7 +2882,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/mixpanel-headless",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
       },
       "release": {
         "canonicalContentDigest": "sha256:ae0b483b515cb4014f04ea95abb3c0278ab1d3f4d8606912670d8f2a68c51bc0",
@@ -3014,15 +2899,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:8721b36223ec3189538d29e0beba8c9f05dbf557228df3d8cd012b55393d392e",
         "packageStatus": "partial",
-        "releaseId": "release:692b5215da802f4e4b04b76afb7549fb448c915f869dcb2b9caa57d5a3f30df1",
+        "releaseId": "release:685d4646e28653bf958b307794b6acb3cfafa6e27f7110e8a370feb6ad34ce5b",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
         "upstreamVersion": "0.1.2"
       },
-      "releaseId": "release:692b5215da802f4e4b04b76afb7549fb448c915f869dcb2b9caa57d5a3f30df1",
+      "releaseId": "release:685d4646e28653bf958b307794b6acb3cfafa6e27f7110e8a370feb6ad34ce5b",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -3213,97 +3098,6 @@
       "upstreamName": "mongodb-atlas",
       "variantPluginIds": [
         "plugin:claude-official:mongodb-atlas"
-      ],
-      "variantsIdentical": false
-    },
-    {
-      "authors": [
-        "Anthropic"
-      ],
-      "capabilitySummary": {
-        "mcp-server": 2,
-        "skill": 7
-      },
-      "categories": [
-        "data-analytics"
-      ],
-      "compatibility": {
-        "claude-code": "unknown",
-        "codex": "unknown",
-        "cursor": "unknown",
-        "generic-skill-mcp": "unknown",
-        "hermes": "unknown",
-        "opencode": "unknown",
-        "pi": "unknown"
-      },
-      "description": "Manage your Neon projects and databases with the neon-postgres agent skill and the Neon MCP Server.",
-      "displayName": "Neon",
-      "homepage": "https://github.com/neondatabase/agent-skills/tree/main/plugins/neon-postgres",
-      "icon": {
-        "asset": "icon-2b1aaef0b2de5d30b9a00778a0a9b9df.svg",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-2b1aaef0b2de5d30b9a00778a0a9b9df.svg",
-        "bytes": 275,
-        "contentType": "image/svg+xml",
-        "digest": "sha256:2b1aaef0b2de5d30b9a00778a0a9b9df2255be08a939a9521f3c93a46de521cf",
-        "homepage": null,
-        "kind": "content",
-        "path": "assets/logo.svg",
-        "url": null
-      },
-      "keywords": [
-        "data-analytics",
-        "neon"
-      ],
-      "license": "Apache-2.0",
-      "monogram": {
-        "hue": 102,
-        "text": "NE"
-      },
-      "pluginId": "plugin:claude-official:neon",
-      "primaryCategory": "data-analytics",
-      "productKey": "neon",
-      "provenance": {
-        "manifestPath": ".claude-plugin/marketplace.json",
-        "pluginSubdirectory": "plugins/neon-postgres",
-        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "2e0da3a1653bcdd227565ac14bb3e9e453a8b854"
-      },
-      "release": {
-        "canonicalContentDigest": "sha256:d9d12b7da0494e660a3d6e0ee4834148a377acb588f85559f3f50e3e2eb02636",
-        "capabilities": [
-          {
-            "name": "mcp-server",
-            "type": "mcp-server"
-          },
-          {
-            "name": "skill",
-            "type": "skill"
-          }
-        ],
-        "contentResolution": "complete",
-        "packageDigest": "sha256:4456dbbb3bbc79321f271810886f79119b49896565ee434bb761bf8b24f67174",
-        "packageStatus": "portable",
-        "releaseId": "release:3a3ae3aaa8511eeb4471502ee71e45bdaf3c5a2624e8177bc5a63f113e22a68e",
-        "requiredConnectors": [],
-        "requiredCredentials": [],
-        "sourceRevision": "2e0da3a1653bcdd227565ac14bb3e9e453a8b854",
-        "upstreamVersion": "1.2.0"
-      },
-      "releaseId": "release:3a3ae3aaa8511eeb4471502ee71e45bdaf3c5a2624e8177bc5a63f113e22a68e",
-      "securityClassification": {
-        "contentResolution": "complete",
-        "level": "sensitive",
-        "permissionSensitiveChanges": [
-          "mcp-server"
-        ],
-        "reasons": [
-          "Contains mcp-server capability metadata."
-        ]
-      },
-      "sourceId": "claude-official",
-      "upstreamName": "neon",
-      "variantPluginIds": [
-        "plugin:claude-official:neon"
       ],
       "variantsIdentical": false
     },

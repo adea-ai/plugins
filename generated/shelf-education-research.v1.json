@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:b73e0478c43f74f95ffa1f86a2474798bc28b05208b7f89153028b27ccfaad9a",
+  "catalogId": "catalog:bb1045cfda90abc57a7ac7e2355be54926192e2a42f0ea590a730d807d3addc0",
   "category": "education-research",
   "products": [
     {
@@ -50,7 +50,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "teaching",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+        "resolvedCommitSha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
       },
       "release": {
         "canonicalContentDigest": "sha256:80446f7306ec88594f42a8bb09bbade4601754c5db8b082fbaaf0e4b319770ab",
@@ -63,13 +63,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:c8564cd60fb82a2b7f64985d2bf350746b671dc7566c0865d928ced9eadd6f1f",
         "packageStatus": "portable",
-        "releaseId": "release:0ca9483d5c9918f86ac7ed51b4f1204f5e91253bb60398e5d0617388ae39d42d",
+        "releaseId": "release:e269fa0c692b73ebb4b8ddcdac9ac21db13e802a51f5565fe1d3dbd78f511325",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "sourceRevision": "adf3218ca2f5b9971eedc07a76bef22df7701539",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:0ca9483d5c9918f86ac7ed51b4f1204f5e91253bb60398e5d0617388ae39d42d",
+      "releaseId": "release:e269fa0c692b73ebb4b8ddcdac9ac21db13e802a51f5565fe1d3dbd78f511325",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -136,7 +136,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "continual-learning",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+        "resolvedCommitSha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
       },
       "release": {
         "canonicalContentDigest": "sha256:9388a810088ad9c2f4aff68c27c0f40c9addeac3f12b9d20c367ad530f764dfd",
@@ -157,13 +157,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6504719a147b348d83a1244767f28dc4f78fd31d90064124fd9d327b3d6dd3e4",
         "packageStatus": "partial",
-        "releaseId": "release:98be0503560ea7011db62dc76a929ea51b62b7a4e5721a4449c31ff63250847f",
+        "releaseId": "release:fc8308dda5b72fe4e2e5ff4d1c4c8965a46b0ed89a1aefc9bc41ac597e8c3ae4",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+        "sourceRevision": "adf3218ca2f5b9971eedc07a76bef22df7701539",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:98be0503560ea7011db62dc76a929ea51b62b7a4e5721a4449c31ff63250847f",
+      "releaseId": "release:fc8308dda5b72fe4e2e5ff4d1c4c8965a46b0ed89a1aefc9bc41ac597e8c3ae4",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -317,7 +317,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/zotero",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
       },
       "release": {
         "canonicalContentDigest": "sha256:2b4671f0a0ec3d39f4a38329cbffd3ee2cf0f4ca122ee581e108d0d38b436f2d",
@@ -338,15 +338,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:4f86bc40059445acaec7f066d7b1f92eafc0930eb4fb54e8ddfb7fce67154139",
         "packageStatus": "partial",
-        "releaseId": "release:d847bc3a9a237ef3c9fcfcfc754b81a077d0a1d516a8f5497e74ae2c0c1f4787",
+        "releaseId": "release:6e863abe71092351501350cab837f56f42b01ec207e548f7f310a92ffb255c77",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
         "upstreamVersion": "0.1.2"
       },
-      "releaseId": "release:d847bc3a9a237ef3c9fcfcfc754b81a077d0a1d516a8f5497e74ae2c0c1f4787",
+      "releaseId": "release:6e863abe71092351501350cab837f56f42b01ec207e548f7f310a92ffb255c77",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -412,7 +412,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/consensus",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
       },
       "release": {
         "canonicalContentDigest": "sha256:baa712ea19b03b3d0024a0c3db869a1c0f17d28cddc1b0c1110b0f26b8276683",
@@ -425,15 +425,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:1d3081164e741eab7c232b0e98b4209ba005206283ace0fea1d4bc16cc2e4dae",
         "packageStatus": "portable",
-        "releaseId": "release:ca068c400edf826dc2a8abe8243d9a380cbed1f1f419776ccc791f0ad1d1b273",
+        "releaseId": "release:973a10ad71866a62057cb1be0152beaa3c69e040a2242e6beae8f4b541498075",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
         "upstreamVersion": "4.0.0"
       },
-      "releaseId": "release:ca068c400edf826dc2a8abe8243d9a380cbed1f1f419776ccc791f0ad1d1b273",
+      "releaseId": "release:973a10ad71866a62057cb1be0152beaa3c69e040a2242e6beae8f4b541498075",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",

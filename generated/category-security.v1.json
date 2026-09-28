@@ -1,8 +1,8 @@
 {
-  "catalogId": "catalog:b73e0478c43f74f95ffa1f86a2474798bc28b05208b7f89153028b27ccfaad9a",
+  "catalogId": "catalog:bb1045cfda90abc57a7ac7e2355be54926192e2a42f0ea590a730d807d3addc0",
   "category": "security",
-  "pluginCount": 25,
-  "productCount": 20,
+  "pluginCount": 24,
+  "productCount": 19,
   "products": [
     {
       "authors": [
@@ -384,87 +384,6 @@
         "Anthropic"
       ],
       "capabilitySummary": {
-        "mcp-server": 2,
-        "skill": 3
-      },
-      "categories": [
-        "security"
-      ],
-      "compatibility": {
-        "claude-code": "partially-supported",
-        "codex": "partially-supported",
-        "cursor": "partially-supported",
-        "generic-skill-mcp": "partially-supported",
-        "hermes": "partially-supported",
-        "opencode": "partially-supported",
-        "pi": "partially-supported"
-      },
-      "description": "Aikido Security scanning for Claude Code — SAST, secrets, and IaC vulnerability detection powered by the Aikido MCP server.",
-      "displayName": "Aikido",
-      "homepage": "https://github.com/AikidoSec/aikido-claude-plugin",
-      "icon": null,
-      "keywords": [
-        "aikido",
-        "security"
-      ],
-      "license": "MIT",
-      "monogram": {
-        "hue": 42,
-        "text": "AI"
-      },
-      "pluginId": "plugin:claude-official:aikido",
-      "primaryCategory": "security",
-      "productKey": "aikido",
-      "provenance": {
-        "manifestPath": ".claude-plugin/marketplace.json",
-        "pluginSubdirectory": ".",
-        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "5db259bac62bf0c3a37bfd0fee6e22cc25bdb704"
-      },
-      "release": {
-        "canonicalContentDigest": "sha256:d21ebcd3251ce1609c1ea1ea76724c29a919b280750a286c2f8c6c25507769cb",
-        "capabilities": [
-          {
-            "name": "mcp-server",
-            "type": "mcp-server"
-          },
-          {
-            "name": "skill",
-            "type": "skill"
-          }
-        ],
-        "contentResolution": "complete",
-        "packageDigest": "sha256:097f24ac7a7ac6ce5755c1633185dda3e44eb5e1f33265f9cf84795b71bc8dae",
-        "packageStatus": "partial",
-        "releaseId": "release:fa91c290784756e80ec9cb999affb297ebf8918cdc48d45810e4fa59d3091249",
-        "requiredConnectors": [],
-        "requiredCredentials": [],
-        "sourceRevision": "5db259bac62bf0c3a37bfd0fee6e22cc25bdb704",
-        "upstreamVersion": "1.2.8"
-      },
-      "releaseId": "release:fa91c290784756e80ec9cb999affb297ebf8918cdc48d45810e4fa59d3091249",
-      "securityClassification": {
-        "contentResolution": "complete",
-        "level": "sensitive",
-        "permissionSensitiveChanges": [
-          "mcp-server"
-        ],
-        "reasons": [
-          "Contains mcp-server capability metadata."
-        ]
-      },
-      "sourceId": "claude-official",
-      "upstreamName": "aikido",
-      "variantPluginIds": [
-        "plugin:claude-official:aikido"
-      ],
-      "variantsIdentical": false
-    },
-    {
-      "authors": [
-        "Anthropic"
-      ],
-      "capabilitySummary": {
         "agent": 9,
         "executable": 22,
         "hook": 3,
@@ -502,7 +421,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/claude-security",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+        "resolvedCommitSha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
       },
       "release": {
         "canonicalContentDigest": "sha256:9a181fad2ad1673e05007fffbe259ddffa70149f8f2aa6c14309a848027487fe",
@@ -527,13 +446,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:a642243f4885444f7f37cc514a7d1d23e33caee7dab1be904ba8d72d2519172c",
         "packageStatus": "partial",
-        "releaseId": "release:baef07253a3f8a5cdb55c7de7af1355681d48d9250290007d739add272a7a824",
+        "releaseId": "release:4a58f116050d83487571abbccde873f80563799b40de3174d0df850fdbee0fc0",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fa59bc9037741ecfa131aa27938272605710d7b2",
+        "sourceRevision": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80",
         "upstreamVersion": "0.12.0"
       },
-      "releaseId": "release:baef07253a3f8a5cdb55c7de7af1355681d48d9250290007d739add272a7a824",
+      "releaseId": "release:4a58f116050d83487571abbccde873f80563799b40de3174d0df850fdbee0fc0",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -604,7 +523,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/codex-security",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "1dc195897af4161d039b80d8471ec0a10c9bbc89"
+        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
       },
       "release": {
         "canonicalContentDigest": "sha256:af19890f0d14251412a14b7d3d1146e4569bb3f2825f93944e414e00a64c3e24",
@@ -629,15 +548,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:7e5ca016f78e7d406f88787f8d241f6158c85a930e5744a3bfd9dc47822a65a3",
         "packageStatus": "partial",
-        "releaseId": "release:666dadae53ec6ab15e72e294cec313193d5de1ea56f33b1083c4dd288709f08e",
+        "releaseId": "release:23fdbb2231a37fa9f138e7b6be3841f6e6303cab20c2c09d9098d64795bcf7e7",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
         "upstreamVersion": "0.1.24"
       },
-      "releaseId": "release:666dadae53ec6ab15e72e294cec313193d5de1ea56f33b1083c4dd288709f08e",
+      "releaseId": "release:23fdbb2231a37fa9f138e7b6be3841f6e6303cab20c2c09d9098d64795bcf7e7",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
