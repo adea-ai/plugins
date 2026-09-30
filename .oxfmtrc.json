@@ -5,10 +5,10 @@
   "printWidth": 100,
   "ignorePatterns": [
     "CHANGELOG.md",
-    ".release-please-manifest.json",
     ".github/.code-foundry",
     ".github/actions/",
     "plugin.json",
+    ".release-please-manifest.json",
     ".github/CONTRIBUTING.md",
     "generated/**",
     "fixtures/expected/**",
