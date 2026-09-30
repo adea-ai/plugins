@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.5](https://github.com/adea-ai/plugins/compare/v2.0.4...v2.0.5) (2026-09-30)
+
+
+### Maintenance
+
+* add Renovate for dependency updates ([#169](https://github.com/adea-ai/plugins/issues/169)) ([dc0bff4](https://github.com/adea-ai/plugins/commit/dc0bff45b99e6ba832716dd17fd18aaaeb1c7bbd))
+
 ## [2.0.4](https://github.com/adea-ai/plugins/compare/v2.0.3...v2.0.4) (2026-09-30)
 
 
