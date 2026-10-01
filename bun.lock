@@ -10,6 +10,7 @@
       "devDependencies": {
         "@types/bun": "1.4.2",
         "@types/node": "^26.5.1",
+        "code-foundry": "1.39.3",
         "oxfmt": "^0.71.0",
         "oxlint": "^1.83.0",
         "typescript": "^6.0.3",
@@ -17,7 +18,7 @@
     },
     "packages/plugins": {
       "name": "@adea-ai/plugins",
-      "version": "2.0.6",
+      "version": "2.0.8",
       "dependencies": {
         "tar-stream": "^3.2.1",
         "yaml": "2.9.1",
@@ -121,6 +122,8 @@
     "bare-url": ["bare-url@2.5.4", "", { "dependencies": { "bare-path": "^3.0.0" } }, "sha512-Gxa7UVWBr0/edU1b+TJhn/AZvMQUj9OGspvYsaTYQrAbZA4BOTZGL3LiZxvD+CeMlDH4juwD84+eTAp/bLYW5g=="],
 
     "bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+
+    "code-foundry": ["code-foundry@1.39.3", "", { "bin": { "code-foundry": "src/cli.mjs" } }, "sha512-PFdvWU7z+seZjg68OgciY74TJUu/JulgKgFiu+X6DQhT1c4/ymQyMtwQlsNBhPtnz6ysvr4lvZ+l+e91WSj9Ng=="],
 
     "events-universal": ["events-universal@1.0.1", "", { "dependencies": { "bare-events": "^2.7.0" } }, "sha512-LUd5euvbMLpwOF8m6ivPCbhQeSiYVNb8Vs0fQ8QjXo0JTkEHpz8pxdQf0gStltaPpw0Cca8b39KxvK9cfKRiAw=="],
 
