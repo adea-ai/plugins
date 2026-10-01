@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.8](https://github.com/adea-ai/plugins/compare/v2.0.7...v2.0.8) (2026-10-01)
+
+
+### Maintenance
+
+* **deps:** update dependency oxfmt to ^0.71.0 ([#175](https://github.com/adea-ai/plugins/issues/175)) ([27f8060](https://github.com/adea-ai/plugins/commit/27f80604f9e7e1bbbe83a8bdf1a267c42c7d4caa))
+
 ## [2.0.7](https://github.com/adea-ai/plugins/compare/v2.0.6...v2.0.7) (2026-10-01)
 
 
