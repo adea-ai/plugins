@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.7](https://github.com/adea-ai/plugins/compare/v2.0.6...v2.0.7) (2026-10-01)
+
+
+### Maintenance
+
+* open Renovate PRs as drafts, group majors, and retire Dependabot ([#176](https://github.com/adea-ai/plugins/issues/176)) ([5d93808](https://github.com/adea-ai/plugins/commit/5d93808338837d86726ce4a4b4426e03c7bf0a3a))
+
 ## [2.0.6](https://github.com/adea-ai/plugins/compare/v2.0.5...v2.0.6) (2026-09-30)
 
 
