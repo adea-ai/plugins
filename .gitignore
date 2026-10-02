@@ -41,8 +41,6 @@ htmlcov/
 artifacts/
 performance-results.json
 performance-results/
-eval-results.json
-eval-results/
 cache/
 !.github/actions/cache/
 !.github/actions/cache/action.yml
@@ -72,9 +70,6 @@ pnpm-debug.log*
 .fleet/
 .opencode/
 .kluster/
-.zcode/
-.kiro/
-.goose/
 .direnv/
 .envrc
 .vercel/
@@ -87,5 +82,8 @@ mise.local.lock
 # Repository-specific rules
 eval-results.json
 eval-results/
+.zcode/
+.kiro/
+.goose/
 # Brand marks and the browsing index are committed under catalog-assets/ and
 # served to browsers from the repository rather than from release assets.
