@@ -1,8 +1,8 @@
 {
-  "catalogId": "catalog:c92ff7f2afdd6d3a195b001aca696157e2a6853f5d08db1a4b8368d2ff7a80c3",
+  "catalogId": "catalog:424636ad7aacccdc3f181c204335ecd0f4bb13c7c5f12daeb2aaebb4dc9d3639",
   "category": "data-analytics",
-  "pluginCount": 51,
-  "productCount": 44,
+  "pluginCount": 49,
+  "productCount": 42,
   "products": [
     {
       "authors": [
@@ -2121,121 +2121,6 @@
     },
     {
       "authors": [
-        "Databricks"
-      ],
-      "capabilitySummary": {
-        "agent": 31,
-        "command": 2,
-        "executable": 14,
-        "hook": 5,
-        "scheduled-task": 1,
-        "skill": 31
-      },
-      "categories": [
-        "data-analytics"
-      ],
-      "compatibility": {
-        "claude-code": "partially-supported",
-        "codex": "partially-supported",
-        "cursor": "partially-supported",
-        "generic-skill-mcp": "partially-supported",
-        "hermes": "partially-supported",
-        "opencode": "partially-supported",
-        "pi": "partially-supported"
-      },
-      "description": "Databricks skills for the CLI, Apps, Lakebase, Model Serving, Lakeflow Jobs, Spark Declarative Pipelines, Declarative Automation Bundles (DABs), and classic-to-serverless migration.",
-      "displayName": "Databricks",
-      "homepage": "https://developers.databricks.com/",
-      "icon": {
-        "asset": "icon-00e528e4d5e665dbb5784e3d028b74ec.svg",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-00e528e4d5e665dbb5784e3d028b74ec.svg",
-        "bytes": 582,
-        "contentType": "image/svg+xml",
-        "digest": "sha256:00e528e4d5e665dbb5784e3d028b74ecf74405e5ff5a9c75a4d8661f05bda91c",
-        "homepage": null,
-        "kind": "content",
-        "path": "skills/databricks-apps/assets/databricks.svg",
-        "url": null
-      },
-      "keywords": [
-        "data-analytics",
-        "databricks"
-      ],
-      "license": "LicenseRef-Databricks",
-      "monogram": {
-        "hue": 45,
-        "text": "DA"
-      },
-      "pluginId": "plugin:claude-official:databricks",
-      "primaryCategory": "data-analytics",
-      "productKey": "databricks",
-      "provenance": {
-        "manifestPath": ".claude-plugin/marketplace.json",
-        "pluginSubdirectory": "plugins/databricks/claude",
-        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "4d17885b0115718b5fb6a7540e908cb4201d4f2d"
-      },
-      "release": {
-        "canonicalContentDigest": "sha256:68b55cc7e2c2fca846b660a2dc659f92daa138655fc1114a74491df7230363e9",
-        "capabilities": [
-          {
-            "name": "agent",
-            "type": "agent"
-          },
-          {
-            "name": "command",
-            "type": "command"
-          },
-          {
-            "name": "executable",
-            "type": "executable"
-          },
-          {
-            "name": "hook",
-            "type": "hook"
-          },
-          {
-            "name": "scheduled-task",
-            "type": "scheduled-task"
-          },
-          {
-            "name": "skill",
-            "type": "skill"
-          }
-        ],
-        "contentResolution": "complete",
-        "packageDigest": "sha256:1f6c42ff519b4befd04c2f846170789ca32db69186c2934e5b3aa1cde3c2f72f",
-        "packageStatus": "partial",
-        "releaseId": "release:a59d297a7f3a157a3488f86b2e1d230bdb38ab9754a4319636b973ec8c31ade9",
-        "requiredConnectors": [],
-        "requiredCredentials": [],
-        "sourceRevision": "4d17885b0115718b5fb6a7540e908cb4201d4f2d",
-        "upstreamVersion": "0.2.15"
-      },
-      "releaseId": "release:a59d297a7f3a157a3488f86b2e1d230bdb38ab9754a4319636b973ec8c31ade9",
-      "securityClassification": {
-        "contentResolution": "complete",
-        "level": "sensitive",
-        "permissionSensitiveChanges": [
-          "executable",
-          "hook",
-          "scheduled-task"
-        ],
-        "reasons": [
-          "Contains executable capability metadata.",
-          "Contains hook capability metadata.",
-          "Contains scheduled-task capability metadata."
-        ]
-      },
-      "sourceId": "claude-official",
-      "upstreamName": "databricks",
-      "variantPluginIds": [
-        "plugin:claude-official:databricks"
-      ],
-      "variantsIdentical": false
-    },
-    {
-      "authors": [
         "Google LLC"
       ],
       "capabilitySummary": {
@@ -2547,7 +2432,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/firebase",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "ab024cdcfa7ca80be204acd4907656ba5a968589"
+        "resolvedCommitSha": "d182ca456ca09d31d139f7d3818d1d333b103cce"
       },
       "release": {
         "canonicalContentDigest": "sha256:60af04352ae238ec8d87b22936c237ba33fd4a44e908d6fdd51cf81034224fd9",
@@ -2560,12 +2445,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d3981670b791b2c9c58847c292c7204bedc35df79e3876c10ec6f681d650c0d9",
         "packageStatus": "portable",
-        "releaseId": "release:a4024ca35d061bc7819438c12843855a44e690291b42d07d1953f157bb3db271",
+        "releaseId": "release:fbeaf7887e2fde14872bc1f1b762b358f125f4da2b78dc797271b28402becd77",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ab024cdcfa7ca80be204acd4907656ba5a968589"
+        "sourceRevision": "d182ca456ca09d31d139f7d3818d1d333b103cce"
       },
-      "releaseId": "release:a4024ca35d061bc7819438c12843855a44e690291b42d07d1953f157bb3db271",
+      "releaseId": "release:fbeaf7887e2fde14872bc1f1b762b358f125f4da2b78dc797271b28402becd77",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -3213,97 +3098,6 @@
       "upstreamName": "mongodb-atlas",
       "variantPluginIds": [
         "plugin:claude-official:mongodb-atlas"
-      ],
-      "variantsIdentical": false
-    },
-    {
-      "authors": [
-        "Anthropic"
-      ],
-      "capabilitySummary": {
-        "mcp-server": 2,
-        "skill": 7
-      },
-      "categories": [
-        "data-analytics"
-      ],
-      "compatibility": {
-        "claude-code": "unknown",
-        "codex": "unknown",
-        "cursor": "unknown",
-        "generic-skill-mcp": "unknown",
-        "hermes": "unknown",
-        "opencode": "unknown",
-        "pi": "unknown"
-      },
-      "description": "Manage your Neon projects and databases with the neon-postgres agent skill and the Neon MCP Server.",
-      "displayName": "Neon",
-      "homepage": "https://github.com/neondatabase/agent-skills/tree/main/plugins/neon-postgres",
-      "icon": {
-        "asset": "icon-2b1aaef0b2de5d30b9a00778a0a9b9df.svg",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-2b1aaef0b2de5d30b9a00778a0a9b9df.svg",
-        "bytes": 275,
-        "contentType": "image/svg+xml",
-        "digest": "sha256:2b1aaef0b2de5d30b9a00778a0a9b9df2255be08a939a9521f3c93a46de521cf",
-        "homepage": null,
-        "kind": "content",
-        "path": "assets/logo.svg",
-        "url": null
-      },
-      "keywords": [
-        "data-analytics",
-        "neon"
-      ],
-      "license": "Apache-2.0",
-      "monogram": {
-        "hue": 102,
-        "text": "NE"
-      },
-      "pluginId": "plugin:claude-official:neon",
-      "primaryCategory": "data-analytics",
-      "productKey": "neon",
-      "provenance": {
-        "manifestPath": ".claude-plugin/marketplace.json",
-        "pluginSubdirectory": "plugins/neon-postgres",
-        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "2e0da3a1653bcdd227565ac14bb3e9e453a8b854"
-      },
-      "release": {
-        "canonicalContentDigest": "sha256:d9d12b7da0494e660a3d6e0ee4834148a377acb588f85559f3f50e3e2eb02636",
-        "capabilities": [
-          {
-            "name": "mcp-server",
-            "type": "mcp-server"
-          },
-          {
-            "name": "skill",
-            "type": "skill"
-          }
-        ],
-        "contentResolution": "complete",
-        "packageDigest": "sha256:4456dbbb3bbc79321f271810886f79119b49896565ee434bb761bf8b24f67174",
-        "packageStatus": "portable",
-        "releaseId": "release:3a3ae3aaa8511eeb4471502ee71e45bdaf3c5a2624e8177bc5a63f113e22a68e",
-        "requiredConnectors": [],
-        "requiredCredentials": [],
-        "sourceRevision": "2e0da3a1653bcdd227565ac14bb3e9e453a8b854",
-        "upstreamVersion": "1.2.0"
-      },
-      "releaseId": "release:3a3ae3aaa8511eeb4471502ee71e45bdaf3c5a2624e8177bc5a63f113e22a68e",
-      "securityClassification": {
-        "contentResolution": "complete",
-        "level": "sensitive",
-        "permissionSensitiveChanges": [
-          "mcp-server"
-        ],
-        "reasons": [
-          "Contains mcp-server capability metadata."
-        ]
-      },
-      "sourceId": "claude-official",
-      "upstreamName": "neon",
-      "variantPluginIds": [
-        "plugin:claude-official:neon"
       ],
       "variantsIdentical": false
     },
