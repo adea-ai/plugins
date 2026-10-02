@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:bb1045cfda90abc57a7ac7e2355be54926192e2a42f0ea590a730d807d3addc0",
+  "catalogId": "catalog:c92ff7f2afdd6d3a195b001aca696157e2a6853f5d08db1a4b8368d2ff7a80c3",
   "plugins": [
     {
       "harnessCompatibility": {
@@ -4800,6 +4800,81 @@
             "skill",
             "mcp-server"
           ],
+          "status": "partially-supported"
+        },
+        "codex": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "partially-supported"
+        },
+        "cursor": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "partially-supported"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "partially-supported"
+        },
+        "hermes": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "partially-supported"
+        },
+        "opencode": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "partially-supported"
+        },
+        "pi": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "partially-supported"
+        }
+      },
+      "pluginId": "plugin:claude-official:aikido"
+    },
+    {
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
           "status": "unknown"
         },
         "codex": {
@@ -8621,50 +8696,64 @@
           "reasons": [
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
-          "responsibleCapabilities": [],
-          "status": "partially-supported"
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "unknown"
         },
         "codex": {
           "reasons": [
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
-          "responsibleCapabilities": [],
-          "status": "partially-supported"
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "unknown"
         },
         "cursor": {
           "reasons": [
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
-          "responsibleCapabilities": [],
-          "status": "partially-supported"
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "unknown"
         },
         "generic-skill-mcp": {
           "reasons": [
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
-          "responsibleCapabilities": [],
-          "status": "partially-supported"
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "unknown"
         },
         "hermes": {
           "reasons": [
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
-          "responsibleCapabilities": [],
-          "status": "partially-supported"
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "unknown"
         },
         "opencode": {
           "reasons": [
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
-          "responsibleCapabilities": [],
-          "status": "partially-supported"
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "unknown"
         },
         "pi": {
           "reasons": [
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
-          "responsibleCapabilities": [],
-          "status": "partially-supported"
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "unknown"
         }
       },
       "pluginId": "plugin:claude-official:context7"
@@ -9245,6 +9334,74 @@
         }
       },
       "pluginId": "plugin:claude-official:databases-on-aws"
+    },
+    {
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "codex": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "cursor": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "hermes": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "opencode": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "pi": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        }
+      },
+      "pluginId": "plugin:claude-official:databricks"
     },
     {
       "harnessCompatibility": {
@@ -12691,6 +12848,74 @@
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
           "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "codex": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "cursor": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "hermes": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "opencode": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "pi": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        }
+      },
+      "pluginId": "plugin:claude-official:legalzoom"
+    },
+    {
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
             "mcp-server"
           ],
           "status": "unknown"
@@ -12826,6 +13051,128 @@
         }
       },
       "pluginId": "plugin:claude-official:linq-alpha"
+    },
+    {
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "unknown"
+        },
+        "codex": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "unknown"
+        },
+        "cursor": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "unknown"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "unknown"
+        },
+        "hermes": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "unknown"
+        },
+        "opencode": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "unknown"
+        },
+        "pi": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "unknown"
+        }
+      },
+      "pluginId": "plugin:claude-official:liquid-lsp"
+    },
+    {
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "unknown"
+        },
+        "codex": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "unknown"
+        },
+        "cursor": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "unknown"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "unknown"
+        },
+        "hermes": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "unknown"
+        },
+        "opencode": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "unknown"
+        },
+        "pi": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "unknown"
+        }
+      },
+      "pluginId": "plugin:claude-official:liquid-skills"
     },
     {
       "harnessCompatibility": {
@@ -13431,6 +13778,60 @@
           "reasons": [
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "codex": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "cursor": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "hermes": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "opencode": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "pi": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        }
+      },
+      "pluginId": "plugin:claude-official:math-proof"
+    },
+    {
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
           "responsibleCapabilities": [
             "skill"
           ],
@@ -13600,6 +14001,74 @@
         }
       },
       "pluginId": "plugin:claude-official:mcp-tunnels"
+    },
+    {
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "partially-supported"
+        },
+        "codex": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "partially-supported"
+        },
+        "cursor": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "partially-supported"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "partially-supported"
+        },
+        "hermes": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "partially-supported"
+        },
+        "opencode": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "partially-supported"
+        },
+        "pi": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "partially-supported"
+        }
+      },
+      "pluginId": "plugin:claude-official:mercadopago"
     },
     {
       "harnessCompatibility": {
@@ -14212,6 +14681,81 @@
         }
       },
       "pluginId": "plugin:claude-official:mongodb-atlas"
+    },
+    {
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "codex": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "cursor": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "hermes": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "opencode": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "pi": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        }
+      },
+      "pluginId": "plugin:claude-official:neon"
     },
     {
       "harnessCompatibility": {
@@ -15972,7 +16516,8 @@
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
           "responsibleCapabilities": [
-            "skill"
+            "skill",
+            "mcp-server"
           ],
           "status": "partially-supported"
         },
@@ -15981,7 +16526,8 @@
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
           "responsibleCapabilities": [
-            "skill"
+            "skill",
+            "mcp-server"
           ],
           "status": "partially-supported"
         },
@@ -15990,7 +16536,8 @@
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
           "responsibleCapabilities": [
-            "skill"
+            "skill",
+            "mcp-server"
           ],
           "status": "partially-supported"
         },
@@ -15999,7 +16546,8 @@
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
           "responsibleCapabilities": [
-            "skill"
+            "skill",
+            "mcp-server"
           ],
           "status": "partially-supported"
         },
@@ -16008,7 +16556,8 @@
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
           "responsibleCapabilities": [
-            "skill"
+            "skill",
+            "mcp-server"
           ],
           "status": "partially-supported"
         },
@@ -16017,7 +16566,8 @@
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
           "responsibleCapabilities": [
-            "skill"
+            "skill",
+            "mcp-server"
           ],
           "status": "partially-supported"
         },
@@ -16026,7 +16576,8 @@
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
           "responsibleCapabilities": [
-            "skill"
+            "skill",
+            "mcp-server"
           ],
           "status": "partially-supported"
         }
@@ -18523,6 +19074,60 @@
           "reasons": [
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "codex": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "cursor": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "hermes": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "opencode": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "pi": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        }
+      },
+      "pluginId": "plugin:claude-official:shopify-ai-toolkit"
+    },
+    {
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
           "responsibleCapabilities": [
             "skill"
           ],
@@ -19175,6 +19780,74 @@
         }
       },
       "pluginId": "plugin:claude-official:stackhawk-hawkscan"
+    },
+    {
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "codex": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "cursor": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "hermes": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "opencode": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        },
+        "pi": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill"
+          ],
+          "status": "partially-supported"
+        }
+      },
+      "pluginId": "plugin:claude-official:streaming-skills-plugin"
     },
     {
       "harnessCompatibility": {
@@ -20289,6 +20962,81 @@
         }
       },
       "pluginId": "plugin:claude-official:valtown"
+    },
+    {
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "codex": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "cursor": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "hermes": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "opencode": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "pi": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        }
+      },
+      "pluginId": "plugin:claude-official:vanguard-advisor-tools"
     },
     {
       "harnessCompatibility": {
@@ -22585,64 +23333,104 @@
           "reasons": [
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
-          "responsibleCapabilities": [
-            "mcp-server"
-          ],
-          "status": "unknown"
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
         },
         "codex": {
           "reasons": [
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
-          "responsibleCapabilities": [
-            "mcp-server"
-          ],
-          "status": "unknown"
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
         },
         "cursor": {
           "reasons": [
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
-          "responsibleCapabilities": [
-            "mcp-server"
-          ],
-          "status": "unknown"
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
         },
         "generic-skill-mcp": {
           "reasons": [
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
-          "responsibleCapabilities": [
-            "mcp-server"
-          ],
-          "status": "unknown"
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
         },
         "hermes": {
           "reasons": [
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
-          "responsibleCapabilities": [
-            "mcp-server"
-          ],
-          "status": "unknown"
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
         },
         "opencode": {
           "reasons": [
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
-          "responsibleCapabilities": [
-            "mcp-server"
-          ],
-          "status": "unknown"
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
         },
         "pi": {
           "reasons": [
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
-          "responsibleCapabilities": [
-            "mcp-server"
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        }
+      },
+      "pluginId": "plugin:cursor-official:dyl-stack"
+    },
+    {
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
-          "status": "unknown"
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "codex": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "cursor": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "hermes": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "opencode": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "pi": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
         }
       },
       "pluginId": "plugin:cursor-official:etoro-trading"
@@ -23129,6 +23917,74 @@
         }
       },
       "pluginId": "plugin:cursor-official:google-slides"
+    },
+    {
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "codex": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "cursor": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "hermes": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "opencode": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "pi": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "mcp-server"
+          ],
+          "status": "unknown"
+        }
+      },
+      "pluginId": "plugin:cursor-official:greenhouse"
     },
     {
       "harnessCompatibility": {
@@ -28015,6 +28871,81 @@
             "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
           ],
           "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "codex": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "cursor": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "hermes": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "opencode": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "pi": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        }
+      },
+      "pluginId": "plugin:knowledge-work-official:govtribe"
+    },
+    {
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
             "skill"
           ],
           "status": "partially-supported"
@@ -32066,6 +32997,81 @@
         }
       },
       "pluginId": "plugin:knowledge-work-official:valtown"
+    },
+    {
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "codex": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "cursor": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "hermes": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "opencode": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        },
+        "pi": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [
+            "skill",
+            "mcp-server"
+          ],
+          "status": "unknown"
+        }
+      },
+      "pluginId": "plugin:knowledge-work-official:vanguard-advisor-tools"
     },
     {
       "harnessCompatibility": {
