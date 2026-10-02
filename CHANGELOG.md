@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.10](https://github.com/adea-ai/plugins/compare/v2.0.9...v2.0.10) (2026-10-02)
+
+
+### Maintenance
+
+* make dependency updates Renovate-only and drop Dependabot ([#182](https://github.com/adea-ai/plugins/issues/182)) ([6625c98](https://github.com/adea-ai/plugins/commit/6625c9854ff847faf18c7157f5c20e14c990df78))
+
 ## [2.0.9](https://github.com/adea-ai/plugins/compare/v2.0.8...v2.0.9) (2026-10-02)
 
 
