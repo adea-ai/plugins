@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:bb1045cfda90abc57a7ac7e2355be54926192e2a42f0ea590a730d807d3addc0",
+  "catalogId": "catalog:c92ff7f2afdd6d3a195b001aca696157e2a6853f5d08db1a4b8368d2ff7a80c3",
   "category": "education-research",
   "products": [
     {
@@ -50,7 +50,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "teaching",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+        "resolvedCommitSha": "c47b12849e43f18d5c374c7069c744cc55b0ea00"
       },
       "release": {
         "canonicalContentDigest": "sha256:80446f7306ec88594f42a8bb09bbade4601754c5db8b082fbaaf0e4b319770ab",
@@ -63,13 +63,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:c8564cd60fb82a2b7f64985d2bf350746b671dc7566c0865d928ced9eadd6f1f",
         "packageStatus": "portable",
-        "releaseId": "release:e269fa0c692b73ebb4b8ddcdac9ac21db13e802a51f5565fe1d3dbd78f511325",
+        "releaseId": "release:eb3298efa291c680ac3cd8e4dfe1e4ae76425ea4dca1e69949531272182db076",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "adf3218ca2f5b9971eedc07a76bef22df7701539",
+        "sourceRevision": "c47b12849e43f18d5c374c7069c744cc55b0ea00",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:e269fa0c692b73ebb4b8ddcdac9ac21db13e802a51f5565fe1d3dbd78f511325",
+      "releaseId": "release:eb3298efa291c680ac3cd8e4dfe1e4ae76425ea4dca1e69949531272182db076",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -136,7 +136,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "continual-learning",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+        "resolvedCommitSha": "c47b12849e43f18d5c374c7069c744cc55b0ea00"
       },
       "release": {
         "canonicalContentDigest": "sha256:9388a810088ad9c2f4aff68c27c0f40c9addeac3f12b9d20c367ad530f764dfd",
@@ -157,13 +157,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6504719a147b348d83a1244767f28dc4f78fd31d90064124fd9d327b3d6dd3e4",
         "packageStatus": "partial",
-        "releaseId": "release:fc8308dda5b72fe4e2e5ff4d1c4c8965a46b0ed89a1aefc9bc41ac597e8c3ae4",
+        "releaseId": "release:52beda26bb2e3d435f1504fe7bbed011d014b27c212b434b8f9dbada5c616a2d",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "adf3218ca2f5b9971eedc07a76bef22df7701539",
+        "sourceRevision": "c47b12849e43f18d5c374c7069c744cc55b0ea00",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:fc8308dda5b72fe4e2e5ff4d1c4c8965a46b0ed89a1aefc9bc41ac597e8c3ae4",
+      "releaseId": "release:52beda26bb2e3d435f1504fe7bbed011d014b27c212b434b8f9dbada5c616a2d",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -492,7 +492,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "bio-research",
         "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
-        "resolvedCommitSha": "da38ec1ee89d41e5380e652a97382695003396e7"
+        "resolvedCommitSha": "8444efcd48f7012f09797778a36a33e73d0861f4"
       },
       "release": {
         "canonicalContentDigest": "sha256:03bf352372fd82634db1e7a87afa99236cb69b88eb955454966772d33a4367b3",
@@ -513,13 +513,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:cae8bfb6acf774f67022de9843fcffab102eee8149350afaee539b0da7013ac9",
         "packageStatus": "partial",
-        "releaseId": "release:e055f605d0c17b1d0a8c6fba558fe70cba2b724e2d46ab778ecaea8491dc4fdd",
+        "releaseId": "release:ef885edb42516722512f0e67c426f104a1eaee0cec075fa0d8901ca6186d3b09",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "da38ec1ee89d41e5380e652a97382695003396e7",
+        "sourceRevision": "8444efcd48f7012f09797778a36a33e73d0861f4",
         "upstreamVersion": "1.2.0"
       },
-      "releaseId": "release:e055f605d0c17b1d0a8c6fba558fe70cba2b724e2d46ab778ecaea8491dc4fdd",
+      "releaseId": "release:ef885edb42516722512f0e67c426f104a1eaee0cec075fa0d8901ca6186d3b09",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",

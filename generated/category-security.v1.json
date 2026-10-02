@@ -1,8 +1,8 @@
 {
-  "catalogId": "catalog:bb1045cfda90abc57a7ac7e2355be54926192e2a42f0ea590a730d807d3addc0",
+  "catalogId": "catalog:c92ff7f2afdd6d3a195b001aca696157e2a6853f5d08db1a4b8368d2ff7a80c3",
   "category": "security",
-  "pluginCount": 24,
-  "productCount": 19,
+  "pluginCount": 25,
+  "productCount": 20,
   "products": [
     {
       "authors": [
@@ -384,6 +384,87 @@
         "Anthropic"
       ],
       "capabilitySummary": {
+        "mcp-server": 2,
+        "skill": 3
+      },
+      "categories": [
+        "security"
+      ],
+      "compatibility": {
+        "claude-code": "partially-supported",
+        "codex": "partially-supported",
+        "cursor": "partially-supported",
+        "generic-skill-mcp": "partially-supported",
+        "hermes": "partially-supported",
+        "opencode": "partially-supported",
+        "pi": "partially-supported"
+      },
+      "description": "Aikido Security scanning for Claude Code — SAST, secrets, and IaC vulnerability detection powered by the Aikido MCP server.",
+      "displayName": "Aikido",
+      "homepage": "https://github.com/AikidoSec/aikido-claude-plugin",
+      "icon": null,
+      "keywords": [
+        "aikido",
+        "security"
+      ],
+      "license": "MIT",
+      "monogram": {
+        "hue": 42,
+        "text": "AI"
+      },
+      "pluginId": "plugin:claude-official:aikido",
+      "primaryCategory": "security",
+      "productKey": "aikido",
+      "provenance": {
+        "manifestPath": ".claude-plugin/marketplace.json",
+        "pluginSubdirectory": ".",
+        "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
+        "resolvedCommitSha": "5db259bac62bf0c3a37bfd0fee6e22cc25bdb704"
+      },
+      "release": {
+        "canonicalContentDigest": "sha256:d21ebcd3251ce1609c1ea1ea76724c29a919b280750a286c2f8c6c25507769cb",
+        "capabilities": [
+          {
+            "name": "mcp-server",
+            "type": "mcp-server"
+          },
+          {
+            "name": "skill",
+            "type": "skill"
+          }
+        ],
+        "contentResolution": "complete",
+        "packageDigest": "sha256:097f24ac7a7ac6ce5755c1633185dda3e44eb5e1f33265f9cf84795b71bc8dae",
+        "packageStatus": "partial",
+        "releaseId": "release:fa91c290784756e80ec9cb999affb297ebf8918cdc48d45810e4fa59d3091249",
+        "requiredConnectors": [],
+        "requiredCredentials": [],
+        "sourceRevision": "5db259bac62bf0c3a37bfd0fee6e22cc25bdb704",
+        "upstreamVersion": "1.2.8"
+      },
+      "releaseId": "release:fa91c290784756e80ec9cb999affb297ebf8918cdc48d45810e4fa59d3091249",
+      "securityClassification": {
+        "contentResolution": "complete",
+        "level": "sensitive",
+        "permissionSensitiveChanges": [
+          "mcp-server"
+        ],
+        "reasons": [
+          "Contains mcp-server capability metadata."
+        ]
+      },
+      "sourceId": "claude-official",
+      "upstreamName": "aikido",
+      "variantPluginIds": [
+        "plugin:claude-official:aikido"
+      ],
+      "variantsIdentical": false
+    },
+    {
+      "authors": [
+        "Anthropic"
+      ],
+      "capabilitySummary": {
         "agent": 9,
         "executable": 22,
         "hook": 3,
@@ -421,7 +502,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/claude-security",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
+        "resolvedCommitSha": "ab024cdcfa7ca80be204acd4907656ba5a968589"
       },
       "release": {
         "canonicalContentDigest": "sha256:9a181fad2ad1673e05007fffbe259ddffa70149f8f2aa6c14309a848027487fe",
@@ -446,13 +527,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:a642243f4885444f7f37cc514a7d1d23e33caee7dab1be904ba8d72d2519172c",
         "packageStatus": "partial",
-        "releaseId": "release:4a58f116050d83487571abbccde873f80563799b40de3174d0df850fdbee0fc0",
+        "releaseId": "release:2b4645374799415890cee4ee7d729203df14c20c1cae88d77ccf9d25deeff493",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80",
+        "sourceRevision": "ab024cdcfa7ca80be204acd4907656ba5a968589",
         "upstreamVersion": "0.12.0"
       },
-      "releaseId": "release:4a58f116050d83487571abbccde873f80563799b40de3174d0df850fdbee0fc0",
+      "releaseId": "release:2b4645374799415890cee4ee7d729203df14c20c1cae88d77ccf9d25deeff493",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
