@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.9](https://github.com/adea-ai/plugins/compare/v2.0.8...v2.0.9) (2026-10-02)
+
+
+### Bug Fixes
+
+* **catalog:** track aws-startup-advisor's move to aws/agent-toolkit-for-aws ([#180](https://github.com/adea-ai/plugins/issues/180)) ([3a2cf17](https://github.com/adea-ai/plugins/commit/3a2cf17efb46211197d1efdbc4875a29536c4882))
+
 ## [2.0.8](https://github.com/adea-ai/plugins/compare/v2.0.7...v2.0.8) (2026-10-01)
 
 
