@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:424636ad7aacccdc3f181c204335ecd0f4bb13c7c5f12daeb2aaebb4dc9d3639",
+  "catalogId": "catalog:566e555371b738869a17b848b031faf410ed508e462358d2b4b298fbd8a5747e",
   "categories": [
     {
       "category": "business-operations",
@@ -537,7 +537,7 @@
     "products": 435,
     "redundantPlugins": 118
   },
-  "generatedAt": "2026-10-02T21:56:51.555Z",
+  "generatedAt": "2026-10-03T11:14:34.353Z",
   "products": {
     "42crunch-api-security-testing": {
       "authors": [
@@ -1057,7 +1057,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "advisor",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:6b63e1ee0729d49758fd21222dcda1200cbd3bba5e8439aeabb32468c6505211",
@@ -1082,13 +1082,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:313f84ae95420816fc0c7184adf4a35794da8c900d701422afb4140f871e6977",
         "packageStatus": "partial",
-        "releaseId": "release:25775d584582e9510f63e15d3b4f59d25a9104efa025279fee40a7284f7abf88",
+        "releaseId": "release:dd2cf7c72967538b130ce11cf42608360fd0aeb9260483179506c136e70a47b8",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:25775d584582e9510f63e15d3b4f59d25a9104efa025279fee40a7284f7abf88",
+      "releaseId": "release:dd2cf7c72967538b130ce11cf42608360fd0aeb9260483179506c136e70a47b8",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -1158,7 +1158,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "agent-compatibility",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:1b112554d0c0cea410d4fefbf7c0f39a13c12377e47d4a1e8c806f8a94723291",
@@ -1175,13 +1175,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:42b1dc9e4ee345c2224e15ee38579b7ddc4e5cf2107095a4bbca72f487e0e18d",
         "packageStatus": "partial",
-        "releaseId": "release:cbb02f9304af560183f69acc9504c1bb755f0297819f91f7e412ff418ed440bf",
+        "releaseId": "release:126aa76e8d858394213b6579812bf7893c048e9f45e895cd2a9d0eca6bc8a396",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:cbb02f9304af560183f69acc9504c1bb755f0297819f91f7e412ff418ed440bf",
+      "releaseId": "release:126aa76e8d858394213b6579812bf7893c048e9f45e895cd2a9d0eca6bc8a396",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -1436,7 +1436,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/ahrefs",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:46c133d0f00a70a38066637455b9ae55fe61e8217db9933cb071351b324e1983",
@@ -1449,13 +1449,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:96a45480937462c6caa9c106f7d370ce65b6021c8902571f2558720160e6da4d",
         "packageStatus": "portable",
-        "releaseId": "release:e6f7ab601086ca5622cee9d648450efbfbfc9e7b255ff94e4491539ecd3b6110",
+        "releaseId": "release:b07d5f0d5e91236c0acd9d503c2ab58a5f538826c76457e561f11ee117a13676",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:e6f7ab601086ca5622cee9d648450efbfbfc9e7b255ff94e4491539ecd3b6110",
+      "releaseId": "release:b07d5f0d5e91236c0acd9d503c2ab58a5f538826c76457e561f11ee117a13676",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -2688,7 +2688,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/amplemarket",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:0c2e0ae4502b792f73f0f6ddb53e84ae00d6de53d67abd397ba12a57f921a8dd",
@@ -2701,13 +2701,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:e04cb423b13360a3278db296c561bf5951fc771f490ec1cfd5d0f5779fe55a81",
         "packageStatus": "portable",
-        "releaseId": "release:e1615a1e7dd55806f1fa5edc6abea0e2846bcf29ca16559301dda47811a091b7",
+        "releaseId": "release:f5ecd90e57e9753678ac70c3b8f473618aed2d107df0f0101f0694a70966ad03",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:e1615a1e7dd55806f1fa5edc6abea0e2846bcf29ca16559301dda47811a091b7",
+      "releaseId": "release:f5ecd90e57e9753678ac70c3b8f473618aed2d107df0f0101f0694a70966ad03",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -3133,7 +3133,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/ashby",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:058bcc269dc31f9d175a3f0386f9b38f004037e22ed708afcd35810e480fee7f",
@@ -3146,13 +3146,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d8f9890640dc7e61515abfa2e678c63a2c14e6d6a9ddcb2e1774a5794ce15f6b",
         "packageStatus": "portable",
-        "releaseId": "release:b42105dd8a6b91f2bb45c5427c993c8eef15e4ae525d29c019a68702ad502377",
+        "releaseId": "release:83964234a249c8de4e24e6948305c58cc10f8aa66026984ba502f0d812106ed3",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:b42105dd8a6b91f2bb45c5427c993c8eef15e4ae525d29c019a68702ad502377",
+      "releaseId": "release:83964234a249c8de4e24e6948305c58cc10f8aa66026984ba502f0d812106ed3",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -3696,7 +3696,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/attio",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:7d3ceb5e680f31d018b1dabf595c85e1c29c9f8848b22e571b7b9c036a203f0d",
@@ -3709,13 +3709,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:72f10e56fa38fed726d83921c926e6fae7c563344d6688375b39f11bf44740c1",
         "packageStatus": "portable",
-        "releaseId": "release:7049768a8207b29d5a1be3fe0d539b97d05d75a2f28a254d83c71ffafc15209f",
+        "releaseId": "release:fef889157a1b8085ac324a71b08d5a88ba6a882497f01069608749a56c270fa3",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:7049768a8207b29d5a1be3fe0d539b97d05d75a2f28a254d83c71ffafc15209f",
+      "releaseId": "release:fef889157a1b8085ac324a71b08d5a88ba6a882497f01069608749a56c270fa3",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -4987,7 +4987,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/beehiiv",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:62fbf61f2a231a6e186c6d885cf0d0f8ed279f3936b76a11f4893ba669acb8c5",
@@ -5000,13 +5000,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:ea573ddd242f6883438ac0388cbf633fd5dc6c532f393ae61b8cbab021879781",
         "packageStatus": "partial",
-        "releaseId": "release:14cd12eb99468faa1aefd2aa1255fc24aa1e3b236f4b7c3d30d8f14d4961ac70",
+        "releaseId": "release:febbd60e3612dd64f088b814d8b6dbfc757f9547de1505d8db33a246bb6a7a75",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:14cd12eb99468faa1aefd2aa1255fc24aa1e3b236f4b7c3d30d8f14d4961ac70",
+      "releaseId": "release:febbd60e3612dd64f088b814d8b6dbfc757f9547de1505d8db33a246bb6a7a75",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -5846,7 +5846,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/brevo",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:d88172082b28f4e50023e0535c8f7b9de5e3541b8eafad550f1d5f1bb9781ac2",
@@ -5859,13 +5859,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:e7d5ccd7fbee2b19aa04d293f1271364b46c4ee437f9863fc971c8be78c2e67a",
         "packageStatus": "partial",
-        "releaseId": "release:d33506f0c0d63557b6603299d73486fc87994da487e9ab0d5145d7edec775502",
+        "releaseId": "release:ce3cdd7aa17d3240206a8dbfe184480d844d0978f41b3c278dd510045b7ca0e7",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:d33506f0c0d63557b6603299d73486fc87994da487e9ab0d5145d7edec775502",
+      "releaseId": "release:ce3cdd7aa17d3240206a8dbfe184480d844d0978f41b3c278dd510045b7ca0e7",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -5931,7 +5931,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/brex",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:b74401fa7006b1ce1723b09733231a9cc622f860a65319ed3c82f5c0c298a3d6",
@@ -5944,13 +5944,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:703095f5ab5c61c07f4e16a8e3c43ba83433da7f086d3fbc849849e7123e5d00",
         "packageStatus": "portable",
-        "releaseId": "release:9396afcd19e776ed3b95983ec8195f67fa6474777ef900300de1bfdb4e122c36",
+        "releaseId": "release:f45156356f329653c0fa6948fba2b70722bcf2904515633746b3c3abee556241",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:9396afcd19e776ed3b95983ec8195f67fa6474777ef900300de1bfdb4e122c36",
+      "releaseId": "release:f45156356f329653c0fa6948fba2b70722bcf2904515633746b3c3abee556241",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -6203,7 +6203,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/buffer",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:d36868514d6fc8ca0013ef009bf382f736648f96a9a23ff8ccbe9d987e9dad67",
@@ -6216,13 +6216,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:b0c6b8180ccb32be75ec97bd8a07d3261aeef06bd6f27112a13a9fdec4847441",
         "packageStatus": "partial",
-        "releaseId": "release:e1577d43f469b521d6a2addd92027162dc90c50ebdb1782e251ed817d8599762",
+        "releaseId": "release:f47495e2225cdf53796e247df786b36bae70add0ec8221315e91010f124589ab",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:e1577d43f469b521d6a2addd92027162dc90c50ebdb1782e251ed817d8599762",
+      "releaseId": "release:f47495e2225cdf53796e247df786b36bae70add0ec8221315e91010f124589ab",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -6697,7 +6697,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/calendly",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:34c483a0a9466bde3f70df9c09ce267ac602c9d50b6159cf4e580270dc3f4e52",
@@ -6710,13 +6710,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:12d45416714a10bc223431ff546b7ee200ccd07110e1a0563299057f6133342b",
         "packageStatus": "portable",
-        "releaseId": "release:67e65d6fc19a18fe523cf61e756ac339ac25fda675c618326932086b642b39d7",
+        "releaseId": "release:9bf458999e464ef5a70e1694e7c49e0c632bf924e4a25ebd307f64cc576b64b3",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:67e65d6fc19a18fe523cf61e756ac339ac25fda675c618326932086b642b39d7",
+      "releaseId": "release:9bf458999e464ef5a70e1694e7c49e0c632bf924e4a25ebd307f64cc576b64b3",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -8662,7 +8662,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "cli-for-agent",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:9170ba40394c32a14da98ed946d52a26988e0e5bcc066ffeb1d8201654dc6c5e",
@@ -8675,13 +8675,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:c0c97b4e9a7e33e2fd64f49d1d3c9496fc3a72045f5e7db683c1d9cc82b2a764",
         "packageStatus": "portable",
-        "releaseId": "release:878b3a712eef3069341209b6bf74bf5b1a6e90e012993b737156ba89c0d1b106",
+        "releaseId": "release:a581f9d1b83d33a5e051bf8d1765790d8bdf7b3e671d2c08e2d64637d28131d3",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:878b3a712eef3069341209b6bf74bf5b1a6e90e012993b737156ba89c0d1b106",
+      "releaseId": "release:a581f9d1b83d33a5e051bf8d1765790d8bdf7b3e671d2c08e2d64637d28131d3",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -9425,7 +9425,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/coda",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:fded5a2fa278ce15210ff8289b8858ab9258a8518e71b9ec3675be43bea1fbac",
@@ -9438,13 +9438,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:dd52c1aa73dcbc01d1519022eec5caae317f89e75ec528231448953664a47706",
         "packageStatus": "portable",
-        "releaseId": "release:7974b2a7899dc5b48506408f223bfe2c4460956df76f42b7f8558fd2d076fac5",
+        "releaseId": "release:0fcbceca5dccb15872a9db8c4cf1a01a7aa0909ee475487905348acac4045858",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:7974b2a7899dc5b48506408f223bfe2c4460956df76f42b7f8558fd2d076fac5",
+      "releaseId": "release:0fcbceca5dccb15872a9db8c4cf1a01a7aa0909ee475487905348acac4045858",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -9962,7 +9962,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/coinbase",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:d7e495e1b02fe39db6168846525aa7a00f0ea7d7b5b41bb08ee3ef1ab237bfa2",
@@ -9975,13 +9975,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:c29e3c438b88e38a9ea0207e58375e374a4736a4a8f822c78b1ee411b177b181",
         "packageStatus": "portable",
-        "releaseId": "release:e2b1ed4a173917c8d3ffd141096233ec2a42648647ad292ef91f224b82f32f4e",
+        "releaseId": "release:410e9629bd005ec17a1e21b3a4a8f5180f1173fdabeb90423e52b406adade9ee",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:e2b1ed4a173917c8d3ffd141096233ec2a42648647ad292ef91f224b82f32f4e",
+      "releaseId": "release:410e9629bd005ec17a1e21b3a4a8f5180f1173fdabeb90423e52b406adade9ee",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -10512,7 +10512,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "continual-learning",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:9388a810088ad9c2f4aff68c27c0f40c9addeac3f12b9d20c367ad530f764dfd",
@@ -10533,13 +10533,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6504719a147b348d83a1244767f28dc4f78fd31d90064124fd9d327b3d6dd3e4",
         "packageStatus": "partial",
-        "releaseId": "release:fd1d2228ab65fbef297609d97f88b759ca12cd20f7040a3b76a75b7c687b8ff7",
+        "releaseId": "release:cee91989722f37bcebd606f948de8feea444e911cabf30afcbfb55e73a644e96",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:fd1d2228ab65fbef297609d97f88b759ca12cd20f7040a3b76a75b7c687b8ff7",
+      "releaseId": "release:cee91989722f37bcebd606f948de8feea444e911cabf30afcbfb55e73a644e96",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -10799,7 +10799,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/craft",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:cbccc710c30f7291cebf6099d7ef944d49259222178726bf30f60e7a3e276af9",
@@ -10812,13 +10812,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:f8c0b9ba5b85a60941936b190e77eb906b0830806ff1f78705df3738e96ffce2",
         "packageStatus": "portable",
-        "releaseId": "release:e73386f400e9b031a537654f8e78fd4757c5554d221298e8976e3e86649c16ca",
+        "releaseId": "release:c758920dfd641682aeffb719de7ed296d7e9210f72a6df0036dbfafbae6ff82d",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:e73386f400e9b031a537654f8e78fd4757c5554d221298e8976e3e86649c16ca",
+      "releaseId": "release:c758920dfd641682aeffb719de7ed296d7e9210f72a6df0036dbfafbae6ff82d",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -10887,7 +10887,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "create-plugin",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:0d14c7691cda946b96a977f432de9680951800ad3881c7a970e22a432299a9c7",
@@ -10908,13 +10908,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:2d0bf88e7ef5ae04e298da6deac66580fe535f1cf8d1eec9c13ba54c81dca42b",
         "packageStatus": "partial",
-        "releaseId": "release:7ac1eacae30ddae61b8a18436518e3e12606ea521a748913fba334df6944af26",
+        "releaseId": "release:55d76551f91e1f1aa60d8ccfcb5b87b93b11706c476abb39a3fa6ed465436785",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:7ac1eacae30ddae61b8a18436518e3e12606ea521a748913fba334df6944af26",
+      "releaseId": "release:55d76551f91e1f1aa60d8ccfcb5b87b93b11706c476abb39a3fa6ed465436785",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -11483,7 +11483,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "cursor-sdk",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:0be74b4325362ba174f1ea044da829f83a85bb4b2a2b1a30be020ae677054404",
@@ -11496,13 +11496,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:4db2af962162a1cbcca2754a64d2767b19182059d8400e0470122acc4a4dc325",
         "packageStatus": "partial",
-        "releaseId": "release:9763571634ef49f50fdaa0fa7e5f11046db9821ec79a58b06b06df5f38364fc7",
+        "releaseId": "release:37e9b864b25580128653ff80ed67b4624bcf22cd285fbf4cb072526f884cc9fb",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:9763571634ef49f50fdaa0fa7e5f11046db9821ec79a58b06b06df5f38364fc7",
+      "releaseId": "release:37e9b864b25580128653ff80ed67b4624bcf22cd285fbf4cb072526f884cc9fb",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -11570,7 +11570,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "cursor-team-kit",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:8132d5be9365584f329567eebd0c084e80940b2f0e37e4fca60dfabc40695865",
@@ -11591,13 +11591,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:f2707f63d0aa7a20cacd3d107259f3b4a8d0b5960f2099504f67eaa854314e80",
         "packageStatus": "partial",
-        "releaseId": "release:210f8ed7f919e9e1e2f757bb9adb6edb9e463bc93d21f35593f57fcf643afe75",
+        "releaseId": "release:0437773efbdee01025fafbe8de6ec31bdccd510cd667e83069ffe8c41d91e966",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.2.0"
       },
-      "releaseId": "release:210f8ed7f919e9e1e2f757bb9adb6edb9e463bc93d21f35593f57fcf643afe75",
+      "releaseId": "release:0437773efbdee01025fafbe8de6ec31bdccd510cd667e83069ffe8c41d91e966",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -11662,7 +11662,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/customer-io",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:e45c40ab10b8055cba96adf9ed75f1b36785f272f232821b62c4b2a90b1df60e",
@@ -11675,13 +11675,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6aab46c0d798033750bd3b5524990d81bac6b284e986cd9fdf8835083e7c4cac",
         "packageStatus": "portable",
-        "releaseId": "release:ac1301383f758f24befdb92c579e5cc7573e3c551d66ac8646597d97af8b1be7",
+        "releaseId": "release:d9c261bea01f63adfa0362ae96f0ad7580712633d3d7ba81cd55160aded8fc66",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:ac1301383f758f24befdb92c579e5cc7573e3c551d66ac8646597d97af8b1be7",
+      "releaseId": "release:d9c261bea01f63adfa0362ae96f0ad7580712633d3d7ba81cd55160aded8fc66",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -13195,7 +13195,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "docs-canvas",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:4d4ad2c6d67cf67c2627501e2701c64ca90faaaf66a84cd189dc436652c9048e",
@@ -13208,13 +13208,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:5f13ed8ce3fa537c80cf492984c1344dc2f403c727953281fac683d53626c9c5",
         "packageStatus": "portable",
-        "releaseId": "release:85e4a5f51c5cdddd35d85ee7e00e919ec0e09f5a63fd77c6a8c0ca7440ea4fd5",
+        "releaseId": "release:9b5cf41d2c0ad1bbdd59c8cc51a504b7dd55d35e07d5f189fcdd95e6b575487d",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "0.1.0"
       },
-      "releaseId": "release:85e4a5f51c5cdddd35d85ee7e00e919ec0e09f5a63fd77c6a8c0ca7440ea4fd5",
+      "releaseId": "release:9b5cf41d2c0ad1bbdd59c8cc51a504b7dd55d35e07d5f189fcdd95e6b575487d",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -13278,7 +13278,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/docusign",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:e78a9360d4c85633aede2073c40a78a4c66ecac7527447e425eb656b39d27e2a",
@@ -13291,13 +13291,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:7ab95aa51adc1ec46eb00f81b0241883f73bb132b043d82a1d291e5adb680e9e",
         "packageStatus": "partial",
-        "releaseId": "release:a33d60f85c925477ac4de76816ee043e9c758d2006e6acd950081413f990ac22",
+        "releaseId": "release:8f970236d16cdfeacb68623e5fae4378c4acf71013c30ffdd7b72b282d7bf616",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:a33d60f85c925477ac4de76816ee043e9c758d2006e6acd950081413f990ac22",
+      "releaseId": "release:8f970236d16cdfeacb68623e5fae4378c4acf71013c30ffdd7b72b282d7bf616",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -13767,7 +13767,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "dyl-stack",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:7d34ad140773c13606e0d390abf2d21cde3e0d18d8e67ee2a3f38fb54d2f74b9",
@@ -13784,13 +13784,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:f856d16a98880c9eda2588cfd94ba1b62c722f764e28d81c8b9ae65c3243da4d",
         "packageStatus": "partial",
-        "releaseId": "release:661419878a11578b54b332dc77471628d049c562263ccbbf5d4e5cc459c48e3b",
+        "releaseId": "release:e8d00e4b6b283988e2b8f1ebfbaef1e232df30b4f26bbdfa2870cb4beb49f37a",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "0.1.0"
       },
-      "releaseId": "release:661419878a11578b54b332dc77471628d049c562263ccbbf5d4e5cc459c48e3b",
+      "releaseId": "release:e8d00e4b6b283988e2b8f1ebfbaef1e232df30b4f26bbdfa2870cb4beb49f37a",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -14126,7 +14126,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/etoro-trading",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:906c26528bfc4978db4a34632f50ad1e68d5f997489c97014a6c7718faf10be6",
@@ -14139,13 +14139,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:cb215731b6d889ed0ac771f136d6a1459e2c5a76c1d74fcc766f834d4f31ed48",
         "packageStatus": "partial",
-        "releaseId": "release:83b1387f28ff556124c92e3c479b238f17b747752fc7208352316c212d4eb4d9",
+        "releaseId": "release:032098bd1d79e3a50b36fdc1ce331a931007c9fe1d3cd918073bd9db6bd3eec6",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.3"
       },
-      "releaseId": "release:83b1387f28ff556124c92e3c479b238f17b747752fc7208352316c212d4eb4d9",
+      "releaseId": "release:032098bd1d79e3a50b36fdc1ce331a931007c9fe1d3cd918073bd9db6bd3eec6",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -14303,7 +14303,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/excalidraw",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:acf67cb9ec45e885a9bf3e790291ad37e24e6dc57bb10ef42e84cd4f5169eccd",
@@ -14316,13 +14316,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6b930238faac690506d672bfb166b309d120fbd0b2086b0abeb2153459317129",
         "packageStatus": "portable",
-        "releaseId": "release:894d296c0695d191947362f86168fbf4a1d0159de2abda4a441ead1fb538c264",
+        "releaseId": "release:0bdabfdeb68d6941b64fa9d86b37047403fa1a0d84eabc194856596fa77a765a",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:894d296c0695d191947362f86168fbf4a1d0159de2abda4a441ead1fb538c264",
+      "releaseId": "release:0bdabfdeb68d6941b64fa9d86b37047403fa1a0d84eabc194856596fa77a765a",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -14746,7 +14746,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/fathom",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:3c25bfe469883e32a3538f540d6d30956d11662aa406a51ad555d57b8b6a1caa",
@@ -14759,13 +14759,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:e781ab5d92ce253f22fc5919ae37f7dd8265ad5a22c98e59f3b3705f6b500498",
         "packageStatus": "portable",
-        "releaseId": "release:55621627f177a517e870a97495a99da2e68cf093c792d0f278c7fba6d479701c",
+        "releaseId": "release:403bbb59e5e5508fa99550b4f69a6ba7c45c2aed2714927ed502cf52413a9f01",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:55621627f177a517e870a97495a99da2e68cf093c792d0f278c7fba6d479701c",
+      "releaseId": "release:403bbb59e5e5508fa99550b4f69a6ba7c45c2aed2714927ed502cf52413a9f01",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -15124,7 +15124,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/finance",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:8eced4707fee49a659046e3713a476964ecbd4fafdb8818f2006fa9e5bc142e9",
@@ -15137,13 +15137,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:59371cdb17a25646b2ae25eb2990ade1f6fc4f96f8c3fda972c6234a5d69390a",
         "packageStatus": "portable",
-        "releaseId": "release:082ffea42230bf5e11bd87a47096902d47e16cd075bb8552ebcf4dfa00e39f64",
+        "releaseId": "release:b7d7c8cd8ef8cbce5350cec0a95c77406fb3aaecb35ec1934869f0c88257250e",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.1.2"
       },
-      "releaseId": "release:082ffea42230bf5e11bd87a47096902d47e16cd075bb8552ebcf4dfa00e39f64",
+      "releaseId": "release:b7d7c8cd8ef8cbce5350cec0a95c77406fb3aaecb35ec1934869f0c88257250e",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -15379,7 +15379,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/fireflies",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:ce9dc76e75c3f675258458760c344e75f7d89687dcf0d59c4046be31359aa8e4",
@@ -15392,13 +15392,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:ea94c633bb26d6dca648bf022fbb0705b1acc26f8e92ab32d719d68dea285856",
         "packageStatus": "portable",
-        "releaseId": "release:d9ae196c0eb05e6a5968b776ae6b003e880378ec33785948ae4ae532319932df",
+        "releaseId": "release:1e04e44124db3f3700e5adcdb1fe8c37930d102a0c69cc854ee937ef99f90698",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:d9ae196c0eb05e6a5968b776ae6b003e880378ec33785948ae4ae532319932df",
+      "releaseId": "release:1e04e44124db3f3700e5adcdb1fe8c37930d102a0c69cc854ee937ef99f90698",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -15923,7 +15923,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/gamma",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:855867dad26c1704aa7cd0ebd2119c2660b44de7784a02cf120583e39dde4d9d",
@@ -15936,13 +15936,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:1939f1c8b0e89c19379fddab562c7a110a61055221f523ef927918527e71c3f8",
         "packageStatus": "portable",
-        "releaseId": "release:19162230551830e365c6c79db6a89520a827d079d89b2d2d5421981f19ed97f2",
+        "releaseId": "release:0bb5a68513303d3a8b61ff5d0bbbdddc62933009ebcf097ac9451e1931d7e133",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:19162230551830e365c6c79db6a89520a827d079d89b2d2d5421981f19ed97f2",
+      "releaseId": "release:0bb5a68513303d3a8b61ff5d0bbbdddc62933009ebcf097ac9451e1931d7e133",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -16357,7 +16357,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/gmail",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:2625750fe0d5acf3d74cafd646bfab2ba61684e577aa9dba508e8193850a6be0",
@@ -16370,13 +16370,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:34c2d23591026136b8d6118df1ac57464fdd20f2ad8c2b95fed7d0e95550e4df",
         "packageStatus": "portable",
-        "releaseId": "release:c98c39ce7afa35e38d91c841f028d8892ccebf12cc57627d001f508cb898b657",
+        "releaseId": "release:9cc305ff6bfdda1a9faf5a58376cf0ba3d2ebdceefb58b1b88a793aab0606756",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:c98c39ce7afa35e38d91c841f028d8892ccebf12cc57627d001f508cb898b657",
+      "releaseId": "release:9cc305ff6bfdda1a9faf5a58376cf0ba3d2ebdceefb58b1b88a793aab0606756",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -16443,7 +16443,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/godaddy",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:bdf70c2b759c6405def244afe476246c15266224345fb3e7df0100bb50dbbc0f",
@@ -16456,13 +16456,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:ecfe20a28c47a4db7fb42c834b017a5ec8e685c08bcff13f9590cb74e8f37e3b",
         "packageStatus": "portable",
-        "releaseId": "release:72a23e4189c1a219ddba57aa51d4c460811c7402a7dea17843f69aaf50de3d3a",
+        "releaseId": "release:b3bf673a5ceb76ca6dcd08a3f19d816656cb93fc0cf665e5674922f32f27b4f6",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:72a23e4189c1a219ddba57aa51d4c460811c7402a7dea17843f69aaf50de3d3a",
+      "releaseId": "release:b3bf673a5ceb76ca6dcd08a3f19d816656cb93fc0cf665e5674922f32f27b4f6",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -16528,7 +16528,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/gong",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:378cc5dae290e5bdfa04035366d03305d8249540467f32e4d1e97f4c8bf8adac",
@@ -16541,13 +16541,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:886739e037088ed111f949d1f0fa49801b31e55893ddf32d089d3fc1c769998d",
         "packageStatus": "partial",
-        "releaseId": "release:c2d2a415b928e0ea1ad44be60c276fe7a44433f268e3ccd77cd9144e3a45107e",
+        "releaseId": "release:47a9b3024ccc98ee98dc23594b43262ef7eabb95ca8de8ccd523db968ae01bcb",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:c2d2a415b928e0ea1ad44be60c276fe7a44433f268e3ccd77cd9144e3a45107e",
+      "releaseId": "release:47a9b3024ccc98ee98dc23594b43262ef7eabb95ca8de8ccd523db968ae01bcb",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -16614,7 +16614,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/google-calendar",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:c126f9eaddf0e058b26e64a4d696cd293e71a999202ddcb3ac9aedb247ee84eb",
@@ -16627,13 +16627,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:5ac0b24b4a33fa769d4fd776900cd14015a68935799a57447a2d4ac75089893f",
         "packageStatus": "portable",
-        "releaseId": "release:a7d26856695aa864a5aee1b0a430679e24ef1f965c82d719c80437243bcfcf7f",
+        "releaseId": "release:8ce02e6553a35e84479c91502ac3f66109dcdf28b35db4921651810d48393a71",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:a7d26856695aa864a5aee1b0a430679e24ef1f965c82d719c80437243bcfcf7f",
+      "releaseId": "release:8ce02e6553a35e84479c91502ac3f66109dcdf28b35db4921651810d48393a71",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -16702,7 +16702,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/google-cloud-bigquery",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:5f052babd1634356eb9ab4ad16b524833b8269eb235f744267bb5ef6892666ef",
@@ -16715,13 +16715,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:5926c3e14bbee70a51dedea3d6d5b941d8a0f27fb3bc9320d0b8e489d55c4ac3",
         "packageStatus": "portable",
-        "releaseId": "release:9eda6421b89cff643d5020d8d45aa9db421c88556054c9da50d6cde4ace61cd2",
+        "releaseId": "release:28a96f5d5bfa6b6c22265e2d7f9b6c0281ca8bbdd73028e03949c65faa28aef2",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:9eda6421b89cff643d5020d8d45aa9db421c88556054c9da50d6cde4ace61cd2",
+      "releaseId": "release:28a96f5d5bfa6b6c22265e2d7f9b6c0281ca8bbdd73028e03949c65faa28aef2",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -16889,7 +16889,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/google-docs",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:9029b9b8c1c07fcbf3fc796c994fe1c2f729ca608b8a1c2b312a92bbdd4e8d22",
@@ -16906,13 +16906,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d1bc50e5072a2316711ec5bec5d0998d695a486845daf01316fef7462d70945f",
         "packageStatus": "portable",
-        "releaseId": "release:8f0d5dbaed27364151caaec5a598eb462ac69d455b66a31f2462d57a7c597ef6",
+        "releaseId": "release:c58c740cc8272f8203a9ed2322d22a8d53106c5e5daf0f2b10db22249c9d24dc",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.1.0"
       },
-      "releaseId": "release:8f0d5dbaed27364151caaec5a598eb462ac69d455b66a31f2462d57a7c597ef6",
+      "releaseId": "release:c58c740cc8272f8203a9ed2322d22a8d53106c5e5daf0f2b10db22249c9d24dc",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -16980,7 +16980,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/google-drive",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:dc9ea3d66f3c4c1c51133362c2291f80a293e0a9693ff37560d4fa7b05e2e1f7",
@@ -16997,13 +16997,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:3c10da076725e528d48e68bc484e6808ab58077f2449749f4b89f3702c489eab",
         "packageStatus": "portable",
-        "releaseId": "release:bfd8531db540263121a55df7760948d9138824503c5e5ecaa8bebaa01231c5d7",
+        "releaseId": "release:6dc45baf79b14e8c8d2d4eabda2b95aafe4cb2daa0f00658e164a54339989fad",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:bfd8531db540263121a55df7760948d9138824503c5e5ecaa8bebaa01231c5d7",
+      "releaseId": "release:6dc45baf79b14e8c8d2d4eabda2b95aafe4cb2daa0f00658e164a54339989fad",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -17072,7 +17072,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/google-sheets",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:71fae1902683ab00e05265c771eb3f6213d34893bfe1c53ac141ba9042024dd8",
@@ -17089,13 +17089,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:63bd081c899e1dbf908deb5a96331c7e7a3ad0da161746067af7ec0f7ad59879",
         "packageStatus": "portable",
-        "releaseId": "release:5809295e9057c52628cf573bd0e315fe28be3cb31675baf4ffd352d65d198b9d",
+        "releaseId": "release:3611a3ee7a9c06e4aec37eba63ca7d11a45ca627edbde33343ea8fa12f5538bc",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.1.0"
       },
-      "releaseId": "release:5809295e9057c52628cf573bd0e315fe28be3cb31675baf4ffd352d65d198b9d",
+      "releaseId": "release:3611a3ee7a9c06e4aec37eba63ca7d11a45ca627edbde33343ea8fa12f5538bc",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -17163,7 +17163,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/google-slides",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:b3a9faf494be3b59f2a40ffa3676767d3ea589c0d17574db5ac41da25fdf2ec5",
@@ -17180,13 +17180,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d5263476e23569fbdcbc77474da6446628e372392d04ec90092370ac80705b3d",
         "packageStatus": "portable",
-        "releaseId": "release:3e2e32fe1409c230f90eef50b419c133369d93adb268b6e21e28b6d6433e57bf",
+        "releaseId": "release:5516c3ae509d61f6c4704333d745b2e1b02d8c66eaa9c047b022a2ecec72189a",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.1.0"
       },
-      "releaseId": "release:3e2e32fe1409c230f90eef50b419c133369d93adb268b6e21e28b6d6433e57bf",
+      "releaseId": "release:5516c3ae509d61f6c4704333d745b2e1b02d8c66eaa9c047b022a2ecec72189a",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -17890,7 +17890,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/greenhouse",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:7ade488cc11db9076a2e349ac79d94ba4e2eb5ba05f4c8d8cff0c49345b429c0",
@@ -17903,13 +17903,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:fcfdb287966e4de87ec376a6bb1b55edfb50790805f11ca72d178bbe4c127dae",
         "packageStatus": "portable",
-        "releaseId": "release:8e7e106b4f4b819fa6cb7ca9097bc21049766ca47321d4c5a78ad9bca7c41615",
+        "releaseId": "release:fd01fc060a983f114123189392bf59b2b35a37e49d21620b8076cd5924f774e0",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:8e7e106b4f4b819fa6cb7ca9097bc21049766ca47321d4c5a78ad9bca7c41615",
+      "releaseId": "release:fd01fc060a983f114123189392bf59b2b35a37e49d21620b8076cd5924f774e0",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -17976,7 +17976,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "grok-voice",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:97dcfb55da2659ea06c86745d91a07948bdc62eed36a723c6dd3775aadbc00d7",
@@ -17989,13 +17989,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:a83a79af42050c0db92a0efee34c3ab07c851bcd13062a1600882f83bbd00bf1",
         "packageStatus": "portable",
-        "releaseId": "release:6c56ba0664e40fe08fc65fa28bd3cadc7dd8bf50755135c04458f8f9ff373f2f",
+        "releaseId": "release:7b008462c58f84c0d1415da671277470b382afa6d9de17cdfbd2794cddb40fe5",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "0.1.0"
       },
-      "releaseId": "release:6c56ba0664e40fe08fc65fa28bd3cadc7dd8bf50755135c04458f8f9ff373f2f",
+      "releaseId": "release:7b008462c58f84c0d1415da671277470b382afa6d9de17cdfbd2794cddb40fe5",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -18059,7 +18059,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/guru",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:8e5961c10ca2911341867fb9b182ef8db13c8d36763c21e4fc256dfbc8c12050",
@@ -18072,13 +18072,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:29a62aefb04133776934c35ed958819b1b6b481028ea8b3831a187e1ce0e4bd0",
         "packageStatus": "portable",
-        "releaseId": "release:3049a1fb16fe385a600de3e0178dfc77fdde296f34f2aa41459ec1114a9ae473",
+        "releaseId": "release:b574fd02cbc046e7d2f9c7ddcac1cadc82b8d32719e060c4633cbfc719cf47dc",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:3049a1fb16fe385a600de3e0178dfc77fdde296f34f2aa41459ec1114a9ae473",
+      "releaseId": "release:b574fd02cbc046e7d2f9c7ddcac1cadc82b8d32719e060c4633cbfc719cf47dc",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -18553,7 +18553,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/hubspot",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:32630b6bb1d056300f3031969aa764583963b3f7883ae38d5944598f40bdca0c",
@@ -18566,13 +18566,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:da7fc95d89a28420df52e1488a108b4a47c78436be260442dc1b2995cb82073c",
         "packageStatus": "partial",
-        "releaseId": "release:689da00b6a9df88bdc12cd0a3da14772d81997ea9e15460b6f929c68b89ffafe",
+        "releaseId": "release:b4e5c82c1491f12ae9a1bdeef1cc6a2f5dbbd9559e8be09e533eb8a8ae3ec601",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:689da00b6a9df88bdc12cd0a3da14772d81997ea9e15460b6f929c68b89ffafe",
+      "releaseId": "release:b4e5c82c1491f12ae9a1bdeef1cc6a2f5dbbd9559e8be09e533eb8a8ae3ec601",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -19478,7 +19478,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/interactive-brokers",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:38209b0efb4ac69309a56428e9579874c9d66406b2332353e6abe477ee197ffd",
@@ -19491,13 +19491,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:762338d405d666aefcd3a0d24c4aeebef7eda889f51f5861e5a01c8c29e1df9d",
         "packageStatus": "portable",
-        "releaseId": "release:665e4e7212fe9a377e613a0f5d8b927e29fa040b8ca834fb30f4a1956330cbfb",
+        "releaseId": "release:4995f295853d2b07ed19196f672acd435d715b94724945f387b03e926f0de7ac",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:665e4e7212fe9a377e613a0f5d8b927e29fa040b8ca834fb30f4a1956330cbfb",
+      "releaseId": "release:4995f295853d2b07ed19196f672acd435d715b94724945f387b03e926f0de7ac",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -19939,7 +19939,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/jotform",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:9e74c746c1881e10260a4ca8d6b317565d05d322c1f732aeaf8db3b9d336b50d",
@@ -19952,13 +19952,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:a3b725a670562196b48f2994b27d5c74562a3aaf9d7da25f388a12838b938774",
         "packageStatus": "portable",
-        "releaseId": "release:3297212d6750c933e75f6ec846f4f5f30dcd2098781de08abdd126a5f57e58b6",
+        "releaseId": "release:532a1ba6b8468f5d51618352a2c522281ed69dedd85ee112282bee402d6ae722",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:3297212d6750c933e75f6ec846f4f5f30dcd2098781de08abdd126a5f57e58b6",
+      "releaseId": "release:532a1ba6b8468f5d51618352a2c522281ed69dedd85ee112282bee402d6ae722",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -20024,7 +20024,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/juicebox",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:d6ab10d758e9015ed6e4b6e51ae4e0e396178b3fdca3a83190fc2d6682c0dc9d",
@@ -20037,13 +20037,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:01bbdaa662d828db88316f6b6929e1315b9b24cb0f2b2c7d5f5c563c4d9b60ea",
         "packageStatus": "portable",
-        "releaseId": "release:b79f347b5ff568031c3f00702ed1d287efe318b2d5f7af73ec713fb3fb36a15c",
+        "releaseId": "release:f17bf50fcd7b06e444383d159dd562d0e6cc3e4034e797e4b82cc85f129da039",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:b79f347b5ff568031c3f00702ed1d287efe318b2d5f7af73ec713fb3fb36a15c",
+      "releaseId": "release:f17bf50fcd7b06e444383d159dd562d0e6cc3e4034e797e4b82cc85f129da039",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -20109,7 +20109,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/klaviyo",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:4612c4a38e62afea1e28471cb20e2cee30c974ca2b4d1096fc446c1e462e720b",
@@ -20122,13 +20122,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:7c7b4fe4bf67bf9054be1f238138abe64a1a066020595b1776a45d9597520478",
         "packageStatus": "portable",
-        "releaseId": "release:f15b319e23ac51adb7973d047afd48f06802af4957870b38926bd0bccfe89301",
+        "releaseId": "release:d6e98b9bc32e35828a5b9b1dbb7ff769221ef1e7af106c766ac5cba58ab3bc90",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:f15b319e23ac51adb7973d047afd48f06802af4957870b38926bd0bccfe89301",
+      "releaseId": "release:d6e98b9bc32e35828a5b9b1dbb7ff769221ef1e7af106c766ac5cba58ab3bc90",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -22126,7 +22126,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/mailerlite",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:c3da44fd17eea8230e534dd838b7a50dfd5e0a3df8b3cf9d8ca0730b706222a0",
@@ -22139,13 +22139,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:66f177eec0292b25b28d29a9aee005232476956f7145452d056fc984965cfc3e",
         "packageStatus": "portable",
-        "releaseId": "release:e1f7ea52d03e80c069c3bc6ea863c0deb4f676e69c9ce0795c96837440864c9c",
+        "releaseId": "release:6e53f3a1f403e077f808198c5e1e5d6c6d6c8a0ce090fbbeccefb41fe390b09d",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:e1f7ea52d03e80c069c3bc6ea863c0deb4f676e69c9ce0795c96837440864c9c",
+      "releaseId": "release:6e53f3a1f403e077f808198c5e1e5d6c6d6c8a0ce090fbbeccefb41fe390b09d",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -22902,7 +22902,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/meltwater",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:5f41fdfe68a633cb85200fe0192d1f1c63692f063f156728861cc5a46a66f634",
@@ -22915,13 +22915,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:8def43bdf3d34616e53e2ee51b6a1f15bdcdb5ed5031b30a69ab688eef86cfe3",
         "packageStatus": "portable",
-        "releaseId": "release:44907df8b3c594c660fdc3725932511db42bee270df907d45cb3b89266f62b91",
+        "releaseId": "release:5160cc5311508ca10405a62cc98c0d83d5986617d65d377cd3738b031c0f9199",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:44907df8b3c594c660fdc3725932511db42bee270df907d45cb3b89266f62b91",
+      "releaseId": "release:5160cc5311508ca10405a62cc98c0d83d5986617d65d377cd3738b031c0f9199",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -22987,7 +22987,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/mem",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:bfde810f30c7c442a01dd0fecfd936266c00c5d88620b7b706840ce55c50ece6",
@@ -23000,13 +23000,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:ec8cc00ab8a86b5cd8e0e1372430f360a3508675cdf339b183009f1299a3494d",
         "packageStatus": "portable",
-        "releaseId": "release:1b47df00a93615a21648eeaa758771a7eb0b0764521e31c9702797c73dd8a3a0",
+        "releaseId": "release:489355ea8445c6295cb8a6ac3eb091a90f778d725b82aaf189f331f09916b326",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:1b47df00a93615a21648eeaa758771a7eb0b0764521e31c9702797c73dd8a3a0",
+      "releaseId": "release:489355ea8445c6295cb8a6ac3eb091a90f778d725b82aaf189f331f09916b326",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -23072,7 +23072,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/mercury",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:36faa35d0023e5d9968bf409ba6bd4461fd3e7c883e0f15a720ef2be05fd29b1",
@@ -23085,13 +23085,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:ac814d3dc4af2920b06e421ea3666a6d484630bedbbde058546279e6dcf81c5b",
         "packageStatus": "portable",
-        "releaseId": "release:17c9b5b34b72974f5a3abbd1d99ad6ba113a7b44b555466718a7b7b329983035",
+        "releaseId": "release:29e2d8c1e2dd8b6f246e9b7213edcc72e85df2a374d11bbf23483573138ffb47",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:17c9b5b34b72974f5a3abbd1d99ad6ba113a7b44b555466718a7b7b329983035",
+      "releaseId": "release:29e2d8c1e2dd8b6f246e9b7213edcc72e85df2a374d11bbf23483573138ffb47",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -24320,7 +24320,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/navan",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:0a88f9bb85e8e092df9c9af73707cd65a0fda928652e5a7ac24f6c07acc9b292",
@@ -24333,13 +24333,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:738f47a73ae75ad38744ef2b863cfc4374c69c8cd8b7e399da11ee67cc0a301e",
         "packageStatus": "portable",
-        "releaseId": "release:79f69253b2821d1628a3e7379dfc18cdd7bbc5c36564e644ce598484a6799fd8",
+        "releaseId": "release:594f9d28738259e485c12bc6454033d56658c8fb911aeb424c6cbfbdfd2a7f7e",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:79f69253b2821d1628a3e7379dfc18cdd7bbc5c36564e644ce598484a6799fd8",
+      "releaseId": "release:594f9d28738259e485c12bc6454033d56658c8fb911aeb424c6cbfbdfd2a7f7e",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -25556,7 +25556,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/onedrive",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:b84cddd92320fba6cd1a00c000011d5812ebfa8b591e8e9482ab074eeca4d2fe",
@@ -25569,13 +25569,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:1a3e0ff3ff78ac5139117a91b3ce476e7c2c5e14aaa8bfbf3c4c6dbccb58bdf4",
         "packageStatus": "portable",
-        "releaseId": "release:a2e063265a212e783ffdc6229ee710ed38675d9f30336ea50a0dcc8f38e75e90",
+        "releaseId": "release:a4362bf376d522e2327751576e022d55f16337a582cbb415b70cacd27f8a935b",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:a2e063265a212e783ffdc6229ee710ed38675d9f30336ea50a0dcc8f38e75e90",
+      "releaseId": "release:a4362bf376d522e2327751576e022d55f16337a582cbb415b70cacd27f8a935b",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -26326,7 +26326,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "orchestrate",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:22fe03dd823c7ed1fa7b51f6c5d7437224c0b0176e16b7ac270f439adc5a2187",
@@ -26339,13 +26339,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:0e6dd67370a2a95d60431cc31abcbea49f11dd11e09b05f605d8cb4320b60c8d",
         "packageStatus": "partial",
-        "releaseId": "release:aeb43c8a4fdbc9e4d5b66b9fa21f59181c9f7097143b72f3f4faf0ab477fa4ef",
+        "releaseId": "release:d9b5e7d76832077dc0a98851f3607bec4609c2039fb3db2fbf415e617f9f10e9",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.1.0"
       },
-      "releaseId": "release:aeb43c8a4fdbc9e4d5b66b9fa21f59181c9f7097143b72f3f4faf0ab477fa4ef",
+      "releaseId": "release:d9b5e7d76832077dc0a98851f3607bec4609c2039fb3db2fbf415e617f9f10e9",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -26409,7 +26409,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/otter",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:ddf468e1c2c31327802277841ab90b791f1cca60d9efd20ba2f9ad6ba23fd03a",
@@ -26422,13 +26422,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:c3dff0a15197b4d3154997a52280032005fa10b50fc2845bc4dace5ad8cd2f0c",
         "packageStatus": "portable",
-        "releaseId": "release:0169ee5e4bd0728970d4622e6b3d599baeae6ef0579374bddfb0a0a184f3ae5e",
+        "releaseId": "release:d7fa8640b42643b1901fbd18c0568711832d337e0207d785665efa4e234f9148",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:0169ee5e4bd0728970d4622e6b3d599baeae6ef0579374bddfb0a0a184f3ae5e",
+      "releaseId": "release:d7fa8640b42643b1901fbd18c0568711832d337e0207d785665efa4e234f9148",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -26494,7 +26494,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/outlook",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:dc9ee18717e21636402b862178259d0007cd2468ba0b725067d1bc8296f993f5",
@@ -26507,13 +26507,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:a14c21f3a670936e586e4a01f4966473279d6d86eab2043e6c178a323b1f46b1",
         "packageStatus": "portable",
-        "releaseId": "release:dfe7d8f43dc4b30274d610237b8241f9cc04b63b015de66e797d3c37788bac3a",
+        "releaseId": "release:3f21bd4e2be62c84f7d4a7aa7b198d2ba5e5bee39e35475d604522a04f8c2df5",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:dfe7d8f43dc4b30274d610237b8241f9cc04b63b015de66e797d3c37788bac3a",
+      "releaseId": "release:3f21bd4e2be62c84f7d4a7aa7b198d2ba5e5bee39e35475d604522a04f8c2df5",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -26581,7 +26581,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/outlook-calendar",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:5d23dd005d6e92c8cd425369c7290cb25441c8a31dcbd19cfa285e97c68e2705",
@@ -26594,13 +26594,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:2dc72ae07f967619ae1362ad1b378d33edfe473f61dd92d5261e1df22e2ba690",
         "packageStatus": "portable",
-        "releaseId": "release:528994ba4a8933965d5c4555c660015145ec9019ab806d8bd69e7c5f715de84f",
+        "releaseId": "release:fe6e0df5f8d5ac378dafa200a69f88cda593fad00fea1eb2b7f34f855382717d",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:528994ba4a8933965d5c4555c660015145ec9019ab806d8bd69e7c5f715de84f",
+      "releaseId": "release:fe6e0df5f8d5ac378dafa200a69f88cda593fad00fea1eb2b7f34f855382717d",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -26849,7 +26849,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/outreach",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:51750a1e0656ce74a56bd757dba73057946c9017e85af5e35407c61fe48581af",
@@ -26862,13 +26862,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:578cbdfeb6da3222041c456cba42e82050468de8a9c85e0d98218add9f9651bd",
         "packageStatus": "portable",
-        "releaseId": "release:dad52fe063cbffdfb6739a995b9c11176c03a75b81f95116a37fc7a9b2ce2896",
+        "releaseId": "release:2c673832eb0eab7aca1872d0d16dad9f55fd078a6749591314acaac6fa287b52",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:dad52fe063cbffdfb6739a995b9c11176c03a75b81f95116a37fc7a9b2ce2896",
+      "releaseId": "release:2c673832eb0eab7aca1872d0d16dad9f55fd078a6749591314acaac6fa287b52",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -26911,15 +26911,15 @@
       "displayName": "PagerDuty",
       "homepage": "https://github.com/PagerDuty/claude-code-plugins",
       "icon": {
-        "asset": "icon-2e18a1ab1448dacb0cc5f3805cac6c0f.ico",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-2e18a1ab1448dacb0cc5f3805cac6c0f.ico",
-        "bytes": 15086,
-        "contentType": "image/x-icon",
-        "digest": "sha256:2e18a1ab1448dacb0cc5f3805cac6c0ff9f445c86e5c5088c06be7ca672f0d00",
+        "asset": "icon-aff0c390029c4f5d9b6d560ab9b5944c.png",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-aff0c390029c4f5d9b6d560ab9b5944c.png",
+        "bytes": 2294,
+        "contentType": "image/png",
+        "digest": "sha256:aff0c390029c4f5d9b6d560ab9b5944c7f2f48afb35679ed9c86c20165e6607b",
         "homepage": "https://www.pagerduty.com/",
         "kind": "favicon",
         "path": null,
-        "url": "https://www.pagerduty.com/favicon.ico"
+        "url": "https://www.pagerduty.com/favicon/prod/apple-touch-icon.png"
       },
       "keywords": [
         "developer-tools",
@@ -28006,7 +28006,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/plaud",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:d7c761a508a26f43898124dd1c8b259b236f75da0e7f46e80d0bf27dc16d356b",
@@ -28019,13 +28019,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:31dbe586a75d5ff47fa0fa62b9db8a07f18a8eb14358de36cf3a8de311ec5dfe",
         "packageStatus": "partial",
-        "releaseId": "release:325e95aeef70cc4601448a3c729cc66bab1d03c25dbb0ea4c2191d46f770a014",
+        "releaseId": "release:f2577967ec5a884a1ee6ffae35cf0a85185aabcd9e946472d249c151a8c3de79",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:325e95aeef70cc4601448a3c729cc66bab1d03c25dbb0ea4c2191d46f770a014",
+      "releaseId": "release:f2577967ec5a884a1ee6ffae35cf0a85185aabcd9e946472d249c151a8c3de79",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -28557,7 +28557,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/posthog-mcp",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:42707d117ce8ba7a9faec08d51c1345fd5bee2ea7bfd8da571f6bcddbc1b2ef9",
@@ -28570,13 +28570,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:43b9b8fa71e519da81cc03c39c3974929b735fd8db35c4903937506534e6e514",
         "packageStatus": "partial",
-        "releaseId": "release:486c65a98a5020221849e499248f4d26a4052a938f7531b3920372dbb6d1b2ee",
+        "releaseId": "release:23665af2362f9f1fc71394c9aae0e7a460b145614310017736c83b66fcc24ac8",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:486c65a98a5020221849e499248f4d26a4052a938f7531b3920372dbb6d1b2ee",
+      "releaseId": "release:23665af2362f9f1fc71394c9aae0e7a460b145614310017736c83b66fcc24ac8",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -28841,7 +28841,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "pr-review-canvas",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:1400f52bb9c8074fbdfbe3c91af9f931e39034fddeced37b88dea7d2942c3b38",
@@ -28854,13 +28854,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:5ce7b6aa1db06b4e8c755454c45083ded892e95e887674e97fff6879bb171799",
         "packageStatus": "portable",
-        "releaseId": "release:93cd8ef471dc212db188bd969282e09e532886c8813fac14cff12ff5ed9227cc",
+        "releaseId": "release:f0ea0d53df51c86a857b7c5048c370cc8cb02231304df62fd28e0984aec3cf23",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "0.1.0"
       },
-      "releaseId": "release:93cd8ef471dc212db188bd969282e09e532886c8813fac14cff12ff5ed9227cc",
+      "releaseId": "release:f0ea0d53df51c86a857b7c5048c370cc8cb02231304df62fd28e0984aec3cf23",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -29554,7 +29554,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/profound",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:daae2b87f55fe906c756a4daa734c8fb5a3c57778269b1ca8af38381897e4fd8",
@@ -29567,13 +29567,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:64e21a1aab0c718db70f8a47ab9faeb71d8334a01a84b9fc22e16b3bc27d1068",
         "packageStatus": "portable",
-        "releaseId": "release:5f1212f399822d12d6a842176a4f238f7209e08e547e85ebdb802a2af06e70a0",
+        "releaseId": "release:00397de8a7c1b381b57ec69f8840afd7500d1d48c341ae4e4e5d33fd6c24ac55",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:5f1212f399822d12d6a842176a4f238f7209e08e547e85ebdb802a2af06e70a0",
+      "releaseId": "release:00397de8a7c1b381b57ec69f8840afd7500d1d48c341ae4e4e5d33fd6c24ac55",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -29672,7 +29672,7 @@
       "capabilitySummary": {
         "agent": 2,
         "executable": 2,
-        "skill": 54
+        "skill": 56
       },
       "categories": [
         "business-operations"
@@ -29715,10 +29715,10 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "pstack",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
-        "canonicalContentDigest": "sha256:1ff29d5989ea2eacbf5358c76f5028f502d8ddbd4f54c0c83fbec8801eb1fdc0",
+        "canonicalContentDigest": "sha256:6b376713269f3caab4a108adf99f231e71ff55778e574b27354a0acc46fcde0a",
         "capabilities": [
           {
             "name": "agent",
@@ -29734,15 +29734,15 @@
           }
         ],
         "contentResolution": "complete",
-        "packageDigest": "sha256:2eef7dac71e8cd0ae685aefab442fe4ab0987ef474fdbfb79f26576186a500cf",
+        "packageDigest": "sha256:dd82c038a54e1779123b6c069e40ace85d7d7d83653aa862e4b310011c7fca42",
         "packageStatus": "partial",
-        "releaseId": "release:46bf4fd321559f20d47777b99820ed93082acffa33f631f80aff5e5044486721",
+        "releaseId": "release:d16310bc3237f0c057884e9e001a99f77aa1ad688aede2917b4b825d1c6be1a1",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
-        "upstreamVersion": "0.15.5"
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
+        "upstreamVersion": "0.15.6"
       },
-      "releaseId": "release:46bf4fd321559f20d47777b99820ed93082acffa33f631f80aff5e5044486721",
+      "releaseId": "release:d16310bc3237f0c057884e9e001a99f77aa1ad688aede2917b4b825d1c6be1a1",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -30861,7 +30861,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/readwise",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:770ed24488a5b61846d5b3242b22ac27e942fe1ef13abbe9273fc972173a9d93",
@@ -30874,13 +30874,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:df783223168ef6162756337ea53bcec049c54116d384c45ee11c014a17c0a5e9",
         "packageStatus": "portable",
-        "releaseId": "release:09a6196e7f1667a42a00daba9c28f7d0e48fca346ff4183144c537f9e2eea705",
+        "releaseId": "release:06a4cb409e9d305aa3d0f6b9ca5007a3a01c23cd7d85ad1336d52904fcd4bf41",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:09a6196e7f1667a42a00daba9c28f7d0e48fca346ff4183144c537f9e2eea705",
+      "releaseId": "release:06a4cb409e9d305aa3d0f6b9ca5007a3a01c23cd7d85ad1336d52904fcd4bf41",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -31626,7 +31626,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/robinhood",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:4de476f1146539d650d162ab5679113bd8ac55577177ed9279a6f92efedaa76b",
@@ -31639,13 +31639,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:7dc722a8dd6a2614b17efd0b4898120212950f0247a972817de0b57357a0e46f",
         "packageStatus": "portable",
-        "releaseId": "release:588ef5cb28449954f876859c18acc265e5647686c853479a59c3f39f7878c553",
+        "releaseId": "release:f1f235bf9c17680524bc9fb8cf2c8f02204b7d3990253cddd0c34ab417ad6083",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:588ef5cb28449954f876859c18acc265e5647686c853479a59c3f39f7878c553",
+      "releaseId": "release:f1f235bf9c17680524bc9fb8cf2c8f02204b7d3990253cddd0c34ab417ad6083",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -32268,7 +32268,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/salesforce",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:bf0abbb89967c829ed923a5b6ca877638f72dbe27a8861d055ad0d76bcd8af23",
@@ -32281,13 +32281,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d058e3d1029556c817c9e069bd79ed85b222e19ecd96868b40dbc881ebcd3259",
         "packageStatus": "partial",
-        "releaseId": "release:5f1b4280dd5ae8ca3446900c4dd96b201a1c9440e24f661ce941255f839c12da",
+        "releaseId": "release:02e467b41b6e0cd249706d80e3d271d1d377e4b8a0effe0ae96690d306500cbe",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:5f1b4280dd5ae8ca3446900c4dd96b201a1c9440e24f661ce941255f839c12da",
+      "releaseId": "release:02e467b41b6e0cd249706d80e3d271d1d377e4b8a0effe0ae96690d306500cbe",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -33215,7 +33215,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/semrush",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:226afdc5bc7b5d61e8de9b9b52eda2df8ad3e6dd33eb0ebf85c4ef94b4aaa472",
@@ -33228,13 +33228,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:39fb5ecf91e9e1ce0f4876739dd26e0ac118332c9aeac6dda3ab323b300ad066",
         "packageStatus": "portable",
-        "releaseId": "release:d93b2fd8d01c39188d8361c93a8aba04cf945ca775ab53897b4edc49a02070a1",
+        "releaseId": "release:387028b0c692d850e72ec58be06516b95558a006adaa6c72f1796d79d98be608",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:d93b2fd8d01c39188d8361c93a8aba04cf945ca775ab53897b4edc49a02070a1",
+      "releaseId": "release:387028b0c692d850e72ec58be06516b95558a006adaa6c72f1796d79d98be608",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -33910,7 +33910,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/sharepoint",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:7093ced1dcd74c8aefad2317bdfaa0417de8c095b4c0ab609baaa7e96a461643",
@@ -33923,13 +33923,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:81718da5a38e012b1548b34e5f00f7f03041121d9d5a43b527e8337f2fdda3c9",
         "packageStatus": "portable",
-        "releaseId": "release:9486109cdb540f8c42523b9bab9abd2f205b980c9217365e9b7331e58d2d0726",
+        "releaseId": "release:8287d20f87501ebe5760ef843c8f80f15d62bb52e724b5c5ec491a57a05457ba",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:9486109cdb540f8c42523b9bab9abd2f205b980c9217365e9b7331e58d2d0726",
+      "releaseId": "release:8287d20f87501ebe5760ef843c8f80f15d62bb52e724b5c5ec491a57a05457ba",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -34186,7 +34186,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/shopify-store",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:475e237036f500322869b5f296345230b3043aa2dbc5a0fc29df07e49000e428",
@@ -34203,13 +34203,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:a52a11183be7c0205d43d807ed6920d0108971dd47a50a8beef26a573e3bcdfa",
         "packageStatus": "partial",
-        "releaseId": "release:e6007b50172a187aa1990f3d7b29bcc6440ce09daecd169add4bb2759d35d342",
+        "releaseId": "release:aaa71492c238d1f8a24f283747784997850b0480df52c2e4470a76b5ef237ef2",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:e6007b50172a187aa1990f3d7b29bcc6440ce09daecd169add4bb2759d35d342",
+      "releaseId": "release:aaa71492c238d1f8a24f283747784997850b0480df52c2e4470a76b5ef237ef2",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -34373,7 +34373,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/similarweb",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:908c412b90e1c2a6712e5056a741a62c06380af69820065906b050a8c81df0b9",
@@ -34386,13 +34386,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:79a316993457320e81dbe8154b502cf746d7dc4d2c217c784a4ea65133bc0d75",
         "packageStatus": "partial",
-        "releaseId": "release:22c19f7a877b54044269b73563aec2d347deeb526e86a3b0e85d1b3ae963651d",
+        "releaseId": "release:ce4a5829f07053a0ed8779dda591238d6aab111fa2212ed4ad0c0e40776942ec",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:22c19f7a877b54044269b73563aec2d347deeb526e86a3b0e85d1b3ae963651d",
+      "releaseId": "release:ce4a5829f07053a0ed8779dda591238d6aab111fa2212ed4ad0c0e40776942ec",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -34837,7 +34837,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/smartsheet",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:90b23989ddf32fff6c3f15a80a55d9a03fc45738acf805aeea6346291335ec5a",
@@ -34850,13 +34850,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:37a642de3dfdd41160295d5dc9ef5c2835a7e0b39038d1af3404d45c0be707d7",
         "packageStatus": "partial",
-        "releaseId": "release:5800bf491327f1556ac0a384e7dba6ce0d100ec11f3e5a815120046d4de88031",
+        "releaseId": "release:3dc6a1d85b6955b5c95253cb2acf777c977e7a86c6c6e13e9fbea3cc4b104791",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:5800bf491327f1556ac0a384e7dba6ce0d100ec11f3e5a815120046d4de88031",
+      "releaseId": "release:3dc6a1d85b6955b5c95253cb2acf777c977e7a86c6c6e13e9fbea3cc4b104791",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -35807,7 +35807,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/statsig",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:0af7a2860aae140244a1adab566761fd3170e1c7c46014af9b513af7c77eb930",
@@ -35820,13 +35820,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:3ed04ff332089d3ccec291bd60cb4544714aa6fc0bdae286557b443b88d45ac6",
         "packageStatus": "portable",
-        "releaseId": "release:ea14bc2e59a1d5721326d5a59f0e3fcfb78921f12c182d27216102e8fe1260b1",
+        "releaseId": "release:f0c8035f91182162cbb826414dc6cd2d8d30c12d73d7e50c23143ae1c735c573",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:ea14bc2e59a1d5721326d5a59f0e3fcfb78921f12c182d27216102e8fe1260b1",
+      "releaseId": "release:f0c8035f91182162cbb826414dc6cd2d8d30c12d73d7e50c23143ae1c735c573",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -36555,7 +36555,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "teaching",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:80446f7306ec88594f42a8bb09bbade4601754c5db8b082fbaaf0e4b319770ab",
@@ -36568,13 +36568,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:c8564cd60fb82a2b7f64985d2bf350746b671dc7566c0865d928ced9eadd6f1f",
         "packageStatus": "portable",
-        "releaseId": "release:e4afe2256c1b62c80836beecda91b231c9bcb5713b62ef59038c5f000d9b2e9c",
+        "releaseId": "release:e2b267c15b9aa765b3011689fdae5ce265029b231e049a1fc66ac93040f3a073",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:e4afe2256c1b62c80836beecda91b231c9bcb5713b62ef59038c5f000d9b2e9c",
+      "releaseId": "release:e2b267c15b9aa765b3011689fdae5ce265029b231e049a1fc66ac93040f3a073",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -36638,7 +36638,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/teams",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:c127b2650186a54f45e593c70998e27a529ccca61ee5ec7289c194839b80daf3",
@@ -36651,13 +36651,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:5f9f073301d89730108c9839efc24ac4ce1335a5fb8dac48fbf4ce235cbde20e",
         "packageStatus": "portable",
-        "releaseId": "release:1eca5481c93246eb917790b4838950b62d825f425d57e3cb248f7c1e49256f98",
+        "releaseId": "release:4816efac46bbc87c807cedb71fad026d8585c621a36da77550699f5f5208dfa3",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:1eca5481c93246eb917790b4838950b62d825f425d57e3cb248f7c1e49256f98",
+      "releaseId": "release:4816efac46bbc87c807cedb71fad026d8585c621a36da77550699f5f5208dfa3",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -37083,7 +37083,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "thermos",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:1327f77d3336ebc99941cf2dab0f8643490205f1655699ce34e88fa90f972887",
@@ -37100,13 +37100,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6374eddbf2a1dba5b94f93fc1d6894ee6b0fd15072e470b005a301d2363b68bf",
         "packageStatus": "partial",
-        "releaseId": "release:9e2666b39a79dc5320c6fe3ce7a6b53638c3dd79775262595773fecd1b5a6107",
+        "releaseId": "release:94dd866abeed9881281f5a73a42294b1e1c14370426dc004a43eeec517550428",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:9e2666b39a79dc5320c6fe3ce7a6b53638c3dd79775262595773fecd1b5a6107",
+      "releaseId": "release:94dd866abeed9881281f5a73a42294b1e1c14370426dc004a43eeec517550428",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -37263,7 +37263,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/todoist",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:f0a3fdb36a67bf33f454c74734c6faa4d527b81ea3194436275605ad9fc9a580",
@@ -37276,13 +37276,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d4ecb242cb2985d693b73fc40e48fe26c93d70b6c690624888cd2b7218749201",
         "packageStatus": "portable",
-        "releaseId": "release:ca982644981a36a8831ae17396604e9997f331a79bba6651e13a344e89c7cf78",
+        "releaseId": "release:6a586d9c33889b15770f729ba79e8131b999c47653ee5729d6e126f5a6d28f43",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:ca982644981a36a8831ae17396604e9997f331a79bba6651e13a344e89c7cf78",
+      "releaseId": "release:6a586d9c33889b15770f729ba79e8131b999c47653ee5729d6e126f5a6d28f43",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -37450,7 +37450,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/trello",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:0e9badff322195ad23bed142f022436299d1c57850880e1ade5458efe56669dd",
@@ -37463,13 +37463,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:046615c0463e1f01a5be0dadfee367bf485e91f48b7fccd2d9fecd424ed981eb",
         "packageStatus": "partial",
-        "releaseId": "release:651ebf9db7f01ff54a2b737f9932789c8ed525646b0ed6734072c3788bd86509",
+        "releaseId": "release:71e8e3cea69ce5aa767521998493c7883519d8d6c510f164bc5d16e19ce7d19c",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:651ebf9db7f01ff54a2b737f9932789c8ed525646b0ed6734072c3788bd86509",
+      "releaseId": "release:71e8e3cea69ce5aa767521998493c7883519d8d6c510f164bc5d16e19ce7d19c",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -37635,7 +37635,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/typeform",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:070f72ba6a205388b7433aab2f6b39b4691fdb870b4543c7b683484e76112a3b",
@@ -37648,13 +37648,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:f3da67fd93281968784a8b082fa2098ab59d7454106d7ed7051e5db1baa0a8c9",
         "packageStatus": "portable",
-        "releaseId": "release:05a0b213ec0ea2d6d51e7dfffbdc38c4fa225ea22d7bd2e81ce4296f4c281bb0",
+        "releaseId": "release:a9ebe863932c83bd850b07f66faebd85bcca25f90e9900095a0c6d21a51d0971",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:05a0b213ec0ea2d6d51e7dfffbdc38c4fa225ea22d7bd2e81ce4296f4c281bb0",
+      "releaseId": "release:a9ebe863932c83bd850b07f66faebd85bcca25f90e9900095a0c6d21a51d0971",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -38465,7 +38465,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/upwork",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:81905aa21ba26561e378b784bb1a7c5436c053dd1d8776346a8901956e6aa227",
@@ -38478,13 +38478,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:c27e0948a2fe37d78f05922e4038526af3f0dcb5c359f10053350b50a2b754dd",
         "packageStatus": "portable",
-        "releaseId": "release:4454ace843ec69ca1cfa42f51a77942bb8031aaf0b27c49e987af518539c9fcc",
+        "releaseId": "release:c919a6bb5529b43a81170e75d72aab2e871214e84fdef1f59ee8795a032ec8f0",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:4454ace843ec69ca1cfa42f51a77942bb8031aaf0b27c49e987af518539c9fcc",
+      "releaseId": "release:c919a6bb5529b43a81170e75d72aab2e871214e84fdef1f59ee8795a032ec8f0",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -39153,7 +39153,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/webull",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:9bca46575d3570cdfc036cc8eb90b77af7cdc2e8f97c7d4ca31a6db6cec40ede",
@@ -39166,13 +39166,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:e8637ea2ac0fcbcc939d326f0fe9329bdf1aab3af35423e0e36e1bdafef86c2f",
         "packageStatus": "portable",
-        "releaseId": "release:425a520c7c4b4de45a0ad6ea4a20e07ef048ddcb203bc4cfa012ba7a41256388",
+        "releaseId": "release:c5d280831a5fb3e819ad1168e1792657bcae27e50fbd99a35a1e96f603eaef82",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:425a520c7c4b4de45a0ad6ea4a20e07ef048ddcb203bc4cfa012ba7a41256388",
+      "releaseId": "release:c5d280831a5fb3e819ad1168e1792657bcae27e50fbd99a35a1e96f603eaef82",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -39568,7 +39568,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/workable",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:25bcf4217f78ad79b02bbf61df152387245ea3eb073f6fd50723852efcde91e1",
@@ -39581,13 +39581,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:b7bc52e8368fa272523d4de6dbeb3e246134cd7be46b362360064c5c51383fcb",
         "packageStatus": "portable",
-        "releaseId": "release:94256ffc21647621ae6938ae5813348c2cadb24b4e2ca98ad73fc018200d2e1f",
+        "releaseId": "release:c65b94d5e7f62b5b5d372a3fe4512998be6bced17e59af7db4e53f8f143fecc7",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:94256ffc21647621ae6938ae5813348c2cadb24b4e2ca98ad73fc018200d2e1f",
+      "releaseId": "release:c65b94d5e7f62b5b5d372a3fe4512998be6bced17e59af7db4e53f8f143fecc7",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -39744,7 +39744,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/wrike",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:c26f9962eea0c16f38fc40860adc69d409c710fa92abfa12d083f29ecee24853",
@@ -39757,13 +39757,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:9ffd5cf4e8adfbdff07c77539f1df33b4ed7e1ab15198a23565edb55d050e1a4",
         "packageStatus": "partial",
-        "releaseId": "release:3ac7767bf328da35bb68eddf06f67bf14b0ea1308751258e66b9e1dc9215b3f4",
+        "releaseId": "release:602e255fbcf49cea9e91b8852fa75d877d554c09b9037d655644583cc5182f36",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:3ac7767bf328da35bb68eddf06f67bf14b0ea1308751258e66b9e1dc9215b3f4",
+      "releaseId": "release:602e255fbcf49cea9e91b8852fa75d877d554c09b9037d655644583cc5182f36",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -39830,7 +39830,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/x-ads",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:c15d6c96b19486230223016abbc9057968735915c446e8e6e01cd8709a09e30a",
@@ -39843,13 +39843,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6f71e66d0aac835db3bbd1a23404e76da62ff2c32cc0b8696106edef4268f79f",
         "packageStatus": "partial",
-        "releaseId": "release:91d406483b539b5ea02eb30df567c6be18a78335c52da01761ef15f491d92ac3",
+        "releaseId": "release:59a559b8a398a2a61cbee941d86aead32521bb4a4f43aed3597eebd1b84727e2",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:91d406483b539b5ea02eb30df567c6be18a78335c52da01761ef15f491d92ac3",
+      "releaseId": "release:59a559b8a398a2a61cbee941d86aead32521bb4a4f43aed3597eebd1b84727e2",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -39917,7 +39917,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/x-money",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:dbc8d0dc68a8255e7c6e4177e82f6196df7d8484ce4f88912ac1a3ffd6cd007f",
@@ -39934,13 +39934,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:10bea452a8dd5b02225b1c176d9d7834bc19130f39a21818e6cc0b1210df1ddf",
         "packageStatus": "partial",
-        "releaseId": "release:e663ece54ef8d79ead6a62885b3ee5e9d6b44f82bfd498132ef0d28ba3b826c4",
+        "releaseId": "release:50470687f35d60345a8fbe932abf4a2a907cc6763de649a699b7796b9edb7163",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:e663ece54ef8d79ead6a62885b3ee5e9d6b44f82bfd498132ef0d28ba3b826c4",
+      "releaseId": "release:50470687f35d60345a8fbe932abf4a2a907cc6763de649a699b7796b9edb7163",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -40007,7 +40007,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/x",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:1c1d22ce24c47f9546e2e8c196fc95d8407cdf5a0872c60b74b684c726cb053d",
@@ -40024,13 +40024,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:680709a3c498195d0fcd8b0535c9e40a3bc2eae9ea0f458e5d06bc3ea288f2b2",
         "packageStatus": "partial",
-        "releaseId": "release:fa3fad8f7ce1e1a0d334e90f3271acbcf0ba328c383893674bc04a79214e0a48",
+        "releaseId": "release:eeadb7de831efd3ca99edf13d124fbb93c901c7d1fb7c8795d310af7fd0e2599",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "2.5.1"
       },
-      "releaseId": "release:fa3fad8f7ce1e1a0d334e90f3271acbcf0ba328c383893674bc04a79214e0a48",
+      "releaseId": "release:eeadb7de831efd3ca99edf13d124fbb93c901c7d1fb7c8795d310af7fd0e2599",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -40096,7 +40096,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/xero",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:e37546538d5a3527dd1b71b9ebc2cb121e9eb877657da26eb8c9d011ab55772e",
@@ -40109,13 +40109,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:039deaa155d117c277130fbc4866fd313c7e6166d4d8506eb9793ec290ef600b",
         "packageStatus": "partial",
-        "releaseId": "release:06da2cf148e9bc01fef9f67f60adacafb9f155033fb748807d0ed28a40516e18",
+        "releaseId": "release:619bfe2dd2e0424dce96c6b09fb82ad376e8ec10d0aa3210f4a4fd64cf480a54",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:06da2cf148e9bc01fef9f67f60adacafb9f155033fb748807d0ed28a40516e18",
+      "releaseId": "release:619bfe2dd2e0424dce96c6b09fb82ad376e8ec10d0aa3210f4a4fd64cf480a54",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -40564,7 +40564,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "third_party/zoom",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "7022c81efb48d8b5eb15498ce6043a3bd74b694c"
+        "resolvedCommitSha": "23e4138daa01c42d4969f7a5465f82704e64f798"
       },
       "release": {
         "canonicalContentDigest": "sha256:d8d3230cf8c5e20e06b7055834e93d3c5f2324b24ff637a966d450fc7464e836",
@@ -40577,13 +40577,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:60590625abc917fb6e50321edf8f669e729e26e214da4faf3a6f65c57d6f1d16",
         "packageStatus": "partial",
-        "releaseId": "release:37023c2f67fb01598cc098b2f62c0176c3a09c5bdbddf4554276f20807fee6be",
+        "releaseId": "release:2c2afaa2241443213aa27bc8b38db2ba1ddb5b4d3a2e2d7e5ff63150163eb5db",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "7022c81efb48d8b5eb15498ce6043a3bd74b694c",
+        "sourceRevision": "23e4138daa01c42d4969f7a5465f82704e64f798",
         "upstreamVersion": "1.0.1"
       },
-      "releaseId": "release:37023c2f67fb01598cc098b2f62c0176c3a09c5bdbddf4554276f20807fee6be",
+      "releaseId": "release:2c2afaa2241443213aa27bc8b38db2ba1ddb5b4d3a2e2d7e5ff63150163eb5db",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -40629,17 +40629,7 @@
       "description": "Claude plugin for planning, building, and debugging Zoom integrations across REST APIs, SDKs, webhooks, bots, and MCP workflows.",
       "displayName": "Zoom",
       "homepage": "https://developers.zoom.us/",
-      "icon": {
-        "asset": "icon-062848da1070d454decaec9cb0a4787c.ico",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-062848da1070d454decaec9cb0a4787c.ico",
-        "bytes": 45979,
-        "contentType": "image/x-icon",
-        "digest": "sha256:062848da1070d454decaec9cb0a4787cde589005e1811808281fc39520ffe913",
-        "homepage": "https://developers.zoom.us/",
-        "kind": "favicon",
-        "path": null,
-        "url": "https://developers.zoom.us/favicon.ico?favicon.1h7jbgtb7yhr-.ico"
-      },
+      "icon": null,
       "keywords": [
         "communication",
         "developer-tools",

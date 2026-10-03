@@ -246,7 +246,7 @@
     "outlook-email": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-5335d7747d4a58b3a99ece47d142a127.png",
     "outputai": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-62e06a98d49f2904b704793a838ad332.png",
     "outreach": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-cbb150ab10df6970a9757eff21538682.png",
-    "pagerduty": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-2e18a1ab1448dacb0cc5f3805cac6c0f.ico",
+    "pagerduty": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-aff0c390029c4f5d9b6d560ab9b5944c.png",
     "paypal": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-1690c4e20869c3763b7fc111e2f94035.ico",
     "pendo-analytics": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-891addb081afe5aa144a855067114bd0.png",
     "pendo-guides": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-891addb081afe5aa144a855067114bd0.png",
@@ -377,13 +377,12 @@
     "zilliz": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8d7deb7f7224deaaf4129368695c8bac.svg",
     "zocks-advisor": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-290c29dc43325277aea74f5632442bc5.png",
     "zoom": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-9082312993373e52b2bc5e5045acf641.png",
-    "zoom-plugin": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-062848da1070d454decaec9cb0a4787c.ico",
     "zoominfo": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-43929ad3b61f391a9d9dc07f56eca859.svg",
     "zotero": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-7ac4579b4a075173126862ebf70243ff.png",
     "zscaler": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-fb71a91ef4937bdac04520d7e7b1852b.svg",
     "zyte-web-data": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-ec8d45e699974da7a894ec39256910bb.png"
   },
-  "catalogId": "catalog:424636ad7aacccdc3f181c204335ecd0f4bb13c7c5f12daeb2aaebb4dc9d3639",
+  "catalogId": "catalog:566e555371b738869a17b848b031faf410ed508e462358d2b4b298fbd8a5747e",
   "catalogIndexArtifact": "catalog-index.v1.json",
   "catalogIndexUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/catalog-index.v1.json",
   "categories": [
@@ -1634,11 +1633,11 @@
     "redundantPlugins": 118
   },
   "diagnostics": [],
-  "generatedAt": "2026-10-02T21:56:51.555Z",
+  "generatedAt": "2026-10-03T11:14:34.353Z",
   "iconCoverage": {
     "content": 217,
-    "favicon": 165,
-    "monogramOnly": 53,
+    "favicon": 164,
+    "monogramOnly": 54,
     "monogramProductKeys": [
       "adobe-for-creativity",
       "agent-sdk-dev",
@@ -1692,7 +1691,8 @@
       "skill-creator",
       "small-business",
       "telegram",
-      "terraform"
+      "terraform",
+      "zoom-plugin"
     ],
     "total": 435
   },
