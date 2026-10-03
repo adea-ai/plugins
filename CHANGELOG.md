@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.16](https://github.com/adea-ai/plugins/compare/v2.0.15...v2.0.16) (2026-10-03)
+
+
+### Maintenance
+
+* deps-2026-10 ([#195](https://github.com/adea-ai/plugins/issues/195)) ([2edcc5e](https://github.com/adea-ai/plugins/commit/2edcc5e71a4fb4b48bba0cb3efc1f836d1e024e9))
+
 ## [2.0.15](https://github.com/adea-ai/plugins/compare/v2.0.14...v2.0.15) (2026-10-03)
 
 
