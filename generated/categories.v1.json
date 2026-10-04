@@ -273,8 +273,8 @@
     "pydantic-ai": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-c7f95eb46fe6dee5988d423dfc9f87bb.png",
     "pyright-lsp": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8e7226e8053992780b928eef5ee56331.png",
     "qdrant-skills": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-42d52b9abd4b903268aa5d6b143d4b6a.ico",
-    "qodo": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
-    "qodo-standards": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
+    "qodo": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-505d7841292488b3d76c2c3135253a6b.webp",
+    "qodo-standards": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-505d7841292488b3d76c2c3135253a6b.webp",
     "qt-development-skills": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3562ce93625a23a8bddc57e7329652a6.webp",
     "quarkus-agent": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-31b305da0887cc92f0aed49caafb76d2.png",
     "railway": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-4de6561f7a865f6d987ea828fdfd7b8d.svg",
@@ -304,6 +304,7 @@
     "searchfit-seo": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-53becb337dfafaf6395e06777a38c631.ico",
     "semrush": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f39a44cf4ec7acf87f8d164cee77c6e9.png",
     "sentry": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-e5935afc31e5084860e5ddafae804b06.svg",
+    "sentry-cli": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-49a1d2db07116397feff5454872ecec1.ico",
     "serena": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-59b39f9f93449ede5e3ec36a7f8153b9.png",
     "servicenow-sdk": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-5d8ad5f9badc5eda5a42df74a6d41334.png",
     "setup-agent-analytics": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-891addb081afe5aa144a855067114bd0.png",
@@ -382,7 +383,7 @@
     "zscaler": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-fb71a91ef4937bdac04520d7e7b1852b.svg",
     "zyte-web-data": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-ec8d45e699974da7a894ec39256910bb.png"
   },
-  "catalogId": "catalog:46e165ddb74d334dd6a76b367ef6036207327e25abed98b1c404bf532f5b7662",
+  "catalogId": "catalog:12562c6fb027bb5a383586850fa25b2c9d35a0f54f25c4ac61e0a75beffca466",
   "catalogIndexArtifact": "catalog-index.v1.json",
   "catalogIndexUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/catalog-index.v1.json",
   "categories": [
@@ -1633,11 +1634,11 @@
     "redundantPlugins": 118
   },
   "diagnostics": [],
-  "generatedAt": "2026-10-03T20:45:34.683Z",
+  "generatedAt": "2026-10-04T04:45:55.415Z",
   "iconCoverage": {
     "content": 217,
-    "favicon": 164,
-    "monogramOnly": 54,
+    "favicon": 165,
+    "monogramOnly": 53,
     "monogramProductKeys": [
       "adobe-for-creativity",
       "agent-sdk-dev",
@@ -1687,7 +1688,6 @@
       "receipts",
       "sales",
       "security-guidance",
-      "sentry-cli",
       "session-report",
       "skill-creator",
       "small-business",
