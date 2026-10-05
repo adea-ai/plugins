@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.21](https://github.com/adea-ai/plugins/compare/v2.0.20...v2.0.21) (2026-10-05)
+
+
+### Bug Fixes
+
+* **ci:** drop removed baseUrl option from the plugins tsconfig ([#205](https://github.com/adea-ai/plugins/issues/205)) ([5a8fd77](https://github.com/adea-ai/plugins/commit/5a8fd777000eda26562f4829c574b48e3ac17b2d))
+
+
+### Maintenance
+
+* **deps:** update dependency oxfmt to ^0.72.0 ([#204](https://github.com/adea-ai/plugins/issues/204)) ([70de028](https://github.com/adea-ai/plugins/commit/70de02866af9589e030a1762ccab0286945cb3c8))
+
 ## [2.0.20](https://github.com/adea-ai/plugins/compare/v2.0.19...v2.0.20) (2026-10-05)
 
 
