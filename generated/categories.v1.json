@@ -246,7 +246,7 @@
     "outlook-email": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-5335d7747d4a58b3a99ece47d142a127.png",
     "outputai": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-62e06a98d49f2904b704793a838ad332.png",
     "outreach": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-cbb150ab10df6970a9757eff21538682.png",
-    "pagerduty": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-2e18a1ab1448dacb0cc5f3805cac6c0f.ico",
+    "pagerduty": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-aff0c390029c4f5d9b6d560ab9b5944c.png",
     "paypal": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-1690c4e20869c3763b7fc111e2f94035.ico",
     "pendo-analytics": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-891addb081afe5aa144a855067114bd0.png",
     "pendo-guides": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-891addb081afe5aa144a855067114bd0.png",
@@ -273,8 +273,8 @@
     "pydantic-ai": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-c7f95eb46fe6dee5988d423dfc9f87bb.png",
     "pyright-lsp": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8e7226e8053992780b928eef5ee56331.png",
     "qdrant-skills": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-42d52b9abd4b903268aa5d6b143d4b6a.ico",
-    "qodo": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
-    "qodo-standards": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
+    "qodo": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-505d7841292488b3d76c2c3135253a6b.webp",
+    "qodo-standards": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-505d7841292488b3d76c2c3135253a6b.webp",
     "qt-development-skills": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3562ce93625a23a8bddc57e7329652a6.webp",
     "quarkus-agent": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-31b305da0887cc92f0aed49caafb76d2.png",
     "railway": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-4de6561f7a865f6d987ea828fdfd7b8d.svg",
@@ -383,7 +383,7 @@
     "zscaler": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-fb71a91ef4937bdac04520d7e7b1852b.svg",
     "zyte-web-data": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-ec8d45e699974da7a894ec39256910bb.png"
   },
-  "catalogId": "catalog:1eb399f57af22c0a6b60131b256fd1214c626cbadfaf74e2d43980c7dc9aef9f",
+  "catalogId": "catalog:bb9be72ff24c82a2cb74594174cb48a030d01281b86844cc8ae7a145456280e3",
   "catalogIndexArtifact": "catalog-index.v1.json",
   "catalogIndexUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/catalog-index.v1.json",
   "categories": [
@@ -1262,7 +1262,7 @@
     {
       "category": "other",
       "listArtifact": "category-other.v1.json",
-      "pluginCount": 19,
+      "pluginCount": 20,
       "pluginIds": [
         "plugin:cursor-official:beehiiv",
         "plugin:cursor-official:buffer",
@@ -1274,6 +1274,7 @@
         "plugin:cursor-official:google-sheets",
         "plugin:cursor-official:google-slides",
         "plugin:cursor-official:greenhouse",
+        "plugin:cursor-official:origin-apps",
         "plugin:cursor-official:plaud",
         "plugin:cursor-official:posthog-mcp",
         "plugin:cursor-official:robinhood",
@@ -1284,7 +1285,7 @@
         "plugin:cursor-official:trello",
         "plugin:cursor-official:x-money"
       ],
-      "productCount": 19,
+      "productCount": 20,
       "productKeys": [
         "beehiiv",
         "buffer",
@@ -1296,6 +1297,7 @@
         "google-sheets",
         "google-slides",
         "greenhouse",
+        "origin-apps",
         "plaud",
         "posthog-mcp",
         "robinhood",
@@ -1629,16 +1631,16 @@
     }
   ],
   "counts": {
-    "plugins": 553,
-    "products": 435,
+    "plugins": 554,
+    "products": 436,
     "redundantPlugins": 118
   },
   "diagnostics": [],
-  "generatedAt": "2026-10-05T13:52:06.394Z",
+  "generatedAt": "2026-10-05T23:50:01.784Z",
   "iconCoverage": {
     "content": 217,
     "favicon": 165,
-    "monogramOnly": 53,
+    "monogramOnly": 54,
     "monogramProductKeys": [
       "adobe-for-creativity",
       "agent-sdk-dev",
@@ -1677,6 +1679,7 @@
       "mcp-server-dev",
       "mcp-tunnels",
       "operations",
+      "origin-apps",
       "pdf-viewer",
       "playground",
       "plugin-dev",
@@ -1694,7 +1697,7 @@
       "telegram",
       "terraform"
     ],
-    "total": 435
+    "total": 436
   },
   "schemaVersion": 1,
   "sourcePreference": [

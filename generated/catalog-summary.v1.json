@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:1eb399f57af22c0a6b60131b256fd1214c626cbadfaf74e2d43980c7dc9aef9f",
+  "catalogId": "catalog:bb9be72ff24c82a2cb74594174cb48a030d01281b86844cc8ae7a145456280e3",
   "categories": [
     "business-operations",
     "communication",
@@ -12,8 +12,8 @@
     "productivity",
     "security"
   ],
-  "generatedAt": "2026-10-05T13:52:06.394Z",
-  "pluginCount": 553,
+  "generatedAt": "2026-10-05T23:50:01.784Z",
+  "pluginCount": 554,
   "productGroups": [
     "42crunch-api-security-testing",
     "activecampaign",
@@ -292,6 +292,7 @@
     "oracle-ai-data-platform-workbench-spark-connectors",
     "oracledb",
     "orchestrate",
+    "origin-apps",
     "otter",
     "outlook",
     "outlook-calendar",
@@ -1796,6 +1797,10 @@
     {
       "pluginId": "plugin:cursor-official:orchestrate",
       "text": "Orchestrate Fan large tasks out across parallel cloud agents with planners, workers, verifiers, and structured handoffs. orchestrate productivity"
+    },
+    {
+      "pluginId": "plugin:cursor-official:origin-apps",
+      "text": "Origin Apps Skills for building on the Cursor Origin API. Fetch the live spec first, then follow the Origin rules for credentials, scopes, webhooks, paging, and errors. Includes a skill that plans the port of an existing GitHub App. apps origin other"
     },
     {
       "pluginId": "plugin:cursor-official:otter",
