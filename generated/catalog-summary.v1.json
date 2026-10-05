@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:12562c6fb027bb5a383586850fa25b2c9d35a0f54f25c4ac61e0a75beffca466",
+  "catalogId": "catalog:1eb399f57af22c0a6b60131b256fd1214c626cbadfaf74e2d43980c7dc9aef9f",
   "categories": [
     "business-operations",
     "communication",
@@ -12,7 +12,7 @@
     "productivity",
     "security"
   ],
-  "generatedAt": "2026-10-04T04:45:55.415Z",
+  "generatedAt": "2026-10-05T13:52:06.394Z",
   "pluginCount": 553,
   "productGroups": [
     "42crunch-api-security-testing",
