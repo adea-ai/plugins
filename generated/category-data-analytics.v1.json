@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:4c79d496327544951d23ef33dd58a8152e51d5a0cf39c85416bcefd8f3fea4a9",
+  "catalogId": "catalog:8ff9769f0ef3aafe431c142664711e1dc96724b8b4de13b474687f6a84832f4b",
   "category": "data-analytics",
   "pluginCount": 49,
   "productCount": 42,
@@ -2499,7 +2499,7 @@
         "homepage": "https://firebase.google.com/products/firestore",
         "kind": "favicon",
         "path": null,
-        "url": "https://www.gstatic.com/devrel-devsite/prod/vfdb441d2e08dbd9d3e48d8cd72b242388a87bcf7626bf5fb9df50c2bdd4a70fd/firebase/images/touchicon-180.png"
+        "url": "https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/firebase/images/touchicon-180.png"
       },
       "keywords": [
         "data-analytics",
@@ -2687,7 +2687,7 @@
         "homepage": "https://ai.google.dev/",
         "kind": "favicon",
         "path": null,
-        "url": "https://www.gstatic.com/devrel-devsite/prod/vfdb441d2e08dbd9d3e48d8cd72b242388a87bcf7626bf5fb9df50c2bdd4a70fd/googledevai/images/touchicon-180-new.png"
+        "url": "https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/googledevai/images/touchicon-180-new.png"
       },
       "keywords": [
         "catalog",

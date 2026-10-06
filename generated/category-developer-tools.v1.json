@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:4c79d496327544951d23ef33dd58a8152e51d5a0cf39c85416bcefd8f3fea4a9",
+  "catalogId": "catalog:8ff9769f0ef3aafe431c142664711e1dc96724b8b4de13b474687f6a84832f4b",
   "category": "developer-tools",
   "pluginCount": 213,
   "productCount": 175,
@@ -228,7 +228,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "cursor-sdk",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "df581122cde17e6e27686b5a448bde23e4ad4318"
+        "resolvedCommitSha": "9f451cf875ad1239912762f67741e8e5ba6ac0f1"
       },
       "release": {
         "canonicalContentDigest": "sha256:0be74b4325362ba174f1ea044da829f83a85bb4b2a2b1a30be020ae677054404",
@@ -241,13 +241,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:4db2af962162a1cbcca2754a64d2767b19182059d8400e0470122acc4a4dc325",
         "packageStatus": "partial",
-        "releaseId": "release:034a0dc0f21764a92c54cc296d5b8e0c7d03b5a0ab111f26ae98fbd50730871a",
+        "releaseId": "release:ee69b065878fd1b465309b8c5948029a4753dc8adc2028d391cea92c1948cd4e",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "df581122cde17e6e27686b5a448bde23e4ad4318",
+        "sourceRevision": "9f451cf875ad1239912762f67741e8e5ba6ac0f1",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:034a0dc0f21764a92c54cc296d5b8e0c7d03b5a0ab111f26ae98fbd50730871a",
+      "releaseId": "release:ee69b065878fd1b465309b8c5948029a4753dc8adc2028d391cea92c1948cd4e",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -593,7 +593,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "agent-compatibility",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "df581122cde17e6e27686b5a448bde23e4ad4318"
+        "resolvedCommitSha": "9f451cf875ad1239912762f67741e8e5ba6ac0f1"
       },
       "release": {
         "canonicalContentDigest": "sha256:1b112554d0c0cea410d4fefbf7c0f39a13c12377e47d4a1e8c806f8a94723291",
@@ -610,13 +610,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:42b1dc9e4ee345c2224e15ee38579b7ddc4e5cf2107095a4bbca72f487e0e18d",
         "packageStatus": "partial",
-        "releaseId": "release:cbadcbb6ef3fb3fdfe9b0e9877c36ef1f74be4cfe2254a12626bf9ccc20e4668",
+        "releaseId": "release:d77946537a29bd1ef94a603c21dd0957b99cb9dd662229ef1fc22e828bfc559a",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "df581122cde17e6e27686b5a448bde23e4ad4318",
+        "sourceRevision": "9f451cf875ad1239912762f67741e8e5ba6ac0f1",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:cbadcbb6ef3fb3fdfe9b0e9877c36ef1f74be4cfe2254a12626bf9ccc20e4668",
+      "releaseId": "release:d77946537a29bd1ef94a603c21dd0957b99cb9dd662229ef1fc22e828bfc559a",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -3666,7 +3666,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "cli-for-agent",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "df581122cde17e6e27686b5a448bde23e4ad4318"
+        "resolvedCommitSha": "9f451cf875ad1239912762f67741e8e5ba6ac0f1"
       },
       "release": {
         "canonicalContentDigest": "sha256:9170ba40394c32a14da98ed946d52a26988e0e5bcc066ffeb1d8201654dc6c5e",
@@ -3679,13 +3679,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:c0c97b4e9a7e33e2fd64f49d1d3c9496fc3a72045f5e7db683c1d9cc82b2a764",
         "packageStatus": "portable",
-        "releaseId": "release:db1059812102ee91988eb722c36efe56da167e4beff5ce33facc901065bd0ac7",
+        "releaseId": "release:bb2985766ce735090b3fb820e506e4d4d8e7ef00ee13a3873efc30a4ea06a42a",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "df581122cde17e6e27686b5a448bde23e4ad4318",
+        "sourceRevision": "9f451cf875ad1239912762f67741e8e5ba6ac0f1",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:db1059812102ee91988eb722c36efe56da167e4beff5ce33facc901065bd0ac7",
+      "releaseId": "release:bb2985766ce735090b3fb820e506e4d4d8e7ef00ee13a3873efc30a4ea06a42a",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -4349,7 +4349,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "create-plugin",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "df581122cde17e6e27686b5a448bde23e4ad4318"
+        "resolvedCommitSha": "9f451cf875ad1239912762f67741e8e5ba6ac0f1"
       },
       "release": {
         "canonicalContentDigest": "sha256:0d14c7691cda946b96a977f432de9680951800ad3881c7a970e22a432299a9c7",
@@ -4370,13 +4370,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:2d0bf88e7ef5ae04e298da6deac66580fe535f1cf8d1eec9c13ba54c81dca42b",
         "packageStatus": "partial",
-        "releaseId": "release:20474cc5cab3b36146eb8371a42197e2443e64ec403367c738788a95cf594b22",
+        "releaseId": "release:42ddeee73485af1805ee160b395b3b81d3b8f44fe22f33e7226d467d138e53ff",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "df581122cde17e6e27686b5a448bde23e4ad4318",
+        "sourceRevision": "9f451cf875ad1239912762f67741e8e5ba6ac0f1",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:20474cc5cab3b36146eb8371a42197e2443e64ec403367c738788a95cf594b22",
+      "releaseId": "release:42ddeee73485af1805ee160b395b3b81d3b8f44fe22f33e7226d467d138e53ff",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -4742,7 +4742,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "cursor-team-kit",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "df581122cde17e6e27686b5a448bde23e4ad4318"
+        "resolvedCommitSha": "9f451cf875ad1239912762f67741e8e5ba6ac0f1"
       },
       "release": {
         "canonicalContentDigest": "sha256:8132d5be9365584f329567eebd0c084e80940b2f0e37e4fca60dfabc40695865",
@@ -4763,13 +4763,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:f2707f63d0aa7a20cacd3d107259f3b4a8d0b5960f2099504f67eaa854314e80",
         "packageStatus": "partial",
-        "releaseId": "release:8b7dc073de5d93c433344933f8a6d452344a40c71a95ee67738c713f5c9d7d4e",
+        "releaseId": "release:2cfe5d48bf575f321fff62d57d67d2d5d6fe64cc6859658772b523ab91a8379f",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "df581122cde17e6e27686b5a448bde23e4ad4318",
+        "sourceRevision": "9f451cf875ad1239912762f67741e8e5ba6ac0f1",
         "upstreamVersion": "1.2.0"
       },
-      "releaseId": "release:8b7dc073de5d93c433344933f8a6d452344a40c71a95ee67738c713f5c9d7d4e",
+      "releaseId": "release:2cfe5d48bf575f321fff62d57d67d2d5d6fe64cc6859658772b523ab91a8379f",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -4932,7 +4932,7 @@
         "homepage": "https://ai.google.dev/",
         "kind": "favicon",
         "path": null,
-        "url": "https://www.gstatic.com/devrel-devsite/prod/vfdb441d2e08dbd9d3e48d8cd72b242388a87bcf7626bf5fb9df50c2bdd4a70fd/googledevai/images/touchicon-180-new.png"
+        "url": "https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/googledevai/images/touchicon-180-new.png"
       },
       "keywords": [
         "agent",
@@ -9204,7 +9204,7 @@
         "homepage": "https://goo.gle/modern-web-guidance",
         "kind": "favicon",
         "path": null,
-        "url": "https://www.gstatic.com/devrel-devsite/prod/vfdb441d2e08dbd9d3e48d8cd72b242388a87bcf7626bf5fb9df50c2bdd4a70fd/chrome/images/touchicon-180.png"
+        "url": "https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/chrome/images/touchicon-180.png"
       },
       "keywords": [
         "developer-tools",
@@ -11383,7 +11383,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "pr-review-canvas",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "df581122cde17e6e27686b5a448bde23e4ad4318"
+        "resolvedCommitSha": "9f451cf875ad1239912762f67741e8e5ba6ac0f1"
       },
       "release": {
         "canonicalContentDigest": "sha256:1400f52bb9c8074fbdfbe3c91af9f931e39034fddeced37b88dea7d2942c3b38",
@@ -11396,13 +11396,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:5ce7b6aa1db06b4e8c755454c45083ded892e95e887674e97fff6879bb171799",
         "packageStatus": "portable",
-        "releaseId": "release:acff0e1ba2516388206b573c94dcd4914b459ffcf1c805cfc6af452ed1c2c8df",
+        "releaseId": "release:76722d04c8899a4e4565b492a4f2cecadc584961cc042f9b1dc6ef7737c91c3c",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "df581122cde17e6e27686b5a448bde23e4ad4318",
+        "sourceRevision": "9f451cf875ad1239912762f67741e8e5ba6ac0f1",
         "upstreamVersion": "0.1.0"
       },
-      "releaseId": "release:acff0e1ba2516388206b573c94dcd4914b459ffcf1c805cfc6af452ed1c2c8df",
+      "releaseId": "release:76722d04c8899a4e4565b492a4f2cecadc584961cc042f9b1dc6ef7737c91c3c",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -15456,7 +15456,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "thermos",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "df581122cde17e6e27686b5a448bde23e4ad4318"
+        "resolvedCommitSha": "9f451cf875ad1239912762f67741e8e5ba6ac0f1"
       },
       "release": {
         "canonicalContentDigest": "sha256:1327f77d3336ebc99941cf2dab0f8643490205f1655699ce34e88fa90f972887",
@@ -15473,13 +15473,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6374eddbf2a1dba5b94f93fc1d6894ee6b0fd15072e470b005a301d2363b68bf",
         "packageStatus": "partial",
-        "releaseId": "release:af6937aa85563f3fbcfc3d26c6dffef8e184d9f93e4834ff2c49cdd09e9a39ed",
+        "releaseId": "release:0b6c7a1682f6a9dd24cf71c7610c230a322f45b363fc98285562531a29ca6167",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "df581122cde17e6e27686b5a448bde23e4ad4318",
+        "sourceRevision": "9f451cf875ad1239912762f67741e8e5ba6ac0f1",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:af6937aa85563f3fbcfc3d26c6dffef8e184d9f93e4834ff2c49cdd09e9a39ed",
+      "releaseId": "release:0b6c7a1682f6a9dd24cf71c7610c230a322f45b363fc98285562531a29ca6167",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
