@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.23](https://github.com/adea-ai/plugins/compare/v2.0.22...v2.0.23) (2026-10-06)
+
+
+### Maintenance
+
+* **deps:** update dependency code-foundry to v1.44.11 ([#207](https://github.com/adea-ai/plugins/issues/207)) ([ecf2970](https://github.com/adea-ai/plugins/commit/ecf2970c486fb12e88d41eb948e71f4534b9dd2c))
+
 ## [2.0.22](https://github.com/adea-ai/plugins/compare/v2.0.21...v2.0.22) (2026-10-06)
 
 
