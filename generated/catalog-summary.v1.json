@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:4c79d496327544951d23ef33dd58a8152e51d5a0cf39c85416bcefd8f3fea4a9",
+  "catalogId": "catalog:8ff9769f0ef3aafe431c142664711e1dc96724b8b4de13b474687f6a84832f4b",
   "categories": [
     "business-operations",
     "communication",
@@ -12,8 +12,8 @@
     "productivity",
     "security"
   ],
-  "generatedAt": "2026-10-06T05:20:09.010Z",
-  "pluginCount": 554,
+  "generatedAt": "2026-10-06T22:26:14.933Z",
+  "pluginCount": 555,
   "productGroups": [
     "42crunch-api-security-testing",
     "activecampaign",
@@ -338,6 +338,7 @@
     "qodo-standards",
     "qt-development-skills",
     "quarkus-agent",
+    "quickbooks-online",
     "railway",
     "ralph-loop",
     "rc",
@@ -1841,6 +1842,10 @@
     {
       "pluginId": "plugin:cursor-official:pstack",
       "text": "Pstack if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence. business-operations pstack"
+    },
+    {
+      "pluginId": "plugin:cursor-official:quickbooks-online",
+      "text": "QuickBooks Online Read invoices, bills, expenses, customers, accounts, and financial reports. online other quickbooks"
     },
     {
       "pluginId": "plugin:cursor-official:ralph-loop",

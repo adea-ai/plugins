@@ -277,6 +277,7 @@
     "qodo-standards": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
     "qt-development-skills": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3562ce93625a23a8bddc57e7329652a6.webp",
     "quarkus-agent": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-31b305da0887cc92f0aed49caafb76d2.png",
+    "quickbooks-online": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-004a234e07a9467095b0666620124935.png",
     "railway": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-4de6561f7a865f6d987ea828fdfd7b8d.svg",
     "ralph-loop": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-48a816d7369b86a5e658e36c9200df57.png",
     "rc": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-d263f3c265621460040fb8d1074d8b52.png",
@@ -383,7 +384,7 @@
     "zscaler": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-fb71a91ef4937bdac04520d7e7b1852b.svg",
     "zyte-web-data": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-ec8d45e699974da7a894ec39256910bb.png"
   },
-  "catalogId": "catalog:4c79d496327544951d23ef33dd58a8152e51d5a0cf39c85416bcefd8f3fea4a9",
+  "catalogId": "catalog:8ff9769f0ef3aafe431c142664711e1dc96724b8b4de13b474687f6a84832f4b",
   "catalogIndexArtifact": "catalog-index.v1.json",
   "catalogIndexUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/catalog-index.v1.json",
   "categories": [
@@ -1262,7 +1263,7 @@
     {
       "category": "other",
       "listArtifact": "category-other.v1.json",
-      "pluginCount": 20,
+      "pluginCount": 21,
       "pluginIds": [
         "plugin:cursor-official:beehiiv",
         "plugin:cursor-official:buffer",
@@ -1277,6 +1278,7 @@
         "plugin:cursor-official:origin-apps",
         "plugin:cursor-official:plaud",
         "plugin:cursor-official:posthog-mcp",
+        "plugin:cursor-official:quickbooks-online",
         "plugin:cursor-official:robinhood",
         "plugin:cursor-official:sharepoint",
         "plugin:cursor-official:shopify-store",
@@ -1285,7 +1287,7 @@
         "plugin:cursor-official:trello",
         "plugin:cursor-official:x-money"
       ],
-      "productCount": 20,
+      "productCount": 21,
       "productKeys": [
         "beehiiv",
         "buffer",
@@ -1300,6 +1302,7 @@
         "origin-apps",
         "plaud",
         "posthog-mcp",
+        "quickbooks-online",
         "robinhood",
         "sharepoint",
         "shopify-store",
@@ -1631,14 +1634,14 @@
     }
   ],
   "counts": {
-    "plugins": 554,
-    "products": 436,
+    "plugins": 555,
+    "products": 437,
     "redundantPlugins": 118
   },
   "diagnostics": [],
-  "generatedAt": "2026-10-06T05:20:09.010Z",
+  "generatedAt": "2026-10-06T22:26:14.933Z",
   "iconCoverage": {
-    "content": 217,
+    "content": 218,
     "favicon": 165,
     "monogramOnly": 54,
     "monogramProductKeys": [
@@ -1697,7 +1700,7 @@
       "telegram",
       "terraform"
     ],
-    "total": 436
+    "total": 437
   },
   "schemaVersion": 1,
   "sourcePreference": [
