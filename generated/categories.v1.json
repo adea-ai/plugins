@@ -273,8 +273,8 @@
     "pydantic-ai": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-c7f95eb46fe6dee5988d423dfc9f87bb.png",
     "pyright-lsp": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8e7226e8053992780b928eef5ee56331.png",
     "qdrant-skills": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-42d52b9abd4b903268aa5d6b143d4b6a.ico",
-    "qodo": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-505d7841292488b3d76c2c3135253a6b.webp",
-    "qodo-standards": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-505d7841292488b3d76c2c3135253a6b.webp",
+    "qodo": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
+    "qodo-standards": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
     "qt-development-skills": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3562ce93625a23a8bddc57e7329652a6.webp",
     "quarkus-agent": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-31b305da0887cc92f0aed49caafb76d2.png",
     "quickbooks-online": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-004a234e07a9467095b0666620124935.png",
@@ -385,7 +385,7 @@
     "zscaler": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-fb71a91ef4937bdac04520d7e7b1852b.svg",
     "zyte-web-data": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-ec8d45e699974da7a894ec39256910bb.png"
   },
-  "catalogId": "catalog:2c0472642bd9bdcef234cc9e8ff7fe8bff7412b4bcfbb88bfbf618d64599e437",
+  "catalogId": "catalog:a1e5675c6a206f8427ab9354d34cc174849f10cf1af2da4d9f25d524f5d925d6",
   "catalogIndexArtifact": "catalog-index.v1.json",
   "catalogIndexUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/catalog-index.v1.json",
   "categories": [
@@ -1642,7 +1642,7 @@
     "redundantPlugins": 118
   },
   "diagnostics": [],
-  "generatedAt": "2026-10-07T12:49:33.623Z",
+  "generatedAt": "2026-10-07T22:50:48.107Z",
   "iconCoverage": {
     "content": 219,
     "favicon": 165,

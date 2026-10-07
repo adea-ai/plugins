@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:2c0472642bd9bdcef234cc9e8ff7fe8bff7412b4bcfbb88bfbf618d64599e437",
+  "catalogId": "catalog:a1e5675c6a206f8427ab9354d34cc174849f10cf1af2da4d9f25d524f5d925d6",
   "category": "data-analytics",
   "pluginCount": 49,
   "productCount": 42,
@@ -1848,7 +1848,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "data",
         "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
-        "resolvedCommitSha": "8444efcd48f7012f09797778a36a33e73d0861f4"
+        "resolvedCommitSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1"
       },
       "release": {
         "canonicalContentDigest": "sha256:8ddb591117199bcee20648dfc20631ec0c0626aeaed655a9db1f57a78489e474",
@@ -1869,13 +1869,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:0399268acc41e240ec3ddf7a4c261fcdfc87c379ece403d0761b8a3123b77954",
         "packageStatus": "partial",
-        "releaseId": "release:6007d5bf51e2b2a257cd7a0eca0d82224d84661474e67ea91bc8fbcf7342d58e",
+        "releaseId": "release:f92e0d32ad5d9cad50e6e569303b6f0128f64b79a8f8c18f3c24675fd75208e7",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "8444efcd48f7012f09797778a36a33e73d0861f4",
+        "sourceRevision": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
         "upstreamVersion": "1.1.0"
       },
-      "releaseId": "release:6007d5bf51e2b2a257cd7a0eca0d82224d84661474e67ea91bc8fbcf7342d58e",
+      "releaseId": "release:f92e0d32ad5d9cad50e6e569303b6f0128f64b79a8f8c18f3c24675fd75208e7",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -2432,7 +2432,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/firebase",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "d4226d062928f8d9505dbdeadd10217d23361052"
+        "resolvedCommitSha": "b78ac49cdc6b3d7b61c4439470e311f4291265b1"
       },
       "release": {
         "canonicalContentDigest": "sha256:60af04352ae238ec8d87b22936c237ba33fd4a44e908d6fdd51cf81034224fd9",
@@ -2445,12 +2445,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d3981670b791b2c9c58847c292c7204bedc35df79e3876c10ec6f681d650c0d9",
         "packageStatus": "portable",
-        "releaseId": "release:f2acfb6e1d87a618175bb6777333b8e874a0f7af0df419119b336d43ae6e1f5c",
+        "releaseId": "release:af3018f1129a8d155fb617cd0182ef35446c90596601a9042d0000961176160a",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "d4226d062928f8d9505dbdeadd10217d23361052"
+        "sourceRevision": "b78ac49cdc6b3d7b61c4439470e311f4291265b1"
       },
-      "releaseId": "release:f2acfb6e1d87a618175bb6777333b8e874a0f7af0df419119b336d43ae6e1f5c",
+      "releaseId": "release:af3018f1129a8d155fb617cd0182ef35446c90596601a9042d0000961176160a",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
