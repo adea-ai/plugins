@@ -273,8 +273,8 @@
     "pydantic-ai": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-c7f95eb46fe6dee5988d423dfc9f87bb.png",
     "pyright-lsp": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8e7226e8053992780b928eef5ee56331.png",
     "qdrant-skills": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-42d52b9abd4b903268aa5d6b143d4b6a.ico",
-    "qodo": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
-    "qodo-standards": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
+    "qodo": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-505d7841292488b3d76c2c3135253a6b.webp",
+    "qodo-standards": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-505d7841292488b3d76c2c3135253a6b.webp",
     "qt-development-skills": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3562ce93625a23a8bddc57e7329652a6.webp",
     "quarkus-agent": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-31b305da0887cc92f0aed49caafb76d2.png",
     "quickbooks-online": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-004a234e07a9467095b0666620124935.png",
@@ -367,6 +367,7 @@
     "wingspan": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-49671eb764e3156854fc65a3c110c4ed.png",
     "wix": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-cf9014d1762529a0fb53336e5d79c80b.svg",
     "workable": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-dde77d8adc5e25871e75ea196b4a57cc.png",
+    "workday": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a82666dad7b8a4f4b9f2f2c7bf5df5ab.png",
     "workos": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-d4fc17cf0d25ad88fb1e0ac80432f1e0.png",
     "wrike": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-d7513b1e33615d6d44d25e950ce79529.png",
     "x-ads": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-86e5270f994539a9919863c8877e2b4b.png",
@@ -384,7 +385,7 @@
     "zscaler": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-fb71a91ef4937bdac04520d7e7b1852b.svg",
     "zyte-web-data": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-ec8d45e699974da7a894ec39256910bb.png"
   },
-  "catalogId": "catalog:8ff9769f0ef3aafe431c142664711e1dc96724b8b4de13b474687f6a84832f4b",
+  "catalogId": "catalog:2c0472642bd9bdcef234cc9e8ff7fe8bff7412b4bcfbb88bfbf618d64599e437",
   "catalogIndexArtifact": "catalog-index.v1.json",
   "catalogIndexUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/catalog-index.v1.json",
   "categories": [
@@ -1263,7 +1264,7 @@
     {
       "category": "other",
       "listArtifact": "category-other.v1.json",
-      "pluginCount": 21,
+      "pluginCount": 22,
       "pluginIds": [
         "plugin:cursor-official:beehiiv",
         "plugin:cursor-official:buffer",
@@ -1285,9 +1286,10 @@
         "plugin:cursor-official:statsig",
         "plugin:cursor-official:tinyfish",
         "plugin:cursor-official:trello",
+        "plugin:cursor-official:workday",
         "plugin:cursor-official:x-money"
       ],
-      "productCount": 21,
+      "productCount": 22,
       "productKeys": [
         "beehiiv",
         "buffer",
@@ -1309,6 +1311,7 @@
         "statsig",
         "tinyfish",
         "trello",
+        "workday",
         "x-money"
       ],
       "shelfArtifact": "shelf-other.v1.json",
@@ -1634,14 +1637,14 @@
     }
   ],
   "counts": {
-    "plugins": 555,
-    "products": 437,
+    "plugins": 556,
+    "products": 438,
     "redundantPlugins": 118
   },
   "diagnostics": [],
-  "generatedAt": "2026-10-06T22:26:14.933Z",
+  "generatedAt": "2026-10-07T12:49:33.623Z",
   "iconCoverage": {
-    "content": 218,
+    "content": 219,
     "favicon": 165,
     "monogramOnly": 54,
     "monogramProductKeys": [
@@ -1700,7 +1703,7 @@
       "telegram",
       "terraform"
     ],
-    "total": 437
+    "total": 438
   },
   "schemaVersion": 1,
   "sourcePreference": [

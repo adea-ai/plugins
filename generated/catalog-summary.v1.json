@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:8ff9769f0ef3aafe431c142664711e1dc96724b8b4de13b474687f6a84832f4b",
+  "catalogId": "catalog:2c0472642bd9bdcef234cc9e8ff7fe8bff7412b4bcfbb88bfbf618d64599e437",
   "categories": [
     "business-operations",
     "communication",
@@ -12,8 +12,8 @@
     "productivity",
     "security"
   ],
-  "generatedAt": "2026-10-06T22:26:14.933Z",
-  "pluginCount": 555,
+  "generatedAt": "2026-10-07T12:49:33.623Z",
+  "pluginCount": 556,
   "productGroups": [
     "42crunch-api-security-testing",
     "activecampaign",
@@ -436,6 +436,7 @@
     "wingspan",
     "wix",
     "workable",
+    "workday",
     "workos",
     "wrike",
     "x-ads",
@@ -1930,6 +1931,10 @@
     {
       "pluginId": "plugin:cursor-official:workable",
       "text": "Workable Search candidates, move pipelines, and manage HR records. business-operations workable"
+    },
+    {
+      "pluginId": "plugin:cursor-official:workday",
+      "text": "Workday Look up workers, organizations, time off, payroll, and recruiting data in Workday. other workday"
     },
     {
       "pluginId": "plugin:cursor-official:wrike",
