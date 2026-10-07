@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:2c0472642bd9bdcef234cc9e8ff7fe8bff7412b4bcfbb88bfbf618d64599e437",
+  "catalogId": "catalog:a1e5675c6a206f8427ab9354d34cc174849f10cf1af2da4d9f25d524f5d925d6",
   "category": "education-research",
   "products": [
     {
@@ -492,7 +492,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "bio-research",
         "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
-        "resolvedCommitSha": "8444efcd48f7012f09797778a36a33e73d0861f4"
+        "resolvedCommitSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1"
       },
       "release": {
         "canonicalContentDigest": "sha256:03bf352372fd82634db1e7a87afa99236cb69b88eb955454966772d33a4367b3",
@@ -513,13 +513,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:cae8bfb6acf774f67022de9843fcffab102eee8149350afaee539b0da7013ac9",
         "packageStatus": "partial",
-        "releaseId": "release:ef885edb42516722512f0e67c426f104a1eaee0cec075fa0d8901ca6186d3b09",
+        "releaseId": "release:5c9263505f29198e0d305dfdf6969c870670c67bbb622bdc2328372f2109d279",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "8444efcd48f7012f09797778a36a33e73d0861f4",
+        "sourceRevision": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
         "upstreamVersion": "1.2.0"
       },
-      "releaseId": "release:ef885edb42516722512f0e67c426f104a1eaee0cec075fa0d8901ca6186d3b09",
+      "releaseId": "release:5c9263505f29198e0d305dfdf6969c870670c67bbb622bdc2328372f2109d279",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
