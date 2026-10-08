@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:a1e5675c6a206f8427ab9354d34cc174849f10cf1af2da4d9f25d524f5d925d6",
+  "catalogId": "catalog:6a6722c9a5ba757173ab396bf4c1f0bf6912f25a1c3cdeea63ae047c9ccd9121",
   "categories": [
     "business-operations",
     "communication",
@@ -12,8 +12,8 @@
     "productivity",
     "security"
   ],
-  "generatedAt": "2026-10-07T22:50:48.107Z",
-  "pluginCount": 556,
+  "generatedAt": "2026-10-08T12:58:12.352Z",
+  "pluginCount": 557,
   "productGroups": [
     "42crunch-api-security-testing",
     "activecampaign",
@@ -358,6 +358,7 @@
     "sagemaker-ai",
     "sales",
     "salesforce",
+    "salesforce-headless-360",
     "sanity",
     "sanity-plugin",
     "sap-cds-mcp",
@@ -1863,6 +1864,10 @@
     {
       "pluginId": "plugin:cursor-official:salesforce",
       "text": "Salesforce Query, create, and update records in your org. business-operations salesforce"
+    },
+    {
+      "pluginId": "plugin:cursor-official:salesforce-headless-360",
+      "text": "Salesforce (Headless 360, Beta) Manage records, users, and org setup across Salesforce. 360 headless other salesforce"
     },
     {
       "pluginId": "plugin:cursor-official:semrush",

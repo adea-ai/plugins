@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:a1e5675c6a206f8427ab9354d34cc174849f10cf1af2da4d9f25d524f5d925d6",
+  "catalogId": "catalog:6a6722c9a5ba757173ab396bf4c1f0bf6912f25a1c3cdeea63ae047c9ccd9121",
   "plugins": [
     {
       "harnessCompatibility": {
@@ -24860,6 +24860,60 @@
         }
       },
       "pluginId": "plugin:cursor-official:salesforce"
+    },
+    {
+      "harnessCompatibility": {
+        "claude-code": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "codex": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "cursor": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "generic-skill-mcp": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "hermes": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "opencode": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        },
+        "pi": {
+          "reasons": [
+            "Agent Plugins core is parsed; negotiate the actual runtime capability profile in a v2 installation plan. Policy approval is separate."
+          ],
+          "responsibleCapabilities": [],
+          "status": "partially-supported"
+        }
+      },
+      "pluginId": "plugin:cursor-official:salesforce-headless-360"
     },
     {
       "harnessCompatibility": {
