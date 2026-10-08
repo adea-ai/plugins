@@ -324,7 +324,7 @@
     "sonarqube": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f229ce40967152b9f6ec6bab2b4989cf.svg",
     "sonatype-guide": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-06f40b59a2ac5955ad1f9363a4ac36b2.svg",
     "sourcegraph": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-2d336b83e95c31ac9e726c97eed4cb65.svg",
-    "sp-global": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-4c4c3f44acf96a54267911f088006307.webp",
+    "sp-global": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-1e59858f236ac0b079e058ba96b18668.png",
     "spanner": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
     "spotify-ads-api": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-d2534e9fb333a6e277f1edf9b9843564.ico",
     "stackhawk-api": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-4bf4e1993874a9b467d2719b5d836b21.ico",
@@ -386,7 +386,7 @@
     "zscaler": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-fb71a91ef4937bdac04520d7e7b1852b.svg",
     "zyte-web-data": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-ec8d45e699974da7a894ec39256910bb.png"
   },
-  "catalogId": "catalog:6a6722c9a5ba757173ab396bf4c1f0bf6912f25a1c3cdeea63ae047c9ccd9121",
+  "catalogId": "catalog:d5218b2366986411a07e0f85e5ac92bc698d417264ad4cba1546cb989fe83096",
   "catalogIndexArtifact": "catalog-index.v1.json",
   "catalogIndexUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/catalog-index.v1.json",
   "categories": [
@@ -1645,7 +1645,7 @@
     "redundantPlugins": 118
   },
   "diagnostics": [],
-  "generatedAt": "2026-10-08T12:58:12.352Z",
+  "generatedAt": "2026-10-08T23:02:33.996Z",
   "iconCoverage": {
     "content": 220,
     "favicon": 165,

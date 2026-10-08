@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:6a6722c9a5ba757173ab396bf4c1f0bf6912f25a1c3cdeea63ae047c9ccd9121",
+  "catalogId": "catalog:d5218b2366986411a07e0f85e5ac92bc698d417264ad4cba1546cb989fe83096",
   "category": "education-research",
   "pluginCount": 14,
   "productCount": 13,
@@ -684,7 +684,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/explanatory-output-style",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "b78ac49cdc6b3d7b61c4439470e311f4291265b1"
+        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
       },
       "release": {
         "canonicalContentDigest": "sha256:d291f74406dc83bdd56a4bf9870d266f26f2f4969a9ad56c1f71086dc64847ce",
@@ -701,13 +701,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:282ae2e058e6b3a55677b77b5d5149c1ea184c6617c5dacf980aa5a86987a63a",
         "packageStatus": "partial",
-        "releaseId": "release:5431c9c13c41a2c047049ae30f252d41276021843074694eff3a838be799c0dd",
+        "releaseId": "release:0b339a33fdcf63a596d60c2f8b43d7f3bde898803e877b7af24c438e01717c48",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "b78ac49cdc6b3d7b61c4439470e311f4291265b1",
+        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:5431c9c13c41a2c047049ae30f252d41276021843074694eff3a838be799c0dd",
+      "releaseId": "release:0b339a33fdcf63a596d60c2f8b43d7f3bde898803e877b7af24c438e01717c48",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -769,7 +769,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/learning-output-style",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "b78ac49cdc6b3d7b61c4439470e311f4291265b1"
+        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
       },
       "release": {
         "canonicalContentDigest": "sha256:0ff43d817c13f8154730f4b6f2610f70b2aacf976fd43b8977b59d4991154564",
@@ -786,13 +786,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:2c650ab691fdc726a01b8680df1c06f2128259fcf2467032980c7a96e53a1ece",
         "packageStatus": "partial",
-        "releaseId": "release:f5eb7fff13dfbcd13e7c367c0dd2378a3096ea3f5be2899951a1d5237c52bc1a",
+        "releaseId": "release:8d22810d5b7c2b265a454a04505647aab0f0463de924aa1ff4f77edecc2176d6",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "b78ac49cdc6b3d7b61c4439470e311f4291265b1",
+        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:f5eb7fff13dfbcd13e7c367c0dd2378a3096ea3f5be2899951a1d5237c52bc1a",
+      "releaseId": "release:8d22810d5b7c2b265a454a04505647aab0f0463de924aa1ff4f77edecc2176d6",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -952,7 +952,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/math-olympiad",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "b78ac49cdc6b3d7b61c4439470e311f4291265b1"
+        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
       },
       "release": {
         "canonicalContentDigest": "sha256:3b0f4966a6bb13f763403cf53a96389243ad5c757fb6e247ff102f1c93e461f9",
@@ -969,12 +969,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:1fab05db58e048ca498253a22331eeb8aa6e6b2fe338e451a1a4dd25f14f5cc0",
         "packageStatus": "partial",
-        "releaseId": "release:f6d4876fe2a211c7b6d623c5ba4043556f00d2ec5718c6c1b90f1939ce896c45",
+        "releaseId": "release:99ffd8b1e7de6734501a441eabea1dced0c3954ff55f5f668a7ec63e19c29a36",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "b78ac49cdc6b3d7b61c4439470e311f4291265b1"
+        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
       },
-      "releaseId": "release:f6d4876fe2a211c7b6d623c5ba4043556f00d2ec5718c6c1b90f1939ce896c45",
+      "releaseId": "release:99ffd8b1e7de6734501a441eabea1dced0c3954ff55f5f668a7ec63e19c29a36",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -1044,7 +1044,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/math-proof",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "b78ac49cdc6b3d7b61c4439470e311f4291265b1"
+        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
       },
       "release": {
         "canonicalContentDigest": "sha256:c1db42c7f93518427c3f8ab71d182ec83a361c8998f8484b93433cef79e6ca1d",
@@ -1065,12 +1065,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:18faa90b56a7be7e0c13c0ccc8a1cf96678b1db553be85fc111f7e3595b3d311",
         "packageStatus": "partial",
-        "releaseId": "release:1882acb1397f62b27a808b1a323d644e1042433727c725346ed6b2019170a969",
+        "releaseId": "release:b197e9e6022a4f1ad695554645b9ae3efe73633e33bcc1d573d6b629aaab230d",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "b78ac49cdc6b3d7b61c4439470e311f4291265b1"
+        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
       },
-      "releaseId": "release:1882acb1397f62b27a808b1a323d644e1042433727c725346ed6b2019170a969",
+      "releaseId": "release:b197e9e6022a4f1ad695554645b9ae3efe73633e33bcc1d573d6b629aaab230d",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
