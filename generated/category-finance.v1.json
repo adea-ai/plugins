@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:a522c904b4ab59ad426705698f2c4f1a77f008564ab39b36aede3fba4fe8f6a2",
+  "catalogId": "catalog:6a6722c9a5ba757173ab396bf4c1f0bf6912f25a1c3cdeea63ae047c9ccd9121",
   "category": "finance",
   "pluginCount": 27,
   "productCount": 22,
@@ -1629,7 +1629,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/public-equity-investing",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+        "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
       },
       "release": {
         "canonicalContentDigest": "sha256:bad7f52213e9c30a393be9cb1e1df3545296d537bf17db5f7c0549761c638977",
@@ -1650,15 +1650,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:cf4113711ce3fb40f10006e5ce7943042cc326d178cec9855ce322defd7a9daa",
         "packageStatus": "portable",
-        "releaseId": "release:c34ab24607f1036d8dff31c5ebeabb582080f010de404d9e6e83abde0b156f52",
+        "releaseId": "release:b5c2ba5a8d654e41d0bb0c15c954c6ea2ac6e0d6a557ab6bed704cb00370b669",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
+        "sourceRevision": "0722921d5542fc593105c27bd52630babd8b8c2a",
         "upstreamVersion": "0.1.31"
       },
-      "releaseId": "release:c34ab24607f1036d8dff31c5ebeabb582080f010de404d9e6e83abde0b156f52",
+      "releaseId": "release:b5c2ba5a8d654e41d0bb0c15c954c6ea2ac6e0d6a557ab6bed704cb00370b669",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",

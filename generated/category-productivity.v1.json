@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:a522c904b4ab59ad426705698f2c4f1a77f008564ab39b36aede3fba4fe8f6a2",
+  "catalogId": "catalog:6a6722c9a5ba757173ab396bf4c1f0bf6912f25a1c3cdeea63ae047c9ccd9121",
   "category": "productivity",
   "pluginCount": 132,
   "productCount": 98,
@@ -1345,7 +1345,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/atlassian-rovo",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+        "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
       },
       "release": {
         "canonicalContentDigest": "sha256:7969cef5b1c3e99626bcd294bd2e561c17b063f21d4214f0994c8f6dfa49f905",
@@ -1362,15 +1362,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:8bb08e171864ea6eaa51fe817a8c6968a5371d2d53574b459dc77a3c7ce0cc48",
         "packageStatus": "partial",
-        "releaseId": "release:3c8fbc99d7c1615d42f82de820e3268414f990c596ab81c50d9ad90e771b5b96",
+        "releaseId": "release:b5623107ba7c3847914444373d94754a61f46f2b651f91afa1a2c19da4815dad",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
+        "sourceRevision": "0722921d5542fc593105c27bd52630babd8b8c2a",
         "upstreamVersion": "1.0.6"
       },
-      "releaseId": "release:3c8fbc99d7c1615d42f82de820e3268414f990c596ab81c50d9ad90e771b5b96",
+      "releaseId": "release:b5623107ba7c3847914444373d94754a61f46f2b651f91afa1a2c19da4815dad",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -2749,7 +2749,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/clickup",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+        "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
       },
       "release": {
         "canonicalContentDigest": "sha256:5c659a43b73d10f360d3f06b7608c573cc07b22f9abbea31d04fc55646b19e96",
@@ -2762,15 +2762,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:1a33de64d371ed2d91ed0ce5162052d2cf0f31abbce4d24f51e3a5aae00fa394",
         "packageStatus": "portable",
-        "releaseId": "release:e98dee4de430e87ca0b13a7acde445a624185b607514125d310c9bdbff753c9a",
+        "releaseId": "release:7a8fade0b1e7de4c04c64b4c3c26d33f3b5fea70ab5b6bd24d7862b8274dbc40",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
+        "sourceRevision": "0722921d5542fc593105c27bd52630babd8b8c2a",
         "upstreamVersion": "1.0.3"
       },
-      "releaseId": "release:e98dee4de430e87ca0b13a7acde445a624185b607514125d310c9bdbff753c9a",
+      "releaseId": "release:7a8fade0b1e7de4c04c64b4c3c26d33f3b5fea70ab5b6bd24d7862b8274dbc40",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -4383,7 +4383,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/granola",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+        "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
       },
       "release": {
         "canonicalContentDigest": "sha256:cf22e67eaec298fc6c3c32074c3499853c07ddd995e3dd73371cc90cf9f809ca",
@@ -4396,15 +4396,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:786bba21752cf6082f330530ca423e74dd787e1ebf7886ca001f2198df268e75",
         "packageStatus": "portable",
-        "releaseId": "release:3d6d72fbc1902b896951cbe720e31221409be285129ac1b479125a2eca891b5f",
+        "releaseId": "release:8a32f00a9919cc76b0bb6e6ed3929a2a38ebea488c01492aadb175a9e30ec085",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
+        "sourceRevision": "0722921d5542fc593105c27bd52630babd8b8c2a",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:3d6d72fbc1902b896951cbe720e31221409be285129ac1b479125a2eca891b5f",
+      "releaseId": "release:8a32f00a9919cc76b0bb6e6ed3929a2a38ebea488c01492aadb175a9e30ec085",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",

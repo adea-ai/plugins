@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:a522c904b4ab59ad426705698f2c4f1a77f008564ab39b36aede3fba4fe8f6a2",
+  "catalogId": "catalog:6a6722c9a5ba757173ab396bf4c1f0bf6912f25a1c3cdeea63ae047c9ccd9121",
   "category": "creativity",
   "products": [
     {
@@ -51,7 +51,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/canva",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+        "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
       },
       "release": {
         "canonicalContentDigest": "sha256:6c969b5644a3a16a802ca2ff480da292692f6fc2fbdede8a9977914be96836c4",
@@ -68,15 +68,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:654ee7e72515a57530703ed53371c1bc2cc0b77083b349d816173d0add81de89",
         "packageStatus": "portable",
-        "releaseId": "release:d721f59798128a7564a35d7f10a36325d04e53df39b627cd7e639abfeb7d9bb3",
+        "releaseId": "release:0d4fbabee7884e0a780b53efb3a1aaa0793f13ce83e2397bfb5d2ec8b014284c",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
+        "sourceRevision": "0722921d5542fc593105c27bd52630babd8b8c2a",
         "upstreamVersion": "14.0.0"
       },
-      "releaseId": "release:d721f59798128a7564a35d7f10a36325d04e53df39b627cd7e639abfeb7d9bb3",
+      "releaseId": "release:0d4fbabee7884e0a780b53efb3a1aaa0793f13ce83e2397bfb5d2ec8b014284c",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -497,7 +497,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/adobe",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+        "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
       },
       "release": {
         "canonicalContentDigest": "sha256:71b84f21a649f2098e626096fefe258747244a672895a73c0412924232525d06",
@@ -514,15 +514,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:b7408cefecb33b86f9bf5457ffbb5f2b463ff27cb7d15bbbaefd197de81abf9c",
         "packageStatus": "partial",
-        "releaseId": "release:2bee683e99f6de6af0fced0dda68d19608d3840959a351455e99e0d55ed43b12",
+        "releaseId": "release:a24532dc7267e164cb9f26edd586d102ed73a29fb425a5ad35b3de27acaef391",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
+        "sourceRevision": "0722921d5542fc593105c27bd52630babd8b8c2a",
         "upstreamVersion": "8.0.0"
       },
-      "releaseId": "release:2bee683e99f6de6af0fced0dda68d19608d3840959a351455e99e0d55ed43b12",
+      "releaseId": "release:a24532dc7267e164cb9f26edd586d102ed73a29fb425a5ad35b3de27acaef391",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",

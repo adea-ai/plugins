@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:a522c904b4ab59ad426705698f2c4f1a77f008564ab39b36aede3fba4fe8f6a2",
+  "catalogId": "catalog:6a6722c9a5ba757173ab396bf4c1f0bf6912f25a1c3cdeea63ae047c9ccd9121",
   "category": "education-research",
   "products": [
     {
@@ -317,7 +317,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/zotero",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+        "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
       },
       "release": {
         "canonicalContentDigest": "sha256:2b4671f0a0ec3d39f4a38329cbffd3ee2cf0f4ca122ee581e108d0d38b436f2d",
@@ -338,15 +338,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:4f86bc40059445acaec7f066d7b1f92eafc0930eb4fb54e8ddfb7fce67154139",
         "packageStatus": "partial",
-        "releaseId": "release:6e863abe71092351501350cab837f56f42b01ec207e548f7f310a92ffb255c77",
+        "releaseId": "release:8eadcb268d2e121b1e01331eca5cc6d3c25a5021cdc1d9030dba75d416cb585d",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
+        "sourceRevision": "0722921d5542fc593105c27bd52630babd8b8c2a",
         "upstreamVersion": "0.1.2"
       },
-      "releaseId": "release:6e863abe71092351501350cab837f56f42b01ec207e548f7f310a92ffb255c77",
+      "releaseId": "release:8eadcb268d2e121b1e01331eca5cc6d3c25a5021cdc1d9030dba75d416cb585d",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -412,7 +412,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/consensus",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+        "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
       },
       "release": {
         "canonicalContentDigest": "sha256:baa712ea19b03b3d0024a0c3db869a1c0f17d28cddc1b0c1110b0f26b8276683",
@@ -425,15 +425,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:1d3081164e741eab7c232b0e98b4209ba005206283ace0fea1d4bc16cc2e4dae",
         "packageStatus": "portable",
-        "releaseId": "release:973a10ad71866a62057cb1be0152beaa3c69e040a2242e6beae8f4b541498075",
+        "releaseId": "release:4785b86de03e60f46c84a1ee45baba95eac9c00f519bdb3f7a4fcc9d3d563053",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
+        "sourceRevision": "0722921d5542fc593105c27bd52630babd8b8c2a",
         "upstreamVersion": "4.0.0"
       },
-      "releaseId": "release:973a10ad71866a62057cb1be0152beaa3c69e040a2242e6beae8f4b541498075",
+      "releaseId": "release:4785b86de03e60f46c84a1ee45baba95eac9c00f519bdb3f7a4fcc9d3d563053",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",

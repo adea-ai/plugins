@@ -1,5 +1,5 @@
 {
-  "lockId": "lock:13982f059b01b51404c48d132497d8677fb4d9816e88c9a47bd623dd3e099d50",
+  "lockId": "lock:927e33a07e40435e7eca571ad7f6cd642cbe07da55492010ca8c2843839d6ba2",
   "schemaVersion": 1,
   "sources": [
     {
@@ -1900,7 +1900,7 @@
       ],
       "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
       "resolvedCommitSha": "b78ac49cdc6b3d7b61c4439470e311f4291265b1",
-      "retrievedAt": "2026-10-08T05:00:05.455Z",
+      "retrievedAt": "2026-10-08T12:58:12.016Z",
       "sourceId": "claude-official",
       "sourceManifestDigest": "sha256:5a18019a6c3b33715e05586cba3c42f0b1c32521e1a8f84fbb313708a1bdf5ce",
       "synchronizationStatus": "synchronized"
@@ -2513,7 +2513,7 @@
       ],
       "repositoryUrl": "https://github.com/cursor/plugins",
       "resolvedCommitSha": "ccb5507cec1546dc88135c1139c811e6c59115ba",
-      "retrievedAt": "2026-10-08T05:00:05.271Z",
+      "retrievedAt": "2026-10-08T12:58:11.992Z",
       "sourceId": "cursor-official",
       "sourceManifestDigest": "sha256:b0b767869a0e0b013a1fcd604eb5945c4fbee7052f011db0a5aceb0573ca1ab2",
       "synchronizationStatus": "synchronized"
@@ -3264,7 +3264,7 @@
       ],
       "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
       "resolvedCommitSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
-      "retrievedAt": "2026-10-08T05:00:05.017Z",
+      "retrievedAt": "2026-10-08T12:58:12.352Z",
       "sourceId": "knowledge-work-official",
       "sourceManifestDigest": "sha256:9d2bef141faa3b33953a867ee519ce67956b5b97d71d2fc198aedc73690c6036",
       "synchronizationStatus": "synchronized"
@@ -3278,103 +3278,103 @@
           "pluginName": "adobe",
           "pluginSubdirectory": "plugins/adobe",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "airtable",
           "pluginSubdirectory": "plugins/airtable",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "atlassian-rovo",
           "pluginSubdirectory": "plugins/atlassian-rovo",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "boltz-api-cli",
           "pluginSubdirectory": "plugins/boltz-api-cli",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "build-ios-apps",
           "pluginSubdirectory": "plugins/build-ios-apps",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "build-macos-apps",
           "pluginSubdirectory": "plugins/build-macos-apps",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "build-web-apps",
           "pluginSubdirectory": "plugins/build-web-apps",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "build-web-data-visualization",
           "pluginSubdirectory": "plugins/build-web-data-visualization",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "canva",
           "pluginSubdirectory": "plugins/canva",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "chatcut",
           "pluginSubdirectory": "plugins/chatcut",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "circleci",
           "pluginSubdirectory": "plugins/circleci",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "clickup",
           "pluginSubdirectory": "plugins/clickup",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "cloudflare",
           "pluginSubdirectory": "plugins/cloudflare",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "coderabbit",
           "pluginSubdirectory": "plugins/coderabbit",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "codex-security",
           "pluginSubdirectory": "plugins/codex-security",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "consensus",
           "pluginSubdirectory": "plugins/consensus",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "creative-production",
           "pluginSubdirectory": "plugins/creative-production",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "crowdstrike-falcon-foundry",
@@ -3392,181 +3392,181 @@
           "pluginName": "data-analytics",
           "pluginSubdirectory": "plugins/data-analytics",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "datadog",
           "pluginSubdirectory": "plugins/datadog",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "dropbox",
           "pluginSubdirectory": "plugins/dropbox",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "expo",
           "pluginSubdirectory": "plugins/expo",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "figma",
           "pluginSubdirectory": "plugins/figma",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "game-studio",
           "pluginSubdirectory": "plugins/game-studio",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "github",
           "pluginSubdirectory": "plugins/github",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "gmail",
           "pluginSubdirectory": "plugins/gmail",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "google-calendar",
           "pluginSubdirectory": "plugins/google-calendar",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "google-drive",
           "pluginSubdirectory": "plugins/google-drive",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "granola",
           "pluginSubdirectory": "plugins/granola",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "higgsfield",
           "pluginSubdirectory": "plugins/higgsfield",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "hyperframes",
           "pluginSubdirectory": "plugins/hyperframes",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "life-science-research",
           "pluginSubdirectory": "plugins/life-science-research",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "linear",
           "pluginSubdirectory": "plugins/linear",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "lovable",
           "pluginSubdirectory": "plugins/lovable",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "magicpath",
           "pluginSubdirectory": "plugins/magicpath",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "mixpanel-headless",
           "pluginSubdirectory": "plugins/mixpanel-headless",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "monday-com",
           "pluginSubdirectory": "plugins/monday-com",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "ngs-analysis",
           "pluginSubdirectory": "plugins/ngs-analysis",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "notion",
           "pluginSubdirectory": "plugins/notion",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "nvidia",
           "pluginSubdirectory": "plugins/nvidia",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "openai-ads-conversions",
           "pluginSubdirectory": "plugins/openai-ads-conversions",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "openai-developers",
           "pluginSubdirectory": "plugins/openai-developers",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "outlook-calendar",
           "pluginSubdirectory": "plugins/outlook-calendar",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "outlook-email",
           "pluginSubdirectory": "plugins/outlook-email",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "plugin-eval",
           "pluginSubdirectory": "plugins/plugin-eval",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "posthog",
           "pluginSubdirectory": "plugins/posthog",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "product-design",
           "pluginSubdirectory": "plugins/product-design",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "public-equity-investing",
           "pluginSubdirectory": "plugins/public-equity-investing",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "qodo",
@@ -3578,96 +3578,96 @@
           "pluginName": "remotion",
           "pluginSubdirectory": "plugins/remotion",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "sentry",
           "pluginSubdirectory": "plugins/sentry",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "sharepoint",
           "pluginSubdirectory": "plugins/sharepoint",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "shopify",
           "pluginSubdirectory": "plugins/shopify",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "slack",
           "pluginSubdirectory": "plugins/slack",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "stripe",
           "pluginSubdirectory": "plugins/stripe",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "supabase",
           "pluginSubdirectory": "plugins/supabase",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "superpowers",
           "pluginSubdirectory": "plugins/superpowers",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "teams",
           "pluginSubdirectory": "plugins/teams",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "temporal",
           "pluginSubdirectory": "plugins/temporal",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "test-android-apps",
           "pluginSubdirectory": "plugins/test-android-apps",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "twilio-developer-kit",
           "pluginSubdirectory": "plugins/twilio-developer-kit",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "vercel",
           "pluginSubdirectory": "plugins/vercel",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "zoom",
           "pluginSubdirectory": "plugins/zoom",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         },
         {
           "pluginName": "zotero",
           "pluginSubdirectory": "plugins/zotero",
           "repositoryUrl": "https://github.com/openai/plugins",
-          "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+          "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
         }
       ],
       "repositoryUrl": "https://github.com/openai/plugins",
-      "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
-      "retrievedAt": "2026-10-08T05:00:05.019Z",
+      "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a",
+      "retrievedAt": "2026-10-08T12:58:12.034Z",
       "sourceId": "openai-official",
       "sourceManifestDigest": "sha256:7e01ca4b01fe061211ee6a0614d0a15f2eb5e02e4e70995c88305b17145282e1",
       "synchronizationStatus": "synchronized"
