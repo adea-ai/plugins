@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:a1e5675c6a206f8427ab9354d34cc174849f10cf1af2da4d9f25d524f5d925d6",
+  "catalogId": "catalog:a522c904b4ab59ad426705698f2c4f1a77f008564ab39b36aede3fba4fe8f6a2",
   "category": "education-research",
   "pluginCount": 14,
   "productCount": 13,
@@ -52,7 +52,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "teaching",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "d0ef80d86795816da932a153458c5dbe192d294e"
+        "resolvedCommitSha": "ccb5507cec1546dc88135c1139c811e6c59115ba"
       },
       "release": {
         "canonicalContentDigest": "sha256:80446f7306ec88594f42a8bb09bbade4601754c5db8b082fbaaf0e4b319770ab",
@@ -65,13 +65,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:c8564cd60fb82a2b7f64985d2bf350746b671dc7566c0865d928ced9eadd6f1f",
         "packageStatus": "portable",
-        "releaseId": "release:cca07c9b8715e7af7d194a77018d07f6382c12baec41793de2be04778f4e623f",
+        "releaseId": "release:0b22f9f50280a4f6046f6ed267b2b666bc1adef2356dfff7bc46b15139a0f71b",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "d0ef80d86795816da932a153458c5dbe192d294e",
+        "sourceRevision": "ccb5507cec1546dc88135c1139c811e6c59115ba",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:cca07c9b8715e7af7d194a77018d07f6382c12baec41793de2be04778f4e623f",
+      "releaseId": "release:0b22f9f50280a4f6046f6ed267b2b666bc1adef2356dfff7bc46b15139a0f71b",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -138,7 +138,7 @@
         "manifestPath": ".cursor-plugin/marketplace.json",
         "pluginSubdirectory": "continual-learning",
         "repositoryUrl": "https://github.com/cursor/plugins",
-        "resolvedCommitSha": "d0ef80d86795816da932a153458c5dbe192d294e"
+        "resolvedCommitSha": "ccb5507cec1546dc88135c1139c811e6c59115ba"
       },
       "release": {
         "canonicalContentDigest": "sha256:9388a810088ad9c2f4aff68c27c0f40c9addeac3f12b9d20c367ad530f764dfd",
@@ -159,13 +159,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6504719a147b348d83a1244767f28dc4f78fd31d90064124fd9d327b3d6dd3e4",
         "packageStatus": "partial",
-        "releaseId": "release:7679e43b7afb3dce797fcc0f5f0c55b9f41d729aa985b60daabff95c29e7ee21",
+        "releaseId": "release:3af553a6e16041e014fc097ab75c5c1d09cbf02a6e00c622a6005f0e45e9600b",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "d0ef80d86795816da932a153458c5dbe192d294e",
+        "sourceRevision": "ccb5507cec1546dc88135c1139c811e6c59115ba",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:7679e43b7afb3dce797fcc0f5f0c55b9f41d729aa985b60daabff95c29e7ee21",
+      "releaseId": "release:3af553a6e16041e014fc097ab75c5c1d09cbf02a6e00c622a6005f0e45e9600b",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
