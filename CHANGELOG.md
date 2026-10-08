@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.29](https://github.com/adea-ai/plugins/compare/v2.0.28...v2.0.29) (2026-10-08)
+
+
+### Maintenance
+
+* **code-foundry:** upgrade runtime to v1.47.1 ([#224](https://github.com/adea-ai/plugins/issues/224)) ([eec915a](https://github.com/adea-ai/plugins/commit/eec915a332dfb21ee41902edbac6472a7627ff7e))
+
 ## [2.0.28](https://github.com/adea-ai/plugins/compare/v2.0.27...v2.0.28) (2026-10-08)
 
 
