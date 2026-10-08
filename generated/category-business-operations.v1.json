@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:a522c904b4ab59ad426705698f2c4f1a77f008564ab39b36aede3fba4fe8f6a2",
+  "catalogId": "catalog:6a6722c9a5ba757173ab396bf4c1f0bf6912f25a1c3cdeea63ae047c9ccd9121",
   "category": "business-operations",
   "pluginCount": 56,
   "productCount": 48,
@@ -3872,7 +3872,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/shopify",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+        "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
       },
       "release": {
         "canonicalContentDigest": "sha256:77a71871eccce357f4d5057a2f06de159fdfb5c32b0db5a50f0f29101c08d3ec",
@@ -3893,15 +3893,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:df01d8a2fe4654a2edd4a097ad911da17b55fbdbb6b938c8a2a288c7b18c8a88",
         "packageStatus": "partial",
-        "releaseId": "release:0ac1ed7ad6a2eaf79e30524cb1669a3d5152c565dc8c895c4e0a4485d5c5bad1",
+        "releaseId": "release:038188c71c3f9adbd484ed32ba57812f25d6f474880a9927176d78dd6545cb10",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
+        "sourceRevision": "0722921d5542fc593105c27bd52630babd8b8c2a",
         "upstreamVersion": "3.0.0"
       },
-      "releaseId": "release:0ac1ed7ad6a2eaf79e30524cb1669a3d5152c565dc8c895c4e0a4485d5c5bad1",
+      "releaseId": "release:038188c71c3f9adbd484ed32ba57812f25d6f474880a9927176d78dd6545cb10",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",

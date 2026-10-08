@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:a522c904b4ab59ad426705698f2c4f1a77f008564ab39b36aede3fba4fe8f6a2",
+  "catalogId": "catalog:6a6722c9a5ba757173ab396bf4c1f0bf6912f25a1c3cdeea63ae047c9ccd9121",
   "category": "security",
   "pluginCount": 24,
   "productCount": 19,
@@ -478,7 +478,7 @@
       ],
       "capabilitySummary": {
         "agent": 15,
-        "executable": 43,
+        "executable": 44,
         "mcp-server": 2,
         "skill": 15
       },
@@ -523,10 +523,10 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/codex-security",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+        "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
       },
       "release": {
-        "canonicalContentDigest": "sha256:af19890f0d14251412a14b7d3d1146e4569bb3f2825f93944e414e00a64c3e24",
+        "canonicalContentDigest": "sha256:b9636081fd488fe5f6157e32f7f66bd684cdf5be3d6bed3b3df288541c81917b",
         "capabilities": [
           {
             "name": "agent",
@@ -546,17 +546,17 @@
           }
         ],
         "contentResolution": "complete",
-        "packageDigest": "sha256:7e5ca016f78e7d406f88787f8d241f6158c85a930e5744a3bfd9dc47822a65a3",
+        "packageDigest": "sha256:209906f8920a3a4f24a4ebc4efc6d2235c08928fed5f1b27c3b93ce373e79ac4",
         "packageStatus": "partial",
-        "releaseId": "release:23fdbb2231a37fa9f138e7b6be3841f6e6303cab20c2c09d9098d64795bcf7e7",
+        "releaseId": "release:4f274c0c76a09a0ac7977fee77e90a9cb26194d70cf0d094750a582d3f88c9ad",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
-        "upstreamVersion": "0.1.24"
+        "sourceRevision": "0722921d5542fc593105c27bd52630babd8b8c2a",
+        "upstreamVersion": "0.1.32"
       },
-      "releaseId": "release:23fdbb2231a37fa9f138e7b6be3841f6e6303cab20c2c09d9098d64795bcf7e7",
+      "releaseId": "release:4f274c0c76a09a0ac7977fee77e90a9cb26194d70cf0d094750a582d3f88c9ad",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",

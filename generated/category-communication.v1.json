@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:a522c904b4ab59ad426705698f2c4f1a77f008564ab39b36aede3fba4fe8f6a2",
+  "catalogId": "catalog:6a6722c9a5ba757173ab396bf4c1f0bf6912f25a1c3cdeea63ae047c9ccd9121",
   "category": "communication",
   "pluginCount": 23,
   "productCount": 16,
@@ -1029,7 +1029,7 @@
         "manifestPath": ".agents/plugins/marketplace.json",
         "pluginSubdirectory": "plugins/outlook-email",
         "repositoryUrl": "https://github.com/openai/plugins",
-        "resolvedCommitSha": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f"
+        "resolvedCommitSha": "0722921d5542fc593105c27bd52630babd8b8c2a"
       },
       "release": {
         "canonicalContentDigest": "sha256:fa6a9663a4a04d1ba167f4c3729d7823b42c94cb5c73925b9fc83fdf9b4d625b",
@@ -1042,15 +1042,15 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:58cb067e830489b04a8ce3a9d991d7ee48e3ad886e22a354ad97b8cad3027c7c",
         "packageStatus": "portable",
-        "releaseId": "release:57ecd62591c7c19379d8a35f9a2820d64bed24e711114e7b135927799843c32b",
+        "releaseId": "release:979aaf0f0ae3a788029bcb53a6327ad72635c3b421fdc704775374411d044f4e",
         "requiredConnectors": [],
         "requiredCredentials": [
           "authentication"
         ],
-        "sourceRevision": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
+        "sourceRevision": "0722921d5542fc593105c27bd52630babd8b8c2a",
         "upstreamVersion": "0.1.7"
       },
-      "releaseId": "release:57ecd62591c7c19379d8a35f9a2820d64bed24e711114e7b135927799843c32b",
+      "releaseId": "release:979aaf0f0ae3a788029bcb53a6327ad72635c3b421fdc704775374411d044f4e",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
