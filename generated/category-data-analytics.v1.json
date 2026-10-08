@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:6a6722c9a5ba757173ab396bf4c1f0bf6912f25a1c3cdeea63ae047c9ccd9121",
+  "catalogId": "catalog:d5218b2366986411a07e0f85e5ac92bc698d417264ad4cba1546cb989fe83096",
   "category": "data-analytics",
   "pluginCount": 49,
   "productCount": 42,
@@ -2432,7 +2432,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/firebase",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "b78ac49cdc6b3d7b61c4439470e311f4291265b1"
+        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
       },
       "release": {
         "canonicalContentDigest": "sha256:60af04352ae238ec8d87b22936c237ba33fd4a44e908d6fdd51cf81034224fd9",
@@ -2445,12 +2445,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d3981670b791b2c9c58847c292c7204bedc35df79e3876c10ec6f681d650c0d9",
         "packageStatus": "portable",
-        "releaseId": "release:af3018f1129a8d155fb617cd0182ef35446c90596601a9042d0000961176160a",
+        "releaseId": "release:72408e8cee2722cb0b0c5d6522eda4ce3f5c9d1ff3a170c7649cb98a2dceed1f",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "b78ac49cdc6b3d7b61c4439470e311f4291265b1"
+        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
       },
-      "releaseId": "release:af3018f1129a8d155fb617cd0182ef35446c90596601a9042d0000961176160a",
+      "releaseId": "release:72408e8cee2722cb0b0c5d6522eda4ce3f5c9d1ff3a170c7649cb98a2dceed1f",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",

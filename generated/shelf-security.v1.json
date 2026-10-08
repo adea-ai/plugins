@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:6a6722c9a5ba757173ab396bf4c1f0bf6912f25a1c3cdeea63ae047c9ccd9121",
+  "catalogId": "catalog:d5218b2366986411a07e0f85e5ac92bc698d417264ad4cba1546cb989fe83096",
   "category": "security",
   "products": [
     {
@@ -419,7 +419,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/claude-security",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "b78ac49cdc6b3d7b61c4439470e311f4291265b1"
+        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
       },
       "release": {
         "canonicalContentDigest": "sha256:9a181fad2ad1673e05007fffbe259ddffa70149f8f2aa6c14309a848027487fe",
@@ -444,13 +444,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:a642243f4885444f7f37cc514a7d1d23e33caee7dab1be904ba8d72d2519172c",
         "packageStatus": "partial",
-        "releaseId": "release:9fcde77222ac4979e7486358b9e87be505940e4ad979b1fc0cebf1280ab92af6",
+        "releaseId": "release:d596c97e6378ea14a21dbc056e604c55aef6d543600c94cab70b0596ede59e1a",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "b78ac49cdc6b3d7b61c4439470e311f4291265b1",
+        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
         "upstreamVersion": "0.12.0"
       },
-      "releaseId": "release:9fcde77222ac4979e7486358b9e87be505940e4ad979b1fc0cebf1280ab92af6",
+      "releaseId": "release:d596c97e6378ea14a21dbc056e604c55aef6d543600c94cab70b0596ede59e1a",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
