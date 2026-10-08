@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.27](https://github.com/adea-ai/plugins/compare/v2.0.26...v2.0.27) (2026-10-08)
+
+
+### Maintenance
+
+* **catalog:** refresh marketplace snapshot catalog:6a6722c9a5ba757173ab396bf4c1f0bf6912f25a1c3cdeea63ae047c9ccd9121 ([#221](https://github.com/adea-ai/plugins/issues/221)) ([436d1de](https://github.com/adea-ai/plugins/commit/436d1dea0e6a5d13e3f23b9acbf9b4e05e49c7d0))
+
 ## [2.0.26](https://github.com/adea-ai/plugins/compare/v2.0.25...v2.0.26) (2026-10-08)
 
 
