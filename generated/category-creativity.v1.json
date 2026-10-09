@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:8d610a82a99a50040b3e2391dd4b4ba0e51fd59b7c1acd3407fae818cda9ac62",
+  "catalogId": "catalog:55c630ebc78010ecf1893b531426410511de197f9bb5a029891002275ccf8cad",
   "category": "creativity",
   "pluginCount": 23,
   "productCount": 18,
@@ -953,7 +953,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "design",
         "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
-        "resolvedCommitSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1"
+        "resolvedCommitSha": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133"
       },
       "release": {
         "canonicalContentDigest": "sha256:e85d28330b509bf89372a29c9d34e6fc6711d70efb128f1c8cf2c04586d2abac",
@@ -970,13 +970,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:795df1a24a5e06dc4ab7b96b02b0b2300e9366467ccae30b0fe121f0410fa301",
         "packageStatus": "partial",
-        "releaseId": "release:3eab844b866576b6d32d21cafe2a97f71cb6f5bd3d49b2f48375332907ff74f2",
+        "releaseId": "release:7348ce5c74ab04599564894d5d9c846824cfb7a6f1230af631b334834521e83e",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
+        "sourceRevision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
         "upstreamVersion": "1.2.0"
       },
-      "releaseId": "release:3eab844b866576b6d32d21cafe2a97f71cb6f5bd3d49b2f48375332907ff74f2",
+      "releaseId": "release:7348ce5c74ab04599564894d5d9c846824cfb7a6f1230af631b334834521e83e",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",

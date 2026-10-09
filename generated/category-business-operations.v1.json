@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:8d610a82a99a50040b3e2391dd4b4ba0e51fd59b7c1acd3407fae818cda9ac62",
+  "catalogId": "catalog:55c630ebc78010ecf1893b531426410511de197f9bb5a029891002275ccf8cad",
   "category": "business-operations",
   "pluginCount": 56,
   "productCount": 48,
@@ -1423,7 +1423,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "partner-built/brand-voice",
         "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
-        "resolvedCommitSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1"
+        "resolvedCommitSha": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133"
       },
       "release": {
         "canonicalContentDigest": "sha256:efc2b164e535aed552f15e19e04e242dc08ada761e19c7e148f4f9344acae24e",
@@ -1448,13 +1448,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:784df080496540da811eacbdab2c14e3474346352d38266a1541c9a8e6f95af9",
         "packageStatus": "partial",
-        "releaseId": "release:f95b6d4655b17ad26fab7c973b551ddc2e45c9d9eb459ca39203b10ec1f9c437",
+        "releaseId": "release:5b52bb11b4fce4dcb2665a666f40771ecde1ff7583d3f92d60a4f949e15971d6",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
+        "sourceRevision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
         "upstreamVersion": "1.1.0"
       },
-      "releaseId": "release:f95b6d4655b17ad26fab7c973b551ddc2e45c9d9eb459ca39203b10ec1f9c437",
+      "releaseId": "release:5b52bb11b4fce4dcb2665a666f40771ecde1ff7583d3f92d60a4f949e15971d6",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -1918,7 +1918,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "partner-built/common-room",
         "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
-        "resolvedCommitSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1"
+        "resolvedCommitSha": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133"
       },
       "release": {
         "canonicalContentDigest": "sha256:d968478f0af0e5eb473699f478494f08782061eafa0964f8e2ececb64416d653",
@@ -1939,13 +1939,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d073411f98f3a43ddf2530cdf8755e582d73e2e0a580c32cc9c4a640f9be7a9d",
         "packageStatus": "partial",
-        "releaseId": "release:a609f8bf9f8d58f9beb912c35ba68a956990c4b48523bd7cd771ac2313126cee",
+        "releaseId": "release:30639b572c2073584504c8f128f44a3c28a546bff629a670e0cb936f7af65c40",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
+        "sourceRevision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:a609f8bf9f8d58f9beb912c35ba68a956990c4b48523bd7cd771ac2313126cee",
+      "releaseId": "release:30639b572c2073584504c8f128f44a3c28a546bff629a670e0cb936f7af65c40",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -2088,7 +2088,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "human-resources",
         "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
-        "resolvedCommitSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1"
+        "resolvedCommitSha": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133"
       },
       "release": {
         "canonicalContentDigest": "sha256:8903c2708c055bb9f4d2b0e4ab1a07f763bdc8ed321f2942005c74c0264b4c90",
@@ -2105,13 +2105,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:0669576007ba1afbbdecbaab1eefdf3a5668d6e891e3969d9f818284dfa40e47",
         "packageStatus": "partial",
-        "releaseId": "release:6f4a2ec189153ffed6188d7c94414b286e0f8913edfba0b5800c182095188a3c",
+        "releaseId": "release:17c22295c09213345de50083b54794a7aaa9baca174b2f71ba51eaa1204ceb3c",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
+        "sourceRevision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
         "upstreamVersion": "1.3.0"
       },
-      "releaseId": "release:6f4a2ec189153ffed6188d7c94414b286e0f8913edfba0b5800c182095188a3c",
+      "releaseId": "release:17c22295c09213345de50083b54794a7aaa9baca174b2f71ba51eaa1204ceb3c",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -2432,7 +2432,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "legal",
         "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
-        "resolvedCommitSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1"
+        "resolvedCommitSha": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133"
       },
       "release": {
         "canonicalContentDigest": "sha256:f0ac2a7f4614086840b4a3d73abd9f119d1c3af4f064e4164855dc980d3982da",
@@ -2449,13 +2449,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:51021a7c955c0d694d7b3bec49aed3d9b860ed27a46decd511d0464a0553eab2",
         "packageStatus": "partial",
-        "releaseId": "release:7f9cd57bf906e7fec98f6be197b8f5c3ed4fbf000749eead6c17632572a1918d",
+        "releaseId": "release:2c8e394dae0cca408341abb7803dab5d5baf4b0e1317360be6088c02542307c5",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
+        "sourceRevision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
         "upstreamVersion": "1.3.0"
       },
-      "releaseId": "release:7f9cd57bf906e7fec98f6be197b8f5c3ed4fbf000749eead6c17632572a1918d",
+      "releaseId": "release:2c8e394dae0cca408341abb7803dab5d5baf4b0e1317360be6088c02542307c5",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -2597,7 +2597,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "marketing",
         "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
-        "resolvedCommitSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1"
+        "resolvedCommitSha": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133"
       },
       "release": {
         "canonicalContentDigest": "sha256:80d397b4500161aae969ddf36371c12e657937fc70398cd64b72494be4983fe3",
@@ -2614,13 +2614,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:f90ba6a25e0f7cf525ed0e78eb7763a60a46e16de338461b61d59136c54aa1ac",
         "packageStatus": "partial",
-        "releaseId": "release:b8a41991467275303a662431da7775e3a09bad9540104d7cc44b2df44f096062",
+        "releaseId": "release:bf3d0181847d3dbd6544ab5bf74868791f2571d100c2ef78dd32c424e40efe00",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
+        "sourceRevision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
         "upstreamVersion": "1.2.0"
       },
-      "releaseId": "release:b8a41991467275303a662431da7775e3a09bad9540104d7cc44b2df44f096062",
+      "releaseId": "release:bf3d0181847d3dbd6544ab5bf74868791f2571d100c2ef78dd32c424e40efe00",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -2883,7 +2883,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "operations",
         "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
-        "resolvedCommitSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1"
+        "resolvedCommitSha": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133"
       },
       "release": {
         "canonicalContentDigest": "sha256:04bd1157c9ac11b809d4e5a83694f1e2c8d59d5de76f64351ef72dfc597cad8f",
@@ -2900,13 +2900,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:302dc414f64b829fcf90ce9ab2ee5b675d16a456f84c050fbd16a9852c7d1b1e",
         "packageStatus": "partial",
-        "releaseId": "release:d0ab4b9c32e134282a339df371d32780c4a07b198c041b5b76c8a106c61949b7",
+        "releaseId": "release:0631fa5e490d64710eab07ace1c4b0342171c8500f44b63fce11e401925c41e9",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
+        "sourceRevision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
         "upstreamVersion": "1.3.0"
       },
-      "releaseId": "release:d0ab4b9c32e134282a339df371d32780c4a07b198c041b5b76c8a106c61949b7",
+      "releaseId": "release:0631fa5e490d64710eab07ace1c4b0342171c8500f44b63fce11e401925c41e9",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -3147,7 +3147,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "product-management",
         "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
-        "resolvedCommitSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1"
+        "resolvedCommitSha": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133"
       },
       "release": {
         "canonicalContentDigest": "sha256:af7717106a70fce3a544a2de7af98f2bb49053abbd1bce64d95bfe77845ca3f4",
@@ -3168,13 +3168,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d88e3d177d27a923d22a516e5bf03b66643add8f9d65b9add899981cc9170fbf",
         "packageStatus": "partial",
-        "releaseId": "release:344367b1003f7d1e64247ec31ca0f0b541edf215686b52d99162665f760446ac",
+        "releaseId": "release:ba19a8b8db9b53aca2ed1e88bfc18eab19fdabbfb712b5aab4c5b348a6689f24",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
+        "sourceRevision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
         "upstreamVersion": "1.2.0"
       },
-      "releaseId": "release:344367b1003f7d1e64247ec31ca0f0b541edf215686b52d99162665f760446ac",
+      "releaseId": "release:ba19a8b8db9b53aca2ed1e88bfc18eab19fdabbfb712b5aab4c5b348a6689f24",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -3510,7 +3510,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "sales",
         "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
-        "resolvedCommitSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1"
+        "resolvedCommitSha": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133"
       },
       "release": {
         "canonicalContentDigest": "sha256:bd3eeda9254ec490181d69236e5d69ac046af54277f5b8a26655d8144285c747",
@@ -3531,13 +3531,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:efcfa610a532f33ef033231ff5b90b4e36d165f48d16ac02eca9424cc19c8895",
         "packageStatus": "partial",
-        "releaseId": "release:67d20e38d168f3369d24cfa6b6387ed023307b1de4870eded37e10750accc384",
+        "releaseId": "release:2f49a00858d63108cf8a39910fcb0e7011c9780a52f1d0f740b89aeada515232",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
+        "sourceRevision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
         "upstreamVersion": "2.0.1"
       },
-      "releaseId": "release:67d20e38d168f3369d24cfa6b6387ed023307b1de4870eded37e10750accc384",
+      "releaseId": "release:2f49a00858d63108cf8a39910fcb0e7011c9780a52f1d0f740b89aeada515232",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -4044,7 +4044,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "small-business",
         "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
-        "resolvedCommitSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1"
+        "resolvedCommitSha": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133"
       },
       "release": {
         "canonicalContentDigest": "sha256:990d05ff1684beaf933a134e45cc988efc95bab7022368547539bd41a643b40b",
@@ -4061,13 +4061,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:860b909970d770b0428c9291116e9cea9849afc717fb74ab3540dcbf16adbfff",
         "packageStatus": "partial",
-        "releaseId": "release:598102d88033c92ef32d2a4fa27dec402090a38646edb3064214b4b1c9383bc4",
+        "releaseId": "release:65144e2c7ada8dc2159534f42090463b3b877bae2283e2e54c43be578b66211e",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
+        "sourceRevision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
         "upstreamVersion": "1.35.1"
       },
-      "releaseId": "release:598102d88033c92ef32d2a4fa27dec402090a38646edb3064214b4b1c9383bc4",
+      "releaseId": "release:65144e2c7ada8dc2159534f42090463b3b877bae2283e2e54c43be578b66211e",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",

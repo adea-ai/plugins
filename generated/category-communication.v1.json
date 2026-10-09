@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:8d610a82a99a50040b3e2391dd4b4ba0e51fd59b7c1acd3407fae818cda9ac62",
+  "catalogId": "catalog:55c630ebc78010ecf1893b531426410511de197f9bb5a029891002275ccf8cad",
   "category": "communication",
   "pluginCount": 23,
   "productCount": 16,
@@ -682,7 +682,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "customer-support",
         "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
-        "resolvedCommitSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1"
+        "resolvedCommitSha": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133"
       },
       "release": {
         "canonicalContentDigest": "sha256:9b1d8e912e9c40e6b6aa87c425f3e4e7586e2192e81f7cb16f4a39d5b68384f0",
@@ -699,13 +699,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:1a6fb22b707c645cacda6370228e0530b69d0819917f965337d82beffef5decc",
         "packageStatus": "partial",
-        "releaseId": "release:ccb1a6b1bce290948fe588f9f7babef4d6e59a053a774aa47fa1454ec375bcc3",
+        "releaseId": "release:24c3e3ff305a042ae0c577849d3ee3b8f1392100bb4ba7644d99f9f524a9f5a3",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
+        "sourceRevision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
         "upstreamVersion": "1.3.0"
       },
-      "releaseId": "release:ccb1a6b1bce290948fe588f9f7babef4d6e59a053a774aa47fa1454ec375bcc3",
+      "releaseId": "release:24c3e3ff305a042ae0c577849d3ee3b8f1392100bb4ba7644d99f9f524a9f5a3",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -1119,7 +1119,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "partner-built/slack",
         "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
-        "resolvedCommitSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1"
+        "resolvedCommitSha": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133"
       },
       "release": {
         "canonicalContentDigest": "sha256:0d2dbb25c00adbe7840c9c874cc42a7f5b8fdc82fb73b87cd93881bfc25bb2e6",
@@ -1144,13 +1144,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:842a6a681bd9a548998c8c476643b3f2612c2315148e42d0356b116c6458fcd8",
         "packageStatus": "partial",
-        "releaseId": "release:fab40b66aa42dee9020b00b8baf0bb60be7cb4ca12cd52d6cd8eafbb7904490e",
+        "releaseId": "release:230ec9af3cd03b79206317f4d8baa61fc523c82c7468a11e6e43b4593c6dd6e8",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
+        "sourceRevision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:fab40b66aa42dee9020b00b8baf0bb60be7cb4ca12cd52d6cd8eafbb7904490e",
+      "releaseId": "release:230ec9af3cd03b79206317f4d8baa61fc523c82c7468a11e6e43b4593c6dd6e8",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
