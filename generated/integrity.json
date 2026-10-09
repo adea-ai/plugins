@@ -353,14 +353,6 @@
       "origin": "assets/logo.svg"
     },
     {
-      "bytes": 8453,
-      "contentType": "image/png",
-      "digest": "sha256:1e59858f236ac0b079e058ba96b18668cd1a6ea113cb606a7fcffba7e828f72a",
-      "kind": "favicon",
-      "name": "icon-1e59858f236ac0b079e058ba96b18668.png",
-      "origin": "https://images.squarespace-cdn.com/content/v1/6970e57a847a982ccab43554/a2fbb6b0-b249-49c4-a6e8-b4a348c748a7/favicon.ico?format=300w"
-    },
-    {
       "bytes": 19475,
       "contentType": "image/png",
       "digest": "sha256:1ecec40ec7a7189a69e52a54766e267d21f915a256204a54e38e803415f0d5f0",
@@ -897,6 +889,14 @@
       "origin": "https://docs.stackhawk.com/favicon.ico"
     },
     {
+      "bytes": 4284,
+      "contentType": "image/webp",
+      "digest": "sha256:4c4c3f44acf96a54267911f08800630714dc4a953c170aecf0772f56934117bd",
+      "kind": "favicon",
+      "name": "icon-4c4c3f44acf96a54267911f088006307.webp",
+      "origin": "https://images.squarespace-cdn.com/content/v1/6970e57a847a982ccab43554/a2fbb6b0-b249-49c4-a6e8-b4a348c748a7/favicon.ico?format=300w"
+    },
+    {
       "bytes": 8563,
       "contentType": "image/png",
       "digest": "sha256:4c7a2e66ba282a92981712dfb27e6bc02169720c4dd54f048f9cc6c5cb005400",
@@ -919,6 +919,14 @@
       "kind": "content",
       "name": "icon-4ef07273108e26afd81c30f837c90cc3.png",
       "origin": "assets/logo.png"
+    },
+    {
+      "bytes": 10022,
+      "contentType": "image/webp",
+      "digest": "sha256:505d7841292488b3d76c2c3135253a6bdd804d771829cbba1f02c75287041cff",
+      "kind": "favicon",
+      "name": "icon-505d7841292488b3d76c2c3135253a6b.webp",
+      "origin": "https://www.qodo.ai/wp-content/uploads/2025/03/qodo-fav-300x300.png"
     },
     {
       "bytes": 20514,
@@ -1511,14 +1519,6 @@
       "kind": "content",
       "name": "icon-8a0da01fdd368341cb7d5103c6435d7b.png",
       "origin": "assets/expo.png"
-    },
-    {
-      "bytes": 15908,
-      "contentType": "image/png",
-      "digest": "sha256:8a338496614f7dac92f3f044f4e814472757cfe1056d3130ea66edd0f4645a78",
-      "kind": "favicon",
-      "name": "icon-8a338496614f7dac92f3f044f4e81447.png",
-      "origin": "https://www.qodo.ai/wp-content/uploads/2025/03/qodo-fav-300x300.png"
     },
     {
       "bytes": 12840,
@@ -2681,34 +2681,34 @@
       "origin": "assets/bigdata-icon-black.svg"
     }
   ],
-  "catalogId": "catalog:d5218b2366986411a07e0f85e5ac92bc698d417264ad4cba1546cb989fe83096",
+  "catalogId": "catalog:8d610a82a99a50040b3e2391dd4b4ba0e51fd59b7c1acd3407fae818cda9ac62",
   "files": {
-    "catalog-index.v1.json": "sha256:f3f9bb033525b50ccf660dd873683b72f2a65fd000153dde968a4c058b53d000",
-    "catalog-summary.v1.json": "sha256:81d4638608659a5a43ef83b93b8c082cdb7abb76d2a8fe6924ae6d6dd021545f",
-    "catalog.v1.json": "sha256:4770a8314cad4ac1be6680fc1e350583718b8ab1da54b0ef904d05cfb36157e2",
-    "categories.v1.json": "sha256:ff5ac761ea059b8b270e45443f5f2f2830f952437a58ef4f0f0be1c655e56bf4",
-    "category-business-operations.v1.json": "sha256:a3b0af1ebe6839883ffab8cea98d9a33950e23e1a3baff6c419c11b024fcc05a",
-    "category-communication.v1.json": "sha256:42a0516a284938f0205c79b7b75c7d2ce8bfa05e22eaef64e7d1086165a0a156",
-    "category-creativity.v1.json": "sha256:94f144492824a554307d9784e669332ee4f3ce8f0d3ced62dd6994fca610eb23",
-    "category-data-analytics.v1.json": "sha256:74ce207d31c78a961e0e89013787cbf54048af51469428c2fadc308f77bcd560",
-    "category-developer-tools.v1.json": "sha256:a6cd1c7556f91fcd0ee9e8dd2e32e8fef1213223faf5f3da00dc3cebb13286e3",
-    "category-education-research.v1.json": "sha256:48c2cfa156f25b6702051b5bf78f6473315156b69f3484d4e56ca0afcbb113da",
-    "category-finance.v1.json": "sha256:8b884c949681a29f3b547641deb41053d502e846639c8fcb442e37176e67a409",
-    "category-other.v1.json": "sha256:39573bfe967198d952411d472c2ae61ecb68d8ee2ec10597022704f180a28de8",
-    "category-productivity.v1.json": "sha256:12520d3aceb4a3a5907f55259b112b286a9f3fecd8bba374c27e5ffd4b10b75e",
-    "category-security.v1.json": "sha256:1b5d61e09df5c18961686468f9d7c8d79e723eb127254492bb7a6dbd6d5cef71",
-    "compatibility.v1.json": "sha256:95cfc096bb9bd4618e0e9c88fb946fb779f35362e60f2a76cf5bb370f471a252",
-    "shelf-business-operations.v1.json": "sha256:710dc786db8d0c9348f770669ad1937777cbbadf8bd25e8f7a7476c4771271e5",
-    "shelf-communication.v1.json": "sha256:881b4cf31f501b163770bac76b17639bbb90278869d175b2f5948c5cfa3e1b20",
-    "shelf-creativity.v1.json": "sha256:312d8820f2dd0a11d8972871d276795dfa0b5a274f47e2425ac5552a3e8a96cc",
-    "shelf-data-analytics.v1.json": "sha256:e637f39ef457896082bcb5468c0def66d9fd212aa5824f3c9bfff86a151d8314",
-    "shelf-developer-tools.v1.json": "sha256:a3fa2884c0bc4ac1f51ce398a49973af2cdd9a8495db58bb90d12509eda2d63f",
-    "shelf-education-research.v1.json": "sha256:55bb9400fcf11644f9ffc76cbac567b56104052ecf1c2f45515dddc61adbf2a2",
-    "shelf-finance.v1.json": "sha256:a6554da15bec8256c31c2ccc2f4b06a7ffe40457777e1bb0e3ca2749b0951807",
-    "shelf-other.v1.json": "sha256:59953ad9f3770b2e06c010949d059e56c7b366391a23eea202c899ff8abe344d",
-    "shelf-productivity.v1.json": "sha256:12fcadc093bd982c756fb8e98ccf7b6bf60ef821e091ee25371ffea19d59b77c",
-    "shelf-security.v1.json": "sha256:1bcc166e1529f843ec28dc01557da6d48ab67014749e344946fdb3e9c46337d3",
-    "sources.lock.json": "sha256:f79ee38c4961be324b60e6fa1fc7b43a0c99a0423cad1582347bfa4169bbfad9"
+    "catalog-index.v1.json": "sha256:1f43dc25ebb59c45bbd40cac001eabb6f8b81b057f3825abb840f12771b7caba",
+    "catalog-summary.v1.json": "sha256:6805328a8c967751193f074b895774f8d952d521c4201da718101da89201d480",
+    "catalog.v1.json": "sha256:86763e48cc111673db77e392a00edf1e476a46a00ff7df4eaa0023feb76e9cfb",
+    "categories.v1.json": "sha256:ce594d180cd19d32d03a7c52b10a44b9ee2c815cae73277bf2e2fe1db12a9ce7",
+    "category-business-operations.v1.json": "sha256:8fdac31d477fd4d8067dfddaa6d5f9ec95f6dd3cb346cdfbd5bae9cf287c4b51",
+    "category-communication.v1.json": "sha256:f90baa9bbe9b3bc7afa06986c653a332e45598decd17058257a3b2d166f9b697",
+    "category-creativity.v1.json": "sha256:2143c93298c36f0e95c1ddce7c5751b88c65b74f40c27742905cece9cbcd2a88",
+    "category-data-analytics.v1.json": "sha256:e1e698cdd1de7a289ca0690151d6a12ad9dde614e10b53f17150ff5c0fe5206c",
+    "category-developer-tools.v1.json": "sha256:0380e763f9c8f892ebaeca484b97995c9a146d06a6446c9e9c27f517632e3bf1",
+    "category-education-research.v1.json": "sha256:efcdd6563befa3a7034ab7836ad2135053bf854c1b46c8eb25633b8554c170f2",
+    "category-finance.v1.json": "sha256:8a2670501de28f8b28755125635f2da9ce1d06d6e9725a05c077c52a670d2d73",
+    "category-other.v1.json": "sha256:7eb1b44d3aa6ba120559cc9a2d017e4a0f5bb88924b3c45300a74807c835c740",
+    "category-productivity.v1.json": "sha256:2f9e217f28d1838995c34f3a5cdfbea87ba7dccd7835c1aebf22b46a1edb57a9",
+    "category-security.v1.json": "sha256:800b55aa51a15e9863dcbf2e1d04af3fa025cc430241df8e88d4e00f1e49a0e8",
+    "compatibility.v1.json": "sha256:e8ce3e4eb35e202f78e33f43b373166baf680ded2a69a72191ece20757c5c6fe",
+    "shelf-business-operations.v1.json": "sha256:c583da92ca489c22a29a8b83936586513c86b65e7132b0d6ba4623477a316c14",
+    "shelf-communication.v1.json": "sha256:7d5be4790227e0d61f84b4c2163c4ea21e05b2ac6717a1e8b95729f65dc8831a",
+    "shelf-creativity.v1.json": "sha256:7264fadbeb84e5f4961db7aecfb58f6183468d0dcbd5c64394df157665f06130",
+    "shelf-data-analytics.v1.json": "sha256:bdf4b66c5b82b6b199273502017b13d2320be1240c279e9b9ff26c8c298c1dcf",
+    "shelf-developer-tools.v1.json": "sha256:e255db7548ad64aa24d3753ed12a6e17c5c282e9a70441dd9acbb9d498c4e9f8",
+    "shelf-education-research.v1.json": "sha256:5d1812e5de746fb6dee8bd54c9ac8480d18d390e9513223583b63b8e3dadb164",
+    "shelf-finance.v1.json": "sha256:6cb1d992cf1c704a4e30cdd340dcb7a47ebc7569645d6d14548db587ee35f623",
+    "shelf-other.v1.json": "sha256:be247e2d17b8d9f7fadfa81d8bbdcd3e8a1d391b5f1e91bec70b006a56b0b45a",
+    "shelf-productivity.v1.json": "sha256:a2f2a150b55261f49efad28e9aee6fcd11727492416a757ed4e7e115fd5670ef",
+    "shelf-security.v1.json": "sha256:014800e920b7e8f3dd3d65823a26e5eded5d72659e29ab9a6fda5fe61e448a2f",
+    "sources.lock.json": "sha256:a64caa3c4d6e9b394754fc058d59ed1a40907a4aa793c149173e53d727a15798"
   },
   "schemaVersion": 1
 }

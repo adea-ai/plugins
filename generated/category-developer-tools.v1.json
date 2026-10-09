@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:d5218b2366986411a07e0f85e5ac92bc698d417264ad4cba1546cb989fe83096",
+  "catalogId": "catalog:8d610a82a99a50040b3e2391dd4b4ba0e51fd59b7c1acd3407fae818cda9ac62",
   "category": "developer-tools",
   "pluginCount": 213,
   "productCount": 175,
@@ -55,7 +55,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/github",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:3a8aa90c77c19d4efaefe32703f8daf81020f7927f26f66feae7c66c9e991fc3",
@@ -68,12 +68,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:57c44f8d573dc9277263d5b767e56feff729bf954a5662e9e2b755d1a49aa5ac",
         "packageStatus": "partial",
-        "releaseId": "release:d5f9006f3c696ebfafb6e81d143592a5276480872c2a60154bf25225c3f544a5",
+        "releaseId": "release:0ab1b5d6075c38d503abac7bef0cd447f401f269d260f06cad12c64bcdfa753e",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
-      "releaseId": "release:d5f9006f3c696ebfafb6e81d143592a5276480872c2a60154bf25225c3f544a5",
+      "releaseId": "release:0ab1b5d6075c38d503abac7bef0cd447f401f269d260f06cad12c64bcdfa753e",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -142,7 +142,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/playwright",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:09b920f4bea9253e4d1863c57ea4a66b3bef629f3a0e9b2ae62198bf291d2c4b",
@@ -155,12 +155,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:11a00f5ebacb2af4f3e94169d5e476245fc9364adde041968e17c9c81a7f1aa6",
         "packageStatus": "portable",
-        "releaseId": "release:f0daef08d89653506bcf360e252559720eedb4d87e3203a7bdc10b0eb1f05d0b",
+        "releaseId": "release:a04cf2be167ee1e6a123afbf4d2416fe66c5a3d49895ff61fae431291ad5c544",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
-      "releaseId": "release:f0daef08d89653506bcf360e252559720eedb4d87e3203a7bdc10b0eb1f05d0b",
+      "releaseId": "release:a04cf2be167ee1e6a123afbf4d2416fe66c5a3d49895ff61fae431291ad5c544",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -305,7 +305,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/agent-sdk-dev",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:a6f37a1aa41c164cad0661e8c5d534451141100098f7ba12edd74937c5ced495",
@@ -322,12 +322,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:23adf47094dfdf00561c88d431adbb2abd19bfca6f587821480f16e1a8669e7c",
         "packageStatus": "partial",
-        "releaseId": "release:d200cd61675f34be9f158dd3a337ac815ce247e92974b464b13d6e5faf4db69f",
+        "releaseId": "release:26118c590f580b8d4da9508887a0692ff255f01707e6c651e67be5ba58963601",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
-      "releaseId": "release:d200cd61675f34be9f158dd3a337ac815ce247e92974b464b13d6e5faf4db69f",
+      "releaseId": "release:26118c590f580b8d4da9508887a0692ff255f01707e6c651e67be5ba58963601",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -3581,7 +3581,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/clangd-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:281dcd52afdf1e0d1d511ace604f968a56ba4a95810188fbc3566ee9e79552cf",
@@ -3594,13 +3594,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:c56872430fd2672590594245a2a75b1f4075b16303570bff19c10dd2a4ff4034",
         "packageStatus": "portable",
-        "releaseId": "release:3ea2782d5e5566fe718c9be57ca47d60f226cf771bc6ad498df1396f333ff752",
+        "releaseId": "release:d223587634bbfbd056a3631762880186e177e2e0ea60ecd68503ef6a2165c4c1",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:3ea2782d5e5566fe718c9be57ca47d60f226cf771bc6ad498df1396f333ff752",
+      "releaseId": "release:d223587634bbfbd056a3631762880186e177e2e0ea60ecd68503ef6a2165c4c1",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -3872,7 +3872,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/code-modernization",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:9f0bc87491aba29d443d41b1970eba0db971b6fb07b8fcbb225f5ca45d321c07",
@@ -3897,13 +3897,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:29489e82b1b54681a613b90c11e5bdd7dedc193a91fa8935724f3777a3197346",
         "packageStatus": "partial",
-        "releaseId": "release:dd3ccc1410e91d63d3bb2c1fa2545bdea9b1bbba931c9104ed8dfd2b3f713703",
+        "releaseId": "release:fd94d9cdc0fa3a4f922415127a981252a4bbfd7978989a4c1a387626193b4cfd",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:dd3ccc1410e91d63d3bb2c1fa2545bdea9b1bbba931c9104ed8dfd2b3f713703",
+      "releaseId": "release:fd94d9cdc0fa3a4f922415127a981252a4bbfd7978989a4c1a387626193b4cfd",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -4187,7 +4187,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/context7",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:6914f1e35a09208845c4dc779c2f44c8038b2f0b91f193e88749ec2ecea37878",
@@ -4200,12 +4200,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:85cd8f7e145c48c3921946f3eebf0118fd255fdbad7b492228dae8a855c57e1f",
         "packageStatus": "portable",
-        "releaseId": "release:8a57f560ac6ecd66e837cb6ed572b78f01373158127e0922835b37d81dca0a96",
+        "releaseId": "release:ade90aba1540d415f6ca84f81a03edcf9edabfefbd34c4e5f6afcb102a68dc51",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
-      "releaseId": "release:8a57f560ac6ecd66e837cb6ed572b78f01373158127e0922835b37d81dca0a96",
+      "releaseId": "release:ade90aba1540d415f6ca84f81a03edcf9edabfefbd34c4e5f6afcb102a68dc51",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -4655,7 +4655,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/csharp-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:a075815ad08ce9698bbe0fd1211bb77439b35d8b856882d9938c355287ac1f30",
@@ -4668,13 +4668,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:613891dd1036c31bb2343d84abd6a6928220a6f8f3d1b498f57d8903212d8118",
         "packageStatus": "portable",
-        "releaseId": "release:e1ff36bd212da6799fc9f4876991479dd97d5a701afa6edd2f8bb2d71e22605f",
+        "releaseId": "release:52cda11e48cd66ea3ff41e1906b75b50d8af0a45e98a6d1458b759e65d0c28ea",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:e1ff36bd212da6799fc9f4876991479dd97d5a701afa6edd2f8bb2d71e22605f",
+      "releaseId": "release:52cda11e48cd66ea3ff41e1906b75b50d8af0a45e98a6d1458b759e65d0c28ea",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -5668,7 +5668,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/fakechat",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:5e128f9859d0f26562e831213f7db3cb831aef949e12365d4f848e4092c1645c",
@@ -5681,13 +5681,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:8410e6094d19f7191e8701569a856e0544ab9ff67f31d8cd62e66ccb62e37c22",
         "packageStatus": "portable",
-        "releaseId": "release:0fed6dbe56ccd0fa1dd16bc3e8a15c1414eace31a12ff598adafe387ef61feda",
+        "releaseId": "release:0f43fa0f08f6ea43fcb06f0545298c0a7caa45b669d6b5b2a42f2e288b16c9b7",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030",
         "upstreamVersion": "0.0.1"
       },
-      "releaseId": "release:0fed6dbe56ccd0fa1dd16bc3e8a15c1414eace31a12ff598adafe387ef61feda",
+      "releaseId": "release:0f43fa0f08f6ea43fcb06f0545298c0a7caa45b669d6b5b2a42f2e288b16c9b7",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -5746,7 +5746,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/feature-dev",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:ca695e29572b656b37991f0ae7f3c85d56b347bcddfa3095b778a722316b72ee",
@@ -5763,12 +5763,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:e9e5199d531d0b7a8642a9f1bd794f4d3d55c262a7a64ccdb1abda3c64826929",
         "packageStatus": "partial",
-        "releaseId": "release:d2a868a6009211bf2d347498cf34ec212adc4a903841686f5a743daa803bc6c6",
+        "releaseId": "release:b50805ec1232779f3e47c08df1d86c417696a5579d2982a9155c9e85abd5bd9c",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
-      "releaseId": "release:d2a868a6009211bf2d347498cf34ec212adc4a903841686f5a743daa803bc6c6",
+      "releaseId": "release:b50805ec1232779f3e47c08df1d86c417696a5579d2982a9155c9e85abd5bd9c",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -6022,7 +6022,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/frontend-design",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:22e0f6ce39d78085714b1a74926563e3fc84919f8933339a0da5d13ca17417ff",
@@ -6035,12 +6035,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:989a2e86f7e012155ec8700dc8cbe64493ccc11cb21d89bf85825233b973b485",
         "packageStatus": "portable",
-        "releaseId": "release:c28b194530d7cb634cc2884acd3cbdfd255732a5300a73c6e913af1edca0b6cc",
+        "releaseId": "release:78e43f019d6262b47a1f55ba9c92a9fe7d74a5ce5af1ae0c4a3562e1e150f52d",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
-      "releaseId": "release:c28b194530d7cb634cc2884acd3cbdfd255732a5300a73c6e913af1edca0b6cc",
+      "releaseId": "release:78e43f019d6262b47a1f55ba9c92a9fe7d74a5ce5af1ae0c4a3562e1e150f52d",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -6486,7 +6486,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/gopls-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:d0f7a21197aec2bc1b258ee8ae85421828f92dffb3701662e5b430d633077656",
@@ -6499,13 +6499,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:7d6845f8ea541b82fec6e9e082d32610f7e614002ae7a66232e5ec6f31e82888",
         "packageStatus": "portable",
-        "releaseId": "release:f7f84523e3fbde611607334fd0cde2952451a06d5a66a9896ad92f2dd01b3ed1",
+        "releaseId": "release:ccec2921a5033caed5c5164cf9810a1041e46acfbb91ace9351511d686139a3c",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:f7f84523e3fbde611607334fd0cde2952451a06d5a66a9896ad92f2dd01b3ed1",
+      "releaseId": "release:ccec2921a5033caed5c5164cf9810a1041e46acfbb91ace9351511d686139a3c",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -7337,7 +7337,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/jdtls-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:9a3aed7b74071fea624ab0cf792c6cc26fa263834948c943dfc55b2585891529",
@@ -7350,13 +7350,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:36837fff70be5c6516bab55a6a457eca8f89b4a8575bb17eb8f147501452a760",
         "packageStatus": "portable",
-        "releaseId": "release:d3012b9ce639f1b234da92ee2e39c5a35ba6fb76e5d96e40cb5573902b40b717",
+        "releaseId": "release:91eb3dda53118c8c66b36ff332653fa7cf9b76f91e12f50afcd83b51263e5103",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:d3012b9ce639f1b234da92ee2e39c5a35ba6fb76e5d96e40cb5573902b40b717",
+      "releaseId": "release:91eb3dda53118c8c66b36ff332653fa7cf9b76f91e12f50afcd83b51263e5103",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -7421,7 +7421,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/kotlin-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:d22bcbdb2c09247a46346a036cc41c84479c97ba56c1ac828db48fbaa0f17822",
@@ -7434,13 +7434,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:ee8ceb068bbea87ca6730b26d51d74a0f045b75207e5f8a17732a32ad936a06d",
         "packageStatus": "portable",
-        "releaseId": "release:e75cb49ae9e481cc8011187b8cc5855026a505147de5918ae4e8cae934c0f73f",
+        "releaseId": "release:64b794321425faa183d64ad5e8d19bb10e60c6385a0bccf6c81c435dc628bb7a",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:e75cb49ae9e481cc8011187b8cc5855026a505147de5918ae4e8cae934c0f73f",
+      "releaseId": "release:64b794321425faa183d64ad5e8d19bb10e60c6385a0bccf6c81c435dc628bb7a",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -7702,7 +7702,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/laravel-boost",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:092903e534cc6ac1ef694ad010cc621a8a029a3bfdb84658c6e82d8c91f93ac3",
@@ -7715,12 +7715,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d0612e678bd9ed067ba274e0117959d63c4c9d7a52e7255afd6399ba30f173b6",
         "packageStatus": "portable",
-        "releaseId": "release:c4a7cc25ca1d154f23c524a955d5062ee02d997c417cac7b0f532fa59011c2dc",
+        "releaseId": "release:3828fd413d43ee20f1e91726a845c75d5442fa360fad8f2c7be431452c7473f2",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
-      "releaseId": "release:c4a7cc25ca1d154f23c524a955d5062ee02d997c417cac7b0f532fa59011c2dc",
+      "releaseId": "release:3828fd413d43ee20f1e91726a845c75d5442fa360fad8f2c7be431452c7473f2",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -8077,7 +8077,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/lua-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:870077078605c800855272f600a357c7c62e64e1e3a0b79062385031ac008d6e",
@@ -8090,13 +8090,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:6e460274a2eb75d77886e1a3d9365cda9f4b41f5af9591fadda999e2acfbc598",
         "packageStatus": "portable",
-        "releaseId": "release:542227f2dc43430993e22c0e9eb7db2fb3f42e38de733cfd7ad31cd9b8ef9fee",
+        "releaseId": "release:b5775a8d1bf5adca1ae11ff8a0538c71eeddd912788c3290fd43635897b76882",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:542227f2dc43430993e22c0e9eb7db2fb3f42e38de733cfd7ad31cd9b8ef9fee",
+      "releaseId": "release:b5775a8d1bf5adca1ae11ff8a0538c71eeddd912788c3290fd43635897b76882",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -8548,7 +8548,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/mcp-server-dev",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:15a9cffa7d0e85ac53a35957401c4b6e46f7c31528417fb31a13ad832c212fb0",
@@ -8561,12 +8561,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:08def705af2870496f13dc84e714bead183148dd6b724e60277e457e1bcb037c",
         "packageStatus": "partial",
-        "releaseId": "release:de1e428c9bfa0e1ea7ebff459f362816b5ec7ac97c795a989eb517df58c3b10b",
+        "releaseId": "release:5e4ab9b8276483e3b47f3fbefb74d98631344a03677e7f91225a3ce333f5c901",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
-      "releaseId": "release:de1e428c9bfa0e1ea7ebff459f362816b5ec7ac97c795a989eb517df58c3b10b",
+      "releaseId": "release:5e4ab9b8276483e3b47f3fbefb74d98631344a03677e7f91225a3ce333f5c901",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -8622,7 +8622,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/mcp-tunnels",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:59f9193a0aa0bff86cf0372acc6cc671d74fa5126a8b58becccf5eb5f7bd9c21",
@@ -8635,12 +8635,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d9b543e5366bbc74a7283cdbbda590af0516259e8a931a90581773b1634e6db6",
         "packageStatus": "partial",
-        "releaseId": "release:1ad7d08591f3201345896e0766f2e0bb540057d2d6dc48172a222e4b2b9ce2bf",
+        "releaseId": "release:e57b4138d52109b0a66b477bee0539b4ea8d339a65a98f151af046e04966df80",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
-      "releaseId": "release:1ad7d08591f3201345896e0766f2e0bb540057d2d6dc48172a222e4b2b9ce2bf",
+      "releaseId": "release:e57b4138d52109b0a66b477bee0539b4ea8d339a65a98f151af046e04966df80",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -10705,7 +10705,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/php-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:ebf2c243799bd68e6a552bb6bf546b999628fbfe1a7600f243ab2c5f3dc99903",
@@ -10718,13 +10718,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:a8c872dfd22c3732b0c2d9dcb172a8ed7f7cf968c2aca670fac560cd6f360942",
         "packageStatus": "portable",
-        "releaseId": "release:7e7b84781c47c46ad9fa30e3cf11ac1021a750b11d9917e0234bd346fdc01b2c",
+        "releaseId": "release:00e4b52932b515e08ffc373554f569cc5b169b823b6ad0e4fecadb914534a6fc",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:7e7b84781c47c46ad9fa30e3cf11ac1021a750b11d9917e0234bd346fdc01b2c",
+      "releaseId": "release:00e4b52932b515e08ffc373554f569cc5b169b823b6ad0e4fecadb914534a6fc",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -10893,7 +10893,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/playground",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:738843b298b9fad27e99b2011b69440718c113d9aa143ee636857007ce95d69a",
@@ -10906,12 +10906,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:0b4a6158595917c0f90e7b33554cf8d1668f6f02fb9e3c8bb4b58735949661a8",
         "packageStatus": "portable",
-        "releaseId": "release:05f71f3935bf6b1345eb538355fac9dda8821cfdf9d693eccc1400c03b92c084",
+        "releaseId": "release:c33190b644b7dbbd7789b3c60aac272f0a422c95b31cef2bf9e321235247a0d8",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
-      "releaseId": "release:05f71f3935bf6b1345eb538355fac9dda8821cfdf9d693eccc1400c03b92c084",
+      "releaseId": "release:c33190b644b7dbbd7789b3c60aac272f0a422c95b31cef2bf9e321235247a0d8",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -10970,7 +10970,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/plugin-dev",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:c8552da58d1f25b6cb6bf17dbbcca2c44c7cde9804efdeccf877250f8d1fbad5",
@@ -10995,12 +10995,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:9858f2fb679c5b9679373a1bd6d7b2e67da2aa572b23db93767e2bb989dfcd85",
         "packageStatus": "partial",
-        "releaseId": "release:102438f07ce7d760ae49616babb77d23ec4fd2ebdb300531b1b9eaaf4559df76",
+        "releaseId": "release:33494b0bceed32284c60e4d3bad203dcd727c93322a53e09b2a8e17e676bee63",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
-      "releaseId": "release:102438f07ce7d760ae49616babb77d23ec4fd2ebdb300531b1b9eaaf4559df76",
+      "releaseId": "release:33494b0bceed32284c60e4d3bad203dcd727c93322a53e09b2a8e17e676bee63",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -11729,7 +11729,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/pyright-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:29053372d8c0e199099eba6f6094879ca9463c261a6bf9fd6fc4b27dc2a59af4",
@@ -11742,13 +11742,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:5baa3c1d97a764220859a26658e4280b3f7086c2add0c0efc8db441ef9a676f8",
         "packageStatus": "portable",
-        "releaseId": "release:5d5aa85c08fa0beda57ce885542f1f6647370263a273184c824de2e7abe852f5",
+        "releaseId": "release:03788d7762d76652bb48ffc1295ec3068c59de1a9cfe6abc020a526c9071f4bf",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:5d5aa85c08fa0beda57ce885542f1f6647370263a273184c824de2e7abe852f5",
+      "releaseId": "release:03788d7762d76652bb48ffc1295ec3068c59de1a9cfe6abc020a526c9071f4bf",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -11788,11 +11788,11 @@
       "displayName": "Qodo",
       "homepage": "https://github.com/qodo-ai/qodo-skills.git",
       "icon": {
-        "asset": "icon-8a338496614f7dac92f3f044f4e81447.png",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
-        "bytes": 15908,
-        "contentType": "image/png",
-        "digest": "sha256:8a338496614f7dac92f3f044f4e814472757cfe1056d3130ea66edd0f4645a78",
+        "asset": "icon-505d7841292488b3d76c2c3135253a6b.webp",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-505d7841292488b3d76c2c3135253a6b.webp",
+        "bytes": 10022,
+        "contentType": "image/webp",
+        "digest": "sha256:505d7841292488b3d76c2c3135253a6bdd804d771829cbba1f02c75287041cff",
         "homepage": "https://qodo.ai/",
         "kind": "favicon",
         "path": null,
@@ -11879,11 +11879,11 @@
       "displayName": "Qodo Standards",
       "homepage": "https://github.com/qodo-ai/qodo-skills.git",
       "icon": {
-        "asset": "icon-8a338496614f7dac92f3f044f4e81447.png",
-        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
-        "bytes": 15908,
-        "contentType": "image/png",
-        "digest": "sha256:8a338496614f7dac92f3f044f4e814472757cfe1056d3130ea66edd0f4645a78",
+        "asset": "icon-505d7841292488b3d76c2c3135253a6b.webp",
+        "assetUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-505d7841292488b3d76c2c3135253a6b.webp",
+        "bytes": 10022,
+        "contentType": "image/webp",
+        "digest": "sha256:505d7841292488b3d76c2c3135253a6bdd804d771829cbba1f02c75287041cff",
         "homepage": "https://qodo.ai/",
         "kind": "favicon",
         "path": null,
@@ -12305,7 +12305,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/ralph-loop",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:eed3bd261a37dc267b6992414994706ead74a5a0507463a8c251eecfc09088e8",
@@ -12326,13 +12326,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:3aaeb3fb49934e352bb8ffb1201570e4db61f9f6076a02e25153c34ab82af75c",
         "packageStatus": "partial",
-        "releaseId": "release:68b41ee144f35023ed82344248024547fc4925a664c5b72d7ced1340042474bc",
+        "releaseId": "release:b20a4716e565d496c566a351d81532ce2d3fa59081d7a27bd0dd6ac77071e42c",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:68b41ee144f35023ed82344248024547fc4925a664c5b72d7ced1340042474bc",
+      "releaseId": "release:b20a4716e565d496c566a351d81532ce2d3fa59081d7a27bd0dd6ac77071e42c",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -12934,7 +12934,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/ruby-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:0d0f94fc8afbfac30afbfc924553fe047b6c45f936f207275e1edc6cc63fa55d",
@@ -12947,13 +12947,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:ff7b55e1386e733c38bea3111dc046e89d89fedd35d008c82c312f9d05cdba8d",
         "packageStatus": "portable",
-        "releaseId": "release:e2ea3ae5a52f0981cf797854a9f42f6775111f308761b0b8da0262963627a8cb",
+        "releaseId": "release:58ab4f36d66c93e9bcafb793181c8bbd2c731668090193694653257e85eb045c",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:e2ea3ae5a52f0981cf797854a9f42f6775111f308761b0b8da0262963627a8cb",
+      "releaseId": "release:58ab4f36d66c93e9bcafb793181c8bbd2c731668090193694653257e85eb045c",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -13019,7 +13019,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/rust-analyzer-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:d25354d5d1ad57b2bc3c4c8725a51433b9dcc71ce73051deb35bed3992c3e8af",
@@ -13032,13 +13032,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:60cfadf43396ef937947d4d0e9e42545c131a048c736386dcb0d3b37e13570a4",
         "packageStatus": "portable",
-        "releaseId": "release:2772da9230d0882887c1d06299aecddd9f3abfd96f407a3d2fc0e7a0b93ad96c",
+        "releaseId": "release:dc3144f710b8ecfa07a0334fc493bcffbaf7ae4be7db80f9a7e1096c7e95fa7a",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:2772da9230d0882887c1d06299aecddd9f3abfd96f407a3d2fc0e7a0b93ad96c",
+      "releaseId": "release:dc3144f710b8ecfa07a0334fc493bcffbaf7ae4be7db80f9a7e1096c7e95fa7a",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -13796,7 +13796,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/serena",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:266576971dd0e02e02cc9c05988c5b9a898bbb6caceeb29b58d27658a2d673b7",
@@ -13809,12 +13809,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:e352e6c50317b4a280eb56c102931b06d8159737412972d00ca9e83644d6b888",
         "packageStatus": "portable",
-        "releaseId": "release:ab4fbf403b49320d5a71da9a3990e1fd842c796d05962f5a332faba51804b239",
+        "releaseId": "release:8aaae1faa4058b6622519cb90615d2681151193a57493f2c3c562e97bbd8a9d2",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
-      "releaseId": "release:ab4fbf403b49320d5a71da9a3990e1fd842c796d05962f5a332faba51804b239",
+      "releaseId": "release:8aaae1faa4058b6622519cb90615d2681151193a57493f2c3c562e97bbd8a9d2",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -14231,7 +14231,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/skill-creator",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:538287f5a5dc1c0bc226fc6d821e767f30d8d8e5940ed642556b71486771b9ba",
@@ -14252,12 +14252,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:232976a3a77ba539ba2efcb228a56a63e0ead5c32c3d4d3530c9d401d5a6546c",
         "packageStatus": "portable",
-        "releaseId": "release:a7799ec11fcd58bca5c0bbe8656f4262245c103bfc638852863d88f9ebc1b3f7",
+        "releaseId": "release:0d3b2261dff9ce18ebb82b8ec4dcfa3be43fc8ceaf1bb9be25c6b1b5bc89b452",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
-      "releaseId": "release:a7799ec11fcd58bca5c0bbe8656f4262245c103bfc638852863d88f9ebc1b3f7",
+      "releaseId": "release:0d3b2261dff9ce18ebb82b8ec4dcfa3be43fc8ceaf1bb9be25c6b1b5bc89b452",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -14917,7 +14917,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/swift-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:40bb72a8fe10b2aa72592eec837540c7d9daf3e7a73caf17d9abc2931520a3d6",
@@ -14930,13 +14930,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:a18e725079b4f9ceb2980a52f521cd157379fdf77a6e470642382863753a3563",
         "packageStatus": "portable",
-        "releaseId": "release:77946663236ec1410b124f2dbb789e3dccffb9216fca0a4641670ce6be120a20",
+        "releaseId": "release:54cd9067567fbbefd6e1c1147d00e3e289381e037d6eb1624893d98084736187",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:77946663236ec1410b124f2dbb789e3dccffb9216fca0a4641670ce6be120a20",
+      "releaseId": "release:54cd9067567fbbefd6e1c1147d00e3e289381e037d6eb1624893d98084736187",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
@@ -15272,7 +15272,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/terraform",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:d0b15e23177e1d20fda1f4841a9cc25e3eb434cf9c3918e3b04fc63ac142da09",
@@ -15285,12 +15285,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:2076ed68ffc443a52be182e44b4832f37b1bac0e6e0bf1776b5a097d3074b370",
         "packageStatus": "partial",
-        "releaseId": "release:369cde166651735576925097f535d1dd71481c7b7012f6db37f053d629b803db",
+        "releaseId": "release:26a010cc0e9c4056e6896a3529bc2d391a5ca4c3bacdd346a11c0e1cf507b283",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
-      "releaseId": "release:369cde166651735576925097f535d1dd71481c7b7012f6db37f053d629b803db",
+      "releaseId": "release:26a010cc0e9c4056e6896a3529bc2d391a5ca4c3bacdd346a11c0e1cf507b283",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -15839,7 +15839,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/typescript-lsp",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
       },
       "release": {
         "canonicalContentDigest": "sha256:99b406b1508df7b70600402d4447a3ea00a02ed4d9686dd8e6dcd1122bdccde7",
@@ -15852,13 +15852,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:f8bb95e9c164bc31c5a51f390c881ceff051b29929bc038a559337467c213cfc",
         "packageStatus": "portable",
-        "releaseId": "release:1116f1677f282aec789d41a01cde2faefe33a0776a77c631c45a81d15e841785",
+        "releaseId": "release:2c5afc384bd8bc96fe3c78c59c788b52f425eac673f248b568b90b8fbd71778d",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "315c4e48967d9541c29c3c656441dded353ca7aa",
+        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030",
         "upstreamVersion": "1.0.0"
       },
-      "releaseId": "release:1116f1677f282aec789d41a01cde2faefe33a0776a77c631c45a81d15e841785",
+      "releaseId": "release:2c5afc384bd8bc96fe3c78c59c788b52f425eac673f248b568b90b8fbd71778d",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",

@@ -273,8 +273,8 @@
     "pydantic-ai": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-c7f95eb46fe6dee5988d423dfc9f87bb.png",
     "pyright-lsp": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8e7226e8053992780b928eef5ee56331.png",
     "qdrant-skills": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-42d52b9abd4b903268aa5d6b143d4b6a.ico",
-    "qodo": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
-    "qodo-standards": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-8a338496614f7dac92f3f044f4e81447.png",
+    "qodo": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-505d7841292488b3d76c2c3135253a6b.webp",
+    "qodo-standards": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-505d7841292488b3d76c2c3135253a6b.webp",
     "qt-development-skills": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-3562ce93625a23a8bddc57e7329652a6.webp",
     "quarkus-agent": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-31b305da0887cc92f0aed49caafb76d2.png",
     "quickbooks-online": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-004a234e07a9467095b0666620124935.png",
@@ -324,7 +324,7 @@
     "sonarqube": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-f229ce40967152b9f6ec6bab2b4989cf.svg",
     "sonatype-guide": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-06f40b59a2ac5955ad1f9363a4ac36b2.svg",
     "sourcegraph": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-2d336b83e95c31ac9e726c97eed4cb65.svg",
-    "sp-global": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-1e59858f236ac0b079e058ba96b18668.png",
+    "sp-global": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-4c4c3f44acf96a54267911f088006307.webp",
     "spanner": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
     "spotify-ads-api": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-d2534e9fb333a6e277f1edf9b9843564.ico",
     "stackhawk-api": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-4bf4e1993874a9b467d2719b5d836b21.ico",
@@ -386,7 +386,7 @@
     "zscaler": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-fb71a91ef4937bdac04520d7e7b1852b.svg",
     "zyte-web-data": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-ec8d45e699974da7a894ec39256910bb.png"
   },
-  "catalogId": "catalog:d5218b2366986411a07e0f85e5ac92bc698d417264ad4cba1546cb989fe83096",
+  "catalogId": "catalog:8d610a82a99a50040b3e2391dd4b4ba0e51fd59b7c1acd3407fae818cda9ac62",
   "catalogIndexArtifact": "catalog-index.v1.json",
   "catalogIndexUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/catalog-index.v1.json",
   "categories": [
@@ -1645,7 +1645,7 @@
     "redundantPlugins": 118
   },
   "diagnostics": [],
-  "generatedAt": "2026-10-08T23:02:33.996Z",
+  "generatedAt": "2026-10-09T12:44:30.209Z",
   "iconCoverage": {
     "content": 220,
     "favicon": 165,
