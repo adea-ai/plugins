@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:8d610a82a99a50040b3e2391dd4b4ba0e51fd59b7c1acd3407fae818cda9ac62",
+  "catalogId": "catalog:55c630ebc78010ecf1893b531426410511de197f9bb5a029891002275ccf8cad",
   "category": "data-analytics",
   "pluginCount": 49,
   "productCount": 42,
@@ -1848,7 +1848,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "data",
         "repositoryUrl": "https://github.com/anthropics/knowledge-work-plugins",
-        "resolvedCommitSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1"
+        "resolvedCommitSha": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133"
       },
       "release": {
         "canonicalContentDigest": "sha256:8ddb591117199bcee20648dfc20631ec0c0626aeaed655a9db1f57a78489e474",
@@ -1869,13 +1869,13 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:0399268acc41e240ec3ddf7a4c261fcdfc87c379ece403d0761b8a3123b77954",
         "packageStatus": "partial",
-        "releaseId": "release:f92e0d32ad5d9cad50e6e569303b6f0128f64b79a8f8c18f3c24675fd75208e7",
+        "releaseId": "release:ad3d3d6f18da32d2ca9d2a8f90d564db687a66beb11b03c94e7775c5563f7ad7",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
+        "sourceRevision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
         "upstreamVersion": "1.1.0"
       },
-      "releaseId": "release:f92e0d32ad5d9cad50e6e569303b6f0128f64b79a8f8c18f3c24675fd75208e7",
+      "releaseId": "release:ad3d3d6f18da32d2ca9d2a8f90d564db687a66beb11b03c94e7775c5563f7ad7",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -2432,7 +2432,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/firebase",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
+        "resolvedCommitSha": "b8e53f1c05dff3b6d751297f6527990ffc81c2f4"
       },
       "release": {
         "canonicalContentDigest": "sha256:60af04352ae238ec8d87b22936c237ba33fd4a44e908d6fdd51cf81034224fd9",
@@ -2445,12 +2445,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:d3981670b791b2c9c58847c292c7204bedc35df79e3876c10ec6f681d650c0d9",
         "packageStatus": "portable",
-        "releaseId": "release:3ca05b4f31e9c4442584c591aae0a785144f948901fe0735035722b23347ff5d",
+        "releaseId": "release:94a10849b049a29bc52e29d82501790aabb339b425381faf4eabe4365752b446",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
+        "sourceRevision": "b8e53f1c05dff3b6d751297f6527990ffc81c2f4"
       },
-      "releaseId": "release:3ca05b4f31e9c4442584c591aae0a785144f948901fe0735035722b23347ff5d",
+      "releaseId": "release:94a10849b049a29bc52e29d82501790aabb339b425381faf4eabe4365752b446",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -2499,7 +2499,7 @@
         "homepage": "https://firebase.google.com/products/firestore",
         "kind": "favicon",
         "path": null,
-        "url": "https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/firebase/images/touchicon-180.png"
+        "url": "https://www.gstatic.com/devrel-devsite/prod/v097103d8ccd7b257790809ea4cc5e5fee6daa6e24890a4af388296e58364bc31/firebase/images/touchicon-180.png"
       },
       "keywords": [
         "data-analytics",
@@ -2687,7 +2687,7 @@
         "homepage": "https://ai.google.dev/",
         "kind": "favicon",
         "path": null,
-        "url": "https://www.gstatic.com/devrel-devsite/prod/vc572093a046b25fad0d22bd3210637939b9c971bea06a064d6f48a166bf893c5/googledevai/images/touchicon-180-new.png"
+        "url": "https://www.gstatic.com/devrel-devsite/prod/v097103d8ccd7b257790809ea4cc5e5fee6daa6e24890a4af388296e58364bc31/googledevai/images/touchicon-180-new.png"
       },
       "keywords": [
         "catalog",

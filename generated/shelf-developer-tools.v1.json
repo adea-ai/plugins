@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:8d610a82a99a50040b3e2391dd4b4ba0e51fd59b7c1acd3407fae818cda9ac62",
+  "catalogId": "catalog:55c630ebc78010ecf1893b531426410511de197f9bb5a029891002275ccf8cad",
   "category": "developer-tools",
   "products": [
     {
@@ -53,7 +53,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/github",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
+        "resolvedCommitSha": "b8e53f1c05dff3b6d751297f6527990ffc81c2f4"
       },
       "release": {
         "canonicalContentDigest": "sha256:3a8aa90c77c19d4efaefe32703f8daf81020f7927f26f66feae7c66c9e991fc3",
@@ -66,12 +66,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:57c44f8d573dc9277263d5b767e56feff729bf954a5662e9e2b755d1a49aa5ac",
         "packageStatus": "partial",
-        "releaseId": "release:0ab1b5d6075c38d503abac7bef0cd447f401f269d260f06cad12c64bcdfa753e",
+        "releaseId": "release:033811f47fd3e7febc89eab988289aa3c8e0ef33a814e4a6a8a94c9193654735",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
+        "sourceRevision": "b8e53f1c05dff3b6d751297f6527990ffc81c2f4"
       },
-      "releaseId": "release:0ab1b5d6075c38d503abac7bef0cd447f401f269d260f06cad12c64bcdfa753e",
+      "releaseId": "release:033811f47fd3e7febc89eab988289aa3c8e0ef33a814e4a6a8a94c9193654735",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -140,7 +140,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "external_plugins/playwright",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
+        "resolvedCommitSha": "b8e53f1c05dff3b6d751297f6527990ffc81c2f4"
       },
       "release": {
         "canonicalContentDigest": "sha256:09b920f4bea9253e4d1863c57ea4a66b3bef629f3a0e9b2ae62198bf291d2c4b",
@@ -153,12 +153,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:11a00f5ebacb2af4f3e94169d5e476245fc9364adde041968e17c9c81a7f1aa6",
         "packageStatus": "portable",
-        "releaseId": "release:a04cf2be167ee1e6a123afbf4d2416fe66c5a3d49895ff61fae431291ad5c544",
+        "releaseId": "release:e5347449d7b60211a31ce3f30bcd92e24a1935f32d4b991663b57992ee2060dd",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
+        "sourceRevision": "b8e53f1c05dff3b6d751297f6527990ffc81c2f4"
       },
-      "releaseId": "release:a04cf2be167ee1e6a123afbf4d2416fe66c5a3d49895ff61fae431291ad5c544",
+      "releaseId": "release:e5347449d7b60211a31ce3f30bcd92e24a1935f32d4b991663b57992ee2060dd",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "sensitive",
@@ -303,7 +303,7 @@
         "manifestPath": ".claude-plugin/marketplace.json",
         "pluginSubdirectory": "plugins/agent-sdk-dev",
         "repositoryUrl": "https://github.com/anthropics/claude-plugins-official",
-        "resolvedCommitSha": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
+        "resolvedCommitSha": "b8e53f1c05dff3b6d751297f6527990ffc81c2f4"
       },
       "release": {
         "canonicalContentDigest": "sha256:a6f37a1aa41c164cad0661e8c5d534451141100098f7ba12edd74937c5ced495",
@@ -320,12 +320,12 @@
         "contentResolution": "complete",
         "packageDigest": "sha256:23adf47094dfdf00561c88d431adbb2abd19bfca6f587821480f16e1a8669e7c",
         "packageStatus": "partial",
-        "releaseId": "release:26118c590f580b8d4da9508887a0692ff255f01707e6c651e67be5ba58963601",
+        "releaseId": "release:b0d2e5f8abd56110b29e69284f8552d3e3c86244dda8233a0eb691a6fc9d38d0",
         "requiredConnectors": [],
         "requiredCredentials": [],
-        "sourceRevision": "b860d6f2554f145fe1e7ac4cdcabca0120d14030"
+        "sourceRevision": "b8e53f1c05dff3b6d751297f6527990ffc81c2f4"
       },
-      "releaseId": "release:26118c590f580b8d4da9508887a0692ff255f01707e6c651e67be5ba58963601",
+      "releaseId": "release:b0d2e5f8abd56110b29e69284f8552d3e3c86244dda8233a0eb691a6fc9d38d0",
       "securityClassification": {
         "contentResolution": "complete",
         "level": "low",
