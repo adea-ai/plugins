@@ -327,6 +327,7 @@
     "sp-global": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-4c4c3f44acf96a54267911f088006307.webp",
     "spanner": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a332b54b620a2fa04413561c01c925cd.png",
     "spotify-ads-api": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-d2534e9fb333a6e277f1edf9b9843564.ico",
+    "square": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-a2f0255fc60e61d0fff90724fc7b582b.png",
     "stackhawk-api": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-4bf4e1993874a9b467d2719b5d836b21.ico",
     "stackhawk-hawkscan": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-4bf4e1993874a9b467d2719b5d836b21.ico",
     "statsig": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-0a329943a657e1d9279f93c696adbce2.png",
@@ -386,7 +387,7 @@
     "zscaler": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-fb71a91ef4937bdac04520d7e7b1852b.svg",
     "zyte-web-data": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/icon-ec8d45e699974da7a894ec39256910bb.png"
   },
-  "catalogId": "catalog:55c630ebc78010ecf1893b531426410511de197f9bb5a029891002275ccf8cad",
+  "catalogId": "catalog:c8b9c1769c2e558d0e35d8dc8876dca5e5fcc548a0ce79884f4b00d9846cd1e2",
   "catalogIndexArtifact": "catalog-index.v1.json",
   "catalogIndexUrl": "https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/catalog-index.v1.json",
   "categories": [
@@ -1265,7 +1266,7 @@
     {
       "category": "other",
       "listArtifact": "category-other.v1.json",
-      "pluginCount": 23,
+      "pluginCount": 24,
       "pluginIds": [
         "plugin:cursor-official:beehiiv",
         "plugin:cursor-official:buffer",
@@ -1285,13 +1286,14 @@
         "plugin:cursor-official:salesforce-headless-360",
         "plugin:cursor-official:sharepoint",
         "plugin:cursor-official:shopify-store",
+        "plugin:cursor-official:square",
         "plugin:cursor-official:statsig",
         "plugin:cursor-official:tinyfish",
         "plugin:cursor-official:trello",
         "plugin:cursor-official:workday",
         "plugin:cursor-official:x-money"
       ],
-      "productCount": 23,
+      "productCount": 24,
       "productKeys": [
         "beehiiv",
         "buffer",
@@ -1311,6 +1313,7 @@
         "salesforce-headless-360",
         "sharepoint",
         "shopify-store",
+        "square",
         "statsig",
         "tinyfish",
         "trello",
@@ -1640,14 +1643,14 @@
     }
   ],
   "counts": {
-    "plugins": 557,
-    "products": 439,
+    "plugins": 558,
+    "products": 440,
     "redundantPlugins": 118
   },
   "diagnostics": [],
-  "generatedAt": "2026-10-09T22:22:43.110Z",
+  "generatedAt": "2026-10-10T04:47:44.625Z",
   "iconCoverage": {
-    "content": 220,
+    "content": 221,
     "favicon": 165,
     "monogramOnly": 54,
     "monogramProductKeys": [
@@ -1706,7 +1709,7 @@
       "telegram",
       "terraform"
     ],
-    "total": 439
+    "total": 440
   },
   "schemaVersion": 1,
   "sourcePreference": [
