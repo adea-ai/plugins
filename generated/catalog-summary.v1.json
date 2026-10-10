@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:55c630ebc78010ecf1893b531426410511de197f9bb5a029891002275ccf8cad",
+  "catalogId": "catalog:c8b9c1769c2e558d0e35d8dc8876dca5e5fcc548a0ce79884f4b00d9846cd1e2",
   "categories": [
     "business-operations",
     "communication",
@@ -12,8 +12,8 @@
     "productivity",
     "security"
   ],
-  "generatedAt": "2026-10-09T22:22:43.110Z",
-  "pluginCount": 557,
+  "generatedAt": "2026-10-10T04:47:44.625Z",
+  "pluginCount": 558,
   "productGroups": [
     "42crunch-api-security-testing",
     "activecampaign",
@@ -394,6 +394,7 @@
     "sp-global",
     "spanner",
     "spotify-ads-api",
+    "square",
     "stackhawk-api",
     "stackhawk-hawkscan",
     "statsig",
@@ -1892,6 +1893,10 @@
     {
       "pluginId": "plugin:cursor-official:sp-global",
       "text": "S&P Global Query S&P Capital IQ financials, prices, and transcripts. finance global sp"
+    },
+    {
+      "pluginId": "plugin:cursor-official:square",
+      "text": "Square Work with payments, orders, catalog, customers, and invoices. other square"
     },
     {
       "pluginId": "plugin:cursor-official:statsig",
