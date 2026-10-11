@@ -1,6 +1,7 @@
 # Adea and Control Plane consumer contract
 
-The repository is currently public. The stable browser-readable catalog URL is:
+The repository is currently public. The publisher exposes this stable latest
+pointer for server-side consumers such as Control Plane:
 
 `https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/catalog-latest.v1.json`
 
@@ -9,9 +10,9 @@ The immutable URL for a catalog is derived from `catalogId`:
 `https://raw.githubusercontent.com/adea-ai/plugins/catalog-assets/catalogs/<catalogId-suffix>/catalog.v1.json`
 
 For example, `catalog:abc...` is published under the immutable directory
-`catalogs/abc...`. Each catalog snapshot contains six core artifacts —
+`catalogs/abc...`. Each catalog snapshot contains six core artifacts:
 `catalog.v1.json`, `catalog-summary.v1.json`, `categories.v1.json`,
-`compatibility.v1.json`, `integrity.json`, and `sources.lock.json` — plus the
+`compatibility.v1.json`, `integrity.json`, and `sources.lock.json`, plus the
 consumer shards `catalog-index.v1.json`, `shelf-<category>.v1.json` and
 `category-<category>.v1.json`. Mirrored brand marks are addressed by their own
 digest and sit at the branch root rather than inside a snapshot, so every
@@ -35,11 +36,16 @@ A branch removes the conflict instead of arbitrating it. `catalogs/<catalogId>/`
 is content-addressed exactly as the release tag was: a build that produced
 different bytes has a different `catalogId` and therefore a different path, so a
 pinned URL is immutable by construction. `raw.githubusercontent.com` serves it
-with `access-control-allow-origin: *`, so a browser can read it directly, which a
-GitHub release asset cannot do. Releases are left to mean one thing — a version.
+with `access-control-allow-origin: *`, which allows public clients to fetch the
+optional browsing index and mirrored marks. Adea routes the catalog bundle
+through Control Plane. Releases are left to mean one thing, a version.
 
-Consumers should use the stable latest URL for discovery, then pin the
-digest-derived URL and exact `catalogId` for caching and audit records.
+Control Plane uses the stable latest URL for discovery, then resolves the
+digest-derived snapshot URL and exact `catalogId`. Adea requests the catalog
+bundle through its same-origin Control Plane proxy; its clients do not fetch the
+latest pointer or full catalog from the publication branch. Adea may fetch the
+public immutable browsing index and mirrored brand-mark assets using URLs in
+catalog metadata.
 
 The two kinds of digest in `integrity.json` are taken over different things,
 and a verifier has to reproduce each exactly:
@@ -58,7 +64,7 @@ and a verifier has to reproduce each exactly:
 
 The artifact convention is what every shipped consumer implements, so it cannot
 change on one side. Making the artifacts verifiable with a plain `sha256sum` too
-— the obvious reason to want byte digests — would mean publishing byte digests
+(the obvious reason to want byte digests) would mean publishing byte digests
 and teaching every consumer to accept them, which is a breaking change for
 already-installed clients: it needs a contract-version bump and a consumer
 release that understands the new value before this repository switches, not an
@@ -89,27 +95,41 @@ the following identifiers and fields as opaque, exact values:
 | `securityClassification` | Content resolution, sensitivity level, reasons, and permission-sensitive capability types.                |
 | `provenance`             | Source ID, repository, marketplace manifest, upstream name digest, plugin path, and exact commit.         |
 
-Adea is a read-only catalog consumer. It may use the summary, categories,
-search text, product grouping, icons, source badges, compatibility, and update
-state for browsing.
+Adea is a read-only consumer of catalog metadata. It may use the summary,
+categories, search text, product grouping, icons, source badges, compatibility,
+and update state for browsing. Its shared provider verifies the catalog bundle
+before rendering. When `categories.v1.json` contains a public
+`catalogIndexUrl`, Adea fetches that immutable index and accepts it only when
+its digest matches `integrity.json` and its `catalogId` matches the verified
+catalog. If the optional index is absent or fails verification, Adea renders
+from the full catalog returned through Control Plane. Adea's icon resolver
+prefers a URL from the upstream plugin's `icons` field, then a compiled mark
+when one is published, then may use a Google favicon or Simple Icons URL. A
+compiled mark uses its content-addressed public asset URL.
 
-Catalog JSON is served through Control Plane; brand-mark bytes are served from
-an immutable, content-addressed asset base, substituted per deployment. The
+The catalog bundle is served through Control Plane. Adea may fetch the optional
+browsing index and compiled brand-mark bytes from immutable public URLs; the
+asset base can be substituted per deployment. Its index digest check covers the
+index JSON, not the bytes returned by icon URLs. A client that stores a mirrored
+mark can compare its response bytes with the mark's declared asset digest. The
 [fetch patterns](consumer-fetch-patterns.md#who-serves-what) document which
 surface answers which request and why.
 
-`categories.v1.json` is the browsing index and is already deduplicated, ranked
-and sorted. It carries the category list, each category's display order and
-curated `topProductKeys` shelf, the shard artifact names to fetch for records,
-and `diagnostics` (an advisory list of curated names that no longer resolve).
+`categories.v1.json` is the navigation artifact and is already deduplicated,
+ranked and sorted. It carries the category list, each category's display order
+and curated `topProductKeys` shelf, the shard artifact names, the optional
+browsing index URL, and `diagnostics` (an advisory list of curated names that
+no longer resolve).
 Product records live in `catalog-index.v1.json` and in the per-category shards:
 each holds one entry per product with its canonical `pluginId`, its
 `variantPluginIds`, and its `icon`, `license`, `capabilitySummary` and
 compatibility statuses. Consumers must not re-group, re-sort or slice
-`pluginIds` for a shelf, and must not derive icons by inspecting file paths:
-`icon.asset` names a mirrored asset in the same release. An install or enable action submits `pluginId`, exact
-`releaseId`, `canonicalContentDigest`, and the requested harness to Control
-Plane. Adea never downloads or executes upstream plugin content.
+`pluginIds` for a shelf, and must not derive icons by inspecting file paths.
+When a compiled mark is present, `icon.asset` names a mirrored asset in the
+publication branch. An install or enable action submits `pluginId`, exact
+`releaseId`, `canonicalContentDigest`, requested harness, installation
+instance, and workspace/user identity to Control Plane. Adea never downloads
+upstream plugin source files or executes plugin content.
 
 Control Plane fetches the immutable snapshot server-side, verifies the catalog
 and content digests, checks revocation/supersession and policy, resolves

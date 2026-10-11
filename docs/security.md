@@ -22,10 +22,12 @@ Controls include:
 
 ## Mirrored brand marks
 
-A product's brand mark is mirrored into the publication branch, because
-marketplaces declare no icon field and consumers would otherwise have to fetch
-vendor repositories directly. Mirroring is the only path by which upstream bytes
-are republished, and it is constrained:
+A product's compiled brand mark can be mirrored into the publication branch.
+Marketplace dialects do not share a standard icon field, and the mirror gives
+consumers a stable, content-addressed asset URL. Adea's current UI can also use
+an upstream icon URL or a Google favicon or Simple Icons fallback. Mirroring is
+the only path by which this repository republishes upstream image bytes, and it
+is constrained:
 
 - the mark is a file that already exists in the plugin's own content, resolved
   by a documented rule over the release file index; when the content has no mark
@@ -39,10 +41,10 @@ are republished, and it is constrained:
 - that fetch is anonymous: the credential and GitHub's media type are attached
   only to GitHub hosts, never to a vendor page or the icon CDN it points at,
   because the build runs with a token that authorises repository writes for the
-  duration of the job. Sending them is also self-defeating — `appwrite.io`
+  duration of the job. Sending them is also self-defeating: `appwrite.io`
   answers a page carrying an `Authorization` header with HTTP 500, and a CDN
   asked for an image with `accept: application/vnd.github+json` can answer with
-  bytes that are not the mark — so a build that leaked the token silently dropped
+  bytes that are not the mark, so a build that leaked the token silently dropped
   marks a curator had already added. `upstreamRequestHeaders` is the single place
   that decides this, and `verify:brand-sites` fetches through the build's own
   fetcher, so a curated site cannot be reported healthy while the build fails to
@@ -73,6 +75,10 @@ are republished, and it is constrained:
 Consumers must render a mirrored SVG through an image element and never inline
 it into a document, where its contents would share the page's origin.
 
+The mirror's asset digests describe those mirrored bytes. Adea checks the
+catalog bundle and optional browsing-index JSON digests, but it does not
+automatically fetch and verify every image URL selected by its icon resolver.
+
 Mirrored marks remain the trademark of their owners and are republished as
 supplied, with the source repository, commit and path recorded for each. They
 are not relicensed by this repository's licence, and a plugin whose licence is
@@ -81,6 +87,7 @@ undeclared is mirrored like any other; remove an entry from
 the release workflow to publish no marks at all.
 
 The classifier is static and conservative. It is not malware detection, sandboxing,
-or runtime authorization. Control Plane must re-check policy and credentials when
-it turns a catalog snapshot into an execution plan. Credentials are never stored
-in marketplace artifacts.
+or runtime authorization. Control Plane checks policy, connectors, and credentials
+when it handles an installation request. Runtime activation requires separate
+authorization and is outside this compiler's implementation. Credentials are
+never stored in marketplace artifacts.

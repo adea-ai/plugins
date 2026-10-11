@@ -1,6 +1,8 @@
 # Source policy
 
-The initial allow-list contains exactly these official discovery sources:
+The public allow-list contains four official discovery repositories across
+three dialect families: OpenAI, Cursor, and Claude. Anthropic maintains two
+Claude sources, the official plugin list and the knowledge-work list.
 
 | Source ID                 | Repository                                              | Manifest                           | Dialect |
 | ------------------------- | ------------------------------------------------------- | ---------------------------------- | ------- |

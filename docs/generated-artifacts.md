@@ -17,22 +17,29 @@ For a real repository snapshot, use `bun run catalog sync --from-lock PATH`;
 the immutable commit is fetched directly. Rebuilding from the same lock and
 same source bytes must produce byte-identical JSON.
 
-The scheduled workflow compares source heads first. If all four heads equal the
-lock, it exits successfully without touching generated files. When any head
+The scheduled workflow compares source heads first. If all four configured
+repository heads equal the lock, it exits successfully without touching
+generated files. When any head
 changes, it builds a temporary catalog, validates schemas, integrity, and every
-configured curated shelf name, writes a JSON change report, commits the
-replacement to `main`, and publishes the
-snapshot to the `catalog-assets` branch under `catalogs/<catalogId-suffix>/`,
-where `<catalogId-suffix>` is the catalog's own digest. The six required
-versioned artifacts and `integrity.json` go into that directory, the mirrored
-brand marks go to the branch root where their digests address them, and the
-byte-identical `catalog-latest.v1.json` pointer is written at the root. Because
+configured curated shelf name, and writes a JSON change report. It publishes the
+snapshot to `catalog-assets` under `catalogs/<catalogId-suffix>/`, where
+`<catalogId-suffix>` is the catalog's own digest, then verifies the published
+bytes by reading them back. After verification, it commits the generated
+replacement to a bot-owned branch and opens or updates a pull request to `main`.
+Artifacts declared in the `files` map and the `integrity.json` manifest go into
+that directory. Mirrored brand marks, listed separately in `integrity.json`'s
+`assets[]`, go to the branch root where their content-addressed names resolve.
+The byte-identical `catalog-latest.v1.json` pointer is written at the root. Because
 the path is derived from the content, no build that produced different bytes can
 write over an existing snapshot, and previously published snapshots are fetched
 and preserved so pinned URLs keep resolving. A force-push carries no immutability
 guarantee, so the workflow reads the published bytes back from the URLs a
 consumer will use and compares them against what it staged before reporting
 success.
+
+This workflow publishes static catalog metadata and mirrored marks only. It
+does not install plugin files or execute a plugin, lifecycle script, MCP server,
+binary, or command. Versioned npm package releases use a separate workflow.
 
 The curated-shelf check runs before the workflow writes the asset branch. A
 missing curated product therefore fails the sync while the existing mutable
@@ -55,7 +62,7 @@ The published set has a fixed core and two derived families:
 `categories.v1.json` is navigation: the category list, each category's display
 order, its curated `topProductKeys` shelf, the shard names to fetch for full
 records, and a `diagnostics` list of curated names that no longer resolve.
-Product records live in the shards — one entry per product with a canonical
+Product records live in the shards, with one entry per product and its canonical
 plugin ID, its source variants, and its `icon`, licence, capability summary and
 compatibility statuses. Everything is derived from `catalog.v1.json` and never
 adds or removes plugins; `verify-integrity` rejects a set whose membership,
@@ -67,6 +74,6 @@ An unsafe individual plugin does not become executable content. When its
 snapshot contains symlinks, unsafe paths, unsupported submodules, invalid
 plugin metadata, or exceeds a content limit, it is skipped and the JSON change
 report records its source-qualified `pluginId`, reason code, security reason,
-affected paths, and `incompleteContent: true`. The rest of the four-source
-catalog may still publish. A skipped plugin is not present in the catalog and
+affected paths, and `incompleteContent: true`. Other safe plugins can still be
+included in the catalog. A skipped plugin is not present and
 must not be materialized by Adea or Control Plane.
