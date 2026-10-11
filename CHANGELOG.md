@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.34](https://github.com/adea-ai/plugins/compare/v2.0.33...v2.0.34) (2026-10-11)
+
+
+### Documentation
+
+* architecture-alignment-20261001 ([#234](https://github.com/adea-ai/plugins/issues/234)) ([d37aef3](https://github.com/adea-ai/plugins/commit/d37aef3d56d0520dd8c3db03d170e670fec10500))
+
 ## [2.0.33](https://github.com/adea-ai/plugins/compare/v2.0.32...v2.0.33) (2026-10-10)
 
 
