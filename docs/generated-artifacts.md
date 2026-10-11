@@ -21,14 +21,15 @@ The scheduled workflow compares source heads first. If all four configured
 repository heads equal the lock, it exits successfully without touching
 generated files. When any head
 changes, it builds a temporary catalog, validates schemas, integrity, and every
-configured curated shelf name, writes a JSON change report, commits the
-replacement to a bot-owned branch, opens a pull request to `main`, and publishes
-the snapshot to the `catalog-assets` branch under `catalogs/<catalogId-suffix>/`,
-where `<catalogId-suffix>` is the catalog's own digest. Every artifact in the
-`files` map and the `integrity.json` manifest go into that directory. Mirrored
-brand marks, listed separately in `integrity.json`'s `assets[]`, go to the
-branch root where their content-addressed names resolve, and the
-byte-identical `catalog-latest.v1.json` pointer is written at the root. Because
+configured curated shelf name, and writes a JSON change report. It publishes the
+snapshot to `catalog-assets` under `catalogs/<catalogId-suffix>/`, where
+`<catalogId-suffix>` is the catalog's own digest, then verifies the published
+bytes by reading them back. After verification, it commits the generated
+replacement to a bot-owned branch and opens or updates a pull request to `main`.
+Artifacts declared in the `files` map and the `integrity.json` manifest go into
+that directory. Mirrored brand marks, listed separately in `integrity.json`'s
+`assets[]`, go to the branch root where their content-addressed names resolve.
+The byte-identical `catalog-latest.v1.json` pointer is written at the root. Because
 the path is derived from the content, no build that produced different bytes can
 write over an existing snapshot, and previously published snapshots are fetched
 and preserved so pinned URLs keep resolving. A force-push carries no immutability
