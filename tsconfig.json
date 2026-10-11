@@ -13,7 +13,6 @@
     "skipLibCheck": true,
     "types": ["bun", "node"],
     "noEmit": true,
-    "baseUrl": ".",
     "paths": {
       "@adea-ai/plugins": ["./packages/plugins/src/index.ts"],
       "@adea-ai/plugins/schema": ["./packages/plugins/src/schema.ts"],

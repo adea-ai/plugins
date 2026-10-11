@@ -1,5 +1,5 @@
 {
-  "catalogId": "catalog:bb1045cfda90abc57a7ac7e2355be54926192e2a42f0ea590a730d807d3addc0",
+  "catalogId": "catalog:c8b9c1769c2e558d0e35d8dc8876dca5e5fcc548a0ce79884f4b00d9846cd1e2",
   "categories": [
     "business-operations",
     "communication",
@@ -12,8 +12,8 @@
     "productivity",
     "security"
   ],
-  "generatedAt": "2026-09-28T23:00:35.096Z",
-  "pluginCount": 549,
+  "generatedAt": "2026-10-10T04:47:44.625Z",
+  "pluginCount": 558,
   "productGroups": [
     "42crunch-api-security-testing",
     "activecampaign",
@@ -154,6 +154,7 @@
     "dropbox",
     "duckdb-skills",
     "duende-skills",
+    "dyl-stack",
     "dynatrace",
     "engineering",
     "enterprise-search",
@@ -199,6 +200,7 @@
     "grafana-mcp",
     "granola",
     "grasp",
+    "greenhouse",
     "grok-voice",
     "guru",
     "higgsfield",
@@ -248,6 +250,7 @@
     "mapbox",
     "marketing",
     "math-olympiad",
+    "math-proof",
     "maven-bio",
     "mcp-apps",
     "mcp-server-dev",
@@ -289,6 +292,7 @@
     "oracle-ai-data-platform-workbench-spark-connectors",
     "oracledb",
     "orchestrate",
+    "origin-apps",
     "otter",
     "outlook",
     "outlook-calendar",
@@ -334,6 +338,7 @@
     "qodo-standards",
     "qt-development-skills",
     "quarkus-agent",
+    "quickbooks-online",
     "railway",
     "ralph-loop",
     "rc",
@@ -353,6 +358,7 @@
     "sagemaker-ai",
     "sales",
     "salesforce",
+    "salesforce-headless-360",
     "sanity",
     "sanity-plugin",
     "sap-cds-mcp",
@@ -388,6 +394,7 @@
     "sp-global",
     "spanner",
     "spotify-ads-api",
+    "square",
     "stackhawk-api",
     "stackhawk-hawkscan",
     "statsig",
@@ -431,6 +438,7 @@
     "wingspan",
     "wix",
     "workable",
+    "workday",
     "workos",
     "wrike",
     "x-ads",
@@ -576,7 +584,7 @@
     },
     {
       "pluginId": "plugin:claude-official:aws-startup-advisor",
-      "text": "AWS Startup Advisor Personalized architecture, cost, security, and migration guidance for startups. From day-one account setup and security baselines to production-ready infrastructure, cost optimization, and beyond. Includes AWS Activate Credits eligibility, 60+ exclusive startup offers, and multi-account multi-region support. Built on expertise from AWS Startup Solutions Architects and patterns from 350,000+ startups. advisor aws developer-tools startup"
+      "text": "AWS Startup Advisor Personalized AWS guidance built on patterns from 350,000+ startups. Get architecture, cost, and security recommendations matched to your stage, from day-one account setup to production-ready infrastructure. Migrate to AWS from Azure, GCP, or Heroku with resource discovery, cost estimates, and generated Terraform. Move OpenAI, Azure OpenAI, and Gemini code to Amazon Bedrock, and plan and prototype AI agents on AgentCore and other AWS runtimes. Includes AWS Activate credits eligibility, 60+ exclusive startup offers, and multi-account, multi-region support. Built by AWS Startup Solutions Architects. advisor aws developer-tools startup"
     },
     {
       "pluginId": "plugin:claude-official:aws-transform",
@@ -920,7 +928,7 @@
     },
     {
       "pluginId": "plugin:claude-official:hostinger",
-      "text": "Hostinger Deploy, manage and monitor Hostinger services — Websites, Domains, Ecommerce, Email Marketing, Subscriptions & Payments, and VPS. Authenticate via browser (OAuth) or API token. developer-tools hostinger"
+      "text": "Hostinger Deploy, manage and monitor your Hostinger services directly from Claude Code. The plugin connects Claude to Hostinger's remote MCP server, so you can ship sites and apps, manage domains and DNS, run WordPress and operate VPS servers without leaving your coding environment. There's nothing to install on your machine: no Node.js, no npm, no local server. Key features include one-prompt deployments for static sites, Node.js apps (built on Hostinger), full WordPress site imports, and WordPress plugins and themes, plus static and PHP sites on the Agency Plan. Beyond deployments, Claude can search and register domains, edit DNS records and snapshots, check build logs, and manage mailboxes, online stores, email marketing contacts, subscriptions and orders. It can also control VPS firewalls, snapshots and monitoring. Sign in through your browser (OAuth) on first use, or set a `HOSTINGER_API_TOKEN` from hPanel. How to use: there are no commands to memorize. Describe what you want and Claude picks the right tool or deployment skill. Try \"deploy my static site to Hostinger\", \"deploy this Next.js app to example.com\", \"create an A record pointing example.com to 1.2.3.4\", or \"show VPS metrics for the last 24 hours.\" developer-tools hostinger"
     },
     {
       "pluginId": "plugin:claude-official:hubspot-sales",
@@ -1041,6 +1049,10 @@
     {
       "pluginId": "plugin:claude-official:math-olympiad",
       "text": "Math Olympiad Solve competition math (IMO, Putnam, USAMO) with adversarial verification that catches what self-verification misses. Fresh-context verifiers attack proofs with specific failure patterns. Calibrated abstention over bluffing. education-research math olympiad"
+    },
+    {
+      "pluginId": "plugin:claude-official:math-proof",
+      "text": "Math Proof Two skills for hard mathematics problems, each ending in a self-contained proof.md: /math-proof:solo has the session work the problem itself in stages with a notes file; /math-proof:siege works on it for hours in rounds of judge and worker sub-agents and says plainly what is and is not proved. education-research math proof"
     },
     {
       "pluginId": "plugin:claude-official:mcp-apps",
@@ -1216,7 +1228,7 @@
     },
     {
       "pluginId": "plugin:claude-official:postman",
-      "text": "Postman Full API lifecycle management for Claude Code. Sync collections, generate client code, discover APIs, run tests, create mocks, publish docs, and audit security. Powered by the Postman MCP Server. developer-tools postman"
+      "text": "Postman Work with Postman from your agent: bootstrap a repo's Postman setup, mock an API before it's implemented, run collection and governance checks in CI, monitor a live endpoint, deploy and debug Postman Flows, and publish generated API documentation. developer-tools postman"
     },
     {
       "pluginId": "plugin:claude-official:pr-review-toolkit",
@@ -1655,8 +1667,12 @@
       "text": "Docusign Manage envelopes, templates, workflows, and agreements. business-operations docusign"
     },
     {
+      "pluginId": "plugin:cursor-official:dyl-stack",
+      "text": "Dyl Stack Dylan's agent style on top of pstack: root causes over symptom patches, The Algorithm before design, terse verified delivery, a PR review that fits in a paste, and Figma-to-UI with a visual judge. dyl other stack"
+    },
+    {
       "pluginId": "plugin:cursor-official:etoro-trading",
-      "text": "eToro Trading View your eToro portfolio, balances, positions, and watchlists, research instruments and traders, and prepare and place trades. etoro other trading"
+      "text": "Etoro View your eToro portfolio, balances, positions, and watchlists, research instruments and traders, and prepare and place trades. etoro other trading"
     },
     {
       "pluginId": "plugin:cursor-official:excalidraw",
@@ -1717,6 +1733,10 @@
     {
       "pluginId": "plugin:cursor-official:google-slides",
       "text": "Google Slides Create, edit, and render presentations. google other slides"
+    },
+    {
+      "pluginId": "plugin:cursor-official:greenhouse",
+      "text": "Greenhouse Search candidates, jobs, and applications, and review scorecards in Greenhouse Recruiting. greenhouse other"
     },
     {
       "pluginId": "plugin:cursor-official:grok-voice",
@@ -1783,6 +1803,10 @@
       "text": "Orchestrate Fan large tasks out across parallel cloud agents with planners, workers, verifiers, and structured handoffs. orchestrate productivity"
     },
     {
+      "pluginId": "plugin:cursor-official:origin-apps",
+      "text": "Origin Apps Skills for building on the Cursor Origin API. Fetch the live spec first, then follow the Origin rules for credentials, scopes, webhooks, paging, and errors. Includes a skill that plans the port of an existing GitHub App. apps origin other"
+    },
+    {
       "pluginId": "plugin:cursor-official:otter",
       "text": "Otter.ai Search meeting history and pull full transcripts. communication otter"
     },
@@ -1823,6 +1847,10 @@
       "text": "Pstack if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence. business-operations pstack"
     },
     {
+      "pluginId": "plugin:cursor-official:quickbooks-online",
+      "text": "QuickBooks Online Read invoices, bills, expenses, customers, accounts, and financial reports. online other quickbooks"
+    },
+    {
       "pluginId": "plugin:cursor-official:ralph-loop",
       "text": "Ralph Loop Iterative self-referential AI loops using the Ralph Wiggum technique. developer-tools loop ralph"
     },
@@ -1837,6 +1865,10 @@
     {
       "pluginId": "plugin:cursor-official:salesforce",
       "text": "Salesforce Query, create, and update records in your org. business-operations salesforce"
+    },
+    {
+      "pluginId": "plugin:cursor-official:salesforce-headless-360",
+      "text": "Salesforce (Headless 360, Beta) Manage records, users, and org setup across Salesforce. 360 headless other salesforce"
     },
     {
       "pluginId": "plugin:cursor-official:semrush",
@@ -1861,6 +1893,10 @@
     {
       "pluginId": "plugin:cursor-official:sp-global",
       "text": "S&P Global Query S&P Capital IQ financials, prices, and transcripts. finance global sp"
+    },
+    {
+      "pluginId": "plugin:cursor-official:square",
+      "text": "Square Work with payments, orders, catalog, customers, and invoices. other square"
     },
     {
       "pluginId": "plugin:cursor-official:statsig",
@@ -1905,6 +1941,10 @@
     {
       "pluginId": "plugin:cursor-official:workable",
       "text": "Workable Search candidates, move pipelines, and manage HR records. business-operations workable"
+    },
+    {
+      "pluginId": "plugin:cursor-official:workday",
+      "text": "Workday Look up workers, organizations, time off, payroll, and recruiting data in Workday. other workday"
     },
     {
       "pluginId": "plugin:cursor-official:wrike",
@@ -2101,6 +2141,10 @@
     {
       "pluginId": "plugin:knowledge-work-official:gitkraken",
       "text": "GitKraken Gives Claude access to your real Git and project context: commits, branches, pull requests, and issues across every repo you work in. Works with GitHub, GitLab, Azure DevOps, Bitbucket, and Jira. developer-tools gitkraken"
+    },
+    {
+      "pluginId": "plugin:knowledge-work-official:govtribe",
+      "text": "GovTribe Government contracting research and capture workflows in Claude: opportunity and pipeline briefs, bid/no-bid and competitor analysis, price-to-win and proposal prep, powered by the GovTribe connector. govtribe productivity"
     },
     {
       "pluginId": "plugin:knowledge-work-official:grafana-assistant",

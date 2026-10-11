@@ -1,5 +1,188 @@
 # Changelog
 
+## [2.0.33](https://github.com/adea-ai/plugins/compare/v2.0.32...v2.0.33) (2026-10-10)
+
+
+### Maintenance
+
+* **catalog:** refresh marketplace snapshot catalog:c8b9c1769c2e558d0e35d8dc8876dca5e5fcc548a0ce79884f4b00d9846cd1e2 ([#232](https://github.com/adea-ai/plugins/issues/232)) ([6d7975f](https://github.com/adea-ai/plugins/commit/6d7975f2e229202e1760eab736cd0308366e037f))
+
+## [2.0.32](https://github.com/adea-ai/plugins/compare/v2.0.31...v2.0.32) (2026-10-09)
+
+
+### Maintenance
+
+* **catalog:** refresh marketplace snapshot catalog:55c630ebc78010ecf1893b531426410511de197f9bb5a029891002275ccf8cad ([#230](https://github.com/adea-ai/plugins/issues/230)) ([d3d562f](https://github.com/adea-ai/plugins/commit/d3d562f99df725b14962bf2448ac798d6be74e3a))
+
+## [2.0.31](https://github.com/adea-ai/plugins/compare/v2.0.30...v2.0.31) (2026-10-09)
+
+
+### Maintenance
+
+* **catalog:** refresh marketplace snapshot catalog:8d610a82a99a50040b3e2391dd4b4ba0e51fd59b7c1acd3407fae818cda9ac62 ([#228](https://github.com/adea-ai/plugins/issues/228)) ([42a902d](https://github.com/adea-ai/plugins/commit/42a902dd1fee4ce511cecc2c857d6e81ba013f22))
+
+## [2.0.30](https://github.com/adea-ai/plugins/compare/v2.0.29...v2.0.30) (2026-10-08)
+
+
+### Maintenance
+
+* **catalog:** refresh marketplace snapshot catalog:d5218b2366986411a07e0f85e5ac92bc698d417264ad4cba1546cb989fe83096 ([#226](https://github.com/adea-ai/plugins/issues/226)) ([904d2c4](https://github.com/adea-ai/plugins/commit/904d2c474ddaf21eee51544c1d74335969ea6462))
+
+## [2.0.29](https://github.com/adea-ai/plugins/compare/v2.0.28...v2.0.29) (2026-10-08)
+
+
+### Maintenance
+
+* **code-foundry:** upgrade runtime to v1.47.1 ([#224](https://github.com/adea-ai/plugins/issues/224)) ([eec915a](https://github.com/adea-ai/plugins/commit/eec915a332dfb21ee41902edbac6472a7627ff7e))
+
+## [2.0.28](https://github.com/adea-ai/plugins/compare/v2.0.27...v2.0.28) (2026-10-08)
+
+
+### Maintenance
+
+* **deps:** update dependency code-foundry to v1.46.3 ([#218](https://github.com/adea-ai/plugins/issues/218)) ([37026c7](https://github.com/adea-ai/plugins/commit/37026c72eb4b9d3a930338c048e891828c6207cb))
+
+## [2.0.27](https://github.com/adea-ai/plugins/compare/v2.0.26...v2.0.27) (2026-10-08)
+
+
+### Maintenance
+
+* **catalog:** refresh marketplace snapshot catalog:6a6722c9a5ba757173ab396bf4c1f0bf6912f25a1c3cdeea63ae047c9ccd9121 ([#221](https://github.com/adea-ai/plugins/issues/221)) ([436d1de](https://github.com/adea-ai/plugins/commit/436d1dea0e6a5d13e3f23b9acbf9b4e05e49c7d0))
+
+## [2.0.26](https://github.com/adea-ai/plugins/compare/v2.0.25...v2.0.26) (2026-10-08)
+
+
+### Maintenance
+
+* **catalog:** refresh marketplace snapshot catalog:a1e5675c6a206f8427ab9354d34cc174849f10cf1af2da4d9f25d524f5d925d6 ([#217](https://github.com/adea-ai/plugins/issues/217)) ([abd4768](https://github.com/adea-ai/plugins/commit/abd4768e0b6e7e3aec96ac16d59b8ef178d634b3))
+* **catalog:** refresh marketplace snapshot catalog:a522c904b4ab59ad426705698f2c4f1a77f008564ab39b36aede3fba4fe8f6a2 ([#219](https://github.com/adea-ai/plugins/issues/219)) ([0ec4941](https://github.com/adea-ai/plugins/commit/0ec4941fbb58a96ba3d8e120b45e5f415c86568e))
+* **deps:** update dependency code-foundry to v1.46.2 ([#212](https://github.com/adea-ai/plugins/issues/212)) ([5b213a2](https://github.com/adea-ai/plugins/commit/5b213a2a92f2cc5768b74bcb3d2864305a6ffc94))
+
+## [2.0.25](https://github.com/adea-ai/plugins/compare/v2.0.24...v2.0.25) (2026-10-07)
+
+
+### Maintenance
+
+* **catalog:** refresh marketplace snapshot catalog:2c0472642bd9bdcef234cc9e8ff7fe8bff7412b4bcfbb88bfbf618d64599e437 ([#215](https://github.com/adea-ai/plugins/issues/215)) ([bb65eaf](https://github.com/adea-ai/plugins/commit/bb65eafbc01e2b1b9423c766581f415e715c59c6))
+
+## [2.0.24](https://github.com/adea-ai/plugins/compare/v2.0.23...v2.0.24) (2026-10-06)
+
+
+### Maintenance
+
+* **catalog:** refresh marketplace snapshot catalog:8ff9769f0ef3aafe431c142664711e1dc96724b8b4de13b474687f6a84832f4b ([#213](https://github.com/adea-ai/plugins/issues/213)) ([75f0b77](https://github.com/adea-ai/plugins/commit/75f0b773395598d76664b61e7e5266ff8d7b937e))
+
+## [2.0.23](https://github.com/adea-ai/plugins/compare/v2.0.22...v2.0.23) (2026-10-06)
+
+
+### Maintenance
+
+* **deps:** update dependency code-foundry to v1.44.11 ([#207](https://github.com/adea-ai/plugins/issues/207)) ([ecf2970](https://github.com/adea-ai/plugins/commit/ecf2970c486fb12e88d41eb948e71f4534b9dd2c))
+
+## [2.0.22](https://github.com/adea-ai/plugins/compare/v2.0.21...v2.0.22) (2026-10-06)
+
+
+### Maintenance
+
+* **catalog:** refresh marketplace snapshot catalog:4c79d496327544951d23ef33dd58a8152e51d5a0cf39c85416bcefd8f3fea4a9 ([#210](https://github.com/adea-ai/plugins/issues/210)) ([17fb834](https://github.com/adea-ai/plugins/commit/17fb8347608f776558e16b647d25d99e488bb8a0))
+* **catalog:** refresh marketplace snapshot catalog:bb9be72ff24c82a2cb74594174cb48a030d01281b86844cc8ae7a145456280e3 ([#208](https://github.com/adea-ai/plugins/issues/208)) ([1a08c48](https://github.com/adea-ai/plugins/commit/1a08c48313eb34625812569e514aa0b2d25e4fbb))
+
+## [2.0.21](https://github.com/adea-ai/plugins/compare/v2.0.20...v2.0.21) (2026-10-05)
+
+
+### Bug Fixes
+
+* **ci:** drop removed baseUrl option from the plugins tsconfig ([#205](https://github.com/adea-ai/plugins/issues/205)) ([5a8fd77](https://github.com/adea-ai/plugins/commit/5a8fd777000eda26562f4829c574b48e3ac17b2d))
+
+
+### Maintenance
+
+* **deps:** update dependency oxfmt to ^0.72.0 ([#204](https://github.com/adea-ai/plugins/issues/204)) ([70de028](https://github.com/adea-ai/plugins/commit/70de02866af9589e030a1762ccab0286945cb3c8))
+
+## [2.0.20](https://github.com/adea-ai/plugins/compare/v2.0.19...v2.0.20) (2026-10-05)
+
+
+### Maintenance
+
+* **catalog:** refresh marketplace snapshot catalog:1eb399f57af22c0a6b60131b256fd1214c626cbadfaf74e2d43980c7dc9aef9f ([#202](https://github.com/adea-ai/plugins/issues/202)) ([69cb161](https://github.com/adea-ai/plugins/commit/69cb1618b2aa5bd7599046b03a3ee46f5fad181d))
+
+## [2.0.19](https://github.com/adea-ai/plugins/compare/v2.0.18...v2.0.19) (2026-10-04)
+
+
+### Maintenance
+
+* **catalog:** refresh marketplace snapshot catalog:12562c6fb027bb5a383586850fa25b2c9d35a0f54f25c4ac61e0a75beffca466 ([#200](https://github.com/adea-ai/plugins/issues/200)) ([a52cb1e](https://github.com/adea-ai/plugins/commit/a52cb1e468e0d2ba28fcb54537cbd6a08989e69f))
+
+## [2.0.18](https://github.com/adea-ai/plugins/compare/v2.0.17...v2.0.18) (2026-10-03)
+
+
+### Maintenance
+
+* **deps:** update dependency code-foundry to v1.44.4 ([#188](https://github.com/adea-ai/plugins/issues/188)) ([9852c10](https://github.com/adea-ai/plugins/commit/9852c10694f0520a75a1ce4f74dc05b1ca30666a))
+
+## [2.0.17](https://github.com/adea-ai/plugins/compare/v2.0.16...v2.0.17) (2026-10-03)
+
+
+### Maintenance
+
+* **catalog:** refresh marketplace snapshot catalog:46e165ddb74d334dd6a76b367ef6036207327e25abed98b1c404bf532f5b7662 ([#197](https://github.com/adea-ai/plugins/issues/197)) ([7614caf](https://github.com/adea-ai/plugins/commit/7614caf012e74d673055ecd097cd0883e8cb4234))
+
+## [2.0.16](https://github.com/adea-ai/plugins/compare/v2.0.15...v2.0.16) (2026-10-03)
+
+
+### Maintenance
+
+* deps-2026-10 ([#195](https://github.com/adea-ai/plugins/issues/195)) ([2edcc5e](https://github.com/adea-ai/plugins/commit/2edcc5e71a4fb4b48bba0cb3efc1f836d1e024e9))
+
+## [2.0.15](https://github.com/adea-ai/plugins/compare/v2.0.14...v2.0.15) (2026-10-03)
+
+
+### Maintenance
+
+* **catalog:** refresh marketplace snapshot catalog:566e555371b738869a17b848b031faf410ed508e462358d2b4b298fbd8a5747e ([#193](https://github.com/adea-ai/plugins/issues/193)) ([56d7c19](https://github.com/adea-ai/plugins/commit/56d7c19052168bb8303ecbf11f712508e21db163))
+
+## [2.0.14](https://github.com/adea-ai/plugins/compare/v2.0.13...v2.0.14) (2026-10-02)
+
+
+### Maintenance
+
+* **catalog:** refresh marketplace snapshot catalog:424636ad7aacccdc3f181c204335ecd0f4bb13c7c5f12daeb2aaebb4dc9d3639 ([#191](https://github.com/adea-ai/plugins/issues/191)) ([3bd2f44](https://github.com/adea-ai/plugins/commit/3bd2f44e9c80fb2d20474dc74962221feb42ee3a))
+
+## [2.0.13](https://github.com/adea-ai/plugins/compare/v2.0.12...v2.0.13) (2026-10-02)
+
+
+### Maintenance
+
+* **code-foundry:** upgrade runtime to v1.42.0 ([#189](https://github.com/adea-ai/plugins/issues/189)) ([b8fa0ba](https://github.com/adea-ai/plugins/commit/b8fa0ba0d799f4bc98089b0ca94e30b661d0db09))
+
+## [2.0.12](https://github.com/adea-ai/plugins/compare/v2.0.11...v2.0.12) (2026-10-02)
+
+
+### Maintenance
+
+* **code-foundry:** upgrade runtime to v1.41.0 ([#186](https://github.com/adea-ai/plugins/issues/186)) ([4ad4fa0](https://github.com/adea-ai/plugins/commit/4ad4fa0a9273037b03e55ec628e6fc862bdcf615))
+
+## [2.0.11](https://github.com/adea-ai/plugins/compare/v2.0.10...v2.0.11) (2026-10-02)
+
+
+### Maintenance
+
+* **deps:** update dependency code-foundry to v1.40.0 ([#184](https://github.com/adea-ai/plugins/issues/184)) ([493d9f7](https://github.com/adea-ai/plugins/commit/493d9f72c4d7b677cf0176274f310894b39e7c8f))
+
+## [2.0.10](https://github.com/adea-ai/plugins/compare/v2.0.9...v2.0.10) (2026-10-02)
+
+
+### Maintenance
+
+* make dependency updates Renovate-only and drop Dependabot ([#182](https://github.com/adea-ai/plugins/issues/182)) ([6625c98](https://github.com/adea-ai/plugins/commit/6625c9854ff847faf18c7157f5c20e14c990df78))
+
+## [2.0.9](https://github.com/adea-ai/plugins/compare/v2.0.8...v2.0.9) (2026-10-02)
+
+
+### Bug Fixes
+
+* **catalog:** track aws-startup-advisor's move to aws/agent-toolkit-for-aws ([#180](https://github.com/adea-ai/plugins/issues/180)) ([3a2cf17](https://github.com/adea-ai/plugins/commit/3a2cf17efb46211197d1efdbc4875a29536c4882))
+
 ## [2.0.8](https://github.com/adea-ai/plugins/compare/v2.0.7...v2.0.8) (2026-10-01)
 
 
