@@ -169,9 +169,9 @@ before switching consumers to v2 plans. The synchronization workflow publishes
 static catalog artifacts; it does not install or execute a listed plugin.
 
 The separate `.github/workflows/publish-packages.yml` workflow publishes
-`@adea-ai/plugins` after relevant package, schema, or publishing-workflow
-changes reach `main`, skipping versions already on npm. It uses npm trusted
-publishing; configure a trusted publisher for repository `adea-ai/plugins`,
+`@adea-ai/plugins` after changes to published packages, schemas, the publishing
+script, or the workflow reach `main`, skipping versions already on npm. It uses npm
+trusted publishing; configure a trusted publisher for repository `adea-ai/plugins`,
 workflow `publish-packages.yml`, and direct `npm publish` permission. No
 long-lived npm token is used.
 

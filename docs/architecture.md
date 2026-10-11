@@ -18,9 +18,9 @@ safe Git tree/raw snapshotter ---- source lock
               |
  deterministic catalog and consumer artifacts
               |
- commit generated snapshot to main
+ publish immutable snapshot + latest pointer to catalog-assets
               |
- publish immutable catalog snapshot + latest pointer
+ open draft PR with generated artifacts for main
 
 Control Plane server -- fetches and verifies --> catalog-assets publication
        |

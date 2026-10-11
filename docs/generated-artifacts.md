@@ -24,9 +24,10 @@ changes, it builds a temporary catalog, validates schemas, integrity, and every
 configured curated shelf name, writes a JSON change report, commits the
 replacement to a bot-owned branch, opens a pull request to `main`, and publishes
 the snapshot to the `catalog-assets` branch under `catalogs/<catalogId-suffix>/`,
-where `<catalogId-suffix>` is the catalog's own digest. Every artifact named in
-`integrity.json` and the integrity manifest go into that directory. Mirrored
-brand marks go to the branch root where their digests address them, and the
+where `<catalogId-suffix>` is the catalog's own digest. Every artifact in the
+`files` map and the `integrity.json` manifest go into that directory. Mirrored
+brand marks, listed separately in `integrity.json`'s `assets[]`, go to the
+branch root where their content-addressed names resolve, and the
 byte-identical `catalog-latest.v1.json` pointer is written at the root. Because
 the path is derived from the content, no build that produced different bytes can
 write over an existing snapshot, and previously published snapshots are fetched

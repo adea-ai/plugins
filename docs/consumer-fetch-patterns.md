@@ -54,8 +54,8 @@ harness to Control Plane.
 
 ## Icons
 
-Every product carries an `icon` record and a `monogram`; the UI can render the
-monogram when no image URL resolves.
+Every product carries an `icon` field, which may be `null`, and a `monogram`;
+the UI can render the monogram when no image URL resolves.
 
 When a compiled mark is present, it is mirrored at the root of the publication
 branch and uses this content-addressed URL:
