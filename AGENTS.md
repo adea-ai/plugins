@@ -82,11 +82,15 @@ from reviewed work ready for the next gate.
 
 ## Relationship to the managed baseline
 
-The original Code Foundry guidance below is retained unchanged. The working-draft
-workflow above takes precedence for authorized agent work: publish WIP to the
-same draft during the task and before handoff; review and applicable passing
-checks gate readiness and merge. Repository-specific commands above apply to
-this checkout instead of generic examples for other stacks.
+The managed core below matches the official [Code Foundry v1.47.3 release](https://github.com/0xPlayerOne/code-foundry/tree/v1.47.3).
+Refresh the generated core from the latest official release first, then
+personalize outside its managed blocks. For an AGENTS-only update, preview sync
+in a disposable checkout and retain only the generated AGENTS.md core.
+
+The working-draft workflow above takes precedence for authorized agent work:
+publish WIP to the same draft during the task and before handoff; review and
+applicable passing checks gate readiness and merge. Repository-specific commands
+above apply to this checkout instead of generic examples for other stacks.
 
 # Agent Instructions
 
