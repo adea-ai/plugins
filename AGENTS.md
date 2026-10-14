@@ -34,8 +34,9 @@ routine choices; ask only when a consequential decision or authority is missing.
   work and failing checks do not block draft pushes; record results and gaps.
 - Verify the remote head before and after pushing. Preserve another contributor's
   changes; use a separate handoff branch when needed instead of force-pushing.
-- Keep auto-merge off while pushing unreviewed work. Review and applicable passing
-  checks gate readiness and merge, rather than WIP publication.
+- Keep auto-merge off while pushing unreviewed work. Personal review of the exact
+  head gates readiness; mark reviewed drafts ready to trigger CI. Applicable
+  passing checks and protections gate merge, rather than WIP publication.
 
 ## Commands and validation
 
@@ -88,8 +89,9 @@ personalize outside its managed blocks. For an AGENTS-only update, preview sync
 in a disposable checkout and retain only the generated AGENTS.md core.
 
 The working-draft workflow above takes precedence for authorized agent work:
-publish WIP to the same draft during the task and before handoff; review and
-applicable passing checks gate readiness and merge. Repository-specific commands
+publish WIP to the same draft during the task and before handoff. Personal review
+of the exact head gates readiness; mark reviewed drafts ready to trigger CI.
+Applicable passing checks and protections gate merge. Repository-specific commands
 above apply to this checkout instead of generic examples for other stacks.
 
 # Agent Instructions
