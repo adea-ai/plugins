@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.35](https://github.com/adea-ai/plugins/compare/v2.0.34...v2.0.35) (2026-10-14)
+
+
+### Documentation
+
+* tailor repository agent guidance ([#236](https://github.com/adea-ai/plugins/issues/236)) ([3abf99f](https://github.com/adea-ai/plugins/commit/3abf99f1c9da2ef14f6d76c6243914a7f4338523))
+
 ## [2.0.34](https://github.com/adea-ai/plugins/compare/v2.0.33...v2.0.34) (2026-10-11)
 
 
