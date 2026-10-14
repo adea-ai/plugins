@@ -1,3 +1,99 @@
+# Agent instructions: plugins
+
+This is the deterministic Bun/TypeScript marketplace compiler, not a plugin
+runtime. It produces catalogs, canonical packages and installation plans from
+pinned source snapshots; consumers own installation and execution.
+
+## Navigation
+
+- [README.md](README.md): CLI usage and offline/live catalog flows.
+- [docs/agent-plugins.md](docs/agent-plugins.md): Agent Plugins 1.0 and v2 plans.
+- [docs/consumer-contract.md](docs/consumer-contract.md): consumer artifacts and
+  publication contract; [docs/generated-artifacts.md](docs/generated-artifacts.md)
+  explains generated snapshots.
+- [packages/plugins](packages/plugins): compiler, schemas, adapters and tests.
+- [packages/cli/src/index.ts](packages/cli/src/index.ts): CLI entry point.
+- [fixtures](fixtures): upstream examples and expected offline snapshots.
+  Fixture `SKILL.md` files are compiler input, not instructions for this checkout.
+- [scripts](scripts): schema, publication and catalog-branch verification.
+
+## Working drafts
+
+Before editing, read the nearest README, manifest and tests plus any nested
+`AGENTS.md` for the affected directory. Preserve unrelated checkout changes.
+This file's draft-WIP sequence refines the generic contribution sequence for
+authorized agent work; explicit user instructions take precedence.
+
+For authorized repository work, proceed with ordinary edits, checks, commits and
+draft pushes without repeated confirmation. Use checked-in conventions for
+routine choices; ask only when a consequential decision or authority is missing.
+
+- Branch from current `main`. Reuse a suitable focused draft PR, or open one;
+  keep working on that branch throughout the task.
+- Commit and push WIP during work and before stopping or handing off. Incomplete
+  work and failing checks do not block draft pushes; record results and gaps.
+- Verify the remote head before and after pushing. Preserve another contributor's
+  changes; use a separate handoff branch when needed instead of force-pushing.
+- Keep auto-merge off while pushing unreviewed work. Personal review of the exact
+  head gates readiness; mark reviewed drafts ready to trigger CI. Applicable
+  passing checks and protections gate merge, rather than WIP publication.
+
+## Commands and validation
+
+Run from the repository root. [package.json](package.json) pins Bun 1.4.0 and
+Node 24.x; [bun.lock](bun.lock) is the dependency lock. There is no local mise
+configuration. The checked-in Marketplace CI workflow also selects Bun 1.4.0.
+
+```sh
+bun install --frozen-lockfile
+bun run format:check
+bun run lint
+bun run type-check
+bun run test
+bun run build
+bun run schema:check
+bun run verify:integrity
+```
+
+Tests live beside compiler/CLI source. For focused work, use
+`bun test packages/plugins/src/agent-plugins-schema.test.ts --timeout 30000`,
+then select the other tests relevant to the change. For docs-only edits, verify local links and command names, check Markdown
+formatting, and run `git diff --check`.
+
+Use an explicit temporary output when checking fixture generation, as in the
+README, so it can be compared without replacing the live `generated/` snapshot:
+
+```sh
+bun run catalog sync --offline --fixture-root fixtures --output /tmp/adea-fixture-catalog
+bun run catalog validate --output /tmp/adea-fixture-catalog --require-portable
+bun run catalog verify-integrity --output /tmp/adea-fixture-catalog
+```
+
+[Marketplace CI](.github/workflows/marketplace-ci.yml) checks schema, integrity,
+fixture consistency and canonical determinism. The separate
+[sync workflow](.github/workflows/marketplace-sync.yml) owns live catalogs and
+catalog-asset publication; [package publication](.github/workflows/publish-packages.yml)
+is another distinct workflow. A fixture result is not a live publication result.
+
+## Handoff
+
+Report changed files, exact check commands/results, skipped checks and remaining
+work, plus the branch, PR link and verified remote SHA. Distinguish draft WIP
+from reviewed work ready for the next gate.
+
+## Relationship to the managed baseline
+
+The managed core below matches the official [Code Foundry v1.47.3 release](https://github.com/0xPlayerOne/code-foundry/tree/v1.47.3).
+Refresh the generated core from the latest official release first, then
+personalize outside its managed blocks. For an AGENTS-only update, preview sync
+in a disposable checkout and retain only the generated AGENTS.md core.
+
+The working-draft workflow above takes precedence for authorized agent work:
+publish WIP to the same draft during the task and before handoff. Personal review
+of the exact head gates readiness; mark reviewed drafts ready to trigger CI.
+Applicable passing checks and protections gate merge. Repository-specific commands
+above apply to this checkout instead of generic examples for other stacks.
+
 # Agent Instructions
 
 <!-- code-foundry-managed: config-aware-policy -->

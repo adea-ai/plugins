@@ -290,13 +290,15 @@ artifacts are checked against their Zod runtime definitions.
 
 ```sh
 bun run scripts/agent-plugin-schemas.ts        # regenerate schemas after contract changes
-bun run format
+bun run fmt
 bun run schema:plugins
 ```
 
-Versioned schemas live under `schemas/` and are included in the schema package's existing
-publication staging flow. Their `$id` values identify schemas; they do not require network
-retrieval. Package build order is schema, source adapters, catalog core, then harness adapters.
+Versioned schemas live under [schemas/](../schemas/) and are staged into the single
+`@adea-ai/plugins` package by [scripts/publish-packages.mjs](../scripts/publish-packages.mjs).
+Their `$id` values identify schemas; they do not require network retrieval.
+`bun run build` builds the toolkit using `tsconfig.build.json`; schemas, source adapters,
+catalog core and harness adapters are modules in that package.
 The existing v1 golden fixtures remain tested via `--legacy-catalog`; a separate CI step checks
 canonical fixture determinism and contract validation without replacing the live snapshot.
 
