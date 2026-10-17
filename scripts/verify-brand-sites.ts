@@ -1,4 +1,3 @@
-import { promises as fs } from 'node:fs'
 import { join } from 'node:path'
 import { createSiteIconFetcher, SITE_FETCH_TIMEOUT_MS } from '../packages/plugins/src/index.js'
 import { parseProductIconOverrides } from '../packages/plugins/src/icons.js'
@@ -22,7 +21,7 @@ const strict = flags.has('--strict')
 const asJson = flags.has('--json')
 
 const configPath = join(process.cwd(), 'config', 'product-icons.json')
-const overrides = parseProductIconOverrides(JSON.parse(await fs.readFile(configPath, 'utf8')))
+const overrides = parseProductIconOverrides(await Bun.file(configPath).json())
 const sites = Object.entries(overrides.overrides)
   .flatMap(([productKey, value]) =>
     typeof value === 'string' && value.startsWith('https://') ? [[productKey, value] as const] : []
