@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.39](https://github.com/adea-ai/plugins/compare/v2.0.38...v2.0.39) (2026-10-17)
+
+
+### Maintenance
+
+* **ci:** cache compatible Bun package downloads ([#244](https://github.com/adea-ai/plugins/issues/244)) ([1d27de7](https://github.com/adea-ai/plugins/commit/1d27de7e0a46ce2dc3c190c38d9bda6f489d2549))
+
 ## [2.0.38](https://github.com/adea-ai/plugins/compare/v2.0.37...v2.0.38) (2026-10-17)
 
 
