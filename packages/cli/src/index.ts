@@ -351,8 +351,8 @@ async function diffCommand(
   flags: Flags
 ): Promise<number> {
   if (!oldPath || !newPath) throw new Error('DIFF_REQUIRES_TWO_LOCK_FILES')
-  const oldLock = parseSourcesLock(JSON.parse(await fs.readFile(resolve(oldPath), 'utf8')))
-  const newLock = parseSourcesLock(JSON.parse(await fs.readFile(resolve(newPath), 'utf8')))
+  const oldLock = parseSourcesLock(await Bun.file(resolve(oldPath)).json())
+  const newLock = parseSourcesLock(await Bun.file(resolve(newPath)).json())
   const changes = newLock.sources.map((source) => {
     const previous = oldLock.sources.find((candidate) => candidate.sourceId === source.sourceId)
     return {
@@ -517,7 +517,7 @@ async function readOptionalLock(
 }
 
 async function readRequiredLock(path: string): Promise<SourcesLock> {
-  return parseSourcesLock(JSON.parse(await fs.readFile(resolve(path), 'utf8')))
+  return parseSourcesLock(await Bun.file(resolve(path)).json())
 }
 
 /**
@@ -538,7 +538,7 @@ async function readArtifacts(directory: string): Promise<GeneratedArtifacts> {
 }
 
 async function readJson<T>(path: string): Promise<T> {
-  return JSON.parse(await fs.readFile(path, 'utf8')) as T
+  return (await Bun.file(path).json()) as T
 }
 
 function print(value: unknown, asJson: boolean): void {
