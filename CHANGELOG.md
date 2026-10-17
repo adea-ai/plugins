@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.40](https://github.com/adea-ai/plugins/compare/v2.0.39...v2.0.40) (2026-10-17)
+
+
+### Maintenance
+
+* **ci:** align Code Foundry runtime and cache support ([#246](https://github.com/adea-ai/plugins/issues/246)) ([021e88c](https://github.com/adea-ai/plugins/commit/021e88c684472d097cacf9a40116476d118aea63))
+
 ## [2.0.39](https://github.com/adea-ai/plugins/compare/v2.0.38...v2.0.39) (2026-10-17)
 
 
