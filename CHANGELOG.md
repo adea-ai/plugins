@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.37](https://github.com/adea-ai/plugins/compare/v2.0.36...v2.0.37) (2026-10-17)
+
+
+### Maintenance
+
+* **tooling:** type-check with bun check ([#240](https://github.com/adea-ai/plugins/issues/240)) ([a2c970b](https://github.com/adea-ai/plugins/commit/a2c970bbaeebed784d17cee0b2443fb76aa89db1))
+
 ## [2.0.36](https://github.com/adea-ai/plugins/compare/v2.0.35...v2.0.36) (2026-10-17)
 
 
