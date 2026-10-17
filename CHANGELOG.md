@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.36](https://github.com/adea-ai/plugins/compare/v2.0.35...v2.0.36) (2026-10-17)
+
+
+### Maintenance
+
+* **bun:** align pins to Bun 1.4.3 ([#238](https://github.com/adea-ai/plugins/issues/238)) ([6283b89](https://github.com/adea-ai/plugins/commit/6283b898f2daed236b04efabcb171f16fe27ef18))
+
 ## [2.0.35](https://github.com/adea-ai/plugins/compare/v2.0.34...v2.0.35) (2026-10-14)
 
 
