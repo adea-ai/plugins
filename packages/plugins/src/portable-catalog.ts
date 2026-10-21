@@ -168,6 +168,26 @@ export async function synchronizePortable(options: SyncInput): Promise<SyncResul
   }
 }
 
+/**
+ * A single-line summary of why a release's package descriptor was refused.
+ *
+ * The schema's own failure is a structured issue list; the catalog's refusal
+ * contract is one typed line. The first issue is kept as the detail, because
+ * it names the field that was wrong.
+ */
+function describeProvenanceFailure(error: unknown): string {
+  const issues = (error as { issues?: unknown }).issues
+  if (Array.isArray(issues) && issues.length > 0) {
+    const first = issues[0] as { path?: unknown; message?: unknown }
+    const path = Array.isArray(first.path) ? first.path.join('.') : ''
+    const message = typeof first.message === 'string' ? first.message : ''
+    return [path, message].filter(Boolean).join(': ').replace(/\s+/g, ' ').slice(0, 200)
+  }
+  return error instanceof Error
+    ? error.message.replace(/\s+/g, ' ').slice(0, 200)
+    : 'the descriptor is not a package recipe'
+}
+
 export function verifyPortableCatalog(catalog: Catalog, requirePortable = false): void {
   const { catalogId, ...body } = CatalogSchema.parse(catalog)
   if (catalogId !== `catalog:${digest(body).slice(7)}`) throw new Error('CATALOG_ID_MISMATCH')
@@ -189,7 +209,20 @@ export function verifyPortableCatalog(catalog: Catalog, requirePortable = false)
           throw new Error(`PORTABLE_RESYNC_REQUIRED: ${plugin.pluginId}`)
         continue
       }
-      const pkg = verifyAgentPackage(descriptor)
+      let pkg: ReturnType<typeof verifyAgentPackage>
+      try {
+        pkg = verifyAgentPackage(descriptor)
+      } catch (error) {
+        // A consumer imports a catalog it did not compile, so a malformed
+        // provenance descriptor is an IMPORT failure, and it must be refused
+        // the way every other failure here is refused: one typed, single-line
+        // reason that names the plugin. The schema's own multi-line issue
+        // dump is not a refusal a consumer can match on.
+        throw new Error(
+          `PACKAGE_PROVENANCE_INVALID: ${plugin.pluginId} (${describeProvenanceFailure(error)})`,
+          { cause: error }
+        )
+      }
       if (
         release.contentResolution !== 'complete' ||
         pkg.sourceDigest !== release.canonicalContentDigest
