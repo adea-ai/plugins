@@ -1,5 +1,6 @@
 import { it } from 'node:test'
 import assert from 'node:assert/strict'
+import { existsSync } from 'node:fs'
 import { writeFile, mkdir, readFile, readdir } from 'node:fs/promises'
 import { join } from 'node:path'
 import { synchronize, verifyArtifacts, digest } from './index.js'
@@ -415,8 +416,10 @@ it('gives a PACKED consumer the same installation plan as the workspace path', (
     // The compiled artifact was reached through the PUBLIC specifier: the
     // resolved module lives in the packed package's dist, not in the
     // workspace source.
+    assert.ok(nodeResult.resolvedHarness.startsWith('file://' + consumer.consumerRoot))
     assert.ok(nodeResult.resolvedHarness.includes('@adea-ai/plugins'))
     assert.ok(nodeResult.resolvedHarness.includes('/dist/'))
+    assert.ok(nodeResult.resolvedCatalog.startsWith('file://' + consumer.consumerRoot))
     assert.ok(nodeResult.resolvedCatalog.includes('@adea-ai/plugins'))
     assert.ok(nodeResult.resolvedCatalog.includes('/dist/'))
 
@@ -429,11 +432,16 @@ it('gives a PACKED consumer the same installation plan as the workspace path', (
       ok: boolean
       plan: typeof sourcePlan
       resolvedHarness: string
+      resolvedCatalog: string
     }
     assert.equal(bunResult.ok, true)
     assert.deepEqual(bunResult.plan, sourcePlan)
-    assert.ok(nodeResult.resolvedHarness.includes('@adea-ai/plugins'))
-    assert.ok(nodeResult.resolvedHarness.includes('/dist/'))
+    assert.ok(bunResult.resolvedHarness.startsWith('file://' + consumer.consumerRoot))
+    assert.ok(bunResult.resolvedHarness.includes('@adea-ai/plugins'))
+    assert.ok(bunResult.resolvedHarness.includes('/src/'))
+    assert.ok(bunResult.resolvedCatalog.startsWith('file://' + consumer.consumerRoot))
+    assert.ok(bunResult.resolvedCatalog.includes('@adea-ai/plugins'))
+    assert.ok(bunResult.resolvedCatalog.includes('/src/'))
   }))
 
 it('keeps the packed consumer inside the packed artifact and its own dependencies', () =>
@@ -441,6 +449,7 @@ it('keeps the packed consumer inside the packed artifact and its own dependencie
     // The packed artifact was built from the CURRENT source: a stale build
     // would still carry the sentinel the rebuild removes.
     assert.equal(consumer.builtFromCurrentSource, true)
+    assert.equal(existsSync(join(consumer.packedRoot, 'dist', 'agent-plugins-harness.js')), true)
     // The consumer's dependency closure is the PACKED manifest's own
     // dependencies, and never the whole workspace.
     const packedManifest = JSON.parse(
@@ -463,6 +472,37 @@ it('keeps the packed consumer inside the packed artifact and its own dependencie
     ) as { scripts?: Record<string, string> }
     const lifecycle = packageLifecycleScripts({ package: packageManifest })
     assert.deepEqual(lifecycle, {})
+
+    const requestPath = join(consumer.consumerRoot, 'request.json')
+    await writeFile(
+      requestPath,
+      JSON.stringify({
+        input: consumer.input,
+        profile: harnessProfile(),
+        instanceId: 'workspace-a/user-a',
+      })
+    )
+
+    // NEGATIVE CONTROL — a broken export. The consumer resolves the packed
+    // package's OWN exports, so a specifier the packed manifest does not
+    // export must not resolve.
+    const brokenExport = join(consumer.consumerRoot, 'broken-export.mjs')
+    await writeFile(brokenExport, "import '@adea-ai/plugins/not-an-export-of-this-package'\n")
+    const broken = consumer.runUnderNode(brokenExport, requestPath)
+    assert.notEqual(broken.status, 0)
+    assert.match(
+      broken.stderr,
+      /ERR_PACKAGE_PATH_NOT_EXPORTED|ERR_MODULE_NOT_FOUND|Cannot find module/
+    )
+
+    // NEGATIVE CONTROL — an undeclared package. The consumer's install holds
+    // only the packed manifest's declared closure, so a package the workspace
+    // happens to have must NOT resolve from the consumer.
+    const undeclared = join(consumer.consumerRoot, 'undeclared.mjs')
+    await writeFile(undeclared, "import 'oxlint'\n")
+    const undeclaredRun = consumer.runUnderNode(undeclared, requestPath)
+    assert.notEqual(undeclaredRun.status, 0)
+    assert.match(undeclaredRun.stderr, /ERR_MODULE_NOT_FOUND|Cannot find module/)
   }))
 
 it('refuses a malformed provenance descriptor for a PACKED consumer too', () =>

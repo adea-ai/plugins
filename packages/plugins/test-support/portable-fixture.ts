@@ -1,6 +1,6 @@
 import { execFileSync } from 'node:child_process'
 import { existsSync, readFileSync, readdirSync } from 'node:fs'
-import { mkdtemp, mkdir, writeFile, readFile, rm, symlink, readdir, cp } from 'node:fs/promises'
+import { mkdtemp, mkdir, writeFile, readFile, rm, readdir, cp } from 'node:fs/promises'
 import { homedir, tmpdir } from 'node:os'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -263,8 +263,10 @@ export async function withPackedConsumerFixture(
     const staleBefore = existsSync(built)
     if (staleBefore) await writeFile(built, `${STALE_MARKER}\n${await readFile(built, 'utf8')}`)
     execFileSync('bun', ['run', 'build'], { cwd: packageRoot, stdio: 'inherit' })
+    // The build must EXIST and must no longer carry the sentinel: a missing
+    // output is not a fresh build.
     const builtFromCurrentSource =
-      !existsSync(built) || !(await readFile(built, 'utf8')).includes(STALE_MARKER)
+      existsSync(built) && !(await readFile(built, 'utf8')).includes(STALE_MARKER)
 
     // 2. Pack without lifecycle scripts, and extract.
     const destination = join(workspace, 'tarball')
@@ -299,8 +301,11 @@ export async function withPackedConsumerFixture(
       join(packageRoot, 'node_modules'),
       join(workspaceRoot, 'node_modules'),
     ])
+    // The closure is COPIED, never symlinked: a symlink would let the
+    // consumer resolve a package from the workspace, and a transitive import
+    // could then escape the consumer entirely.
     for (const { name, path } of closure)
-      await symlink(path, join(consumerRoot, 'node_modules', name))
+      await cp(path, join(consumerRoot, 'node_modules', name), { recursive: true })
     await writeFile(
       join(consumerRoot, 'package.json'),
       `${JSON.stringify(
