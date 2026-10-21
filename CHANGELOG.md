@@ -1,5 +1,54 @@
 # Changelog
 
+## [2.0.40](https://github.com/adea-ai/plugins/compare/v2.0.39...v2.0.40) (2026-10-17)
+
+
+### Maintenance
+
+* **ci:** align Code Foundry runtime and cache support ([#246](https://github.com/adea-ai/plugins/issues/246)) ([021e88c](https://github.com/adea-ai/plugins/commit/021e88c684472d097cacf9a40116476d118aea63))
+
+## [2.0.39](https://github.com/adea-ai/plugins/compare/v2.0.38...v2.0.39) (2026-10-17)
+
+
+### Maintenance
+
+* **ci:** cache compatible Bun package downloads ([#244](https://github.com/adea-ai/plugins/issues/244)) ([1d27de7](https://github.com/adea-ai/plugins/commit/1d27de7e0a46ce2dc3c190c38d9bda6f489d2549))
+
+## [2.0.38](https://github.com/adea-ai/plugins/compare/v2.0.37...v2.0.38) (2026-10-17)
+
+
+### Maintenance
+
+* **tooling:** read JSON with Bun.file().json() in Bun-only CLI and scripts ([#242](https://github.com/adea-ai/plugins/issues/242)) ([e80742d](https://github.com/adea-ai/plugins/commit/e80742d3dd60eddd1bed07dd9121d52527bfd59e))
+
+## [2.0.37](https://github.com/adea-ai/plugins/compare/v2.0.36...v2.0.37) (2026-10-17)
+
+
+### Maintenance
+
+* **tooling:** type-check with bun check ([#240](https://github.com/adea-ai/plugins/issues/240)) ([a2c970b](https://github.com/adea-ai/plugins/commit/a2c970bbaeebed784d17cee0b2443fb76aa89db1))
+
+## [2.0.36](https://github.com/adea-ai/plugins/compare/v2.0.35...v2.0.36) (2026-10-17)
+
+
+### Maintenance
+
+* **bun:** align pins to Bun 1.4.3 ([#238](https://github.com/adea-ai/plugins/issues/238)) ([6283b89](https://github.com/adea-ai/plugins/commit/6283b898f2daed236b04efabcb171f16fe27ef18))
+
+## [2.0.35](https://github.com/adea-ai/plugins/compare/v2.0.34...v2.0.35) (2026-10-14)
+
+
+### Documentation
+
+* tailor repository agent guidance ([#236](https://github.com/adea-ai/plugins/issues/236)) ([3abf99f](https://github.com/adea-ai/plugins/commit/3abf99f1c9da2ef14f6d76c6243914a7f4338523))
+
+## [2.0.34](https://github.com/adea-ai/plugins/compare/v2.0.33...v2.0.34) (2026-10-11)
+
+
+### Documentation
+
+* architecture-alignment-20261001 ([#234](https://github.com/adea-ai/plugins/issues/234)) ([d37aef3](https://github.com/adea-ai/plugins/commit/d37aef3d56d0520dd8c3db03d170e670fec10500))
+
 ## [2.0.33](https://github.com/adea-ai/plugins/compare/v2.0.32...v2.0.33) (2026-10-10)
 
 

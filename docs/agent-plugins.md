@@ -2,20 +2,26 @@
 
 Canonical portable packages and capability-negotiated installation plans for Adea.
 
-**Status:** Implemented compiler and planning contract; runtime activation belongs to Control Plane.
+**Status:** Compiler and planning contract implemented; runtime activation is a
+Control Plane responsibility and is outside this repository.
 **Package standard:** Agent Plugins 1.0.0.
 **Catalog contract:** Existing v1 envelope with versioned `releaseMetadata.agentPlugins`.
 **Installation contract:** `planVersion: 2`.
 
 ## Boundaries
 
-Adea installs a plugin once into an approved installation instance. Control Plane makes its
-portable components available to the selected harness. Switching harnesses does not require a
-separate marketplace product or a different credential store.
+Adea submits an exact plugin release to Control Plane for an approved
+installation instance. Control Plane owns the installation record and policy
+decision. A v2 plan describes the components a compatible adapter could use;
+it does not install files or activate a harness. Switching harnesses can reuse
+the same installation instance and credential scope.
 
-The marketplace retrieves immutable source snapshots, validates and normalizes packages, emits
-integrity-protected metadata, and produces installation recipes. It does not run plugin code,
-install dependencies, invoke lifecycle scripts, start MCP servers, or grant permissions.
+The marketplace retrieves immutable source snapshots, validates and normalizes
+packages, emits integrity-protected metadata, and produces installation
+recipes. Its materialization functions return package bytes in memory, and its
+planners return structured plans and binding descriptors. This repository does
+not write plugin files into a harness, run plugin code, install dependencies,
+invoke lifecycle scripts, start MCP servers, or grant permissions.
 
 Agent Plugins standardizes skills and MCP configuration. It does not make hooks, proprietary
 commands, agents, rules, schedules, or user interfaces interchangeable. Neither a recognized
@@ -60,9 +66,10 @@ credential interpolation into portable environment substitution.
 
 Unsupported declarations receive component diagnostics. Proprietary hooks, commands, agents,
 rules and client-extension content remain visible in `nonPortable`; the planner will not
-silently activate them. Packages containing these features require explicit acceptance of a
-partial installation or a future, tested semantic adapter. Existing v1 adapters remain available
-for migration, not as evidence that every proprietary feature is already translated correctly.
+silently include them in a component selection. Packages containing these features require
+explicit acceptance of a partial plan or a future, tested semantic adapter. Existing v1 adapters
+remain available for migration, not as evidence that every proprietary feature is already
+translated correctly.
 
 Layout validation does not prove that a skill's prose, scripts, dependencies or remote service
 behave identically on every harness or operating system. Review skill `compatibility` metadata
@@ -127,10 +134,11 @@ adapter. Component mode exposes complete skill directories and selected MCP conf
 not guessed `.claude`, `.cursor`, or other file layouts. The actual adapter remains responsible
 for binding those components to its harness.
 
-A native loader is not used when it could implicitly activate preserved proprietary extras.
-Without `allowPartial: true`, missing capabilities or nonportable features produce an
-`unavailable` strategy and an empty selection. Partial support is always reported. No strategy
-sets `allowedToActivate` to true; every plan requires a separate approval.
+The planner does not select a native loader when it could implicitly activate
+preserved proprietary extras. Without `allowPartial: true`, missing capabilities
+or nonportable features produce an `unavailable` strategy and an empty selection.
+Partial support is always reported. No strategy sets `allowedToActivate` to
+true; every plan requires a separate approval.
 
 ## Control Plane API
 
@@ -246,7 +254,8 @@ runs remain no-ops. The source release IDs stay unchanged, while catalog IDs cha
 new normalized metadata. Existing snapshots are not rewritten by applying this source patch;
 the chosen sync/publication flow performs regeneration.
 
-A v2 plan requires an actual adapter profile and a stable instance:
+A v2 plan requires an actual adapter profile and a stable instance. The CLI
+prints a plan for inspection; it does not install files or activate a runtime:
 
 ```sh
 bun run catalog materialize-plan \
@@ -266,9 +275,10 @@ bun run catalog sync --offline --legacy-catalog
 bun run catalog materialize-plan --legacy-plan --plugin PLUGIN_ID --harness HARNESS
 ```
 
-Old consumers may continue parsing the v1 catalog envelope, but adopting package installation
-requires consuming v2 plans and the new package descriptor. Do not deploy the new CLI default
-under a caller that still assumes `planVersion: 1`. Coordinate that consumer change explicitly.
+Old consumers may continue parsing the v1 catalog envelope, but adopting the
+Agent Plugins planning contract requires consuming v2 plans and the new package
+descriptor. Do not deploy the new CLI default under a caller that still assumes
+`planVersion: 1`. Coordinate that consumer change explicitly.
 
 ## Tests, schemas and publication
 
@@ -280,13 +290,15 @@ artifacts are checked against their Zod runtime definitions.
 
 ```sh
 bun run scripts/agent-plugin-schemas.ts        # regenerate schemas after contract changes
-bun run format
+bun run fmt
 bun run schema:plugins
 ```
 
-Versioned schemas live under `schemas/` and are included in the schema package's existing
-publication staging flow. Their `$id` values identify schemas; they do not require network
-retrieval. Package build order is schema, source adapters, catalog core, then harness adapters.
+Versioned schemas live under [schemas/](../schemas/) and are staged into the single
+`@adea-ai/plugins` package by [scripts/publish-packages.mjs](../scripts/publish-packages.mjs).
+Their `$id` values identify schemas; they do not require network retrieval.
+`bun run build` builds the toolkit using `tsconfig.build.json`; schemas, source adapters,
+catalog core and harness adapters are modules in that package.
 The existing v1 golden fixtures remain tested via `--legacy-catalog`; a separate CI step checks
 canonical fixture determinism and contract validation without replacing the live snapshot.
 

@@ -17,7 +17,7 @@ import {
  */
 const directory = resolve(process.argv[2] ?? 'generated')
 const artifactsDirectory = resolve(process.argv[3] ?? directory)
-const integrity = JSON.parse(await fs.readFile(join(directory, 'integrity.json'), 'utf8')) as {
+const integrity = (await Bun.file(join(directory, 'integrity.json')).json()) as {
   files?: Record<string, string>
   assets?: PublishedAsset[]
 }
