@@ -356,14 +356,19 @@ const PROFILES = {
 } as const
 
 /**
- * The compatibility matrix.
+ * Twelve compatibility CASES, chosen to cover the boundaries that matter.
  *
- * Every row states the package shape, the profile shape, whether a partial
- * adoption was allowed, and what the plan must then contain. The expectations
- * are the EXISTING contract: the native loader is used only when the profile
- * supports the package version and the native path covers at least as much as
- * the adapter; a partial plan is refused unless the caller opts in; a plan that
- * covers nothing is unsupported.
+ * This is a curated set, NOT a Cartesian product of the package shapes and the
+ * profile shapes: the shapes multiply out to far more combinations than the
+ * contract distinguishes. Each case states the package shape, the profile
+ * shape, whether a partial adoption was allowed, and what the plan must then
+ * contain — the strategy, the compatibility, the selected skills and servers,
+ * and the COMPLETE set of disabled components.
+ *
+ * The expectations are the EXISTING contract: the native loader is used only
+ * when the profile supports the package version and the native path covers at
+ * least as much as the adapter; a partial plan is refused unless the caller
+ * opts in; a plan that covers nothing is unsupported.
  */
 const MATRIX: {
   name: string
@@ -500,7 +505,7 @@ const MATRIX: {
   },
 ]
 
-describe('the compatibility matrix across package and profile capabilities', () => {
+describe('the compatibility cases across package and profile capabilities', () => {
   for (const row of MATRIX) {
     it(row.name, () => {
       const pkg = PACKAGES[row.pkg]
@@ -522,12 +527,11 @@ describe('the compatibility matrix across package and profile capabilities', () 
       assert.equal(plan.compatibility, row.compatibility)
       assert.deepEqual(plan.selection.skillDirectories, row.skills)
       assert.deepEqual(Object.keys(plan.selection.mcpServers).toSorted(), row.mcp.toSorted())
-      for (const component of row.disabled)
-        assert.ok(
-          plan.disabled.some((entry) => entry.component === component),
-          `expected ${component} to be disabled, got ${JSON.stringify(plan.disabled)}`
-        )
-      if (row.disabled.length === 0) assert.deepEqual(plan.disabled, [])
+      // The COMPLETE set of disabled components, not a subset.
+      assert.deepEqual(
+        plan.disabled.map((entry) => entry.component).toSorted(),
+        row.disabled.toSorted()
+      )
       // A refused plan selects nothing, and no plan ever activates by itself.
       assert.equal(plan.allowedToActivate, false)
       assert.equal(plan.approvalRequired, true)

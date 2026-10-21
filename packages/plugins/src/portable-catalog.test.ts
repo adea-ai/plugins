@@ -1,6 +1,6 @@
 import { it } from 'node:test'
 import assert from 'node:assert/strict'
-import { writeFile, mkdir } from 'node:fs/promises'
+import { writeFile, mkdir, readFile, readdir } from 'node:fs/promises'
 import { join } from 'node:path'
 import { synchronize, verifyArtifacts, digest } from './index.js'
 import {
@@ -12,7 +12,11 @@ import { verifyAgentPackage, materializeAgentPackage } from './agent-plugins-cat
 import { createCatalogInstallationPlan, createInstallationPlan } from './agent-plugins-harness.js'
 import type { HarnessProfile } from './agent-plugins-schema.js'
 import { snapshotFromDirectory } from './index.js'
-import { withPackedConsumerFixture, withPortableFixture } from '../test-support/portable-fixture.js'
+import {
+  packageLifecycleScripts,
+  withPackedConsumerFixture,
+  withPortableFixture,
+} from '../test-support/portable-fixture.js'
 
 it('normalizes a real offline catalog and preserves source/release identity', () =>
   withPortableFixture(async (input, root) => {
@@ -322,60 +326,166 @@ it('refuses a malformed provenance descriptor with one typed line naming the plu
     )
   }))
 
-it('gives a PACKED consumer the same installation plan as the workspace path', () =>
-  withPackedConsumerFixture(async ({ consumer, input }) => {
-    // The consumer compiles and plans from the EXTRACTED package's built
-    // entries, not from the workspace sources.
-    const packed = await consumer.catalog.synchronizePortable(input)
-    const source = await synchronizePortable(input)
-    assert.ok(packed.catalog)
-    assert.ok(source.catalog)
-    // The compiler output is identical across the packaging boundary.
-    assert.equal(packed.catalog.catalogId, source.catalog.catalogId)
+const CONSUMER_SCRIPT = `import { readFileSync } from 'node:fs'
+import { createCatalogInstallationPlan } from '@adea-ai/plugins/agent-plugins/harness'
+import { synchronizePortable } from '@adea-ai/plugins/portable-catalog'
+import { digest } from '@adea-ai/plugins'
+const request = JSON.parse(readFileSync(process.argv[2], 'utf8'))
+const result = await synchronizePortable(request.input)
+let catalog = result.catalog
+if (request.mode === 'malformed') {
+  const copy = structuredClone(catalog)
+  const release = copy.plugins[0].availableReleases[0]
+  release.releaseMetadata.agentPlugins = { normalizerVersion: 1, files: 'not-an-array' }
+  const { catalogId: _oldId, ...body } = copy
+  copy.catalogId = 'catalog:' + digest(body).slice(7)
+  catalog = copy
+}
+try {
+  const plan = createCatalogInstallationPlan({
+    catalog,
+    pluginId: catalog.plugins[0].pluginId,
+    instanceId: request.instanceId,
+    profile: request.profile,
+  })
+  process.stdout.write(
+    JSON.stringify({
+      ok: true,
+      plan,
+      catalogId: result.catalog.catalogId,
+      resolvedHarness: import.meta.resolve('@adea-ai/plugins/agent-plugins/harness'),
+      resolvedCatalog: import.meta.resolve('@adea-ai/plugins/portable-catalog'),
+    })
+  )
+} catch (error) {
+  process.stdout.write(
+    JSON.stringify({ ok: false, error: String(error && error.message ? error.message : error) })
+  )
+}
+`
 
-    const pluginId = source.catalog.plugins[0]!.pluginId
+it('gives a PACKED consumer the same installation plan as the workspace path', () =>
+  withPackedConsumerFixture(async (consumer) => {
+    const source = await synchronizePortable(consumer.input)
+    assert.ok(source.catalog)
     const sourcePlan = createCatalogInstallationPlan({
       catalog: source.catalog,
-      pluginId,
+      pluginId: source.catalog.plugins[0]!.pluginId,
       instanceId: 'workspace-a/user-a',
       profile: harnessProfile(),
     })
-    const packedPlan = consumer.harness.createCatalogInstallationPlan({
-      catalog: packed.catalog,
-      pluginId,
-      instanceId: 'workspace-a/user-a',
-      profile: harnessProfile(),
-    })
+
+    // The consumer imports the package by its PUBLIC specifiers, from its own
+    // directory, and compiles and plans from the packed artifact alone.
+    await writeFile(join(consumer.consumerRoot, 'consume.mjs'), CONSUMER_SCRIPT)
+    const requestPath = join(consumer.consumerRoot, 'request.json')
+    await writeFile(
+      requestPath,
+      JSON.stringify({
+        input: consumer.input,
+        profile: harnessProfile(),
+        instanceId: 'workspace-a/user-a',
+      })
+    )
+    const underNode = consumer.runUnderNode(join(consumer.consumerRoot, 'consume.mjs'), requestPath)
+    assert.equal(underNode.status, 0, underNode.stderr)
+    const nodeResult = JSON.parse(underNode.stdout) as {
+      ok: boolean
+      plan: typeof sourcePlan
+      catalogId: string
+      resolvedHarness: string
+      resolvedCatalog: string
+    }
+    assert.equal(nodeResult.ok, true)
+    // The compiler output is identical across the packaging boundary.
+    assert.equal(nodeResult.catalogId, source.catalog.catalogId)
     // The import path and the workspace path plan the SAME installation, and
     // the independently constructed plan serializes to the same bytes: the
-    // determinism claim is about the artifact, not about one in-memory object.
-    assert.deepEqual(packedPlan, sourcePlan)
-    assert.equal(JSON.stringify(packedPlan), JSON.stringify(sourcePlan))
+    // determinism claim is about the artifact and about two independent
+    // constructions, not about one in-memory object.
+    assert.deepEqual(nodeResult.plan, sourcePlan)
+    assert.equal(JSON.stringify(nodeResult.plan), JSON.stringify(sourcePlan))
     // And the plan carries the real content, not an empty one.
-    assert.equal(packedPlan.strategy, 'native-agent-plugin')
-    assert.equal(packedPlan.compatibility, 'full')
-    assert.deepEqual(packedPlan.selection.skillDirectories, ['skills/review'])
-    assert.deepEqual(Object.keys(packedPlan.selection.mcpServers), ['local'])
-    assert.equal(packedPlan.allowedToActivate, false)
-    assert.equal(packedPlan.approvalRequired, true)
+    assert.equal(nodeResult.plan.strategy, 'native-agent-plugin')
+    assert.equal(nodeResult.plan.compatibility, 'full')
+    assert.deepEqual(nodeResult.plan.selection.skillDirectories, ['skills/review'])
+    assert.deepEqual(Object.keys(nodeResult.plan.selection.mcpServers), ['local'])
+    assert.equal(nodeResult.plan.allowedToActivate, false)
+    assert.equal(nodeResult.plan.approvalRequired, true)
+    // The compiled artifact was reached through the PUBLIC specifier: the
+    // resolved module lives in the packed package's dist, not in the
+    // workspace source.
+    assert.ok(nodeResult.resolvedHarness.includes('@adea-ai/plugins'))
+    assert.ok(nodeResult.resolvedHarness.includes('/dist/'))
+    assert.ok(nodeResult.resolvedCatalog.includes('@adea-ai/plugins'))
+    assert.ok(nodeResult.resolvedCatalog.includes('/dist/'))
+
+    // Bun is qualified separately: the package's bun export condition
+    // intentionally selects src/*.ts, so it exercises the source condition and
+    // must still reach the same plan.
+    const underBun = consumer.runUnderBun(join(consumer.consumerRoot, 'consume.mjs'), requestPath)
+    assert.equal(underBun.status, 0, underBun.stderr)
+    const bunResult = JSON.parse(underBun.stdout) as {
+      ok: boolean
+      plan: typeof sourcePlan
+      resolvedHarness: string
+    }
+    assert.equal(bunResult.ok, true)
+    assert.deepEqual(bunResult.plan, sourcePlan)
+    assert.ok(nodeResult.resolvedHarness.includes('@adea-ai/plugins'))
+    assert.ok(nodeResult.resolvedHarness.includes('/dist/'))
+  }))
+
+it('keeps the packed consumer inside the packed artifact and its own dependencies', () =>
+  withPackedConsumerFixture(async (consumer) => {
+    // The packed artifact was built from the CURRENT source: a stale build
+    // would still carry the sentinel the rebuild removes.
+    assert.equal(consumer.builtFromCurrentSource, true)
+    // The consumer's dependency closure is the PACKED manifest's own
+    // dependencies, and never the whole workspace.
+    const packedManifest = JSON.parse(
+      await readFile(join(consumer.packedRoot, 'package.json'), 'utf8')
+    ) as { dependencies?: Record<string, string> }
+    const declared = Object.keys(packedManifest.dependencies ?? {})
+    for (const name of declared) assert.ok(consumer.linkedDependencies.includes(name))
+    const installed = await readdir(join(consumer.consumerRoot, 'node_modules'))
+    for (const name of installed) {
+      if (name.startsWith('@')) continue
+      assert.ok(
+        consumer.linkedDependencies.includes(name),
+        `the consumer must not resolve ${name}: it is not a declared dependency`
+      )
+    }
+    // The packing step cannot build: the package declares no lifecycle, and
+    // the workspace prepare only wires git hooks.
+    const packageManifest = JSON.parse(
+      await readFile(join(consumer.packedRoot, 'package.json'), 'utf8')
+    ) as { scripts?: Record<string, string> }
+    const lifecycle = packageLifecycleScripts({ package: packageManifest })
+    assert.deepEqual(lifecycle, {})
   }))
 
 it('refuses a malformed provenance descriptor for a PACKED consumer too', () =>
-  withPackedConsumerFixture(async ({ consumer, input }) => {
-    const packed = await consumer.catalog.synchronizePortable(input)
-    const catalog = structuredClone(packed.catalog!)
-    const release = catalog.plugins[0]!.availableReleases[0]!
-    release.releaseMetadata[PACKAGE_METADATA_KEY] = { normalizerVersion: 1, files: 'not-an-array' }
-    const { catalogId: _oldId, ...body } = catalog
-    catalog.catalogId = `catalog:${digest(body).slice(7)}`
-    assert.throws(
-      () =>
-        consumer.harness.createCatalogInstallationPlan({
-          catalog,
-          pluginId: catalog.plugins[0]!.pluginId,
-          instanceId: 'workspace-a/user-a',
-          profile: harnessProfile(),
-        }),
-      /^Error: PACKAGE_PROVENANCE_INVALID: plugin:test-source:review-kit /
+  withPackedConsumerFixture(async (consumer) => {
+    await writeFile(join(consumer.consumerRoot, 'consume.mjs'), CONSUMER_SCRIPT)
+    const requestPath = join(consumer.consumerRoot, 'request.json')
+    await writeFile(
+      requestPath,
+      JSON.stringify({
+        mode: 'malformed',
+        input: consumer.input,
+        profile: harnessProfile(),
+        instanceId: 'workspace-a/user-a',
+      })
     )
+    const underNode = consumer.runUnderNode(join(consumer.consumerRoot, 'consume.mjs'), requestPath)
+    assert.equal(underNode.status, 0, underNode.stderr)
+    const result = JSON.parse(underNode.stdout) as { ok: boolean; error?: string }
+    assert.equal(result.ok, false)
+    // One typed line, naming the plugin — the catalog's refusal contract.
+    assert.match(
+      result.error ?? '',
+      /^PACKAGE_PROVENANCE_INVALID: plugin:test-source:review-kit \(.+\)$/
+    )
+    assert.equal((result.error ?? '').includes('\n'), false)
   }))

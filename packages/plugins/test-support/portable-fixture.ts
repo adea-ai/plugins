@@ -1,9 +1,9 @@
 import { execFileSync } from 'node:child_process'
-import { existsSync } from 'node:fs'
-import { mkdtemp, mkdir, writeFile, rm, symlink } from 'node:fs/promises'
-import { tmpdir } from 'node:os'
+import { existsSync, readFileSync, readdirSync } from 'node:fs'
+import { mkdtemp, mkdir, writeFile, readFile, rm, symlink, readdir, cp } from 'node:fs/promises'
+import { homedir, tmpdir } from 'node:os'
 import { dirname, join } from 'node:path'
-import { fileURLToPath, pathToFileURL } from 'node:url'
+import { fileURLToPath } from 'node:url'
 import type { SyncInput } from '../src/index.js'
 import { PLUGIN_SCHEMA_ID, MCP_SCHEMA_ID } from '../src/agent-plugins-schema.js'
 
@@ -11,6 +11,46 @@ import { PLUGIN_SCHEMA_ID, MCP_SCHEMA_ID } from '../src/agent-plugins-schema.js'
 const packageRoot = join(dirname(fileURLToPath(import.meta.url)), '..')
 /** The workspace root, which holds the installed dependencies. */
 const workspaceRoot = join(packageRoot, '..', '..')
+/**
+ * The Node 24 the compiled-import qualification runs under.
+ *
+ * The package's `bun` export condition intentionally selects `src/*.ts`, so
+ * the COMPILED artifact is only reached by a runtime that honours the
+ * `import` condition. Node 24 is therefore pinned: the first Node 24 found
+ * under the user's version manager, else the `node` on PATH when it is a 24.
+ */
+function findPinnedNode(): string {
+  const candidates: string[] = []
+  if (process.env.ADEA_NODE24) candidates.push(process.env.ADEA_NODE24)
+  // The version manager's installs live under the account's home, which is an
+  // ancestor of the checkout in the normal case; a sandbox may relocate the
+  // environment's home, so the ancestors of the package are searched too.
+  const homes = new Set<string>([homedir(), process.env.HOME ?? ''].filter(Boolean))
+  let ancestor = packageRoot
+  while (ancestor !== dirname(ancestor)) {
+    homes.add(ancestor)
+    ancestor = dirname(ancestor)
+  }
+  for (const home of homes) {
+    const root = join(home, '.local/share/mise/installs/node')
+    try {
+      for (const entry of readdirSync(root))
+        if (entry.startsWith('24.')) candidates.push(join(root, entry, 'bin', 'node'))
+    } catch {
+      /* no version manager install here */
+    }
+  }
+  candidates.push('node')
+  for (const candidate of candidates) {
+    try {
+      const version = execFileSync(candidate, ['--version'], { encoding: 'utf8' }).trim()
+      if (version.startsWith('v24')) return candidate
+    } catch {
+      /* try the next candidate */
+    }
+  }
+  throw new Error('the compiled-import qualification needs Node 24')
+}
 
 /**
  * The offline fixture's sources: a synthetic marketplace, a plugin manifest, an
@@ -100,58 +140,139 @@ export async function withPortableFixture(
   }
 }
 
+/** The capability profile the packed consumer presents to the planner. */
+export const PACKED_CONSUMER_PROFILE = {
+  profileVersion: 1,
+  harness: 'example-harness',
+  runtimeVersion: 'fixture-1',
+  adapterVersion: 'fixture-1',
+  agentPlugins: { versions: ['1.0.0'], skills: true, mcpTransports: ['stdio'] },
+  components: { skillDirectories: true, mcpTransports: ['stdio'] },
+} as const
+
 /**
- * The BUILT public artifact of this package, as a consumer receives it.
+ * The package's own lifecycle scripts.
  *
- * These are the module shapes a consumer of the packed package gets: the
- * compiled `dist` entries, not the workspace sources.
+ * A packing step must not be able to build: the packed artifact is the one
+ * the consumer receives, and it has to be the artifact the build produced
+ * from the CURRENT source. The package declares no lifecycle at all; the
+ * workspace root declares a `prepare` that only wires git hooks.
  */
-export type PackedConsumerModules = {
-  /** The built harness module from the EXTRACTED package. */
-  harness: typeof import('../src/agent-plugins-harness.js')
-  /** The built portable-catalog module from the EXTRACTED package. */
-  catalog: typeof import('../src/portable-catalog.js')
+export function packageLifecycleScripts(
+  manifests: Readonly<Record<string, { scripts?: Record<string, string> }>>
+): Record<string, string> {
+  const lifecycle: Record<string, string> = {}
+  for (const [name, manifest] of Object.entries(manifests)) {
+    for (const [script, command] of Object.entries(manifest.scripts ?? {})) {
+      if (['prepack', 'postpack', 'prepare', 'prepublishOnly', 'prepublish'].includes(script))
+        lifecycle[`${name}.${script}`] = command
+    }
+  }
+  return lifecycle
 }
 
-/** The extracted package, and the tarball it came from. */
-export type PackedConsumer = PackedConsumerModules & {
-  /** The directory the package was extracted into. */
+/**
+ * The dependency closure of a set of declared dependencies.
+ *
+ * Only the PACKED manifest's own dependencies and their legitimate closure are
+ * linked into the consumer: the whole workspace is never exposed, so a
+ * consumer cannot accidentally resolve a package the artifact does not declare.
+ */
+function dependencyClosure(
+  names: readonly string[],
+  searchRoots: readonly string[]
+): { name: string; path: string }[] {
+  const found = new Map<string, string>()
+  const roots = [...searchRoots]
+  const queue = [...names]
+  while (queue.length > 0) {
+    const name = queue.shift()!
+    if (found.has(name)) continue
+    const path = roots
+      .map((root) => join(root, name))
+      .find((candidate) => existsSync(join(candidate, 'package.json')))
+    if (!path) continue
+    found.set(name, path)
+    const manifest = JSON.parse(readFileSync(join(path, 'package.json'), 'utf8')) as {
+      dependencies?: Record<string, string>
+    }
+    roots.push(join(path, 'node_modules'))
+    for (const dependency of Object.keys(manifest.dependencies ?? {})) queue.push(dependency)
+  }
+  return [...found].map(([name, path]) => ({ name, path }))
+}
+
+/** The result of running the consumer script. */
+export type ConsumerRun = {
+  status: number
+  stdout: string
+  stderr: string
+}
+
+/** The packed consumer, and the two runtimes it is qualified under. */
+export type PackedConsumer = {
+  /** The consumer's own directory: its package.json and its node_modules. */
+  consumerRoot: string
+  /** The extracted package directory. */
   packedRoot: string
   /** The tarball the package was packed into. */
   tarball: string
+  /** The fixture root the offline sources live in. */
+  root: string
+  /** The offline compiler input the consumer compiles from. */
+  input: SyncInput
+  /** The dependency names the consumer's node_modules holds. */
+  linkedDependencies: readonly string[]
+  /** Whether the packed artifact was built from the current source. */
+  builtFromCurrentSource: boolean
+  /** Runs the consumer script under the pinned Node 24. */
+  runUnderNode: (script: string, request: string) => ConsumerRun
+  /** Runs the consumer script under Bun, which selects the source condition. */
+  runUnderBun: (script: string, request: string) => ConsumerRun
 }
 
+const STALE_MARKER = '/* stale-build-sentinel */'
+
 /**
- * Builds the package and packs it, then extracts it for a consumer.
+ * Builds the package, packs it, and sets up an ISOLATED consumer that
+ * imports the package by its PUBLIC specifiers.
  *
- * The consumer imports the EXTRACTED package's built entries, so the case
- * exercises the artifact a consumer actually receives rather than the
- * workspace sources. The extracted package resolves its declared
- * dependencies from the workspace install: a consumer installs them, and
- * nothing is fetched. No harness is executed and no network is used.
+ * The consumer is a separate directory with its own package.json and its own
+ * node_modules: the packed package plus the dependency closure the packed
+ * manifest declares, and nothing else. It imports
+ * `@adea-ai/plugins/agent-plugins/harness` and
+ * `@adea-ai/plugins/portable-catalog` by name, exactly as a consumer does.
+ *
+ * The package is REBUILT from the current source before it is packed, so a
+ * stale `dist` can never be the artifact under test; the build is proven by a
+ * sentinel that the rebuild removes. The pack runs with lifecycle scripts
+ * disabled, so no `prepare`/`prepack` hook can produce the artifact instead.
+ *
+ * The compiled-import qualification runs under the pinned Node 24, because the
+ * package's `bun` export condition intentionally selects `src/*.ts`. Bun is
+ * qualified separately, as the source-condition consumer.
  */
 export async function withPackedConsumerFixture(
-  run: (context: {
-    consumer: PackedConsumer
-    /** The offline compiler input the consumer compiles from. */
-    input: SyncInput
-    /** The fixture root the offline sources live in. */
-    root: string
-  }) => Promise<void>
+  run: (consumer: PackedConsumer) => Promise<void>
 ): Promise<void> {
   const workspace = await mkdtemp(join(tmpdir(), 'adea-packed-consumer-'))
   try {
+    // 1. Rebuild from the current source. A stale build is marked first, so
+    // the rebuild is proved rather than assumed.
     const built = join(packageRoot, 'dist', 'agent-plugins-harness.js')
-    if (!existsSync(built)) {
-      execFileSync('bun', ['run', 'build'], { cwd: packageRoot, stdio: 'inherit' })
-    }
+    const staleBefore = existsSync(built)
+    if (staleBefore) await writeFile(built, `${STALE_MARKER}\n${await readFile(built, 'utf8')}`)
+    execFileSync('bun', ['run', 'build'], { cwd: packageRoot, stdio: 'inherit' })
+    const builtFromCurrentSource =
+      !existsSync(built) || !(await readFile(built, 'utf8')).includes(STALE_MARKER)
+
+    // 2. Pack without lifecycle scripts, and extract.
     const destination = join(workspace, 'tarball')
     await mkdir(destination, { recursive: true })
-    execFileSync('bun', ['pm', 'pack', '--destination', destination], {
+    execFileSync('bun', ['pm', 'pack', '--destination', destination, '--ignore-scripts'], {
       cwd: packageRoot,
       stdio: 'ignore',
     })
-    const { readdir } = await import('node:fs/promises')
     const [packed] = (await readdir(destination)).filter((name) => name.endsWith('.tgz'))
     if (!packed) throw new Error('the package produced no tarball')
     const tarball = join(destination, packed)
@@ -159,25 +280,81 @@ export async function withPackedConsumerFixture(
     await mkdir(extracted, { recursive: true })
     execFileSync('tar', ['-xzf', tarball, '-C', extracted], { stdio: 'inherit' })
     const packedRoot = join(extracted, 'package')
-    // The extracted package resolves its declared dependencies from the
-    // workspace install of THIS package: a consumer installs them, and
-    // nothing is fetched.
-    const installed = [join(packageRoot, 'node_modules'), join(workspaceRoot, 'node_modules')].find(
-      (candidate) => existsSync(candidate)
+
+    // 3. The consumer's own directory: the packed package and the closure the
+    //    PACKED manifest declares. Nothing else is exposed.
+    const consumerRoot = join(workspace, 'consumer')
+    await mkdir(join(consumerRoot, 'node_modules', '@adea-ai'), { recursive: true })
+    // The package is COPIED into the consumer, the way an install lays it
+    // out: a symlinked package would resolve its dependencies from the
+    // extracted tree instead of from the consumer's own install.
+    await cp(packedRoot, join(consumerRoot, 'node_modules', '@adea-ai', 'plugins'), {
+      recursive: true,
+    })
+    const packedManifest = JSON.parse(await readFile(join(packedRoot, 'package.json'), 'utf8')) as {
+      dependencies?: Record<string, string>
+    }
+    const declared = Object.keys(packedManifest.dependencies ?? {})
+    const closure = dependencyClosure(declared, [
+      join(packageRoot, 'node_modules'),
+      join(workspaceRoot, 'node_modules'),
+    ])
+    for (const { name, path } of closure)
+      await symlink(path, join(consumerRoot, 'node_modules', name))
+    await writeFile(
+      join(consumerRoot, 'package.json'),
+      `${JSON.stringify(
+        {
+          name: 'adea-packed-consumer',
+          private: true,
+          type: 'module',
+          dependencies: { '@adea-ai/plugins': `file:${packedRoot}` },
+        },
+        null,
+        2
+      )}\n`
     )
-    if (!installed) throw new Error('the workspace has no installed dependencies')
-    await symlink(installed, join(packedRoot, 'node_modules'))
-    const harness = (await import(
-      pathToFileURL(join(packedRoot, 'dist', 'agent-plugins-harness.js')).href
-    )) as PackedConsumerModules['harness']
-    const catalog = (await import(
-      pathToFileURL(join(packedRoot, 'dist', 'portable-catalog.js')).href
-    )) as PackedConsumerModules['catalog']
+
+    // 4. The offline sources the consumer compiles from.
     const root = join(workspace, 'fixture')
     await mkdir(root, { recursive: true })
     const input = portableFixtureInput(root)
     await writePortableFixture(root, input)
-    await run({ consumer: { harness, catalog, packedRoot, tarball }, input, root })
+
+    const runWith = (
+      command: string,
+      args: readonly string[],
+      script: string,
+      request: string
+    ): ConsumerRun => {
+      try {
+        const stdout = execFileSync(command, [...args, script, request], {
+          cwd: consumerRoot,
+          encoding: 'utf8',
+        })
+        return { status: 0, stdout, stderr: '' }
+      } catch (error) {
+        const failure = error as { status?: number; stdout?: string; stderr?: string }
+        return {
+          status: failure.status ?? 1,
+          stdout: failure.stdout ?? '',
+          stderr: failure.stderr ?? '',
+        }
+      }
+    }
+    const nodeBinary = findPinnedNode()
+
+    await run({
+      consumerRoot,
+      packedRoot,
+      tarball,
+      root,
+      input,
+      linkedDependencies: closure.map((entry) => entry.name),
+      builtFromCurrentSource,
+      runUnderNode: (script, request) => runWith(nodeBinary, [], script, request),
+      runUnderBun: (script, request) => runWith('bun', [], script, request),
+    })
   } finally {
     await rm(workspace, { recursive: true, force: true })
   }
