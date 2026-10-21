@@ -36,6 +36,15 @@ jobs:
           key: bun-downloads-v1-${{ runner.os }}-${{ runner.arch }}-1.4.3-${{ hashFiles('bun.lock') }}
           restore-keys: |
             bun-downloads-v1-${{ runner.os }}-${{ runner.arch }}-1.4.3-
+      # The packed-consumer qualification runs the COMPILED package under
+      # Node 24: the package's `bun` export condition selects src/*.ts, so the
+      # compiled artifact is only reached by a runtime that honours the
+      # `import` condition. This is the repository's established pinned setup —
+      # the same action and version publish-packages.yml uses.
+      - name: Install Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
       - name: Install dependencies
         run: bun install --frozen-lockfile
       - name: Save Bun package downloads
