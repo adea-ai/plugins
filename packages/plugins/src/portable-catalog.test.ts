@@ -1,8 +1,9 @@
 import { it } from 'node:test'
 import assert from 'node:assert/strict'
-import { existsSync } from 'node:fs'
-import { writeFile, mkdir, readFile, readdir } from 'node:fs/promises'
+import { existsSync, lstatSync, realpathSync } from 'node:fs'
+import { writeFile, mkdir, readFile, readdir, mkdtemp, symlink, rm } from 'node:fs/promises'
 import { join } from 'node:path'
+import { tmpdir } from 'node:os'
 import { synchronize, verifyArtifacts, digest } from './index.js'
 import {
   synchronizePortable,
@@ -14,6 +15,7 @@ import { createCatalogInstallationPlan, createInstallationPlan } from './agent-p
 import type { HarnessProfile } from './agent-plugins-schema.js'
 import { snapshotFromDirectory } from './index.js'
 import {
+  copyDependency,
   packageLifecycleScripts,
   withPackedConsumerFixture,
   withPortableFixture,
@@ -450,6 +452,13 @@ it('keeps the packed consumer inside the packed artifact and its own dependencie
     // would still carry the sentinel the rebuild removes.
     assert.equal(consumer.builtFromCurrentSource, true)
     assert.equal(existsSync(join(consumer.packedRoot, 'dist', 'agent-plugins-harness.js')), true)
+    // Every copied dependency really resolves INSIDE the consumer: the
+    // workspace installs them as links into the package manager's store, so
+    // a copy that kept the link would resolve outside the consumer.
+    const consumerRoot = realpathSync(consumer.consumerRoot)
+    for (const real of consumer.dependencyRealpaths)
+      assert.ok(real.startsWith(consumerRoot + '/'), `${real} resolves outside the consumer`)
+    assert.ok(consumer.packageRealpath.startsWith(consumerRoot + '/'))
     // The consumer's dependency closure is the PACKED manifest's own
     // dependencies, and never the whole workspace.
     const packedManifest = JSON.parse(
@@ -529,3 +538,34 @@ it('refuses a malformed provenance descriptor for a PACKED consumer too', () =>
     )
     assert.equal((result.error ?? '').includes('\n'), false)
   }))
+
+it('copies a symlinked dependency as self-contained content', async () => {
+  // The workspace installs the package's dependencies as SYMLINKS into the
+  // package manager's store, and a recursive copy keeps a link as a link.
+  // The consumer must receive the CONTENT, and the copy must resolve inside
+  // the consumer.
+  const workspace = await mkdtemp(join(tmpdir(), 'adea-symlink-dependency-'))
+  try {
+    const real = join(workspace, 'real-pkg')
+    await mkdir(real)
+    await writeFile(
+      join(real, 'package.json'),
+      JSON.stringify({ name: 'real-pkg', version: '1.0.0' })
+    )
+    const link = join(workspace, 'linked-pkg')
+    await symlink(real, link)
+    const consumer = join(workspace, 'consumer')
+    await mkdir(consumer, { recursive: true })
+
+    const copied = await copyDependency(link, 'linked-pkg', consumer)
+    // The copy is a real directory, not a link.
+    assert.equal(lstatSync(copied.path).isSymbolicLink(), false)
+    // And it resolves inside the consumer, not at the workspace's target.
+    assert.ok(copied.realpath.startsWith(realpathSync(consumer) + '/'))
+    assert.notEqual(copied.realpath, realpathSync(real))
+    // The workspace's own link is untouched.
+    assert.equal(lstatSync(link).isSymbolicLink(), true)
+  } finally {
+    await rm(workspace, { recursive: true, force: true })
+  }
+})

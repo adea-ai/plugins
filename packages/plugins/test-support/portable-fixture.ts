@@ -1,6 +1,6 @@
 import { execFileSync } from 'node:child_process'
-import { existsSync, readFileSync, readdirSync } from 'node:fs'
-import { mkdtemp, mkdir, writeFile, readFile, rm, readdir, cp } from 'node:fs/promises'
+import { existsSync, readFileSync, readdirSync, realpathSync } from 'node:fs'
+import { mkdtemp, mkdir, writeFile, readFile, rm, readdir, cp, realpath } from 'node:fs/promises'
 import { homedir, tmpdir } from 'node:os'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -172,6 +172,29 @@ export function packageLifecycleScripts(
 }
 
 /**
+ * Copies one dependency into the consumer, SELF-CONTAINED.
+ *
+ * The workspace installs the package's dependencies as SYMLINKS into the
+ * package manager's store, so a plain recursive copy copies the LINK and
+ * leaves the consumer resolving packages from the workspace. The copy
+ * dereferences the link, and the copy's realpath is then checked to be inside
+ * the consumer: a dependency that still points outside is refused.
+ */
+export async function copyDependency(
+  source: string,
+  name: string,
+  consumerRoot: string
+): Promise<{ name: string; path: string; realpath: string }> {
+  const destination = join(consumerRoot, 'node_modules', name)
+  await cp(source, destination, { recursive: true, dereference: true })
+  const real = await realpath(destination)
+  const root = await realpath(consumerRoot)
+  if (real !== root && !real.startsWith(root + '/'))
+    throw new Error(`the copied dependency ${name} resolves outside the consumer: ${real}`)
+  return { name, path: destination, realpath: real }
+}
+
+/**
  * The dependency closure of a set of declared dependencies.
  *
  * Only the PACKED manifest's own dependencies and their legitimate closure are
@@ -196,7 +219,14 @@ function dependencyClosure(
     const manifest = JSON.parse(readFileSync(join(path, 'package.json'), 'utf8')) as {
       dependencies?: Record<string, string>
     }
-    roots.push(join(path, 'node_modules'))
+    // A package manager's isolated store keeps a package's own dependencies
+    // as SIBLINGS of it, so the store's node_modules directory is a search
+    // root too, next to the package's own.
+    // The store's own directory, reached through the package's REAL path: a
+    // package manager's isolated store keeps a package's dependencies as
+    // siblings of it.
+    const real = realpathSync(path)
+    roots.push(join(real, 'node_modules'), dirname(real))
     for (const dependency of Object.keys(manifest.dependencies ?? {})) queue.push(dependency)
   }
   return [...found].map(([name, path]) => ({ name, path }))
@@ -223,6 +253,10 @@ export type PackedConsumer = {
   input: SyncInput
   /** The dependency names the consumer's node_modules holds. */
   linkedDependencies: readonly string[]
+  /** Where each copied dependency really resolves. */
+  dependencyRealpaths: readonly string[]
+  /** Where the copied package really resolves. */
+  packageRealpath: string
   /** Whether the packed artifact was built from the current source. */
   builtFromCurrentSource: boolean
   /** Runs the consumer script under the pinned Node 24. */
@@ -290,9 +324,7 @@ export async function withPackedConsumerFixture(
     // The package is COPIED into the consumer, the way an install lays it
     // out: a symlinked package would resolve its dependencies from the
     // extracted tree instead of from the consumer's own install.
-    await cp(packedRoot, join(consumerRoot, 'node_modules', '@adea-ai', 'plugins'), {
-      recursive: true,
-    })
+    const installedPackage = await copyDependency(packedRoot, '@adea-ai/plugins', consumerRoot)
     const packedManifest = JSON.parse(await readFile(join(packedRoot, 'package.json'), 'utf8')) as {
       dependencies?: Record<string, string>
     }
@@ -301,11 +333,13 @@ export async function withPackedConsumerFixture(
       join(packageRoot, 'node_modules'),
       join(workspaceRoot, 'node_modules'),
     ])
-    // The closure is COPIED, never symlinked: a symlink would let the
-    // consumer resolve a package from the workspace, and a transitive import
-    // could then escape the consumer entirely.
+    // The closure is COPIED, never symlinked, and each copy is checked to
+    // resolve inside the consumer: a symlink would let the consumer resolve
+    // a package from the workspace, and a transitive import could then escape
+    // the consumer entirely.
+    const installedDependencies: { name: string; path: string; realpath: string }[] = []
     for (const { name, path } of closure)
-      await cp(path, join(consumerRoot, 'node_modules', name), { recursive: true })
+      installedDependencies.push(await copyDependency(path, name, consumerRoot))
     await writeFile(
       join(consumerRoot, 'package.json'),
       `${JSON.stringify(
@@ -355,7 +389,9 @@ export async function withPackedConsumerFixture(
       tarball,
       root,
       input,
-      linkedDependencies: closure.map((entry) => entry.name),
+      linkedDependencies: installedDependencies.map((entry) => entry.name),
+      dependencyRealpaths: installedDependencies.map((entry) => entry.realpath),
+      packageRealpath: installedPackage.realpath,
       builtFromCurrentSource,
       runUnderNode: (script, request) => runWith(nodeBinary, [], script, request),
       runUnderBun: (script, request) => runWith('bun', [], script, request),
