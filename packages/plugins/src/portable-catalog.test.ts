@@ -1,7 +1,7 @@
 import { it } from 'node:test'
 import assert from 'node:assert/strict'
 import { existsSync, lstatSync, realpathSync } from 'node:fs'
-import { writeFile, mkdir, readFile, readdir, mkdtemp, symlink, rm } from 'node:fs/promises'
+import { writeFile, mkdir, readFile, readdir, mkdtemp, symlink, rm, chmod } from 'node:fs/promises'
 import { join } from 'node:path'
 import { tmpdir } from 'node:os'
 import { synchronize, verifyArtifacts, digest } from './index.js'
@@ -16,7 +16,9 @@ import type { HarnessProfile } from './agent-plugins-schema.js'
 import { snapshotFromDirectory } from './index.js'
 import {
   copyDependency,
+  nodeCandidates,
   packageLifecycleScripts,
+  selectPinnedNode,
   withPackedConsumerFixture,
   withPortableFixture,
 } from '../test-support/portable-fixture.js'
@@ -567,5 +569,29 @@ it('copies a symlinked dependency as self-contained content', async () => {
     assert.equal(lstatSync(link).isSymbolicLink(), true)
   } finally {
     await rm(workspace, { recursive: true, force: true })
+  }
+})
+
+it('qualifies the compiled artifact only on Node 24', async () => {
+  // The qualification exists because the package's `bun` export condition
+  // selects src/*.ts: a Node that is not 24 would change WHICH artifact is
+  // under test, so it is not a candidate.
+  const directory = await mkdtemp(join(tmpdir(), 'adea-node-candidate-'))
+  try {
+    const node24 = join(directory, 'node24')
+    const node20 = join(directory, 'node20')
+    await writeFile(node24, '#!/bin/sh\necho v24.21.0\n')
+    await writeFile(node20, '#!/bin/sh\necho v20.11.0\n')
+    await chmod(node24, 0o755)
+    await chmod(node20, 0o755)
+    assert.equal(selectPinnedNode([node20, node24]), node24)
+    assert.throws(() => selectPinnedNode([node20]), /needs Node 24/)
+    assert.throws(() => selectPinnedNode([]), /needs Node 24/)
+    // The discovery ends with the `node` on PATH, which is where a CI
+    // runner's pinned setup action puts Node 24.
+    const candidates = nodeCandidates()
+    assert.ok(candidates.includes('node'))
+  } finally {
+    await rm(directory, { recursive: true, force: true })
   }
 })

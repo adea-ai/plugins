@@ -20,6 +20,16 @@ const workspaceRoot = join(packageRoot, '..', '..')
  * under the user's version manager, else the `node` on PATH when it is a 24.
  */
 function findPinnedNode(): string {
+  return selectPinnedNode(nodeCandidates())
+}
+
+/**
+ * The Node binaries the qualification may consider, most specific first.
+ *
+ * The explicit override wins, then a version manager's installs, then the
+ * `node` on PATH — which is where a CI runner's setup action puts Node 24.
+ */
+export function nodeCandidates(): string[] {
   const candidates: string[] = []
   if (process.env.ADEA_NODE24) candidates.push(process.env.ADEA_NODE24)
   // The version manager's installs live under the account's home, which is an
@@ -41,6 +51,18 @@ function findPinnedNode(): string {
     }
   }
   candidates.push('node')
+  return candidates
+}
+
+/**
+ * Selects the Node 24 the compiled-import qualification runs under.
+ *
+ * A candidate that is not Node 24 is refused. The qualification exists
+ * because the package's `bun` export condition selects `src/*.ts`: running it
+ * on an unpinned Node would silently change WHICH artifact is under test, so
+ * a Node that is not 24 is not a candidate.
+ */
+export function selectPinnedNode(candidates: readonly string[]): string {
   for (const candidate of candidates) {
     try {
       const version = execFileSync(candidate, ['--version'], { encoding: 'utf8' }).trim()
