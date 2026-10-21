@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.41](https://github.com/adea-ai/plugins/compare/v2.0.40...v2.0.41) (2026-10-21)
+
+
+### Tests
+
+* plugins-portable-consumer-compat-20261020 ([#248](https://github.com/adea-ai/plugins/issues/248)) ([2580380](https://github.com/adea-ai/plugins/commit/2580380adee88558e69796b56265b6d1539dcf40))
+
 ## [2.0.40](https://github.com/adea-ai/plugins/compare/v2.0.39...v2.0.40) (2026-10-17)
 
 
