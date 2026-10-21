@@ -12,7 +12,7 @@ import { verifyAgentPackage, materializeAgentPackage } from './agent-plugins-cat
 import { createCatalogInstallationPlan, createInstallationPlan } from './agent-plugins-harness.js'
 import type { HarnessProfile } from './agent-plugins-schema.js'
 import { snapshotFromDirectory } from './index.js'
-import { withPortableFixture } from '../test-support/portable-fixture.js'
+import { withPackedConsumerFixture, withPortableFixture } from '../test-support/portable-fixture.js'
 
 it('normalizes a real offline catalog and preserves source/release identity', () =>
   withPortableFixture(async (input, root) => {
@@ -319,5 +319,63 @@ it('refuses a malformed provenance descriptor with one typed line naming the plu
           profile: harnessProfile(),
         }),
       /PACKAGE_PROVENANCE_INVALID: plugin:test-source:review-kit/
+    )
+  }))
+
+it('gives a PACKED consumer the same installation plan as the workspace path', () =>
+  withPackedConsumerFixture(async ({ consumer, input }) => {
+    // The consumer compiles and plans from the EXTRACTED package's built
+    // entries, not from the workspace sources.
+    const packed = await consumer.catalog.synchronizePortable(input)
+    const source = await synchronizePortable(input)
+    assert.ok(packed.catalog)
+    assert.ok(source.catalog)
+    // The compiler output is identical across the packaging boundary.
+    assert.equal(packed.catalog.catalogId, source.catalog.catalogId)
+
+    const pluginId = source.catalog.plugins[0]!.pluginId
+    const sourcePlan = createCatalogInstallationPlan({
+      catalog: source.catalog,
+      pluginId,
+      instanceId: 'workspace-a/user-a',
+      profile: harnessProfile(),
+    })
+    const packedPlan = consumer.harness.createCatalogInstallationPlan({
+      catalog: packed.catalog,
+      pluginId,
+      instanceId: 'workspace-a/user-a',
+      profile: harnessProfile(),
+    })
+    // The import path and the workspace path plan the SAME installation, and
+    // the independently constructed plan serializes to the same bytes: the
+    // determinism claim is about the artifact, not about one in-memory object.
+    assert.deepEqual(packedPlan, sourcePlan)
+    assert.equal(JSON.stringify(packedPlan), JSON.stringify(sourcePlan))
+    // And the plan carries the real content, not an empty one.
+    assert.equal(packedPlan.strategy, 'native-agent-plugin')
+    assert.equal(packedPlan.compatibility, 'full')
+    assert.deepEqual(packedPlan.selection.skillDirectories, ['skills/review'])
+    assert.deepEqual(Object.keys(packedPlan.selection.mcpServers), ['local'])
+    assert.equal(packedPlan.allowedToActivate, false)
+    assert.equal(packedPlan.approvalRequired, true)
+  }))
+
+it('refuses a malformed provenance descriptor for a PACKED consumer too', () =>
+  withPackedConsumerFixture(async ({ consumer, input }) => {
+    const packed = await consumer.catalog.synchronizePortable(input)
+    const catalog = structuredClone(packed.catalog!)
+    const release = catalog.plugins[0]!.availableReleases[0]!
+    release.releaseMetadata[PACKAGE_METADATA_KEY] = { normalizerVersion: 1, files: 'not-an-array' }
+    const { catalogId: _oldId, ...body } = catalog
+    catalog.catalogId = `catalog:${digest(body).slice(7)}`
+    assert.throws(
+      () =>
+        consumer.harness.createCatalogInstallationPlan({
+          catalog,
+          pluginId: catalog.plugins[0]!.pluginId,
+          instanceId: 'workspace-a/user-a',
+          profile: harnessProfile(),
+        }),
+      /^Error: PACKAGE_PROVENANCE_INVALID: plugin:test-source:review-kit /
     )
   }))

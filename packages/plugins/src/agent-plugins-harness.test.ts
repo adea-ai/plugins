@@ -270,3 +270,316 @@ describe('MCP binding preparation', () => {
     }
   })
 })
+
+/** A package built from an explicit file map, so every shape is explicit. */
+function packageFrom(files: Record<string, string>) {
+  return compileAgentPackage({
+    files: new Map(
+      Object.entries(files).map(([path, text]) => [path, new TextEncoder().encode(text)])
+    ),
+    name: 'issues',
+  })
+}
+
+const MANIFEST = JSON.stringify({ $schema: PLUGIN_SCHEMA_ID, name: 'issues' })
+const SKILL = '---\nname: issues\ndescription: Work with issues.\n---\nInstructions.'
+const MCP_BOTH = JSON.stringify({
+  $schema: MCP_SCHEMA_ID,
+  mcpServers: {
+    api: { type: 'streamable-http', url: 'https://example.test/mcp' },
+    local: { type: 'stdio', command: 'node' },
+  },
+})
+
+/** The package shapes the compatibility matrix is exercised over. */
+const PACKAGES = {
+  full: packageFrom({
+    'plugin.json': MANIFEST,
+    'skills/issues/SKILL.md': SKILL,
+    'mcp.json': MCP_BOTH,
+  }),
+  skillsOnly: packageFrom({
+    'plugin.json': MANIFEST,
+    'skills/issues/SKILL.md': SKILL,
+  }),
+  mcpOnly: packageFrom({
+    'plugin.json': MANIFEST,
+    'mcp.json': MCP_BOTH,
+  }),
+  withHooks: packageFrom({
+    'plugin.json': MANIFEST,
+    'skills/issues/SKILL.md': SKILL,
+    'mcp.json': MCP_BOTH,
+    'hooks/hooks.json': '{}',
+  }),
+  bare: packageFrom({ 'plugin.json': MANIFEST }),
+} as const
+
+/** The profile shapes the compatibility matrix is exercised over. */
+const PROFILES = {
+  native: profile({
+    agentPlugins: {
+      versions: ['1.0.0'],
+      skills: true,
+      mcpTransports: ['stdio', 'streamable-http'],
+    },
+    components: { skillDirectories: true, mcpTransports: ['stdio', 'streamable-http'] },
+  }),
+  versionUnsupported: profile({
+    agentPlugins: {
+      versions: ['9.9.9'],
+      skills: true,
+      mcpTransports: ['stdio', 'streamable-http'],
+    },
+    components: { skillDirectories: true, mcpTransports: ['stdio', 'streamable-http'] },
+  }),
+  nativeSkillsOff: profile({
+    agentPlugins: {
+      versions: ['1.0.0'],
+      skills: false,
+      mcpTransports: ['stdio', 'streamable-http'],
+    },
+    components: { skillDirectories: true, mcpTransports: ['stdio', 'streamable-http'] },
+  }),
+  adapterStronger: profile({
+    agentPlugins: { versions: ['1.0.0'], skills: true, mcpTransports: ['stdio'] },
+    components: { skillDirectories: true, mcpTransports: ['stdio', 'streamable-http'] },
+  }),
+  nothingCovered: profile({
+    agentPlugins: { versions: ['1.0.0'], skills: false, mcpTransports: [] },
+    components: { skillDirectories: false, mcpTransports: [] },
+  }),
+  nativeWithoutHttp: profile({
+    agentPlugins: { versions: ['1.0.0'], skills: true, mcpTransports: ['stdio'] },
+    components: { skillDirectories: false, mcpTransports: [] },
+  }),
+} as const
+
+/**
+ * The compatibility matrix.
+ *
+ * Every row states the package shape, the profile shape, whether a partial
+ * adoption was allowed, and what the plan must then contain. The expectations
+ * are the EXISTING contract: the native loader is used only when the profile
+ * supports the package version and the native path covers at least as much as
+ * the adapter; a partial plan is refused unless the caller opts in; a plan that
+ * covers nothing is unsupported.
+ */
+const MATRIX: {
+  name: string
+  pkg: keyof typeof PACKAGES
+  profile: keyof typeof PROFILES
+  allowPartial?: boolean
+  strategy: string
+  compatibility: string
+  skills: string[]
+  mcp: string[]
+  disabled: string[]
+}[] = [
+  {
+    name: 'supported version, native covers everything',
+    pkg: 'full',
+    profile: 'native',
+    strategy: 'native-agent-plugin',
+    compatibility: 'full',
+    skills: ['skills/issues'],
+    mcp: ['api', 'local'],
+    disabled: [],
+  },
+  {
+    name: 'unsupported package version falls back to the component adapter',
+    pkg: 'full',
+    profile: 'versionUnsupported',
+    strategy: 'component-adapter',
+    compatibility: 'full',
+    skills: ['skills/issues'],
+    mcp: ['api', 'local'],
+    disabled: [],
+  },
+  {
+    name: 'a native loader without skills yields to the stronger adapter',
+    pkg: 'full',
+    profile: 'nativeSkillsOff',
+    strategy: 'component-adapter',
+    compatibility: 'full',
+    skills: ['skills/issues'],
+    mcp: ['api', 'local'],
+    disabled: [],
+  },
+  {
+    name: 'an adapter that covers more wins over a weaker native loader',
+    pkg: 'full',
+    profile: 'adapterStronger',
+    strategy: 'component-adapter',
+    compatibility: 'full',
+    skills: ['skills/issues'],
+    mcp: ['api', 'local'],
+    disabled: [],
+  },
+  {
+    name: 'a profile that covers nothing is unsupported',
+    pkg: 'full',
+    profile: 'nothingCovered',
+    strategy: 'unavailable',
+    compatibility: 'unsupported',
+    skills: [],
+    mcp: [],
+    disabled: ['skill:issues', 'mcp:api', 'mcp:local'],
+  },
+  {
+    name: 'a transport the native loader lacks is disabled, and a partial plan is refused',
+    pkg: 'full',
+    profile: 'nativeWithoutHttp',
+    strategy: 'unavailable',
+    compatibility: 'partial',
+    skills: [],
+    mcp: [],
+    disabled: ['mcp:api'],
+  },
+  {
+    name: 'the same package is adopted partially when the caller opts in',
+    pkg: 'full',
+    profile: 'nativeWithoutHttp',
+    allowPartial: true,
+    strategy: 'native-agent-plugin',
+    compatibility: 'partial',
+    skills: ['skills/issues'],
+    mcp: ['local'],
+    disabled: ['mcp:api'],
+  },
+  {
+    name: 'a skills-only package plans natively',
+    pkg: 'skillsOnly',
+    profile: 'native',
+    strategy: 'native-agent-plugin',
+    compatibility: 'full',
+    skills: ['skills/issues'],
+    mcp: [],
+    disabled: [],
+  },
+  {
+    name: 'an mcp-only package plans natively',
+    pkg: 'mcpOnly',
+    profile: 'native',
+    strategy: 'native-agent-plugin',
+    compatibility: 'full',
+    skills: [],
+    mcp: ['api', 'local'],
+    disabled: [],
+  },
+  {
+    name: 'a non-portable extra keeps the package off the native loader',
+    pkg: 'withHooks',
+    profile: 'native',
+    strategy: 'unavailable',
+    compatibility: 'partial',
+    skills: [],
+    mcp: [],
+    disabled: ['hooks'],
+  },
+  {
+    name: 'the same package is adopted partially when the caller opts in',
+    pkg: 'withHooks',
+    profile: 'native',
+    allowPartial: true,
+    strategy: 'component-adapter',
+    compatibility: 'partial',
+    skills: ['skills/issues'],
+    mcp: ['api', 'local'],
+    disabled: ['hooks'],
+  },
+  {
+    name: 'a package with no skills and no servers is unsupported',
+    pkg: 'bare',
+    profile: 'native',
+    strategy: 'unavailable',
+    compatibility: 'unsupported',
+    skills: [],
+    mcp: [],
+    disabled: [],
+  },
+]
+
+describe('the compatibility matrix across package and profile capabilities', () => {
+  for (const row of MATRIX) {
+    it(row.name, () => {
+      const pkg = PACKAGES[row.pkg]
+      const plan = createInstallationPlan({
+        pluginId: 'plugin:test:issues',
+        releaseId: `release:${'a'.repeat(64)}`,
+        instanceId: 'workspace-a/user-a',
+        source: {
+          repositoryUrl: 'https://github.com/example/issues',
+          commitSha: 'b'.repeat(40),
+          pluginSubdirectory: '.',
+          contentDigest: pkg.sourceDigest,
+        },
+        package: pkg,
+        profile: PROFILES[row.profile],
+        ...(row.allowPartial === undefined ? {} : { allowPartial: row.allowPartial }),
+      })
+      assert.equal(plan.strategy, row.strategy)
+      assert.equal(plan.compatibility, row.compatibility)
+      assert.deepEqual(plan.selection.skillDirectories, row.skills)
+      assert.deepEqual(Object.keys(plan.selection.mcpServers).toSorted(), row.mcp.toSorted())
+      for (const component of row.disabled)
+        assert.ok(
+          plan.disabled.some((entry) => entry.component === component),
+          `expected ${component} to be disabled, got ${JSON.stringify(plan.disabled)}`
+        )
+      if (row.disabled.length === 0) assert.deepEqual(plan.disabled, [])
+      // A refused plan selects nothing, and no plan ever activates by itself.
+      assert.equal(plan.allowedToActivate, false)
+      assert.equal(plan.approvalRequired, true)
+      if (row.strategy === 'unavailable') {
+        assert.deepEqual(plan.selection.skillDirectories, [])
+        assert.deepEqual(plan.selection.mcpServers, {})
+      }
+    })
+  }
+})
+
+describe('upgrade identity isolation', () => {
+  it('isolates instances and plugins, and pins the package identity across upgrades', () => {
+    const base = input()
+    const first = createInstallationPlan(base)
+
+    // A distinct instance of the same plugin owns its own data.
+    assert.notEqual(
+      first.dataKey,
+      createInstallationPlan({ ...base, instanceId: 'workspace-b/user-a' }).dataKey
+    )
+    // A distinct plugin under the same instance id owns its own data.
+    assert.notEqual(
+      first.dataKey,
+      createInstallationPlan({ ...base, pluginId: 'plugin:other:issues' }).dataKey
+    )
+
+    // An upgraded package (new bytes) is a different PACKAGE, under the same
+    // instance data: the data is preserved across the upgrade.
+    const upgraded = createInstallationPlan({
+      ...input(packageFixture({ 'CHANGELOG.md': 'A new release.' })),
+      releaseId: `release:${'c'.repeat(64)}`,
+    })
+    assert.notEqual(first.packageKey, upgraded.packageKey)
+    assert.equal(first.dataKey, upgraded.dataKey)
+    assert.equal(upgraded.preserveDataAcrossUpdates, true)
+
+    // A new release id over the SAME bytes is the same package identity: the
+    // package key pins the source and the package bytes, and the release is
+    // deliberately excluded from the data key.
+    const rereleased = createInstallationPlan({ ...base, releaseId: `release:${'d'.repeat(64)}` })
+    assert.equal(first.packageKey, rereleased.packageKey)
+    assert.equal(first.dataKey, rereleased.dataKey)
+    assert.notEqual(first.releaseId, rereleased.releaseId)
+
+    // A different source commit is a different package identity under the same
+    // instance data.
+    const otherCommit = createInstallationPlan({
+      ...base,
+      source: { ...base.source, commitSha: 'c'.repeat(40) },
+    })
+    assert.notEqual(first.packageKey, otherCommit.packageKey)
+    assert.equal(first.dataKey, otherCommit.dataKey)
+  })
+})
