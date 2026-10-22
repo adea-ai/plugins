@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.42](https://github.com/adea-ai/plugins/compare/v2.0.41...v2.0.42) (2026-10-22)
+
+
+### Maintenance
+
+* pin Bun toolchain to 1.4.4 ([#250](https://github.com/adea-ai/plugins/issues/250)) ([5738d27](https://github.com/adea-ai/plugins/commit/5738d27dbbccd4ba245e9b57c6545a8d83a81664))
+
 ## [2.0.41](https://github.com/adea-ai/plugins/compare/v2.0.40...v2.0.41) (2026-10-21)
 
 
