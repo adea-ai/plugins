@@ -40,7 +40,7 @@
   "devDependencies": {
     "@types/bun": "1.4.3",
     "@types/node": "^26.6.4",
-    "code-foundry": "1.48.2",
+    "code-foundry": "1.48.4",
     "oxfmt": "^0.72.0",
     "oxlint": "^1.86.0",
     "typescript": "^7.0.2"
@@ -49,5 +49,5 @@
     "bun": ">=1.4.0 <2",
     "node": ">=24 <25"
   },
-  "packageManager": "bun@1.4.3"
+  "packageManager": "bun@1.4.4"
 }
