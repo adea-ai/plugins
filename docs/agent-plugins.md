@@ -220,7 +220,7 @@ started by the planner.
 
 ## CLI and migration
 
-Repository runtime requirements remain Bun 1.4.0 and Node 24. Install from the existing lockfile:
+The repository toolchain baseline is Bun 1.4.4 and Node 24. Install from the existing lockfile:
 
 ```sh
 bun install --frozen-lockfile

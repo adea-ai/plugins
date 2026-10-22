@@ -40,8 +40,8 @@ routine choices; ask only when a consequential decision or authority is missing.
 
 ## Commands and validation
 
-Run from the repository root. [package.json](package.json) pins Bun 1.4.3 and
-Node 24.x; [bun.lock](bun.lock) is the dependency lock. The local `.mise.toml` and checked-in Bun workflows select Bun 1.4.3.
+Run from the repository root. [package.json](package.json) pins Bun 1.4.4 and
+Node 24.x; [bun.lock](bun.lock) is the dependency lock. The local `.mise.toml` and checked-in Bun workflows select Bun 1.4.4.
 
 ```sh
 bun install --frozen-lockfile

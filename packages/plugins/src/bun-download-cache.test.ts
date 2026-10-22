@@ -22,7 +22,7 @@ for (const name of ['marketplace-ci', 'marketplace-sync', 'publish-packages']) {
       "github.ref == format('refs/heads/{0}', github.event.repository.default_branch)"
     )
     expect(block).toContain("steps.bun-downloads.outputs.cache-hit != 'true'")
-    expect(block).toContain("runner.os }}-${{ runner.arch }}-1.4.3-${{ hashFiles('bun.lock')")
+    expect(block).toContain("runner.os }}-${{ runner.arch }}-1.4.4-${{ hashFiles('bun.lock')")
     const events = name === 'marketplace-sync' ? ['schedule', 'workflow_dispatch'] : ['push']
     for (const event of events) {
       expect(source.slice(0, source.indexOf('\npermissions:'))).toContain(`${event}:`)
