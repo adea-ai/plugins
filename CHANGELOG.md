@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.43](https://github.com/adea-ai/plugins/compare/v2.0.42...v2.0.43) (2026-10-25)
+
+
+### Bug Fixes
+
+* raise Zod floor and guard capped collections ([#252](https://github.com/adea-ai/plugins/issues/252)) ([c4d0e77](https://github.com/adea-ai/plugins/commit/c4d0e77f6369e0cb714ea89f1d3a59c4189f185a))
+
 ## [2.0.42](https://github.com/adea-ai/plugins/compare/v2.0.41...v2.0.42) (2026-10-22)
 
 
