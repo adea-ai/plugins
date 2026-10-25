@@ -25,3 +25,38 @@ for (const [name, schema] of [
     })
   })
 }
+
+it('rejects an oversized file collection before reading any attacker-controlled entries', () => {
+  let visitedEntries = 0
+  const oversizedFiles = new Proxy([], {
+    get(target, property, receiver) {
+      if (property === 'length') return 8193
+      if (typeof property === 'string' && /^(0|[1-9][0-9]*)$/.test(property)) {
+        visitedEntries += 1
+        throw new Error('Oversized file entries must not be traversed.')
+      }
+      return Reflect.get(target, property, receiver)
+    },
+  })
+
+  const result = AgentPackageSchema.shape.files.safeParse(oversizedFiles)
+
+  assert.equal(result.success, false)
+  assert.equal(visitedEntries, 0)
+  if (!result.success) assert.equal(result.error.issues[0]?.code, 'too_big')
+})
+
+it('accepts a file collection at the public schema limit', () => {
+  const file = {
+    action: 'copy',
+    sourcePath: 'source.txt',
+    targetPath: 'target.txt',
+    digest: `sha256:${'a'.repeat(64)}`,
+    preserveMode: true,
+  } as const
+
+  const result = AgentPackageSchema.shape.files.safeParse(Array.from({ length: 8192 }, () => file))
+
+  assert.equal(result.success, true)
+  if (result.success) assert.equal(result.data.length, 8192)
+})

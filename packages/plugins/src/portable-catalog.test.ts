@@ -2,7 +2,8 @@ import { it } from 'node:test'
 import assert from 'node:assert/strict'
 import { existsSync, lstatSync, realpathSync } from 'node:fs'
 import { writeFile, mkdir, readFile, readdir, mkdtemp, symlink, rm, chmod } from 'node:fs/promises'
-import { join } from 'node:path'
+import { join, sep } from 'node:path'
+import { pathToFileURL } from 'node:url'
 import { tmpdir } from 'node:os'
 import { synchronize, verifyArtifacts, digest } from './index.js'
 import {
@@ -420,10 +421,13 @@ it('gives a PACKED consumer the same installation plan as the workspace path', (
     // The compiled artifact was reached through the PUBLIC specifier: the
     // resolved module lives in the packed package's dist, not in the
     // workspace source.
-    assert.ok(nodeResult.resolvedHarness.startsWith('file://' + consumer.consumerRoot))
+    const physicalConsumerRootUrl = pathToFileURL(
+      `${realpathSync(consumer.consumerRoot)}${sep}`
+    ).href
+    assert.ok(nodeResult.resolvedHarness.startsWith(physicalConsumerRootUrl))
     assert.ok(nodeResult.resolvedHarness.includes('@adea-ai/plugins'))
     assert.ok(nodeResult.resolvedHarness.includes('/dist/'))
-    assert.ok(nodeResult.resolvedCatalog.startsWith('file://' + consumer.consumerRoot))
+    assert.ok(nodeResult.resolvedCatalog.startsWith(physicalConsumerRootUrl))
     assert.ok(nodeResult.resolvedCatalog.includes('@adea-ai/plugins'))
     assert.ok(nodeResult.resolvedCatalog.includes('/dist/'))
 
@@ -440,10 +444,10 @@ it('gives a PACKED consumer the same installation plan as the workspace path', (
     }
     assert.equal(bunResult.ok, true)
     assert.deepEqual(bunResult.plan, sourcePlan)
-    assert.ok(bunResult.resolvedHarness.startsWith('file://' + consumer.consumerRoot))
+    assert.ok(bunResult.resolvedHarness.startsWith(physicalConsumerRootUrl))
     assert.ok(bunResult.resolvedHarness.includes('@adea-ai/plugins'))
     assert.ok(bunResult.resolvedHarness.includes('/src/'))
-    assert.ok(bunResult.resolvedCatalog.startsWith('file://' + consumer.consumerRoot))
+    assert.ok(bunResult.resolvedCatalog.startsWith(physicalConsumerRootUrl))
     assert.ok(bunResult.resolvedCatalog.includes('@adea-ai/plugins'))
     assert.ok(bunResult.resolvedCatalog.includes('/src/'))
   }))
