@@ -5,7 +5,7 @@
     "": {
       "name": "@agent-hq/plugins-marketplace",
       "dependencies": {
-        "zod": "4.6.5",
+        "zod": "4.6.6",
       },
       "devDependencies": {
         "@types/bun": "1.4.3",
@@ -18,11 +18,11 @@
     },
     "packages/plugins": {
       "name": "@adea-ai/plugins",
-      "version": "2.0.41",
+      "version": "2.0.42",
       "dependencies": {
         "tar-stream": "^3.2.1",
         "yaml": "2.9.1",
-        "zod": "^4.6.5",
+        "zod": "^4.6.6",
       },
     },
   },
@@ -189,6 +189,6 @@
 
     "yaml": ["yaml@2.9.1", "", { "bin": { "yaml": "bin.mjs" } }, "sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw=="],
 
-    "zod": ["zod@4.6.5", "", {}, "sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q=="],
+    "zod": ["zod@4.6.6", "", {}, "sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA=="],
   }
 }
