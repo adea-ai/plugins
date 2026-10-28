@@ -32,7 +32,8 @@
     "publish:packages": "bun scripts/publish-packages.mjs",
     "prepare": "husky 2>/dev/null || true",
     "schema:plugins": "bun run scripts/agent-plugin-schemas.ts --check",
-    "verify:brand-sites": "bun run scripts/verify-brand-sites.ts"
+    "verify:brand-sites": "bun run scripts/verify-brand-sites.ts",
+    "vp:verify": "vp run format:check && vp run lint && vp run type-check && vp run build"
   },
   "dependencies": {
     "zod": "4.6.6"
@@ -40,11 +41,13 @@
   "devDependencies": {
     "@types/bun": "1.4.3",
     "@types/node": "^26.6.4",
-    "code-foundry": "1.48.4",
+    "code-foundry": "1.48.8",
     "oxfmt": "^0.72.0",
     "oxlint": "^1.86.0",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "vite-plus": "1.4.0"
   },
+  "overrides": {},
   "engines": {
     "bun": ">=1.4.0 <2",
     "node": ">=24 <25"
