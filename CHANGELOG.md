@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.45](https://github.com/adea-ai/plugins/compare/v2.0.44...v2.0.45) (2026-10-28)
+
+
+### Maintenance
+
+* remove unintended Vite+ adoption ([#256](https://github.com/adea-ai/plugins/issues/256)) ([ecbc31b](https://github.com/adea-ai/plugins/commit/ecbc31b177d01825932ba5a960db6ea0bb49ca28))
+
 ## [2.0.44](https://github.com/adea-ai/plugins/compare/v2.0.43...v2.0.44) (2026-10-28)
 
 
