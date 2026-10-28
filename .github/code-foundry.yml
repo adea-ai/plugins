@@ -53,4 +53,4 @@ codeql_rust_max_parallel: 1
 
 # Preserve the existing application formatter explicitly.
 formatter: oxfmt
-monorepo_tool: vite-plus
+monorepo_tool: auto
