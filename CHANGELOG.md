@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.44](https://github.com/adea-ai/plugins/compare/v2.0.43...v2.0.44) (2026-10-28)
+
+
+### Maintenance
+
+* adopt Vite+ and sync Code Foundry ([#254](https://github.com/adea-ai/plugins/issues/254)) ([c843f85](https://github.com/adea-ai/plugins/commit/c843f85cde58f11d10126570ed67f566d959d664))
+
 ## [2.0.43](https://github.com/adea-ai/plugins/compare/v2.0.42...v2.0.43) (2026-10-25)
 
 
