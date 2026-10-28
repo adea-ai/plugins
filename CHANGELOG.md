@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.46](https://github.com/adea-ai/plugins/compare/v2.0.45...v2.0.46) (2026-10-28)
+
+
+### Bug Fixes
+
+* use GraphQL to convert pull requests to draft ([#258](https://github.com/adea-ai/plugins/issues/258)) ([095cd35](https://github.com/adea-ai/plugins/commit/095cd35f8c9bd73a18907ce297f3644d1cb2cd91))
+
 ## [2.0.45](https://github.com/adea-ai/plugins/compare/v2.0.44...v2.0.45) (2026-10-28)
 
 
