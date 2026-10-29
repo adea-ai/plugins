@@ -1591,7 +1591,7 @@ export function verifyArtifacts(artifacts: GeneratedArtifacts): void {
   if (verification.hasConsumerIndex && indexArtifact === undefined)
     throw new Error(`SHARD_MISSING: ${CATALOG_INDEX_ARTIFACT}`)
   for (const shard of verification.shards)
-    verifyShardArtifact(shard, artifacts[shard.name], verification)
+    verifyShardArtifact(shard, artifacts[shard.name], verification, parsedCatalog.catalogId)
   verifyIconAssets(integrity.assets, verification)
 }
 
@@ -1603,15 +1603,23 @@ export function verifyArtifacts(artifacts: GeneratedArtifacts): void {
 export function verifyShardArtifact(
   shard: ShardArtifact,
   content: string | undefined,
-  verification: ConsumerIndexVerification
+  verification: ConsumerIndexVerification,
+  catalogId?: string
 ): void {
   if (content === undefined) throw new Error(`SHARD_MISSING: ${shard.name}`)
   const parsed = JSON.parse(content) as {
+    schemaVersion?: unknown
     catalogId?: unknown
     category?: unknown
     topCount?: unknown
     products?: unknown
   }
+  if (
+    parsed.schemaVersion !== 1 ||
+    (catalogId !== undefined && parsed.catalogId !== catalogId) ||
+    (shard.kind !== 'index' && parsed.category !== shard.category)
+  )
+    throw new Error(`SHARD_IDENTITY_MISMATCH: ${shard.name}`)
   // The index shard carries products keyed by productKey; the shelf and list
   // shards carry them as ordered arrays.
   const products: readonly ConsumerProduct[] =

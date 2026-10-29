@@ -417,6 +417,26 @@ describe('artifact shards', () => {
     expect(() => verifyArtifacts(tampered)).toThrow('INTEGRITY_DIGEST_MISMATCH')
   })
 
+  test('rejects rehashed shards that identify a different catalog or category', () => {
+    const { artifacts } = artifactsOf(plugins)
+    for (const [name, change] of [
+      ['catalog-index.v1.json', { catalogId: `catalog:${'b'.repeat(64)}` }],
+      ['shelf-productivity.v1.json', { catalogId: `catalog:${'b'.repeat(64)}` }],
+      ['category-productivity.v1.json', { category: 'business-operations' }],
+    ] as const) {
+      const content = JSON.stringify({ ...JSON.parse(artifacts[name]!), ...change })
+      const integrity = JSON.parse(artifacts['integrity.json']!)
+      integrity.files[name] = digest(content)
+      expect(() =>
+        verifyArtifacts({
+          ...artifacts,
+          [name]: content,
+          'integrity.json': JSON.stringify(integrity),
+        })
+      ).toThrow('SHARD_IDENTITY_MISMATCH')
+    }
+  })
+
   test('rejects a release that drops a shard or an asset declaration', () => {
     const { artifacts } = artifactsOf(plugins)
     const withoutShard = { ...artifacts }
