@@ -151,7 +151,11 @@ it('rejects traversal in artifact names before reading them', () =>
     await mkdir(directory)
     await writeFile(
       join(directory, 'integrity.json'),
-      JSON.stringify({ files: { '../missing': 'x' } })
+      JSON.stringify({
+        schemaVersion: 1,
+        catalogId: `catalog:${'a'.repeat(64)}`,
+        files: { '../missing': `sha256:${'b'.repeat(64)}` },
+      })
     )
     const result = await invoke(root, ['validate'])
     assert.equal(result.code, 1)

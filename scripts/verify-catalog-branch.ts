@@ -1,6 +1,7 @@
 import { promises as fs } from 'node:fs'
 import { join, resolve } from 'node:path'
-import { byteDigest, type PublishedAsset } from '../packages/plugins/src/index.js'
+import { byteDigest } from '../packages/plugins/src/index.js'
+import { parseIntegrityManifest } from '../packages/plugins/src/integrity-manifest.js'
 import {
   catalogAssetsBaseUrl,
   catalogIdSuffix,
@@ -36,9 +37,9 @@ const base = flag('base', catalogAssetsBaseUrl('https://github.com/adea-ai/plugi
   ''
 )
 
-const integrity = JSON.parse(
-  await fs.readFile(join(artifactsDirectory, 'integrity.json'), 'utf8')
-) as { catalogId?: string; files?: Record<string, string>; assets?: PublishedAsset[] }
+const integrity = parseIntegrityManifest(
+  JSON.parse(await fs.readFile(join(artifactsDirectory, 'integrity.json'), 'utf8'))
+)
 
 const catalogId = integrity.catalogId
 if (typeof catalogId !== 'string') throw new Error('INTEGRITY_CATALOG_ID_MISSING')
@@ -72,7 +73,7 @@ async function compare(
 }
 
 const divergences: Divergence[] = []
-const names = Object.keys(integrity.files ?? {}).toSorted()
+const names = Object.keys(integrity.files).toSorted()
 for (const name of names) {
   const local = new Uint8Array(await fs.readFile(join(artifactsDirectory, name)))
   const divergence = await compare(name, `${snapshotBase}/${name}`, local)
