@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.47](https://github.com/adea-ai/plugins/compare/v2.0.46...v2.0.47) (2026-10-29)
+
+
+### Maintenance
+
+* update Code Foundry release workflows ([#260](https://github.com/adea-ai/plugins/issues/260)) ([16adc1c](https://github.com/adea-ai/plugins/commit/16adc1cae9cc612c7958231d8613dcaf2fadfe4b))
+
 ## [2.0.46](https://github.com/adea-ai/plugins/compare/v2.0.45...v2.0.46) (2026-10-28)
 
 
