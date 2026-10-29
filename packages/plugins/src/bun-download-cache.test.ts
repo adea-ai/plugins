@@ -38,3 +38,9 @@ test('new PRs supersede checks while trusted push cache writers finish', () => {
   )
   expect(source).toContain("cancel-in-progress: ${{ github.event_name == 'pull_request' }}")
 })
+
+test('marketplace checks rerun on ready PR updates without running on draft updates', () => {
+  const source = readFileSync(new URL('../../../.github/workflows/marketplace-ci.yml', import.meta.url), 'utf8')
+  expect(source).toContain('types: [ready_for_review, synchronize]')
+  expect(source).toContain("if: github.event_name != 'pull_request' || github.event.pull_request.draft == false")
+})
