@@ -1,6 +1,7 @@
 import { promises as fs } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { z } from 'zod'
 import { createMaterializationPlan } from '../../plugins/src/harness.js'
 import { createCatalogInstallationPlan } from '../../plugins/src/agent-plugins-harness.js'
 import { parsePluginJson } from '../../plugins/src/agent-plugins-catalog.js'
@@ -431,7 +432,7 @@ async function loadConfiguration(root: string): Promise<{
     readJson<{ sources: SourceConfig[] }>(join(configDirectory, 'sources.json')),
     readJson<CategoryMap>(join(configDirectory, 'category-map.json')),
     readJson<ProductAliases>(join(configDirectory, 'product-aliases.json')),
-    readJson<CatalogPolicy>(join(configDirectory, 'policy.json')),
+    readJson<unknown>(join(configDirectory, 'policy.json')),
     // Curation configs are optional: fixture roots and older checkouts omit them.
     readOptionalJson<{ categories: Record<string, string> }>(
       join(configDirectory, 'product-categories.json')
@@ -470,8 +471,27 @@ async function loadConfiguration(root: string): Promise<{
     ...(publication && typeof publication.catalogsBaseUrl === 'string'
       ? { publicationCatalogsBaseUrl: publication.catalogsBaseUrl }
       : {}),
-    policy,
+    policy: parsePolicyConfiguration(policy),
   }
+}
+
+const PolicyConfigurationSchema = z.object({
+  schemaVersion: z.literal(1).optional(),
+  allowedRepositoryProtocols: z.array(z.string().min(1)),
+  allowedRepositoryHosts: z.array(z.string().min(1)),
+  maxFilesPerPlugin: z.number().int().nonnegative(),
+  maxBytesPerPlugin: z.number().int().nonnegative(),
+  maxFileBytes: z.number().int().nonnegative(),
+  maxMarketplacePlugins: z.number().int().nonnegative(),
+  denyExecutableLifecycleScripts: z.boolean(),
+  publishRequiresCompleteContent: z.boolean(),
+  sensitiveCapabilityTypes: z.array(z.string().min(1)),
+})
+
+function parsePolicyConfiguration(input: unknown): CatalogPolicy {
+  const result = PolicyConfigurationSchema.safeParse(input)
+  if (!result.success) throw new Error('POLICY_CONFIG_INVALID')
+  return result.data
 }
 
 async function readOptionalJson<T>(path: string): Promise<T | undefined> {

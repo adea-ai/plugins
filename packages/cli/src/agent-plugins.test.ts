@@ -145,6 +145,29 @@ it('rejects corrupt catalogs without replacing last-known-good files', () =>
     assert.equal(result.code, 1)
     assert.equal(await readFile(path, 'utf8'), changed)
   }))
+it('rejects malformed policy before loading sources or writing a catalog', () =>
+  withPortableFixture(async (_input, root) => {
+    const path = join(root, 'config/policy.json')
+    const policy = JSON.parse(await readFile(path, 'utf8'))
+    for (const field of [
+      'maxMarketplacePlugins',
+      'maxFilesPerPlugin',
+      'maxBytesPerPlugin',
+      'maxFileBytes',
+    ])
+      for (const value of [undefined, '4096', -1, null]) {
+        await writeFile(path, JSON.stringify({ ...policy, [field]: value }))
+        const result = await invoke(root, ['sync', '--offline'])
+        assert.equal(result.code, 1)
+        assert.match(result.output.join(''), /POLICY_CONFIG_INVALID/)
+        assert.equal((await readdir(root)).includes('generated'), false)
+      }
+    await writeFile(path, JSON.stringify({ ...policy, publishRequiresCompleteContent: 'false' }))
+    assert.match(
+      (await invoke(root, ['sync', '--offline'])).output.join(''),
+      /POLICY_CONFIG_INVALID/
+    )
+  }))
 it('fails when an explicitly requested lock file is missing', () =>
   withPortableFixture(async (_input, root) => {
     const result = await invoke(root, ['sync', '--offline', '--lock', join(root, 'missing.lock')])
