@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.0.0](https://github.com/adea-ai/plugins/compare/v2.0.49...v3.0.0) (2026-10-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* verifyShardArtifact now requires an expected catalog ID from a separately verified catalog as its fourth argument. Existing callers must supply that ID; omitted or malformed IDs are refused.
+
+### Bug Fixes
+
+* artifact-input-paths ([#268](https://github.com/adea-ai/plugins/issues/268)) ([cac91fd](https://github.com/adea-ai/plugins/commit/cac91fdbf6f3e551e12a9e0ba905cd82c50b25fe))
+* compiler-boundaries ([#266](https://github.com/adea-ai/plugins/issues/266)) ([cb47461](https://github.com/adea-ai/plugins/commit/cb4746134b3c5ac6dca576f00372614553e621f4))
+* require verified catalog identity for shard validation ([9fd9bb4](https://github.com/adea-ai/plugins/commit/9fd9bb4907bb9d706d6307059a5460578b13fade))
+
 ## [2.0.49](https://github.com/adea-ai/plugins/compare/v2.0.48...v2.0.49) (2026-10-29)
 
 
