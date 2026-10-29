@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/adea-ai/plugins/compare/v3.0.0...v3.0.1) (2026-10-29)
+
+
+### Maintenance
+
+* require Bun 1.4.4 ([#274](https://github.com/adea-ai/plugins/issues/274)) ([b42711a](https://github.com/adea-ai/plugins/commit/b42711a43635e6dcf78fdb7c81c494487fc5825a))
+
 ## [3.0.0](https://github.com/adea-ai/plugins/compare/v2.0.49...v3.0.0) (2026-10-29)
 
 
