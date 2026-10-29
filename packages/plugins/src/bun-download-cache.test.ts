@@ -40,7 +40,26 @@ test('new PRs supersede checks while trusted push cache writers finish', () => {
 })
 
 test('marketplace checks rerun on ready PR updates without running on draft updates', () => {
-  const source = readFileSync(new URL('../../../.github/workflows/marketplace-ci.yml', import.meta.url), 'utf8')
-  expect(source).toContain('types: [ready_for_review, synchronize]')
-  expect(source).toContain("if: github.event_name != 'pull_request' || github.event.pull_request.draft == false")
+  const source = readFileSync(
+    new URL('../../../.github/workflows/marketplace-ci.yml', import.meta.url),
+    'utf8'
+  )
+  expect(source).toContain('types: [opened, reopened, ready_for_review, synchronize]')
+  expect(source).toContain(
+    "if: github.event_name != 'pull_request' || github.event.pull_request.draft == false"
+  )
+})
+
+test('review policy runs on each ready PR transition and review event', () => {
+  const source = readFileSync(
+    new URL('../../../.github/workflows/review-policy.yml', import.meta.url),
+    'utf8'
+  )
+  expect(source).toContain('types: [opened, reopened, ready_for_review, synchronize]')
+  expect(source).toContain('types: [submitted, dismissed]')
+  expect(source).toContain('name: Review Policy / Gate')
+  expect(source).toContain('if: github.event.pull_request.draft != true')
+  expect(source).toContain(
+    'group: review-policy-${{ github.event_name }}-${{ github.event.pull_request.number }}'
+  )
 })
