@@ -64,6 +64,12 @@ import { verifyArtifacts } from '@adea-ai/plugins'
 import { catalogSnapshotBaseUrl } from '@adea-ai/plugins/publication'
 ```
 
+Direct callers of `verifyShardArtifact` must supply the expected catalog ID as
+its fourth argument, obtained from a separately verified catalog. Earlier
+three-argument calls did not check shard catalog identity; they now fail with
+`SHARD_CATALOG_ID_REQUIRED`. Callers that verify a complete artifact set can use
+`verifyArtifacts`, which supplies the catalog ID internally.
+
 ## Design rules
 
 - Same inputs, same bytes: compilation is deterministic and offline-safe.

@@ -1598,14 +1598,17 @@ export function verifyArtifacts(artifacts: GeneratedArtifacts): void {
 /**
  * Re-checks one consumer shard against the navigation index: a shelf carries
  * exactly the curated products in order, and a category list carries exactly
- * the category's products in order.
+ * the category's products in order. The expected catalog ID must come from a
+ * separately verified catalog, not from the shard being checked.
  */
 export function verifyShardArtifact(
   shard: ShardArtifact,
   content: string | undefined,
   verification: ConsumerIndexVerification,
-  catalogId?: string
+  catalogId: string
 ): void {
+  if (typeof catalogId !== 'string' || !/^catalog:[a-f0-9]{64}$/.test(catalogId))
+    throw new Error('SHARD_CATALOG_ID_REQUIRED')
   if (content === undefined) throw new Error(`SHARD_MISSING: ${shard.name}`)
   const parsed = JSON.parse(content) as {
     schemaVersion?: unknown
@@ -1616,7 +1619,7 @@ export function verifyShardArtifact(
   }
   if (
     parsed.schemaVersion !== 1 ||
-    (catalogId !== undefined && parsed.catalogId !== catalogId) ||
+    parsed.catalogId !== catalogId ||
     (shard.kind !== 'index' && parsed.category !== shard.category)
   )
     throw new Error(`SHARD_IDENTITY_MISMATCH: ${shard.name}`)
