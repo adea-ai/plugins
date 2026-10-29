@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.48](https://github.com/adea-ai/plugins/compare/v2.0.47...v2.0.48) (2026-10-29)
+
+
+### Bug Fixes
+
+* run default-branch CodeQL for release commits ([#263](https://github.com/adea-ai/plugins/issues/263)) ([75ba697](https://github.com/adea-ai/plugins/commit/75ba697bcd16940c178a1e5f1f672c084eb5200e))
+
 ## [2.0.47](https://github.com/adea-ai/plugins/compare/v2.0.46...v2.0.47) (2026-10-29)
 
 
