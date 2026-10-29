@@ -29,6 +29,7 @@ import {
 } from '../../plugins/src/consumer-index.js'
 import { parseProductIconOverrides, type ProductIconOverrides } from '../../plugins/src/icons.js'
 import { isPublicHostname } from '../../plugins/src/site-icons.js'
+import { parseIntegrityManifest } from '../../plugins/src/integrity-manifest.js'
 import {
   resolveIconSources,
   stageIconAssets,
@@ -526,8 +527,8 @@ async function readRequiredLock(path: string): Promise<SourcesLock> {
  */
 async function readArtifacts(directory: string): Promise<GeneratedArtifacts> {
   const integrity = await fs.readFile(join(directory, 'integrity.json'), 'utf8')
-  const { files } = JSON.parse(integrity) as { files?: Record<string, string> }
-  const names = Object.keys(files ?? {}).toSorted()
+  const { files } = parseIntegrityManifest(JSON.parse(integrity))
+  const names = Object.keys(files).toSorted()
   const values = await Promise.all(
     names.map(async (name) => [name, await fs.readFile(join(directory, name), 'utf8')] as const)
   )
