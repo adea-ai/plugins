@@ -3,7 +3,7 @@ name: Staged reader Windows qualification
 on:
   pull_request:
     branches: [main]
-    types: [ready_for_review, synchronize]
+    types: [opened, reopened, ready_for_review, synchronize]
     paths:
       - 'packages/plugins/src/staged-file.ts'
       - 'packages/cli/src/**'
@@ -33,7 +33,7 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 24
+          node-version: 24.22.1
       - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
         with:
           bun-version: 1.4.4
