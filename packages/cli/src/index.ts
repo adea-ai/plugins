@@ -110,12 +110,7 @@ async function syncCommand(flags: Flags): Promise<number> {
     iconAssetsDirectory: assetsDirectory(flags),
     // An offline build replays fixtures that are never published, so it must not
     // advertise release URLs for them.
-    ...(config.publicationRepositoryUrl && !flags.offline
-      ? { publicationRepositoryUrl: config.publicationRepositoryUrl }
-      : {}),
-    ...(config.publicationAssetsBaseUrl && !flags.offline
-      ? { publicationAssetsBaseUrl: config.publicationAssetsBaseUrl }
-      : {}),
+    ...publicationOptions(config, flags.offline),
     policy: config.policy,
     mode: flags.offline ? 'offline' : 'live',
     fixtureRoot: flags.fixtureRoot
@@ -157,6 +152,29 @@ async function syncCommand(flags: Flags): Promise<number> {
   }
   print(output, flags.json)
   return 0
+}
+
+/** Offline fixtures are not published; live builds retain all configured locations. */
+export function publicationOptions(
+  config: {
+    publicationRepositoryUrl?: string
+    publicationAssetsBaseUrl?: string
+    publicationCatalogsBaseUrl?: string
+  },
+  offline: boolean
+) {
+  if (offline) return {}
+  return {
+    ...(config.publicationRepositoryUrl
+      ? { publicationRepositoryUrl: config.publicationRepositoryUrl }
+      : {}),
+    ...(config.publicationAssetsBaseUrl
+      ? { publicationAssetsBaseUrl: config.publicationAssetsBaseUrl }
+      : {}),
+    ...(config.publicationCatalogsBaseUrl
+      ? { publicationCatalogsBaseUrl: config.publicationCatalogsBaseUrl }
+      : {}),
+  }
 }
 
 async function validateCommand(flags: Flags): Promise<number> {
@@ -415,6 +433,7 @@ async function loadConfiguration(root: string): Promise<{
   productIconOverrides?: ProductIconOverrides
   publicationRepositoryUrl?: string
   publicationAssetsBaseUrl?: string
+  publicationCatalogsBaseUrl?: string
   policy: CatalogPolicy
 }> {
   const configDirectory = join(root, 'config')

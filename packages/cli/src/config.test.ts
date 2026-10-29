@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url'
 import { describe, expect, test } from 'bun:test'
 import { parseProductPreference } from '../../plugins/src/consumer-index.js'
 import { parseProductIconOverrides } from '../../plugins/src/icons.js'
+import { publicationOptions } from './index.js'
 
 const root = fileURLToPath(new URL('../../../', import.meta.url))
 const read = <T>(name: string): T =>
@@ -77,6 +78,15 @@ describe('placement configuration', () => {
 })
 
 describe('publication configuration', () => {
+  test('passes snapshot and asset locations to live builds, but not fixture builds', () => {
+    const config = {
+      publicationRepositoryUrl: 'https://github.com/adea-ai/plugins',
+      publicationAssetsBaseUrl: 'https://example.com/assets',
+      publicationCatalogsBaseUrl: 'https://example.com/snapshots',
+    }
+    expect(publicationOptions(config, false)).toEqual(config)
+    expect(publicationOptions(config, true)).toEqual({})
+  })
   test('names a repository the snapshot URLs can be composed from', () => {
     const publication = read<{ schemaVersion: number; repositoryUrl: string }>('publication.json')
     expect(publication.schemaVersion).toBe(1)
