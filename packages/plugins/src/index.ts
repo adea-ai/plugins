@@ -1591,27 +1591,38 @@ export function verifyArtifacts(artifacts: GeneratedArtifacts): void {
   if (verification.hasConsumerIndex && indexArtifact === undefined)
     throw new Error(`SHARD_MISSING: ${CATALOG_INDEX_ARTIFACT}`)
   for (const shard of verification.shards)
-    verifyShardArtifact(shard, artifacts[shard.name], verification)
+    verifyShardArtifact(shard, artifacts[shard.name], verification, parsedCatalog.catalogId)
   verifyIconAssets(integrity.assets, verification)
 }
 
 /**
  * Re-checks one consumer shard against the navigation index: a shelf carries
  * exactly the curated products in order, and a category list carries exactly
- * the category's products in order.
+ * the category's products in order. The expected catalog ID must come from a
+ * separately verified catalog, not from the shard being checked.
  */
 export function verifyShardArtifact(
   shard: ShardArtifact,
   content: string | undefined,
-  verification: ConsumerIndexVerification
+  verification: ConsumerIndexVerification,
+  catalogId: string
 ): void {
+  if (typeof catalogId !== 'string' || !/^catalog:[a-f0-9]{64}$/.test(catalogId))
+    throw new Error('SHARD_CATALOG_ID_REQUIRED')
   if (content === undefined) throw new Error(`SHARD_MISSING: ${shard.name}`)
   const parsed = JSON.parse(content) as {
+    schemaVersion?: unknown
     catalogId?: unknown
     category?: unknown
     topCount?: unknown
     products?: unknown
   }
+  if (
+    parsed.schemaVersion !== 1 ||
+    parsed.catalogId !== catalogId ||
+    (shard.kind !== 'index' && parsed.category !== shard.category)
+  )
+    throw new Error(`SHARD_IDENTITY_MISMATCH: ${shard.name}`)
   // The index shard carries products keyed by productKey; the shelf and list
   // shards carry them as ordered arrays.
   const products: readonly ConsumerProduct[] =
