@@ -30,6 +30,7 @@ import {
 import { parseProductIconOverrides, type ProductIconOverrides } from '../../plugins/src/icons.js'
 import { isPublicHostname } from '../../plugins/src/site-icons.js'
 import { parseIntegrityManifest } from '../../plugins/src/integrity-manifest.js'
+import { readStagedFile } from '../../plugins/src/staged-file.js'
 import {
   resolveIconSources,
   stageIconAssets,
@@ -308,7 +309,10 @@ async function verifyAssetsCommand(flags: Flags): Promise<number> {
   const missing: string[] = []
   const mismatched: string[] = []
   for (const asset of declared) {
-    const bytes = await fs.readFile(join(directory, asset.name)).catch(() => undefined)
+    const bytes = await readStagedFile(directory, asset.name).catch((error: unknown) => {
+      if ((error as NodeJS.ErrnoException).code === 'ENOENT') return undefined
+      throw error
+    })
     if (!bytes) {
       missing.push(asset.name)
       continue
@@ -526,11 +530,13 @@ async function readRequiredLock(path: string): Promise<SourcesLock> {
  * consumer shards can grow with the category configuration.
  */
 async function readArtifacts(directory: string): Promise<GeneratedArtifacts> {
-  const integrity = await fs.readFile(join(directory, 'integrity.json'), 'utf8')
+  const integrity = (await readStagedFile(directory, 'integrity.json')).toString('utf8')
   const { files } = parseIntegrityManifest(JSON.parse(integrity))
   const names = Object.keys(files).toSorted()
   const values = await Promise.all(
-    names.map(async (name) => [name, await fs.readFile(join(directory, name), 'utf8')] as const)
+    names.map(
+      async (name) => [name, (await readStagedFile(directory, name)).toString('utf8')] as const
+    )
   )
   return Object.fromEntries([
     ...values,

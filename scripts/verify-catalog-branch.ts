@@ -1,7 +1,7 @@
-import { promises as fs } from 'node:fs'
-import { join, resolve } from 'node:path'
+import { resolve } from 'node:path'
 import { byteDigest } from '../packages/plugins/src/index.js'
 import { parseIntegrityManifest } from '../packages/plugins/src/integrity-manifest.js'
+import { readStagedFile } from '../packages/plugins/src/staged-file.js'
 import {
   catalogAssetsBaseUrl,
   catalogIdSuffix,
@@ -37,9 +37,8 @@ const base = flag('base', catalogAssetsBaseUrl('https://github.com/adea-ai/plugi
   ''
 )
 
-const integrity = parseIntegrityManifest(
-  JSON.parse(await fs.readFile(join(artifactsDirectory, 'integrity.json'), 'utf8'))
-)
+const integrityBytes = await readStagedFile(artifactsDirectory, 'integrity.json')
+const integrity = parseIntegrityManifest(JSON.parse(integrityBytes.toString('utf8')))
 
 const catalogId = integrity.catalogId
 if (typeof catalogId !== 'string') throw new Error('INTEGRITY_CATALOG_ID_MISSING')
@@ -75,7 +74,7 @@ async function compare(
 const divergences: Divergence[] = []
 const names = Object.keys(integrity.files).toSorted()
 for (const name of names) {
-  const local = new Uint8Array(await fs.readFile(join(artifactsDirectory, name)))
+  const local = await readStagedFile(artifactsDirectory, name)
   const divergence = await compare(name, `${snapshotBase}/${name}`, local)
   if (divergence) divergences.push(divergence)
 }
@@ -83,13 +82,19 @@ for (const name of names) {
 // integrity.json is not self-describing, so it is compared against the staged
 // copy directly rather than against a digest it declares about itself.
 {
-  const local = new Uint8Array(await fs.readFile(join(artifactsDirectory, 'integrity.json')))
-  const divergence = await compare('integrity.json', `${snapshotBase}/integrity.json`, local)
+  const divergence = await compare(
+    'integrity.json',
+    `${snapshotBase}/integrity.json`,
+    integrityBytes
+  )
   if (divergence) divergences.push(divergence)
 }
 
 for (const asset of integrity.assets ?? []) {
-  const local = await fs.readFile(join(assetsDirectory, asset.name)).catch(() => undefined)
+  const local = await readStagedFile(assetsDirectory, asset.name).catch((error: unknown) => {
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT') return undefined
+    throw error
+  })
   if (local === undefined) {
     // A declared mark this build never staged cannot be published, and a
     // snapshot that advertises it is incomplete wherever it is read.
@@ -104,7 +109,7 @@ for (const asset of integrity.assets ?? []) {
 // the snapshot it names. Byte-identity here is what lets a consumer trust the
 // catalogId it just read.
 {
-  const local = new Uint8Array(await fs.readFile(join(artifactsDirectory, 'catalog.v1.json')))
+  const local = await readStagedFile(artifactsDirectory, 'catalog.v1.json')
   const divergence = await compare(latestPointerName, `${base}/${latestPointerName}`, local)
   if (divergence) divergences.push(divergence)
 }
