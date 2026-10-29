@@ -528,6 +528,9 @@ async function readArtifacts(directory: string): Promise<GeneratedArtifacts> {
   const integrity = await fs.readFile(join(directory, 'integrity.json'), 'utf8')
   const { files } = JSON.parse(integrity) as { files?: Record<string, string> }
   const names = Object.keys(files ?? {}).toSorted()
+  for (const name of names)
+    if (!/^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$/.test(name) || name === 'integrity.json')
+      throw new Error(`INTEGRITY_FILE_NAME_INVALID: ${name}`)
   const values = await Promise.all(
     names.map(async (name) => [name, await fs.readFile(join(directory, name), 'utf8')] as const)
   )
