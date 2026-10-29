@@ -168,6 +168,22 @@ it('rejects malformed policy before loading sources or writing a catalog', () =>
       /POLICY_CONFIG_INVALID/
     )
   }))
+it('rejects traversal in artifact names before reading them', () =>
+  withPortableFixture(async (_input, root) => {
+    const directory = join(root, 'generated')
+    await mkdir(directory)
+    await writeFile(
+      join(directory, 'integrity.json'),
+      JSON.stringify({
+        schemaVersion: 1,
+        catalogId: `catalog:${'a'.repeat(64)}`,
+        files: { '../missing': `sha256:${'b'.repeat(64)}` },
+      })
+    )
+    const result = await invoke(root, ['validate'])
+    assert.equal(result.code, 1)
+    assert.match(result.output.join(''), /INTEGRITY_FILE_NAME_INVALID/)
+  }))
 it('fails when an explicitly requested lock file is missing', () =>
   withPortableFixture(async (_input, root) => {
     const result = await invoke(root, ['sync', '--offline', '--lock', join(root, 'missing.lock')])

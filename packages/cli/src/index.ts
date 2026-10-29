@@ -30,6 +30,7 @@ import {
 } from '../../plugins/src/consumer-index.js'
 import { parseProductIconOverrides, type ProductIconOverrides } from '../../plugins/src/icons.js'
 import { isPublicHostname } from '../../plugins/src/site-icons.js'
+import { parseIntegrityManifest } from '../../plugins/src/integrity-manifest.js'
 import {
   resolveIconSources,
   stageIconAssets,
@@ -110,12 +111,7 @@ async function syncCommand(flags: Flags): Promise<number> {
     iconAssetsDirectory: assetsDirectory(flags),
     // An offline build replays fixtures that are never published, so it must not
     // advertise release URLs for them.
-    ...(config.publicationRepositoryUrl && !flags.offline
-      ? { publicationRepositoryUrl: config.publicationRepositoryUrl }
-      : {}),
-    ...(config.publicationAssetsBaseUrl && !flags.offline
-      ? { publicationAssetsBaseUrl: config.publicationAssetsBaseUrl }
-      : {}),
+    ...publicationOptions(config, flags.offline),
     policy: config.policy,
     mode: flags.offline ? 'offline' : 'live',
     fixtureRoot: flags.fixtureRoot
@@ -157,6 +153,29 @@ async function syncCommand(flags: Flags): Promise<number> {
   }
   print(output, flags.json)
   return 0
+}
+
+/** Offline fixtures are not published; live builds retain all configured locations. */
+export function publicationOptions(
+  config: {
+    publicationRepositoryUrl?: string
+    publicationAssetsBaseUrl?: string
+    publicationCatalogsBaseUrl?: string
+  },
+  offline: boolean
+) {
+  if (offline) return {}
+  return {
+    ...(config.publicationRepositoryUrl
+      ? { publicationRepositoryUrl: config.publicationRepositoryUrl }
+      : {}),
+    ...(config.publicationAssetsBaseUrl
+      ? { publicationAssetsBaseUrl: config.publicationAssetsBaseUrl }
+      : {}),
+    ...(config.publicationCatalogsBaseUrl
+      ? { publicationCatalogsBaseUrl: config.publicationCatalogsBaseUrl }
+      : {}),
+  }
 }
 
 async function validateCommand(flags: Flags): Promise<number> {
@@ -415,6 +434,7 @@ async function loadConfiguration(root: string): Promise<{
   productIconOverrides?: ProductIconOverrides
   publicationRepositoryUrl?: string
   publicationAssetsBaseUrl?: string
+  publicationCatalogsBaseUrl?: string
   policy: CatalogPolicy
 }> {
   const configDirectory = join(root, 'config')
@@ -546,8 +566,8 @@ async function readRequiredLock(path: string): Promise<SourcesLock> {
  */
 async function readArtifacts(directory: string): Promise<GeneratedArtifacts> {
   const integrity = await fs.readFile(join(directory, 'integrity.json'), 'utf8')
-  const { files } = JSON.parse(integrity) as { files?: Record<string, string> }
-  const names = Object.keys(files ?? {}).toSorted()
+  const { files } = parseIntegrityManifest(JSON.parse(integrity))
+  const names = Object.keys(files).toSorted()
   const values = await Promise.all(
     names.map(async (name) => [name, await fs.readFile(join(directory, name), 'utf8')] as const)
   )

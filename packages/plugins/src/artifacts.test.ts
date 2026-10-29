@@ -10,6 +10,7 @@ import {
   digest,
   verifyArtifacts,
   verifyConsumerIndex,
+  verifyShardArtifact,
 } from './index.js'
 import { buildConsumerIndex, type ConsumerIndex } from './consumer-index.js'
 import { resolveIconSources, stageIconAssets, type IconSource } from './icon-mirror.js'
@@ -415,6 +416,50 @@ describe('artifact shards', () => {
       ),
     }
     expect(() => verifyArtifacts(tampered)).toThrow('INTEGRITY_DIGEST_MISMATCH')
+  })
+
+  test('rejects rehashed shards that identify a different catalog or category', () => {
+    const { artifacts } = artifactsOf(plugins)
+    for (const [name, change] of [
+      ['catalog-index.v1.json', { catalogId: `catalog:${'b'.repeat(64)}` }],
+      ['shelf-productivity.v1.json', { catalogId: `catalog:${'b'.repeat(64)}` }],
+      ['category-productivity.v1.json', { category: 'business-operations' }],
+    ] as const) {
+      const content = JSON.stringify({ ...JSON.parse(artifacts[name]!), ...change })
+      const integrity = JSON.parse(artifacts['integrity.json']!)
+      integrity.files[name] = digest(content)
+      expect(() =>
+        verifyArtifacts({
+          ...artifacts,
+          [name]: content,
+          'integrity.json': JSON.stringify(integrity),
+        })
+      ).toThrow('SHARD_IDENTITY_MISMATCH')
+    }
+  })
+
+  test('direct shard verification requires the expected catalog identity', () => {
+    const { base, artifacts } = artifactsOf(plugins)
+    const verification = verifyConsumerIndex(
+      artifacts['categories.v1.json'],
+      base,
+      artifacts['catalog-index.v1.json']
+    )
+    const shard = verification.shards.find((item) => item.kind === 'index')!
+    const content = artifacts[shard.name]!
+    const wrong = JSON.stringify({ ...JSON.parse(content), catalogId: `catalog:${'b'.repeat(64)}` })
+    expect(() => verifyShardArtifact(shard, content, verification, base.catalogId)).not.toThrow()
+    expect(() => verifyShardArtifact(shard, wrong, verification, base.catalogId)).toThrow(
+      'SHARD_IDENTITY_MISMATCH'
+    )
+    // An untyped JavaScript caller can still omit the required argument at runtime.
+    for (const candidate of [content, wrong])
+      expect(() =>
+        (verifyShardArtifact as (...args: unknown[]) => void)(shard, candidate, verification)
+      ).toThrow('SHARD_CATALOG_ID_REQUIRED')
+    expect(() => verifyShardArtifact(shard, content, verification, 'invalid')).toThrow(
+      'SHARD_CATALOG_ID_REQUIRED'
+    )
   })
 
   test('rejects a release that drops a shard or an asset declaration', () => {

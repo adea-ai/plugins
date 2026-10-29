@@ -197,6 +197,24 @@ it('advertises where it is published once the publication is known', () =>
     assert.deepEqual(navigation.brandMarks, {})
   }))
 
+it('preserves the configured snapshot URL when rebuilding portable artifacts', () =>
+  withPortableFixture(async (input) => {
+    const base = 'https://example.com/snapshots'
+    const result = await synchronizePortable({
+      ...input,
+      publicationAssetsBaseUrl: 'https://example.com/assets',
+      publicationCatalogsBaseUrl: base,
+    })
+    const navigation = JSON.parse(result.artifacts!['categories.v1.json']) as {
+      catalogIndexUrl?: string
+    }
+    assert.equal(
+      navigation.catalogIndexUrl,
+      `${base}/${result.catalog!.catalogId.slice('catalog:'.length)}/catalog-index.v1.json`
+    )
+    verifyArtifacts(result.artifacts!)
+  }))
+
 /** The capability profile a packed consumer presents to the planner. */
 function harnessProfile(overrides: Partial<HarnessProfile> = {}): HarnessProfile {
   return {

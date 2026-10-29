@@ -41,6 +41,12 @@ This workflow publishes static catalog metadata and mirrored marks only. It
 does not install plugin files or execute a plugin, lifecycle script, MCP server,
 binary, or command. Versioned npm package releases use a separate workflow.
 
+Verification commands validate manifest names before reading files. Their input
+directories must still be trusted staging directories: a flat name can refer to
+a symlink, and another process able to change the directories during verification
+can change what is read. These commands do not provide filesystem confinement
+against a hostile local writer.
+
 The curated-shelf check runs before the workflow writes the asset branch. A
 missing curated product therefore fails the sync while the existing mutable
 pointer and immutable snapshots remain intact.

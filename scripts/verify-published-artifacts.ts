@@ -4,8 +4,8 @@ import {
   byteDigest,
   verifyArtifacts,
   type GeneratedArtifacts,
-  type PublishedAsset,
 } from '../packages/plugins/src/index.js'
+import { parseIntegrityManifest } from '../packages/plugins/src/integrity-manifest.js'
 
 /**
  * Verifies a downloaded catalog release.
@@ -17,17 +17,15 @@ import {
  */
 const directory = resolve(process.argv[2] ?? 'generated')
 const artifactsDirectory = resolve(process.argv[3] ?? directory)
-const integrity = (await Bun.file(join(directory, 'integrity.json')).json()) as {
-  files?: Record<string, string>
-  assets?: PublishedAsset[]
-}
-const names = Object.keys(integrity.files ?? {}).toSorted()
+const integrityText = await fs.readFile(join(directory, 'integrity.json'), 'utf8')
+const integrity = parseIntegrityManifest(JSON.parse(integrityText))
+const names = Object.keys(integrity.files).toSorted()
 const entries = await Promise.all(
   names.map(async (name) => [name, await fs.readFile(join(directory, name), 'utf8')] as const)
 )
 const artifacts = Object.fromEntries([
   ...entries,
-  ['integrity.json', JSON.stringify(integrity)],
+  ['integrity.json', integrityText],
 ]) as unknown as GeneratedArtifacts
 verifyArtifacts(artifacts)
 
