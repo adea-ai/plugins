@@ -27,13 +27,14 @@ jobs:
     # it. Version pull requests keep flowing even when the candidate is broken;
     # publication stays gated on qualification success in the stage job.
     if: vars.CI_BILLING_PAUSED != 'true' || (github.event_name == 'workflow_dispatch' && inputs['release-while-paused'] == true)
-    uses: 0xPlayerOne/code-foundry/.github/workflows/release.yml@v1.49.0
+    uses: 0xPlayerOne/code-foundry/.github/workflows/release.yml@v1.50.1
     with:
       billing-pause-bypass: ${{ github.event_name == 'workflow_dispatch' && inputs['release-while-paused'] == true }}
       runner: ubuntu-slim
       runtime-repository: 0xPlayerOne/code-foundry
-      runtime-ref: v1.49.0
+      runtime-ref: v1.50.1
       git-workflow: direct
+      npm-publish-auth: auto
     permissions:
       actions: write
       contents: write
@@ -43,4 +44,3 @@ jobs:
       id-token: write
     secrets:
       CODE_FOUNDRY_TOKEN: ${{ secrets.CODE_FOUNDRY_TOKEN }}
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
