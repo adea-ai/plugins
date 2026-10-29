@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.49](https://github.com/adea-ai/plugins/compare/v2.0.48...v2.0.49) (2026-10-29)
+
+
+### Maintenance
+
+* update bun type definitions ([#265](https://github.com/adea-ai/plugins/issues/265)) ([6e02922](https://github.com/adea-ai/plugins/commit/6e02922d53b38031d0c1fc1d1db33b6906236a8b))
+
 ## [2.0.48](https://github.com/adea-ai/plugins/compare/v2.0.47...v2.0.48) (2026-10-29)
 
 
