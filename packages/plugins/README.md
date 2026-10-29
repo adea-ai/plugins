@@ -70,6 +70,13 @@ three-argument calls did not check shard catalog identity; they now fail with
 `SHARD_CATALOG_ID_REQUIRED`. Callers that verify a complete artifact set can use
 `verifyArtifacts`, which supplies the catalog ID internally.
 
+```ts
+import { verifyShardArtifact } from '@adea-ai/plugins'
+
+// `verifiedCatalog` is the catalog whose identity and provenance the caller verified.
+verifyShardArtifact(shard, shardContent, verification, verifiedCatalog.catalogId)
+```
+
 ## Design rules
 
 - Same inputs, same bytes: compilation is deterministic and offline-safe.
