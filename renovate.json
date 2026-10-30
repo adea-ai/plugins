@@ -31,6 +31,11 @@
       "description": "TypeScript stays on the 6.x line this repository pins; 7.x is a deliberate upgrade, not a routine bump.",
       "matchPackageNames": ["typescript"],
       "allowedVersions": "<7"
+    },
+    {
+      "description": "Keep workflow-file updates separate so a rejected workflow push cannot block package and lockfile updates.",
+      "matchFileNames": [".github/workflows/**"],
+      "groupName": "workflow dependencies"
     }
   ]
 }
