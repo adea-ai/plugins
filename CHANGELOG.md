@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.5](https://github.com/adea-ai/plugins/compare/v3.0.4...v3.0.5) (2026-10-30)
+
+
+### Bug Fixes
+
+* staged-file-symlinks ([#271](https://github.com/adea-ai/plugins/issues/271)) ([e638ffe](https://github.com/adea-ai/plugins/commit/e638ffea216934b50000fde5a50cf58c93341886))
+
 ## [3.0.4](https://github.com/adea-ai/plugins/compare/v3.0.3...v3.0.4) (2026-10-30)
 
 
