@@ -35,13 +35,13 @@
     "verify:brand-sites": "bun run scripts/verify-brand-sites.ts"
   },
   "dependencies": {
-    "zod": "4.6.6"
+    "zod": "4.6.7"
   },
   "devDependencies": {
     "@types/bun": "1.4.4",
     "@types/node": "^26.6.4",
-    "code-foundry": "1.51.1",
-    "oxfmt": "^0.72.0",
+    "code-foundry": "1.53.1",
+    "oxfmt": "^0.75.0",
     "oxlint": "^1.86.0",
     "typescript": "^7.0.2"
   },
