@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.6](https://github.com/adea-ai/plugins/compare/v3.0.5...v3.0.6) (2026-10-30)
+
+
+### Bug Fixes
+
+* **deps:** isolate workflow dependency updates ([#282](https://github.com/adea-ai/plugins/issues/282)) ([db54761](https://github.com/adea-ai/plugins/commit/db54761fbefdf1845f5edfb22132bfd3efce9b81))
+
 ## [3.0.5](https://github.com/adea-ai/plugins/compare/v3.0.4...v3.0.5) (2026-10-30)
 
 
