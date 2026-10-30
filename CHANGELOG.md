@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.8](https://github.com/adea-ai/plugins/compare/v3.0.7...v3.0.8) (2026-10-30)
+
+
+### Bug Fixes
+
+* **types:** remove obsolete TypeScript 6 restrictions ([#286](https://github.com/adea-ai/plugins/issues/286)) ([11bd9ca](https://github.com/adea-ai/plugins/commit/11bd9ca7b4ace655af3e2c24fb00a7fd485b5cf9))
+
 ## [3.0.7](https://github.com/adea-ai/plugins/compare/v3.0.6...v3.0.7) (2026-10-30)
 
 
