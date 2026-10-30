@@ -1,0 +1,120 @@
+name: Staged reader manual qualification
+
+# A separate, explicitly dispatched run; ordinary draft-PR jobs remain guarded.
+on:
+  workflow_dispatch:
+    inputs:
+      target_sha:
+        description: Full current commit SHA of fix/staged-file-symlinks
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: staged-reader-manual-qualification
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: fix/staged-file-symlinks
+          persist-credentials: false
+      - name: Verify requested task-branch head
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ inputs.target_sha }}
+        run: |
+          [[ "$EXPECTED_SHA" =~ ^[0-9a-f]{40}$ ]]
+          test "$(git rev-parse HEAD)" = "$EXPECTED_SHA"
+      - run: scripts/build-staged-reader.sh
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: staged-reader-binaries
+          path: |
+            packages/plugins/native/*.node
+            packages/plugins/native/build-provenance.txt
+          if-no-files-found: error
+
+  qualification:
+    needs: build
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: windows-latest
+            arch: x64
+          - runner: windows-11-arm
+            arch: arm64
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: fix/staged-file-symlinks
+          persist-credentials: false
+      - name: Verify requested task-branch head
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ inputs.target_sha }}
+        run: |
+          [[ "$EXPECTED_SHA" =~ ^[0-9a-f]{40}$ ]]
+          test "$(git rev-parse HEAD)" = "$EXPECTED_SHA"
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24.22.1
+          architecture: ${{ matrix.arch }}
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
+        with:
+          bun-version: 1.4.4
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: staged-reader-binaries
+          path: packages/plugins/native
+      - run: bun install --frozen-lockfile
+      - name: Verify build provenance and architecture
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ inputs.target_sha }}
+        run: |
+          test "$(node -p 'process.arch')" = '${{ matrix.arch }}'
+          test "$(bun -p 'process.arch')" = '${{ matrix.arch }}'
+          test "$(head -1 packages/plugins/native/build-provenance.txt)" = "source_commit $EXPECTED_SHA"
+          tail -n +2 packages/plugins/native/build-provenance.txt | sha256sum --check
+      - name: Exercise native boundary and pathname races
+        shell: bash
+        run: |
+          test_addon="$PWD/packages/plugins/native/staged-reader-test-win32-${{ matrix.arch }}.node"
+          node packages/plugins/test-support/native-reader-check.mjs "$test_addon"
+          node packages/plugins/test-support/native-reader-race-check.mjs "$test_addon"
+          bun packages/plugins/test-support/native-reader-check.mjs "$test_addon"
+          bun packages/plugins/test-support/native-reader-race-check.mjs "$test_addon"
+      - name: Exercise CLI and publication boundaries under Bun
+        run: bun test packages/cli/src/agent-plugins.test.ts packages/cli/src/publication-scripts.test.ts --timeout 30000
+      - name: Exercise source and compiled readers under Node and Bun
+        shell: bash
+        run: |
+          bun run build
+          node packages/plugins/test-support/reader-layout-check.mjs ./packages/plugins/src/staged-file.ts
+          node packages/plugins/test-support/reader-layout-check.mjs ./dist/packages/plugins/src/staged-file.js
+          bun packages/plugins/test-support/reader-layout-check.mjs ./packages/plugins/src/staged-file.ts
+          bun packages/plugins/test-support/reader-layout-check.mjs ./dist/packages/plugins/src/staged-file.js
+      - name: Check packed source and compiled readers
+        shell: bash
+        run: |
+          bunx tsc -p packages/plugins/tsconfig.json
+          (cd packages/plugins && npm pack --ignore-scripts --pack-destination "$RUNNER_TEMP")
+          mkdir -p "$RUNNER_TEMP/packed-reader"
+          tar -xzf "$RUNNER_TEMP"/adea-ai-plugins-*.tgz -C "$RUNNER_TEMP/packed-reader"
+          test -f "$RUNNER_TEMP/packed-reader/package/native/build-provenance.txt"
+          test ! -f "$RUNNER_TEMP/packed-reader/package/native/staged-reader-test-win32-${{ matrix.arch }}.node"
+          node packages/plugins/test-support/reader-layout-check.mjs "$RUNNER_TEMP/packed-reader/package/src/staged-file.ts"
+          node packages/plugins/test-support/reader-layout-check.mjs "$RUNNER_TEMP/packed-reader/package/dist/staged-file.js"
+          bun packages/plugins/test-support/reader-layout-check.mjs "$RUNNER_TEMP/packed-reader/package/src/staged-file.ts"
+          bun packages/plugins/test-support/reader-layout-check.mjs "$RUNNER_TEMP/packed-reader/package/dist/staged-file.js"
