@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.7](https://github.com/adea-ai/plugins/compare/v3.0.6...v3.0.7) (2026-10-30)
+
+
+### Bug Fixes
+
+* **deps:** update external non-major dependencies ([#284](https://github.com/adea-ai/plugins/issues/284)) ([8036ced](https://github.com/adea-ai/plugins/commit/8036ced6908971a714ef2a1af10a3703f06d6c2f))
+
 ## [3.0.6](https://github.com/adea-ai/plugins/compare/v3.0.5...v3.0.6) (2026-10-30)
 
 
