@@ -111,7 +111,7 @@ jobs:
           bunx tsc -p packages/plugins/tsconfig.json
           (cd packages/plugins && npm pack --ignore-scripts --pack-destination "$RUNNER_TEMP")
           mkdir -p "$RUNNER_TEMP/packed-reader"
-          tar -xzf "$RUNNER_TEMP"/adea-ai-plugins-*.tgz -C "$RUNNER_TEMP/packed-reader"
+          (cd "$RUNNER_TEMP" && tar -xzf adea-ai-plugins-*.tgz -C packed-reader)
           test -f "$RUNNER_TEMP/packed-reader/package/native/build-provenance.txt"
           test ! -f "$RUNNER_TEMP/packed-reader/package/native/staged-reader-test-win32-${{ matrix.arch }}.node"
           node packages/plugins/test-support/reader-layout-check.mjs "$RUNNER_TEMP/packed-reader/package/src/staged-file.ts"
