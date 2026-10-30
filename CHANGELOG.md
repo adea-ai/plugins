@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.0.2](https://github.com/adea-ai/plugins/compare/v3.0.1...v3.0.2) (2026-10-30)
+
+
+### Bug Fixes
+
+* rerun marketplace and review checks on ready PR updates ([#273](https://github.com/adea-ai/plugins/issues/273)) ([186ee95](https://github.com/adea-ai/plugins/commit/186ee9533572cb9c329f3ab62df4a08fc2422724))
+* validate catalog policy configuration ([#270](https://github.com/adea-ai/plugins/issues/270)) ([a440bfa](https://github.com/adea-ai/plugins/commit/a440bfa33219d92a42ff3085fab181cdcece9180))
+
 ## [3.0.1](https://github.com/adea-ai/plugins/compare/v3.0.0...v3.0.1) (2026-10-29)
 
 
