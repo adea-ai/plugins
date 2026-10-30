@@ -93,7 +93,6 @@ eval-results/
 .goose/
 # Brand marks and the browsing index are committed under catalog-assets/ and
 # served to browsers from the repository rather than from release assets.
-
 # Locally built Windows staged-reader artifacts and provenance
 packages/plugins/native/*.node
 packages/plugins/native/build-provenance.txt
