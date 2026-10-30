@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test'
-import { readFile, writeFile } from 'node:fs/promises'
+import { readFile, writeFile, rename, symlink } from 'node:fs/promises'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { synchronizePortable } from '../../plugins/src/portable-catalog.js'
@@ -25,6 +25,27 @@ async function run(script: string, args: string[]) {
 }
 
 describe('publication script manifest boundaries', () => {
+  test('rejects a staged catalog symlink before following it outside the stage', () =>
+    withPortableFixture(async (input, dir) => {
+      const result = await synchronizePortable(input)
+      const stage = join(dir, 'stage')
+      await writeArtifacts(stage, result.artifacts!)
+      const path = join(stage, 'catalog.v1.json')
+      const outside = join(dir, 'outside.json')
+      await rename(path, outside)
+      await symlink(outside, path)
+      for (const [script, args] of [
+        ['verify-published-artifacts.ts', [stage]],
+        [
+          'verify-catalog-branch.ts',
+          ['--artifacts', stage, '--assets', stage, '--base', 'http://127.0.0.1:1'],
+        ],
+      ] as const) {
+        const checked = await run(script, [...args])
+        expect(checked.code).not.toBe(0)
+        expect(checked.output).toContain('STAGED_FILE_UNSAFE')
+      }
+    }))
   test('rejects malformed metadata and traversal before opening listed files', () =>
     withPortableFixture(async (_input, dir) => {
       const cases = [
@@ -51,6 +72,10 @@ describe('publication script manifest boundaries', () => {
           'INTEGRITY_ASSET_NAME_INVALID',
         ],
         [{ schemaVersion: 1, catalogId, files: [] }, 'INTEGRITY_MANIFEST_INVALID'],
+        [
+          { schemaVersion: 1, catalogId, files: { 'catalog.v1.json': 'not-a-digest' } },
+          'INTEGRITY_MANIFEST_INVALID',
+        ],
         [
           { schemaVersion: 1, catalogId, files: { 'catalog.v1.json': digest }, assets: [null] },
           'INTEGRITY_MANIFEST_INVALID',

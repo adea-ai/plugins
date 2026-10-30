@@ -1,6 +1,6 @@
 import { it } from 'node:test'
 import assert from 'node:assert/strict'
-import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises'
+import { readFile, writeFile, readdir, mkdir, rename, symlink } from 'node:fs/promises'
 import { join } from 'node:path'
 import { main } from './index.js'
 import { withPortableFixture } from '../../plugins/test-support/portable-fixture.js'
@@ -183,6 +183,49 @@ it('rejects traversal in artifact names before reading them', () =>
     const result = await invoke(root, ['validate'])
     assert.equal(result.code, 1)
     assert.match(result.output.join(''), /INTEGRITY_FILE_NAME_INVALID/)
+  }))
+it('rejects a staged artifact symlink instead of following it', () =>
+  withPortableFixture(async (_input, root) => {
+    assert.equal((await invoke(root, ['sync', '--offline'])).code, 0)
+    const path = join(root, 'generated/catalog.v1.json')
+    const outside = join(root, 'outside.json')
+    await rename(path, outside)
+    await symlink(outside, path)
+    const result = await invoke(root, ['validate'])
+    assert.equal(result.code, 1)
+    assert.match(result.output.join(''), /STAGED_FILE_UNSAFE/)
+  }))
+it('rejects staged asset symlinks during asset verification', () =>
+  withPortableFixture(async (_input, root) => {
+    const directory = join(root, 'generated')
+    const assets = join(root, 'assets')
+    await mkdir(directory)
+    await mkdir(assets)
+    const outside = join(root, 'outside.png')
+    await writeFile(outside, 'x')
+    await symlink(outside, join(assets, 'icon.png'))
+    await writeFile(join(directory, 'catalog.v1.json'), '{}')
+    await writeFile(
+      join(directory, 'integrity.json'),
+      JSON.stringify({
+        schemaVersion: 1,
+        catalogId: `catalog:${'a'.repeat(64)}`,
+        files: { 'catalog.v1.json': `sha256:${'b'.repeat(64)}` },
+        assets: [
+          {
+            name: 'icon.png',
+            digest: `sha256:${'c'.repeat(64)}`,
+            bytes: 1,
+            contentType: 'image/png',
+            kind: 'content',
+            origin: 'x',
+          },
+        ],
+      })
+    )
+    const result = await invoke(root, ['verify-assets', '--assets-dir', assets])
+    assert.equal(result.code, 1)
+    assert.match(result.output.join(''), /STAGED_FILE_UNSAFE/)
   }))
 it('fails when an explicitly requested lock file is missing', () =>
   withPortableFixture(async (_input, root) => {

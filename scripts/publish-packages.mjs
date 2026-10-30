@@ -1,4 +1,5 @@
 import { spawnSync } from 'node:child_process'
+import { createHash } from 'node:crypto'
 import { cp, mkdtemp, readFile, readdir, rm, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
@@ -106,6 +107,25 @@ for (const { dir, schemas } of PUBLISH_PACKAGES) {
   if ((await publishedVersion(name)) === version) {
     console.log(`[publish] ${name}@${version} already published; skipping.`)
     continue
+  }
+  // Never publish a package with absent, stale, or unverified native readers.
+  const native = join(source, 'native')
+  const provenance = (await readFile(join(native, 'build-provenance.txt'), 'utf8'))
+    .trim()
+    .split('\n')
+  const commit = sh(['git', 'rev-parse', 'HEAD'], repoRoot)
+  if (commit.status !== 0 || provenance[0] !== `source_commit ${commit.stdout.trim()}`)
+    throw new Error('[publish] staged reader provenance does not match HEAD')
+  for (const relative of [
+    'packages/plugins/native/staged-reader.c',
+    'packages/plugins/native/staged-reader-win32-x64.node',
+    'packages/plugins/native/staged-reader-win32-arm64.node',
+  ]) {
+    const hash = createHash('sha256')
+      .update(await readFile(join(repoRoot, relative)))
+      .digest('hex')
+    if (!provenance.includes(`${hash}  ${relative}`))
+      throw new Error(`[publish] staged reader provenance mismatch: ${relative}`)
   }
   // Stage an isolated copy with workspace: ranges resolved to their locked
   // versions so the published tarball has no workspace: protocol leftovers.

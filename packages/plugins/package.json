@@ -26,6 +26,8 @@
   "files": [
     "dist",
     "src",
+    "native/staged-reader-win32-*.node",
+    "native/build-provenance.txt",
     "schemas",
     "README.md"
   ],

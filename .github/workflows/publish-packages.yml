@@ -67,5 +67,8 @@ jobs:
           path: ~/.bun/install/cache
           key: ${{ steps.bun-downloads.outputs.cache-primary-key }}
 
+      - name: Build pinned Windows staged readers
+        run: scripts/build-staged-reader.sh
+
       - name: Publish changed packages
         run: bun scripts/publish-packages.mjs
