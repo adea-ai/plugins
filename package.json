@@ -8,7 +8,7 @@
   ],
   "type": "module",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json && node scripts/copy-staged-reader.mjs",
     "catalog": "bun run packages/cli/src/index.ts",
     "fmt": "oxfmt .",
     "format:check": "oxfmt --check .",
