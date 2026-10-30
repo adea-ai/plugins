@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.3](https://github.com/adea-ai/plugins/compare/v3.0.2...v3.0.3) (2026-10-30)
+
+
+### CI
+
+* add manual staged reader qualification ([#277](https://github.com/adea-ai/plugins/issues/277)) ([c15dd2b](https://github.com/adea-ai/plugins/commit/c15dd2b126b49c4f61a5a1e8d13b955d0a10514c))
+
 ## [3.0.2](https://github.com/adea-ai/plugins/compare/v3.0.1...v3.0.2) (2026-10-30)
 
 
