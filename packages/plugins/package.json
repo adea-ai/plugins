@@ -1,6 +1,6 @@
 {
   "name": "@adea-ai/plugins",
-  "version": "2.0.49",
+  "version": "3.0.2",
   "description": "Deterministic compiler for AI agent plugin marketplaces: schemas, source parsing, provenance verification, per-harness materialization, and provenance-checked static artifacts.",
   "keywords": [
     "agents",
@@ -94,7 +94,7 @@
     "zod": "^4.6.6"
   },
   "engines": {
-    "bun": ">=1.4.0 <2",
+    "bun": ">=1.4.4 <2",
     "node": ">=24 <25"
   }
 }

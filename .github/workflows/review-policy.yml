@@ -17,7 +17,7 @@ name: Review Policy
 
 on:
   pull_request_target:
-    types: [ready_for_review]
+    types: [opened, reopened, ready_for_review, synchronize]
   pull_request_review:
     types: [submitted, dismissed]
 
@@ -25,12 +25,13 @@ permissions:
   pull-requests: read
 
 concurrency:
-  group: review-policy-${{ github.event.pull_request.number }}
+  group: review-policy-${{ github.event_name }}-${{ github.event.pull_request.number }}
   cancel-in-progress: true
 
 jobs:
   gate:
     name: Review Policy / Gate
+    if: github.event.pull_request.draft != true
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
