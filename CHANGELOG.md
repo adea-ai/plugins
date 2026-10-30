@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.4](https://github.com/adea-ai/plugins/compare/v3.0.3...v3.0.4) (2026-10-30)
+
+
+### Bug Fixes
+
+* unpack Windows qualification artifacts portably ([#279](https://github.com/adea-ai/plugins/issues/279)) ([3927bca](https://github.com/adea-ai/plugins/commit/3927bca7b7a1581a63e13a18f0a88a3c5294656c))
+
 ## [3.0.3](https://github.com/adea-ai/plugins/compare/v3.0.2...v3.0.3) (2026-10-30)
 
 
