@@ -10,7 +10,7 @@
       "devDependencies": {
         "@types/bun": "1.4.4",
         "@types/node": "^26.6.4",
-        "code-foundry": "1.53.1",
+        "code-foundry": "1.53.4",
         "oxfmt": "^0.75.0",
         "oxlint": "^1.86.0",
         "typescript": "^7.0.2",
@@ -163,7 +163,7 @@
 
     "bun-types": ["bun-types@1.4.4", "", { "dependencies": { "@types/node": "*", "undici-types": "*" } }, "sha512-yjrJh5oGX7mMPKGd19YXyIjmEuj4G4zNC30bs7PM9Az7NQ3ndF3j6hbeRdvJTRQEhJ/FYQwW0a2moweEi2hMxQ=="],
 
-    "code-foundry": ["code-foundry@1.53.1", "", { "bin": { "code-foundry": "src/cli.mjs" } }, "sha512-WwGgHU1lfpP2QpbdlfYLfYWqJFwypB/6YYlXxWyJpcL7jZovHXUCziNMvQCqNj1J9KOlavrDHjimWedcTjw6Pw=="],
+    "code-foundry": ["code-foundry@1.53.4", "", { "bin": { "code-foundry": "src/cli.mjs" } }, "sha512-YSywE4Oef8AEVg/u3ewTBEXavjzYHV99+FSeOOFw4UV0/KIPxezgYIvXwp3U2HfxiLQTh/0N15M/3STKgLK86g=="],
 
     "events-universal": ["events-universal@1.0.1", "", { "dependencies": { "bare-events": "^2.7.0" } }, "sha512-LUd5euvbMLpwOF8m6ivPCbhQeSiYVNb8Vs0fQ8QjXo0JTkEHpz8pxdQf0gStltaPpw0Cca8b39KxvK9cfKRiAw=="],
 

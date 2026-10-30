@@ -46,7 +46,7 @@ jobs:
         with:
           persist-credentials: false
           repository: 0xPlayerOne/code-foundry
-          ref: v1.53.1
+          ref: v1.53.4
           path: .github/.code-foundry
           sparse-checkout: |
             src/lib
@@ -82,7 +82,7 @@ jobs:
       packages: read
       pull-requests: read
       security-events: write
-    uses: 0xPlayerOne/code-foundry/.github/workflows/validation.yml@v1.53.1
+    uses: 0xPlayerOne/code-foundry/.github/workflows/validation.yml@v1.53.4
     with:
       mode: ${{ needs.mode.outputs.mode }}
       release-qualification-receipts: ${{ github.repository == '0xPlayerOne/code-foundry' }}
@@ -90,7 +90,7 @@ jobs:
       # Source PRs validate their proposed runtime commit. A Release Please PR
       # uses its main base, keeping version-only metadata out of the runtime
       # content identity. Scheduled audits use a separate default-branch caller.
-      runtime-ref: v1.53.1
+      runtime-ref: v1.53.4
       ci-runner: ubuntu-slim
       test-runner: ubuntu-slim
       unit-runner: ubuntu-slim
@@ -123,10 +123,10 @@ jobs:
       contents: read
       packages: read
       security-events: write
-    uses: 0xPlayerOne/code-foundry/.github/workflows/codeql.yml@v1.53.1
+    uses: 0xPlayerOne/code-foundry/.github/workflows/codeql.yml@v1.53.4
     with:
       runtime-repository: 0xPlayerOne/code-foundry
-      runtime-ref: v1.53.1
+      runtime-ref: v1.53.4
       runner: ubuntu-latest
       rust-shards: '["all"]'
       rust-threads: '1'
