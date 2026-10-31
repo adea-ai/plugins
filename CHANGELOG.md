@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.0.10](https://github.com/adea-ai/plugins/compare/v3.0.9...v3.0.10) (2026-10-31)
+
+
+### CI
+
+* adopt Code Foundry 1.53.6 idle-lane planning ([#291](https://github.com/adea-ai/plugins/issues/291)) ([8e0d192](https://github.com/adea-ai/plugins/commit/8e0d1929d5ffdcfe953e7d003978d35e5d96c0e4))
+
+
+### Maintenance
+
+* **renovate:** prioritise vulnerability fixes and stop workflow-file updates ([#290](https://github.com/adea-ai/plugins/issues/290)) ([c4f2e47](https://github.com/adea-ai/plugins/commit/c4f2e47282aacb057476944e62359ed61a56cec7))
+
 ## [3.0.9](https://github.com/adea-ai/plugins/compare/v3.0.8...v3.0.9) (2026-10-30)
 
 
