@@ -34,6 +34,7 @@ jobs:
       contents: read
     outputs:
       mode: ${{ steps.classify.outputs.mode }}
+      idle-lanes: ${{ steps.lanes.outputs.idle_lanes }}
     steps:
       # The runtime classifies policy from the consumer repository's config.
       # Keep this checkout before the isolated runtime checkout below.
@@ -46,7 +47,7 @@ jobs:
         with:
           persist-credentials: false
           repository: 0xPlayerOne/code-foundry
-          ref: v1.53.4
+          ref: v1.53.6
           path: .github/.code-foundry
           sparse-checkout: |
             src/lib
@@ -61,6 +62,12 @@ jobs:
           FOUNDRY_BASE_REF: ${{ github.event.pull_request.base.ref }}
           FOUNDRY_HEAD_REF: ${{ github.event.pull_request.head.ref }}
         run: node "$RUNNER_TEMP/code-foundry/src/runtime.mjs" validation mode >> "$GITHUB_OUTPUT"
+      # Lanes without an entrypoint (no package script, configured command,
+      # or test files) are skipped by the orchestrator rather than started on
+      # a runner only to report a no-op. Detection errors keep the lane.
+      - name: Plan lanes
+        id: lanes
+        run: node "$RUNNER_TEMP/code-foundry/src/runtime.mjs" validation lanes >> "$GITHUB_OUTPUT"
 
   # The stable aggregate check name is the caller job name plus the
   # orchestrator gate job name: "Validation / Gate". Keep both names fixed.
@@ -82,7 +89,7 @@ jobs:
       packages: read
       pull-requests: read
       security-events: write
-    uses: 0xPlayerOne/code-foundry/.github/workflows/validation.yml@v1.53.4
+    uses: 0xPlayerOne/code-foundry/.github/workflows/validation.yml@v1.53.6
     with:
       mode: ${{ needs.mode.outputs.mode }}
       release-qualification-receipts: ${{ github.repository == '0xPlayerOne/code-foundry' }}
@@ -90,7 +97,7 @@ jobs:
       # Source PRs validate their proposed runtime commit. A Release Please PR
       # uses its main base, keeping version-only metadata out of the runtime
       # content identity. Scheduled audits use a separate default-branch caller.
-      runtime-ref: v1.53.4
+      runtime-ref: v1.53.6
       ci-runner: ubuntu-slim
       test-runner: ubuntu-slim
       unit-runner: ubuntu-slim
@@ -106,6 +113,7 @@ jobs:
       integration-total-shards: '1'
       e2e-shard-list: '1'
       e2e-total-shards: '1'
+      idle-lanes: ${{ needs.mode.outputs.idle-lanes }}
     secrets:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET }}
@@ -123,10 +131,10 @@ jobs:
       contents: read
       packages: read
       security-events: write
-    uses: 0xPlayerOne/code-foundry/.github/workflows/codeql.yml@v1.53.4
+    uses: 0xPlayerOne/code-foundry/.github/workflows/codeql.yml@v1.53.6
     with:
       runtime-repository: 0xPlayerOne/code-foundry
-      runtime-ref: v1.53.4
+      runtime-ref: v1.53.6
       runner: ubuntu-latest
       rust-shards: '["all"]'
       rust-threads: '1'
