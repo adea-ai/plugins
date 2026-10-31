@@ -7,7 +7,12 @@
   "pruneStaleBranches": true,
   "draftPR": true,
   "vulnerabilityAlerts": {
-    "labels": ["security"]
+    "description": "Security fixes skip the line: their own branch outside every group (so a fix is never held behind a batch), no schedule window and no release-age wait, still opened as a draft so the gates run on draft to ready. A packageRules entry with enabled=false still suppresses fixes for what it matches.",
+    "labels": ["security"],
+    "schedule": ["at any time"],
+    "minimumReleaseAge": null,
+    "groupName": null,
+    "draftPR": true
   },
   "packageRules": [
     {
@@ -28,9 +33,9 @@
       "enabled": false
     },
     {
-      "description": "Keep workflow-file updates separate so a rejected workflow push cannot block package and lockfile updates.",
+      "description": "Renovate never updates workflow files: the runner's token cannot push .github/workflows/** changes, so GitHub rejects the ref and every update riding the branch is lost. Workflow pins are updated by adea-update-app-framework (framework), Code Foundry sync (Code Foundry runtime) or a reviewed PR. Kept last so no later rule re-enables them; this also suppresses vulnerability-fix PRs for workflow files.",
       "matchFileNames": [".github/workflows/**"],
-      "groupName": "workflow dependencies"
+      "enabled": false
     }
   ]
 }
